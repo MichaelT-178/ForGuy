@@ -26,119 +26,131 @@
                 </ul>
               </div>
             </div>
+            <span 
+              class="material-icons" 
+              @click="handleSearchClick" 
+              style="flex-shrink: 0; margin-top: 6.5px">
+              search
+            </span>
           </div>
         </div>
       </header>
     </div>
-  </template>
+</template>
   
-  <script setup>
-  import { ref } from 'vue';
-  import router from '../router'
+<script setup>
+import { ref } from 'vue';
+import router from '../router';
   
-  const showMenu = ref(false);
-  const activeSubMenuIndex = ref(null);
+const showMenu = ref(false);
+const activeSubMenuIndex = ref(null);
 
-  const menuItems = [
-    {
-      text: "Item 1",
-      subMenu: [
-        { text: "Home", link: "/" },
-        { text: "About", link: "/about" },
-      ],
-    },
-    {
-      text: "Item 2",
-      subMenu: [
-        { text: "Subitem 2.1", link: "/subitem-2-1" },
-        { text: "Subitem 2.2", link: "/subitem-2-2" },
-        { text: "Subitem 2.3", link: "/subitem-2-3" },
-        { text: "Subitem 2.4", link: "/subitem-2-4" },
-        { text: "Subitem 2.5", link: "/subitem-2-5" },
-      ],
-    },
-    {
-      text: "Home",
-      route: "/about",
-    }
-  ];
-  
-  const showSubMenu = (index) => {
-    activeSubMenuIndex.value = index;
+const menuItems = [
+  {
+    text: "Item 1",
+    subMenu: [
+      { text: "Home", link: "/" },
+      { text: "About", link: "/about" },
+    ],
+  },
+  {
+    text: "Item 2",
+    subMenu: [
+      { text: "Subitem 2.1", link: "/subitem-2-1" },
+      { text: "Subitem 2.2", link: "/subitem-2-2" },
+      { text: "Subitem 2.3", link: "/subitem-2-3" },
+      { text: "Subitem 2.4", link: "/subitem-2-4" },
+      { text: "Subitem 2.5", link: "/subitem-2-5" },
+    ],
+  },
+  {
+    text: "Home",
+    route: "/about",
   }
+];
   
-  const hideSubMenu = () => {
-    activeSubMenuIndex.value = null;
+const showSubMenu = (index) => {
+  activeSubMenuIndex.value = index;
+}
+
+const hideSubMenu = () => {
+  activeSubMenuIndex.value = null;
+}
+
+const hideMenu = () => {
+  showMenu.value = false;
+}
+
+const handleMenuClick = (menuItem) => {
+  if (menuItem.route) {
+    router.push(menuItem.route);
   }
-  
-  const hideMenu = () => {
-    showMenu.value = false;
-  }
-  
-  const handleMenuClick = (menuItem) => {
-    if (menuItem.route) {
-      router.push(menuItem.route);
-    }
-  }
-  </script>
-  
-  <style scoped>
-  .top-menu {
-    background-color: teal;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  .menu-items {
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .menu-item {
-    position: relative;
-    cursor: pointer;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-item:hover {
-    background-color: #555;
-  }
-  
-  .sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: teal;
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
-    z-index: 1;
-  }
-  
-  .menu-item:hover .sub-menu {
-    display: block;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  </style>
+}
+
+const handleSearchClick = () => {
+  console.log("SEARCH CLICKED!");
+}
+
+</script>
+
+<style scoped>
+
+.top-menu {
+  background-color: teal;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #555;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: teal;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  z-index: 1;
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
   
