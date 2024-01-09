@@ -54,6 +54,7 @@ const menuItems = [
     subMenu: [
       { text: "Subitem 2.1", link: "/subitem-2-1" },
       { text: "Subitem 2.2", link: "/subitem-2-2" },
+      { text: "Subitem 2.3", link: "/subitem-2-3" },
     ],
   },
 ];
