@@ -2,18 +2,19 @@
     <div>
       <header>
         <div class="top-menu" @mouseover="showMenu = true" @mouseout="hideMenu">
-          <div class="menu-items">
+          <div class="menu-items">  
             <div
               class="menu-item"
               v-for="(menuItem, index) in menuItems"
               :key="index"
-              @mouseover="showSubMenu(index)"
-              @mouseout="hideSubMenu"
-              @click="navigateToRoute(menuItem.route)"
+              @mouseover="menuItem.subMenu ? showSubMenu(index) : null"
+              @mouseout="menuItem.subMenu ? hideSubMenu : null"
+              @click="handleMenuClick(menuItem)"
             >
               <span>{{ menuItem.text }}</span>
               <div
                 class="sub-menu"
+                v-if="menuItem.subMenu"
                 v-show="showMenu && activeSubMenuIndex === index"
                 @mouseover="showSubMenu(index)"
                 @mouseout="hideSubMenu"
@@ -29,18 +30,15 @@
         </div>
       </header>
     </div>
-  
-  
-    <router-view />
-  
   </template>
   
   <script setup>
   import { ref } from 'vue';
+  import router from '../router'
   
   const showMenu = ref(false);
   const activeSubMenuIndex = ref(null);
-  
+
   const menuItems = [
     {
       text: "Item 1",
@@ -59,6 +57,10 @@
         { text: "Subitem 2.5", link: "/subitem-2-5" },
       ],
     },
+    {
+      text: "Home",
+      route: "/about",
+    }
   ];
   
   const showSubMenu = (index) => {
@@ -73,6 +75,11 @@
     showMenu.value = false;
   }
   
+  const handleMenuClick = (menuItem) => {
+    if (menuItem.route) {
+      router.push(menuItem.route);
+    }
+  }
   </script>
   
   <style scoped>

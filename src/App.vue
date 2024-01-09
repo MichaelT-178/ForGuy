@@ -2,6 +2,7 @@
   <div class="app">
     <Menu />
 
+    <router-view />
   </div>
 </template>
 
