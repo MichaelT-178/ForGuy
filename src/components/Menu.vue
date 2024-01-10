@@ -7,11 +7,16 @@
               class="menu-item"
               v-for="(menuItem, index) in menuItems"
               :key="index"
-              @mouseover="menuItem.subMenu ? showSubMenu(index) : null"
-              @mouseout="menuItem.subMenu ? hideSubMenu : null"
+              @mouseover="menuItem.subMenu ? showSubMenu(index) : null; 
+                          hoveredOver = menuItem.subMenu ? true : false"
+              @mouseout="menuItem.subMenu ? hideSubMenu : null; hoveredOver = false"
               @click="handleMenuClick(menuItem)"
             >
-              <span>{{ menuItem.text }}</span>
+              <span>{{ menuItem.text }}
+                <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, width: menuItem.subMenu ? 1 : 0 }">
+                  {{ activeSubMenuIndex === index && hoveredOver && menuItem.subMenu ? 'expand_less' : 'expand_more' }}
+                </i>
+              </span>
               <div
                 class="sub-menu"
                 v-if="menuItem.subMenu"
@@ -29,7 +34,7 @@
             <span 
               class="material-icons" 
               @click="handleSearchClick" 
-              style="flex-shrink: 0; margin-top: 6.5px">
+              style="flex-shrink: 0; margin-top: 3.2px">
               search
             </span>
           </div>
@@ -44,6 +49,7 @@ import router from '../router';
   
 const showMenu = ref(false);
 const activeSubMenuIndex = ref(null);
+const hoveredOver = ref(false);
 
 const menuItems = [
   {
@@ -111,7 +117,8 @@ const handleSearchClick = () => {
 .menu-item {
   position: relative;
   cursor: pointer;
-  padding: 10px 15px;
+  /* padding: 10px 15px; top right bottom left*/
+  padding: 2.5px 11px 10px 14px;
   transition: background-color 0.3s ease;
 }
 
@@ -150,6 +157,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.material-icons {
+  transform: translateY(5.1px); 
 }
 
 </style>
