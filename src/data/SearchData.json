@@ -1,0 +1,17 @@
+[
+    {
+        "title": "This is Cool",
+        "allText": "",
+        "link": "/cool"
+    },
+    {
+        "title": "About",
+        "allText": "",
+        "link": "/about"
+    },
+    {
+        "title": "THis is home",
+        "allText": "",
+        "link": "/"
+    }
+]
