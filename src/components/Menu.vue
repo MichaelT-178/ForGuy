@@ -109,10 +109,6 @@ const handleMenuClick = (menuItem) => {
   }
 }
 
-const handleSearchClick = () => {
-  console.log("SEARCH CLICKED!");
-}
-
 </script>
 
 <style scoped>
