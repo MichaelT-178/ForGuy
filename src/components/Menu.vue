@@ -9,7 +9,9 @@
               :key="index"
               @mouseover="menuItem.subMenu ? showSubMenu(index) : null; 
                           hoveredOver = menuItem.subMenu ? true : false"
-              @mouseout="menuItem.subMenu ? hideSubMenu : null; hoveredOver = false"
+
+              @mouseout="menuItem.subMenu ? hideSubMenu : null; 
+                         hoveredOver = false"   
               @click="handleMenuClick(menuItem)"
             >
               <span>{{ menuItem.text }}
@@ -33,11 +35,13 @@
             </div>
             <span 
               class="material-icons" 
-              @click="handleSearchClick" 
+              @click="isSearchBox = true" 
               style="flex-shrink: 0; margin-top: 3.2px">
               search
             </span>
           </div>
+          <SearchBox v-model:isOpen="isSearchBox">
+          </SearchBox>
         </div>
       </header>
     </div>
@@ -46,10 +50,14 @@
 <script setup>
 import { ref } from 'vue';
 import router from '../router';
-  
+import SearchBox from './SearchBox.vue';
+
 const showMenu = ref(false);
 const activeSubMenuIndex = ref(null);
 const hoveredOver = ref(false);
+
+const isSearchBox = ref(false);
+
 
 const menuItems = [
   {
@@ -71,6 +79,14 @@ const menuItems = [
   },
   {
     text: "Home",
+    route: "/about",
+  },
+  {
+    text: "LinkedIn",
+    route: "/about",
+  },
+  {
+    text: "VSCode",
     route: "/about",
   }
 ];
@@ -162,6 +178,8 @@ a:hover {
 .material-icons {
   transform: translateY(5.1px); 
 }
+
+
 
 </style>
   
