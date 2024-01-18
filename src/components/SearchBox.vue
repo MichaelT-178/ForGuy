@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import { ref, computed, defineProps, defineEmits, watchEffect } from 'vue';
+import { ref, computed, watchEffect } from 'vue';
 import SearchData from '../data/SearchData.json';
 
 const props = defineProps({
