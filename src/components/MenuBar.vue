@@ -51,45 +51,13 @@
 import { ref } from 'vue';
 import router from '../router';
 import SearchBox from './SearchBox.vue';
+import { menuItems } from './MenuItems.vue';
 
 const showMenu = ref(false);
 const activeSubMenuIndex = ref(null);
 const hoveredOver = ref(false);
 
 const isSearchBox = ref(false);
-
-
-const menuItems = [
-  {
-    text: "Item 1",
-    subMenu: [
-      { text: "Home", link: "/" },
-      { text: "About", link: "/about" },
-    ],
-  },
-  {
-    text: "Item 2",
-    subMenu: [
-      { text: "Subitem 2.1", link: "/subitem-2-1" },
-      { text: "Subitem 2.2", link: "/subitem-2-2" },
-      { text: "Subitem 2.3", link: "/subitem-2-3" },
-      { text: "Subitem 2.4", link: "/subitem-2-4" },
-      { text: "Subitem 2.5", link: "/subitem-2-5" },
-    ],
-  },
-  {
-    text: "Home",
-    route: "/about",
-  },
-  {
-    text: "LinkedIn",
-    route: "/about",
-  },
-  {
-    text: "VSCode",
-    route: "/about",
-  }
-];
   
 const showSubMenu = (index) => {
   activeSubMenuIndex.value = index;

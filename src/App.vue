@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import Menu from './components/Menu.vue';
+import Menu from './components/MenuBar.vue';
 
 //activeSubMenuIndex === index && showMenu 
 
