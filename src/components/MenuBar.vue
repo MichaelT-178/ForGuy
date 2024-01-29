@@ -112,9 +112,11 @@ const handleMenuClick = (menuItem) => {
   top: 100%;
   left: 0;
   background-color: teal;
-  padding: 10px;
+  padding: 0px 10px; 
   border-radius: 0 0 5px 5px;
   z-index: 1;
+  white-space: nowrap; 
+  min-width: 100%; 
 }
 
 .menu-item:hover .sub-menu {
@@ -127,7 +129,9 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 10px; 
+  padding: 5px 0; 
+  font-size: 17px;
 }
 
 a {
@@ -142,8 +146,6 @@ a:hover {
 .material-icons {
   transform: translateY(5.1px); 
 }
-
-
 
 </style>
   
