@@ -13,7 +13,7 @@
             v-for="item in filteredSearchMenu"
             :key="item.id"
             class="search-item"
-          >
+            >
             <router-link :to="item.link" @click="closeModal">
               {{ item.title }}
             </router-link>
