@@ -15,6 +15,7 @@
               @click="handleMenuClick(menuItem)"
             >
               <span>{{ menuItem.text }}
+                <!-- <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, color: menuItem.subMenu && hoveredOver && activeSubMenuIndex === index ? '#ffd483' : 'white', width: menuItem.subMenu ? 1 : 0 }"> -->
                 <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, width: menuItem.subMenu ? 1 : 0 }">
                   {{ activeSubMenuIndex === index && hoveredOver && menuItem.subMenu ? 'expand_less' : 'expand_more' }}
                 </i>
@@ -102,9 +103,10 @@ const handleMenuClick = (menuItem) => {
   transition: background-color 0.3s ease;
 }
 
-.menu-item:hover {
-  background-color: #555;
-}
+/* .menu-item:hover {
+  background-color: #038383;
+  color: #ffd483;
+} */
 
 .sub-menu {
   display: none;
@@ -148,4 +150,8 @@ a:hover {
 }
 
 </style>
-  
+
+
+
+<!-- yellow: #ffd483;
+light-teal: #009494; -->

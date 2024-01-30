@@ -55,8 +55,8 @@ export const menuItems = [
         ],
     },
     {
-        text: "Contact Me",
-        route: "/"
+        text: "Contact",
+        route: '/about'
     },
 ];
 
