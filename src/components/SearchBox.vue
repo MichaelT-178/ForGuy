@@ -160,4 +160,10 @@ const filteredSearchMenu = computed(() => {
   text-decoration: none;
   display: block; 
 }
+
+.material-icons:hover {
+  color: #ffd483;
+}
+
+
 </style>
