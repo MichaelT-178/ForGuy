@@ -1,7 +1,12 @@
-import subprocess
-import os 
 from termcolor import colored as c
 
+"""
+Creates the src/data/settings.vue file from the 
+real_settings.txt file. 
+
+The real_settings.txt file should contain the json data
+from the settings.json file in VS Code.
+"""
 
 the_str = ""
 
@@ -25,7 +30,5 @@ path_to_settings_vue = "../src/data/settings.vue"
 
 with open(path_to_settings_vue, "w") as file:
     file.write(the_str)
-
-
-
+    
 print(c("Go click the copy button and paste the json data in \"results.txt\"", "blue"))
