@@ -107,10 +107,10 @@ const handleMenuClick = (menuItem) => {
   transition: background-color 0.3s ease;
 }
 
-/* .menu-item:hover {
-  background-color: #038383;
+.menu-item:hover {
+  /* background-color: #038383; */
   color: #ffd483;
-} */
+} 
 
 .sub-menu {
   display: none;
@@ -153,6 +153,9 @@ a:hover {
   transform: translateY(5.1px); 
 }
 
+.material-icons:hover {
+  color: #ffd483;
+}
 </style>
 
 
