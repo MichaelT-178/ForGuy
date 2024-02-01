@@ -38,7 +38,7 @@ export const menuItems = [
         text: "Comp Sci",
         subMenu: [
             { text: "Visual Studio Code", link: "/subitem-2-1" },
-            { text: "VSCode Settings", link: "/subitem-2-2" },
+            { text: "VSCode Settings", link: "/settings" },
             { text: "VSCode Shorcuts", link: "/subitem-2-3" },
             { text: "Favorite Libraries", link: "/subitem-2-4" },
             { text: "Comp Sci Tips", link: "/subitem-2-5" },
