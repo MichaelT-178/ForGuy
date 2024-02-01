@@ -1,5 +1,12 @@
 from termcolor import colored as c
 
+"""
+Checks if the create_settings_file and the contents 
+of the file in "Comp Sci" -> "VSCode settings" are the same.
+
+Paste the VSCode Settings in results.txt
+"""
+
 def files_are_identical(file1, file2):
 
     identical = True
