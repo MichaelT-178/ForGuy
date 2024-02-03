@@ -42,7 +42,6 @@ import Memes from '../views/other/Memes.vue';
 //Contact
 import ContactMe from '../views/Contact.vue'
 
-
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -119,23 +118,23 @@ const router = createRouter({
             component: ClassesToAvoid
         },
         {
-            path: '/compsci/VisualStudioCode',
+            path: '/CompSci/VisualStudioCode',
             component: VisualStudioCode
         },
         {
-            path: '/compsci/VSCodeSettings',
+            path: '/CompSci/VSCodeSettings',
             component: VSCodeSettings
         },
         {
-            path: '/compsci/VSCodeShortcuts',
+            path: '/CompSci/VSCodeShortcuts',
             component: VSCodeShortcuts
         },
         {
-            path: '/compsci/FavoriteLibraries',
+            path: '/CompSci/FavoriteLibraries',
             component: FavoriteLibraries
         },
         {
-            path: '/compsci/CompSciTips',
+            path: '/CompSci/CompSciTips',
             component: CompSciTips
         },
         {

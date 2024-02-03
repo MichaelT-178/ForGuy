@@ -37,11 +37,11 @@ export const menuItems = [
     {
         text: "Comp Sci",
         subMenu: [
-            { text: "Visual Studio Code", link: "/compsci/VisualStudioCode" },
-            { text: "VSCode Settings", link: "/compsci/VSCodeSettings" },
-            { text: "VSCode Shorcuts", link: "/compsci/VSCodeShortcuts" },
-            { text: "Favorite Libraries", link: '/compsci/FavoriteLibraries' },
-            { text: "Comp Sci Tips", link: "/compsci/CompSciTips" },
+            { text: "Visual Studio Code", link: "/CompSci/VisualStudioCode" },
+            { text: "VSCode Settings", link: "/CompSci/VSCodeSettings" },
+            { text: "VSCode Shorcuts", link: "/CompSci/VSCodeShortcuts" },
+            { text: "Favorite Libraries", link: '/CompSci/FavoriteLibraries' },
+            { text: "Comp Sci Tips", link: "/CompSci/CompSciTips" },
         ],
     },
     {
