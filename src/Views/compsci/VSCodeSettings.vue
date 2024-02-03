@@ -12,7 +12,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { settings } from '../data/settings.vue';
+import { settings } from '../../data/settings.vue';
 
 const copyButton = ref(null);
 const downloadButton = ref(null);
@@ -86,6 +86,7 @@ pre {
   border-radius: 5px;
   margin-top: 0; 
   box-sizing: border-box; 
+  color: darkblue;
 }
 
 </style>
