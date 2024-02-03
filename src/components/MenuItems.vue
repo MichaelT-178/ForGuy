@@ -3,7 +3,7 @@
 export const menuItems = [
     {
         text: "Home",
-        route: "/about",
+        route: "/",
     },
     {
         text: "Jobs",
