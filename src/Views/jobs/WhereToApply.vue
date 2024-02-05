@@ -3,7 +3,7 @@
         <div class="top-section">
             <h1>Where To Apply</h1>
             <span class="expand-text" @click="toggleExplanation">Why did I choose these companies?</span>
-            <p class="companies-found" v-if="explainOpen">These were chosen largely based off of where I've seen UNCW alumni working</p>
+            <p class="companies-found" v-if="explainOpen">{{ pageDescription }}</p>
             <div class="search-expand-wrapper">
                 <input type="text" v-model="searchQuery" placeholder="Search Companies By Location..." class="search-bar" />
                 <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
@@ -27,6 +27,7 @@ const jsonData = ref(AllData);
 const searchQuery = ref('');
 const allOpen = ref(false);
 const explainOpen = ref(false);
+const pageDescription = jsonData.value["Description"];
 
 const filteredCompanies = computed(() => {
     if (!searchQuery.value) {
