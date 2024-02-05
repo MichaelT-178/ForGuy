@@ -15,11 +15,6 @@
               @click="handleMenuClick(menuItem)"
             >
               <span>{{ menuItem.text }}
-                <!-- <i class="material-icons" :style="{ 
-                  opacity: menuItem.subMenu ? 1 : 0, 
-                  color: menuItem.subMenu && hoveredOver && activeSubMenuIndex === index ? '#ffd483' : 'white', 
-                  width: menuItem.subMenu ? 1 : 0 
-                }"> -->
                 <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, width: menuItem.subMenu ? 1 : 0 }">
                   {{ activeSubMenuIndex === index && hoveredOver && menuItem.subMenu ? 'expand_less' : 'expand_more' }}
                 </i>
@@ -32,8 +27,11 @@
                 @mouseout="hideSubMenu"
               >
                 <ul>
-                  <li v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex">
-                    <a :href="subMenuItem.link">{{ subMenuItem.text }}</a>
+                  <li v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex" class="sub-menu-item">
+                    <a :href="subMenuItem.link" class="sub-menu-link">
+                      <span class="material-symbols-outlined">{{ subMenuItem.icon }}</span>
+                      <span>{{ subMenuItem.text }}</span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -108,7 +106,6 @@ const handleMenuClick = (menuItem) => {
 }
 
 .menu-item:hover {
-  /* background-color: #038383; */
   color: #ffd483;
 } 
 
@@ -123,6 +120,32 @@ const handleMenuClick = (menuItem) => {
   z-index: 1;
   white-space: nowrap; 
   min-width: 100%; 
+}
+
+.sub-menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  padding: 5px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.sub-menu-link:hover {
+  background-color: #009494; 
+}
+
+.material-symbols-outlined {
+  margin-right: 8px; 
+  margin-top: -1.7px; 
 }
 
 .menu-item:hover .sub-menu {
@@ -146,7 +169,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   color:#ffd483;
 }
 
