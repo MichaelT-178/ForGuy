@@ -107,6 +107,8 @@ const handleMenuClick = (menuItem) => {
 
 .menu-item:hover {
   color: #ffd483;
+  background-color: #009494; 
+  border-radius: 3px; 
 } 
 
 .sub-menu {
