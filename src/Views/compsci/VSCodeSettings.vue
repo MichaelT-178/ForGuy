@@ -12,7 +12,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { settings } from '../../data/settings.vue';
+import { settings } from '../../data/CompSci/settings.vue';
 
 const copyButton = ref(null);
 const downloadButton = ref(null);

@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import AllData from "../../data/WhereToApply.json";
+import AllData from "../../data/jobs/WhereToApply.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
