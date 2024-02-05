@@ -147,6 +147,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color:#ffd483;
 }
 
 .material-icons {
