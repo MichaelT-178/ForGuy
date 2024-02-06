@@ -8,8 +8,10 @@
 
 <script setup>
 
-function downloadResumeDocx(){
+function downloadResumeDocx() {
   const docxUrl = 'https://michaelt-178.github.io/TestWebsite/ResumeTemplate.docx';
+  //http://localhost:5173/src/data/jobs/ResumeTemplate.docx
+
   const link = document.createElement('a');
 
   link.href = docxUrl;
