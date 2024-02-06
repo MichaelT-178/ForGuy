@@ -26,7 +26,7 @@ the_str = (
     "\n\n</script>"
 )
 
-path_to_settings_vue = "../src/data/settings.vue"
+path_to_settings_vue = "../src/data/CompSci/settings.vue"
 
 with open(path_to_settings_vue, "w") as file:
     file.write(the_str)
