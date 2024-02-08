@@ -1,56 +1,192 @@
 [
     {
-        "id": 1,
-        "title": "This is Cool",
-        "allText": "Banana cool",
+        "id": "1",
+        "icon": "home",
+        "MenuName": "Home",
+        "AllText": "",
         "link": "/"
     },
     {
-        "id": 2,
-        "title": "About",
-        "allText": "Nice Friendly",
-        "link": "/"
+        "id": "2",
+        "icon": "work",
+        "MenuName": "Where To Apply",
+        "AllText": "TODO",
+        "link": "/jobs/WhereToApply"
     },
     {
-        "id": 3,
-        "title": "THis is home",
-        "allText": "Real divine",
-        "link": "/"
-    },
-    {
-        "id": 4,
-        "title": "This is Cool",
-        "allText": "Banana cool",
-        "link": "/"
-    },
-    {
-        "id": 5,
-        "title": "About",
-        "allText": "Nice Friendly",
-        "link": "/"
-    },
-    {
-        "id": 6,
-        "title": "THis is home",
-        "allText": "Real divine",
-        "link": "/"
-    },
-    {
-        "id": 7,
-        "title": "This is Cool",
-        "allText": "Banana cool",
-        "link": "/"
-    },
-    {
-        "id": 8,
-        "title": "About",
-        "allText": "Nice Friendly",
+        "id": "3",
+        "icon": "description",
+        "MenuName": "Resume Template",
+        "AllText": "TODO",
         "link": "/jobs/ResumeTemplate"
     },
     {
-        "id": 9,
-        "title": "THis is home",
-        "allText": "Real divine",
-        "link": "/jobs/WhereToApply"
+        "id": "4",
+        "icon": "handshake",
+        "MenuName": "Offers I've Recieved",
+        "AllText": "TODO",
+        "link": "/jobs/OffersRecieved"
+    },
+    {
+        "id": "5",
+        "icon": "group",
+        "MenuName": "Interview Tips",
+        "AllText": "TODO",
+        "link": "/jobs/InterviewTips"
+    },
+    {
+        "id": "6",
+        "icon": "wysiwyg",
+        "MenuName": "Helpful Websites",
+        "AllText": "TODO",
+        "link": "/jobs/HelpfulWebsites"
+    },
+    {
+        "id": "7",
+        "icon": "lightbulb",
+        "MenuName": "Job Tips",
+        "AllText": "TODO",
+        "link": "/jobs/JobTips.vue"
+    },
+    {
+        "id": "8",
+        "icon": "person_add",
+        "MenuName": "What Is LinkedIn?",
+        "AllText": "TODO",
+        "link": "/linkedin/WhatIsLinkedin"
+    },
+    {
+        "id": "9",
+        "icon": "account_circle",
+        "MenuName": "Setup a Profile",
+        "AllText": "TODO",
+        "link": "/linkedin/SetupProfile"
+    },
+    {
+        "id": "10",
+        "icon": "notifications",
+        "MenuName": "Setup Job Alerts",
+        "AllText": "TODO",
+        "link": "/linkedin/SetupJobAlerts"
+    },
+    {
+        "id": "11",
+        "icon": "psychology",
+        "MenuName": "LinkedIn Tips",
+        "AllText": "TODO",
+        "link": "/linkedin/LinkedinTips"
+    },
+    {
+        "id": "12",
+        "icon": "thumb_up",
+        "MenuName": "Class Recommendations",
+        "AllText": "TODO",
+        "link": "/classes/ClassRecommendations"
+    },
+    {
+        "id": "13",
+        "icon": "description",
+        "MenuName": "CSC Descriptions",
+        "AllText": "TODO",
+        "link": "/classes/CSCDescriptions"
+    },
+    {
+        "id": "14",
+        "icon": "co_present",
+        "MenuName": "Classes I've Taken",
+        "AllText": "TODO",
+        "link": "/classes/ClassesIveTaken"
+    },
+    {
+        "id": "15",
+        "icon": "cancel",
+        "MenuName": "Classes To Avoid",
+        "AllText": "TODO",
+        "link": "/classes/ClassesToAvoid"
+    },
+    {
+        "id": "16",
+        "icon": "laptop_mac",
+        "MenuName": "Visual Studio Code",
+        "AllText": "TODO",
+        "link": "/CompSci/VisualStudioCode"
+    },
+    {
+        "id": "17",
+        "icon": "settings",
+        "MenuName": "VSCode Settings",
+        "AllText": "TODO",
+        "link": "/CompSci/VSCodeSettings"
+    },
+    {
+        "id": "18",
+        "icon": "forward_media",
+        "MenuName": "VSCode Shorcuts",
+        "AllText": "TODO",
+        "link": "/CompSci/VSCodeShortcuts"
+    },
+    {
+        "id": "19",
+        "icon": "extension",
+        "MenuName": "Extensions",
+        "AllText": "TODO",
+        "link": "/CompSci/VSCodeShortcuts"
+    },
+    {
+        "id": "20",
+        "icon": "library_add_check",
+        "MenuName": "Favorite Libraries",
+        "AllText": "TODO",
+        "link": "/CompSci/FavoriteLibraries"
+    },
+    {
+        "id": "21",
+        "icon": "device_hub",
+        "MenuName": "Comp Sci Tips",
+        "AllText": "TODO",
+        "link": "/CompSci/CompSciTips"
+    },
+    {
+        "id": "22",
+        "icon": "self_improvement",
+        "MenuName": "General Tips",
+        "AllText": "TODO",
+        "link": "/other/GeneralTips"
+    },
+    {
+        "id": "23",
+        "icon": "phone_iphone",
+        "MenuName": "Apps To Download",
+        "AllText": "TODO",
+        "link": "/other/AppsToDownload"
+    },
+    {
+        "id": "24",
+        "icon": "favorite",
+        "MenuName": "CS Stuff I Like",
+        "AllText": "TODO",
+        "link": "/other/CompSciStuff"
+    },
+    {
+        "id": "25",
+        "icon": "terminal",
+        "MenuName": "Terminal Commands",
+        "AllText": "TODO",
+        "link": "/other/TerminalCommands"
+    },
+    {
+        "id": "26",
+        "icon": "comedy_mask",
+        "MenuName": "Memes",
+        "AllText": "TODO",
+        "link": "/other/Memes"
+    },
+    {
+        "id": "27",
+        "icon": "mail",
+        "MenuName": "Contact",
+        "AllText": "",
+        "link": "/ContactMe"
     }
+
 ]
