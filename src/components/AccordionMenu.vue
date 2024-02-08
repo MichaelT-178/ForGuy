@@ -44,9 +44,9 @@ const hyperlinkText = (text) => {
   return text.replace(urlPattern, (url) => 
     {
       return `<a href="${url}" target="_blank" 
-                style="color: #007AFF;" 
-                onmouseover="this.style.color='blue'" 
-                onmouseout="this.style.color='#007AFF'"
+                style="color: #007AFF; text-decoration: none;" 
+                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
+                onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
               >
               ${url}</a>`;
     }

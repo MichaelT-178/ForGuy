@@ -15,7 +15,7 @@
             class="search-item"
             >
             <router-link :to="item.link" @click="closeModal">
-              {{ item.title }}
+              {{ item.MenuName }}
             </router-link>
           </div>
         </div>
@@ -50,7 +50,7 @@ const jsonData = ref(SearchData);
 const searchMenu = jsonData.value;
 
 const filteredSearchMenu = computed(() => {
-  return searchMenu.filter(item => item.allText.toLowerCase().includes(searchString.value.toLowerCase().trim()));
+  return searchMenu.filter(item => item.AllText.toLowerCase().includes(searchString.value.toLowerCase().trim()));
 });
 
 // const printJSON = () => {
