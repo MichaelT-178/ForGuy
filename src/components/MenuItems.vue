@@ -14,7 +14,7 @@ export const menuItems = [
             { text: "Interview Tips",        icon: "group",        link: "/jobs/InterviewTips" },
             { text: "Helpful Websites",      icon: "wysiwyg",      link: "/jobs/HelpfulWebsites" },
             { text: "Job Tips",              icon: "lightbulb",    link: "/jobs/JobTips.vue" }
-        ],
+        ]
     },
     {
         text: "LinkedIn",
@@ -23,7 +23,7 @@ export const menuItems = [
             { text: "Setup a Profile",    icon: "account_circle",  link: "/linkedin/SetupProfile" },
             { text: "Setup Job Alerts",   icon: "notifications",   link: "/linkedin/SetupJobAlerts" },
             { text: "LinkedIn Tips",      icon: "psychology",      link: "/linkedin/LinkedinTips" }
-        ],
+        ]
     },
     {
         text: "Classes",
@@ -32,7 +32,7 @@ export const menuItems = [
             { text: "CSC Descriptions",       icon: "description",  link: "/classes/CSCDescriptions" },
             { text: "Classes I've Taken",     icon: "co_present",   link: "/classes/ClassesIveTaken" }, //interactive_space
             { text: "Classes To Avoid",       icon: "cancel",       link: "/classes/ClassesToAvoid" }
-        ],
+        ]
     },
     {
         text: "Comp Sci",
@@ -43,7 +43,7 @@ export const menuItems = [
             { text: "Extensions",          icon: "extension",          link: "/CompSci/VSCodeShortcuts" },
             { text: "Favorite Libraries",  icon: "library_add_check",  link: "/CompSci/FavoriteLibraries" },
             { text: "Comp Sci Tips",       icon: "device_hub",         link: "/CompSci/CompSciTips" } 
-        ],
+        ]
     },
     {
         text: "Other",
@@ -53,12 +53,12 @@ export const menuItems = [
             { text: "CS Stuff I Like",    icon: "favorite",          link: "/other/CompSciStuff" },
             { text: "Terminal Commands",  icon: "terminal",          link: "/other/TerminalCommands" },
             { text: "Memes",              icon: "comedy_mask",       link: "/other/Memes" }
-        ],
+        ]
     },
     {
         text: "Contact",
-        route: '/ContactMe'
-    },
+        route: "/ContactMe"
+    }
 ];
 
 </script>
