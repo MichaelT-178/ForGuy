@@ -1,192 +1,192 @@
 [
     {
-        "id": "1",
-        "icon": "home",
+        "id": 1,
+        "Emoji": "🏠",
         "MenuName": "Home",
         "AllText": "",
-        "link": "/"
+        "Link": "/"
     },
     {
-        "id": "2",
-        "icon": "work",
+        "id": 2,
+        "Emoji": "🧳",
         "MenuName": "Where To Apply",
         "AllText": "TODO",
-        "link": "/jobs/WhereToApply"
+        "Link": "/jobs/WhereToApply"
     },
     {
-        "id": "3",
-        "icon": "description",
+        "id": 3,
+        "Emoji": "📄",
         "MenuName": "Resume Template",
         "AllText": "TODO",
-        "link": "/jobs/ResumeTemplate"
+        "Link": "/jobs/ResumeTemplate"
     },
     {
-        "id": "4",
-        "icon": "handshake",
+        "id": 4,
+        "Emoji": "🤝🏻",
         "MenuName": "Offers I've Recieved",
         "AllText": "TODO",
-        "link": "/jobs/OffersRecieved"
+        "Link": "/jobs/OffersRecieved"
     },
     {
-        "id": "5",
-        "icon": "group",
+        "id": 5,
+        "Emoji": "💬",
         "MenuName": "Interview Tips",
         "AllText": "TODO",
-        "link": "/jobs/InterviewTips"
+        "Link": "/jobs/InterviewTips"
     },
     {
-        "id": "6",
-        "icon": "wysiwyg",
+        "id": 6,
+        "Emoji": "👨🏻‍💻",
         "MenuName": "Helpful Websites",
         "AllText": "TODO",
-        "link": "/jobs/HelpfulWebsites"
+        "Link": "/jobs/HelpfulWebsites"
     },
     {
-        "id": "7",
-        "icon": "lightbulb",
+        "id": 7,
+        "Emoji": "💡",
         "MenuName": "Job Tips",
         "AllText": "TODO",
-        "link": "/jobs/JobTips.vue"
+        "Link": "/jobs/JobTips.vue"
     },
     {
-        "id": "8",
-        "icon": "person_add",
+        "id": 8,
+        "Emoji": "🌐",
         "MenuName": "What Is LinkedIn?",
         "AllText": "TODO",
-        "link": "/linkedin/WhatIsLinkedin"
+        "Link": "/linkedin/WhatIsLinkedin"
     },
     {
-        "id": "9",
-        "icon": "account_circle",
+        "id": 9,
+        "Emoji": "🤳🏻",
         "MenuName": "Setup a Profile",
         "AllText": "TODO",
-        "link": "/linkedin/SetupProfile"
+        "Link": "/linkedin/SetupProfile"
     },
     {
-        "id": "10",
-        "icon": "notifications",
+        "id": 10,
+        "Emoji": "🔔",
         "MenuName": "Setup Job Alerts",
         "AllText": "TODO",
-        "link": "/linkedin/SetupJobAlerts"
+        "Link": "/linkedin/SetupJobAlerts"
     },
     {
-        "id": "11",
-        "icon": "psychology",
+        "id": 11,
+        "Emoji": "🧐",
         "MenuName": "LinkedIn Tips",
         "AllText": "TODO",
-        "link": "/linkedin/LinkedinTips"
+        "Link": "/linkedin/LinkedinTips"
     },
     {
-        "id": "12",
-        "icon": "thumb_up",
+        "id": 12,
+        "Emoji": "👍",
         "MenuName": "Class Recommendations",
         "AllText": "TODO",
-        "link": "/classes/ClassRecommendations"
+        "Link": "/classes/ClassRecommendations"
     },
     {
-        "id": "13",
-        "icon": "description",
+        "id": 13,
+        "Emoji": "📝",
         "MenuName": "CSC Descriptions",
         "AllText": "TODO",
-        "link": "/classes/CSCDescriptions"
+        "Link": "/classes/CSCDescriptions"
     },
     {
-        "id": "14",
-        "icon": "co_present",
+        "id": 14,
+        "Emoji": "👨🏻‍🏫",
         "MenuName": "Classes I've Taken",
         "AllText": "TODO",
-        "link": "/classes/ClassesIveTaken"
+        "Link": "/classes/ClassesIveTaken"
     },
     {
-        "id": "15",
-        "icon": "cancel",
+        "id": 15,
+        "Emoji": "❌",
         "MenuName": "Classes To Avoid",
         "AllText": "TODO",
-        "link": "/classes/ClassesToAvoid"
+        "Link": "/classes/ClassesToAvoid"
     },
     {
-        "id": "16",
-        "icon": "laptop_mac",
+        "id": 16,
+        "Emoji": "🎨",
         "MenuName": "Visual Studio Code",
         "AllText": "TODO",
-        "link": "/CompSci/VisualStudioCode"
+        "Link": "/CompSci/VisualStudioCode"
     },
     {
-        "id": "17",
-        "icon": "settings",
+        "id": 17,
+        "Emoji": "⚙️",
         "MenuName": "VSCode Settings",
         "AllText": "TODO",
-        "link": "/CompSci/VSCodeSettings"
+        "Link": "/CompSci/VSCodeSettings"
     },
     {
-        "id": "18",
-        "icon": "forward_media",
+        "id": 18,
+        "Emoji": "🚀",
         "MenuName": "VSCode Shorcuts",
         "AllText": "TODO",
-        "link": "/CompSci/VSCodeShortcuts"
+        "Link": "/CompSci/VSCodeShortcuts"
     },
     {
-        "id": "19",
-        "icon": "extension",
+        "id": 19,
+        "Emoji": "🧩",
         "MenuName": "Extensions",
         "AllText": "TODO",
-        "link": "/CompSci/VSCodeShortcuts"
+        "Link": "/CompSci/VSCodeShortcuts"
     },
     {
-        "id": "20",
-        "icon": "library_add_check",
+        "id": 20,
+        "Emoji": "📚",
         "MenuName": "Favorite Libraries",
         "AllText": "TODO",
-        "link": "/CompSci/FavoriteLibraries"
+        "Link": "/CompSci/FavoriteLibraries"
     },
     {
-        "id": "21",
-        "icon": "device_hub",
+        "id": 21,
+        "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "AllText": "TODO",
-        "link": "/CompSci/CompSciTips"
+        "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": "22",
-        "icon": "self_improvement",
+        "id": 22,
+        "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
-        "link": "/other/GeneralTips"
+        "Link": "/other/GeneralTips"
     },
     {
-        "id": "23",
-        "icon": "phone_iphone",
+        "id": 23,
+        "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
-        "link": "/other/AppsToDownload"
+        "Link": "/other/AppsToDownload"
     },
     {
-        "id": "24",
-        "icon": "favorite",
+        "id": 24,
+        "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
-        "link": "/other/CompSciStuff"
+        "Link": "/other/CompSciStuff"
     },
     {
-        "id": "25",
-        "icon": "terminal",
-        "MenuName": "Terminal Commands",
+        "id": 25,
+        "Emoji": "",
+        "MenuName": "⌨️",
         "AllText": "TODO",
-        "link": "/other/TerminalCommands"
+        "Link": "/other/TerminalCommands"
     },
     {
-        "id": "26",
-        "icon": "comedy_mask",
+        "id": 26,
+        "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
-        "link": "/other/Memes"
+        "Link": "/other/Memes"
     },
     {
-        "id": "27",
-        "icon": "mail",
+        "id": 27,
+        "Emoji": "✉️",
         "MenuName": "Contact",
         "AllText": "",
-        "link": "/ContactMe"
+        "Link": "/ContactMe"
     }
 
 ]

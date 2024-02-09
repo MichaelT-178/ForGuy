@@ -49,6 +49,7 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import router from '../router';
@@ -84,7 +85,7 @@ const handleMenuClick = (menuItem) => {
 };
 
 const closeSearchOnOutsideClick = (event) => {
-  if (!event.target.closest('.search-bar-container')) {
+  if (!event.target.closest('.top-menu')) {
     isSearchBarOpen.value = false;
   }
 };
@@ -97,6 +98,7 @@ onUnmounted(() => {
   window.removeEventListener('click', closeSearchOnOutsideClick);
 });
 </script>
+
 
 <style scoped>
 
@@ -198,9 +200,5 @@ a:hover {
 .material-icons:hover {
   color: #ffd483;
 }
+
 </style>
-
-
-
-<!-- yellow: #ffd483;
-light-teal: #009494; -->
