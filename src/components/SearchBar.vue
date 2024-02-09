@@ -1,23 +1,27 @@
 <template>
-  <div class="search-bar-container">
-    <div class="input-icon-container"> <!-- Add this container for input and icon -->
-      <span class="material-icons">
-        search
-      </span>
-      <input type="text" v-model="searchQuery" placeholder="Search term appears in..." :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}">
-    </div>
-    <div v-if="filteredResults.length" class="results">
-      <router-link v-for="(result, index) in filteredResults" :key="index" :to="result.link" class="result-item" @click="closeSearchBar">
-        {{ result.MenuName }}
-      </router-link>
+  <div>
+    <div class="search-bar-container">
+      <div class="input-icon-container">
+        <span class="material-icons">
+          search
+        </span>
+        <input type="text" v-model="searchQuery" placeholder="Search term appears in..." :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}">
+      </div>
+      <div v-if="filteredResults.length" class="results">
+        <router-link v-for="(result, index) in filteredResults" :key="index" :to="result.Link" class="result-item" @click="closeSearchBar">
+          <span class="emoji"> {{ result.Emoji }} </span>
+          {{ result.MenuName }}
+        </router-link>
+      </div>
     </div>
   </div>
+  
 </template>
 
 
 <script setup>
 import { ref, watch, defineEmits } from 'vue';
-import SearchData from '../data/SearchData.json'; // Import your JSON data here
+import SearchData from '../data/SearchData.json'; 
 
 const searchQuery = ref('');
 const filteredResults = ref([]);
@@ -51,7 +55,7 @@ watch(searchQuery, filterResults);
   width: 80%;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .input-icon-container {
@@ -81,12 +85,18 @@ watch(searchQuery, filterResults);
 .results {
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: 100.1%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 100;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 20px 20px;
   overflow: hidden;
+  background-color: #00C0C0;
+}
+
+.emoji {
+  font-size: 20px;
+  margin-right: 4.85px;
 }
 
 .result-item {
@@ -95,20 +105,21 @@ watch(searchQuery, filterResults);
   color: black;
   text-decoration: none;
   text-align: left;
+  line-height: 1; 
 }
 
 .result-item:hover {
-  background-color: #f0f0f0;
+  background-color: #ffd483;
   color: #333;
   border-radius: 4px;
 }
 
 .rounded-top {
-  border-radius: 8px 8px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .rounded-all {
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 </style>
