@@ -2,7 +2,7 @@
     <div>
       <header>
         <div class="top-menu" @mouseover="showMenu = true" @mouseout="hideMenu">
-          <div class="menu-items" v-show="!isSearchBarOpen">  
+          <div class="menu-items">  
             <div
               class="menu-item"
               v-for="(menuItem, index) in menuItems"
@@ -15,7 +15,7 @@
               @click="handleMenuClick(menuItem)"
             >
               <span>{{ menuItem.text }}
-                <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, width: menuItem.subMenu ? 1 : 0}">
+                <i class="material-icons" :style="{ opacity: menuItem.subMenu ? 1 : 0, width: menuItem.subMenu ? 1 : 0 }">
                   {{ activeSubMenuIndex === index && hoveredOver && menuItem.subMenu ? 'expand_less' : 'expand_more' }}
                 </i>
               </span>
@@ -36,66 +36,50 @@
                 </ul>
               </div>
             </div>
-              <span v-if="!isSearchBarOpen"
-                class="material-icons" 
-                @click="toggleSearchBar" 
-                style="flex-shrink: 0; margin-top: 3.2px">
-                search
-              </span>
-            </div>
-          <SearchBar v-if="isSearchBarOpen" @close-search="isSearchBarOpen = false"></SearchBar>
+            <span 
+              class="material-icons" 
+              @click="isSearchBox = true" 
+              style="flex-shrink: 0; margin-top: 3.2px">
+              search
+            </span>
+          </div>
+          <SearchBox v-model:isOpen="isSearchBox">
+          </SearchBox>
         </div>
       </header>
     </div>
 </template>
-
+  
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 import router from '../router';
-import SearchBar from './SearchBar.vue';
+import SearchBox from './SearchBox.vue';
 import { menuItems } from './MenuItems.vue';
 
 const showMenu = ref(false);
 const activeSubMenuIndex = ref(null);
 const hoveredOver = ref(false);
-const isSearchBarOpen = ref(false);
 
+const isSearchBox = ref(false);
+  
 const showSubMenu = (index) => {
   activeSubMenuIndex.value = index;
-};
+}
 
 const hideSubMenu = () => {
   activeSubMenuIndex.value = null;
-};
+}
 
 const hideMenu = () => {
   showMenu.value = false;
-};
-
-const toggleSearchBar = (event) => {
-  isSearchBarOpen.value = !isSearchBarOpen.value;
-  event.stopPropagation();
-};
+}
 
 const handleMenuClick = (menuItem) => {
   if (menuItem.route) {
     router.push(menuItem.route);
   }
-};
+}
 
-const closeSearchOnOutsideClick = (event) => {
-  if (!event.target.closest('.search-bar-container')) {
-    isSearchBarOpen.value = false;
-  }
-};
-
-onMounted(() => {
-  window.addEventListener('click', closeSearchOnOutsideClick);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('click', closeSearchOnOutsideClick);
-});
 </script>
 
 <style scoped>
@@ -104,7 +88,6 @@ onUnmounted(() => {
   background-color: teal;
   color: #fff;
   padding: 10px 0;
-  min-height:40px;
 }
 
 .menu-items {
