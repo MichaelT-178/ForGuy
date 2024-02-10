@@ -111,7 +111,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: calc(100% - 40px);
-  background-color: rgba(0, 0, 0, 0.065);
+  background-color: rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
 
