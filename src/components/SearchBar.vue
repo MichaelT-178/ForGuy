@@ -5,17 +5,30 @@
         <span class="material-icons">
           search
         </span>
-        <input type="text" v-model="searchQuery" placeholder="Search term appears in..." :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}">
+        <!-- Search bar -->
+        <input type="text" 
+               v-model="searchQuery" 
+               placeholder="Search term appears in..." 
+               :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}"
+        >
+        <span class="material-icons" id="close-icon" @click="closeSearchBar">close</span>
       </div>
+
+      <!-- Search Results -->
       <div v-if="filteredResults.length" class="results">
-        <router-link v-for="(result, index) in filteredResults" :key="index" :to="result.Link" class="result-item" @click="closeSearchBar">
+        <router-link 
+          v-for="(result, index) in filteredResults" 
+          :key="index" 
+          :to="result.Link" 
+          class="result-item" 
+          @click="closeSearchBar"
+        >
           <span class="emoji"> {{ result.Emoji }} </span>
           {{ result.MenuName }}
         </router-link>
       </div>
     </div>
   </div>
-  
 </template>
 
 
@@ -55,7 +68,7 @@ watch(searchQuery, filterResults);
   width: 80%;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 20px;
+  border-radius: 19px;
 }
 
 .input-icon-container {
@@ -89,13 +102,13 @@ watch(searchQuery, filterResults);
   background-color: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 100;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 19px 19px;
   overflow: hidden;
   background-color: #00C0C0;
 }
 
 .emoji {
-  font-size: 20px;
+  font-size: 19px;
   margin-right: 4.85px;
 }
 
@@ -115,11 +128,25 @@ watch(searchQuery, filterResults);
 }
 
 .rounded-top {
-  border-radius: 20px 20px 0 0;
+  border-radius: 19px 19px 0 0;
 }
 
 .rounded-all {
-  border-radius: 20px;
+  border-radius: 19px;
+}
+
+#close-icon {
+  position: absolute;
+  cursor: pointer; 
+  pointer-events: auto; 
+  right: 4.75px; 
+  color: #757575; 
+  padding: 10px;
+  font-size: 23.5px;
+}
+
+#close-icon:hover {
+  color: #B91212;
 }
 
 </style>
