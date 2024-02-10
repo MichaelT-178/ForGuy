@@ -93,7 +93,7 @@ watch(searchQuery, filterResults);
   padding-left: 48px;
   font-size: 16px;
   border: none;
-  background-color: #F3F3F3;
+  background-color: #F9F9F9;
 }
 
 .results {
