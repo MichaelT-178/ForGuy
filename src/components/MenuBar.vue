@@ -85,7 +85,7 @@ const handleMenuClick = (menuItem) => {
 };
 
 const closeSearchOnOutsideClick = (event) => {
-  if (!event.target.closest('.search-bar-container')) {
+  if (!event.target.closest('.top-menu')) {
     isSearchBarOpen.value = false;
   }
 };
