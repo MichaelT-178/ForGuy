@@ -107,11 +107,11 @@ onUnmounted(() => {
 
 .overlay {
   position: fixed;
-  top: 68.53px;
+  top: 68.24px;
   left: 0;
   width: 100%;
   height: calc(100% - 40px);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: 1;
 }
 
