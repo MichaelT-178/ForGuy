@@ -126,6 +126,7 @@ watch(searchQuery, filterResults);
   background-color: #ffd483;
   color: #333;
   border-radius: 4px;
+  /* border-left: 3px solid darkblue; */
 }
 
 .rounded-top {
