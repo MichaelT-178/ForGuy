@@ -1,68 +1,87 @@
 <template>
-    <div class="contact-form">
-      <h1>Contact Me</h1>
-      <p class="intro-text">Feel free to message me and I'll try to reply as soon as possible!</p>
-  
-      <div class="form-group">
-        <label for="name" class="form-label">Your Name*</label>
-        <input type="text" id="name" name="name" v-model="userName" placeholder="Enter your name" />
-      </div>
-  
-      <div class="form-group">
-        <label for="email" class="form-label">Your Email*</label>
-        <input type="email" id="email" name="email" v-model="userEmail" placeholder="Enter your email" />
-      </div>
-  
-      <div class="form-group">
-        <label for="message" class="form-label">Message*</label>
-        <textarea id="message" name="message" v-model="userMessage" class="square-text-area" placeholder="Enter your message"></textarea>
-      </div>
+  <div class="contact-form">
+    <h1>Contact Me</h1>
+    <p class="intro-text">Feel free to message me and I'll try to reply as soon as possible!</p>
 
-      <button 
+    <div class="form-group">
+      <label for="name" class="form-label">Your Name*</label>
+      <input autocomplete="off" type="text" id="name" name="name" v-model="userName" placeholder="Enter your name"/>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="form-label">Your Email*</label>
+      <input type="email" id="email" name="email" v-model="userEmail" placeholder="Enter your email" />
+    </div>
+
+    <div class="form-group">
+      <label for="message" class="form-label">Message*</label>
+      <textarea id="message" name="message" v-model="userMessage" class="square-text-area" placeholder="Enter your message"></textarea>
+    </div>
+
+    <button 
   type="submit" 
   class="send-email-btn" 
   @click="submitForm" 
   :disabled="!isFormValid"
-  :class="{
-    'valid': isFormValid && !isButtonClicked,
-    'clicked': isButtonClicked,
-    'default': !isFormValid && !isButtonClicked
-  }"
-> 
-Submit
+  :class="{'valid': isFormValid && !isButtonClicked, 'clicked': isButtonClicked, 'default': !isFormValid && !isButtonClicked}">
+  {{ buttonText }}
 </button>
+  </div>
+</template>
 
+<script setup>
+import { ref, computed } from 'vue';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
-    </div>
-  </template>
-  
-  
-  <script setup>
-  import { ref, computed } from 'vue';
-  
-  const userName = ref('');
-  const userEmail = ref('');
-  const userMessage = ref('');
+const userName = ref('');
+const userEmail = ref('');
+const userMessage = ref('');
+const isButtonClicked = ref(false);
+const buttonText = ref('Submit'); // Button text management
 
-  const isButtonClicked = ref(false);
+// Initialize EmailJS with your user ID
+emailjs.init('bCe2UFI1L7SfXITtA');
+
+const isFormValid = computed(() => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return userName.value.trim() !== '' &&
+         userEmail.value.match(emailRegex) &&
+         userMessage.value.trim() !== '';
+});
 
 const submitForm = () => {
-  isButtonClicked.value = true; // Update the click state
-  console.log({ userName: userName.value, userEmail: userEmail.value, userMessage: userMessage.value });
-  // Reset the click state after a delay if needed
-  setTimeout(() => isButtonClicked.value = false, 500); // Optional: Reset after 2 seconds
+  if (!isFormValid.value) return;
+
+  isButtonClicked.value = true;
+  buttonText.value = 'Sending...'; // Change button text to "Sending..."
+
+  const templateParams = {
+    from_name: userName.value,
+    from_email: userEmail.value,
+    message: userMessage.value,
+  };
+
+  const serviceID = 'default_service';
+  const templateID = 'template_ngfg5ko';
+
+  emailjs.send(serviceID, templateID, templateParams)
+    .then((response) => {
+      Swal.fire('Success!', 'Your message has been sent successfully.', 'success');
+      userName.value = '';
+      userEmail.value = '';
+      userMessage.value = '';
+    }, (err) => {
+      Swal.fire('Error!', 'Something went wrong with your message.', 'error');
+      console.error('Failed to send email:', err);
+    })
+    .finally(() => {
+      isButtonClicked.value = false;
+      buttonText.value = 'Submit'; // Reset button text to "Submit"
+    });
 };
+</script>
 
-
-  // Computed property to disable/enable the submit button
-  const isFormValid = computed(() => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic regex for email validation
-    return userName.value.trim() !== '' &&
-           userEmail.value.match(emailRegex) &&
-           userMessage.value.trim() !== '';
-  });
-  </script>
-  
 
   <style scoped>
   .contact-form {
