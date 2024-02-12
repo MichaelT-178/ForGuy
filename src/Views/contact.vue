@@ -33,6 +33,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref, computed } from 'vue';
 import emailjs from 'emailjs-com';
@@ -70,7 +71,7 @@ const submitForm = () => {
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {
-      Swal.fire('Success!', 'Your message has been sent successfully.', 'success');
+      Swal.fire('Success!', 'Your message has been sent successfully!', 'success');
       userName.value = '';
       userEmail.value = '';
       userMessage.value = '';
@@ -88,6 +89,7 @@ const submitForm = () => {
 };
 
 </script>
+
 
 <style scoped>
 
