@@ -140,6 +140,7 @@ input[type="email"]::placeholder,
   border: none;
   padding: 10px;
   margin-top: 5px;
+  font-size: 16.5px;
 }
   
 /* Disabled button */
