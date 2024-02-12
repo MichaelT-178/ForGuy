@@ -57,7 +57,7 @@ const downloadJson = () => {
 </script>
 
 
-<style>
+<style scoped>
 
 .header, .description {
   margin: 0 auto; 
