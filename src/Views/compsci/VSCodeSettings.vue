@@ -1,6 +1,9 @@
 <template>
   <div>
+    <h1 class="header">My Visual Studio Code Settings</h1>
+    <p class="description">This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.</p>
     <div class="bar">
+      <span class="settings-header">Settings</span>
       <button @click="downloadJson" ref="downloadButton">Download JSON</button>
       <button @click="copyJson" ref="copyButton">Copy JSON</button>
     </div>
@@ -42,13 +45,36 @@ const downloadJson = () => {
   URL.revokeObjectURL(link.href);
     
   downloadButton.value.innerText = 'Downloaded!';
-  setTimeout(() => downloadButton.value.innerText = "Download JSON", 2000); 
+  downloadButton.style.color = 'green';
+
+
+  setTimeout(() => {
+    downloadButton.value.innerText = "Download JSON";
+    downloadButton.style.color = 'white';
+  }, 2000); 
 }
 
 </script>
 
 
 <style>
+
+.header, .description {
+  margin: 0 auto; 
+  max-width: 80%; 
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 15px;
+  padding-left: 1px; 
+}
+
+.description {
+  font-size: 18.5px;
+  padding-left: 2px; 
+  margin-top: 6.3px;
+}
 
 .bar {
   background-color: gray;
@@ -61,6 +87,15 @@ const downloadJson = () => {
   box-sizing: border-box; 
 }
   
+.settings-header {
+  flex-grow: 1;
+  font-size: 34px;
+  color: #D5D5D5;
+  margin-left: 10px;
+  font-weight: 525;
+}
+
+
 .json-container {
   margin: 0 auto; 
   max-width: 80%; 
@@ -68,16 +103,17 @@ const downloadJson = () => {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #CDB100;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 18px;
+  font-size: 14.5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #AF9800;
 }
 
 pre {

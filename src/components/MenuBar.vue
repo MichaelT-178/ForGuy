@@ -107,7 +107,7 @@ onUnmounted(() => {
 
 .overlay {
   position: fixed;
-  top: 68.24px;
+  top: 60.24px;
   left: 0;
   width: 100%;
   height: calc(100% - 40px);
