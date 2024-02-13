@@ -1,15 +1,18 @@
 <template>
-  <main class="about-page">
-      <h1>Resume Template</h1>
-      <p>This is the Resume Template page</p>
-      <button @click="downloadResumeDocx">Download DOCX</button>
-      <span>{{ currentPage }}/{{ totalPageCount }}</span>
-      <div class="pdf-page-container" @scroll="updateCurrentPage">
-          <img v-for="(pageUrl, index) in pdfPageUrls" :src="pageUrl" :key="`page-${index}`" alt="PDF Page" class="pdf-page-image"/>
+  <div class="center-container">
+    <div class="content-container">
+      <h1 class="header">Resume Template</h1>
+      <p class="description">This is the resume template I use. The information is inaccurate and needs to be changed.</p>
+      <div class="info-bar">
+        <span class="page-number">{{ currentPage }}/{{ numOfPages }}</span>
+        <button @click="downloadResumeDocx">Download DOCX</button>
       </div>
-  </main>
+      <div class="pdf-page-container" @scroll="updateCurrentPage">
+        <img v-for="(pic, index) in resumePics" :src="pic" :key="`page-${index}`" alt="PDF Page" class="pdf-page-image"/>
+      </div>
+    </div>
+  </div>
 </template>
-
 
 
 <script setup>
@@ -17,11 +20,12 @@ import { ref } from 'vue';
 import ResumePic1 from "../../data/jobs/ElijahResume/ElijahResume1.png";
 import ResumePic2 from "../../data/jobs/ElijahResume/ElijahResume2.png";
 
-const pdfPageUrls = ref([ResumePic1, ResumePic2]);
+const resumePics = ref([ResumePic1, ResumePic2]);
 const currentPage = ref(1);
-const totalPageCount = pdfPageUrls.value.length;
+const numOfPages = 2;
 
 function downloadResumeDocx() {
+  //Can't use local path for security reasons 
   const docxUrl = 'https://michaelt-178.github.io/TestWebsite/Practice.docx';
   const link = document.createElement('a');
   link.href = docxUrl;
@@ -33,27 +37,85 @@ function downloadResumeDocx() {
 function updateCurrentPage(event) {
   const container = event.target;
   const scrollPosition = container.scrollTop + container.offsetHeight;
-  const pageHeight = container.scrollHeight / totalPageCount;
-  currentPage.value = Math.min(totalPageCount, Math.round(scrollPosition / pageHeight));
+  const pageHeight = container.scrollHeight / numOfPages;
+  currentPage.value = Math.min(numOfPages, Math.round(scrollPosition / pageHeight));
 }
 </script>
 
 
-
 <style scoped>
-.pdf-page-container {
-  max-height: 900px; /* Adjust based on your needs */
-  overflow-y: auto; /* Enables vertical scrolling */
-  border: 2px solid #000000;
-  width: 700px; /* Adjust width as needed */
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+}
+
+.header, .description {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   margin-top: 20px;
-  margin-bottom: 200px;
-  
+}
+
+.description {
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.pdf-page-container {
+  width: 700px;
+  max-height: 800px;
+  overflow-y: auto;
+  border: 1.5px solid #000000;
+  margin-bottom: 0;
 }
 
 .pdf-page-image {
-  width: 100%; /* Images fill the container width */
-  display: block; /* Ensures images are laid out without extra space */
-  border-bottom: 1px solid black; /* Adds a thin black line between images */
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid black;
 }
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  width: 703.5px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.page-number {
+  font-size: 22px;
+  color: #D5D5D5;
+  font-weight: 525;
+}
+
+button {
+  background-color: #CDB100;
+  color: white;
+  padding: 8px 18px;
+  font-size: 14.5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #AF9800;
+}
+
 </style>
