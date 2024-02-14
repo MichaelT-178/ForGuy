@@ -169,20 +169,27 @@
     },
     {
         "id": 25,
-        "Emoji": "",
-        "MenuName": "⌨️",
+        "Emoji": "⌨️",
+        "MenuName": "Terminal Commands",
         "AllText": "TODO",
         "Link": "/other/TerminalCommands"
     },
     {
         "id": 26,
+        "Emoji": "⚡️",
+        "MenuName": "Keyboard Shortcuts",
+        "AllText": "TODO",
+        "Link": "/other/KeyboardShortcuts"
+    },
+    {
+        "id": 27,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
         "Link": "/other/Memes"
     },
     {
-        "id": 27,
+        "id": 28,
         "Emoji": "✉️",
         "MenuName": "Contact",
         "AllText": "",

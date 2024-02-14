@@ -71,7 +71,7 @@ const submitForm = () => {
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {
-      Swal.fire('Success!', 'Your message has been sent successfully!', 'success');
+      Swal.fire('Sent!', 'Your message has been sent successfully!', 'success');
       userName.value = '';
       userEmail.value = '';
       userMessage.value = '';
