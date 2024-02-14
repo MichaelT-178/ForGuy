@@ -35,6 +35,7 @@ import GeneralTips from '../views/other/GeneralTips.vue';
 import AppsToDownload from '../views/other/AppsToDownload.vue';
 import CsStuffILike from '../views/other/CsStuffILike.vue';
 import TerminalCommands from '../views/other/TerminalCommands.vue';
+import KeyboardShortcuts from '../views/other/KeyboardShortcuts.vue';
 import Memes from '../views/other/Memes.vue';
 
 //Contact
@@ -142,6 +143,10 @@ const router = createRouter({
         {
             path: '/other/TerminalCommands',
             component: TerminalCommands
+        },
+        {
+            path: '/other/KeyboardShortcuts',
+            component: KeyboardShortcuts
         },
         {
             path: '/other/Memes',

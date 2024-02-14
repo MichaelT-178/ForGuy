@@ -48,11 +48,12 @@ export const menuItems = [
     {
         text: "Other",
         subMenu: [
-            { text: "General Tips",       icon: "self_improvement",  link: "/other/GeneralTips" },
-            { text: "Apps To Download",   icon: "phone_iphone",      link: "/other/AppsToDownload" },
-            { text: "CS Stuff I Like",    icon: "favorite",          link: "/other/CompSciStuff" },
-            { text: "Terminal Commands",  icon: "terminal",          link: "/other/TerminalCommands" },
-            { text: "Memes",              icon: "comedy_mask",       link: "/other/Memes" }
+            { text: "General Tips",        icon: "self_improvement",  link: "/other/GeneralTips" },
+            { text: "Apps To Download",    icon: "phone_iphone",      link: "/other/AppsToDownload" },
+            { text: "CS Stuff I Like",     icon: "favorite",          link: "/other/CompSciStuff" },
+            { text: "Terminal Commands",   icon: "terminal",          link: "/other/TerminalCommands" },
+            { text: "Keyboard Shortcuts",  icon: "bolt",     link: "/other/KeyboardShortcuts" },
+            { text: "Memes",               icon: "comedy_mask",       link: "/other/Memes" }
         ]
     },
     {
