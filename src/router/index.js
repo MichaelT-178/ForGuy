@@ -6,16 +6,17 @@ import Home from '../views/Home.vue';
 //Jobs 
 import WhereToApply from '../views/jobs/WhereToApply.vue';
 import ResumeTemplate from '../views/jobs/ResumeTemplate.vue';
+import HowToGetAJob from '../views/jobs/HowToGetAJob.vue'
 import OffersRecieved from '../views/jobs/OffersRecieved.vue';
 import InterviewTips from '../views/jobs/InterviewTips.vue';
 import HelpfulWebsites from '../views/jobs/HelpfulWebsites.vue';
-import JobTips from '../views/jobs/JobTips.vue'
 
 //Linkedin 
 import WhatIsLinkedin from '../views/linkedin/WhatIsLinkedin.vue';
 import SetupProfile from '../views/linkedin/SetupProfile.vue';
 import SetupJobAlerts from '../views/linkedin/SetupJobAlerts.vue';
 import LinkedinTips from '../views/linkedin/LinkedinTips.vue';
+import CareerPathAdvice from '../views/linkedin/CareerPathAdvice.vue';
 
 //Classes 
 import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
@@ -27,7 +28,8 @@ import ClassesToAvoid from '../views/classes/ClassesToAvoid.vue';
 import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
 import VSCodeSettings from '../views/compsci/VSCodeSettings.vue';
 import VSCodeShortcuts from '../views/compsci/VSCodeShortcuts.vue';
-import FavoriteLibraries from '../views/compsci/FavoriteLibraries.vue';
+import Extensions from '../views/compsci/Extensions.vue';
+import UIDesignTips from '../views/compsci/UIDesignTips.vue';
 import CompSciTips from '../views/compsci/CompSciTips.vue';
 
 //Other 
@@ -73,8 +75,8 @@ const router = createRouter({
             component: HelpfulWebsites
         },
         {
-            path: '/jobs/JobTips.vue',
-            component: JobTips
+            path: '/jobs/HowToGetAJob.vue',
+            component: HowToGetAJob
         },
         {
             path: '/linkedin/WhatIsLinkedin',
@@ -91,6 +93,10 @@ const router = createRouter({
         {
             path: '/linkedin/LinkedinTips',
             component: LinkedinTips
+        },
+        {
+            path: '/linkedin/CareerPathAdvice',
+            component: CareerPathAdvice
         },
         {
             path: '/classes/ClassRecommendations',
@@ -121,8 +127,12 @@ const router = createRouter({
             component: VSCodeShortcuts
         },
         {
-            path: '/CompSci/FavoriteLibraries',
-            component: FavoriteLibraries
+            path: '/CompSci/UIDesignTips',
+            component: UIDesignTips
+        },
+        {
+            path: '/CompSci/Extensions',
+            component: Extensions
         },
         {
             path: '/CompSci/CompSciTips',
