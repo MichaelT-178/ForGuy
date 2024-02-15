@@ -175,6 +175,10 @@ h1 {
   margin-bottom: 16px;
 }
 
+#name, #email, #message {
+  font-size: 15.25px;
+}
+
 </style>
   
   
