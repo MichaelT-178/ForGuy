@@ -22,31 +22,31 @@
     },
     {
         "id": 4,
+        "Emoji": "💡",
+        "MenuName": "How To Get a Job",
+        "AllText": "TODO",
+        "Link": "/jobs/HowToGetAJob.vue"
+    },
+    {
+        "id": 5,
         "Emoji": "🤝🏻",
         "MenuName": "Offers I've Recieved",
         "AllText": "TODO",
         "Link": "/jobs/OffersRecieved"
     },
     {
-        "id": 5,
+        "id": 6,
         "Emoji": "💬",
         "MenuName": "Interview Tips",
         "AllText": "TODO",
         "Link": "/jobs/InterviewTips"
     },
     {
-        "id": 6,
+        "id": 7,
         "Emoji": "👨🏻‍💻",
         "MenuName": "Helpful Websites",
         "AllText": "TODO",
         "Link": "/jobs/HelpfulWebsites"
-    },
-    {
-        "id": 7,
-        "Emoji": "💡",
-        "MenuName": "Job Tips",
-        "AllText": "TODO",
-        "Link": "/jobs/JobTips.vue"
     },
     {
         "id": 8,
@@ -78,122 +78,128 @@
     },
     {
         "id": 12,
+        "Emoji": "🧭",
+        "MenuName": "Career Path Advice",
+        "AllText": "TODO",
+        "Link": "/linkedin/CareerPathAdvice"
+    },
+    {
+        "id": 13,
         "Emoji": "👍",
         "MenuName": "Class Recommendations",
         "AllText": "TODO",
         "Link": "/classes/ClassRecommendations"
     },
     {
-        "id": 13,
+        "id": 14,
         "Emoji": "📝",
         "MenuName": "CSC Descriptions",
         "AllText": "TODO",
         "Link": "/classes/CSCDescriptions"
     },
     {
-        "id": 14,
+        "id": 15,
         "Emoji": "👨🏻‍🏫",
         "MenuName": "Classes I've Taken",
         "AllText": "TODO",
         "Link": "/classes/ClassesIveTaken"
     },
     {
-        "id": 15,
+        "id": 16,
         "Emoji": "❌",
         "MenuName": "Classes To Avoid",
         "AllText": "TODO",
         "Link": "/classes/ClassesToAvoid"
     },
     {
-        "id": 16,
+        "id": 17,
         "Emoji": "🎨",
         "MenuName": "Visual Studio Code",
         "AllText": "TODO",
         "Link": "/CompSci/VisualStudioCode"
     },
     {
-        "id": 17,
+        "id": 18,
         "Emoji": "⚙️",
         "MenuName": "VSCode Settings",
         "AllText": "TODO",
         "Link": "/CompSci/VSCodeSettings"
     },
     {
-        "id": 18,
+        "id": 19,
         "Emoji": "🚀",
         "MenuName": "VSCode Shorcuts",
         "AllText": "TODO",
         "Link": "/CompSci/VSCodeShortcuts"
     },
     {
-        "id": 19,
-        "Emoji": "🧩",
-        "MenuName": "Extensions",
-        "AllText": "TODO",
-        "Link": "/CompSci/VSCodeShortcuts"
-    },
-    {
         "id": 20,
-        "Emoji": "📚",
-        "MenuName": "Favorite Libraries",
+        "Emoji": "🖼️",
+        "MenuName": "UI/UX Design Tips",
         "AllText": "TODO",
-        "Link": "/CompSci/FavoriteLibraries"
+        "Link": "/CompSci/UIDesignTips"
     },
     {
         "id": 21,
+        "Emoji": "🧩",
+        "MenuName": "VSCode Extensions",
+        "AllText": "TODO",
+        "Link": "/CompSci/Extensions"
+    },
+    {
+        "id": 22,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "AllText": "TODO",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 22,
+        "id": 23,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
         "Link": "/other/GeneralTips"
     },
     {
-        "id": 23,
+        "id": 24,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
         "Link": "/other/AppsToDownload"
     },
     {
-        "id": 24,
+        "id": 25,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
         "Link": "/other/CompSciStuff"
     },
     {
-        "id": 25,
+        "id": 26,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "AllText": "TODO",
         "Link": "/other/TerminalCommands"
     },
     {
-        "id": 26,
+        "id": 27,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "AllText": "TODO",
         "Link": "/other/KeyboardShortcuts"
     },
     {
-        "id": 27,
+        "id": 28,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
         "Link": "/other/Memes"
     },
     {
-        "id": 28,
+        "id": 29,
         "Emoji": "✉️",
         "MenuName": "Contact",
         "AllText": "",
         "Link": "/ContactMe"
     }
-
 ]
