@@ -1,7 +1,7 @@
 <template>
   <div class="accordion-menu">
     <div class="accordion-title" @click="toggleAccordion">
-        <h2>{{ item.DisplayTitle }}</h2>
+        <h2>{{ item.Name }}</h2>
         <span v-if="!isOpen"><span class="material-icons" id="open">add_circle</span></span>
         <span v-else><span class="material-icons" id="close">cancel</span></span>
     </div>
@@ -35,7 +35,7 @@ const toggleAccordion = () => {
 }
 
 const shouldDisplay = (key) => {
-  const excludedKeys = ['DisplayTitle'];
+  const excludedKeys = ['Name'];
   return !excludedKeys.includes(key);
 }
 
