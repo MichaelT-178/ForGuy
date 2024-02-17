@@ -3,19 +3,24 @@
     <h1 class="header">My Visual Studio Code Settings</h1>
     <p class="description">This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.</p>
     <div class="bar">
-      <span class="settings-header">Settings</span>
+      <span class="settings-header">Settings.json</span>
       <button @click="downloadJson" ref="downloadButton">Download JSON</button>
       <button @click="copyJson" ref="copyButton">Copy JSON</button>
     </div>
     <div class="json-container">
-      <pre>{{ settings }}</pre>
+      <pre v-html="highlightedJson"></pre>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { settings } from '../../data/CompSci/settings.vue';
+import { ref, computed } from 'vue';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-json';
+import 'prismjs/themes/prism-coy.css';
+import './custom.css';
+import { settings } from '../../../data/CompSci/settings.vue';
+//import 'prismjs/themes/prism-solarizedlight.css';
 
 const copyButton = ref(null);
 const downloadButton = ref(null);
@@ -53,6 +58,10 @@ const downloadJson = () => {
     downloadButton.style.color = 'white';
   }, 2000); 
 }
+
+const highlightedJson = computed(() => {
+  return Prism.highlight(settings, Prism.languages.json, 'json');
+});
 
 </script>
 
@@ -117,13 +126,11 @@ button:hover {
 }
 
 pre {
-  background-color: #f4f4f4;
+  background-color: #282C34;
   padding: 10px;
-  border-radius: 5px;
   margin-top: 0; 
   box-sizing: border-box; 
-  color: darkblue;
+  border: 1.25px solid #000000;
 }
 
 </style>
-  
