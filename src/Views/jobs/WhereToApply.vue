@@ -11,7 +11,7 @@
             <p class="companies-found" v-if="searchQuery.length != 0">Found {{ filteredCompanies.length }} companies in "{{ searchQuery }}"</p>
             <p style="margin-bottom: 20px;" v-else></p>
         </div>
-        <div v-for="company in filteredCompanies" :key="company.DisplayTitle">
+        <div v-for="company in filteredCompanies" :key="company.Name">
             <AccordionMenu :item="company" :isOpen="allOpen"/>
         </div>
         <p style="margin-bottom: 60px;"></p>

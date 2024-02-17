@@ -17,8 +17,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import ResumePic1 from "../../data/jobs/ElijahResume/ElijahResume1.png";
-import ResumePic2 from "../../data/jobs/ElijahResume/ElijahResume2.png";
+import ResumePic1 from "../../assets/ElijahResume/ElijahResume1.png";
+import ResumePic2 from "../../assets/ElijahResume/ElijahResume2.png";
 
 const resumePics = ref([ResumePic1, ResumePic2]);
 const currentPage = ref(1);
