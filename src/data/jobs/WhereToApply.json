@@ -3,1100 +3,1163 @@
     "Description": "COOL",
     "Companies": [
         {
-            "DisplayTitle": "USAA",
+            "Name": "USAA",
             "Location": "Plano, Texas or San Antonio, Texas",
             "LinkedIn": "https://www.linkedin.com/company/usaa/jobs/",
             "Handshake": "https://uncw.joinhandshake.com/stu/employers/18568#jobs",
             "Contact": "",
             "Tips": "The official name of this SWE position is \"IT Intern\". Set up notifications via handshake for USAA if you're interested. I think the San Antonio summer application comes out in early-mid September. The Plano one comes out in early-mid October. Apply as soon as the application comes out and I think your chances of getting the job will be pretty high. I could help you through the interview process and if you did your internship in Plano I could Help you with housing. You could also set job alerts using this link -> https://www.usaajobs.com/. Go to the bottom section of the page titled \"Join our talent community\" and enter your information to subscribe to their job alert mailing list. Also the return offer rate for full-time positions at USAA is VERY high (~85%) so keep that in mind through the process. This is a very fun, easy, low-stress internship with lots of great learning and networking opportunities. You'll meet a lot of other college kids in the same boat as you, which I think is good.",
-            "Pay": "$25.75 per hour",
-            "Color": "#002783"
+            "Pay": "$25.75 per hour"
         },
         {
-            "DisplayTitle": "Pearson",
+            "Name": "Pearson",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/pearson/jobs/",
             "Contact": "",
             "Tips": "Usually Pearson appears at the UNCW Career fair, so apply there or beforehand online. Also it took around month after my interview to hear back so be patient.",
-            "Pay": "$30.00 an hour",
-            "Color": "#1595A9"
+            "Pay": "$30.00 an hour"
         },
         {
-            "DisplayTitle": "H&R Block",
+            "Name": "Datacor, Inc.",
+            "Location": "Florham Park, New Jersey",
+            "LinkedIn": "https://www.linkedin.com/company/datacorinc/jobs/",
+            "Contact": "I know a guy. Email me if interested using the Contact Tab.",
+            "Tips": "This is a remote position.",
+            "Pay": ""
+        },
+        {
+            "Name": "H&R Block",
             "Location": "Kansas City, Missouri",
             "LinkedIn": "https://www.linkedin.com/company/h&r-block/jobs/",
             "Handshake": "https://uncw.joinhandshake.com/stu/employers/43193",
             "Contact": "",
             "Tips": "I got this job through handshake, so set alerts there if you're interested.",
-            "Pay": "",
-            "Color": "#23B62D"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "National Security Agency",
+            "Name": "National Security Agency",
             "Location": "Fort G. Meade, Maryland",
             "LinkedIn": "https://www.linkedin.com/company/national-security-agency/jobs/",
             "Contact": "",
             "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months. Also I took like 3 months after I did the video interview to hear back and get an offer, so be patient.",
-            "Pay": "The full-time SWE position offer I recieved paid $81,233 a year.",
-            "Color": "#140076"
+            "Pay": "The full-time SWE position offer I recieved paid $81,233 a year."
         },
         {
-            "DisplayTitle": "Department Of Defense",
+            "Name": "Department Of Defense",
             "Location": "Washington DC - Baltimore Area",
             "LinkedIn": "https://www.linkedin.com/company/deptofdefense/jobs/",
             "Contact": "",
             "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months",
-            "Pay": "",
-            "Color": "#CAA428"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Department Of State",
+            "Name": "Department Of State",
             "Location": "Washington DC - Baltimore Area",
             "LinkedIn": "https://www.linkedin.com/company/doscareers/jobs/",
             "Contact": "",
             "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months",
-            "Pay": "",
-            "Color": "#CAA428"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "nCino, Inc.",
+            "Name": "nCino, Inc.",
             "Location": "Wilmington, North Carolina",
             "Handshake": "",
             "LinkedIn": "https://www.linkedin.com/company/ncino-inc-/jobs/",
             "Contact": "ren.yonker@ncino.com (Ren Yonker)",
             "Tips": "",
-            "Pay": "",
-            "Color": "#E89B27"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "UNCW TAC Student Worker Technician",
+            "Name": "UNCW TAC Student Worker Technician",
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "Handshake": "https://uncw.joinhandshake.com/stu/employers/287948",
             "LinkedIn": "Not Relevant, can't apply through LinkedIn.",
             "Contact": "tachiring@uncw.edu",
             "Tips": "TAC hires towards the end of the semester and you can apply on handshake. However an easier way imo is to just email tachiring@uncw.edu with your resume and class schedule. You don't need any technical background to perform this job and it's on campus. Note I've never had this job, but I know how the process works. I think this would be a great job to have while you're in school.",
-            "Pay": "$12-$14 dollars an hour. You start at $12 and can work your way up to $14.",
-            "Color": "#05998C"
+            "Pay": "$12-$14 dollars an hour. You start at $12 and can work your way up to $14."
         },
         {
-            "DisplayTitle": "MarineQuest Summer Instructor 2024",
+            "Name": "MarineQuest Summer Instructor 2024",
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "Handshake": "https://uncw.joinhandshake.com/stu/employers/340710",
             "LinkedIn": "Not Relevant, can't apply through LinkedIn.",
             "Contact": "Morgan O'Connell via handshake",
             "Tips": "",
-            "Pay": "$800 per year.",
-            "Color": "#05998C"
+            "Pay": "$800 per year."
         },
         {
-            "DisplayTitle": "Amotions, Inc.",
+            "Name": "Amotions, Inc.",
             "Location": "Burlingame, California",
             "LinkedIn": "https://www.linkedin.com/company/amotions/jobs/",
             "Contact": "pianpian@amotionsinc.com (Pianpian Xu Guthrie is her full name, she's the CEO)",
             "Tips": "I'd write you a letter of recommendation and send Pianpian your resume if you want.",
-            "Pay": "This is an unpaid, remote internship. You can use it to get credit for CSC 498 (See the \"Recommendations\" page in the \"Classes\" tab for more info)",
-            "Color": "#0B74FD"
+            "Pay": "This is an unpaid, remote internship. You can use it to get credit for CSC 498 (See the \"Recommendations\" page in the \"Classes\" tab for more info)"
         },
         {
-            "DisplayTitle": "Corning Incorporated",
+            "Name": "Fidelity Investments",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/fidelity-investments/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Corning Incorporated",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/corning-incorporated/jobs/",
             "Contact": "kevincolemanparker@gmail.com (Kevin Parker)",
             "Tips": "",
-            "Pay": "",
-            "Color": "#000000"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "New Potato Technologies",
+            "Name": "New Potato Technologies",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/new-potato-technologies/jobs/",
             "Contact": "tlarocco@newpotatotech.com (Thomas LaRocco)",
             "Tips": "",
-            "Pay": "",
-            "Color": "#AAA9AD"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Ohanafy",
+            "Name": "Ohanafy",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/ohanafy/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#3898EC"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Honeywell",
+            "Name": "Lenovo LASR Progam",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/lenovo/jobs/",
+            "Contact": "",
+            "Tips": "This is NOT a software engineering position. It seems to be a popular technology sales program. I put it here in case that's something you're interested in. I know a couple people from Weddington who did this program.",
+            "Pay": ""
+        },
+        {
+            "Name": "Honeywell",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/honeywell/jobs/",
             "Contact": "Charlotte, North Carolina",
             "Tips": "",
-            "Pay": "",
-            "Color": "#3898EC"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Live Oak Bank",
+            "Name": "Live Oak Bank",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/live-oak-bank/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#371CA1"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "New Hanover Regional Medical Center",
+            "Name": "New Hanover Regional Medical Center",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/new-hanover-regional-medical-center/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#7D32AA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Datacor, Inc.",
-            "Location": "Florham Park, New Jersey",
-            "LinkedIn": "https://www.linkedin.com/company/datacorinc/jobs/",
-            "Contact": "",
-            "Tips": "",
-            "Pay": "",
-            "Color": "#003DA6"
-        },
-        {
-            "DisplayTitle": "GE",
+            "Name": "GE",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/ge/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#408800"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Lapetus Solutions, Inc.",
+            "Name": "TriTech Software Systems",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/tritech-software-systems/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Lapetus Solutions, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lapetus-solutions-inc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#003DA6"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "ARA",
+            "Name": "ARA",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/ara/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#003DA6"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Center For Marine Science",
+            "Name": "Center For Marine Science",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/center-for-marine-science/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#003DA6"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "HCL Technologies",
+            "Name": "HCL Technologies",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/hcltech/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#003DA6"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Innovative Financial Group",
+            "Name": "Innovative Financial Group",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/innovative-financial-group-inc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#EE730D"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "WillowTree, Inc.",
+            "Name": "WillowTree, Inc.",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/willowtree/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1ABBA9"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Carova Labs",
+            "Name": "Carova Labs",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/carovalabs/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Vidterra",
+            "Name": "CommScope",
+            "Location": "Hickory, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/commscope/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Vidterra",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/vidterra/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Lumos Technologies",
+            "Name": "Glacier Security",
+            "Location": "Annapolis, Maryland",
+            "LinkedIn": "https://www.linkedin.com/company/glacier-security/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Lumos Technologies",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lumos-data/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Velocity Solutions",
+            "Name": "Velocity Solutions",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/velocitysolutions/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Corning Credit Union",
+            "Name": "Corning Credit Union",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/corning-credit-union/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Playerspace",
+            "Name": "Playerspace",
             "Location": "Wrightsville Beach, North Carolina. Near Wilmington",
             "LinkedIn": "https://www.linkedin.com/company/playerspace/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Outlier",
+            "Name": "Outlier",
             "Location": "San Francisco, California",
             "LinkedIn": "https://www.linkedin.com/company/try-outlier/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Lockheed Martin",
+            "Name": "Lockheed Martin",
             "Location": "Greensboro, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lockheed-martin/jobs/",
             "Contact": "",
-            "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Tips": "I think this job requires a security clearance, so take that into account if you're interested.",
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Brilliant Sole",
+            "Name": "Brilliant Sole",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/brilliant-sole/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Tata Consultancy Services",
+            "Name": "Tata Consultancy Services",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/tata-consultancy-services/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Syneos Health",
+            "Name": "Syneos Health",
             "Location": "Morrisville, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/syneos-health/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "EMS LINQ, Inc.",
+            "Name": "HMF Express",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/hmf-express/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "EMS LINQ, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/linq-inc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Ally",
+            "Name": "Ally",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "The Remi Group",
+            "Name": "The Remi Group",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/the-remi-group/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "SolarWinds",
+            "Name": "SolarWinds",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/solarwinds/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "SkillStorm",
+            "Name": "SkillStorm",
             "Location": "Orlando, Florida",
             "LinkedIn": "https://www.linkedin.com/company/skillstorm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1A3ABA"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "The Hartford",
+            "Name": "The Hartford",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/the-hartford/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#B9452E"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Spahr Solutions Group, LLC",
+            "Name": "Spahr Solutions Group, LLC",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/spahr-solutions-group-llc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#4E5B31"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Soft Tech Consulting",
+            "Name": "Soft Tech Consulting",
             "Location": "Chantilly, Virginia",
             "LinkedIn": "https://www.linkedin.com/company/soft-tech-consulting/jobs/",
             "Contact": "recruitment@softtechconsultingcareers.com",
             "Tips": "",
-            "Pay": "",
-            "Color": "#000075"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Apiture",
+            "Name": "Apiture",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/apiture/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FF6D22"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "CentralSquare Technologies",
+            "Name": "CentralSquare Technologies",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/centralsqtech/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": ""
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Apperture Solutions",
+            "Name": "Apperture Solutions",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/apperture-solutions/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FF6D22"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "PharPoint Research, Inc.",
+            "Name": "PPD",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/ppd/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Insight Global",
+            "Location": "Wilmington, North Carolina or Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/insight-global/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "PharPoint Research, Inc.",
             "Location": "Wilmington, North Carolina or Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/pharpoint-research-inc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#0196D4"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "MegaCorp Logistics",
+            "Name": "MegaCorp Logistics",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/megacorp-logistics/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1C2C6C"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "FORVIS",
+            "Name": "FORVIS",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/forvis/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#DA291C"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "BoomTown",
+            "Name": "BoomTown",
             "Location": "Charleston, South Carolina",
             "LinkedIn": "https://www.linkedin.com/company/boomtown---real-estate-web-platform/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FFA756"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "DEKA Research & Development",
+            "Name": "DEKA Research & Development",
             "Location": "Manchester, New Hampshire",
             "LinkedIn": "https://www.linkedin.com/company/deka-research-&-development/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FFA756"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Hardee Hunt & Williams",
+            "Name": "Hardee Hunt & Williams",
             "Location": "Wrightsville Beach, North Carolina. Near Wilmington",
             "LinkedIn": "https://www.linkedin.com/company/hardee-hunt-&-williams/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FFA756"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Credit Suisse",
+            "Name": "Credit Suisse",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/credit-suisse/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#1833A1"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "JupiterOne",
+            "Name": "JupiterOne",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/jupiterone/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#03E7BB"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Duke Energy Corporation",
+            "Name": "Duke Energy Corporation",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/duke-energy-corporation/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#00789e"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Uni-SPIRE",
+            "Name": "Uni-SPIRE",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/uni-spire-the-universal-writing-continuum/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#439000"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Systems Planning and Analysis, Inc",
+            "Name": "Systems Planning and Analysis, Inc",
             "Location": "Washington DC-Baltimore Area",
             "LinkedIn": "https://www.linkedin.com/company/systems-planning-and-analysis-inc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#28339A"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Second Renaisssance",
+            "Name": "Second Renaisssance",
             "Location": "Rockville, Maryland",
             "LinkedIn": "https://www.linkedin.com/company/second-renaissance/jobs/",
             "Contact": "",
             "Tips": "This is either also in Wilmington or a remote position.",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Oshkosh Corporation",
+            "Name": "Oshkosh Corporation",
             "Location": "Oshkosh, Wisconsin",
             "LinkedIn": "https://www.linkedin.com/company/oshkosh-corporation/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Next Level3",
+            "Name": "Next Level3",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/next-level3-software/jobs/",
             "Contact": "",
             "Tips": "It says \"Wilmington, Delaware\" in the description but it defintely meant NC.",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "State Farm",
+            "Name": "VCU Health",
+            "Location": "Richmond, Virginia",
+            "LinkedIn": "https://www.linkedin.com/company/vcu-health-system/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "State Farm",
             "Location": "Multiple Locations. Remote",
             "LinkedIn": "https://www.linkedin.com/company/state_farm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Ford Motor Company",
+            "Name": "Ford Motor Company",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/ford-motor-company/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Paragon Application Systems",
+            "Name": "Paragon Application Systems",
             "Location": "Holly Springs, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/paragon-application-systems/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Raytheon Missiles & Defense",
+            "Name": "Raytheon Missiles & Defense",
             "Location": "St. Petersburg, Florida",
             "LinkedIn": "https://www.linkedin.com/company/raytheon/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "LexisNexis",
+            "Name": "LexisNexis",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/lexisnexis/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Proverbs 31 Ministries",
+            "Name": "Proverbs 31 Ministries",
             "Location": "Matthews, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/proverbs-31-ministries/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Queensboro.com",
+            "Name": "Queensboro.com",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/queensboro/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Red Pill Analytics",
+            "Name": "CloudWyze, Inc.",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/cloudwyze-inc-/jobs/",
+            "Contact": "https://www.cloudwyze.com/contact/",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Red Pill Analytics",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/red-pill-analytics/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "PS Solutions",
+            "Name": "PS Solutions",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/ps-solutions/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Young Scientist Academy",
+            "Name": "Young Scientist Academy",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/young-scientist-academy/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Brightly",
+            "Name": "Brightly",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/brightlysoftware/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Hartford Mutual Insurance Group",
+            "Name": "Hartford Mutual Insurance Group",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/harford-mutual-insurance-group/jobs/",
             "Contact": "",
             "Tips": "Sometimes referred to as \"Hartford Mutual Insurance Company\"",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Veradigm",
+            "Name": "Veradigm",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/veradigm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Emmes",
+            "Name": "Emmes",
             "Location": "Hampstead, North Carolina or Rockville, Maryland",
             "LinkedIn": "https://www.linkedin.com/company/emmes/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "SAS",
+            "Name": "SAS",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/sas/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Tech Wizards",
+            "Name": "Tech Wizards",
             "Location": "Fredericksburg, Virgnia",
             "LinkedIn": "https://www.linkedin.com/company/tech-wizards-inc./jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "General Dynamics Electric Boat",
+            "Name": "General Dynamics Electric Boat",
             "Location": "New London, Connecticut",
             "LinkedIn": "https://www.linkedin.com/company/electric-boat/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Qualtrics",
+            "Name": "Qualtrics",
             "Location": "Provo, Utah and Seattle, Washington",
             "LinkedIn": "https://www.linkedin.com/company/qualtrics/jobs/",
             "Contact": "",
             "Tips": "Not a tip, just a fun fact, a lot of the surveys you see online are done by Qualtrics",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "CGI",
+            "Name": "CGI",
             "Location": "Many locations (Charlotte, Nashville, etc.)",
             "LinkedIn": "https://www.linkedin.com/company/cgi/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "HarvesterGear",
+            "Name": "HarvesterGear",
             "Location": "Wrightsville Beach, North Carolina. Near Wilmington.",
             "LinkedIn": "https://www.linkedin.com/company/harvestergear/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "UNCW Watson College Of Education",
+            "Name": "UNCW Watson College Of Education",
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "LinkedIn": "https://www.linkedin.com/company/uncw-watson-college-of-education/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "RAZR Solutions",
+            "Name": "RAZR Solutions",
             "Location": "Washington DC-Baltimore Area",
             "LinkedIn": "https://www.linkedin.com/company/razr-solutions-llc/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "PIMSHQ",
+            "Name": "PIMSHQ",
             "Location": "Wilmington, North Carolina or Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/pimshq/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "BlackBerry QNX",
+            "Name": "BlackBerry QNX",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/blackberryqnx/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Helion AI",
+            "Name": "Helion AI",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/helionai/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "LoanWell.com",
+            "Name": "LoanWell.com",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/loanwell/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "DefenseStorm",
+            "Name": "Vantaca",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/vantaca/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Mentra",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/mymentra/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "DefenseStorm",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/defensestorm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#03A978"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "New Hanover Country Arboretum",
+            "Name": "New Hanover Country Arboretum",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/new-hanover-county-arboretum/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#03A978"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Wide Open Technologies",
+            "Name": "Wide Open Technologies",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/wide-open-technologies/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#03A978"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "FOCUS Broadband",
+            "Name": "FOCUS Broadband",
             "Location": "Shallotte, North Carolina. Near Wilmington",
             "LinkedIn": "https://www.linkedin.com/company/focusbroadband/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#03A978"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "WaveRider Design",
+            "Name": "WaveRider Design",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/waverider-design/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#FF574B"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Thinking Feet (Tutor)",
+            "Name": "Thinking Feet (Tutor)",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/thinking-feet/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Sylvan Learning (Tutor)",
+            "Name": "Sylvan Learning (Tutor)",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/sylvan-learning/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "DKW Communications, Inc.",
+            "Name": "DKW Communications, Inc.",
             "Location": "Washington, D.C.",
             "LinkedIn": "https://www.linkedin.com/company/dkw-communications-inc-/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Oak Ridge National Laboratory",
+            "Name": "Oak Ridge National Laboratory",
             "Location": "Oak Ridge, Tennessee",
             "LinkedIn": "https://www.linkedin.com/company/oak-ridge-national-laboratory/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Viewpoint Construction Software",
+            "Name": "Viewpoint Construction Software",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/viewpoint-construction-software/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Cirrus Insight",
+            "Name": "Cirrus Insight",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/cirrusinsight/jobs/",
             "Contact": "",
             "Tips": "Used to be called ZynBit",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Rocket Mortgage",
+            "Name": "Datavant",
+            "Location": "San Francisco, California",
+            "LinkedIn": "https://www.linkedin.com/company/datavant/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Rocket Mortgage",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/rocketmortgage/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Guilford Mills",
+            "Name": "Guilford Mills",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/guilford-mills/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "NASA",
+            "Name": "VisionAIR",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/visionair/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Whisker",
+            "Location": "Plymouth, Michigan",
+            "LinkedIn": "https://www.linkedin.com/company/whisker/jobs/",
+            "Contact": "",
+            "Tips": "Seems to offer remote jobs",
+            "Pay": ""
+        },
+        {
+            "Name": "Axiom Path",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/axiom-path/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Wastequip",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/wastequip/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Atomized",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/atomizedhq/jobs/",
+            "Contact": "",
+            "Tips": "This company was previously known as \"FrontLine\"",
+            "Pay": ""
+        },
+        {
+            "Name": "Cohen Cognition and Perception Lab",
+            "Location": "Wilmington, North Carolina (UNCW Campus)",
+            "LinkedIn": "https://www.linkedin.com/company/whisker/jobs/",
+            "Contact": "cohend@uncw.edu (Dale Cohen)",
+            "Tips": "My groups CSC 450 project was made for Dr. Cohen. I don't think he does comp-sci projects outside of CSC 450 though.",
+            "Pay": ""
+        },
+        {
+            "Name": "True IP Solutions, LLC",
+            "Location": "Hampstead, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/true-ip-solutions-llc/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "NASA",
             "Location": "Hampton, Virginia",
             "LinkedIn": "https://www.linkedin.com/company/nasa/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "American Tire Distributors",
+            "Name": "American Tire Distributors",
             "Location": "Huntersville, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/american-tire-distributors/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "PublicInput",
+            "Name": "PublicInput",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/public-input/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Mediware Information Systems",
+            "Name": "Mediware Information Systems",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/mediware-information-systems/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "AlphaCM, Inc.",
+            "Name": "Mediant",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/mediant-communications/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "AlphaCM, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/alphacm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Bill",
+            "Name": "Bill",
             "Location": "San Jose, California",
             "LinkedIn": "https://www.linkedin.com/company/bill/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Liberty Healthcare Management",
+            "Name": "Liberty Healthcare Management",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/libertyhealth/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "WellSky",
+            "Name": "WellSky",
             "Location": "Overland Park, Kansas",
             "LinkedIn": "https://www.linkedin.com/company/wellsky/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "IBSS",
+            "Name": "IBSS",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/ibsscorp/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Symphona",
+            "Name": "Symphona",
             "Location": "Atlanta, Georgia",
             "LinkedIn": "https://www.linkedin.com/company/symphonallp/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Cox Communications",
+            "Name": "Cox Communications",
             "Location": "Atlanta, Georgia",
             "LinkedIn": "https://www.linkedin.com/company/cox-communications/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Consortium Networks",
+            "Name": "Consortium Networks",
             "Location": "Medford, New Jersey",
             "LinkedIn": "https://www.linkedin.com/company/consortiumnetworks/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Red Ventures",
+            "Name": "Red Ventures",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/red-ventures/jobs/",
             "Contact": "Alex Launi via LinkedIn",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "R.E. Mason",
+            "Name": "R.E. Mason",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/remason/jobs/",
             "Contact": "sydney.underwood@remasonco.com",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Lear Corporation",
+            "Name": "Lear Corporation",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lear-corporation/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Plazabridge Group",
+            "Name": "Plazabridge Group",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/plazabridge-group/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Port Solution Integrators, Inc.",
+            "Name": "Capillary North America",
+            "Location": "Minneapolis, Minnesota",
+            "LinkedIn": "https://www.linkedin.com/company/capillarynorthamerica/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Ramona",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/ramona-optics/",
+            "Contact": "https://www.ramonaoptics.com/contact",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Port Solution Integrators, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "No Linkedin",
             "Contact": "",
             "Tips": "",
-            "Pay": "",
-            "Color": "#002783"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Biostudy Solutions LLC",
+            "Name": "Biostudy Solutions LLC",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "No Linkedin",
             "Contact": "",
-            "Tips": "I think this might have been BioMotion Analytics in the past.",
-            "Pay": "",
-            "Color": "#002783"
+            "Tips": "I think this might have been called \"BioMotion Analytics\" in the past.",
+            "Pay": ""
         }
     ],
     "Other": [
         {
-            "DisplayTitle": "Cisco",
+            "Name": "Cisco",
             "Location": "Wake County, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/cisco/jobs/",
             "Contact": "",
             "Tips": "Cisco is a great company and having a strong GPA and previous internships make you more likely to get an offer.",
-            "Pay": "",
-            "Color": "#191675"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "Lenovo",
+            "Name": "Lenovo",
             "Location": "Morrisville, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/lenovo/jobs/",
             "Contact": "Alex Rosso via Linkedin",
             "Tips": "I'm kind of friends with a hiring manager at Lenovo. He might be able to write you a letter of recommendation. While that might help you slightly if you get an interview, I seriously wouldn't rely on that. I'll contact him if you want.",
-            "Pay": "",
-            "Color": "#CB2B2B"
+            "Pay": ""
         },
         {
-            "DisplayTitle": "IBM",
+            "Name": "IBM",
             "Location": "Durham, North Carolina (RTP) or New York City Or Atlanta, Georgia",
             "LinkedIn": "https://www.linkedin.com/company/ibm/jobs/",
             "Contact": "",
             "Tips": "",
-            "Pay": "Very good",
-            "Color": "#144FA8"
+            "Pay": "Very good"
         },
         {
-            "DisplayTitle": "Bank Of America",
+            "Name": "Bank Of America",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/bank-of-america/jobs/",
             "Contact": "",
             "Tips": "I think the name of the SWE internship is \"Global Technology Analyst\" or \"Technology Analyst\"",
-            "Pay": "",
-            "Color": "#DC1431"
+            "Pay": ""
         }
     ]
 }
