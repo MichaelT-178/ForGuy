@@ -27,7 +27,7 @@ import Certifications from '../views/classes/Certifications.vue';
 
 //Comp Sci
 import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
-import VSCodeSettings from '../views/compsci/VSCodeSettings.vue';
+import VSCodeSettings from '../views/compsci/VSCodeSettings/VSCodeSettings.vue';
 import VSCodeShortcuts from '../views/compsci/VSCodeShortcuts.vue';
 import Extensions from '../views/compsci/Extensions.vue';
 import UIDesignTips from '../views/compsci/UIDesignTips.vue';

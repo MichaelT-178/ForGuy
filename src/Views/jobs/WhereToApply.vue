@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import AllData from "../../data/jobs/WhereToApply.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
@@ -46,6 +46,15 @@ const toggleAll = () => {
 const toggleExplanation = () => {
     explainOpen.value = !explainOpen.value;
 };
+
+onMounted(() => {
+  document.body.style.backgroundColor = 'white';
+});
+
+//When view changes set back to default background color
+onUnmounted(() => {
+  document.body.style.backgroundColor = ''; 
+});
 
 </script>
 
