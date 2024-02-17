@@ -40,6 +40,7 @@ function updateCurrentPage(event) {
   const pageHeight = container.scrollHeight / numOfPages;
   currentPage.value = Math.min(numOfPages, Math.round(scrollPosition / pageHeight));
 }
+
 </script>
 
 
