@@ -113,90 +113,97 @@
     },
     {
         "id": 17,
+        "Emoji": "🏆",
+        "MenuName": "Useful Certifications",
+        "AllText": "TODO",
+        "Link": "/classes/Certifications"
+    },
+    {
+        "id": 18,
         "Emoji": "🎨",
         "MenuName": "Visual Studio Code",
         "AllText": "TODO",
         "Link": "/CompSci/VisualStudioCode"
     },
     {
-        "id": 18,
+        "id": 19,
         "Emoji": "⚙️",
         "MenuName": "VSCode Settings",
         "AllText": "TODO",
         "Link": "/CompSci/VSCodeSettings"
     },
     {
-        "id": 19,
+        "id": 20,
         "Emoji": "🚀",
         "MenuName": "VSCode Shorcuts",
         "AllText": "TODO",
         "Link": "/CompSci/VSCodeShortcuts"
     },
     {
-        "id": 20,
+        "id": 21,
         "Emoji": "🖼️",
         "MenuName": "UI/UX Design Tips",
         "AllText": "TODO",
         "Link": "/CompSci/UIDesignTips"
     },
     {
-        "id": 21,
+        "id": 22,
         "Emoji": "🧩",
         "MenuName": "VSCode Extensions",
         "AllText": "TODO",
         "Link": "/CompSci/Extensions"
     },
     {
-        "id": 22,
+        "id": 23,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "AllText": "TODO",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 23,
+        "id": 24,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
         "Link": "/other/GeneralTips"
     },
     {
-        "id": 24,
+        "id": 25,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
         "Link": "/other/AppsToDownload"
     },
     {
-        "id": 25,
+        "id": 26,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
         "Link": "/other/CompSciStuff"
     },
     {
-        "id": 26,
+        "id": 27,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "AllText": "TODO",
         "Link": "/other/TerminalCommands"
     },
     {
-        "id": 27,
+        "id": 28,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "AllText": "TODO",
         "Link": "/other/KeyboardShortcuts"
     },
     {
-        "id": 28,
+        "id": 29,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
         "Link": "/other/Memes"
     },
     {
-        "id": 29,
+        "id": 30,
         "Emoji": "✉️",
         "MenuName": "Contact",
         "AllText": "",

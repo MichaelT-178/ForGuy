@@ -2,7 +2,7 @@
   <div class="center-container">
     <div class="content-container">
       <h1 class="header">Resume Template</h1>
-      <p class="description">This is the resume template I use. The information is inaccurate and needs to be changed.</p>
+      <p class="description">This is the resume template I use. The current information is inaccurate and needs to be updated.</p>
       <div class="info-bar">
         <span class="page-number">{{ currentPage }}/{{ numOfPages }}</span>
         <button @click="downloadResumeDocx">Download DOCX</button>
