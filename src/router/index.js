@@ -23,6 +23,7 @@ import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
 import CSCDescriptions from '../views/classes/CSCDescriptions.vue';
 import ClassesIveTaken from '../views/classes/ClassesIveTaken.vue';
 import ClassesToAvoid from '../views/classes/ClassesToAvoid.vue';
+import Certifications from '../views/classes/Certifications.vue';
 
 //Comp Sci
 import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
@@ -113,6 +114,10 @@ const router = createRouter({
         {
             path: '/classes/ClassesToAvoid',
             component: ClassesToAvoid
+        },
+        {
+            path: '/classes/Certifications',
+            component: Certifications
         },
         {
             path: '/CompSci/VisualStudioCode',
