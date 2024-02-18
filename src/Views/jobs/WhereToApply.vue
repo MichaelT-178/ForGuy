@@ -49,20 +49,29 @@ const toggleExplanation = () => {
 
 onMounted(() => {
   document.body.style.backgroundColor = 'white';
+  //Represents HTML tag
+  document.documentElement.style.backgroundColor = 'white';
 });
 
 //When view changes set back to default background color
 onUnmounted(() => {
-  document.body.style.backgroundColor = ''; 
+  document.body.style.backgroundColor = '';
+  document.documentElement.style.backgroundColor = '';
 });
 
 </script>
 
 <style scoped>
+
+html {
+  background-color: white;
+}
+
 .where-to-apply-page .top-section h1 {
     text-align: left;
     margin-left: 10%;
     margin-bottom: 4px;
+    background-color: white;
 }
 
 .expand-text {
