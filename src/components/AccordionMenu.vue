@@ -40,11 +40,14 @@ const shouldDisplay = (key) => {
   return !excludedKeys.includes(key);
 }
 
-const hyperlinkText = (text) => {
-  const urlPattern = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+const highlightLinkText = (text) => {
+  const urlPattern = /(\b(https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|]/ig;
+
   return text.replace(urlPattern, (url) => 
     {
-      return `<a href="${url}" target="_blank" 
+      const realURL = !url.startsWith("http") ? `https://${url}` : url;
+
+      return `<a href="${realURL}" target="_blank" 
                 style="color: #007AFF; text-decoration: none;" 
                 onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
                 onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
@@ -52,39 +55,40 @@ const hyperlinkText = (text) => {
               ${url}</a>`;
     }
   );
-}
+};
 
 //[The link](https://www.target.com/)
-const markdownLinkToHyperlink = (text) => {
+const createHyperLink = (text) => {
   const markdownLinkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
   return text.replace(markdownLinkPattern, (match, label, url) => 
-      `<a href="${url}" target="_blank">${label}</a>`
+      `<a href="${url}" target="_blank"
+          style="color: #007AFF; text-decoration: none;" 
+          onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
+          onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
+        >
+        ${label}</a>`
   );
 }
 
-
 //(Router link)[/linkedin/LinkedinTips]
-const customLinkToVueRouterLink = (text) => {
+const createRouterLink = (text) => {
   const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
   return text.replace(customLinkPattern, (match, label, path) => {
-    // Instead of converting to <router-link>, return a standard <a> tag
-    // with an onclick event that uses Vue Router to navigate
-    return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')">${label}</a>`;
+    return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')"
+               style="color: #007AFF; text-decoration: none;" 
+               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
+               onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
+            >${label}</a>`;
   });
 }
 
-// You'll need to define the navigateToPath function in your component or globally
-// If globally, make sure to attach it to window or a similar global scope accessible from the template
 window.navigateToPath = (path) => {
-  // Assuming you have access to your Vue Router instance here, use it to programmatically navigate
-  // For example, if your router instance is available globally or injected into the window object
   router.push(path);
 }
 
 
-//
 //@Image View@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }]
-const markdownToJsonRouterLink = (text) => {
+const createRouterLinkWithProps = (text) => {
   const markdownPattern = /@([^@]+)@\[\s*({.*?})\s*\]/g;
 
   return text.replace(markdownPattern, (match, label, jsonString) => {
@@ -98,7 +102,12 @@ const markdownToJsonRouterLink = (text) => {
       return match; 
     }
 
-    return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')">${label}</a>`;
+    return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')"
+               style="color: #007AFF; text-decoration: none;" 
+               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
+               onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
+            >
+            ${label}</a>`;
   });
 }
 
@@ -111,22 +120,24 @@ const filteredEntries = computed(() => {
   return Object.entries(item.value)
           .filter(([key, value]) => value && shouldDisplay(key))
           .map(([key, value]) => {
+
             if (typeof value === 'string') {
-              // Process the string for HTTP links first
-              if (value.includes(' http://') || value.includes(' https://')) {
-                value = hyperlinkText(value);
+
+              if ((value.includes('http://') || value.includes('https://')) && !value.startsWith("[")){
+                value = highlightLinkText(value);
               }
-              // Convert markdown links to hyperlinks
-              value = markdownLinkToHyperlink(value);
-              // Convert custom links to Vue router-link components
-              value = customLinkToVueRouterLink(value);
-              // Convert custom markdown to JSON for router links into Vue router-link components
-              value = markdownToJsonRouterLink(value);
+
+              //[The link](https://www.target.com/)
+              value = createHyperLink(value);
+              //(Router link)[/linkedin/LinkedinTips]
+              value = createRouterLink(value);
+              //@Image View@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }]
+              value = createRouterLinkWithProps(value);
             }
+
             return [key, value];
           });
 });
-
 
 // const formatKey = (key) => {
 //   return key.replace(/([A-Z])/g, ' $1').trim().replace(/^./, str => str.toUpperCase());
@@ -135,6 +146,7 @@ const filteredEntries = computed(() => {
 </script>
 
 <style scoped>
+
 .accordion-menu {
   border: 1px solid #ccc;
   border-radius: 5px;
