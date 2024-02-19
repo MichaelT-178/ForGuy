@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, reactive, computed } from 'vue';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism-coy.css';
@@ -50,12 +50,9 @@ const downloadJson = () => {
   URL.revokeObjectURL(link.href);
     
   downloadButton.value.innerText = 'Downloaded!';
-  downloadButton.style.color = 'green';
-
 
   setTimeout(() => {
     downloadButton.value.innerText = "Download JSON";
-    downloadButton.style.color = 'white';
   }, 2000); 
 }
 
