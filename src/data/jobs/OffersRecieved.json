@@ -1,0 +1,83 @@
+{
+    "description": "These are the internship and full-time offers I have received. I also included a section about companies that I've interviewed with. I think these would be great companies to look out for during your job search.",
+    "internships": [
+        {
+            "Name": "USAA",
+            "Job Title": "IT Intern",
+            "Contact": "Express interest and I will help you out. My manager and I stay in contact.",
+            "Location": "Plano, Texas or San Antonio, Texas",
+            "Details": "If you're applying for summer 2025, the applications open in early September for San Antonio and early October for Plano, Texas. Apply asap if you're interested. Also, those dates might change so keep an eye out and set job alerts on handshake."
+        },
+        {
+            "Name": "Pearson",
+            "Job Title": "Software Engineer Intern",
+            "Location": "Durham, North Carolina (RTP)",
+            "Description": "Apply around September if you're interested for Summer 2025. Pearson usually shows up to the UNCW Career fair, so apply there if interested. Also, I think Pearson has some sort of deal with UNCW, which is why they sometimes hire UNCW students."
+        },
+        {
+            "Name": "Amotions, Inc.",
+            "Job Title": "Software Engineer Intern",
+            "Location": "Remote (California)",
+            "Contact": "pianpian@amotionsinc.com",
+            "Details": "If interested just contact the email above, or I think it'd be better if I just contacted her. Express interest to me and I’ll write you a letter of recommendation and send her your resume. Her and I are pretty tight, so I think I could help. Note they usually meet at night, so the timezone difference shouldn't be an issue. This is not a paid position but it's still great experience for your resume and you could get credit for CSC 498."
+        }
+    ],
+    "fullTime": [
+        {
+            "Name": "USAA",
+            "Job Title": "Software Engineer III",
+            "Location": "Plano, Texas or San Antonio, Texas",
+            "Contact": "Express interest and I will help you out. My manager and I are tight.",
+            "Description": "This is the return offer for the \"IT Intern\" position. The pay is like base $70,000, performance $1,300, and holiday bonus $2,500. The return offer rate at USAA is very high (~85%). This would be a great safety job imo."
+        },
+        {
+            "Name": "IBM",
+            "Job Title": "MultiCloud SaaS Platform Developer",
+            "Location": "Durham, North Carolina (RTP)",
+            "Contact": "Express interest and I will help you out. However my word probably means very little.",
+            "Description": "This is where I'm currently working. The base pay is very good. I'd recommend working here if possible."
+        },
+        {
+            "Name": "National Security Agency",
+            "Job Title": "Cryptographic Systems Solutions Software Engineer",
+            "Location": "Fort G. Meade, Maryland",
+            "Description": "You need to get a security clearance to work at the NSA. I went through basically the entire process and I could help you out if needed. Base pay is $81,233."
+        },
+        {
+            "Name": "Soft Technology Consultant",
+            "Job Title": "Junior Software Engineer",
+            "Location": "Chantilly, Virginia",
+            "Description": "The vibe of this is kind of weird and scammy, I wouldn't recommend applying here. After their offer email I contacted them and they didn't respond."
+        }
+    ],
+    "interviews": [
+        {
+            "Name": "H&R Block",
+            "Job Title": "IT Intern",
+            "Contact": "mallory.norris@hrblock.com",
+            "Location": "Kansas City, Missouri",
+            "Description": "I stopped the interview process once I got an offer from USAA. This is a summer SWE internship in Kansas City. I think they provide housing, if that's a factor in your decision."
+        },
+        {
+            "Name": "nCino, Inc.",
+            "Job Title": "Spring Software Engineering Internship",
+            "Contact": "ren.yonker@ncino.com",
+            "Location": "Wilmington, North Carolina",
+            "Description": "I stopped the interview process once I got an offfer from USAA. Also it's full-time during the spring semester so I didn't accept it." 
+        },
+        {
+            "Name": "Lenovo",
+            "Job Title": "IT Developer",
+            "Contact": "arosso@lenovo.com",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "Description": "I did both of their interviews but was rejected. I think they wanted someone with more experience and could start sooner."
+        },
+        {
+            "Name": "Cisco",
+            "Job Title": "Software Engineer I / FT Software Engineer",
+            "Contact": "iejames@cisco.com (Iesha James)",
+            "Location": "Cary, North Carolina (RTP)",
+            "Description": "I applied for this position in August and I didn't hear back until February. I didn't accept the interview because I was already working at IBM."
+        }
+    ]
+}
