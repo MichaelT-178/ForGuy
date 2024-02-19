@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed } from 'vue';
+import { ref, computed } from 'vue';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism-coy.css';
@@ -67,7 +67,7 @@ const highlightedJson = computed(() => {
 
 .header, .description {
   margin: 0 auto; 
-  max-width: 80%; 
+  max-width: 70%; 
   box-sizing: border-box;
 }
 
@@ -89,7 +89,7 @@ const highlightedJson = computed(() => {
   justify-content: flex-end; 
   gap: 10px;
   margin: 20px auto 0 auto; 
-  max-width: 80%; 
+  max-width: 70%; 
   box-sizing: border-box; 
 }
   
@@ -104,7 +104,7 @@ const highlightedJson = computed(() => {
 
 .json-container {
   margin: 0 auto; 
-  max-width: 80%; 
+  max-width: 70%; 
   box-sizing: border-box; 
 }
 
