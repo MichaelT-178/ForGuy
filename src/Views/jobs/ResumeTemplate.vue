@@ -5,7 +5,7 @@
       <p class="description">This is the resume template I use. The current information is inaccurate and needs to be updated.</p>
       <div class="info-bar">
         <span class="page-number">{{ currentPage }}/{{ numOfPages }}</span>
-        <button @click="downloadResumeDocx">Download DOCX</button>
+        <button @click="downloadResumeDocx" ref="downloadButton">Download DOCX</button>
       </div>
       <div class="pdf-page-container" @scroll="updateCurrentPage">
         <img v-for="(pic, index) in resumePics" :src="pic" :key="`page-${index}`" alt="PDF Page" class="pdf-page-image"/>
@@ -23,6 +23,7 @@ import ResumePic2 from "../../assets/ElijahResume/ElijahResume2.png";
 const resumePics = ref([ResumePic1, ResumePic2]);
 const currentPage = ref(1);
 const numOfPages = 2;
+const downloadButton = ref(null);
 
 function downloadResumeDocx() {
   //Can't use local path for security reasons 
@@ -32,6 +33,12 @@ function downloadResumeDocx() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+
+  downloadButton.value.innerText = 'Downloaded!';
+
+  setTimeout(() => {
+    downloadButton.value.innerText = "Download DOCX";
+  }, 2000); 
 }
 
 function updateCurrentPage(event) {
