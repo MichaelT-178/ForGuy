@@ -1,9 +1,6 @@
 <template>
     <h1>Offers I've Recieved</h1>
     <p class="description">{{ description }}</p>
-
-    <router-link :to="{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }">Image View</router-link>
-
     <div class="job-section">
         <h2>Internship Offers</h2>
         <p>These are the Internship Offers I have recieved.</p>
