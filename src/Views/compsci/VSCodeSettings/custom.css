@@ -38,7 +38,7 @@
 .token.entity,
 .token.url,
 .token.variable {
-  color: #ABB2BF;
+	color: #ABB2BF;
 	background: #282C34;
 }
 
