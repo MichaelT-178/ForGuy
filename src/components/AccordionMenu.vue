@@ -17,6 +17,7 @@
 
 <script setup>
 import { ref, computed, watchEffect, toRefs } from 'vue';
+import router from '../router/index.js'
 
 const props = defineProps({
   item: Object,
@@ -53,16 +54,79 @@ const hyperlinkText = (text) => {
   );
 }
 
+//[The link](https://www.target.com/)
+const markdownLinkToHyperlink = (text) => {
+  const markdownLinkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
+  return text.replace(markdownLinkPattern, (match, label, url) => 
+      `<a href="${url}" target="_blank">${label}</a>`
+  );
+}
+
+
+//(Router link)[/linkedin/LinkedinTips]
+const customLinkToVueRouterLink = (text) => {
+  const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
+  return text.replace(customLinkPattern, (match, label, path) => {
+    // Instead of converting to <router-link>, return a standard <a> tag
+    // with an onclick event that uses Vue Router to navigate
+    return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')">${label}</a>`;
+  });
+}
+
+// You'll need to define the navigateToPath function in your component or globally
+// If globally, make sure to attach it to window or a similar global scope accessible from the template
+window.navigateToPath = (path) => {
+  // Assuming you have access to your Vue Router instance here, use it to programmatically navigate
+  // For example, if your router instance is available globally or injected into the window object
+  router.push(path);
+}
+
+
+//
+//@Image View@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }]
+const markdownToJsonRouterLink = (text) => {
+  const markdownPattern = /@([^@]+)@\[\s*({.*?})\s*\]/g;
+
+  return text.replace(markdownPattern, (match, label, jsonString) => {
+    let toProp;
+
+    try {
+      jsonString = jsonString.replace(/'/g, '"');
+      toProp = JSON.parse(jsonString);
+    } catch (e) {
+      console.error('Error parsing JSON string:', e);
+      return match; 
+    }
+
+    return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')">${label}</a>`;
+  });
+}
+
+window.navigateToVuePath = (toPropString) => {
+  const toProp = JSON.parse(toPropString.replace(/&quot;/g, "\""));
+  router.push(toProp);
+}
+
 const filteredEntries = computed(() => {
   return Object.entries(item.value)
           .filter(([key, value]) => value && shouldDisplay(key))
           .map(([key, value]) => {
-            if (typeof value === 'string' && (value.includes('http://') || value.includes('https://'))) {
-              return [key, hyperlinkText(value)];
+            if (typeof value === 'string') {
+              // Process the string for HTTP links first
+              if (value.includes(' http://') || value.includes(' https://')) {
+                value = hyperlinkText(value);
+              }
+              // Convert markdown links to hyperlinks
+              value = markdownLinkToHyperlink(value);
+              // Convert custom links to Vue router-link components
+              value = customLinkToVueRouterLink(value);
+              // Convert custom markdown to JSON for router links into Vue router-link components
+              value = markdownToJsonRouterLink(value);
             }
             return [key, value];
           });
 });
+
 
 // const formatKey = (key) => {
 //   return key.replace(/([A-Z])/g, ' $1').trim().replace(/^./, str => str.toUpperCase());
