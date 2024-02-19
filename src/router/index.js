@@ -44,135 +44,142 @@ import Memes from '../views/other/Memes.vue';
 //Contact
 import ContactMe from '../views/Contact.vue'
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {
-            path: '/',
-            component: Home
-        },
-        {
-            path: '/apply',
-            component: WhereToApply
-        },
-        {
-            path: '/jobs/WhereToApply',
-            component: WhereToApply
-        },
-        {
-            path: '/jobs/ResumeTemplate',
-            component: ResumeTemplate
-        },
-        {
-            path: '/jobs/OffersRecieved',
-            component: OffersRecieved
-        },
-        {
-            path: '/jobs/InterviewTips',
-            component: InterviewTips
-        },
-        {
-            path: '/jobs/HelpfulWebsites',
-            component: HelpfulWebsites
-        },
-        {
-            path: '/jobs/HowToGetAJob.vue',
-            component: HowToGetAJob
-        },
-        {
-            path: '/linkedin/WhatIsLinkedin',
-            component: WhatIsLinkedin
-        },
-        {
-            path: '/linkedin/SetupProfile',
-            component: SetupProfile
-        },
-        {
-            path: '/linkedin/SetupJobAlerts',
-            component: SetupJobAlerts
-        },
-        {
-            path: '/linkedin/LinkedinTips',
-            component: LinkedinTips
-        },
-        {
-            path: '/linkedin/CareerPathAdvice',
-            component: CareerPathAdvice
-        },
-        {
-            path: '/classes/ClassRecommendations',
-            component: ClassRecommendations
-        },
-        {
-            path: '/classes/CSCDescriptions',
-            component: CSCDescriptions
-        },
-        {
-            path: '/classes/ClassesIveTaken',
-            component: ClassesIveTaken
-        },
-        {
-            path: '/classes/ClassesToAvoid',
-            component: ClassesToAvoid
-        },
-        {
-            path: '/classes/Certifications',
-            component: Certifications
-        },
-        {
-            path: '/CompSci/VisualStudioCode',
-            component: VisualStudioCode
-        },
-        {
-            path: '/CompSci/VSCodeSettings',
-            component: VSCodeSettings
-        },
-        {
-            path: '/CompSci/VSCodeShortcuts',
-            component: VSCodeShortcuts
-        },
-        {
-            path: '/CompSci/UIDesignTips',
-            component: UIDesignTips
-        },
-        {
-            path: '/CompSci/Extensions',
-            component: Extensions
-        },
-        {
-            path: '/CompSci/CompSciTips',
-            component: CompSciTips
-        },
-        {
-            path: '/other/GeneralTips',
-            component: GeneralTips
-        },
-        {
-            path: '/other/AppsToDownload',
-            component: AppsToDownload
-        },
-        {
-            path: '/other/CompSciStuff',
-            component: CsStuffILike
-        },
-        {
-            path: '/other/TerminalCommands',
-            component: TerminalCommands
-        },
-        {
-            path: '/other/KeyboardShortcuts',
-            component: KeyboardShortcuts
-        },
-        {
-            path: '/other/Memes',
-            component: Memes
-        },
-        {
-            path: '/ContactMe',
-            component: ContactMe
-        }
-    ]
-});
+//Image View to display images
+import ImageView from '../views/ImageView.vue';
 
+//The routes 
+const routes = [
+    {
+        path: '/',
+        component: Home
+    },
+    {
+        path: '/jobs/WhereToApply',
+        component: WhereToApply
+    },
+    {
+        path: '/jobs/ResumeTemplate',
+        component: ResumeTemplate
+    },
+    {
+        path: '/jobs/OffersRecieved',
+        component: OffersRecieved
+    },
+    {
+        path: '/jobs/InterviewTips',
+        component: InterviewTips
+    },
+    {
+        path: '/jobs/HelpfulWebsites',
+        component: HelpfulWebsites
+    },
+    {
+        path: '/jobs/HowToGetAJob.vue',
+        component: HowToGetAJob
+    },
+    {
+        path: '/linkedin/WhatIsLinkedIn',
+        component: WhatIsLinkedin
+    },
+    {
+        path: '/linkedin/SetupProfile',
+        component: SetupProfile
+    },
+    {
+        path: '/linkedin/SetupJobAlerts',
+        component: SetupJobAlerts
+    },
+    {
+        path: '/linkedin/LinkedinTips',
+        component: LinkedinTips
+    },
+    {
+        path: '/linkedin/CareerPathAdvice',
+        component: CareerPathAdvice
+    },
+    {
+        path: '/classes/ClassRecommendations',
+        component: ClassRecommendations
+    },
+    {
+        path: '/classes/CSCDescriptions',
+        component: CSCDescriptions
+    },
+    {
+        path: '/classes/ClassesIveTaken',
+        component: ClassesIveTaken
+    },
+    {
+        path: '/classes/ClassesToAvoid',
+        component: ClassesToAvoid
+    },
+    {
+        path: '/classes/Certifications',
+        component: Certifications
+    },
+    {
+        path: '/CompSci/VisualStudioCode',
+        component: VisualStudioCode
+    },
+    {
+        path: '/CompSci/VSCodeSettings',
+        component: VSCodeSettings
+    },
+    {
+        path: '/CompSci/VSCodeShortcuts',
+        component: VSCodeShortcuts
+    },
+    {
+        path: '/CompSci/UIDesignTips',
+        component: UIDesignTips
+    },
+    {
+        path: '/CompSci/Extensions',
+        component: Extensions
+    },
+    {
+        path: '/CompSci/CompSciTips',
+        component: CompSciTips
+    },
+    {
+        path: '/other/GeneralTips',
+        component: GeneralTips
+    },
+    {
+        path: '/other/AppsToDownload',
+        component: AppsToDownload
+    },
+    {
+        path: '/other/CompSciStuff',
+        component: CsStuffILike
+    },
+    {
+        path: '/other/TerminalCommands',
+        component: TerminalCommands
+    },
+    {
+        path: '/other/KeyboardShortcuts',
+        component: KeyboardShortcuts
+    },
+    {
+        path: '/other/Memes',
+        component: Memes
+    },
+    {
+        path: '/ContactMe',
+        component: ContactMe
+    },
+    {
+        path: '/image-view/:Name/:Description/:Pic',
+        name: 'ImageView',
+        component: ImageView,
+        props: true
+    }
+]
+
+const router = createRouter({
+    history: createWebHistory('/'),
+    routes
+});
 
 export default router
