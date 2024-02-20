@@ -1,0 +1,26 @@
+{
+    "ClassesToTake": [
+        {
+            "Name": "HST 101",
+            "Title": "Western Civilization I",
+            "Professor": "Corey Ellithorpe",
+            "Format": "In-Person",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 351",
+            "Title": "Applied Software Security",
+            "Professor": "Lucas Layman",
+            "Format": "In-Person",
+            "Description": "This is a SUPER easy class and the information you learn is also super helpful."
+        },
+        {
+            "Name": "CSC 498",
+            "Title": "Internship in Computer Science",
+            "Professor": "Shauna White",
+            "Format": "Basically Remote",
+            "Contact": "turners@uncw.edu",
+            "Description": "This class is a great and easy way to get 3 credit hours. You can take this \"class\" if you get a computer science internship. All you have to do in this class is write one paragraph a week about what you did in your internship and at the end you present your poster at the computing showcase. The \"presentation\" is extremely easy and you just stand by your poster. I only had like two people come up to me the entire time to ask me about my poster. You don't present in front of a group. The class is pass/fail and you can't sign for it using seanet. Email Mrs. White (turners@uncw.edu) to express your interest and she'll help you sign up. Note that your internship supervisor should say you're working 15 hours a week to get the full 3 credit hours. Here's a picture of my @computing showcase poster@[]."
+        }
+    ]
+}
