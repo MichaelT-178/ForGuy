@@ -1,0 +1,51 @@
+{
+    "LinkedInTips": [
+        {
+            "Name": "Setup Job Alerts",
+            "Explanation": "Job alerts are used to notify you about new job openings. ",
+            "Instructions": [
+                "Open the LinkedIn app"
+            ]
+        },
+        {
+            "Name": "Set Viewing Options",
+            "Explanation": "This will determine what people see when you view their profile. I'd recommend private mode.",
+            "Instructions": [
+                "Open the LinkedIn app",
+                "Tap the \"Home\" icon at the bottom of the screen",
+                "In the top left corner click on your profile picture and a sidebar should open.",
+                "At the bottom of the sidebar click \"Settings\".",
+                "In the menu click \"Visbility\" which should go to a new screen.",
+                "Click \"Profile viewing options\" in the menu",
+                "Select \"Private mode\" (or whatever mode you want people to see when you view their profile)."
+            ]
+        },
+        {
+            "Name": "Setup Your Profile",
+            "Explanation": "Set up your",
+            "Instructions": [
+                "",
+                ""
+            ]
+        },
+        {
+            "Name": "Setup Notification Settings",
+            "Explanation": "",
+            "Instructions": [
+                "",
+                ""
+            ]
+        },
+        {
+            "Name": "Connect With People",
+            "Explanation": "",
+            "Instructions": [
+                "",
+                ""
+            ]
+        }
+        
+
+
+    ]
+}
