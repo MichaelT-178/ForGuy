@@ -101,7 +101,6 @@ const highlightedJson = computed(() => {
   font-weight: 525;
 }
 
-
 .json-container {
   margin: 0 auto; 
   max-width: 70%; 
@@ -127,7 +126,6 @@ pre {
   padding: 10px;
   margin-top: 0; 
   box-sizing: border-box; 
-  border: 1.25px solid #000000;
 }
 
 </style>
