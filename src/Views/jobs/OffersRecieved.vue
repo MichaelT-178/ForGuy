@@ -32,7 +32,6 @@
 </template>
 
 
-
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import AllData from "../../data/jobs/OffersRecieved.json";
@@ -50,13 +49,13 @@ const toggleAll = () => {
 };
 
 onMounted(() => {
-  document.body.style.backgroundColor = 'white';
-  document.documentElement.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = 'white';
+    document.documentElement.style.backgroundColor = 'white';
 });
 
 onUnmounted(() => {
-  document.body.style.backgroundColor = '';
-  document.documentElement.style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    document.documentElement.style.backgroundColor = '';
 });
 
 </script>
