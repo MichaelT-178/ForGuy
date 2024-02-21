@@ -44,7 +44,7 @@ const filterResults = () => {
   if (searchQuery.value) {
     filteredResults.value = SearchData.filter((item) =>
       item.MenuName.toLowerCase().includes(searchQuery.value.toLowerCase())
-    );
+    ).slice(0, 11); //Only 11 results show at a time.
   } else {
     filteredResults.value = [];
   }
