@@ -43,10 +43,10 @@
     },
     {
         "id": 7,
-        "Emoji": "👨🏻‍💻",
-        "MenuName": "Helpful Websites",
+        "Emoji": "🧭",
+        "MenuName": "Career Path Advice",
         "AllText": "TODO",
-        "Link": "/jobs/HelpfulWebsites"
+        "Link": "/jobs/CareerPathAdvice"
     },
     {
         "id": 8,
@@ -78,53 +78,53 @@
     },
     {
         "id": 12,
-        "Emoji": "🧭",
-        "MenuName": "Career Path Advice",
-        "AllText": "TODO",
-        "Link": "/linkedin/CareerPathAdvice"
-    },
-    {
-        "id": 13,
         "Emoji": "👍",
         "MenuName": "Class Recommendations",
         "AllText": "TODO",
         "Link": "/classes/ClassRecommendations"
     },
     {
-        "id": 14,
+        "id": 13,
         "Emoji": "📝",
         "MenuName": "CSC Descriptions",
         "AllText": "TODO",
         "Link": "/classes/CSCDescriptions"
     },
     {
-        "id": 15,
+        "id": 14,
         "Emoji": "👨🏻‍🏫",
         "MenuName": "Classes I've Taken",
         "AllText": "TODO",
         "Link": "/classes/ClassesIveTaken"
     },
     {
-        "id": 16,
+        "id": 15,
         "Emoji": "❌",
         "MenuName": "Classes To Avoid",
         "AllText": "TODO",
         "Link": "/classes/ClassesToAvoid"
     },
     {
-        "id": 17,
+        "id": 16,
         "Emoji": "🏆",
         "MenuName": "Useful Certifications",
         "AllText": "TODO",
         "Link": "/classes/Certifications"
     },
     {
-        "id": 18,
+        "id": 17,
         "Emoji": "🎨",
         "MenuName": "Visual Studio Code",
         "AllText": "TODO",
         "Link": "/CompSci/VisualStudioCode"
     },
+    {
+        "id": 18,
+        "Emoji": "🐙",
+        "MenuName": "What is GitHub?",
+        "AllText": "TODO",
+        "Link": "/CompSci/GitHub"
+    }, 
     {
         "id": 19,
         "Emoji": "⚙️",
@@ -135,9 +135,9 @@
     {
         "id": 20,
         "Emoji": "🚀",
-        "MenuName": "VSCode Shorcuts",
+        "MenuName": "VSCode Insights",
         "AllText": "TODO",
-        "Link": "/CompSci/VSCodeShortcuts"
+        "Link": "/CompSci/VSCodeInsights"
     },
     {
         "id": 21,
@@ -148,62 +148,55 @@
     },
     {
         "id": 22,
-        "Emoji": "🧩",
-        "MenuName": "VSCode Extensions",
-        "AllText": "TODO",
-        "Link": "/CompSci/Extensions"
-    },
-    {
-        "id": 23,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "AllText": "TODO",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 24,
+        "id": 23,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
         "Link": "/other/GeneralTips"
     },
     {
-        "id": 25,
+        "id": 24,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
         "Link": "/other/AppsToDownload"
     },
     {
-        "id": 26,
+        "id": 25,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
         "Link": "/other/CompSciStuff"
     },
     {
-        "id": 27,
+        "id": 26,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "AllText": "TODO",
         "Link": "/other/TerminalCommands"
     },
     {
-        "id": 28,
+        "id": 27,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "AllText": "TODO",
         "Link": "/other/KeyboardShortcuts"
     },
     {
-        "id": 29,
+        "id": 28,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
         "Link": "/other/Memes"
     },
     {
-        "id": 30,
+        "id": 29,
         "Emoji": "✉️",
         "MenuName": "Contact",
         "AllText": "",

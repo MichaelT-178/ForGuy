@@ -62,6 +62,14 @@
         {
             "Name": "Let Me Know If You Have Questions",
             "Description": "If you have any questions about jobs or if you think I can help you in any way, do NOT hesitate to contact me. I'd be more than happy to help."
+        },
+        {
+            "Name": "Helpful Website Links", 
+            "Description": [
+                "LinkedIn",
+                "HandShake",
+                "Other 2 websites"
+            ]
         }
     ]
 }

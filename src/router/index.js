@@ -9,14 +9,13 @@ import ResumeTemplate from '../views/jobs/ResumeTemplate.vue';
 import HowToGetAJob from '../views/jobs/HowToGetAJob.vue'
 import OffersRecieved from '../views/jobs/OffersRecieved.vue';
 import InterviewTips from '../views/jobs/InterviewTips.vue';
-import HelpfulWebsites from '../views/jobs/HelpfulWebsites.vue';
 
 //Linkedin 
 import WhatIsLinkedin from '../views/linkedin/WhatIsLinkedin.vue';
 import SetupProfile from '../views/linkedin/SetupProfile.vue';
 import SetupJobAlerts from '../views/linkedin/SetupJobAlerts.vue';
 import LinkedinTips from '../views/linkedin/LinkedinTips.vue';
-import CareerPathAdvice from '../views/linkedin/CareerPathAdvice.vue';
+import CareerPathAdvice from '../views/jobs/CareerPathAdvice.vue';
 
 //Classes 
 import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
@@ -27,9 +26,9 @@ import Certifications from '../views/classes/Certifications.vue';
 
 //Comp Sci
 import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
+import GitHubView from '../views/compsci/GitHub.vue';
 import VSCodeSettings from '../views/compsci/VSCodeSettings/VSCodeSettings.vue';
-import VSCodeShortcuts from '../views/compsci/VSCodeShortcuts.vue';
-import Extensions from '../views/compsci/Extensions.vue';
+import VSCodeInsights from '../views/compsci/VSCodeInsights.vue';
 import UIDesignTips from '../views/compsci/UIDesignTips.vue';
 import CompSciTips from '../views/compsci/CompSciTips.vue';
 
@@ -70,12 +69,12 @@ const routes = [
         component: InterviewTips
     },
     {
-        path: '/jobs/HelpfulWebsites',
-        component: HelpfulWebsites
-    },
-    {
         path: '/jobs/HowToGetAJob.vue',
         component: HowToGetAJob
+    },
+    {
+        path: '/jobs/CareerPathAdvice',
+        component: CareerPathAdvice
     },
     {
         path: '/linkedin/WhatIsLinkedIn',
@@ -92,10 +91,6 @@ const routes = [
     {
         path: '/linkedin/LinkedinTips',
         component: LinkedinTips
-    },
-    {
-        path: '/linkedin/CareerPathAdvice',
-        component: CareerPathAdvice
     },
     {
         path: '/classes/ClassRecommendations',
@@ -122,20 +117,20 @@ const routes = [
         component: VisualStudioCode
     },
     {
+        path: '/CompSci/GitHub',
+        component: GitHubView
+    },
+    {
         path: '/CompSci/VSCodeSettings',
         component: VSCodeSettings
     },
     {
-        path: '/CompSci/VSCodeShortcuts',
-        component: VSCodeShortcuts
+        path: '/CompSci/VSCodeInsights',
+        component: VSCodeInsights
     },
     {
         path: '/CompSci/UIDesignTips',
         component: UIDesignTips
-    },
-    {
-        path: '/CompSci/Extensions',
-        component: Extensions
     },
     {
         path: '/CompSci/CompSciTips',
