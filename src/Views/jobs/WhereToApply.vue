@@ -48,15 +48,15 @@ const toggleExplanation = () => {
 };
 
 onMounted(() => {
-  document.body.style.backgroundColor = 'white';
-  //Represents HTML tag
-  document.documentElement.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = 'white';
+    //Represents HTML tag
+    document.documentElement.style.backgroundColor = 'white';
 });
 
 //When view changes set back to default background color
 onUnmounted(() => {
-  document.body.style.backgroundColor = '';
-  document.documentElement.style.backgroundColor = '';
+    document.body.style.backgroundColor = '';
+    document.documentElement.style.backgroundColor = '';
 });
 
 </script>
