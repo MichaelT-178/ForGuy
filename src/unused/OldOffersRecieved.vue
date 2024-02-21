@@ -1,10 +1,15 @@
 <template>
     <h1>Offers I've Recieved</h1>
     <p class="description">{{ description }}</p>
-    <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
+    <div class="header-container">
+        <h2 class="invisible">Accordion Controls</h2>
+        <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
+    </div>
     <div class="job-section">
+    <div class="section-header">
         <h2>Internship Offers</h2>
         <p>These are the Internship Offers I have received.</p>
+    </div>
         <div class="job-menu">
             <div v-for="internship in internships" :key="internship.Name" class="job-item">
                 <AccordionMenu :item="internship" :isOpen="allOpen" />
@@ -64,6 +69,19 @@ onUnmounted(() => {
 
 <style scoped> 
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9.5%;
+    margin-top: -40px;
+}
+
+.invisible {
+    visibility: hidden;
+    height: 0;
+}
+
 .expand-all-btn {
     padding: 5px 40px;
     border-radius: 5px;
@@ -72,7 +90,7 @@ onUnmounted(() => {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 9.5%;
+    margin-bottom: -155px;
 }
 
 .expand-all-btn:hover {
