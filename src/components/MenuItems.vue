@@ -13,7 +13,7 @@ export const menuItems = [
             { text: "How To Get a Job",      icon: "lightbulb",    link: "/jobs/HowToGetAJob.vue" },
             { text: "Offers I've Recieved",  icon: "handshake",    link: "/jobs/OffersRecieved" },
             { text: "Interview Tips",        icon: "group",        link: "/jobs/InterviewTips" },
-            { text: "Helpful Websites",      icon: "wysiwyg",      link: "/jobs/HelpfulWebsites" }
+            { text: "Career Path Advice",    icon: "explore",      link: "/jobs/CareerPathAdvice" }
         ]
     },
     {
@@ -22,8 +22,7 @@ export const menuItems = [
             { text: "What Is LinkedIn?",  icon: "person_add",      link: "/linkedin/WhatIsLinkedin" },
             { text: "Setup a Profile",    icon: "account_circle",  link: "/linkedin/SetupProfile" },
             { text: "Setup Job Alerts",   icon: "notifications",   link: "/linkedin/SetupJobAlerts" },
-            { text: "LinkedIn Tips",      icon: "psychology",      link: "/linkedin/LinkedinTips" },
-            { text: "Career Path Advice", icon: "explore",         link: "/linkedin/CareerPathAdvice" }
+            { text: "LinkedIn Tips",      icon: "psychology",      link: "/linkedin/LinkedinTips" }
         ]
     },
     {
@@ -40,10 +39,10 @@ export const menuItems = [
         text: "Comp Sci",
         subMenu: [
             { text: "Visual Studio Code",  icon: "laptop_mac",         link: "/CompSci/VisualStudioCode" },
+            { text: "What is GitHub?",     icon: "hub",                link: "/CompSci/GitHub" },
             { text: "VSCode Settings",     icon: "settings",           link: "/CompSci/VSCodeSettings" },
-            { text: "VSCode Shorcuts",     icon: "forward_media",      link: "/CompSci/VSCodeShortcuts" },
             { text: "UI/UX Design Tips",   icon: "brush",              link: "/CompSci/UIDesignTips" },
-            { text: "VSCode Extensions",   icon: "extension",          link: "/CompSci/Extensions" },
+            { text: "VSCode Insights",     icon: "extension",          link: "/CompSci/VSCodeInsights" },
             { text: "Comp Sci Tips",       icon: "device_hub",         link: "/CompSci/CompSciTips" } 
         ]
     },
