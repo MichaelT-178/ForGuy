@@ -24,10 +24,10 @@ import AllData from "../../data/jobs/WhereToApply.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
+const pageDescription = jsonData.value["Description"];
 const searchQuery = ref('');
 const allOpen = ref(false);
 const explainOpen = ref(false);
-const pageDescription = jsonData.value["Description"];
 
 const filteredCompanies = computed(() => {
     if (!searchQuery.value) {
