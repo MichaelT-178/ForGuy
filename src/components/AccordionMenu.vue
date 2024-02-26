@@ -8,7 +8,7 @@
     <div class="accordion-content" v-if="isOpen">
       <ul>
         <li v-for="(entry, index) in filteredEntries" :key="index">
-          <b><u>{{ entry[0] }}</u>:</b>
+          <b style="margin-right: 3px;"><u>{{ entry[0] }}</u>{{ typeof entry[1] === 'string' ? ':' : ""}}</b>
           <span v-if="typeof entry[1] === 'string'" v-html="entry[1]"></span>
           <ul class="menu-attribute" v-else>
             <li v-for="(item, idx) in entry[1]" :key="`item-${idx}`" v-html="formatEntry(item)" class="menu-items"></li>
@@ -18,6 +18,7 @@
     </div>
   </div>
 </template>
+
 
 <script setup>
 import { ref, computed, watchEffect, toRefs } from 'vue';
@@ -117,6 +118,7 @@ window.navigateToVuePath = (toPropString) => {
 };
 
 const formatEntry = (value) => {
+
   if (typeof value === 'string') {
 
     if ((value.includes(' http://') || value.includes(' https://')) && !value.startsWith("[")){
@@ -126,25 +128,29 @@ const formatEntry = (value) => {
     value = createHyperLink(value);
     value = createRouterLink(value);
     value = createRouterLinkWithProps(value);
+  
   }
 
   return value;
+
 };
 
 const filteredEntries = computed(() => {
   return Object.entries(item.value)
     .filter(([key, value]) => value && shouldDisplay(key))
     .map(([key, value]) => {
+
       if (Array.isArray(value)) {
-        // Format each element if value is an array
         value = value.map(formatEntry);
       } else {
-        // For string values, use the formatEntry method
         value = formatEntry(value);
       }
+
       return [key, value];
+
     });
 });
+
 </script>
 
 <style scoped>
@@ -176,12 +182,13 @@ const filteredEntries = computed(() => {
 }
 
 .menu-attribute {
-  margin-top: 6px;
+  margin-top: 10px; /* Changes vertical spacing of menu */
 }
 
 .menu-items {
   list-style-type: disc;
-  margin-left: 25px;
+  margin-left: 23px;
+  margin-top: -4px;
 }
 
 .accordion-content ul {
