@@ -22,7 +22,8 @@ export const menuItems = [
             { text: "What Is LinkedIn?",  icon: "person_add",      link: "/linkedin/WhatIsLinkedin" },
             { text: "Setup a Profile",    icon: "account_circle",  link: "/linkedin/SetupProfile" },
             { text: "Setup Job Alerts",   icon: "notifications",   link: "/linkedin/SetupJobAlerts" },
-            { text: "LinkedIn Tips",      icon: "psychology",      link: "/linkedin/LinkedinTips" }
+            { text: "LinkedIn Tips",      icon: "psychology",      link: "/linkedin/LinkedinTips" },
+            { text: "Contacts",           icon: "person",          link: "/linkedin/Contacts" }
         ]
     },
     {
