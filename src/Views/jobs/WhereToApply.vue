@@ -49,7 +49,6 @@ const toggleExplanation = () => {
 
 onMounted(() => {
     document.body.style.backgroundColor = 'white';
-    //Represents HTML tag
     document.documentElement.style.backgroundColor = 'white';
 });
 
