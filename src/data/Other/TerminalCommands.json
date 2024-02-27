@@ -8,7 +8,7 @@
         {
             "Command": "touch",
             "Description": "Create a file",
-            "Example": "touch HelloWorld.py"
+            "Example": "touch hello_world.py"
         }
     ],
     "Navigation": [
@@ -35,12 +35,12 @@
         {
             "Command": "mv pathToFile pathToNewFolder",
             "Description": "Move a file to a new location",
-            "Example": "mv OldFolder/HelloWorld.py NewFolder/PythonFiles/"
+            "Example": "mv OldFolder/hello_world.py NewFolder/PythonFiles/"
         },
         {
             "Command": "mv pathToFile pathToFile",
             "Description": "Rename a file",
-            "Example": "mv NewFolder/HelloWorld.py NewFolder/HelloWorld.py"
+            "Example": "mv NewFolder/hello_world.py NewFolder/hello_world.py"
         }
     ],
     "Display": [
@@ -59,12 +59,12 @@
         {
             "Command": "rm",
             "Description": "Remove a file",
-            "Example": "rm HelloWorld.py"
+            "Example": "rm hello_world.py"
         },
         {
             "Command": "rm -r",
             "Description": "Remove a folder and its contents",
-            "Example": "rm -r HelloWorld.py"
+            "Example": "rm -r hello_world.py"
         },
         {
             "Command": "clear",
@@ -84,14 +84,14 @@
             "Example": "python3 hello_world.py"
         },
         {
-            "Command": "javac fileName.java",
+            "Command": "javac FileName.java",
             "Description": "Compile a java file before running. It will create a \"class\" file",
-            "Example": "javac fileName.java"
+            "Example": "javac HelloWorld.java"
         },
         {
-            "Command": "java fileName",
+            "Command": "java FileName",
             "Description": "Run a java file.",
-            "Example": "java fileName"
+            "Example": "java HelloWorld"
         },
         {
             "Command": "jshell",
