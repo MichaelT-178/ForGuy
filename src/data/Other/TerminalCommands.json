@@ -1,0 +1,103 @@
+{
+    "Creation": [
+        {
+            "Command": "mkdir",
+            "Description": "Make a directory",
+            "Example": "mkdir NewFolder"
+        },
+        {
+            "Command": "touch",
+            "Description": "Create a file",
+            "Example": "touch HelloWorld.py"
+        }
+    ],
+    "Navigation": [
+        {
+            "Command": "cd",
+            "Description": "Change into a directory",
+            "Example": "cd NewFolder"
+        },
+        {
+            "Command": "cd ~",
+            "Description": "Change back to topmost directory",
+            "Example": "cd ~"
+        },
+        {
+            "Command": "cd ..",
+            "Description": "Change back to the parent directory of the current directory.",
+            "Example": "cd NewFolder"
+        },
+        {
+            "Command": "cd .",
+            "Description": "Stay at the current directory/do nothing. The single dot is sometimes necessary for file paths.",
+            "Example": "cd ."
+        },
+        {
+            "Command": "mv pathToFile pathToNewFolder",
+            "Description": "Move a file to a new location",
+            "Example": "mv OldFolder/HelloWorld.py NewFolder/PythonFiles/"
+        },
+        {
+            "Command": "mv pathToFile pathToFile",
+            "Description": "Rename a file",
+            "Example": "mv NewFolder/HelloWorld.py NewFolder/HelloWorld.py"
+        }
+    ],
+    "Display": [
+        {
+            "Command": "pwd",
+            "Description": "Print/Display Working Directory",
+            "Example": "pwd"
+        },
+        {
+            "Command": "ls",
+            "Description": "Print/Display all files and directories in the current path",
+            "Example": "ls"
+        }
+    ],
+    "Delete": [
+        {
+            "Command": "rm",
+            "Description": "Remove a file",
+            "Example": "rm HelloWorld.py"
+        },
+        {
+            "Command": "rm -r",
+            "Description": "Remove a folder and its contents",
+            "Example": "rm -r HelloWorld.py"
+        },
+        {
+            "Command": "clear",
+            "Description": "Clear a terminal of its contents",
+            "Example": "clear"
+        }
+    ],
+    "Programming": [
+        {
+            "Command": "python3",
+            "Description": "Start a python session. control + d to exit.",
+            "Example": "python3"
+        },
+        {
+            "Command": "python3 file_name.py",
+            "Description": "Run a python file via terminal",
+            "Example": "python3 hello_world.py"
+        },
+        {
+            "Command": "javac fileName.java",
+            "Description": "Compile a java file before running. It will create a \"class\" file",
+            "Example": "javac fileName.java"
+        },
+        {
+            "Command": "java fileName",
+            "Description": "Run a java file.",
+            "Example": "java fileName"
+        },
+        {
+            "Command": "jshell",
+            "Description": "Run a java session. control + d to exit.",
+            "Example": "jshell"
+        }
+
+    ]
+}
