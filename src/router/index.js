@@ -9,13 +9,15 @@ import ResumeTemplate from '../views/jobs/ResumeTemplate.vue';
 import HowToGetAJob from '../views/jobs/HowToGetAJob.vue'
 import OffersRecieved from '../views/jobs/OffersRecieved.vue';
 import InterviewTips from '../views/jobs/InterviewTips.vue';
+import CareerPathAdvice from '../views/jobs/CareerPathAdvice.vue';
 
 //Linkedin 
 import WhatIsLinkedin from '../views/linkedin/WhatIsLinkedin.vue';
 import SetupProfile from '../views/linkedin/SetupProfile.vue';
 import SetupJobAlerts from '../views/linkedin/SetupJobAlerts.vue';
 import LinkedinTips from '../views/linkedin/LinkedinTips.vue';
-import CareerPathAdvice from '../views/jobs/CareerPathAdvice.vue';
+import Contacts from '../views/linkedin/Contacts.vue';
+
 
 //Classes 
 import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
@@ -91,6 +93,10 @@ const routes = [
     {
         path: '/linkedin/LinkedinTips',
         component: LinkedinTips
+    },
+    {
+        path: '/linkedin/Contacts',
+        component: Contacts
     },
     {
         path: '/classes/ClassRecommendations',
