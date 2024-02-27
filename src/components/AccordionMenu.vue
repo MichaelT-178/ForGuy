@@ -78,7 +78,7 @@ const createHyperLink = (text) => {
 //(Router link)[/linkedin/LinkedinTips]
 const createRouterLink = (text) => {
   const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
-  return text.replace(customLinkPattern, (match, label, path) => {
+  return text.replace(customLinkPattern, (label, path) => {
     return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')"
                style="color: #007AFF; text-decoration: none;" 
                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
@@ -121,11 +121,11 @@ const formatEntry = (value) => {
 
   if (typeof value === 'string') {
 
-    if ((value.includes(' http://') || value.includes(' https://')) && !value.startsWith("[")){
-      return highlightLinkText(value);
+    if ((value.includes('(http://') || value.includes('(https://'))) {
+      return createHyperLink(value);
     }
 
-    value = createHyperLink(value);
+    value = highlightLinkText(value);
     value = createRouterLink(value);
     value = createRouterLinkWithProps(value);
   
