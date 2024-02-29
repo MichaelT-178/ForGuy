@@ -1,0 +1,58 @@
+{
+    "UIDesignTips": [
+        {
+            "Name": "Have a \"Center\" of the page that contains all necessary components and information",
+            "Tip 1": ""
+        },
+        {
+            "Name": "hink of your UI as a vertical stack",
+            "Tip 2": ""
+        },
+        {
+            "Name": "Use padding and relative positioning instead of absolute positioning",
+            "Tip 3": ""
+        },
+        {
+            "Name": "Use fonts, logos, and colors to make your UI look unique, not designs.",
+            "Tip 4": ""
+        },
+        {
+            "Name": "Provide \"responsive\" feedback to the user.",
+            "Tip 5": ""
+        },
+        {
+            "Name": "Don't use flashy colors excessively",
+            "Tip 6": ""
+        },
+        {
+            "Name": "Take Inspiration from other UI's",
+            "Tip 7": "Kind of elaborating on point 4, be observant when you're using apps and see UI designs you like and try to take inspiration from them. "
+        },
+        {
+            "Name": "",
+            "Tip 8": ""
+        },
+        {
+            "Name": "",
+            "Tip 9": ""
+        }
+    ],
+    "IBMDesignTips": [
+        {
+            "Name": "Top Prompts and hints for Frontcode Maintenance from a random IBM repository",
+            "tips": [
+                "Use CSS media queries to make the dashboard responsive for different screen sizes.",
+                "Add ARIA roles and attributes to improve accessibility for users with disabilities.",
+                "Implement error boundaries to handle errors gracefully within the component.",
+                "Improve error handling for fetching CSV data.",
+                "Generate code to implement focus management using the tabIndex property."
+            ]
+        }
+    ],
+    "Other": [
+        "UI/UX Designs I like ",
+        "Uber ",
+        "Waze",
+        "Alarmy "
+    ]
+}
