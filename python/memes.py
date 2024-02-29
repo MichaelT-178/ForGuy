@@ -13,14 +13,16 @@ def list_files(directory):
     return all_memes
 
 
-directory_path = '../../top-bar/src/assets/memes'
+#directory_path = '../../top-bar/src/assets/memes'
+directory_path = '../../top-bar/src/assets/UncwPics'
 all_memes = list_files(directory_path)
 
 
-for idx, meme in enumerate(all_memes):
+for idx, pic in enumerate(all_memes):
     # print(f'import Meme{idx + 1} from "../assets/memes/{meme}";')
+    print(f'import Pic{idx + 1} from "../assets/UncwPics/{pic}";')
 
-    print('    { text: "t", image: Meme',end="")
-    print(idx + 1, end="")
-    print(' },', end="")
-    print(f' //{meme}')
+    # print('    { text: "t", image: Pic',end="")
+    # print(idx + 1, end="")
+    # print(' },', end="")
+    # print(f' //{pic}')

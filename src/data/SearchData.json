@@ -204,6 +204,13 @@
     },
     {
         "id": 30,
+        "Emoji": "📸",
+        "MenuName": "UNCW Pictures",
+        "AllText": "TODO",
+        "Link": "/other/UncwPics"
+    },
+    {
+        "id": 31,
         "Emoji": "✉️",
         "MenuName": "Contact Me",
         "AllText": "",

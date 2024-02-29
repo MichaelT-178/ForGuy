@@ -1,48 +1,61 @@
 {
     "AppsToDownload": [
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Genuis Scan",
+            "Description": "Used to Scan papers using your camera, and turn them into pdfs. Recommended by one of my old math professors. I found it extremely useful when I was in college.",
+            "Link": "[Link](https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "LinkedIn",
+            "Description": "I think it's good to use the app to see notifications, job alerts, etc. I also feel like the app is a little easier to use than the website.",
+            "Link": "[Link](https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "ChatGPT",
+            "Description": "Super useful for obvious reasons.",
+            "Link": "[Link](https://apps.apple.com/us/app/chatgpt/id6448311069)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Alarmy",
+            "Description": "This is the alarm app I use. I really like the UI, the sound it uses, and the overall features.",
+            "Link": "[Link](https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Waze",
+            "Description": "This is the GPS app I use. It's extremely useful when driving. It can calcult",
+            "Link": "[Link](https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Microsoft Teams",
+            "Description": "This is the GPS app I use. It's extremely useful when driving. It can help you find optimal routes, calculates new routes if you make a wrong turn, and has settings that allow you to avoid freeways, toll roads, etc. It also shows you things like where cops are, crashes, hazards, etc. Overall a super helpful app and I'd definitely recommend it.",
+            "Link": "[Link](https://apps.apple.com/us/app/microsoft-teams/id1113153706)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Uber",
+            "Description": "You probably already know what this is, but I'll describe it anyway. It's basically a taxi service app. You can order an uber/taxi at basically ANY location and it will come pick you up and drive you around. This was very helpful when I needed to get a drug test for my job when I was in Wilmington and didn't have a car. I also think the UI is super cool which is a bonus. Would definetly it.",
+            "Link": "[Link](https://apps.apple.com/us/app/uber-request-a-ride/id368677368)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "GrubHub",
+            "Description": "If you don't want to wait in massive lines, you can use your UNCW Teal Meals through this app to order ahead of time.",
+            "Link": "[Link](https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c)"
+        }
+    ],
+    "Kinda Obviously": [
+        {
+            "Name": "Canvas",
+            "Description": "Manage your UNCW assignments, view grades, future assignments, etc.",
+            "Link": "[Link](https://apps.apple.com/us/app/canvas-student/id480883488)"
         },
         {
-            "Name": "",
-            "Description": ""
+            "Name": "Duo Mobile",
+            "Description": "Used for two-factor authentication at UNCW and many other places.",
+            "Link": "[Link](https://apps.apple.com/us/app/duo-mobile/id422663827)"
         },
         {
-            "Name": "",
-            "Description": ""
-        },
-        {
-            "Name": "",
-            "Description": ""
+            "Name": "Microsoft Outlook",
+            "Description": "Mangage your UNCW email and other outlook emails",
+            "Link": "[Link](https://apps.apple.com/us/app/microsoft-outlook/id951937596)"
         }
     ]
 }
