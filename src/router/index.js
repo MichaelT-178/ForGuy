@@ -41,6 +41,7 @@ import CsStuffILike from '../views/other/CsStuffILike.vue';
 import TerminalCommands from '../views/other/TerminalCommands.vue';
 import KeyboardShortcuts from '../views/other/KeyboardShortcuts.vue';
 import Memes from '../views/other/Memes.vue';
+import UncwPics from '../views/other/UncwPictures.vue';
 
 //Contact
 import ContactMe from '../views/Contact.vue'
@@ -165,6 +166,10 @@ const routes = [
     {
         path: '/other/Memes',
         component: Memes
+    },
+    {
+        path: '/other/UncwPics',
+        component: UncwPics
     },
     {
         path: '/ContactMe',
