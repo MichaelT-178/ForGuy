@@ -1,6 +1,99 @@
 <template>
-    <main class="about-page">
-        <h1>Interview Tips</h1>
-        <p>This is the Interview Tips page</p>
-    </main>
+    <div class="container">
+        <h1 class="tip-header">Interview Tips</h1>
+        <p class="description">These are tips I have for preparing for and participating in an interview.</p>
+        <div class="tips-container">
+            <div v-for="(tip, index) in tips" :key="index" class="tip-section">
+                <p class="tip-text" :data-index="index + 1"></p>
+                <p class="text-section">{{ tip }}</p>
+            </div>
+        </div>
+        <p style="margin-bottom: 60px;"></p>
+    </div>
 </template>
+
+<script setup>
+
+const tips = [
+    "Super cool 1",
+    "Super cool 2",
+    "Super cool 3",
+    "Super cool 4",
+    "Super cool 5",
+    "Super cool 6",
+    "Super cool 7",
+    "Super cool 8",
+    "Super cool 9",
+    "Super cool 10",
+    "Super cool 11"
+]
+
+</script>
+
+
+<style scoped>
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tip-header {
+    text-align: left;
+    border-bottom: 1.5px solid #d8dee4;
+    padding-bottom: 7px;
+    width: 690px;
+}
+
+.description {
+    margin-top: -8px;
+    font-size: 19px;
+    width: 690px;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tip-section {
+    margin-bottom: 5px;
+    width: 575px;
+}
+
+.tip-text {
+    position: relative;
+    width: auto;
+    font-size: 21px;
+    font-weight: 500;
+    color: darkblue;
+}
+
+.tip-text::before {
+    content: attr(data-index);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -35px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.text-section {
+    font-size: 22.5px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    margin-top: -13.5px;
+}
+
+</style>
