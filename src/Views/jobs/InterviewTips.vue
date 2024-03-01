@@ -69,7 +69,6 @@ const tips = [
     width: auto;
     font-size: 21px;
     font-weight: 500;
-    color: darkblue;
 }
 
 .tip-text::before {
@@ -94,6 +93,20 @@ const tips = [
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     margin-top: -13.5px;
+}
+
+@media (max-width: 700px) {
+    .tip-header {
+        width: 490px;
+    }
+    
+    .description {
+        width: 490px;
+    }
+
+    .tip-section {
+        width: 375px;
+    }
 }
 
 </style>
