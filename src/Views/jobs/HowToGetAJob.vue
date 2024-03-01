@@ -1,7 +1,7 @@
 <template>
     <h1 class="job-header">How to get a job</h1>
     <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
-        <p class="tip-text">Tip {{ index + 1 }}</p>
+        <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
         <AccordionMenu :item="tip" :isOpen="allOpen"/>
         <p style="margin-bottom: 35px;"></p>
     </div>
