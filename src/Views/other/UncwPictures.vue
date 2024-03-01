@@ -7,11 +7,19 @@
             <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
             <img :src="pic.image" alt="Uncw Picture">
         </div>
+        
+        <h1>North Carolina Pics</h1>
+        <p>Other Pictures taken in North Carolina</p>
+        
+        <div class="uncw-pics-container" v-for="(pic, index) in NorthCarolinaPics" :key="index">
+            <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
+            <img :src="pic.image" alt="Uncw Picture">
+        </div>
     </div>
 </template>
 
 <script setup>
-import { uncwPics } from "../../components/UncwPics.vue";
+import { uncwPics, NorthCarolinaPics } from "../../components/UncwPics.vue";
 
 </script>
 
