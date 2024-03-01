@@ -75,10 +75,10 @@ const createHyperLink = (text) => {
   );
 };
 
-//(Router link)[/linkedin/LinkedinTips]
+//(Router link)[/linkedin/LinkedinTips]. Note the seemingly unused "match" parameter is necessary.
 const createRouterLink = (text) => {
   const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
-  return text.replace(customLinkPattern, (label, path) => {
+  return text.replace(customLinkPattern, (match, label, path) => {
     return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')"
                style="color: #007AFF; text-decoration: none;" 
                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
