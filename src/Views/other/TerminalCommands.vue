@@ -66,8 +66,6 @@ const scrollToPracticeTable = async () => {
 .scroll-txt:hover {
     color: #0000D7;
     text-decoration: underline;
-
-
 }
 
 .cmd-table {
