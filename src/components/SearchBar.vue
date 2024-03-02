@@ -10,6 +10,7 @@
                v-model="searchQuery" 
                placeholder="Search term appears in..." 
                :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}"
+               @keydown.enter="handleEnterKey"
         >
         <span class="material-icons" id="close-icon" @click="closeSearchBar">close</span>
       </div>
@@ -34,11 +35,20 @@
 
 <script setup>
 import { ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
 import SearchData from '../data/SearchData.json'; 
 
 const searchQuery = ref('');
 const filteredResults = ref([]);
 const emit = defineEmits(['close-search']);
+const router = useRouter();
+
+const handleEnterKey = (event) => {
+  if (event.key === 'Enter') {
+    emit('close-search');
+    router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
+  }
+};
 
 const filterResults = () => {
   if (searchQuery.value) {
