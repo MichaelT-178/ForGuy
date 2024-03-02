@@ -49,6 +49,10 @@ import ContactMe from '../views/Contact.vue'
 //Image View to display images
 import ImageView from '../views/ImageView.vue';
 
+//Search Results view when return is pressed when the SearchBar is showing.
+import SearchResults from '../views/SearchResults.vue';
+
+
 //The routes 
 const routes = [
     {
@@ -180,7 +184,13 @@ const routes = [
         name: 'ImageView',
         component: ImageView,
         props: true
-    }
+    },
+    {
+        path: '/SearchResults/:SearchQuery',
+        name: 'SearchResults',
+        component: SearchResults,
+        props: true
+    },
 ]
 
 const router = createRouter({
