@@ -40,7 +40,7 @@ export const uncwPics = [
 
 
 export const NorthCarolinaPics = [
-    { text: "I think this was taken is Mooresville. Photo creds to my dad", image: Pic16 }, //MooresvilleSunset.jpg
+    { text: "I think this was taken in Mooresville. Photo creds to my dad", image: Pic16 }, //MooresvilleSunset.jpg
     { text: "Rainbow in Weddington in July", image: Pic17 }, //WeddingtonRainbow.jpg
     { text: "The BoardWalk in Charlotte. Late August", image: Pic18 }, //CharlotteBoardwalkView.jpg
     { text: "Sunrise in Durham. (This looked way more pink and orange irl. Taken in early March)", image: Pic19 } //SunriseInDurham.jpg
