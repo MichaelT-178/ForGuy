@@ -92,12 +92,14 @@ window.navigateToPath = (path) => {
 };
 
 //@Image View@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }]
+//If you want to include a " character in the actual string add the following \\\\\\\". See ClassRecommendations.json for example. Search \\\\\\\"
+//If you want to include a ' character in the actual string add the following &&&&. See ClassRecommendations.json for example. Search &&&&
 const createRouterLinkWithProps = (text) => {
   const markdownPattern = /@([^@]+)@\[\s*({.*?})\s*\]/g;
   return text.replace(markdownPattern, (match, label, jsonString) => {
     let toProp;
     try {
-      jsonString = jsonString.replace(/'/g, '"');
+      jsonString = jsonString.replace(/'/g, '"')
       toProp = JSON.parse(jsonString);
     } catch (e) {
       console.error('Error parsing JSON string:', e);

@@ -18,9 +18,11 @@ const route = useRoute();
 
 const info = {
   Name: route.params.Name,
-  Description: route.params.Description,
+  Description: route.params.Description.replace("&&&&", "'"), //Include ' in actual string
   Pic: route.params.Pic,
 };
+
+
 
 const imagePath = new URL(`../assets/${info.Pic}`, import.meta.url).href;
 
