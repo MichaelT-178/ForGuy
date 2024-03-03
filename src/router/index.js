@@ -18,7 +18,6 @@ import SetupJobAlerts from '../views/linkedin/SetupJobAlerts.vue';
 import LinkedinTips from '../views/linkedin/LinkedinTips.vue';
 import Contacts from '../views/linkedin/Contacts.vue';
 
-
 //Classes 
 import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
 import CSCDescriptions from '../views/classes/CSCDescriptions.vue';
@@ -49,7 +48,7 @@ import ContactMe from '../views/Contact.vue'
 //Image View to display images
 import ImageView from '../views/ImageView.vue';
 
-//Search Results view when return is pressed when the SearchBar is showing.
+//Search Results view for when return in pressed when the SearchBar is open
 import SearchResults from '../views/SearchResults.vue';
 
 
@@ -190,7 +189,7 @@ const routes = [
         name: 'SearchResults',
         component: SearchResults,
         props: true
-    },
+    }
 ]
 
 const router = createRouter({
