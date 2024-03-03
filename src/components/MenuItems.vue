@@ -43,7 +43,8 @@ export const menuItems = [
             { text: "What is GitHub?",     icon: "hub",                link: "/CompSci/GitHub" },
             { text: "VSCode Settings",     icon: "settings",           link: "/CompSci/VSCodeSettings" },
             { text: "UI/UX Design Tips",   icon: "brush",              link: "/CompSci/UIDesignTips" },
-            { text: "VSCode Insights",     icon: "extension",          link: "/CompSci/VSCodeInsights" },
+            { text: "VSCode Extensions",   icon: "extension",          link: "/CompSci/VSCodeExtensions" },
+            { text: "VSCode Shortcuts",    icon: "rocket_launch",      link: "/CompSci/VSCodeShortcuts" },
             { text: "Comp Sci Tips",       icon: "device_hub",         link: "/CompSci/CompSciTips" } 
         ]
     },

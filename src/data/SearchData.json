@@ -141,76 +141,83 @@
     },
     {
         "id": 21,
-        "Emoji": "🚀",
-        "MenuName": "VSCode Insights",
+        "Emoji": "🧩",
+        "MenuName": "VSCode Extensions",
         "AllText": "TODO",
-        "Link": "/CompSci/VSCodeInsights"
+        "Link": "/CompSci/VSCodeExtensions"
     },
     {
         "id": 22,
+        "Emoji": "🚀",
+        "MenuName": "VSCode Shortcuts",
+        "AllText": "TODO",
+        "Link": "/CompSci/VSCodeShortcuts"
+    },
+    {
+        "id": 23,
         "Emoji": "🖼️",
         "MenuName": "UI/UX Design Tips",
         "AllText": "TODO",
         "Link": "/CompSci/UIDesignTips"
     },
     {
-        "id": 23,
+        "id": 24,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "AllText": "TODO",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 24,
+        "id": 25,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
         "Link": "/other/GeneralTips"
     },
     {
-        "id": 25,
+        "id": 26,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
         "Link": "/other/AppsToDownload"
     },
     {
-        "id": 26,
+        "id": 27,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
         "Link": "/other/CompSciStuff"
     },
     {
-        "id": 27,
+        "id": 28,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "AllText": "TODO",
         "Link": "/other/TerminalCommands"
     },
     {
-        "id": 28,
+        "id": 29,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "AllText": "TODO",
         "Link": "/other/KeyboardShortcuts"
     },
     {
-        "id": 29,
+        "id": 30,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
         "Link": "/other/Memes"
     },
     {
-        "id": 30,
+        "id": 31,
         "Emoji": "📸",
         "MenuName": "UNCW Pictures",
         "AllText": "TODO",
         "Link": "/other/UncwPics"
     },
     {
-        "id": 31,
+        "id": 32,
         "Emoji": "✉️",
         "MenuName": "Contact Me",
         "AllText": "",
