@@ -29,7 +29,8 @@ import Certifications from '../views/classes/Certifications.vue';
 import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
 import GitHubView from '../views/compsci/GitHub.vue';
 import VSCodeSettings from '../views/compsci/VSCodeSettings/VSCodeSettings.vue';
-import VSCodeInsights from '../views/compsci/VSCodeInsights.vue';
+import VSCodeExtensions from '../views/compsci/VSCodeExtensions.vue';
+import VSCodeShortcuts from '../views/compsci/VSCodeShortcuts.vue';
 import UIDesignTips from '../views/compsci/UIDesignTips.vue';
 import CompSciTips from '../views/compsci/CompSciTips.vue';
 
@@ -135,8 +136,12 @@ const routes = [
         component: VSCodeSettings
     },
     {
-        path: '/CompSci/VSCodeInsights',
-        component: VSCodeInsights
+        path: '/CompSci/VSCodeExtensions',
+        component: VSCodeExtensions
+    },
+    {
+        path: '/CompSci/VSCodeShortcuts',
+        component: VSCodeShortcuts
     },
     {
         path: '/CompSci/UIDesignTips',
