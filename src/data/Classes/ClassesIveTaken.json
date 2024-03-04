@@ -1,0 +1,446 @@
+{
+    "Freshman": [
+        {
+            "First": [
+                {
+                    "Name": "UNI 101: First-Year Seminar",
+                    "Number": "UNI 101",
+                    "Title": "First-Year Seminar",
+                    "Grade": "A",
+                    "Format": "Synchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Lucy Holman",
+                    "Description": ""
+                },
+                {
+                    "Name": "MAT 111: College Algebra",
+                    "Number": "MAT 111",
+                    "Title": "College Algebra",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Bailey Hall",
+                    "Description": ""
+                },
+                {
+                    "Name": "ENG 101: College Writing and Reading I",
+                    "Number": "ENG 101",
+                    "Title": "College Writing and Reading I",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Christa Weaver",
+                    "Description": ""
+                },
+                {
+                    "Name": "SPN 101: Introductory Spanish I",
+                    "Number": "SPN 101",
+                    "Title": "Introductory Spanish I",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Sergi Rivero-Navarro",
+                    "Description": ""
+                },
+                {
+                    "Name": "STT 215: Introduction to Statistics",
+                    "Number": "STT 215",
+                    "Title": "Introduction to Statistics",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Allen Phelps",
+                    "Description": ""
+                }
+            ],
+            "Second": [
+                {
+                    "Name": "CSC 131: Introduction to Computer Science",
+                    "Number": "CSC 131",
+                    "Title": "Introduction to Computer Science - Python",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Gulustan Dogan",
+                    "Description": ""
+                },
+                {
+                    "Name": "MAT 112: Trigonometry",
+                    "Number": "MAT 112",
+                    "Title": "Trigonometry",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Allison Toney",
+                    "Description": ""
+                },
+                {
+                    "Name": "ENG 201: College Writing and Reading II",
+                    "Number": "ENG 201",
+                    "Title": "College Writing and Reading II",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Noelle Cameron Parker",
+                    "Description": ""
+                },
+                {
+                    "Name": "SPN 102: Introductory Spanish II",
+                    "Number": "SPN 102",
+                    "Title": "Introductory Spanish II",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Tanesha Parker",
+                    "Description": ""
+                },
+                {
+                    "Name": "ECN 221: Principles of Economics-Micro",
+                    "Number": "ECN 221",
+                    "Title": "Principles of Economics-Micro",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Christian Beer",
+                    "Description": ""
+                }
+            ]
+        }
+    ],
+    "Sophomore": [
+        {
+            "First": [
+                {
+                    "Name": "CSC 133: Discrete Mathematical Structures",
+                    "Number": "CSC 133",
+                    "Title": "Discrete Mathematical Structures",
+                    "Grade": "A-",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Kevin Carlin",
+                    "Description": ""
+                },
+                {
+                    "Name": "MAT 161: Calculus with Analytical Geometry I",
+                    "Number": "MAT 161",
+                    "Title": "Calculus with Analytical Geometry I",
+                    "Grade": "C+",
+                    "Format": "In-Person",
+                    "Credit Hours": "4",
+                    "Professor": "Erik Slivken",
+                    "Description": ""
+                },
+                {
+                    "Name": "CHM 101: General Chemistry I",
+                    "Number": "CHM 101",
+                    "Title": "General Chemistry I",
+                    "Grade": "C",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "S. Bart Jones",
+                    "Description": ""
+                },
+                {
+                    "Name": "CHML 101: General Chemistry Laboratory I",
+                    "Number": "CHML 101",
+                    "Title": "General Chemistry Laboratory I",
+                    "Grade": "A",
+                    "Format": "In-Person",
+                    "Credit Hours": "1",
+                    "Professor": "The TA at the time",
+                    "Description": ""
+                }
+
+            ],
+            "Second": [
+                {
+                    "Name": "MAT 162: Calculus with Analytical Geometry II",
+                    "Number": "MAT 162",
+                    "Title": "Calculus with Analytical Geometry II",
+                    "Grade": "A-",
+                    "Format": "In-Person",
+                    "Credit Hours": "4",
+                    "Professor": "Xiaojie Hou",
+                    "Description": ""
+                },
+                {
+                    "Name": "PHY 201: General Physics I",
+                    "Number": "PHY 201",
+                    "Title": "General Physics I",
+                    "Grade": "C",
+                    "Format": "In-Person",
+                    "Credit Hours": "4",
+                    "Professor": "Timothy Daniels",
+                    "Description": ""
+                },
+                {
+                    "Name": "WPA 101: Individual Physical Activity and Wellness",
+                    "Number": "WPA 101",
+                    "Title": "Individual Physical Activity and Wellness ONLINE LECTURE",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "1",
+                    "Professor": "Marsha Todd",
+                    "Description": "Both the lecture and lab are only 1 hour."
+                },
+                {
+                    "Name": "WPAL 101: Power Yoga",
+                    "Number": "WPAL 101",
+                    "Title": "Power Yoga ONLINE LAB",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "1",
+                    "Professor": "Rachael McLoud",
+                    "Description": "The entire grade was just watching one video a week and listing 2 new exercises from the video. Super easy class.Both the lecture and lab are only 1 hour."
+                }
+            ]
+        }
+    ],
+    "Junior": [
+        {
+            "First": [
+                {
+                    "Name": "CSC 231: Introduction to Data Structures",
+                    "Number": "CSC 231",
+                    "Title": "Introduction to Data Structures",
+                    "Grade": "A",
+                    "Format": "In-Person",
+                    "Credit Hours": "4",
+                    "Professor": "Toni Pence",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 242: Computer Organization",
+                    "Number": "CSC 242",
+                    "Title": "Computer Organization",
+                    "Grade": "B+",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Gulustan Dogan",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 302: Introduction to Artificial Intelligence",
+                    "Number": "CSC 302",
+                    "Title": "Introduction to Artificial Intelligence",
+                    "Grade": "C+",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Yang Song",
+                    "Description": ""
+                },
+                {
+                    "Name": "HST 101: Europe in the World I",
+                    "Number": "HST 101",
+                    "Title": "Europe in the World I",
+                    "Grade": "A",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Corey Ellithorpe",
+                    "Description": ""
+                },
+                {
+                    "Name": "OCN 250: Coasts and Society",
+                    "Number": "OCN 250",
+                    "Title": "Coasts and Society",
+                    "Grade": "A-",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Andrea Hawkes",
+                    "Description": ""
+                },
+                {
+                    "Name": "CHM 102: General Chemistry II",
+                    "Number": "CHM 102",
+                    "Title": "General Chemistry II",
+                    "Grade": "C",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Winifred Johnson",
+                    "Description": ""
+                },
+                {
+                    "Name": "CHML 102: General Chemistry Laboratory II",
+                    "Number": "CHML 102",
+                    "Title": "General Chemistry Laboratory II",
+                    "Grade": "A",
+                    "Format": "In-Person",
+                    "Credit Hours": "1",
+                    "Professor": "The TA at the time",
+                    "Description": ""
+                }
+            ],
+            "Second": [
+                {
+                    "Name": "CSC 331: Object-Oriented Programming and Design",
+                    "Number": "CSC 331",
+                    "Title": "Object-Oriented Programming and Design",
+                    "Grade": "A",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Shauna White",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 340: Scientific Computing",
+                    "Number": "CSC 340",
+                    "Title": "Scientific Computing",
+                    "Grade": "A",
+                    "Format": "Asynchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Brittany Morago",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 360: Formal Languages and Computability",
+                    "Number": "CSC 360",
+                    "Title": "Formal Languages and Computability",
+                    "Grade": "B-",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Curry Guinn",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 385: Professional and Ethical Issues in Computing",
+                    "Number": "CSC 385",
+                    "Title": "Professional and Ethical Issues in Computing",
+                    "Grade": "A",
+                    "Format": "Synchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Jasmine Gaston",
+                    "Description": ""
+                },
+                {
+                    "Name": "CSC 498: Internship in Computer Science",
+                    "Number": "CSC 498",
+                    "Title": "Internship in Computer Science",
+                    "Grade": "P",
+                    "Format": "Mostly Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Shauna White",
+                    "Description": ""
+                },
+                {
+                    "Name": "MUS 115: Music in Society",
+                    "Number": "MUS 115",
+                    "Title": "Music in Society",
+                    "Grade": "A",
+                    "Format": "Synchronous Remote",
+                    "Credit Hours": "3",
+                    "Professor": "Nicholas Fife",
+                    "Description": ""
+                },
+                {
+                    "Name": "ARH 201: Ancient Art and Archaeology",
+                    "Number": "ARH 201",
+                    "Title": "Ancient Art and Archaeology",
+                    "Grade": "A-",
+                    "Format": "In-Person",
+                    "Credit Hours": "3",
+                    "Professor": "Nicholas Hudson",
+                    "Description": ""
+                }
+            ]
+        }
+    ],
+    "Senior": [
+        {
+            "Name": "CSC 351: Applied Software Security",
+            "Number": "CSC 351",
+            "Title": "Applied Software Security",
+            "Grade": "A",
+            "Format": "In-Person",
+            "Credit Hours": "3",
+            "Professor": "Lucas Layman",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 342: Operating Systems",
+            "Number": "CSC 342",
+            "Title": "Operating Systems",
+            "Grade": "B",
+            "Format": "In-Person",
+            "Credit Hours": "3",
+            "Professor": "Clayton Ferner",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 380: Design and Analysis of Algorithms",
+            "Number": "CSC 380",
+            "Title": "Design and Analysis of Algorithms",
+            "Grade": "B-",
+            "Format": "Synchronous Remote",
+            "Credit Hours": "3",
+            "Professor": "Gur Adhar",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 434: Programming Languages",
+            "Number": "CSC 434",
+            "Title": "Programming Languages",
+            "Grade": "C+",
+            "Format": "In-Person",
+            "Credit Hours": "3",
+            "Professor": "Sridhar Narayan",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 450: Software Engineering",
+            "Number": "CSC 450",
+            "Title": "Software Engineering",
+            "Grade": "A",
+            "Format": "In-Person",
+            "Credit Hours": "3",
+            "Professor": "Lucas Layman",
+            "Description": ""
+        },
+        {
+            "Name": "CSC 455: Database Design and Implementation",
+            "Number": "CSC 455",
+            "Title": "Database Design and Implementation",
+            "Grade": "B+",
+            "Format": "In-Person",
+            "Credit Hours": "3",
+            "Professor": "Marni Ferner",
+            "Description": ""
+        },
+        {
+            "Name": "ANT 207: Archaeology",
+            "Number": "ANT 207",
+            "Title": "Archaeology",
+            "Grade": "A",
+            "Format": "Asynchronous Remote",
+            "Credit Hours": "3",
+            "Professor": "Cynthia Bellacero",
+            "Description": ""
+        }
+    ],
+    "Ap Classes": [
+        {
+            "High School Name": "AP Computer Science Principles",
+            "AP Exam Score": "4",
+            "College Credit Received": "",
+            "Credit Hours Received": ""
+        },
+        {
+            "High School Name": "AP Computer Science Principles",
+            "AP Exam Score": "4",
+            "College Credit Received": "CSC 131",
+            "Credit Hours Received": "0",
+            "Explanation": "I don't recommend skipping CSC 131, even though you'vd definitely already taken it. Ap Comp Sci principles definitely isn't a good replacement for that class. Despite getting credit I still took CSC 131. It's essential if you don't know python programming."
+        },
+        {
+            "High School Name": "AP European History",
+            "AP Exam Score": "3",
+            "College Credit Received": "HST 001",
+            "Credit Hours Received": "3"
+        },
+        {
+            "High School Name": "AP Government and Politics - US",
+            "AP Exam Score": "3",
+            "College Credit Received": "PLS 101",
+            "Credit Hours Received": "3"
+        }
+    ]
+}
