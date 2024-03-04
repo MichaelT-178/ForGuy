@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1 class="tip-header">Interview Tips</h1>
-        <p class="description">These are tips I have for preparing for and participating in an interview. Mostly common topics I was asked about.</p>
+        <p class="description">These are tips I have for preparing for and participating in an interview. These are mostly common software engineering topics I was asked about in interviews.</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"></p>

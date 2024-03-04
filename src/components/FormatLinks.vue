@@ -52,8 +52,10 @@ window.navigateToPath = (path) => {
 //If you want to include a ' character in the actual string add the following &&&&. See ClassRecommendations.json for example. Search &&&&
 export const createRouterLinkWithProps = (text) => {
   const markdownPattern = /@([^@]+)@\[\s*({.*?})\s*\]/g;
+
   return text.replace(markdownPattern, (match, label, jsonString) => {
     let toProp;
+
     try {
       jsonString = jsonString.replace(/'/g, '"')
       toProp = JSON.parse(jsonString);
@@ -61,6 +63,7 @@ export const createRouterLinkWithProps = (text) => {
       console.error('Error parsing JSON string:', e);
       return match;
     }
+    
     return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')"
                style="color: #007AFF; text-decoration: none;" 
                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 

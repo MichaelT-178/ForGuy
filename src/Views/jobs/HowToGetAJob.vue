@@ -22,10 +22,6 @@ const allOpen = ref(false);
 
 <style scoped>
 
-/* .tip-wrapper { */
-    /* Ensure there's no additional left padding or margin offsetting the alignment */
-/* } */
-
 .job-header {
     margin-left: auto; /* Ensures it aligns with the start of the accordion if necessary */
     margin-right: auto; /* Ensures it aligns with the start of the accordion if necessary */
