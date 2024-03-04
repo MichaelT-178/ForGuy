@@ -41,6 +41,14 @@
             "Description": "If you're applying to jobs in summer 2025 or January 2026, you should start applying in August. Don't wait until the last minute to start applying for jobs."
         },
         {
+            "Name": "Set job alerts on LinkedIn and Handshake",
+            "Description": "Job alerts are emails that will be sent to you when a company has new job opportunities. These allow you to know what jobs are open and what companies are hiring. I also believe that the sooner you apply the better. I'd imagine a hiring manager would look mostly the first applications sent in, and not the 1000 others sent in 3 weeks after the job opening was posted."
+        },
+        {
+            "Name": "Be Timely",
+            "Description": "If you see a job posting you're interested in, apply as soon as possible. Don't wait 3 weeks before applying because probably a ton of other people will have applied by then or the posting might've closed."
+        },
+        {
             "Name": "Be Patient",
             "Description": "Being patient is key when you're applying for jobs. I have multiple examples.",
             "Examples": [
@@ -58,6 +66,14 @@
         {
             "Name": "Don't get Discouraged",
             "Description": "I must have applied to literally like a 1,000 companies when I was looking for internships and full-time jobs. I was rejected countless times, usually by companies much less \"prestigious\" then USAA, the NSA, and IBM. Don't let rejection get you down, and keep being persistent and trying. Also, just because you got rejected from a position at a smaller company, doesn't mean a bigger company won't hire you."
+        },
+        {
+            "Name": "Go to the Career fair",
+            "Description": "The UNCW computer science career fair is typically held in late September and February. I'd recommend going as companies interested in hiring UNCW students will be there."
+        },
+        {
+            "Name": "Check your UNCW frequently",
+            "Description": "People from the UNCW computer science department sometimes send out SWE job opportunities in the Wilmington area. In particularly Ron Vetter and Shauna White."
         },
         {
             "Name": "Let Me Know If You Have Questions",
