@@ -13,6 +13,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
+import { highlightLinkText } from '../components/FormatLinks.vue';
 
 const route = useRoute();
 
@@ -25,23 +26,6 @@ const info = {
 
 
 const imagePath = new URL(`../assets/${info.Pic}`, import.meta.url).href;
-
-const highlightLinkText = (text) => {
-  const urlPattern = /(\b(https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|]/ig;
-
-  return text.replace(urlPattern, (url) => 
-    {
-      const realURL = !url.startsWith("http") ? `https://${url}` : url;
-
-      return `<a href="${realURL}" target="_blank" 
-                style="color: #007AFF; text-decoration: none;" 
-                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-                onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-              >
-              ${url}</a>`;
-    }
-  );
-};
 
 </script>
 

@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <h1 class="tip-header">Interview Tips</h1>
-        <p class="description">These are tips I have for preparing for and participating in an interview.</p>
+        <p class="description">These are tips I have for preparing for and participating in an interview. Mostly common topics I was asked about.</p>
         <div class="tips-container">
-            <div v-for="(tip, index) in tips" :key="index" class="tip-section">
-                <p class="tip-text" :data-index="index + 1"></p>
-                <p class="text-section">{{ tip }}</p>
+            <div v-for="tip in tips" :key="tip.id" class="tip-section">
+                <p class="tip-text" :data-index="tip.id"></p>
+                <p class="text-section" v-html="createRouterLink(tip.tip)"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -13,23 +13,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import AllData from "../../data/jobs/InterviewTips.json";
+import { createRouterLink } from "../../components/FormatLinks.vue";
 
-const tips = [
-    "Super cool 1",
-    "Super cool 2",
-    "Super cool 3",
-    "Super cool 4",
-    "Super cool 5",
-    "Super cool 6",
-    "Super cool 7",
-    "Super cool 8",
-    "Super cool 9",
-    "Super cool 10",
-    "Super cool 11"
-]
-
+const jsonData = ref(AllData);
+const tips = jsonData.value["Tips"];
 </script>
-
 
 <style scoped>
 
@@ -89,10 +79,10 @@ const tips = [
 }
 
 .text-section {
-    font-size: 22.5px;
+    font-size: 19.5px;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    margin-top: -13.5px;
+    margin-top: -13px;
 }
 
 @media (max-width: 700px) {

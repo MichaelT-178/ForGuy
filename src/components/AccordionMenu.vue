@@ -22,7 +22,12 @@
 
 <script setup>
 import { ref, computed, watchEffect, toRefs } from 'vue';
-import router from '../router/index.js';
+import {
+  highlightLinkText,
+  createHyperLink,
+  createRouterLink,
+  createRouterLinkWithProps
+} from './FormatLinks.vue';
 
 const props = defineProps({
   item: Object,
@@ -45,80 +50,6 @@ const shouldDisplay = (key) => {
   return !excludedKeys.includes(key);
 };
 
-//Ex: https://www.target.com/
-const highlightLinkText = (text) => {
-  const urlPattern = /(\b(https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|]/ig;
-
-  return text.replace(urlPattern, (url) => 
-    {
-      const realURL = !url.startsWith("http") ? `https://${url}` : url;
-
-      return `<a href="${realURL}" target="_blank" 
-                style="color: #007AFF; text-decoration: none;" 
-                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-                onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-              >${url}</a>`;
-    }
-  );
-};
-
-//[The link](https://www.target.com/)
-const createHyperLink = (text) => {
-  const markdownLinkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
-  return text.replace(markdownLinkPattern, (match, label, url) => 
-    `<a href="${url}" target="_blank"
-        style="color: #007AFF; text-decoration: none;" 
-        onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-      >
-      ${label}</a>`
-  );
-};
-
-//(Router link)[/linkedin/LinkedinTips]. Note the seemingly unused "match" parameter is necessary.
-const createRouterLink = (text) => {
-  const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
-  return text.replace(customLinkPattern, (match, label, path) => {
-    return `<a href="javascript:void(0);" onclick="navigateToPath('${path}')"
-               style="color: #007AFF; text-decoration: none;" 
-               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-               onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-            >${label}</a>`;
-  });
-};
-
-window.navigateToPath = (path) => {
-  router.push(path);
-};
-
-//@Image View@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'This is the NSA pic', 'Pic': 'seahawk.png'} }]
-//If you want to include a " character in the actual string add the following \\\\\\\". See ClassRecommendations.json for example. Search \\\\\\\"
-//If you want to include a ' character in the actual string add the following &&&&. See ClassRecommendations.json for example. Search &&&&
-const createRouterLinkWithProps = (text) => {
-  const markdownPattern = /@([^@]+)@\[\s*({.*?})\s*\]/g;
-  return text.replace(markdownPattern, (match, label, jsonString) => {
-    let toProp;
-    try {
-      jsonString = jsonString.replace(/'/g, '"')
-      toProp = JSON.parse(jsonString);
-    } catch (e) {
-      console.error('Error parsing JSON string:', e);
-      return match;
-    }
-    return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')"
-               style="color: #007AFF; text-decoration: none;" 
-               onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-               onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-            >
-            ${label}</a>`;
-  });
-};
-
-window.navigateToVuePath = (toPropString) => {
-  const toProp = JSON.parse(toPropString.replace(/&quot;/g, "\""));
-  router.push(toProp);
-};
-
 const formatEntry = (value) => {
 
   if (typeof value === 'string') {
@@ -127,7 +58,11 @@ const formatEntry = (value) => {
       return createHyperLink(value);
     }
 
-    value = highlightLinkText(value);
+    if (!value.includes("@[")) { //RouterLinksWithProps can contain link in prop string.
+      value = highlightLinkText(value);
+    }
+
+
     value = createRouterLink(value);
     value = createRouterLinkWithProps(value);
   

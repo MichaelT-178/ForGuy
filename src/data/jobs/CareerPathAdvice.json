@@ -1,0 +1,28 @@
+{
+    "CareerPathAdvice": [
+        {
+            "id": 1,
+            "advice": "In the summer of 2024. Get an internship at nCino or Datacor, Inc. I know a good contact from Datacor, (contact me)[/ContactMe] if interested."
+        },
+        {
+            "id": 2,
+            "advice": "Do stuff"
+        },
+        {
+            "id": 3,
+            "advice": "Do stuff"
+        },
+        {
+            "id": 4,
+            "advice": "Do stuff"
+        },
+        {
+            "id": 5,
+            "advice": "Do stuff"
+        },
+        {
+            "id": 6,
+            "advice": "Do stuff"
+        }
+    ]
+}
