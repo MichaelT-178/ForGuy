@@ -17,7 +17,6 @@ import { highlightLinkText } from '../components/FormatLinks.vue';
 
 const route = useRoute();
 
-
 const info = {
   Name: route.params.Name,
   Description: route.params.Description.replace("&&&&", "'"), //Include ' in actual string
