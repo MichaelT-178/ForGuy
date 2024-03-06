@@ -18,6 +18,10 @@ import Pic16 from "../assets/UncwPics/MooresvilleSunset.jpg";
 import Pic17 from "../assets/UncwPics/WeddingtonRainbow.jpg";
 import Pic18 from "../assets/UncwPics/CharlotteBoardwalkView.jpg";
 import Pic19 from "../assets/UncwPics/SunriseInDurham.jpg";
+import Pic20 from "../assets/UncwPics/PinkSkyMarchDurham.jpg";
+import Pic21 from "../assets/UncwPics/RedSunsetMarch.jpg";
+import Pic22 from "../assets/UncwPics/DurhamSidewalkSunset.jpg";
+import Pic23 from "../assets/UncwPics/FireyClouds.jpg";
 
 
 export const uncwPics = [
@@ -43,7 +47,12 @@ export const NorthCarolinaPics = [
     { text: "I think this was taken in Mooresville. Photo creds to my dad", image: Pic16 }, //MooresvilleSunset.jpg
     { text: "Rainbow in Weddington in July", image: Pic17 }, //WeddingtonRainbow.jpg
     { text: "The BoardWalk in Charlotte. Late August", image: Pic18 }, //CharlotteBoardwalkView.jpg
-    { text: "Sunrise in Durham. (This looked way more pink and orange irl. Taken in early March)", image: Pic19 } //SunriseInDurham.jpg
+    { text: "Sunrise in Durham. (This looked way more pink and orange irl. Taken in early March)", image: Pic19 }, //SunriseInDurham.jpg
+    { text: "Pink Skys in March (Durham)", image: Pic20 }, //PinkSkyMarchDurham.jpg
+    { text: "Sunset through the buildings in Durham", image: Pic21 }, //RedSunsetMarch.jpg
+    { text: "Durham Sidewalk and Sunset", image: Pic22 }, //DurhamSidewalkSunset.jpg
+    { text: "Firey Clouds in Durham", image: Pic23 }, //FireyClouds.jpg
+    
 ]
 
 </script>
