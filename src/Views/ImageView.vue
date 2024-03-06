@@ -23,7 +23,6 @@ const info = {
   Pic: route.params.Pic,
 };
 
-
 const imagePath = new URL(`../assets/${info.Pic}`, import.meta.url).href;
 
 </script>

@@ -192,6 +192,14 @@
             "Pay": ""
         },
         {
+            "Name": "Target - Tech Team Member",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/target/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Lapetus Solutions, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lapetus-solutions-inc/jobs/",
@@ -684,6 +692,14 @@
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/cloudwyze-inc-/jobs/",
             "Contact": "https://www.cloudwyze.com/contact/",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "The Wang Lab - Undergraduate Researcher",
+            "Location": "Wilmington, North Carolina (UNCW Campus)",
+            "LinkedIn": "https://www.linkedin.com/company/target/jobs/",
+            "Contact": "thewanglab.org@gmail.com",
             "Tips": "",
             "Pay": ""
         },
