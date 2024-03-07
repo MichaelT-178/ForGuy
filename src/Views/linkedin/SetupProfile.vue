@@ -1,6 +1,102 @@
 <template>
-    <main class="about-page">
-        <h1>Setup Profile</h1>
-        <p>This is the Setup Profile page</p>
-    </main>
+    <div class="container">
+        <h1 class="tip-header">Setup Job Alerts</h1>
+        <p class="description">These are tips on how to setup a profile on LinkedIn.</p>
+        <div class="tips-container">
+            <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
+                <p class="tip-text" :data-index="instruction.id"></p>
+                <p class="text-section" v-html="createRouterLink(instruction.instruction)"></p>
+            </div>
+        </div>
+        <p style="margin-bottom: 60px;"></p>
+    </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import AllData from "../../data/linkedin/SetupProfile.json";
+import { createRouterLink } from "../../components/FormatLinks.vue";
+
+const jsonData = ref(AllData);
+const instructions = jsonData.value["Instructions"];
+</script>
+
+<style scoped>
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tip-header {
+    text-align: left;
+    border-bottom: 1.5px solid #d8dee4;
+    padding-bottom: 7px;
+    width: 690px;
+}
+
+.description {
+    margin-top: -8px;
+    font-size: 19px;
+    width: 690px;
+}
+
+.tips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tip-section {
+    margin-bottom: 5px;
+    width: 575px;
+}
+
+.tip-text {
+    position: relative;
+    width: auto;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.tip-text::before {
+    content: attr(data-index);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -35px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.text-section {
+    font-size: 19.5px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    margin-top: -13px;
+}
+
+@media (max-width: 700px) {
+    .tip-header {
+        width: 490px;
+    }
+    
+    .description {
+        width: 490px;
+    }
+
+    .tip-section {
+        width: 375px;
+    }
+}
+
+</style>

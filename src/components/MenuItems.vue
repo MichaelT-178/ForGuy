@@ -40,7 +40,7 @@ export const menuItems = [
         text: "Comp Sci",
         subMenu: [
             { text: "Visual Studio Code",  icon: "laptop_mac",         link: "/CompSci/VisualStudioCode" },
-            { text: "What is GitHub?",     icon: "hub",                link: "/CompSci/GitHub" },
+            { text: "GitHub",              icon: "hub",                link: "/CompSci/GitHub" },
             { text: "VSCode Settings",     icon: "settings",           link: "/CompSci/VSCodeSettings" },
             { text: "UI/UX Design Tips",   icon: "brush",              link: "/CompSci/UIDesignTips" },
             { text: "VSCode Extensions",   icon: "extension",          link: "/CompSci/VSCodeExtensions" },
