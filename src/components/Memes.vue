@@ -39,6 +39,8 @@ import Meme37 from "../assets/memes/VerboseJava.jpg";
 import Meme38 from "../assets/memes/WhenYouVacation.jpg";
 import Meme39 from "../assets/memes/BobbyDropTables.jpg";
 import Meme40 from "../assets/memes/SendaCV.jpg";
+import Meme41 from "../assets/memes/ApplicantAndEmployer.jpg";
+import Meme42 from "../assets/memes/TooManyApplicants.jpg";
 
 
 export const memeObjects = [
@@ -81,6 +83,8 @@ export const memeObjects = [
     { text: "This is actual text", image: Meme37 }, //VerboseJava.jpg
     { text: "This is actual text", image: Meme38 }, //WhenYouVacation.jpg
     { text: "This is actual text", image: Meme39 }, //BobbyDropTables.jpg
-    { text: "This is actual text", image: Meme40 } //SendaCV.jpg
+    { text: "This is actual text", image: Meme40 }, //SendaCV.jpg
+    { text: "This is actual text", image: Meme41 }, //ApplicantAndEmployer.jpg
+    { text: "This is actual text", image: Meme42 } //TooManyApplicants.jpg
 ]
 </script>
