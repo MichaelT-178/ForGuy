@@ -89,7 +89,7 @@ html {
     margin-top: 5px;
     text-align: left; 
     margin-left: 10.18%;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .search-expand-wrapper {
