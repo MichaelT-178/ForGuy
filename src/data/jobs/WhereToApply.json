@@ -1,6 +1,6 @@
 {
     "Page": "Where To Apply",
-    "Description": "COOL",
+    "Description": "This is mostly just a giant compilation of companies where I saw UNCW students/alumni working.",
     "Companies": [
         {
             "Name": "USAA",
@@ -664,6 +664,30 @@
             "Pay": ""
         },
         {
+            "Name": "Randstad Digital Americas",
+            "Location": "Charlotte, North Carolina and Hallandale Beach, Florida",
+            "LinkedIn": "https://www.linkedin.com/company/randstad-digital-americas/jobs/",
+            "Contact": "https://www.linkedin.com/in/alexandriavanriper/ (Alexandria Van Riper)",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "PwC",
+            "Location": "Hallandale Beach, Florida",
+            "LinkedIn": "https://www.linkedin.com/company/pwc/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Revature",
+            "Location": "Reston, Virginia",
+            "LinkedIn": "https://www.linkedin.com/company/revature/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "LexisNexis",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/lexisnexis/jobs/",
@@ -700,6 +724,22 @@
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "LinkedIn": "https://www.linkedin.com/company/target/jobs/",
             "Contact": "thewanglab.org@gmail.com",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "American Family Insurance",
+            "Location": "Madison, Wisconsin",
+            "LinkedIn": "https://www.linkedin.com/company/american-family-insurance/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Tech Nest",
+            "Location": "Madison, Wisconsin",
+            "LinkedIn": "https://www.linkedin.com/company/technestllc/",
+            "Contact": "",
             "Tips": "",
             "Pay": ""
         },
