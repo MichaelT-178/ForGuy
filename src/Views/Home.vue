@@ -4,7 +4,7 @@
         <div v-for="section in homeSections" :key="section.header">
             <div class="section-container">
                 <h1>{{ section.Header }}</h1>
-                <p> {{ section.Body }} </p>
+                <p v-html="createRouterLink(section.Body)"></p>
             </div>
         </div>
     </div>
@@ -14,6 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { createRouterLink } from '../components/FormatLinks.vue';
 import AllData from '../data/Home.json';
 
 const jsonData = ref(AllData);
@@ -36,7 +37,7 @@ p {
 }
 
 .section-container {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 1000px) {

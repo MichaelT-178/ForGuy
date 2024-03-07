@@ -4,17 +4,22 @@
         <div class="overlay"></div>
     </div>
     <div class="info-container">
-        <h1>What is LinkedIn?</h1>
-        <p>
-            To keep it simple, LinkedIn is like Instagram for jobs. It's a place where you can apply to jobs, follow companies, 
-            and create job alerts. There's also a social side to LinkedIn. You can follow your friends to see their job updates and 
-            you can create a profile of your own. Job recruiters will typically view your profile to see if you're a good candidate 
-            for a job, so try to make it nice and professional. You can also can also "connect" with other people and interact to 
-            with their posts, make comments, etc. I would definitely consider LinkedIn an important part of your job search and 
-            something worth checking out.
-        </p>
+        <h1>{{ info.Header }}</h1>
+        <p v-html="info.Body"></p>
     </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import AllData from "../../data/linkedin/WhatIsLinkedIn.json";
+import { createRouterLink } from "../../components/FormatLinks.vue";
+
+const jsonData = ref(AllData);
+const info = jsonData.value["Info"][0];
+console.log(info)
+</script>
+
+
 
 <style scoped>
 
