@@ -44,47 +44,215 @@ import Meme42 from "../assets/memes/TooManyApplicants.jpg";
 
 
 export const memeObjects = [
-    { text: "This is actual text", image: Meme1 }, //RickAndMortySPMarine.jpg
-    { text: "This is actual text", image: Meme2 }, //ScrollOfTruthSPM.jpg
-    { text: "This is actual text", image: Meme3 }, //CopyTheseNotes.jpg
-    { text: "This is actual text", image: Meme4 }, //GoogleBooks.jpg
-    { text: "This is actual text", image: Meme5 }, //EightHoursAssembly.jpg
-    { text: "This is actual text", image: Meme6 }, //ToManyIfStatements.jpg
-    { text: "This is actual text", image: Meme7 }, //BugInTest.jpg
-    { text: "This is actual text", image: Meme8 }, //PerfectDate.jpg
-    { text: "This is actual text", image: Meme9 }, //PercentToPass.jpg
-    { text: "This is actual text", image: Meme10 }, //BackendersDoingFrontEnd.jpg
-    { text: "This is actual text", image: Meme11 }, //CloudyFriday.jpg
-    { text: "This is actual text", image: Meme12 }, //CompSciMuscles.jpg
-    { text: "This is actual text", image: Meme13 }, //InfiniteWhileLoop.jpg
-    { text: "This is actual text", image: Meme14 }, //Database.jpg
-    { text: "This is actual text", image: Meme15 }, //CommentOutCode.jpg
-    { text: "This is actual text", image: Meme16 }, //BruteForceAttack.jpg
-    { text: "This is actual text", image: Meme17 }, //PullStackDeveloper.jpg
-    { text: "This is actual text", image: Meme18 }, //HelloWorld.jpg
-    { text: "This is actual text", image: Meme19 }, //HurricaneFred.jpg
-    { text: "This is actual text", image: Meme20 }, //StatusCodes.jpg
-    { text: "This is actual text", image: Meme21 }, //PythonSpeed.jpg
-    { text: "This is actual text", image: Meme22 }, //RTPEmployers.jpg
-    { text: "This is actual text", image: Meme23 }, //ArtOfWar.jpg
-    { text: "This is actual text", image: Meme24 }, //GravityFallsSpMarine.jpg
-    { text: "This is actual text", image: Meme25 }, //ComfortLevels.jpg
-    { text: "This is actual text", image: Meme26 }, //SomeFamousServers.jpg
-    { text: "This is actual text", image: Meme27 }, //CrowdedShore.jpg
-    { text: "This is actual text", image: Meme28 }, //React.jpg
-    { text: "This is actual text", image: Meme29 }, //TransparentRight.jpg
-    { text: "This is actual text", image: Meme30 }, //BitEightTimes.jpg
-    { text: "This is actual text", image: Meme31 }, //AndroidStudioMeme.jpg
-    { text: "This is actual text", image: Meme32 }, //SignIn.jpg
-    { text: "This is actual text", image: Meme33 }, //GenZcode.jpg
-    { text: "This is actual text", image: Meme34 }, //PageTwoGoogle.jpg
-    { text: "This is actual text", image: Meme35 }, //DataStructureTeachers.jpg
-    { text: "This is actual text", image: Meme36 }, //CrushKnowsBinary.jpg
-    { text: "This is actual text", image: Meme37 }, //VerboseJava.jpg
-    { text: "This is actual text", image: Meme38 }, //WhenYouVacation.jpg
-    { text: "This is actual text", image: Meme39 }, //BobbyDropTables.jpg
-    { text: "This is actual text", image: Meme40 }, //SendaCV.jpg
-    { text: "This is actual text", image: Meme41 }, //ApplicantAndEmployer.jpg
-    { text: "This is actual text", image: Meme42 } //TooManyApplicants.jpg
+    { 
+        text: "You can download it though",
+        transcription: "I made a Shaky Pale Marine IOS app. Well that just sounds like the mobile website with extra steps.",
+        image: Meme1 
+    }, //RickAndMortySPMarine.jpg
+    { 
+        text: "Eureka",
+        transcription: "I've finally found it after 15 years. The scroll of truth! An IOS app for SPM isn't useful. Nyehhh.",
+        image: Meme2 
+    }, //ScrollOfTruthSPM.jpg
+    { 
+        text: "Like half my professors in college",
+        transcription: "Teacher: copy these notes carefully they will be on the test Literally 5 seconds later:",
+        image: Meme3 
+    }, //CopyTheseNotes.jpg
+    { 
+        text: "How would I manage?",
+        transcription: "U get $200 Million but u can't use Google Books for 3 Days Would u do it?? google.com Google news maps books perspectives fligh sign in", 
+        image: Meme4 
+    }, //GoogleBooks.jpg
+    { 
+        text: "Extremely true",
+        transcription: "8 hours writing a personal project in assembly at 1am 1 hour of writing javascript at 2pm for my job that pays me",
+        image: Meme5 
+    }, //EightHoursAssembly.jpg
+    { 
+        text: "CSC 231 professors: *heavy breathing*",
+        transcription: "The Dutch government was forced to release the source code of their DigiD digital authentication iOS app. It is written in C#. Ahh I see the problem is that there are too many if statements. Here's a solution implementing binary search in O(log n). Jeroen Frijters @JeroenFrijters 1d github.com/MinBZK/woo-bes... tyrannoSaurav @TyrannoSaurav Replying to @JeroenFrijters",
+        image: Meme6 
+    }, //ToManyIfStatements.jpg
+    { 
+        text: "Testing ain't in bro 😭",
+        transcription: "Write code write tests the tests fail the tests fail write more tests to narrow down the problem Those tests pass The bug was in the test ProgrammerHumor.io",
+        image: Meme7 
+    }, //BugInTest.jpg
+    { 
+        text: "I'm too American to understand this.",
+        transcription: "So what's your idea of a perfect date? DD/MM/YYYY I find other formats a bit confusing. Pun hub IG: PunHubOnline",
+        image: Meme8 
+    }, //PerfectDate.jpg
+    { 
+        text: "!anIdealSituation",
+        transcription: "POV: Me showing up to my final exam (I need a 124% to pass)",
+        image: Meme9 
+    }, //PercentToPass.jpg
+    { 
+        text: "\"FileNoteFoundException\"",
+        transcription: "Backenders doing frontend menu 1 - Reports 2 - Charts 3 - Exit Select: [_] Frontenders doing backend internal server error 500",
+        image: Meme10 
+    }, //BackendersDoingFrontEnd.jpg
+    { 
+        text: "Goated feeling",
+        transcription: "How it feels to exit you final period on a cloudy Friday before winter break",
+        image: Meme11 
+    }, //CloudyFriday.jpg
+    { 
+        text: "He's definitely talking about me.",
+        transcription: "What's with all these muscled up guys in CS classes I am an accounting major where all the guys are weak with tiny noodles arms and girls have staches. Last week I was walking outside a compsci classroom I saw the class was full of incredibly muscled guys. They were so ripped that even the dumbbells seemed to blush in their presence. These guys had biceps that could make Hercules jealous and abs that looked like they were chiseled by Michelangelo himself. What gives? r/csMajors u/Boring_Inspector9857 • 7h 440 59 share Join",
+        image: Meme12 
+    }, //CompSciMuscles.jpg
+    { 
+        text: "High CPU usage 😍",
+        transcription: "I wrote a while(true) loop With break statements right?",
+        image: Meme13 
+    }, //InfiniteWhileLoop.jpg
+    { 
+        text: "Lowkey everything's basically a txt file in programming.",
+        transcription: "database.sql database.xlsx database.txt",
+        image: Meme14 
+    }, //Database.jpg
+    { 
+        text: "Command + / goes so hard",
+        transcription: "comments to describe the program comments to temporarily remove part of code",
+        image: Meme15 
+    }, //CommentOutCode.jpg
+    { 
+        text: "I feel like some companies actually do this.",
+        transcription: "Hey! what's going on? Sick bastard! // brute-force attack protection if isPasswordCorrect && isFirstLoginAttempt { Error(\"Wrong login or password\") } ",
+        image: Meme16 
+    }, //BruteForceAttack.jpg
+    { 
+        text: "Anything to make it work.",
+        transcription: "I'm a Pull Stack Developer. I just pull things off the internet and put it into my code. 5:13 AM 19 Dec 20 Twitter for Android 647 Retweets 122 Quote Tweets 5,154 Likes",
+        image: Meme17 
+    }, //PullStackDeveloper.jpg
+    { 
+        text: "The sheer...verbosity of it all 😳🤯",
+        transcription: "Python Hello World Java Public Static void Hello World",
+        image: Meme18 
+    }, //HelloWorld.jpg
+    { 
+        text: "Don't do that, Don't give me hope",
+        transcription: "When someone suggests Hurricane Fred finna cancel school Don't do that. Don't give me hope.",
+        image: Meme19 
+    }, //HurricaneFred.jpg
+    { 
+        text: "CSC 351 gang",
+        transcription: "HTTP status ranges in a nutshell 1xx: hold on 2xx: here you go 3xx: go away 4xx: you fucked up 5xx: I fucked up",
+        image: Meme20 
+    }, //StatusCodes.jpg
+    { 
+        text: "*0.00004 seconds faster",
+        transcription: "C++ devs when their thousand line code is .4 seconds faster than a 10 line python code I am speed",
+        image: Meme21 
+    }, //PythonSpeed.jpg
+    { 
+        text: "Fidelity Investments be like",
+        transcription: "Unc, Duke, and Ncsu students RTP employers Uncw RTP employers",
+        image: Meme22 
+    }, //RTPEmployers.jpg
+    { 
+        text: "Michael: the USAA ping pong TYRANT. (All credit goes to Obed for creating this masterpiece)",
+        transcription: "Team Art of War Hudson Nam-rata yoga mat Sadia yum! Michael Vaish I hate men!",
+        image: Meme23 
+    }, //ArtOfWar.jpg
+    { 
+        text: "At least it works",
+        transcription: "An ios app shaky pale marine woah. This is useless",
+        image: Meme24 
+    }, //GravityFallsSpMarine.jpg
+    { 
+        text: "Why can't it feel like that at night 😫",
+        transcription: "My bed when I have to wake up for class We're hitting comfort levels that shouldn't even be possible",
+        image: Meme25 
+    }, //ComfortLevels.jpg
+    { 
+        text: "It's lowkey not that bad.",
+        transcription: "Some Famous Severs Amazon Google Microsoft Zoom app",
+        image: Meme26 
+    }, //SomeFamousServers.jpg
+    { 
+        text: "*Dies by suffocation*",
+        transcription: "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning",
+        image: Meme27 
+    }, //CrowdedShore.jpg
+    { 
+        text: "The hardest part about React",
+        transcription: "That's right, I use React R I can't E Setup A Node Environment C Help T",
+        image: Meme28 
+    }, //React.jpg
+    { 
+        text: "This happens at least once whenever I try to create a slideshow.",
+        transcription: "I'm a PNG. You can download me. And you're transparent, right? e transparent, right?",
+        image: Meme29 
+    }, //TransparentRight.jpg
+    { 
+        text: "CSC 342 gang",
+        transcription: "She bit me 8 times Liar! It's just 1 byte",
+        image: Meme30 
+    }, //BitEightTimes.jpg
+    { 
+        text: "Computer fan noise goes hard.",
+        transcription: "We are going to freeze to death if we don't do something We only have on option left Run Android Studio",
+        image: Meme31 
+    }, //AndroidStudioMeme.jpg
+    { 
+        text: "Applying to jobs be like",
+        transcription: "Noooooooooooo I don't wanna sign up with facebook sign up with google Name First Name Last Name Pick a username create a password Confirm password Data of birth select month Gender select gender zip code Sign In with Google Sign in with Facebook Sign in with Twitter Sign in with email Sign in with phone Please login to continue Password access create your account Sign up with Email Confirm your email address please click on the link below to confirm your email address Confirm your email Please note: the link will expire in 15 minutes.",
+        image: Meme32
+    }, //SignIn.jpg
+    { 
+        text: "This needs to be a real language",
+        transcription: "As a way to encourage the younger generation to try out programming most of the key words in C# have been permanently renamed. This should increase the amount of younger game developers coming the next few years. default public float rizz; private bool IsSus() try if(rizz > vibe) return true; else return false; catch(Exception e) Debug.LogError(e.Message); throw; gen z highkey period rizz; lowkey fax IsSus() fuck_around vibe_check(rizz ratios vibe) its_giving no_cap; big_yikes its_giving cap; find_out(Tea t) Shoutout.SpillTea(t.Yap); yeet; Fear the phantom (horror game) @Phantom_TheGame",
+        image: Meme33 
+    }, //GenZcode.jpg
+    { 
+        text: "3 spooky 5 me",
+        transcription: "surface web deep web dark web page two of google",
+        image: Meme34 
+    }, //PageTwoGoogle.jpg
+    { 
+        text: "This is literally CSC 231",
+        transcription: "algorithms and data structures professors watching someone loop through a list instead of creating a custom recursive binary heap object to store 7 integers.",
+        image: Meme35 
+    }, //DataStructureTeachers.jpg
+    { 
+        text: "Your crush thinks your a 2 (r.i.p).",
+        transcription: "Your crush knows binary. She thinks you're a 10. She thinks you're a 10.",
+        image: Meme36 
+    }, //CrushKnowsBinary.jpg
+    { 
+        text: "Java is too VERBOSE",
+        transcription: "When I'm in a Being verbose competition and my opponent is the Java programming language",
+        image: Meme37 
+    }, //VerboseJava.jpg
+    { 
+        text: "So Real",
+        transcription: "When you come back from a vacation HelloWorld(\"print\")",
+        image: Meme38 
+    }, //WhenYouVacation.jpg
+    { 
+        text: "CSC 351 Gang",
+        transcription: "Hi, this is your son's school. We're having some computer trouble. Oh, dear - did he break something? In a way - Did you really name your son Robert'); DROP TABLE Students;--? Oh, yes. Little Bobby Tables, we call him. Well, we've lost this year's student records. I hope you're happy. And I hope you've learned to sanitize your database inputs.",
+        image: Meme39 
+    }, //BobbyDropTables.jpg
+    { 
+        text: "Lenovo's Interview Process ",
+        transcription: "Send a cv get rejected send a cv interview with Hr interview with developers technical interview get rejected",
+        image: Meme40 
+    }, //SendaCV.jpg
+    { 
+        text: "They're even now",
+        transcription: "Me who lied on my resume my new employer who lied on the job description",
+        image: Meme41 
+    }, //ApplicantAndEmployer.jpg
+    { 
+        text: "Computer science student vs Earth",
+        transcription: "Javascript developer position open Nice! Not the best salary but...think I will apply See how you compare to the other 1,146 applicants.",
+        image: Meme42 
+    } //TooManyApplicants.jpg
 ]
 </script>
