@@ -6,6 +6,7 @@
         <div class="meme-container" v-for="(meme, index) in memeObjects" :key="index">
             <div class="meme-text">{{ index + 1 }}. {{ meme.text }}</div>
             <img :src="meme.image" alt="Meme Picture">
+            <span class="hidden-text">{{ meme.transcription }}</span>
         </div>
     </div>
 </template>
@@ -33,6 +34,17 @@ import { memeObjects } from "../../components/Memes.vue"
 
 .meme-text {
     font-size: 18px;
+}
+
+.hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 img {
