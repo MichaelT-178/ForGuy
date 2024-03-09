@@ -42,22 +42,34 @@
         },
         {
             "id": 11,
-            "tip": "Look at the job description and see what skills are listed. Study those as well."
+            "tip": "Know the basics of Memory management in Java and C++. Particularly Garbage collection."
         },
         {
             "id": 12,
-            "tip": "Obviously come on time and don't be late."
+            "tip": "Know basic testing testing practices. Know the basics of the following: Unit tests, White box testing, Black box testing, JUnit, etc."
         },
         {
             "id": 13,
-            "tip": "Appear enthusiastic to be there and about what's being discussed"
+            "tip": "Have a basic understanding of C pointers and reference operators"
         },
         {
             "id": 14,
-            "tip": "Come well-groomed and act professional."
+            "tip": "Look at the job description and see what skills are listed. Study those as well."
         },
         {
             "id": 15,
+            "tip": "Obviously come on time and don't be late."
+        },
+        {
+            "id": 16,
+            "tip": "Appear enthusiastic to be there and about what's being discussed"
+        },
+        {
+            "id": 17,
+            "tip": "Come well-groomed and act professional."
+        },
+        {
+            "id": 18,
             "tip": "Come prepared with follow up questions for the interviewer. This will help demonstrate your interest and knowledge."
         }
     ]

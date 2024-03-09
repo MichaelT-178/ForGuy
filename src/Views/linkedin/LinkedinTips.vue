@@ -8,7 +8,7 @@
                 <p class="text-section" v-html="createRouterLink(instruction.instruction)"></p>
             </div>
         </div>
-        <p style="margin-bottom: 60px;"></p>
+        <p style="margin-bottom: 100px;"></p>
     </div>
 </template>
 

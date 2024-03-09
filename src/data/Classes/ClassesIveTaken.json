@@ -156,14 +156,15 @@
                 "Credit Hours": "4",
                 "Professor": "Erik Slivken",
                 "Description": "Like 5 difficult homeworks you can work on in a group. Also cengage completion homwork. 2 tests and a final exam. He lets you have like 2 pages of notes on the tests and like 5 on the final exam (I think). While that sounds good I'd still recommend taking Dr. Xiajoue Hou instead.",
+                "Skills": "Python and Jupyter",
+                "Tips": "",
                 "Grading": [
                     "Exam 1 - 20%",
                     "Exam 2 - 20%",
                     "Final Exam - 30%",
                     "All Homework - 25%",
                     "Participation - 5%"
-                ],
-                "Tips": ""
+                ]
             },
             {
                 "Name": "CHM 101: General Chemistry I",
