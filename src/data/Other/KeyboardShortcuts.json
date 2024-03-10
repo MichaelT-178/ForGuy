@@ -1,0 +1,34 @@
+{
+    "Shortcuts": [
+        {
+            "id": 1,
+            "Shortcut": "command + z",
+            "Action": "Undo an action"
+        },
+        {
+            "id": 2,
+            "Shortcut": "command + shift + z",
+            "Action": "Redo an action"
+        },
+        {
+            "id": 3,
+            "Shortcut": "command + s",
+            "Action": "Save changes"
+        },
+        {
+            "id": 3,
+            "Shortcut": "",
+            "Action": ""
+        },
+        {
+            "id": 4,
+            "Shortcut": "",
+            "Action": ""
+        },
+        {
+            "id": 5,
+            "Shortcut": "",
+            "Action": ""
+        }
+    ]
+}

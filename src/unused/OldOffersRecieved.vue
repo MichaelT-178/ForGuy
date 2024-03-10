@@ -1,5 +1,5 @@
 <template>
-    <h1>Offers I've Recieved</h1>
+    <h1>Offers I've Received</h1>
     <p class="description">{{ description }}</p>
     <div class="header-container">
         <h2 class="invisible">Accordion Controls</h2>
@@ -18,7 +18,7 @@
     </div>
     <div class="job-section">
         <h2>Full-Time Offers</h2>
-        <p>These are the full-time Offers I have recieved.</p>
+        <p>These are the full-time Offers I have received.</p>
         <div class="job-menu">
             <div v-for="job in fullTimeJobs" :key="job.Name" class="job-item">
                 <AccordionMenu :item="job" :isOpen="allOpen" />
@@ -40,7 +40,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import AllData from "../../data/jobs/OffersRecieved.json";
+import AllData from "../../data/jobs/OffersReceived.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
