@@ -30,9 +30,9 @@
     {
         "id": 5,
         "Emoji": "🤝🏻",
-        "MenuName": "Offers I've Recieved",
+        "MenuName": "Offers I've Received",
         "AllText": "TODO",
-        "Link": "/jobs/OffersRecieved"
+        "Link": "/jobs/OffersReceived"
     },
     {
         "id": 6,

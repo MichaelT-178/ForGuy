@@ -100,7 +100,7 @@ export const memeObjects = [
         image: Meme11 
     }, //CloudyFriday.jpg
     { 
-        text: "He's definitely talking about me.",
+        text: "They're definitely talking about me.",
         transcription: "What's with all these muscled up guys in CS classes I am an accounting major where all the guys are weak with tiny noodles arms and girls have staches. Last week I was walking outside a compsci classroom I saw the class was full of incredibly muscled guys. They were so ripped that even the dumbbells seemed to blush in their presence. These guys had biceps that could make Hercules jealous and abs that looked like they were chiseled by Michelangelo himself. What gives? r/csMajors u/Boring_Inspector9857 • 7h 440 59 share Join",
         image: Meme12 
     }, //CompSciMuscles.jpg
