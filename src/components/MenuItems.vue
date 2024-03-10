@@ -30,8 +30,8 @@ export const menuItems = [
         text: "Classes",
         subMenu: [
             { text: "Class Recommendations",  icon: "thumb_up",       link: "/classes/ClassRecommendations" },
-            { text: "CSC Descriptions",       icon: "description",    link: "/classes/CSCDescriptions" },
             { text: "Classes I've Taken",     icon: "co_present",     link: "/classes/ClassesIveTaken" }, //interactive_space
+            { text: "CSC Descriptions",       icon: "description",    link: "/classes/CSCDescriptions" },
             { text: "Classes To Avoid",       icon: "cancel",         link: "/classes/ClassesToAvoid" },
             { text: "Useful Certifications",  icon: "editor_choice",  link: "/classes/Certifications" }
         ]
