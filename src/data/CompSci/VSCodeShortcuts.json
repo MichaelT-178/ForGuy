@@ -1,0 +1,227 @@
+{
+    "VSCodeShortcuts": [
+        {
+            "id": 1,
+            "Shortcut": "command + z",
+            "Action": "Undo an action"
+        },
+        {
+            "id": 2,
+            "Shortcut": "command + shift + z",
+            "Action": "Redo an action"
+        },
+        {
+            "id": 3,
+            "Shortcut": "command + s",
+            "Action": "Save changes in a file"
+        },
+        {
+            "id": 4,
+            "Shortcut": "Highlight lines + command + / ",
+            "Action": "Comment out multiple highlighted lines. Works for any language"
+        },
+        {
+            "id": 5,
+            "Shortcut": "shift + option + down arrow",
+            "Action": "Duplicate the line the cursor is on below it."
+        },
+        {
+            "id": 6,
+            "Shortcut": "hover over + Command + shift + p. Then type \"Developer: Inspect Editor Tokens and Scope\"",
+            "Action": "See information about a token. Particularly it's color. Press command + shift + p to close info card."
+        },
+        {
+            "id": 7,
+            "Shortcut": "Highlight lines + shift + option + f",
+            "Action": "Indent/Format/Align code"
+        },
+        {
+            "id": 8,
+            "Shortcut": "Highlight lines, shift + tab",
+            "Action": "Move the code back a tab space on multiple lines"
+        },
+        {
+            "id": 9,
+            "Shortcut": "control + a + k",
+            "Action": "Delete the line the cursor is on in VSCode"
+        },
+        {
+            "id": 10,
+            "Shortcut": "control + shift + ` (backtick)",
+            "Action": "Create a new terminal in VSCode"
+        },
+        {
+            "id": 11,
+            "Shortcut": "command + k",
+            "Action": "clear a terminal"
+        },
+        {
+            "id": 12,
+            "Shortcut": "cursor at end of line + command + delete",
+            "Action": "Delete the line that the cursor is at the end of"
+        },
+        {
+            "id": 13,
+            "Shortcut": "command + up arrow",
+            "Action": "Go to very top of document"
+        },
+        {
+            "id": 14,
+            "Shortcut": "command + down arrow",
+            "Action": "Go to very bottom of document"
+        },
+        {
+            "id": 15,
+            "Shortcut": "control + g. Then type line number in search bar",
+            "Action": "Search document by line number."
+        },
+        {
+            "id": 16,
+            "Shortcut": "Command + shift + v",
+            "Action": "Previews what a Markdown file will look like. Go to md file, then do shortcut."
+        },
+        {
+            "id": 17,
+            "Shortcut": "Highlight lines, command + k, then f",
+            "Action": "Format highlighted code correctly (according to formatting settings)"
+        },
+        {
+            "id": 18,
+            "Shortcut": "command + a",
+            "Action": "Highlight all lines in the code document"
+        },
+        {
+            "id": 19,
+            "Shortcut": "command + shift + n",
+            "Action": "Create a new window"
+        },
+        {
+            "id": 20,
+            "Shortcut": "option + click",
+            "Action": "Allows you to put multiple cursors on lines that aren't directly below or above each other. For multi-line editing."
+        },
+        {
+            "id": 21,
+            "Shortcut": "command + option, then down arrow",
+            "Action": "Create multiple cursors in VS Code that move down every line. For multi-line editing."
+        },
+        {
+            "id": 22,
+            "Shortcut": "command + x",
+            "Action": "Delete the entire line and newline that a cursor is on"
+        },
+        {
+            "id": 23,
+            "Shortcut": "command + right arrow ",
+            "Action": ""
+        },
+        {
+            "id": 24,
+            "Shortcut": "command + p",
+            "Action": "Open command search pallette"
+        },
+        {
+            "id": 25,
+            "Shortcut": "command + right arrow",
+            "Action": "Move a cursor (or multiple cursors) to the end of their line"
+        },
+        {
+            "id": 26,
+            "Shortcut": "command + shift + right arrow",
+            "Action": "Move a cursor (or multiple cursors) to the end of their line, and highlight that part of the line."
+        },
+        {
+            "id": 27,
+            "Shortcut": "option + up arrow",
+            "Action": "Swap a line with the line above it"
+        },
+        {
+            "id": 28,
+            "Shortcut": "option + down arrow",
+            "Action": "Swap a line with the line below it"
+        },
+        {
+            "id": 29,
+            "Shortcut": "tab",
+            "Action": "When you're typing \"tab\" will autofill the first text editor suggestion from the list."
+        },
+        {
+            "id": 30,
+            "Shortcut": "command + shift + f",
+            "Action": "Search an entire folder for a word"
+        },
+        {
+            "id": 31,
+            "Shortcut": "command + shift + h",
+            "Action": "Open component to Find and replace all instances of a string in an entire folder."
+        },
+        {
+            "id": 32,
+            "Shortcut": "Command + k + s (press s after holding down cmd + k)",
+            "Action": "View Keyboard shortcuts menu vscode. Can create a shortcut"
+        },
+        {
+            "id": 33,
+            "Shortcut": "",
+            "Action": ""
+        },
+        {
+            "id": 34,
+            "Shortcut": "",
+            "Action": ""
+        },
+        {
+            "id": 35,
+            "Shortcut": "",
+            "Action": ""
+        }
+    ],
+    "PyCharm": [
+        {
+            "id": 1,
+            "Shortcut": "command + d",
+            "Action": "Duplicate the line the cursor is on below it."
+        } 
+    ],
+    "Eclipse": [
+        {
+            "id": 1,
+            "Shortcut": "command + d",
+            "Action": "Delete the line the cursor is on"
+        },
+        {
+            "id": 2,
+            "Shortcut": "command + option + down arrow",
+            "Action": "Duplicate the line the cursor is on below it."
+        },
+        {
+            "id": 3,
+            "Shortcut": "command + option + a + drag",
+            "Action": "Multi-line editing"
+        },
+        {
+            "id": 4,
+            "Shortcut": "click out, command + option + a",
+            "Action": "End multiline editing/get cursor back to normal"
+        },
+        {
+            "id": 5,
+            "Shortcut": "control + h",
+            "Action": "Search entire folder for keyword"
+        }
+    ],
+    "XCode": [
+        {
+            "id": 1,
+            "Shortcut": "shift + control + down arrow",
+            "Action": "Multi-line editing"
+        } 
+    ],
+    "Slack": [
+        {
+            "id": 1,
+            "Shortcut": "command + shift + c",
+            "Action": "Create a code block"
+        } 
+    ]
+}

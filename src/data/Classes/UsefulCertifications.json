@@ -1,0 +1,98 @@
+{
+    "description": "These are certifications that I think would be useful to get for various reasons. They would help to build your resume and teach you about important and useful skills in \"real-world\" software engineering. While I don't personally have any of these degrees, I still think they could be very useful and teach good information.",
+    "Cloud Certifications": [
+        {
+            "Name": "Amazon Web Services",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "Google Cloud Platform",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "IBM Cloud",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "Microsoft Azure",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        }
+    ],
+    "Certifications for Essential Skills": [
+        {
+            "Name": "Kubernetes and Docker",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "GitHub and Git",
+            "Description": "The only class at UNCW where we used GitHub was CSC 450. I think it would be very useful to learn about it beforehand as it's a MANDATORY skill to have as a software engineer. A certification will help show you actually know what you're doing and teach you important skills as well. I think using Git and GitHub for a personal project would also be a great way to learn it.",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "JUnit and Mockito",
+            "Description": "UNCW doesn't really teach software testing. While you may not need to know these two specific frameworks for your job, they are commonly used and will help you learn the basics. Testing is also commonly asked about in interviews.",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        }
+    ],
+    "Machine Learning Certifications": [
+        {
+            "Name": "Amazon",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "IBM",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        }
+    ],
+    "Academic Certifications and Degrees": [
+        {
+            "Name": "UNC Web Developer Boot Camp",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        },
+        {
+            "Name": "Online Georgia Tech Degree",
+            "Description": "",
+            "Certification": "",
+            "Certifying Body": "",
+            "Link": ""
+        }
+    ],
+    "GeneralTips": [
+        {
+            "Name": "Get Certifications From A Company you want to work at.",
+            "Description": ""
+        },
+        {
+            "Name": "Focus on One Certification at a time.",
+            "Description": ""
+        }
+    ]
+}

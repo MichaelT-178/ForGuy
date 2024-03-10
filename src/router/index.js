@@ -7,7 +7,7 @@ import Home from '../views/Home.vue';
 import WhereToApply from '../views/jobs/WhereToApply.vue';
 import ResumeTemplate from '../views/jobs/ResumeTemplate.vue';
 import HowToGetAJob from '../views/jobs/HowToGetAJob.vue'
-import OffersRecieved from '../views/jobs/OffersRecieved.vue';
+import OffersReceived from '../views/jobs/OffersReceived.vue';
 import InterviewTips from '../views/jobs/InterviewTips.vue';
 import CareerPathAdvice from '../views/jobs/CareerPathAdvice.vue';
 
@@ -68,8 +68,8 @@ const routes = [
         component: ResumeTemplate
     },
     {
-        path: '/jobs/OffersRecieved',
-        component: OffersRecieved
+        path: '/jobs/OffersReceived',
+        component: OffersReceived
     },
     {
         path: '/jobs/InterviewTips',
