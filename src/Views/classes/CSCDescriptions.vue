@@ -5,7 +5,7 @@
             <span class="expand-text" @click="toggleExplanation">What information does this page contain?</span>
             <p class="courses-found" v-if="explainOpen">{{ pageDescription }}</p>
             <div class="search-expand-wrapper">
-                <input type="text" v-model="searchQuery" placeholder="Search Companies By Location or Name..." class="search-bar" />
+                <input type="text" v-model="searchQuery" placeholder="Search Courses By Name or Description..." class="search-bar" />
                 <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
             </div>
             <p class="courses-found" v-if="searchQuery.length != 0">Found {{ filteredCourses.length }} course{{ filteredCourses.length == 1 ? '' : 's' }} that contain the term "<span style="color: darkblue">{{ searchQuery }}</span>" in their name or description.</p>
