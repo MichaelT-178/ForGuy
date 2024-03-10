@@ -78,7 +78,7 @@
             "Format": "In-Person",
             "Credit Hours": "3",
             "Professor": "Yang Song",
-            "Description": "I wouldn't recommend taking this class unless you really want to have an Artifical Intelligence concentration. The class is mostly just graphs other than the 5 python coding assignments. The professor talks extremely fast and it can be difficult to get all the necessary information. The tests are also very hard and don't have much information from the slides, but you can use a cheat sheet. Overall the amount of work and difficulty of this class isn't worth it for an elective class. This class is mostly just graphs and python search algorithms. If you want to learn more about actual artifical intelligence, I'd recommend you get a certification.",
+            "Description": "I wouldn't recommend taking this class unless you really want to have an Artificial Intelligence concentration. The class is mostly just graphs other than the 5 python coding assignments. The professor talks extremely fast and it can be difficult to get all the necessary information. The tests are also very hard and don't have much information from the slides, but you can use a cheat sheet. Overall the amount of work and difficulty of this class isn't worth it for an elective class. This class is mostly just graphs and python search algorithms. If you want to learn more about actual artificial intelligence, I'd recommend you get a certification.",
             "Skills": "Python and algorithms",
             "Tips": "Go to his office hours",
             "Grading": [
@@ -133,7 +133,7 @@
             "Format": "In-Person",
             "Credit Hours": "3",
             "Professor": "Clayton Ferner",
-            "Description": "This class is decent overall. The programming assignments are building various parts of python operating systems simulator. The labs are practice problems for the tests and a review of what you leaerned in class. While they're just graded as completion, definitely still try on them to prepare yourself for the tests and have something to study beforehand.",
+            "Description": "This class is decent overall. The programming assignments are building various parts of python operating systems simulator. The labs are practice problems for the tests and a review of what you learned in class. While they're just graded as completion, definitely still try on them to prepare yourself for the tests and have something to study beforehand.",
             "Skills": "Python",
             "Tips": "The tests problems draw heavily from the labs, so make sure to study the labs beforehand and not just focus on the slides.",
             "Grading": [
@@ -189,7 +189,7 @@
             "Format": "Synchronous Remote",
             "Credit Hours": "3",
             "Professor": "Gur Adhar",
-            "Description": "You don't code at all in this class. It's just graph problems related to algorithms. While this class is technically synchronous, attendace to the lectures isn't required and he records them. The homeworks draw heavily from the lectures, so make sure to watch the recordings. The tests also draw heavily from the homework so make sure you know what you're doing in that regard. Unfortunately, the tests are worth a lot, so if you get something wrong on the test it will have a somewhat large impact on your grade.",
+            "Description": "You don't code at all in this class. It's just graph problems related to algorithms. While this class is technically synchronous, attendance to the lectures isn't required and he records them. The homeworks draw heavily from the lectures, so make sure to watch the recordings. The tests also draw heavily from the homework so make sure you know what you're doing in that regard. Unfortunately, the tests are worth a lot, so if you get something wrong on the test it will have a somewhat large impact on your grade.",
             "Skills": "You don't code at all this class",
             "Tips": "Take this class with Dr. Guinn if possible. Also try and understand the homeworks and watch the lecture recordings.",
             "Grading": [
@@ -262,7 +262,7 @@
             "Format": "In-Person",
             "Credit Hours": "3",
             "Professor": "Marni Ferner",
-            "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to eachother or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/AirlineDatabase). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
+            "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to each other or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/AirlineDatabase). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
             "Skills": "SQL, PHP, Html",
             "Grading": [
                 "Labs - 20% (lowest two dropped)",

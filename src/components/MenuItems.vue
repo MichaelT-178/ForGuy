@@ -11,7 +11,7 @@ export const menuItems = [
             { text: "Where To Apply",        icon: "work",         link: "/jobs/WhereToApply" },
             { text: "Resume Template",       icon: "description",  link: "/jobs/ResumeTemplate" },
             { text: "How To Get a Job",      icon: "lightbulb",    link: "/jobs/HowToGetAJob.vue" },
-            { text: "Offers I've Recieved",  icon: "handshake",    link: "/jobs/OffersRecieved" },
+            { text: "Offers I've Received",  icon: "handshake",    link: "/jobs/OffersReceived" },
             { text: "Interview Tips",        icon: "group",        link: "/jobs/InterviewTips" },
             { text: "Career Path Advice",    icon: "explore",      link: "/jobs/CareerPathAdvice" }
         ]
