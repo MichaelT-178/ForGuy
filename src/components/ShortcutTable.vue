@@ -16,45 +16,53 @@
   </table>
 </template>
 
+
 <script setup>
 const props = defineProps({
   shortcuts: {
     type: Array,
     default: () => []
   }
-})
+});
+
 </script>
 
+
 <style scoped>
-/* Base table styles */
+
 table {
   width: 70%;
-  border-collapse: separate; /* Use separate to handle individual border settings */
-  border-spacing: 0; /* Eliminate spacing between cells */
-  border: 1px solid black; /* Add a black border around the table */
+  border-collapse: separate; 
+  border-spacing: 0;
+  border: 1px solid black;
 }
 
 th, td {
-  border-top: 1px solid #ddd; /* Keep top border */
-  border-bottom: 1px solid #ddd; /* Keep bottom border */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 8px;
-  border-left: none; /* Remove left border */
-  border-right: none; /* Remove right border */
-  text-align: left; /* Ensure text is aligned to the left */
+  border-left: none;
+  border-right: none;
+  text-align: left;
 }
 
 th {
-  background-color: #000080; /* Apply a dark blue background for headers */
-  color: #ffffff; /* Use white text for contrast */
-  border-top: none; /* Remove top border for a cleaner header look */
+  background-color: #000080;
+  color: #ffffff;
+  border-top: none;
 }
 
-/* Alternating row colors utilizing Vue dynamic class assignment */
 .row-odd {
-  background-color: #ffffff; /* Assign white background to odd rows */
+  background-color: #ffffff;
 }
 
 .row-even {
-  background-color: #f2f2f2; /* Assign light grey background to even rows */
+  background-color: #f2f2f2;
 }
+
+tbody tr:first-of-type td {
+  border-top: none;
+}
+
 </style>
+
