@@ -3,9 +3,8 @@
         <h1 class="tip-header">Contacts</h1>
         <p class="description">These are useful job contacts from various companies.</p>
         <div class="tips-container">
-            <div v-for="tip in tips" :key="tip.id" class="tip-section">
-                <p class="tip-text" :data-index="tip.id"></p>
-                <p class="text-section" v-html="tip.tip"></p>
+            <div v-for="contact in contacts" :key="contact.Company" class="tip-section">
+                <ContactCard :contact="contact"></ContactCard>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -14,10 +13,11 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/jobs/InterviewTips.json";
+import AllData from "../../data/linkedin/Contacts.json";
+import ContactCard from "../../components/ContactCard.vue"
 
 const jsonData = ref(AllData);
-const tips = jsonData.value["Tips"];
+const contacts = jsonData.value["Contacts"];
 </script>
 
 <style scoped>
