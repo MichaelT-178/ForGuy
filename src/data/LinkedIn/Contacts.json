@@ -1,0 +1,169 @@
+{
+    "Contacts": [
+        {
+            "Name": "Ren Yonker",
+            "Company": "nCino, Inc.",
+            "Role": "Talent Acquisition Manager",
+            "Email": "ren.yonker@ncino.com",
+            "LinkedIn": "https://www.linkedin.com/in/ren-yonker-2aa62195/",
+            "Details": "This is the guy who contacted me when I was in the interview process for nCino."
+        },
+        {
+            "Name": "Pianpian Xu Guthrie",
+            "Company": "Amotions, Inc.",
+            "Role": "Founder and CEO",
+            "Email": "pianpian@amotionsinc.com",
+            "LinkedIn": "https://www.linkedin.com/in/pianpiancarolynxu/",
+            "Details": "Amotions, Inc. is a small startup I worked at. Contact me and I'll write you a letter of recommendation and send her your resume."
+        },
+        {
+            "Name": "Iesha James",
+            "Company": "Cisco",
+            "Role": "Talent Advisor",
+            "Email": "iejames@cisco.com",
+            "LinkedIn": "https://www.linkedin.com/in/iesha-james-8a1883285/",
+            "Details": "This woman contacted me about a SWE position in RTP."
+        },
+        {
+            "Name": "Kevin Parker",
+            "Company": "Corning Incorporated",
+            "Role": "Information Technology Manager",
+            "Email": "kevincolemanparker@gmail.com",
+            "LinkedIn": "https://www.linkedin.com/in/kevin-parker-356a541b9/",
+            "Details": "Corning Incorporated is in Wilmington."
+        },
+        {
+            "Name": "Davis Bryson",
+            "Company": "Ohanafy",
+            "Role": "Co-Founder",
+            "Email": "davis@ohanafy.com",
+            "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
+            "Details": "The UNCW cs department has sent emails about Ohanafy job openings with this guys email in them."
+        },
+        {
+            "Name": "Jay Parker",
+            "Company": "IT Jobs at UCPS",
+            "Role": "Chief Technology Officer",
+            "Email": "james.parker@ucps.k12.nc.us",
+            "LinkedIn": "https://www.linkedin.com/in/jay-parker-bb1904104/",
+            "Details": "This guy is CTO at Union County Public Schools. Gi Iyer contact me on Handshake and gave me his info."
+        },
+        {
+            "Name": "Brian Davis",
+            "Company": "CIT Jobs at UCPS",
+            "Role": "CTE Director",
+            "Email": "brian.davis@ucps.k12.nc.us",
+            "LinkedIn": "https://www.linkedin.com/in/brian-davis-99220078/",
+            "Details": "This guy runs CIT jobs at Union County Public Schools. Gi Iyer contact me on Handshake and gave me his info."
+        },
+        {
+            "Name": "Girija Iyer",
+            "Company": "CIT Jobs at UCPS",
+            "Role": "District Recruiter",
+            "Email": "girija.iyer@ucps.k12.nc.us",
+            "LinkedIn": "https://www.linkedin.com/in/gi-iyer-0b3a9415/",
+            "Details": "Gi Iyer contact me on Handshake about jobs at Union County Public Schools and a UCPS Career fair at Weddington High School."
+        },
+        {
+            "Name": "Not Applicable",
+            "Company": "UNC Wilmington",
+            "Role": "Tac Hiring",
+            "Email": "tachiring@uncw.edu",
+            "LinkedIn": "Not Applicable",
+            "Details": "This is who you contact if you're interested in the UNCW TAC Student Worker Technician."
+        },
+        {
+            "Name": "Person #1",
+            "Company": "Datacor, Inc",
+            "Role": "Chief Technology Officer",
+            "LinkedIn": "HMU if interested",
+            "Details": "He's my friends dad. HMU if interested"
+        },
+        {
+            "Name": "Person #2",
+            "Company": "USAA",
+            "Role": "IT Technical Manager",
+            "LinkedIn": "HMU if interested",
+            "Details": "This was my old manager at USAA, hmu if interested."
+        },
+        {
+            "Name": "Multiple People",
+            "Company": "IBM",
+            "Role": "Various Roles",
+            "LinkedIn": "HMU if interested",
+            "Details": "I know various connections at IBM, hmu if interested."
+        },
+        {
+            "Name": "Thomas LaRocco",
+            "Company": "New Potato Technologies",
+            "Role": "Director of Engineering Operations",
+            "Email": "tlarocco@newpotatotech.com",
+            "LinkedIn": "https://www.linkedin.com/in/thomas-larocco/",
+            "Details": "I talked to this guy briefly about a mobile development job in Wilmington."
+        },
+        {
+            "Name": "Sydney Underwood",
+            "Company": "R.E. Mason",
+            "Role": "Corporate Recruiter",
+            "Email": "sydney.underwood@remasonco.com",
+            "LinkedIn": "https://www.linkedin.com/in/sydneyunderwood44/",
+            "Details": "This women briefly contacted me about a SWE job at R.E. Mason in RTP."
+        },
+        {
+            "Name": "Dale Cohen",
+            "Company": "Cohen Cognition and Perception Lab at UNCW",
+            "Role": "Professor of Psychology",
+            "Email": "cohend@uncw.edu",
+            "LinkedIn": "https://www.linkedin.com/in/dale-c-591314119/",
+            "Details": "My groups CSC 450 project was made for Dr. Cohen. I'm not sure if he does comp-sci projects outside of CSC 450 though."
+        },
+        {
+            "Name": "Ying Wang",
+            "Company": "The Wang Lab UNCW",
+            "Role": "Associate Professor of Chemistry",
+            "Email": "thewanglab.org@gmail.com",
+            "LinkedIn": "https://www.linkedin.com/in/ying-wang-uncw/",
+            "Details": "Could also contact him directly at wangyy@uncw.edu"
+        },
+        {
+            "Name": "Alexandria Van Riper",
+            "Company": "Randstad Digital Americas",
+            "Role": "Senior Technical Recruiter",
+            "Email": "N/A",
+            "LinkedIn": "https://www.linkedin.com/in/alexandriavanriper/",
+            "Details": "This women messaged me on linkedin about job openings."
+        },
+        {
+            "Name": "Morgan O'Connell",
+            "Company": "MarineQuest UNCW",
+            "Role": "MarineQuest Volunteer Coordinator and Program Assistant",
+            "Email": "oconnellm@uncw.edu",
+            "LinkedIn": "https://www.linkedin.com/in/morgan-o-connell-974749227/",
+            "Details": "This seems to be a summer program in Wilmington. Contact her via email."
+        },
+        {
+            "Name": "N/A",
+            "Company": "CloudWyze, Inc.",
+            "Role": "N/A",
+            "Email": "N/A",
+            "LinkedIn": "https://www.cloudwyze.com/contact/",
+            "Details": "I know that's not linkedIn, but thats a good way to contact them"
+        },
+        {
+            "Name": "N/A",
+            "Company": "Ramona Optics",
+            "Role": "N/A",
+            "Email": "N/A",
+            "LinkedIn": "https://www.ramonaoptics.com/contact/",
+            "Details": "I know that's not linkedIn, but thats a good way to contact them"
+        },
+        {
+            "Name": "N/A",
+            "Company": "Soft Tech Consulting",
+            "Role": "N/A",
+            "Email": "recruitment@softtechconsultingcareers.com",
+            "LinkedIn": "https://www.linkedin.com/company/soft-tech-consulting/",
+            "Details": "This company feels \"scammy\". I wouldn't really recommend working for them."
+        }
+    ]
+}
