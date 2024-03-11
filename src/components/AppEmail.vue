@@ -11,6 +11,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `ChatGPT%0A` +
 `https://apps.apple.com/us/app/chatgpt/id6448311069%0A%0A` +
 
+`Handshake%0A` + 
+`https://apps.apple.com/us/app/handshake-jobs-careers/id1220620171%0A%0A` + 
+
 `Alarmy%0A` +
 `https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766%0A%0A` +
 
