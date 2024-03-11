@@ -159,21 +159,6 @@
             "id": 32,
             "Shortcut": "Command + k + s (press s after holding down cmd + k)",
             "Action": "View Keyboard shortcuts menu vscode. Can create a shortcut"
-        },
-        {
-            "id": 33,
-            "Shortcut": "",
-            "Action": ""
-        },
-        {
-            "id": 34,
-            "Shortcut": "",
-            "Action": ""
-        },
-        {
-            "id": 35,
-            "Shortcut": "",
-            "Action": ""
         }
     ],
     "PyCharm": [
