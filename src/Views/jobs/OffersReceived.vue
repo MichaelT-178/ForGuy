@@ -1,5 +1,5 @@
 <template>
-    <h1>Useful Certifications</h1>
+    <h1>Offers I've Received</h1>
     <p class="description">{{ description }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="job-section">
