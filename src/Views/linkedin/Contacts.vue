@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Contacts</h1>
+        <h1 class="contact-header">Contacts</h1>
         <p class="description">These are useful job contacts from various companies.</p>
         <div class="tips-container">
-            <div v-for="contact in contacts" :key="contact.Company" class="tip-section">
+            <div v-for="contact in contacts" :key="contact.Company" class="contact-section">
                 <ContactCard :contact="contact"></ContactCard>
             </div>
         </div>
@@ -29,7 +29,7 @@ const contacts = jsonData.value["Contacts"];
     width: 100%;
 }
 
-.tip-header {
+.contact-header {
     text-align: left;
     border-bottom: 1.5px solid #d8dee4;
     padding-bottom: 7px;
@@ -48,4 +48,21 @@ const contacts = jsonData.value["Contacts"];
     align-items: flex-start;
 }
 
+
+@media (max-width: 700px) {
+    .contact-header {
+        width: 490px;
+    }
+    
+    .description {
+        width: 490px;
+    }
+
+    .contact-section {
+        width: 400px;
+        margin-right: 70px;
+    }
+
+
+}
 </style>
