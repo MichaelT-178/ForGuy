@@ -16,13 +16,18 @@
             "Link": "https://apps.apple.com/us/app/chatgpt/id6448311069"
         },
         {
+            "Name": "Handshake",
+            "Description": "This is the app UNCW uses for job searching. It's like their version of linkedin.",
+            "Link": "https://apps.apple.com/us/app/handshake-jobs-careers/id1220620171"
+        },
+        {
             "Name": "Alarmy",
             "Description": "This is the alarm app I use. I really like the UI, the sound it uses, and the overall features.",
             "Link": "https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766"
         },
         {
             "Name": "Waze",
-            "Description": "This is the GPS app I use. It's extremely useful when driving. It can calcult",
+            "Description": "This is the GPS app I use. It's extremely useful when driving. It can calculate the most optimal routes and redirect you if you go the wrong way.",
             "Link": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106"
         },
         {
