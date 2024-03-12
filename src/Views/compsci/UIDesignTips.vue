@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1 class="tip-header">UI/UX Design Tips</h1>
-        <p class="description">These are tips on how to setup job alerts on LinkedIn.</p>
+        <p class="description">These are UI/UX Design Tips.</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
                 <p class="tip-text" :data-index="instruction.id"></p>
