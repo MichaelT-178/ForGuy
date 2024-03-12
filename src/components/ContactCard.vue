@@ -1,15 +1,24 @@
 <template>
   <div class="contact-card">
-    <h2>Contact Information</h2>
-    <div v-if="contact.Name">Name: {{ contact.Name }}</div>
-    <div v-if="contact.Company">Company: {{ contact.Company }}</div>
-    <div v-if="contact.Role">Role: {{ contact.Role }}</div>
-    <div v-if="contact.Email">Email: <a :href="`mailto:${contact.Email}`">{{ contact.Email }}</a></div>
-    <div v-if="contact.LinkedIn">LinkedIn: <a :href="contact.LinkedIn" target="_blank">{{ contact.LinkedIn }}</a></div>
+    <h2><span>Contact Information</span></h2>
+    <div v-if="contact.Name"><span class="attr">Name</span>: {{ contact.Name }}</div>
+    <div v-if="contact.Company"><span class="attr">Company</span>: {{ contact.Company }}</div>
+    <div v-if="contact.Role"><span class="attr">Role</span>: {{ contact.Role }}</div>
+    <div v-if="contact.Email"><span class="attr">Email</span>: <a :href="`mailto:${contact.Email}`" class="blue-link">{{ contact.Email }}</a></div>
+    <template v-if="contact.LinkedIn">
+      <span class="attr">LinkedIn</span>:
+      <template v-if="contact.LinkedIn.includes('https')">
+        <a :href="contact.LinkedIn" target="_blank" class="purple-link">{{ contact.LinkedIn }}</a>
+      </template>
+      <template v-else>
+        <router-link to="/ContactMe" class="blue-link">{{ contact.LinkedIn }}</router-link>
+      </template>
+    </template>
     <p v-if="contact.Details">{{ contact.Details }}</p>
     <img :src="imagePath" alt="Company Image">
   </div>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
@@ -33,27 +42,61 @@ const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, impo
 
 </script>
 
+
 <style scoped>
+
+.contact-card h2 span {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1px;
+  display: inline-block;
+  padding-right: 110px;
+}
+
+.contact-card h2 {
+  margin-bottom: 20px;
+}
+
+.contact-card div {
+  margin-bottom: 7px;
+}
+
+.attr {
+  font-weight: 560;
+}
+
 .contact-card {
   padding: 0px 0px 10px 30px; /* Top, right, bottom, left */
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 600px;
   margin: 20px auto;
-  position: relative; /* Add this line */
-  overflow: hidden; /* Add this to ensure the image does not overflow the card */
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-top: 2px solid darkblue; 
+  border-bottom: 2px solid darkblue; 
+}
+
+.blue-link {
+  color: #0000EE; 
+}
+
+.blue-link:hover {
+  color: #000086;
+}
+
+.purple-link:hover {
+  color: #2E0057;
 }
 
 .contact-card img {
-  position: absolute; /* Position the image absolutely within the contact-card */
-  top: 35px; /* Adjust this to create space between the top of the card and the image */
-  right: 30px; /* Adjust this to create space between the right side of the card and the image */
-  width: 100px; /* Adjust the width as needed to make the image smaller */
-  height: 100px;
-  height: auto; /* Maintain the aspect ratio */
-  border: 1px solid #999999; /* Add a border with 2px width and a color of #ccc */
+  position: absolute;
+  top: 40px;
+  right: 37px;
+  width: 100px;
+  height: 100px; 
+  border: 1px solid #999999;
 }
-
 
 @media (max-width: 700px) {
   .contact-card {
@@ -61,9 +104,14 @@ const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, impo
   }
   
   .contact-card img {
-    width: 85px; /* Optionally, make the image even smaller on smaller screens */
-    height: 85px; /* Optionally, make the image even smaller on smaller screens */
+    width: 85px;
+    height: 85px;
+  }
+
+  .contact-card h2 span {
+    padding-right: 48px;
   }
 }
+
 </style>
 
