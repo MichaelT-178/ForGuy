@@ -2,7 +2,7 @@
     <div class="container">
         <h1 class="contact-header">Contacts</h1>
         <p class="description">These are useful job contacts from various companies.</p>
-        <div class="tips-container">
+        <div class="contacts-container">
             <div v-for="contact in contacts" :key="contact.Company" class="contact-section">
                 <ContactCard :contact="contact"></ContactCard>
             </div>
@@ -11,6 +11,7 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/linkedin/Contacts.json";
@@ -18,7 +19,9 @@ import ContactCard from "../../components/ContactCard.vue"
 
 const jsonData = ref(AllData);
 const contacts = jsonData.value["Contacts"];
+
 </script>
+
 
 <style scoped>
 
@@ -42,12 +45,15 @@ const contacts = jsonData.value["Contacts"];
     width: 690px;
 }
 
-.tips-container {
+.contacts-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.contact-section {
+    margin-top: -19px;
+}
 
 @media (max-width: 700px) {
     .contact-header {
@@ -62,7 +68,6 @@ const contacts = jsonData.value["Contacts"];
         width: 400px;
         margin-right: 70px;
     }
-
-
 }
+
 </style>
