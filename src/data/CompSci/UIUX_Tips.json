@@ -5,7 +5,7 @@
             "Tip 1": ""
         },
         {
-            "Name": "hink of your UI as a vertical stack",
+            "Name": "Think of your UI as a vertical stack",
             "Tip 2": ""
         },
         {
@@ -39,7 +39,7 @@
     ],
     "IBMDesignTips": [
         {
-            "Name": "Top Prompts and hints for Frontcode Maintenance from a random IBM repository",
+            "Name": "Top Prompts and hints for Front end code Maintenance from a random IBM repository",
             "tips": [
                 "Use CSS media queries to make the dashboard responsive for different screen sizes.",
                 "Add ARIA roles and attributes to improve accessibility for users with disabilities.",
