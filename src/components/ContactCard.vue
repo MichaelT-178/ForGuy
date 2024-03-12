@@ -35,16 +35,35 @@ const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, impo
 
 <style scoped>
 .contact-card {
-  padding: 20px;
+  padding: 0px 0px 10px 30px; /* Top, right, bottom, left */
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 600px;
   margin: 20px auto;
+  position: relative; /* Add this line */
+  overflow: hidden; /* Add this to ensure the image does not overflow the card */
 }
+
+.contact-card img {
+  position: absolute; /* Position the image absolutely within the contact-card */
+  top: 35px; /* Adjust this to create space between the top of the card and the image */
+  right: 30px; /* Adjust this to create space between the right side of the card and the image */
+  width: 100px; /* Adjust the width as needed to make the image smaller */
+  height: 100px;
+  height: auto; /* Maintain the aspect ratio */
+  border: 1px solid #999999; /* Add a border with 2px width and a color of #ccc */
+}
+
 
 @media (max-width: 700px) {
   .contact-card {
     width: 425px;
   }
+  
+  .contact-card img {
+    width: 85px; /* Optionally, make the image even smaller on smaller screens */
+    height: 85px; /* Optionally, make the image even smaller on smaller screens */
+  }
 }
 </style>
+
