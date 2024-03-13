@@ -80,6 +80,15 @@
             "Image": "UNCW.jpg"
         },
         {
+            "Name": "Alex Rosso",
+            "Company": "Lenovo",
+            "Role": "Talent Acquisition Partner",
+            "Email": "arosso@lenovo.com",
+            "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
+            "Details": "This was my recruiter when I was interviewing with Lenovo.",
+            "Image": "lenovo.jpg"
+        },
+        {
             "Name": "Person #1",
             "Company": "Datacor, Inc",
             "Role": "Chief Technology Officer",
@@ -98,6 +107,15 @@
             "Image": "USAA.jpg"
         },
         {
+            "Name": "Person #3",
+            "Company": "Lenovo",
+            "Role": "Senior Manager XaaS Development and IT",
+            "Email": "",
+            "LinkedIn": "HMU if you're interested.",
+            "Details": "I personally know a hiring manager at Lenovo. He might be able to write you a letter or recommendation/talk to you about jobs. Note that unfortunately his word might not mean that much.",
+            "Image": "lenovo.jpg"
+        },
+        {
             "Name": "Multiple People",
             "Company": "IBM",
             "Role": "Various Roles",
@@ -105,6 +123,24 @@
             "LinkedIn": "HMU if interested",
             "Details": "I know various connections at IBM, hmu if interested.",
             "Image": "IBM.jpg"
+        },
+        {
+            "Name": "",
+            "Company": "Bank of America",
+            "Role": "",
+            "Email": "bofajobas@bofa.com",
+            "LinkedIn": "https://www.linkedin.com/company/bank-of-america/",
+            "Details": "In their job postings on LinkedIn they say you can send them the job title and requisition of the role you're interested in using this email.",
+            "Image": "BOFA.jpg"
+        },
+        {
+            "Name": "",
+            "Company": "Bank of America",
+            "Role": "",
+            "Email": "bofajobas@bofa.com",
+            "LinkedIn": "https://www.linkedin.com/company/bank-of-america/",
+            "Details": "In their job postings on LinkedIn they say you can send them the job title and requisition of the role you're interested in using this email.",
+            "Image": "BOFA.jpg"
         },
         {
             "Name": "Thomas LaRocco",
