@@ -120,6 +120,22 @@
             "Pay": ""
         },
         {
+            "Name": "Lenovo",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/lenovo/jobs/",
+            "Contact": "arosso@lenovo.com (Alex Rosso)",
+            "Tips": "I'm kind of friends with a hiring manager at Lenovo, which could be another contact. He might be able to write you a letter of recommendation. While that might help you slightly if you get an interview, I seriously wouldn't rely on that. I'll contact him if you want.",
+            "Pay": ""
+        },
+        {
+            "Name": "Bank of America",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/bank-of-america/jobs/",
+            "Contact": "bofajobas@bofa.com",
+            "Tips": "I think the name of the SWE internship is \"Global Technology Analyst\" or \"Technology Analyst\". You can send your resume, job title and requisition to the email above.",
+            "Pay": ""
+        },
+        {
             "Name": "Corning Incorporated",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/corning-incorporated/jobs/",
@@ -1301,28 +1317,12 @@
             "Pay": ""
         },
         {
-            "Name": "Lenovo",
-            "Location": "Morrisville, North Carolina (RTP)",
-            "LinkedIn": "https://www.linkedin.com/company/lenovo/jobs/",
-            "Contact": "Alex Rosso via Linkedin",
-            "Tips": "I'm kind of friends with a hiring manager at Lenovo. He might be able to write you a letter of recommendation. While that might help you slightly if you get an interview, I seriously wouldn't rely on that. I'll contact him if you want.",
-            "Pay": ""
-        },
-        {
             "Name": "IBM",
             "Location": "Durham, North Carolina (RTP) or New York City Or Atlanta, Georgia",
             "LinkedIn": "https://www.linkedin.com/company/ibm/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": "Very good"
-        },
-        {
-            "Name": "Bank Of America",
-            "Location": "Charlotte, North Carolina",
-            "LinkedIn": "https://www.linkedin.com/company/bank-of-america/jobs/",
-            "Contact": "",
-            "Tips": "I think the name of the SWE internship is \"Global Technology Analyst\" or \"Technology Analyst\"",
-            "Pay": ""
         }
     ]
 }
