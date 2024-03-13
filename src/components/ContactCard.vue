@@ -64,6 +64,10 @@ const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, impo
   font-weight: 560;
 }
 
+.contact-card p {
+  padding: 0px 15px 0px 0px;
+}
+
 .contact-card {
   padding: 0px 0px 10px 30px; /* Top, right, bottom, left */
   border: 1px solid #ccc;
