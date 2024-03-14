@@ -8,10 +8,14 @@
     <div class="accordion-content" v-if="isOpen">
       <ul>
         <li v-for="(entry, index) in filteredEntries" :key="index">
+
+          <!-- entry[0] is the underlined attribute name. If it's an array don't add : -->
           <b style="margin-right: 3px;"><u>{{ entry[0] }}</u>{{ typeof entry[1] === 'string' ? ':' : ""}}</b>
+
+          <!-- Display it if it's just a string -->
           <span v-if="typeof entry[1] === 'string'" v-html="entry[1]"></span>
           <ul class="menu-attribute" v-else>
-            <li v-for="(item, idx) in entry[1]" :key="`item-${idx}`" v-html="formatEntry(item)" class="menu-items"></li>
+            <li v-for="(item, idx) in entry[1]" :key="`item-${idx}`" v-html="item" class="menu-items"></li>
           </ul>
         </li>
       </ul>
