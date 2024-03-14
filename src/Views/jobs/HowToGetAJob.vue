@@ -1,5 +1,6 @@
 <template>
-    <h1 class="job-header">How to get a job</h1>
+    <h1 class="job-header">How to Get a Job</h1>
+    <p class="job-description">These are tips I have for getting a software engineering job.</p>
     <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
         <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
         <AccordionMenu :item="tip" :isOpen="allOpen"/>
@@ -11,8 +12,9 @@
 
 <script setup>
 import { ref } from 'vue';
-import HowToGetAJobData from "../../data/jobs/HowToGetAJob.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
+
+import HowToGetAJobData from "../../data/jobs/HowToGetAJob.json";
 
 const jsonData = ref(HowToGetAJobData);
 const tips = jsonData.value["Tips"];
@@ -23,26 +25,33 @@ const allOpen = ref(false);
 <style scoped>
 
 .job-header {
-    margin-left: auto; /* Ensures it aligns with the start of the accordion if necessary */
-    margin-right: auto; /* Ensures it aligns with the start of the accordion if necessary */
-    width: 80%; /* Matches the accordion menu width for alignment */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1.5px solid #d8dee4;
+    width: 80%;
 }
 
+.job-description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 79.5%;
+    font-size: 20px;
+    margin-top: -14px;
+    margin-bottom: 25px;
+}
 
 .tip-section {
-    margin-bottom: 20px; /* Adjusts spacing between each tip section */
+    margin-bottom: 20px;
 }
 
 .tip-text {
-    margin-left: auto; /* Ensures it aligns with the start of the accordion if necessary */
-    margin-right: auto; /* Ensures it aligns with the start of the accordion if necessary */
-    width: 80%; /* Matches the accordion menu width for alignment */
-    margin-bottom: 10px; /* Spacing between the tip text and the accordion menu */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
-    color: darkblue;
+    color: #000062;
 }
-
-
 
 </style>
