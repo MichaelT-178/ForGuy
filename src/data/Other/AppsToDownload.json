@@ -1,7 +1,7 @@
 {
     "AppsToDownload": [
         {
-            "Name": "Genuis Scan",
+            "Name": "Genius Scan",
             "Description": "Used to Scan papers using your camera and turn them into pdfs. Recommended by one of my old math professors at UNCW. I found it extremely useful when I was in college. Would highly recommend.",
             "Link": "https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876"
         },
@@ -44,6 +44,11 @@
             "Name": "GrubHub",
             "Description": "If you don't want to wait in massive lines, you can use your UNCW Teal Meals through this app to order ahead of time.",
             "Link": "https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c"
+        },
+        {
+            "Name": "Amtrak",
+            "Description": "This is an app for finding trains. While I wouldn't find it useful if I lived in Wilmington, I do find it very useful in RTP. You can sometimes get places faster, cheaper, safer, etc. than in an uber. I use it to get from Durham to Charlotte.",
+            "Link": "https://apps.apple.com/us/app/amtrak/id405074003"
         }
     ],
     "Kinda Obviously": [
@@ -59,7 +64,7 @@
         },
         {
             "Name": "Microsoft Outlook",
-            "Description": "Mangage your UNCW email and other outlook emails",
+            "Description": "Manage your UNCW email and other outlook emails",
             "Link": "https://apps.apple.com/us/app/microsoft-outlook/id951937596"
         }
     ]

@@ -9,8 +9,12 @@
             "Body": "I am a recent UNCW computer science alumni and I'm currently working as a Software Engineer at IBM in Research Triangle Park. During college I had two SWE internships, one at USAA and the other at a startup company called Amotions, Inc. I've also received a couple other full-time and internship offers as well. My situation is somewhat rare for a UNCW alumni and I want to help get you in the same boat, if that's something you're interested in. So far, I've successfully helped a friend of mine at UNCW (class of 2025) get a SWE internship at USAA and I feel like I've developed pretty good job-searching strategies over the years. I think you would find some of these techniques and strategies useful, so I've shared them fairly in depth throughout this website. As mentioned earlier, if you need any help with anything please do not hesitate to (contact me)[/ContactMe]. Definitely don't hesitate to spam me with questions, I'd be more than happy to answer them to the best of my ability. "
         },
         {
+            "Header": "Explanation of Search Functionality",
+            "Body": "You can search for a page by typing it's name in the search bar. The results shown are pages that's name matches the search query. If you want to search for a term within a page, type the term in the search bar and then click return/enter. You'll be taken to a page showing views which contain the search term."
+        },
+        {
             "Header": "Download or View Source Code",
-            "Body": "You can view the source code in this [GitHub Repository](https://github.com/MichaelT-178/ForGuy). In case something happens to this website, you can also download the source code &Download Link&(https://michaelt-178.github.io/TestWebsite/Practice.docx)."
+            "Body": "You can view the source code in this [GitHub Repository](https://github.com/MichaelT-178/ForGuy). In case something happens to this website, you can also download the source code by clicking &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)."
         }
     ]
 }
