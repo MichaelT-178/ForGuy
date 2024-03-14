@@ -3,9 +3,9 @@
         <h1 class="tip-header">UI/UX Design Tips</h1>
         <p class="description">These are UI/UX Design Tips.</p>
         <div class="tips-container">
-            <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
-                <p class="tip-text" :data-index="instruction.id"></p>
-                <p class="text-section" v-html="createRouterLink(instruction.instruction)"></p>
+            <div v-for="tip in tips" :key="tip.id" class="tip-section">
+                <p class="tip-text" :data-index="tip.id"></p>
+                <p class="text-section" v-html="formatTip(tip)"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -14,11 +14,15 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/SetupJobAlerts.json";
-import { createRouterLink } from "../../components/FormatLinks.vue";
+import AllData from "../../data/CompSci/UIUX_Tips.json";
 
 const jsonData = ref(AllData);
-const instructions = jsonData.value["Instructions"];
+const tips = jsonData.value["UIDesignTips"];
+
+const formatTip = (tip) => {
+    return `<u>${tip.Underlined}</u>. ${tip.Tip}`;
+}
+
 </script>
 
 <style scoped>
