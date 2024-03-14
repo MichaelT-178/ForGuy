@@ -78,4 +78,17 @@ window.navigateToVuePath = (toPropString) => {
   router.push(toProp);
 };
 
+//&DownloadLink&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
+export const createDownloadLink = (text) => {
+  const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
+  return text.replace(markdownLinkPattern, (match, label, downloadLink) => 
+    `<a href="${downloadLink}" download
+        style="color: #007AFF; text-decoration: none;" 
+        onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
+        onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
+      >
+      ${label}</a>`
+  );
+};
+
 </script>

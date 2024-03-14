@@ -1,45 +1,59 @@
 {
     "UIDesignTips": [
         {
-            "Name": "Have a \"Center\" of the page that contains all necessary components and information",
-            "Tip 1": ""
+            "id": 1,
+            "Underlined": "Have a \"Center\" of the page that contains all necessary components and information",
+            "Tip": "The sides could contain components that disappear when the screen shrinks to a different width. You could also change the components being displayed and have a component with identical functionality."
         },
         {
-            "Name": "Think of your UI as a vertical stack",
-            "Tip 2": ""
+            "id": 2,
+            "Underlined": "Think of your UI as a vertical stack",
+            "Tip": "Code it and design it starting from the top to bottom. Add side components after you design the center. Not that a \"div\" element in HTML vertically stacks elements on the page."
         },
         {
-            "Name": "Use padding and relative positioning instead of absolute positioning",
-            "Tip 3": ""
+            "id": 3,
+            "Underlined": "Use padding and relative positioning instead of absolute positioning",
+            "Tip": "This will help the components of your view collapse and expand in unison with different screen sizes "
         },
         {
-            "Name": "Use fonts, logos, and colors to make your UI look unique, not designs.",
-            "Tip 4": ""
+            "id": 4,
+            "Underlined": "Use fonts, logos, and colors to make your UI look unique, not designs",
+            "Tip": "Many UI designs and components are very similar, but you probably haven't really noticed due to the different fonts, logos, and colors. For example, the YouTube subscription page and the instagram main scroll page and basically the exact same, but look completely different due to their different fonts, colors, and overall \"vibe\". Try not to make excessively weird/confusing UI designs. Try for the for the most part to use vertically stacked rectangles, squares, and circles were appropriate."
         },
         {
-            "Name": "Provide \"responsive\" feedback to the user.",
-            "Tip 5": ""
+            "id": 5,
+            "Underlined": "Provide \"responsive\" feedback to the user",
+            "Tip": "Whenever the user hovers over something or clicks something, have the UI respond to it in someway. For example, when the user hovers over a button, change its color or make it bigger to indicate that it does something when clicked. Whenever a button is clicked always indicate through either button text changes, color changes, alerts, etc. whether the action was performed successfully or not. "
         },
         {
-            "Name": "Don't use flashy colors excessively",
-            "Tip 6": ""
+            "id": 6,
+            "Underlined": "Don't use flashy colors excessively",
+            "Tip": "Most popular UI's such as YouTube, TikTok, Facebook, etc. use mostly muted colors such as grey, white, and black with a small \"splash\" of colors like blue, red, purple, etc. A completely bright neon red UI probably won't look good, and a completely grey UI might come across as dull or bland. Try to find a good mixture of both, I'd say like 85-90% muted, and 10% colorful. Also try to spread the color throughout the UI and not have it all be in one place."
         },
         {
-            "Name": "Take Inspiration from other UI's",
-            "Tip 7": "Kind of elaborating on point 4, be observant when you're using apps and see UI designs you like and try to take inspiration from them. "
+            "id": 7,
+            "Underlined": "Take Inspiration from other UI's",
+            "Tip": "Kind of elaborating on point 4, be observant when you're using apps and see UI designs you like and try to take inspiration from them. "
         },
         {
-            "Name": "",
-            "Tip 8": ""
+            "id": 8,
+            "Underlined": "Collapse Horizontally stacked elements into vertically stacked elements when the screen's width decreases",
+            "Tip": "For example, say you have a row of vertically aligned cards. When the user shrinks the width of the screen the cards could go underneath one another in a vertical stack."
         },
         {
-            "Name": "",
-            "Tip 9": ""
+            "id": 9,
+            "Underlined": "Include “whitespace” in your UI",
+            "Tip": "What I mean by \"whitespace\" in this context is part of the screen that contains just color and no UI components. The main benefit of this is that will help your design adapt to different screen sizes better. Since the size of the colored background isn't essential it can expand and shrink as necessary. It also helps keep your UI look \"Clean\" and not overly cluttered."
+        },
+        {
+            "id": 10,
+            "Underlined": "",
+            "Tip": ""
         }
     ],
     "IBMDesignTips": [
         {
-            "Name": "Top Prompts and hints for Front end code Maintenance from a random IBM repository",
+            "Underlined": "Top Prompts and hints for Front end code Maintenance from a random IBM repository",
             "tips": [
                 "Use CSS media queries to make the dashboard responsive for different screen sizes.",
                 "Add ARIA roles and attributes to improve accessibility for users with disabilities.",
