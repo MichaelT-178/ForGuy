@@ -1,102 +1,56 @@
 <template>
-    <div class="container">
-        <h1 class="tip-header">LinkedIn</h1>
-        <p class="description">These are tips on how to setup job alerts on LinkedIn.</p>
-        <div class="tips-container">
-            <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
-                <p class="tip-text" :data-index="instruction.id"></p>
-                <p class="text-section" v-html="createRouterLink(instruction.instruction)"></p>
-            </div>
-        </div>
-        <p style="margin-bottom: 100px;"></p>
+    <h1 class="job-header">LinkedIn Tips</h1>
+    <p class="job-description">These are tips I have for how to use LinkedIn effectively and have a good experience.</p>
+    <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
+        <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
+        <AccordionMenu :item="tip" :isOpen="allOpen"/>
+        <p style="margin-bottom: 35px;"></p>
     </div>
+    <p style="margin-bottom: 60px;"></p>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/SetupJobAlerts.json";
-import { createRouterLink } from "../../components/FormatLinks.vue";
+import AccordionMenu from "../../components/AccordionMenu.vue";
 
+import AllData from "../../data/linkedin/LinkedInTips.json";
 const jsonData = ref(AllData);
-const instructions = jsonData.value["Instructions"];
+const tips = jsonData.value["LinkedInTips"];
+const allOpen = ref(false);
+
 </script>
 
 <style scoped>
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.tip-header {
-    text-align: left;
+.job-header {
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 1.5px solid #d8dee4;
-    padding-bottom: 7px;
-    width: 690px;
+    width: 80%;
 }
 
-.description {
-    margin-top: -8px;
-    font-size: 19px;
-    width: 690px;
-}
-
-.tips-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.job-description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 79.5%;
+    font-size: 20px;
+    margin-top: -14px;
+    margin-bottom: 25px;
 }
 
 .tip-section {
-    margin-bottom: 5px;
-    width: 575px;
+    margin-bottom: 20px;
 }
 
 .tip-text {
-    position: relative;
-    width: auto;
-    font-size: 21px;
-    font-weight: 500;
-}
-
-.tip-text::before {
-    content: attr(data-index);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkblue;
-    color: white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-left: -35px;
-    position: absolute;
-    top: 0;
-    transform: translateY(-50%);
-    font-size: 14px;
-}
-
-.text-section {
-    font-size: 19.5px;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    margin-top: -13px;
-}
-
-@media (max-width: 700px) {
-    .tip-header {
-        width: 490px;
-    }
-    
-    .description {
-        width: 490px;
-    }
-
-    .tip-section {
-        width: 375px;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000062;
 }
 
 </style>

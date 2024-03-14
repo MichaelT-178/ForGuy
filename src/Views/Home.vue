@@ -4,7 +4,7 @@
         <div v-for="section in homeSections" :key="section.header">
             <div class="section-container">
                 <h1>{{ section.Header }}</h1>
-                <p v-html="createRouterLink(section.Body)"></p>
+                <p v-html="formatParagraph(section.Body)"></p>
             </div>
         </div>
     </div>
@@ -14,11 +14,16 @@
 
 <script setup>
 import { ref } from 'vue';
-import { createRouterLink } from '../components/FormatLinks.vue';
+import { createHyperLink, createRouterLink, createDownloadLink } from '../components/FormatLinks.vue';
 import AllData from '../data/Home.json';
 
 const jsonData = ref(AllData);
 const homeSections = jsonData.value["Home"];
+
+//Allows for formatted hyperlinks and router links
+const formatParagraph = (body) => {
+    return createDownloadLink(createHyperLink(createRouterLink(body)));
+}
 
 </script>
 
