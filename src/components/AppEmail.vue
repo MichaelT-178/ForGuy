@@ -2,7 +2,7 @@
 export const bodyContent = `Hi Elijah,%0A%0A` +
 `These are all the app links from my website. Enjoy.%0A%0A` +
 
-`Genuis Scan%0A` +
+`Genius Scan%0A` +
 `https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876%0A%0A` +
 
 `LinkedIn%0A` +
@@ -28,6 +28,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 
 `GrubHub%0A` +
 `https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c%0A%0A` +
+
+`Amtrak%0A` + 
+`https://apps.apple.com/us/app/amtrak/id405074003%0A%0A` + 
 
 `Canvas%0A` +
 `https://apps.apple.com/us/app/canvas-student/id480883488%0A%0A` +
