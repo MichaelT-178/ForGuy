@@ -47,8 +47,8 @@
         },
         {
             "id": 10,
-            "Underlined": "",
-            "Tip": ""
+            "Underlined": "For mobile development, use cards that take up the entire width of the screen",
+            "Tip": "A common UI design for apps is to make white cards that take the entire width of the screen. These cards could contain information and components like buttons."
         }
     ],
     "IBMDesignTips": [
