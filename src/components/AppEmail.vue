@@ -41,6 +41,6 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Microsoft Outlook%0A` +
 `https://apps.apple.com/us/app/microsoft-outlook/id951937596%0A%0A` +
 `Regards,%0A` +
-`Michael`;
+`Michael%0A%0A`;
 
 </script>
