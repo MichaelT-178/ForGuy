@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <h1 class="tip-header">Setup Job Alerts</h1>
-        <p class="description">These are tips on how to setup job alerts on LinkedIn.</p>
+        <p class="description">This is how to Setup Job Alerts on LinkedIn. It's pretty simple.</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
                 <p class="tip-text" :data-index="instruction.id"></p>
-                <p class="text-section" v-html="createRouterLink(instruction.instruction)"></p>
+                <p class="text-section" v-html="createHyperLink(instruction.instruction)"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -15,7 +15,7 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/linkedin/SetupJobAlerts.json";
-import { createRouterLink } from "../../components/FormatLinks.vue";
+import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
 const instructions = jsonData.value["Instructions"];
