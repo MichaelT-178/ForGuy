@@ -24,22 +24,23 @@
         },
         {
             "Name": "Setup Your Profile",
-            "Explanation": "Set up your profile so recruiters can learn more about you and your work experience."
+            "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this (page)[/linkedin/SetUpProfile] for details."
         },
         {
             "Name": "Setup Notification Settings",
             "Explanation": "",
             "Instructions": [
-                "",
-                ""
+                "Go to this LinkedIn page -> https://www.linkedin.com/mypreferences/d/categories/notifications. To set up your notification settings",
+                "I'd recommend having all notifications on for job alerts."
             ]
         },
         {
             "Name": "Connect With People",
             "Explanation": "",
             "Instructions": [
-                "",
-                ""
+                "To connect with people simply look their name up in the search bar on the [feed page](https://www.linkedin.com/feed/).",
+                "Click their profile in the results.",
+                "Near the top of their profile click the blue \"Connect\" button."
             ]
         },
         {
