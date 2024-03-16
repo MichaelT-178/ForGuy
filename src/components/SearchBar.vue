@@ -8,9 +8,9 @@
         <!-- Search bar -->
         <input type="text" 
                v-model="searchQuery" 
-               placeholder="Search term appears in..." 
-               :class="{'rounded-top': filteredResults.length, 'rounded-all': !filteredResults.length}"
-               @keydown.enter="handleEnterKey"
+               placeholder="Search by name or term..." 
+               :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery}"
+               @keydown.enter="handleEnterPress"
         >
         <span class="material-icons" id="close-icon" @click="closeSearchBar">close</span>
       </div>
@@ -28,6 +28,14 @@
           {{ result.MenuName }}
         </router-link>
       </div>
+      <!-- No Results but query entered -->
+      <div v-else-if="searchQuery && !filteredResults.length" class="results">
+        <div class="result-item" @click="goToResultsPage">
+          <span class="emoji">🔍</span>
+          Press <span style="color: #7A008D">return/enter</span> to see results for "{{ searchQuery }}"
+        </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -43,10 +51,14 @@ const filteredResults = ref([]);
 const emit = defineEmits(['close-search']);
 const router = useRouter();
 
-const handleEnterKey = (event) => {
+const goToResultsPage = () => {
+  emit('close-search');
+  router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
+};
+
+const handleEnterPress = (event) => {
   if (event.key === 'Enter') {
-    emit('close-search');
-    router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
+    goToResultsPage();
   }
 };
 
@@ -136,6 +148,7 @@ watch(searchQuery, filterResults);
   background-color: #ffd483;
   color: #333;
   border-radius: 4px;
+  cursor: pointer;
   /* border-left: 3px solid darkblue; */
 }
 
