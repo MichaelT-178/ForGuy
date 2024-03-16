@@ -4,7 +4,13 @@
             "Name": "Setup Job Alerts",
             "Explanation": "Job alerts are used to notify you about new job openings. ",
             "Instructions": [
-                "Open the LinkedIn app"
+                "Open the LinkedIn app",
+                "Search for a company you'd like to work for (Ex. nCino)",
+                "Go to the jobs tab -> https://www.linkedin.com/company/ncino-inc-/jobs/",
+                "Press the \"Create job alert\" button.",
+                "In the job title field type \"Software Engineer\"",
+                "For job location type \"Wilmington, North Carolina\"",
+                "When you're done click the blue job alert button."
             ]
         },
         {
@@ -18,11 +24,7 @@
         },
         {
             "Name": "Setup Your Profile",
-            "Explanation": "Set up your",
-            "Instructions": [
-                "",
-                ""
-            ]
+            "Explanation": "Set up your profile so recruiters can learn more about you and your work experience."
         },
         {
             "Name": "Setup Notification Settings",
