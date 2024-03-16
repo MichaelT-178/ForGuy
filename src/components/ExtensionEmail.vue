@@ -47,6 +47,6 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Docx/ODT Viewer%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader%0A%0A` +
 `Regards,%0A` +
-`Michael`;
+`Michael%0A%0A`;
 
 </script>
