@@ -85,10 +85,12 @@
         },
         {
             "Name": "Helpful Website Links", 
-            "Description": [
-                "LinkedIn",
-                "HandShake",
-                "Other 2 websites"
+            "Description": "These are websites I think you'd find helpful in your job search",
+            "Websites": [
+                "[LinkedIn](https://www.linkedin.com/feed/)",
+                "[HandShake](https://uncw.joinhandshake.com/stu/postings)",
+                "[Job Pulse: Internships](https://jobpulse.fyi/Software-Engineer-Internship)",
+                "[Job Pulse: Entry-level Full Time](https://jobpulse.fyi/Software-Engineer-NewGrad)"
             ]
         }
     ]

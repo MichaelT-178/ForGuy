@@ -31,7 +31,7 @@
       <!-- No Results but query entered -->
       <div v-else-if="searchQuery && !filteredResults.length" class="results">
         <div class="result-item" @click="goToResultsPage">
-          <span class="emoji">🔍</span>
+          <!-- <span class="emoji">🔍</span> -->
           Press <span style="color: #7A008D">return/enter</span> to see results for "{{ searchQuery }}"
         </div>
       </div>
