@@ -8,6 +8,8 @@ What to do with Vue components?????????
 
 Replace markdown.
 
+ADD PATH AND NAME TO JSON FILES 
+
 """
 
 def get_files_in_directory(path):
