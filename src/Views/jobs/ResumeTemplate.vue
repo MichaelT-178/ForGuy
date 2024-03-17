@@ -1,8 +1,8 @@
 <template>
   <div class="center-container">
     <div class="content-container">
-      <h1 class="header">Resume Template</h1>
-      <p class="description">This is the resume template I use. The current information is inaccurate and needs to be updated.</p>
+      <h1 class="header">{{ header }}</h1>
+      <p class="description">{{ description }}</p>
       <div class="info-bar">
         <span class="page-number">{{ currentPage }}/{{ numOfPages }}</span>
         <button @click="downloadResumeDocx" ref="downloadButton">Download DOCX</button>
@@ -18,6 +18,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import AllData from '../../data/jobs/ResumeTemplateText.json'
 import ResumePic1 from "../../assets/ElijahResume/ElijahResume1.png";
 import ResumePic2 from "../../assets/ElijahResume/ElijahResume2.png";
 
@@ -25,6 +26,16 @@ const resumePics = ref([ResumePic1, ResumePic2]);
 const currentPage = ref(1);
 const numOfPages = 2;
 const downloadButton = ref(null);
+
+const jsonData = ref(AllData);
+const info = jsonData.value["information"];
+
+
+const header = info[0].title;
+const description = info[0].description;
+
+
+
 
 function downloadResumeDocx() {
   //Can't use local path for security reasons 
