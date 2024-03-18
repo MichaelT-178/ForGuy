@@ -9,7 +9,7 @@ json_data = {
                 {
                     "Section": 1,
                     "Fire": "water",
-                    "Lego": "Illinois"
+                    "State": "Illinois"
                 },
                 {
                     "Location": "Wilmington"
