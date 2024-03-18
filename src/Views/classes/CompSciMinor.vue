@@ -1,23 +1,24 @@
 <template>
-    <h1 class="job-header">How to Get a Job</h1>
-    <p class="job-description">These are tips I have for getting a software engineering job.</p>
-    <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
-        <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
-        <AccordionMenu :item="tip" :isOpen="allOpen"/>
+    <h1 class="job-header">Computer Science Minor</h1>
+    <p class="job-description" v-html="createHyperLink(description)"></p>
+    <div v-for="course in classes" :key="course.Name" class="tip-section">
+        <p class="tip-text">{{ course.Name }} <span v-html="course.Elective" style="color: purple"></span></p>
+        <AccordionMenu :item="course" :isOpen="allOpen"/>
         <p style="margin-bottom: 35px;"></p>
     </div>
-    <p style="margin-bottom: 60px;"></p>
+    <p style="margin-bottom: 80px;"></p>
 </template>
 
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/jobs/HowToGetAJob.json";
+import AllData from "../../data/Classes/CompSciMinor.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
+import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
-const tips = jsonData.value["Tips"];
-const allOpen = ref(false);
+const description = jsonData.value["Description"];
+const classes = jsonData.value["Classes"];
 
 </script>
 
@@ -42,8 +43,8 @@ const allOpen = ref(false);
 
 .tip-section {
     margin-bottom: 20px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 9px;
+    margin-right: 9px;
 
 }
 

@@ -23,6 +23,7 @@ import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
 import CSCDescriptions from '../views/classes/CSCDescriptions.vue';
 import ClassesIveTaken from '../views/classes/ClassesIveTaken.vue';
 import ClassesToAvoid from '../views/classes/ClassesToAvoid.vue';
+import CompSciMinor from '../views/classes/CompSciMinor.vue';
 import Certifications from '../views/classes/Certifications.vue';
 
 //Comp Sci
@@ -118,6 +119,10 @@ const routes = [
     {
         path: '/classes/ClassesToAvoid',
         component: ClassesToAvoid
+    },
+    {
+        path: '/classes/CompSciMinor',
+        component: CompSciMinor
     },
     {
         path: '/classes/Certifications',
