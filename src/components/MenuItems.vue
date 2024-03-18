@@ -30,11 +30,12 @@ export const menuItems = [
         text: "Classes",
         subMenu: [
             { text: "Class Recommendations",  icon: "thumb_up",       link: "/classes/ClassRecommendations" },
-            { text: "Classes I've Taken",     icon: "co_present",     link: "/classes/ClassesIveTaken" }, //interactive_space
+            { text: "Classes I've Taken",     icon: "co_present",     link: "/classes/ClassesIveTaken" }, //interactive_space, wysiwyg
             { text: "CSC Descriptions",       icon: "description",    link: "/classes/CSCDescriptions" },
             { text: "Classes To Avoid",       icon: "cancel",         link: "/classes/ClassesToAvoid" },
+            { text: "Comp Sci Minor",         icon: "dvr",            link: "/classes/CompSciMinor" },
             { text: "Useful Certifications",  icon: "editor_choice",  link: "/classes/Certifications" }
-        ]
+        ] 
     },
     {
         text: "Comp Sci",
