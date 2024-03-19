@@ -1,0 +1,48 @@
+{
+    "ExistingFolderPts": [
+        {
+            "id": 1,
+            "instruction": "Go to your terminal."
+        },
+        {
+            "id": 2,
+            "instruction": "cd into the folder you want to upload."
+        },
+        {
+            "id": 3,
+            "instruction": "Run the following commands in your terminal."
+        }
+    ],
+    "ExistingFolder": [
+        {
+            "Command": "git init",
+            "Description": "Initialize a git repository",
+            "Example": "git init"
+        },
+        {
+            "Command": "git add .",
+            "Description": "Add all files to the remote repository",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"Initial Commit\"",
+            "Description": "Commit all files to GitHub",
+            "Example": "git commit -m \"Initial Commit\""
+        },
+        {
+            "Command": "git branch -M main",
+            "Description": "Moves changes to the main branch",
+            "Example": "git branch -M main"
+        },
+        {
+            "Command": "git remote add origin <repo-https-link>",
+            "Description": "Add remote GitHub origin.",
+            "Example": "git remote add origin <repo-https-link>"
+        },
+        {
+            "Command": "git push -u origin main",
+            "Description": "Push changes to the main branch.",
+            "Example": "git push -u origin main"
+        }
+    ]
+}
