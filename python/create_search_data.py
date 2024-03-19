@@ -1,7 +1,7 @@
 import json 
 import os
-
-
+import subprocess
+from termcolor import colored as c
 
 """
 What to do with Vue components?????????
@@ -16,6 +16,10 @@ def get_files_in_directory(path):
     files = os.listdir(path)
     return files
 
+def write_to_clipboard(output: str):
+    process = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)
+    process.communicate(output.encode('utf-8'))
+    
 paths = [
     '../src/data/Classes/',
     '../src/data/CompSci/',
@@ -27,6 +31,8 @@ paths = [
 all_functions_str = ""
 
 for path in paths:
+
+    all_functions_str += f"\n# {path.replace('../src/data/', '')[:-1]}\n"
 
     for file_name in get_files_in_directory(path):
         file = file_name.replace(".json", "")
@@ -58,7 +64,15 @@ for path in paths:
 
         all_functions_str += func_call_str
 
-all_functions_str = all_functions_str.strip()
+all_functions_str = all_functions_str
+
+all_functions_str += f"\nall_data = {func_vars}\n"
 
 print(all_functions_str)
-print(func_vars)
+write_to_clipboard(all_functions_str)
+print(c("Copied to clipboard!", "green"))
+
+
+
+
+
