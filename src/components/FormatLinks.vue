@@ -26,8 +26,7 @@ export const createHyperLink = (text) => {
         style="color: #007AFF; text-decoration: none;" 
         onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
         onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-      >
-      ${label}</a>`
+      >${label}</a>`
   );
 };
 
