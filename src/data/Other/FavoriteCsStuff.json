@@ -34,7 +34,7 @@
             "Name": "JavaScript Object Notation Objects",
             "Description": "JSON Objects are extremely useful for transferring data around in a front-end. It's like a simplified class.",
             "Language": "JSON",
-            "Code": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\",\n  }"
+            "Code": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }"
         }
     ]
 }
