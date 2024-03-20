@@ -22,6 +22,7 @@ import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-swift';
+import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism-coy.css';
 import './custom.css';
 
@@ -63,7 +64,6 @@ Prism.languages.python = Prism.languages.extend('python', {
     lookbehind: true,
     alias: 'keyword' 
   }
-  
 });
 
 const highlightedCode = computed(() => {
