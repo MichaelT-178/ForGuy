@@ -79,6 +79,16 @@
             "Details": "This is who you contact if you're interested in the UNCW TAC Student Worker Technician.",
             "Image": "UNCW.jpg"
         },
+
+        {
+            "Name": "Clarisse Cortez",
+            "Company": "Pearson",
+            "Role": "Recruitment and Onboarding Administrator",
+            "Email": "Clarisse.cortez@pearson.com",
+            "LinkedIn": "https://www.linkedin.com/in/clarisse-cortez-6712161b7/",
+            "Details": "This was the recruiter that contacted me about my Pearson internship interview.",
+            "Image": "Pearson.jpg"
+        },
         {
             "Name": "Alex Rosso",
             "Company": "Lenovo",

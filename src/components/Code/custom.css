@@ -1,0 +1,54 @@
+code {
+    color: #ABB2BF;
+}
+
+.token.keyword,
+.token.operator {
+    color: #C678DD;
+}
+
+.token.punctuation {
+    color: #ABB2BF;
+}
+
+
+.token.number {
+    color: #D19A66;
+}
+
+.token.builtin {
+    color: #56B6C2;
+}
+
+/* Java class name */
+.token.class-name {
+    color: #E5C07B
+}
+
+/* Using decorator for python print */
+.token.decorator {
+    color: #56B6C2;
+}
+
+/* Using for python file word*/
+.token.comment {
+    color: #ABB2BF;
+}
+
+
+
+/* JavaScript function */
+.token.function,
+.token.function-variable.function {
+    color: #61AFEF;
+}
+
+/* JavaScript Variable */
+.token.literal-property.property {
+    color: #61AFEF;
+}
+
+/* Swift nil */
+.token.nil.constant {
+    color: #D19A66;
+}
