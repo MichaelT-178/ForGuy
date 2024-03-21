@@ -314,9 +314,12 @@ export const settings =
 '\n' + 
 '"workbench.editorAssociations": {\n' + 
 '    "*.db": "sqlite-viewer.option"\n' + 
-'}\n' + 
+'},\n' + 
 '\n' + 
-'}\n' +
-''
+'"yaml.schemas": {\n' + 
+'    "Kubernetes": "*.yaml"\n' +
+'}\n\n' +
+'}' +
+'\n'
 
 </script>
