@@ -42,7 +42,7 @@
             "Role": "Co-Founder",
             "Email": "davis@ohanafy.com",
             "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
-            "Details": "The UNCW cs department has sent emails about Ohanafy job openings with this guys email in them.",
+            "Details": "The UNCW computer science department has sent emails about Ohanafy job openings with this guys email in them.",
             "Image": "Ohanafy.jpg"
         },
         {
@@ -104,7 +104,7 @@
             "Role": "Chief Technology Officer",
             "Email": "",
             "LinkedIn": "HMU if interested",
-            "Details": "He's my friend's dad. HMU if interested",
+            "Details": "He's my friend's dad. HMU if interested.",
             "Image": "Datacor.jpg"
         },
         {
@@ -121,7 +121,7 @@
             "Company": "Lenovo",
             "Role": "Senior Manager XaaS Development and IT",
             "Email": "",
-            "LinkedIn": "HMU if you're interested.",
+            "LinkedIn": "HMU if interested",
             "Details": "I personally know this hiring manager at Lenovo. He might be able to write you a letter or recommendation/talk to you about jobs. Note that unfortunately his word might not mean that much.",
             "Image": "lenovo.jpg"
         },
@@ -133,6 +133,15 @@
             "LinkedIn": "HMU if interested",
             "Details": "I know various connections at IBM, hmu if interested.",
             "Image": "IBM.jpg"
+        },
+        {
+            "Name": "Meg Kuecker",
+            "Company": "iD Tech Camps",
+            "Role": "Regional Manager",
+            "Contact": "https://www.idtech.com/contact",
+            "LinkedIn": "https://www.linkedin.com/in/meghan-kuecker/",
+            "Details": "This woman contacted me on HandShake about a tutoring opportunity.",
+            "Image": "idTech.jpg"
         },
         {
             "Name": "",
