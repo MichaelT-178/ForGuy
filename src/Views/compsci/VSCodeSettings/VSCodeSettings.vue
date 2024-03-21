@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <h1 class="header">My Visual Studio Code Settings</h1>
-    <p class="description">This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.</p>
-    <div class="bar">
-      <span class="settings-header">Settings.json</span>
-      <button @click="downloadJson" ref="downloadButton">Download JSON</button>
-      <button @click="copyJson" ref="copyButton">Copy JSON</button>
+    <div>
+      <h1 class="header">My Visual Studio Code Settings</h1>
+      <p class="description">This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.</p>
+      <div class="bar">
+        <span class="settings-header">Settings.json</span>
+        <button @click="downloadJson" ref="downloadButton">Download JSON</button>
+        <button @click="copyJson" ref="copyButton">Copy JSON</button>
+      </div>
+      <div class="file1">
+        <div class="json-container">
+          <pre v-html="highlightedJson"></pre>
+        </div>
+      </div>
     </div>
-    <div class="json-container">
-      <pre v-html="highlightedJson"></pre>
-    </div>
-  </div>
 </template>
 
 <script setup>
