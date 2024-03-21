@@ -308,6 +308,10 @@
 
 "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
+},
+
+"yaml.schemas": {
+    "Kubernetes": "*.yaml"
 }
 
 }

@@ -46,6 +46,10 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 
 `Docx/ODT Viewer%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader%0A%0A` +
+
+`YAML%0A` +
+`https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml%0A%0A` +
+
 `Regards,%0A` +
 `Michael%0A%0A`;
 

@@ -89,7 +89,12 @@
             "Author": "Shahil Kumar",
             "Description": "Allows you to view docx files in VSCode.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader"
+        },
+        {
+            "Name": "YAML",
+            "Author": "Red Hat",
+            "Description": "Comprehensive language support for YAML.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml"
         }
-
     ]
 }
