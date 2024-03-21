@@ -7,6 +7,7 @@
         <span class="language-name">{{ codeInfo.Language }}</span>
         <span class="material-icons copy-icon" 
              :class="{'icon-done': copyIcon === 'done'}" 
+             :style="{ color: copyIcon === 'done' ? '#00FF4D' : getLanguageColor }"
              @click="copyCode"
          >{{ copyIcon }}</span>
       </div>
@@ -16,7 +17,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref, computed } from 'vue';
+import { ref, computed } from 'vue';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
@@ -45,14 +46,14 @@ const copyCode = () => {
   navigator.clipboard.writeText(props.codeInfo.Code)
     .then(() => {
       copyIcon.value = 'done';
-      setTimeout(() => copyIcon.value = 'content_copy', 2000); // Use the correct delay here
+      setTimeout(() => copyIcon.value = 'content_copy', 2000); // Resets icon after delay
     })
     .catch(err => {
-      // Error handling
+      // Handle error, if clipboard access failed
     });
 };
 
-//Custom words
+// Extending Prism for custom syntax highlighting
 Prism.languages.python = Prism.languages.extend('python', {
   'decorator': {
     pattern: /\bprint\b(?=\()/,
@@ -69,12 +70,25 @@ Prism.languages.python = Prism.languages.extend('python', {
 const highlightedCode = computed(() => {
   const language = props.codeInfo.Language.toLowerCase();
   const prismLanguage = Prism.languages[language] || Prism.languages.plain;
-
   return Prism.highlight(props.codeInfo.Code, prismLanguage, language);
 });
 
+const getLanguageColor = computed(() => {
+  switch (props.codeInfo.Language.toLowerCase().trim()) {
+    case 'python': return '#3572A5';
+    case 'java': return '#b07219';
+    case 'javascript': return '#f1e05a';
+    case 'typescript': return '#3178c6';
+    case 'swift': return '#F05138';
+    case 'ruby': return '#701516';
+    case 'vue': return '#41b883';
+    case 'json': return '#FF9A00';
+    default: return '#D5D5D5';
+  }
+});
 
 </script>
+
 
 <style scoped>
 .code-block {
@@ -93,13 +107,13 @@ const highlightedCode = computed(() => {
 
 .copy-icon {
   /* color: #868686; */
-  color: #CDB100;
+  /* color: #CDB100; */
   cursor: pointer;
   font-size: 22px;
 }
 
 .copy-icon:hover {
-  color: #AF9800;
+  filter: brightness(80%); /* Darkens the icon on hover */
 }
 
 .icon-done {
