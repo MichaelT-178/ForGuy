@@ -1,55 +1,55 @@
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.file1 .token.comment,
+.file1 .token.block-comment,
+.file1 .token.prolog,
+.file1 .token.doctype,
+.file1 .token.cdata {
   color: #5C6370;
 }
 
-.token.punctuation {
+.file1 .token.punctuation {
 	color: #ABB2BF;
 }
 
-.token.property,
-.token.tag,
-.token.function-name,
-.token.constant,
-.token.symbol,
-.token.deleted {
+.file1 .token.property,
+.file1 .token.tag,
+.file1 .token.function-name,
+.file1 .token.constant,
+.file1 .token.symbol,
+.file1 .token.deleted {
 	color: #E06C75;
 }
 
-.token.boolean,
-.token.number {
+.file1 .token.boolean,
+.file1 .token.number {
   color: #D19A66;
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.function,
-.token.builtin,
-.token.inserted {
+.file1 .token.selector,
+.file1 .token.attr-name,
+.file1 .token.string,
+.file1 .token.char,
+.file1 .token.function,
+.file1 .token.builtin,
+.file1 .token.inserted {
 	color: #98C379;
 }
 
-.token.operator,
-.token.entity,
-.token.url,
-.token.variable {
+.file1 .token.operator,
+.file1 .token.entity,
+.file1 .token.url,
+.file1 .token.variable {
 	color: #ABB2BF;
 	background: #282C34;
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword,
-.token.class-name {
+.file1 .token.atrule,
+.file1 .token.attr-value,
+.file1 .token.keyword,
+.file1 .token.class-name {
 	color: #1990b8;
 }
 
-.token.regex,
-.token.important {
+.file1 .token.regex,
+.file1 .token.important {
 	color: #e90;
 }
