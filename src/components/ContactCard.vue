@@ -5,6 +5,7 @@
     <div v-if="contact.Company"><span class="attr">Company</span>: {{ contact.Company }}</div>
     <div v-if="contact.Role"><span class="attr">Role</span>: {{ contact.Role }}</div>
     <div v-if="contact.Email"><span class="attr">Email</span>: <a :href="`mailto:${contact.Email}`" class="blue-link">{{ contact.Email }}</a></div>
+    <div v-if="contact.Contact"><span class="attr">Contact</span>: <a :href="contact.Contact" target="_blank" class="blue-link">{{ contact.Contact }}</a></div>
     <template v-if="contact.LinkedIn">
       <span class="attr">LinkedIn</span>:
       <template v-if="contact.LinkedIn.includes('https')">
