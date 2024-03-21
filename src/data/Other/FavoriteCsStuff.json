@@ -31,8 +31,8 @@
             "Code": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)"
         },
         {
-            "Name": "JavaScript Object Notation Objects",
-            "Description": "JSON Objects are extremely useful for transferring data around in a front-end. It's like a simplified class.",
+            "Name": "JavaScript Object Notation",
+            "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class.",
             "Language": "JSON",
             "Code": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }"
         }
