@@ -14,7 +14,7 @@
         },
         {
             "Header": "Download or View Source Code",
-            "Body": "You can view the source code in this [GitHub Repository](https://github.com/MichaelT-178/ForGuy). This web application is written in Vue.js and is currently being hosted by GitHub pages. In case something happens to this website, you can also download the source code by clicking &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)."
+            "Body": "You can view the source code in this [GitHub Repository](https://github.com/MichaelT-178/ForGuy). This web application is written in Vue.js and is currently being hosted on GitHub pages. In case something happens to this website, you can also download the source code by clicking &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)."
         }
     ]
 }
