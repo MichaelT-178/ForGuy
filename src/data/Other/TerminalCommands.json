@@ -53,6 +53,21 @@
             "Command": "ls",
             "Description": "Print/Display all files and directories in the current path",
             "Example": "ls"
+        },
+        {
+            "Command": "ls",
+            "Description": "Print/Display all files and directories in the current path",
+            "Example": "ls"
+        },
+        {
+            "Command": "<Program> --version",
+            "Description": "Typing \"--version\" after the name of your program can help you see if it's installed and what version it is",
+            "Example": "Python3 --version"
+        },
+        {
+            "Command": "env",
+            "Description": "Print all environment variables.",
+            "Example": "env"
         }
     ],
     "Delete": [
