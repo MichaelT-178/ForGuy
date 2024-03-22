@@ -8,12 +8,12 @@
         {
             "id": 2,
             "Underlined": "Think of your UI as a vertical stack",
-            "Tip": "Code it and design it starting from the top to bottom. Add side components after you design the center. Not that a \"div\" element in HTML vertically stacks elements on the page."
+            "Tip": "Code and design your UI starting from the top to bottom. Add side components after you design the center. Not that a \"div\" element in HTML vertically stacks elements on the page. Think about components like stacking bricks on top of each other."
         },
         {
             "id": 3,
             "Underlined": "Use padding and relative positioning instead of absolute positioning",
-            "Tip": "This will help the components of your view collapse and expand in unison with different screen sizes "
+            "Tip": "This will help your UI components collapse and expand synchronously with different screen sizes."
         },
         {
             "id": 4,
@@ -28,17 +28,17 @@
         {
             "id": 6,
             "Underlined": "Don't use flashy colors excessively",
-            "Tip": "Most popular UI's such as YouTube, TikTok, Facebook, etc. use mostly muted colors such as grey, white, and black with a small \"splash\" of colors like blue, red, purple, etc. A completely bright neon red UI probably won't look good, and a completely grey UI might come across as dull or bland. Try to find a good mixture of both, I'd say like 85-90% muted, and 10% colorful. Also try to spread the color throughout the UI and not have it all be in one place."
+            "Tip": "Most popular UI's such as YouTube, TikTok, Instagram, etc. use mostly muted colors such as grey, white, and black with a small \"splash\" of colors like blue, red, purple, etc. A completely bright neon red UI probably won't look good, and a completely grey UI might come across as dull or bland. Try to find a good mixture of both, I'd say like 85-90% muted, and 10% colorful. Also try to spread the color throughout the UI and not have it all be in one place."
         },
         {
             "id": 7,
             "Underlined": "Take Inspiration from other UI's",
-            "Tip": "Kind of elaborating on point 4, be observant when you're using apps and see UI designs you like and try to take inspiration from them. "
+            "Tip": "Kind of elaborating on point 4, be observant when you're using apps and look out for UI designs you like and try to take inspiration from them. "
         },
         {
             "id": 8,
-            "Underlined": "Collapse Horizontally stacked elements into vertically stacked elements when the screen's width decreases",
-            "Tip": "For example, say you have a row of vertically aligned cards. When the user shrinks the width of the screen the cards could go underneath one another in a vertical stack."
+            "Underlined": "Collapse horizontally stacked elements into vertically stacked elements when the screen's width decreases",
+            "Tip": "For example, say you have a row of horizontally aligned cards. When the user shrinks the width of the screen the cards could go underneath one another in a vertical stack."
         },
         {
             "id": 9,
