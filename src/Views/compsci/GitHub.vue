@@ -54,7 +54,7 @@ const existingFolderCmds = jsonData.value["ExistingFolder"];
 
 .github-pic {
     width: 690px;
-    height: 260px;
+    height: 280px;
     margin-top: -5px;
 }
 
