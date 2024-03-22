@@ -15,7 +15,7 @@
             "Role": "Founder and CEO",
             "Email": "pianpian@amotionsinc.com",
             "LinkedIn": "https://www.linkedin.com/in/pianpiancarolynxu/",
-            "Details": "Amotions, Inc. is a small startup I worked at. Contact me and I'll write you a letter of recommendation and send her your resume.",
+            "Details": "Amotions, Inc. is a small startup I interned at. Contact me and I'll write you a letter of recommendation and send her your resume.",
             "Image": "Amotions.jpg"
         },
         {
@@ -24,7 +24,7 @@
             "Role": "Talent Advisor",
             "Email": "iejames@cisco.com",
             "LinkedIn": "https://www.linkedin.com/in/iesha-james-8a1883285/",
-            "Details": "This woman contacted me about a SWE position in RTP.",
+            "Details": "This woman contacted me about a full-time SWE position in RTP.",
             "Image": "Cisco.jpg"
         },
         {
@@ -33,7 +33,7 @@
             "Role": "Information Technology Manager",
             "Email": "kevincolemanparker@gmail.com",
             "LinkedIn": "https://www.linkedin.com/in/kevin-parker-356a541b9/",
-            "Details": "Corning Incorporated is in Wilmington.",
+            "Details": "Corning Incorporated is in Wilmington. I talked to this guy at the UNCW computing showcase. Nice guy.",
             "Image": "Corning.jpg"
         },
         {
@@ -42,7 +42,7 @@
             "Role": "Co-Founder",
             "Email": "davis@ohanafy.com",
             "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
-            "Details": "The UNCW computer science department has sent emails about Ohanafy job openings with this guys email in them.",
+            "Details": "The UNCW computer science department has sent emails about Ohanafy SWE job openings with this guys email in them.",
             "Image": "Ohanafy.jpg"
         },
         {
@@ -51,7 +51,7 @@
             "Role": "Chief Technology Officer",
             "Email": "james.parker@ucps.k12.nc.us",
             "LinkedIn": "https://www.linkedin.com/in/jay-parker-bb1904104/",
-            "Details": "This guy is CTO at Union County Public Schools. Gi Iyer contact me on Handshake and gave me his info.",
+            "Details": "This guy is the CTO at Union County Public Schools. Gi Iyer contacted me on Handshake and gave me his info.",
             "Image": "UCPS.jpg"
         },
         {
@@ -86,7 +86,7 @@
             "Role": "Recruitment and Onboarding Administrator",
             "Email": "clarisse.cortez@pearson.com",
             "LinkedIn": "https://www.linkedin.com/in/clarisse-cortez-6712161b7/",
-            "Details": "This was the recruiter that contacted me about my Pearson internship interview.",
+            "Details": "This was the recruiter that contacted me about my Pearson SWE internship interview.",
             "Image": "Pearson.jpg"
         },
         {
@@ -95,7 +95,7 @@
             "Role": "Talent Acquisition Partner",
             "Email": "arosso@lenovo.com",
             "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
-            "Details": "This was my recruiter when I was interviewing with Lenovo.",
+            "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
             "Image": "lenovo.jpg"
         },
         {
@@ -138,7 +138,7 @@
             "Name": "Meg Kuecker",
             "Company": "iD Tech Camps",
             "Role": "Regional Manager",
-            "Contact": "https://www.idtech.com/contact",
+            "Contact": "ipchiring@idtech.com",
             "LinkedIn": "https://www.linkedin.com/in/meghan-kuecker/",
             "Details": "This woman contacted me on HandShake about a tutoring opportunity.",
             "Image": "idTech.jpg"
@@ -149,8 +149,17 @@
             "Role": "Recruitment Sourcing Specialist",
             "Contact": "https://www.cognizant.com/us/en/about-cognizant/contact-us",
             "LinkedIn": "https://www.linkedin.com/in/dlsse/",
-            "Details": "This guy contact me on Handshake about a jr SWE position.",
+            "Details": "This guy contact me on Handshake about a full-time jr SWE position.",
             "Image": "cognizant.jpg"
+        },
+        {
+            "Name": "Mallory Norris",
+            "Company": "H&R Block",
+            "Role": "Talent Acquisition Recruiter",
+            "Email": "mallory.norris@hrblock.com",
+            "LinkedIn": "https://www.linkedin.com/in/mallory-norris/",
+            "Details": "This was my recruiter for a SWE internship in Kansas City.",
+            "Image": "HRBlock.jpg"
         },
         {
             "Name": "",
@@ -169,6 +178,15 @@
             "LinkedIn": "https://www.linkedin.com/in/thomas-larocco/",
             "Details": "I talked to this guy briefly about a mobile development job in Wilmington.",
             "Image": "NewPotato.jpg"
+        },
+        {
+            "Name": "Patrick Groetzinger",
+            "Company": "Randstad Digital Americas",
+            "Role": "Account Manager Perm",
+            "Email": "patrick.groetzinger@randstadusa.com",
+            "LinkedIn": "https://www.linkedin.com/in/pg-randstadusa/",
+            "Details": "This guy messaged me on LinkedIn about a full-time Applications Engineer position in Raleigh, NC.",
+            "Image": "Randstad.jpg"
         },
         {
             "Name": "Sydney Underwood",
@@ -194,17 +212,8 @@
             "Role": "Associate Professor of Chemistry",
             "Email": "thewanglab.org@gmail.com",
             "LinkedIn": "https://www.linkedin.com/in/ying-wang-uncw/",
-            "Details": "Could also contact him directly at wangyy@uncw.edu",
+            "Details": "Could also contact him directly at wangyy@uncw.edu. I've seen SWE positions here.",
             "Image": "UNCW.jpg"
-        },
-        {
-            "Name": "Alexandria Van Riper",
-            "Company": "Randstad Digital Americas",
-            "Role": "Senior Technical Recruiter",
-            "Email": "",
-            "LinkedIn": "https://www.linkedin.com/in/alexandriavanriper/",
-            "Details": "This women messaged me on linkedin about job openings.",
-            "Image": "Randstad.jpg"
         },
         {
             "Name": "Morgan O'Connell",
@@ -212,7 +221,7 @@
             "Role": "MarineQuest Volunteer Coordinator and Program Assistant",
             "Email": "oconnellm@uncw.edu",
             "LinkedIn": "https://www.linkedin.com/in/morgan-o-connell-974749227/",
-            "Details": "This seems to be a summer program in Wilmington. Contact her via email.",
+            "Details": "This seems to be a summer program in Wilmington. Contact her via email. It's not a SWE job, but it seems like it might be a good summer job.",
             "Image": "MarineQuest.jpg"
         },
         {
