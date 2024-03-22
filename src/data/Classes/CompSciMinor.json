@@ -112,5 +112,45 @@
                 "Poster presentation - 50%"
             ]
         }
+    ],
+    "DescriptionTwo": "It's probably not too late to become a computer science major with a business concentration and still graduate in 4 years. I've listed coursework below. To learn more about the degree run a \"What-If\" analysis in [Seanet](https://degreeworks-respdashboard.uncw.edu/RespDashboard/worksheets/WEB31). If you're interested and have questions feel free to reach out.",
+    "SemesterClasses": [
+        {
+            "Name": "Junior Year - 1st Semester",
+            "Classes": [
+                "CSC 131: Introduction to Computer Science",
+                "CSC 133: Discrete Mathematical Structures"
+            ]
+        },
+        {
+            "Name": "Junior Year - 2nd Semester",
+            "Classes": [
+                "CSC 231: Introduction to Computer Science",
+                "CSC 242: Computer Organization",
+                "CSC 498: Internship in Computer Science/CSC Elective",
+                "CSC 344: Computer Networks"
+            ]
+        },
+        {
+            "Name": "Senior Year - 1st Semester",
+            "Classes": [
+                "CSC 331: Object-Oriented Programming and Design",
+                "CSC 340: Scientific Computing",
+                "CSC 342: Operating Systems",
+                "CSC 385: Professional and Ethical Issues in Computing",
+                "CSC 355: Database Design and Implementation",
+                "CSC 360: Formal Languages and Computability"
+            ] 
+        },
+        {
+            "Name": "Senior Year - 2nd Semester",
+            "Classes": [
+                "CSC 380: Design and Analysis of Algorithms",
+                "CSC 351: Applied Software Security",
+                "CSC 434: Programming Languages",
+                "CSC 450: Software Engineering",
+                "Another CSC Elective?"
+            ] 
+        }
     ]
 }
