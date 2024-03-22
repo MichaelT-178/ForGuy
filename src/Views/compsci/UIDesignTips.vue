@@ -20,7 +20,7 @@ const jsonData = ref(AllData);
 const tips = jsonData.value["UIDesignTips"];
 
 const formatTip = (tip) => {
-    return `<u>${tip.Underlined}</u>. ${tip.Tip}`;
+    return `<u>${tip.Underlined}</u>. ${tip.Description}`;
 }
 
 </script>
