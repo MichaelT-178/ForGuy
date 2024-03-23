@@ -26,6 +26,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Uber%0A` +
 `https://apps.apple.com/us/app/uber-request-a-ride/id368677368%0A%0A` +
 
+`AllTrails%0A` +
+`https://apps.apple.com/us/app/alltrails-hike-bike-run/id405075943%0A%0A` + 
+
 `GrubHub%0A` +
 `https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c%0A%0A` +
 
@@ -40,6 +43,7 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 
 `Microsoft Outlook%0A` +
 `https://apps.apple.com/us/app/microsoft-outlook/id951937596%0A%0A` +
+
 `Regards,%0A` +
 `Michael%0A%0A`;
 

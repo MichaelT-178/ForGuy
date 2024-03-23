@@ -12,6 +12,7 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/CompSci/UIUX_Tips.json";
@@ -20,10 +21,11 @@ const jsonData = ref(AllData);
 const tips = jsonData.value["UIDesignTips"];
 
 const formatTip = (tip) => {
-    return `<u>${tip.Underlined}</u>. ${tip.Description}`;
+    return `<u>${tip.Underlined}</u>. ${tip.Tip}`;
 }
 
 </script>
+
 
 <style scoped>
 
