@@ -4,37 +4,43 @@
             "Name": "List Comprehension",
             "Description": "This is a great way to populate a list in Python.",
             "Language": "Python",
-            "Code": "increment_list = [x + 1 for x in range(len(4))]"
+            "FormatCode": "increment_list = [x + 1 for x in range(len(4))]",
+            "CopyCode": "increment_list = [x + 1 for x in range(len(4))]"
         },
         {
             "Name": "Ternary Operator",
             "Description": "Condensed if-else statement. Appears in Java, JavaScript, C++, Swift, etc.",
             "Language": "Java",
-            "Code": "String cool = (5 % 2 == 0) ? \"Hello\" : \"Cool\";"
+            "FormatCode": "String cool = (5 % 2 == 0) ? \"Hello\" : \"Cool\";",
+            "CopyCode": "String cool = (5 % 2 == 0) ? \"Hello\" : \"Cool\";"
         },
         {
             "Name": "ForEach Loops/Arrow Functions",
             "Description": "ForEach loops act like a regular for loop. Arrow functions have concise syntax",
             "Language": "JavaScript",
-            "Code": "const myFunction = () => {\n    animals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n    animals.forEach(animal => {\n        console.log(animal);\n    });\n  }\n"
+            "FormatCode": "const myFunction = () => {\n    animals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n    animals.forEach(animal => {\n        console.log(animal);\n    });\n  }\n",
+            "CopyCode": "const myFunction = () => {\n\tanimals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n\tanimals.forEach(animal => {\n\t\tconsole.log(animal);\n\t});\n}"
         },
         {
             "Name": "Nil-Coalescing Operator",
             "Description": "If name isn't null, set \"unwrappedValue\" to that value. If name is null set to \"Anonymous\". Appears in JavaScript, TypeScript, Swift. Note it's called \"nullish\" in JavaScript and TypeScript.",
             "Language": "Swift",
-            "Code": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\""
+            "FormatCode": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\"",
+            "CopyCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\""
         },
         {
             "Name": "File Reading",
             "Description": "Python's file reading syntax is easily my favorite part of the language. So simple and useful.",
             "Language": "Python",
-            "Code": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)"
+            "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)",
+            "CopyCode": "with open(\"cool.txt\", \"r\") as file:\n\tfor line in file:\n\t\tprint(line)"
         },
         {
             "Name": "JavaScript Object Notation",
-            "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class.",
+            "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class. YAML and XML are too jank in my opinion.",
             "Language": "JSON",
-            "Code": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }"
+            "FormatCode": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }",
+            "CopyCode": "{\n\t\"Car\": \"Honda\",\n\t\"Color\": \"Gray\",\n\t\"Miles\": 12400,\n\t\"Year\": \"2015\"\n}"
         }
     ]
 }
