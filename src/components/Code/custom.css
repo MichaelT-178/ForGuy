@@ -51,3 +51,15 @@ code {
 .token.nil.constant {
     color: #D19A66;
 }
+
+.token.string {
+    color: #98C379;
+}
+
+.token.operator {
+	background: #282C34;
+}
+
+.token.property {
+    color: #E06C75;
+}
