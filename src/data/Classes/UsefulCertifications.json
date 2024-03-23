@@ -55,6 +55,14 @@
             "Certifying Body": "Udemy",
             "Cost": "$94.99",
             "Link": "https://www.udemy.com/course/junitandmockitocrashcourse/"
+        },
+        {
+            "Name": "Google UX Design",
+            "Description": "This is Google's UX design certificate. If you had any interest in front-end development, this would probably be helpful.",
+            "Certification": "Google UX Design Certificate",
+            "Certifying Body": "Coursera",
+            "Cost": "Free",
+            "Link": "https://www.coursera.org/google-certificates/ux-design-certificate/"
         }
     ],
     "Machine Learning Certifications": [
