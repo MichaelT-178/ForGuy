@@ -49,6 +49,18 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv"
         },
         {
+            "Name": "YAML",
+            "Author": "Red Hat",
+            "Description": "Comprehensive language support for YAML.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml"
+        },
+        {
+            "Name": "Prettier - Code formatter",
+            "Author": "Prettier",
+            "Description": "As the name implies, this is a code formatter extension meant to help with code styling.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+        },
+        {
             "Name": "Python",
             "Author": "Microsoft",
             "Description": "Python language support lets run, debug, etc. python code.",
@@ -89,12 +101,6 @@
             "Author": "Shahil Kumar",
             "Description": "Allows you to view docx files in VSCode.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader"
-        },
-        {
-            "Name": "YAML",
-            "Author": "Red Hat",
-            "Description": "Comprehensive language support for YAML.",
-            "Link": "https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml"
         }
     ]
 }
