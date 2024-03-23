@@ -80,7 +80,7 @@
             "Format": "In-Person",
             "Credit Hours": "3",
             "Professor": "Yang Song",
-            "Description": "I wouldn't recommend taking this class unless you really want to have an Artificial Intelligence concentration. The class is mostly just graphs other than the 5 python coding assignments. The professor talks extremely fast and it can be difficult to get all the necessary information. The tests are also very hard and don't have much information from the slides, but you can use a cheat sheet. Overall the amount of work and difficulty of this class isn't worth it for an elective class. This class is mostly just graphs and python search algorithms. If you want to learn more about actual artificial intelligence, I'd recommend you get a certification.",
+            "Description": "I wouldn't recommend taking this class unless you really want to have an Artificial Intelligence concentration. The class is mostly just graphs other than the 5 python coding assignments. The professor talks extremely fast and it can be difficult to get all the necessary information. The tests are also very hard and don't have much information from the slides, but you can use a cheat sheet. Overall the amount of work and difficulty of this class isn't worth it for an elective class. This class is mostly just graphs and python search algorithms. If you want to learn more about actual artificial intelligence, I'd recommend you get a certification. Also, he made us use Python version 3.6 or below in this class and it was kind of a hassle switching between the newer and older versions.",
             "Skills": "Python and algorithms",
             "Text Editor": "PyCharm",
             "Tips": "Go to his office hours",
