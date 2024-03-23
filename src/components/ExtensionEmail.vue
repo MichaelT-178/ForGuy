@@ -26,6 +26,12 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Rainbow CSV%0A` +
 `https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv%0A%0A` +
 
+`YAML%0A` +
+`https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml%0A%0A` +
+
+`Prettier%0A` +
+`https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode%0A%0A` +
+
 `Python%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ms-python.python%0A%0A` +
 
@@ -46,9 +52,6 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 
 `Docx/ODT Viewer%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader%0A%0A` +
-
-`YAML%0A` +
-`https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml%0A%0A` +
 
 `Regards,%0A` +
 `Michael%0A%0A`;
