@@ -212,6 +212,7 @@ a:hover {
 
 .material-icons:hover {
   color: #ffd483;
+  cursor: pointer;
 }
 
 </style>
