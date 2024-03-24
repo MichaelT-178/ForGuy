@@ -68,12 +68,12 @@
         {
             "id": 14,
             "Underlined": "Include functionality to \"undo\" an action",
-            "Tip": ""
+            "Tip": "Make sure you app has easy, intuitive ways to undo an action. An example of this would be the ability to unsend or edit a text in a messaging app."
         },
         {
             "id": 15,
-            "Underlined": "",
-            "Tip": ""
+            "Underlined": "Read \"8 Golden Rules of Interface Design\" by Ben Schneiderman",
+            "Tip": "This is a relatively short article that Dr. Layman shared with us in CSC 450. It has some really good advice and you can check it out [here](https://www.cs.umd.edu/users/ben/goldenrules.html)."
         }
     ],
     "IBMDesignTips": [
