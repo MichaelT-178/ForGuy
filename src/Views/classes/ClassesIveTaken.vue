@@ -17,6 +17,7 @@
                 <AccordionMenu :item="course" :isOpen="allOpen"/>
             </div>
         </section>
+        <p class="graduation">🎉 Graduated Early in December 2023 🎉</p>
         <p style="margin-bottom: 100px;"></p>
     </main>
 </template>
@@ -160,6 +161,13 @@ html {
 
 .expand-all-btn:hover {
     background-color: #0068DF;
+}
+
+.graduation {
+    text-align: center; 
+    font-size: 25px; 
+    margin-top: 55px;
+    color: #007627;
 }
 
 </style>
