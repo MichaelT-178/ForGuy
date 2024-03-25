@@ -64,7 +64,7 @@ export const createRouterLinkWithProps = (text) => {
     }
     
     return `<a href="javascript:void(0);" onclick="navigateToVuePath('${JSON.stringify(toProp).replace(/"/g, "&quot;")}')"
-               style="color: #007AFF; text-decoration: none;" 
+               style="color: #007AFF; text-decoration: none;"
                onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
                onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
             >
@@ -74,7 +74,12 @@ export const createRouterLinkWithProps = (text) => {
 
 window.navigateToVuePath = (toPropString) => {
   const toProp = JSON.parse(toPropString.replace(/&quot;/g, "\""));
-  router.push(toProp);
+
+  // The .then will scroll to the top.
+  router.push(toProp).then(() => {
+    window.scrollTo(0, 0); 
+  });
+  
 };
 
 //&DownloadLink&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
