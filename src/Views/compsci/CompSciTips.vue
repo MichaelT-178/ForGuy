@@ -1,32 +1,69 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Comp Sci Tips</h1>
-        <p class="description">These are some general tips I have for computer science.</p>
+        <h1 class="tip-header">Setup Job Alerts</h1>
+        <p class="description">These are tips on how to setup a profile on LinkedIn. It's pretty straight forward.</p>
         <div class="tips-container">
-            <div v-for="(tip, index) in tips" :key="index" class="tip-section">
-                <p class="tip-text" :data-index="index + 1"></p>
-                <p class="text-section">{{ tip }}</p>
+            <div v-for="tip in tips" :key="tip.id" class="tip-section">
+                <p class="tip-text" :data-index="tip.id"></p>
+                <p class="text-section" v-html="processedTipContent(tip)"></p>
             </div>
         </div>
+        <p style="margin-bottom: 60px;"></p>
+        <CodeBlock :codeInfo="shortcut" ref="codeBlockRef"></CodeBlock>
+        <p style="margin-bottom: 100px;"></p>
+        <CodeBlock :codeInfo="shortcut" ref="codeBlockTwoRef"></CodeBlock>
         <p style="margin-bottom: 60px;"></p>
     </div>
 </template>
 
-<script setup>
 
-const tips = [
-    "Super cool 1",
-    "Super cool 2",
-    "Super cool 3",
-    "Super cool 4",
-    "Super cool 5",
-    "Super cool 6",
-    "Super cool 7",
-    "Super cool 8",
-    "Super cool 9",
-    "Super cool 10",
-    "Super cool 11"
-]
+<script setup>
+import { ref, onMounted } from 'vue';
+import AllData from "../../data/CompSci/CompSciTips.json";
+import CodeBlock from '../../components/Code/CodeBlock.vue';
+
+const jsonData = ref(AllData);
+let tips = jsonData.value["Tips"];
+const shortcut = jsonData.value["ComponentData"][0];
+
+//Add refs here
+const codeBlockRef = ref(null);
+const codeBlockTwoRef = ref(null);
+
+
+const scrollToRef = (refName) => {
+
+    //Add refs here
+    const refs = {
+        codeBlockRef,
+        codeBlockTwoRef,
+    };
+
+    const targetElement = refs[refName]?.value?.$el;
+
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.warn("No target element found for refName:", refName);
+    }
+}
+
+
+const processedTipContent = (tip) => {
+    return tip.Tip.replace(/Scroll down\((.*?)\)/g, (match, refName) => {
+        return `<span href="#" class="scroll-down" data-ref-name="${refName}">Scroll down</span>`;
+    });
+}
+
+onMounted(() => {
+    document.querySelectorAll('.scroll-down').forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            const refName = event.target.getAttribute('data-ref-name');
+            scrollToRef(refName);
+        });
+    });
+});
 
 </script>
 
@@ -64,6 +101,17 @@ const tips = [
     width: 575px;
 }
 
+:deep(.scroll-down) {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+:deep(.scroll-down:hover) {
+    text-decoration: underline;
+    color: darkblue;
+}
+
 .tip-text {
     position: relative;
     width: auto;
@@ -89,10 +137,10 @@ const tips = [
 }
 
 .text-section {
-    font-size: 22.5px;
+    font-size: 19.5px;
     word-wrap: break-word; 
     overflow-wrap: break-word; 
-    margin-top: -13.5px;
+    margin-top: -13px;
 }
 
 @media (max-width: 700px) {
