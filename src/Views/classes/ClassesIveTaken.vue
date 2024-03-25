@@ -108,6 +108,15 @@ html {
     color: #0000D7;
 }
 
+.description {
+    text-align: left; 
+    margin-left: 10.3%;
+    margin-right: 10.3%;
+    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: -2px;
+}
+
 .courses-found {
     /* margin-top: 10px; */
     text-align: left; 
