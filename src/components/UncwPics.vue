@@ -22,6 +22,7 @@ import Pic20 from "../assets/UncwPics/PinkSkyMarchDurham.jpg";
 import Pic21 from "../assets/UncwPics/RedSunsetMarch.jpg";
 import Pic22 from "../assets/UncwPics/DurhamSidewalkSunset.jpg";
 import Pic23 from "../assets/UncwPics/FireyClouds.jpg";
+import Pic24 from "../assets/UncwPics/RollingClouds.jpg";
 
 
 export const uncwPics = [
@@ -52,6 +53,8 @@ export const NorthCarolinaPics = [
     { text: "Sunset through the buildings in Durham", image: Pic21 }, //RedSunsetMarch.jpg
     { text: "Durham Sidewalk and Sunset", image: Pic22 }, //DurhamSidewalkSunset.jpg
     { text: "Firey Clouds in Durham", image: Pic23 }, //FireyClouds.jpg
+    { text: "Rolling Clouds in Late February", image: Pic24 }, //RollingClouds.jpg
+    { text: "Blooming Flowers in Late March", image: Pic24 }, //SpringFlowers.jpg
     
 ]
 
