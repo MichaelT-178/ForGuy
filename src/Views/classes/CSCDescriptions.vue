@@ -90,6 +90,7 @@ html {
     margin-top: 5px;
     text-align: left; 
     margin-left: 10.18%;
+    margin-right: 10.18%;
     font-size: 20px;
 }
 
