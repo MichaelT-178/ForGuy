@@ -1,0 +1,74 @@
+{
+    "Tips": [
+        {
+            "id": 1,
+            "Tip": "Create a shortcut to access your settings.json file in VSCode. This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down(codeBlockRef) to see instructions on making a shortcut."
+        },
+        {
+            "id": 2,
+            "Tip": "This is just normal text"
+        },
+        {
+            "id": 3,
+            "Tip": ""
+        },
+        {
+            "id": 4,
+            "Tip": "Super cool. Scroll down(codeBlockTwoRef)"
+        },
+        {
+            "id": 5,
+            "Tip": ""
+        },
+        {
+            "id": 6,
+            "Tip": ""
+        },
+        {
+            "id": 7,
+            "Tip": ""
+        },
+        {
+            "id": 8,
+            "Tip": ""
+        },
+        {
+            "id": 9,
+            "Tip": ""
+        },
+        {
+            "id": 10,
+            "Tip": ""
+        },
+        {
+            "id": 11,
+            "Tip": ""
+        },
+        {
+            "id": 12,
+            "Tip": ""
+        },
+        {
+            "id": 13,
+            "Tip": ""
+        },
+        {
+            "id": 14,
+            "Tip": ""
+        },
+        {
+            "id": 15,
+            "Tip": ""
+        }
+    ],
+    "ComponentData": [
+        {
+            "Name": "Create a Shortcut to Access VSCode Setting.json",
+            "Description": "\nOpen Visual Studio Code, then press \"command + shift + p\". Then, in the dialogue box type \"Open Keyboard Shortcuts (JSON)\". Click on the matching result. Copy and paste the json below into the file then save it. Now the shortcut \"Command + option + =\" should open settings.json",
+            "Language": "JSON",
+            "FormatCode": "[\n     {\n        \"key\": \"alt+cmd+=\",\n        \"command\": \"workbench.action.openSettingsJson\"\n     }\n  ]",
+            "CopyCode": "//This list should be the only content in the file\n[\n\t{\n\t\t\"key\": \"alt+cmd+=\",\n\t\t\"command\": \"workbench.action.openSettingsJson\"\n\t}\n]"
+        }
+    ]
+}
+
