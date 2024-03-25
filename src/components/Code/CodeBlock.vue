@@ -113,7 +113,7 @@ const getLanguageColor = computed(() => {
 }
 
 .text-container {
-  max-width: 500px; 
+  max-width: 700px; 
 }
 
 .code-name {
@@ -124,15 +124,16 @@ const getLanguageColor = computed(() => {
 .description {
   margin-top: -15px;
   margin-left: 4px;
+  font-size: 17px;
 }
 
 .code-block {
+  width: 700px;
   margin: 20px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #282C34;
   color: white;
-  width: 500px;
   margin-top: -5px;
 }
 
@@ -174,7 +175,7 @@ const getLanguageColor = computed(() => {
 code {
   background-color: #282C34;
   border-radius: 3px;
-  font-size: 13.5px;
+  font-size: 14px;
   margin-left: 16px;
   line-height: 20px;
 }
