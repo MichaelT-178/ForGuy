@@ -63,4 +63,14 @@ const imagePath = new URL(`../assets/${info.Pic}`, import.meta.url).href;
   margin-bottom: 60px;
 }
 
+@media (max-width: 715px) {
+  .content {
+    width: 480px;
+  }
+
+  .picture {
+    width: 480px; 
+  }
+}
+
 </style>
