@@ -43,6 +43,7 @@ table {
   border-collapse: separate; 
   border-spacing: 0;
   border: 1px solid black;
+  margin-top: -8px;
 }
 
 th, td {
