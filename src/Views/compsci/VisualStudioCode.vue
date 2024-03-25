@@ -9,13 +9,14 @@
         <h1>Links</h1>
         <ul class="links-list">
             <li v-for="link in links" :key="link.Name">
-                <a v-if="link.WebLink" :href="link.WebLink" class="link">{{ link.Name }}</a>
-                <router-link v-if="link.Link" :to="link.Link" class="link">{{ link.Name }}</router-link>
+                <a v-if="link.WebLink" :href="link.WebLink" @click="scrollToTop" class="link">{{ link.Name }}</a>
+                <router-link v-if="link.Link" :to="link.Link" @click="scrollToTop" class="link">{{ link.Name }}</router-link>
             </li>
         </ul>
     </div>
     <p style="margin-bottom: 60px;"></p>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
@@ -24,7 +25,16 @@ import AllData from "../../data/CompSci/VisualStudioCode.json";
 const jsonData = ref(AllData);
 const info = jsonData.value["Info"][0];
 const links = jsonData.value["Links"];
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
 </script>
+
 
 <style scoped>
 .image-container {
