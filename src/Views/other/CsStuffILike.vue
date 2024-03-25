@@ -12,8 +12,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from '../../data/Other/FavoriteCsStuff.json'
-import CodeBlock from '../../components/Code/CodeBlock.vue'
+import AllData from '../../data/Other/FavoriteCsStuff.json';
+import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
 const jsonData = ref(AllData);

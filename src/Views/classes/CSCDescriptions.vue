@@ -91,6 +91,7 @@ html {
     text-align: left; 
     margin-left: 10.18%;
     margin-right: 10.18%;
+    margin-bottom: 2px;
     font-size: 20px;
 }
 
