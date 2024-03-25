@@ -7,18 +7,18 @@
         <h1>{{ info.Header }}</h1>
         <p v-html="info.Body"></p>
     </div>
+    <p></p>
 </template>
+
 
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/linkedin/WhatIsLinkedIn.json";
-import { createRouterLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
 const info = jsonData.value["Info"][0];
-console.log(info)
-</script>
 
+</script>
 
 
 <style scoped>
