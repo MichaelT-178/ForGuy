@@ -4,48 +4,48 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
 //Jobs 
-import WhereToApply from '../views/jobs/WhereToApply.vue';
-import ResumeTemplate from '../views/jobs/ResumeTemplate.vue';
-import HowToGetAJob from '../views/jobs/HowToGetAJob.vue'
-import OffersReceived from '../views/jobs/OffersReceived.vue';
-import InterviewTips from '../views/jobs/InterviewTips.vue';
-import CareerPathAdvice from '../views/jobs/CareerPathAdvice.vue';
+import WhereToApply from '../views/Jobs/WhereToApply.vue';
+import ResumeTemplate from '../views/Jobs/ResumeTemplate.vue';
+import HowToGetAJob from '../views/Jobs/HowToGetAJob.vue'
+import OffersReceived from '../views/Jobs/OffersReceived.vue';
+import InterviewTips from '../views/Jobs/InterviewTips.vue';
+import CareerPathAdvice from '../views/Jobs/CareerPathAdvice.vue';
 
 //Linkedin 
-import WhatIsLinkedin from '../views/linkedin/WhatIsLinkedin.vue';
-import SetupProfile from '../views/linkedin/SetupProfile.vue';
-import SetupJobAlerts from '../views/linkedin/SetupJobAlerts.vue';
-import LinkedinTips from '../views/linkedin/LinkedinTips.vue';
-import Contacts from '../views/linkedin/Contacts.vue';
+import WhatIsLinkedin from '../views/LinkedIn/WhatIsLinkedin.vue';
+import SetupProfile from '../views/LinkedIn/SetupProfile.vue';
+import SetupJobAlerts from '../views/LinkedIn/SetupJobAlerts.vue';
+import LinkedinTips from '../views/LinkedIn/LinkedinTips.vue';
+import Contacts from '../views/LinkedIn/Contacts.vue';
 
 //Classes 
-import ClassRecommendations from '../views/classes/ClassRecommendations.vue';
-import CSCDescriptions from '../views/classes/CSCDescriptions.vue';
-import ClassesIveTaken from '../views/classes/ClassesIveTaken.vue';
-import ClassesToAvoid from '../views/classes/ClassesToAvoid.vue';
-import CompSciMinor from '../views/classes/CompSciMinor.vue';
-import Certifications from '../views/classes/Certifications.vue';
+import ClassRecommendations from '../views/Classes/ClassRecommendations.vue';
+import CSCDescriptions from '../views/Classes/CSCDescriptions.vue';
+import ClassesIveTaken from '../views/Classes/ClassesIveTaken.vue';
+import ClassesToAvoid from '../views/Classes/ClassesToAvoid.vue';
+import CompSciMinor from '../views/Classes/CompSciMinor.vue';
+import Certifications from '../views/Classes/Certifications.vue';
 
 //Comp Sci
-import VisualStudioCode from '../views/compsci/VisualStudioCode.vue';
-import GitHubView from '../views/compsci/GitHub.vue';
-import VSCodeSettings from '../views/compsci/VSCodeSettings/VSCodeSettings.vue';
-import VSCodeExtensions from '../views/compsci/VSCodeExtensions.vue';
-import VSCodeShortcuts from '../views/compsci/VSCodeShortcuts.vue';
-import UIDesignTips from '../views/compsci/UIDesignTips.vue';
-import CompSciTips from '../views/compsci/CompSciTips.vue';
+import VisualStudioCode from '../views/CompSci/VisualStudioCode.vue';
+import GitHubView from '../views/CompSci/GitHub.vue';
+import VSCodeSettings from '../views/CompSci/VSCodeSettings/VSCodeSettings.vue';
+import VSCodeExtensions from '../views/CompSci/VSCodeExtensions.vue';
+import VSCodeShortcuts from '../views/CompSci/VSCodeShortcuts.vue';
+import UIDesignTips from '../views/CompSci/UIDesignTips.vue';
+import CompSciTips from '../views/CompSci/CompSciTips.vue';
 
 //Other 
-import GeneralTips from '../views/other/GeneralTips.vue';
-import AppsToDownload from '../views/other/AppsToDownload.vue';
-import CsStuffILike from '../views/other/CsStuffILike.vue';
-import TerminalCommands from '../views/other/TerminalCommands.vue';
-import KeyboardShortcuts from '../views/other/KeyboardShortcuts.vue';
-import Memes from '../views/other/Memes.vue';
-import UncwPics from '../views/other/UncwPictures.vue';
+import GeneralTips from '../views/Other/GeneralTips.vue';
+import AppsToDownload from '../views/Other/AppsToDownload.vue';
+import CsStuffILike from '../views/Other/CsStuffILike.vue';
+import TerminalCommands from '../views/Other/TerminalCommands.vue';
+import KeyboardShortcuts from '../views/Other/KeyboardShortcuts.vue';
+import Memes from '../views/Other/memes.vue';
+import UncwPics from '../views/Other/UncwPictures.vue';
 
 //Contact
-import ContactMe from '../views/Contact.vue'
+import ContactMe from '../views/contact.vue'
 
 //Image View to display images
 import ImageView from '../views/ImageView.vue';
@@ -61,71 +61,71 @@ const routes = [
         component: Home
     },
     {
-        path: '/jobs/WhereToApply',
+        path: '/Jobs/WhereToApply',
         component: WhereToApply
     },
     {
-        path: '/jobs/ResumeTemplate',
+        path: '/Jobs/ResumeTemplate',
         component: ResumeTemplate
     },
     {
-        path: '/jobs/OffersReceived',
+        path: '/Jobs/OffersReceived',
         component: OffersReceived
     },
     {
-        path: '/jobs/InterviewTips',
+        path: '/Jobs/InterviewTips',
         component: InterviewTips
     },
     {
-        path: '/jobs/HowToGetAJob.vue',
+        path: '/Jobs/HowToGetAJob.vue',
         component: HowToGetAJob
     },
     {
-        path: '/jobs/CareerPathAdvice',
+        path: '/Jobs/CareerPathAdvice',
         component: CareerPathAdvice
     },
     {
-        path: '/linkedin/WhatIsLinkedIn',
+        path: '/LinkedIn/WhatIsLinkedIn',
         component: WhatIsLinkedin
     },
     {
-        path: '/linkedin/SetupProfile',
+        path: '/LinkedIn/SetupProfile',
         component: SetupProfile
     },
     {
-        path: '/linkedin/SetupJobAlerts',
+        path: '/LinkedIn/SetupJobAlerts',
         component: SetupJobAlerts
     },
     {
-        path: '/linkedin/LinkedinTips',
+        path: '/LinkedIn/LinkedinTips',
         component: LinkedinTips
     },
     {
-        path: '/linkedin/Contacts',
+        path: '/LinkedIn/Contacts',
         component: Contacts
     },
     {
-        path: '/classes/ClassRecommendations',
+        path: '/Classes/ClassRecommendations',
         component: ClassRecommendations
     },
     {
-        path: '/classes/CSCDescriptions',
+        path: '/Classes/CSCDescriptions',
         component: CSCDescriptions
     },
     {
-        path: '/classes/ClassesIveTaken',
+        path: '/Classes/ClassesIveTaken',
         component: ClassesIveTaken
     },
     {
-        path: '/classes/ClassesToAvoid',
+        path: '/Classes/ClassesToAvoid',
         component: ClassesToAvoid
     },
     {
-        path: '/classes/CompSciMinor',
+        path: '/Classes/CompSciMinor',
         component: CompSciMinor
     },
     {
-        path: '/classes/Certifications',
+        path: '/Classes/Certifications',
         component: Certifications
     },
     {
@@ -157,31 +157,31 @@ const routes = [
         component: CompSciTips
     },
     {
-        path: '/other/GeneralTips',
+        path: '/Other/GeneralTips',
         component: GeneralTips
     },
     {
-        path: '/other/AppsToDownload',
+        path: '/Other/AppsToDownload',
         component: AppsToDownload
     },
     {
-        path: '/other/CompSciStuff',
+        path: '/Other/CompSciStuff',
         component: CsStuffILike
     },
     {
-        path: '/other/TerminalCommands',
+        path: '/Other/TerminalCommands',
         component: TerminalCommands
     },
     {
-        path: '/other/KeyboardShortcuts',
+        path: '/Other/KeyboardShortcuts',
         component: KeyboardShortcuts
     },
     {
-        path: '/other/Memes',
+        path: '/Other/Memes',
         component: Memes
     },
     {
-        path: '/other/UncwPics',
+        path: '/Other/UncwPics',
         component: UncwPics
     },
     {
