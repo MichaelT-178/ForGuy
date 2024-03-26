@@ -37,10 +37,24 @@
         },
         {
             "Name": "JavaScript Object Notation",
-            "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class. YAML and XML are too jank in my opinion.",
+            "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class. YAML and XML are too jank in my opinion. You can think of a json file as a list of Python dictionaries or strings.",
             "Language": "JSON",
             "FormatCode": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }",
             "CopyCode": "{\n\t\"Car\": \"Honda\",\n\t\"Color\": \"Gray\",\n\t\"Miles\": 12400,\n\t\"Year\": \"2015\"\n}"
+        },
+        {
+            "Name": "Try/Catch Block",
+            "Description": "I *LOVE* the try/catch/throw syntax in Java. It's just a vibe. I use this syntax to describe real life events in my head.",
+            "Language": "Java",
+            "FormatCode": "try {\n      schedule.get(i).checkConflict(theEvent);\n  } catch (ConflictException e) {\n      throw new IllegalArgumentException(\"Can't be added due to a conflict.\");\n  } ",
+            "CopyCode": "try {\n\tschedule.get(i).checkConflict(theEvent);\n} catch (ConflictException e) {\n\tthrow new IllegalArgumentException(\"The event cannot be added due to a conflict.\");\n} "
+        },
+        {
+            "Name": "Dictionaries and F-Strings",
+            "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string.",
+            "Language": "Python",
+            "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Sam\": \"UT\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  print(f\"Michael went to {peoples_college['Michael']}\")",
+            "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Sam\": \"UT\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nprint(f\"Michael went to {peoples_college['Michael']}\")\n"
         }
     ]
 }
