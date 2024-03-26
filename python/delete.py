@@ -1,26 +1,5 @@
 import json 
 
-# peoples_college = {
-#     "Gillian": "UNC",
-#     "Carleigh": "NCSU",
-#     "Michael": "Harvard",
-#     "Sam": "UT",
-#     "Charlie": "USC",
-#     "Mom": "NYU"
-# }
-
-# print(f"Michael went to {peoples_college["Michael"]}")
-
-peoples_college = {
-	"Gillian": "UNC",
-	"Carleigh": "NCSU",
-	"Michael": "Harvard",
-	"Sam": "UT",
-	"Charlie": "USC",
-	"Mom": "NYU"
-  }
-print(f"Michael went to {peoples_college['Michael']}")
-
 with open("../src/data/Classes/ClassesIveTaken.json", "r") as file:
     content = json.load(file)
 
