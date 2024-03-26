@@ -25,8 +25,8 @@
             "Name": "Nil-Coalescing Operator",
             "Description": "If name isn't null, set \"unwrappedValue\" to that value. If name is null set to \"Anonymous\". Appears in JavaScript, TypeScript, Swift. Note it's called \"nullish\" in JavaScript and TypeScript.",
             "Language": "Swift",
-            "FormatCode": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\"",
-            "CopyCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\""
+            "FormatCode": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\"\n\n  let ternaryEquivalent = (name != nil) ? name : \"Anonymous\"",
+            "CopyCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\"\n\nlet ternaryEquivalent = (name != nil) ? name : \"Anonymous\"\n"
         },
         {
             "Name": "File Reading",
