@@ -1,4 +1,4 @@
-import json 
+import json
 
 with open("../src/data/Classes/ClassesIveTaken.json", "r") as file:
     content = json.load(file)
