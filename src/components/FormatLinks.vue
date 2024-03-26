@@ -30,7 +30,7 @@ export const createHyperLink = (text) => {
   );
 };
 
-//(Router link)[/linkedin/LinkedinTips]. Note the seemingly unused "match" parameter is necessary.
+//(Router link)[/LinkedIn/LinkedinTips]. Note the seemingly unused "match" parameter is necessary.
 export const createRouterLink = (text) => {
   const customLinkPattern = /\(([^\)]+)\)\[([^\s]+)\]/g;
   return text.replace(customLinkPattern, (match, label, path) => {

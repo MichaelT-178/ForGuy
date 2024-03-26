@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/Contacts.json";
+import AllData from "../../data/LinkedIn/Contacts.json";
 import ContactCard from "../../components/ContactCard.vue"
 
 const jsonData = ref(AllData);

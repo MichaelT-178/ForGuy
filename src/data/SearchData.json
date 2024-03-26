@@ -11,119 +11,119 @@
         "Emoji": "🧳",
         "MenuName": "Where To Apply",
         "AllText": "TODO",
-        "Link": "/jobs/WhereToApply"
+        "Link": "/Jobs/WhereToApply"
     },
     {
         "id": 3,
         "Emoji": "📄",
         "MenuName": "Resume Template",
         "AllText": "TODO",
-        "Link": "/jobs/ResumeTemplate"
+        "Link": "/Jobs/ResumeTemplate"
     },
     {
         "id": 4,
         "Emoji": "💡",
         "MenuName": "How To Get a Job",
         "AllText": "TODO",
-        "Link": "/jobs/HowToGetAJob.vue"
+        "Link": "/Jobs/HowToGetAJob.vue"
     },
     {
         "id": 5,
         "Emoji": "🤝🏻",
         "MenuName": "Offers I've Received",
         "AllText": "TODO",
-        "Link": "/jobs/OffersReceived"
+        "Link": "/Jobs/OffersReceived"
     },
     {
         "id": 6,
         "Emoji": "💬",
         "MenuName": "Interview Tips",
         "AllText": "TODO",
-        "Link": "/jobs/InterviewTips"
+        "Link": "/Jobs/InterviewTips"
     },
     {
         "id": 7,
         "Emoji": "🧭",
         "MenuName": "Career Path Advice",
         "AllText": "TODO",
-        "Link": "/jobs/CareerPathAdvice"
+        "Link": "/Jobs/CareerPathAdvice"
     },
     {
         "id": 8,
         "Emoji": "🌐",
         "MenuName": "What Is LinkedIn?",
         "AllText": "TODO",
-        "Link": "/linkedin/WhatIsLinkedin"
+        "Link": "/LinkedIn/WhatIsLinkedin"
     },
     {
         "id": 9,
         "Emoji": "🤳🏻",
         "MenuName": "Setup a Profile",
         "AllText": "TODO",
-        "Link": "/linkedin/SetupProfile"
+        "Link": "/LinkedIn/SetupProfile"
     },
     {
         "id": 10,
         "Emoji": "🔔",
         "MenuName": "Setup Job Alerts",
         "AllText": "TODO",
-        "Link": "/linkedin/SetupJobAlerts"
+        "Link": "/LinkedIn/SetupJobAlerts"
     },
     {
         "id": 11,
         "Emoji": "🧐",
         "MenuName": "LinkedIn Tips",
         "AllText": "TODO",
-        "Link": "/linkedin/LinkedinTips"
+        "Link": "/LinkedIn/LinkedinTips"
     },
     {
         "id": 12,
         "Emoji": "👤",
         "MenuName": "Contacts",
         "AllText": "TODO",
-        "Link": "/linkedin/Contacts"
+        "Link": "/LinkedIn/Contacts"
     },
     {
         "id": 13,
         "Emoji": "👍",
         "MenuName": "Class Recommendations",
         "AllText": "TODO",
-        "Link": "/classes/ClassRecommendations"
+        "Link": "/Classes/ClassRecommendations"
     },
     {
         "id": 14,
         "Emoji": "📝",
         "MenuName": "CSC Descriptions",
         "AllText": "TODO",
-        "Link": "/classes/CSCDescriptions"
+        "Link": "/Classes/CSCDescriptions"
     },
     {
         "id": 15,
         "Emoji": "👨🏻‍🏫",
         "MenuName": "Classes I've Taken",
         "AllText": "TODO",
-        "Link": "/classes/ClassesIveTaken"
+        "Link": "/Classes/ClassesIveTaken"
     },
     {
         "id": 16,
         "Emoji": "❌",
         "MenuName": "Classes To Avoid",
         "AllText": "TODO",
-        "Link": "/classes/ClassesToAvoid"
+        "Link": "/Classes/ClassesToAvoid"
     },
     {
         "id": 17,
         "Emoji": "💻",
         "MenuName": "Comp Sci Minor",
         "AllText": "TODO",
-        "Link": "/classes/CompSciMinor"
+        "Link": "/Classes/CompSciMinor"
     },
     {
         "id": 18,
         "Emoji": "🏆",
         "MenuName": "Useful Certifications",
         "AllText": "TODO",
-        "Link": "/classes/Certifications"
+        "Link": "/Classes/Certifications"
     },
     {
         "id": 19,
@@ -179,49 +179,49 @@
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "AllText": "TODO",
-        "Link": "/other/GeneralTips"
+        "Link": "/Other/GeneralTips"
     },
     {
         "id": 27,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "AllText": "TODO",
-        "Link": "/other/AppsToDownload"
+        "Link": "/Other/AppsToDownload"
     },
     {
         "id": 28,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "AllText": "TODO",
-        "Link": "/other/CompSciStuff"
+        "Link": "/Other/CompSciStuff"
     },
     {
         "id": 29,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "AllText": "TODO",
-        "Link": "/other/TerminalCommands"
+        "Link": "/Other/TerminalCommands"
     },
     {
         "id": 30,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "AllText": "TODO",
-        "Link": "/other/KeyboardShortcuts"
+        "Link": "/Other/KeyboardShortcuts"
     },
     {
         "id": 31,
         "Emoji": "😂",
         "MenuName": "Memes",
         "AllText": "TODO",
-        "Link": "/other/Memes"
+        "Link": "/Other/Memes"
     },
     {
         "id": 32,
         "Emoji": "📸",
         "MenuName": "UNCW Pictures",
         "AllText": "TODO",
-        "Link": "/other/UncwPics"
+        "Link": "/Other/UncwPics"
     },
     {
         "id": 33,
