@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/SetupProfile.json";
+import AllData from "../../data/LinkedIn/SetupProfile.json";
 import { createHyperLink, createRouterLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
