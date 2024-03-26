@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/SetupJobAlerts.json";
+import AllData from "../../data/LinkedIn/SetupJobAlerts.json";
 import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);

@@ -14,7 +14,7 @@
 import { ref } from 'vue';
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
-import AllData from "../../data/linkedin/LinkedInTips.json";
+import AllData from "../../data/LinkedIn/LinkedInTips.json";
 const jsonData = ref(AllData);
 const tips = jsonData.value["LinkedInTips"];
 const allOpen = ref(false);
