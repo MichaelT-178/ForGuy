@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import AllData from "../../data/other/AppsToDownload.json";
+import AllData from "../../data/Other/AppsToDownload.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 import { bodyContent } from "../../components/AppEmail.vue";
 

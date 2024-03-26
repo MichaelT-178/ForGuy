@@ -6,7 +6,7 @@
             "Instructions": [
                 "Open the LinkedIn app",
                 "Search for a company you'd like to work for (Ex. nCino)",
-                "Go to the jobs tab -> https://www.linkedin.com/company/ncino-inc-/jobs/",
+                "Go to the jobs tab -> https://www.linkedin.com/company/ncino-inc-/Jobs/",
                 "Press the \"Create job alert\" button.",
                 "In the job title field type \"Software Engineer\"",
                 "For job location type \"Wilmington, North Carolina\"",
@@ -24,7 +24,7 @@
         },
         {
             "Name": "Setup Your Profile",
-            "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this (page)[/linkedin/SetUpProfile] for details."
+            "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this (page)[/LinkedIn/SetUpProfile] for details."
         },
         {
             "Name": "Setup Notification Settings",
