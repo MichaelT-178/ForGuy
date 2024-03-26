@@ -23,7 +23,7 @@ def write_to_clipboard(output: str):
 paths = [
     '../src/data/Classes/',
     '../src/data/CompSci/',
-    '../src/data/jobs/',
+    '../src/data/Jobs/',
     '../src/data/LinkedIn/',
     '../src/data/Other/',
 ]
