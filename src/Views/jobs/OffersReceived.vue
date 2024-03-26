@@ -34,7 +34,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import AllData from "../../data/Jobs/OffersReceived.json";
+import AllData from "../../data/jobs/OffersReceived.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
