@@ -2,7 +2,7 @@
     "Code": [
         {
             "Name": "List Comprehension",
-            "Description": "This is a great way to populate a list in Python.",
+            "Description": "This is a great way to create and populate a list in Python.",
             "Language": "Python",
             "FormatCode": "increment_list = [x + 1 for x in range(len(4))]",
             "CopyCode": "increment_list = [x + 1 for x in range(len(4))]"
@@ -44,7 +44,7 @@
         },
         {
             "Name": "Try/Catch Block",
-            "Description": "I *LOVE* the try/catch/throw syntax in Java. It's just a vibe. I use this syntax to describe real life events in my head.",
+            "Description": "I *LOVE* the try/catch/throw syntax in Java. It's just a vibe. I use this syntax to describe real life events in my head all the time.",
             "Language": "Java",
             "FormatCode": "try {\n      schedule.get(i).checkConflict(theEvent);\n  } catch (ConflictException e) {\n      throw new IllegalArgumentException(\"Can't be added due to a conflict.\");\n  } ",
             "CopyCode": "try {\n\tschedule.get(i).checkConflict(theEvent);\n} catch (ConflictException e) {\n\tthrow new IllegalArgumentException(\"The event cannot be added due to a conflict.\");\n} "
