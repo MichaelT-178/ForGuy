@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/linkedin/WhatIsLinkedIn.json";
+import AllData from "../../data/LinkedIn/WhatIsLinkedIn.json";
 
 const jsonData = ref(AllData);
 const info = jsonData.value["Info"][0];

@@ -25,7 +25,7 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import AllData from "../../data/classes/ClassesIveTaken.json";
+import AllData from "../../data/Classes/ClassesIveTaken.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);

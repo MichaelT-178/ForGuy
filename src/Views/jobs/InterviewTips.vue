@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from "../../data/jobs/InterviewTips.json";
+import AllData from "../../data/Jobs/InterviewTips.json";
 import { createRouterLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);

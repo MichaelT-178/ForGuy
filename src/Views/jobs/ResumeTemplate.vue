@@ -18,7 +18,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from '../../data/jobs/ResumeTemplateText.json'
+import AllData from '../../data/Jobs/ResumeTemplateText.json'
 import ResumePic1 from "../../assets/ElijahResume/ElijahResume1.png";
 import ResumePic2 from "../../assets/ElijahResume/ElijahResume2.png";
 
