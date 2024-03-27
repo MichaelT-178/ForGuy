@@ -18,7 +18,6 @@
   </div>
 </template>
 
-
 <script setup>
 import { ref, computed } from 'vue';
 import Prism from 'prismjs';
@@ -57,19 +56,6 @@ const copyCode = () => {
     });
 };
 
-Prism.languages.python = Prism.languages.extend('python', {
-  'decorator': {
-    pattern: /\bprint\b(?=\()/,
-    lookbehind: true,
-    alias: 'keyword'
-  },
-  'comment': {
-    pattern: /file/,
-    lookbehind: true,
-    alias: 'keyword' 
-  }
-});
-
 const highlightedCode = computed(() => {
   if (props.codeInfo.Language === null) {
     return `<span style="color: #C1C1C1;">${props.codeInfo.FormatCode}</span>`;
@@ -79,6 +65,7 @@ const highlightedCode = computed(() => {
   const prismLanguage = Prism.languages[language] || Prism.languages.plain;
   return Prism.highlight(props.codeInfo.FormatCode, prismLanguage, language);
 });
+
 
 const getLanguageColor = computed(() => {
 

@@ -12,7 +12,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import AllData from '../../data/Other/FavoriteCsStuff.json';
+import AllData from '../../data/Other/CsStuffILike.json';
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
