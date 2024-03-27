@@ -1,13 +1,3 @@
-/* To add a token
-
-Go to node modules 
-go to prism/components/prism-python.js (or whatever language)
-add your token and save
-rm -rf node_modules/.vite
-rm -rf node_modules/.vite_opt_cache
-style your token in prism-python.js
-npm run dev */
-
 code {
     color: #ABB2BF;
 }
