@@ -1,3 +1,13 @@
+/* To add a token
+
+Go to node modules 
+go to prism/components/prism-python.js (or whatever language)
+add your token and save
+rm -rf node_modules/.vite
+rm -rf node_modules/.vite_opt_cache
+style your token in prism-python.js
+npm run dev */
+
 code {
     color: #ABB2BF;
 }
@@ -24,17 +34,19 @@ code {
     color: #E5C07B
 }
 
-/* Using decorator for python print */
-.token.decorator {
+/* Python print */
+.token.python-print-stmt {
     color: #56B6C2;
 }
 
-/* Using for python file word*/
-.token.comment {
+/* "file" variable name in Python*/
+.token.file-name {
     color: #ABB2BF;
 }
 
-
+.token.comment {
+    color: #5C6370
+}
 
 /* JavaScript function */
 .token.function,
