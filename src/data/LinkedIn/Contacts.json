@@ -135,6 +135,15 @@
             "Image": "IBM.jpg"
         },
         {
+            "Name": "Weston Lawrence",
+            "Company": "iD Tech Camps",
+            "Role": "Senior Operations Manager",
+            "Contact": "wlawrence@idtech.com",
+            "LinkedIn": "https://www.linkedin.com/in/westonlawrence/",
+            "Details": "This guy contact me about a video interview I sent in.",
+            "Image": "idTech.jpg"
+        },
+        {
             "Name": "Meg Kuecker",
             "Company": "iD Tech Camps",
             "Role": "Regional Manager",
