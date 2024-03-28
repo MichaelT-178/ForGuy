@@ -62,6 +62,10 @@ export const settings =
 '        "compounds": []\n' + 
 '    },\n' + 
 '\n' + 
+'    // Set to false to show .git folder\n' + 
+'    "files.exclude": {\n' + 
+'        "**/.git": false,\n' +
+'    },\n' +
 '\n' + 
 '    /**\n' + 
 '        How to change a color\n' + 
