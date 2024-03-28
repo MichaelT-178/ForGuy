@@ -79,7 +79,6 @@
             "Details": "This is who you contact if you're interested in the UNCW TAC Student Worker Technician.",
             "Image": "UNCW.jpg"
         },
-
         {
             "Name": "Clarisse Cortez",
             "Company": "Pearson",
@@ -88,6 +87,24 @@
             "LinkedIn": "https://www.linkedin.com/in/clarisse-cortez-6712161b7/",
             "Details": "This was the recruiter that contacted me about my Pearson SWE internship interview.",
             "Image": "Pearson.jpg"
+        },
+        {
+            "Name": "Brandon Bernal",
+            "Company": "Garmin",
+            "Role": "Technical Recruiter",
+            "Email": "Brandon.Bernal@garmin.com",
+            "LinkedIn": "https://www.linkedin.com/in/brandon-bernal-291882234/",
+            "Details": "The UNCW computer science department sent an email about this guy recruiting for SWE positions in Cary, NC.",
+            "Image": "Garmin.jpg"
+        },
+        {
+            "Name": "Liz Flowers",
+            "Company": "Lenders Cooperative",
+            "Role": "Head of Client Success",
+            "Email": "eflowers@lenderscooperative.com",
+            "LinkedIn": "https://www.linkedin.com/in/liz-flowers-55076051/",
+            "Details": "The UNCW computer science department sent an email about this women recruiting in Wilmington.",
+            "Image": "Lenders.jpg"
         },
         {
             "Name": "Alex Rosso",
@@ -133,6 +150,24 @@
             "LinkedIn": "HMU if interested",
             "Details": "I know various connections at IBM, hmu if interested.",
             "Image": "IBM.jpg"
+        },
+        {
+            "Name": "John Richardson",
+            "Company": "Raytheon Technologies",
+            "Role": "IT Specialist",
+            "Email": "Jonathan.Richardson2@rtx.com",
+            "LinkedIn": "https://www.linkedin.com/in/jonathan-richardson/",
+            "Details": "I'm not sure if that's actually his LinkedIn. The UNCW computer science department sent an email about this guy recruiting for SWE positions.",
+            "Image": "raytheon.jpg"
+        },
+        {
+            "Name": "Crystal Chapman",
+            "Company": "UNCW",
+            "Role": "Web Communications Specialist",
+            "Email": "chapmancl@uncw.edu",
+            "LinkedIn": "https://www.linkedin.com/in/crystalleechapman/",
+            "Details": "The UNCW computer science department sent an email about this women recruiting for SWE positions at UNCW.",
+            "Image": "UNCW.jpg"
         },
         {
             "Name": "Weston Lawrence",
