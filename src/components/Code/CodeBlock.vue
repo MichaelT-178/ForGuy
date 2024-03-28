@@ -26,7 +26,7 @@ import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-json';
-import 'prismjs/themes/prism-coy.css';
+// import 'prismjs/themes/prism-coy.css';
 import './custom.css';
 
 const props = defineProps({
