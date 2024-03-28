@@ -200,6 +200,22 @@
             "Pay": ""
         },
         {
+            "Name": "Garmin",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/garmin/jobs/",
+            "Contact": "Brandon.Bernal@garmin.com (Brandon Bernal)",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Lenders Cooperative",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/lenders-cooperative/jobs/",
+            "Contact": "eflowers@lenderscooperative.com (Liz Flowers)",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "TriTech Software Systems",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/tritech-software-systems/jobs/",
@@ -683,7 +699,7 @@
             "Name": "Raytheon Missiles & Defense",
             "Location": "St. Petersburg, Florida",
             "LinkedIn": "https://www.linkedin.com/company/raytheon/jobs/",
-            "Contact": "",
+            "Contact": "Jonathan.Richardson2@rtx.com (Jonathan Richardson)",
             "Tips": "",
             "Pay": ""
         },
