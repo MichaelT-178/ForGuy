@@ -58,14 +58,14 @@ code {
     color: #98C379;
 }
 
-.token.json-colon {
-    color: red;
-}
-
 .token.operator {
 	background: #282C34;
 }
 
 .token.property {
     color: #E06C75;
+}
+
+.token.json-colon {
+    color: #ABB2BF;
 }
