@@ -14,7 +14,8 @@
                 </thead>
                 <tbody>
                 <tr v-for="(item, index) in shortcuts" 
-                    :key="item.id" :class="{'row-odd': index % 2 === 0, 'row-even': index % 2 !== 0}">
+                    :key="item.id" 
+                    :class="{'row-odd': index % 2 === 0, 'row-even': index % 2 !== 0}">
                     <td>{{ item.Shortcut }}</td>
                     <td>{{ item.Action }}</td>
                 </tr>
