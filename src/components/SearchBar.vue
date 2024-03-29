@@ -85,7 +85,7 @@ watch(searchQuery, filterResults);
 
 .search-bar-container {
   position: relative;
-  max-width: 46%;
+  max-width: 42%;
   margin: auto;
   width: 80%;
   background-color: white;
@@ -172,6 +172,12 @@ watch(searchQuery, filterResults);
 
 #close-icon:hover {
   color: #B91212;
+}
+
+@media (max-width: 900px) {
+  .search-bar-container {
+    max-width: 400px;
+  }
 }
 
 </style>
