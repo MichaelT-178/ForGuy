@@ -85,7 +85,7 @@ watch(searchQuery, filterResults);
 
 .search-bar-container {
   position: relative;
-  max-width: 500px;
+  max-width: 40%;
   margin: auto;
   width: 80%;
   background-color: white;
