@@ -94,6 +94,7 @@ const filteredEntries = computed(() => {
 
 </script>
 
+
 <style scoped>
 .accordion-menu {
   border: 1px solid #ccc;
