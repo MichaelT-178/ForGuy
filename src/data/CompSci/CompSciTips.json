@@ -2,63 +2,129 @@
     "Tips": [
         {
             "id": 1,
-            "Tip": "Create a shortcut to access your settings.json file in VSCode. This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down(codeBlockRef) to see instructions on making a shortcut."
+            "Underlined": "Create a shortcut to access your settings.json file in VSCode",
+            "Tip": "This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down(codeBlockRef) to see instructions on making a shortcut."
         },
         {
             "id": 2,
-            "Tip": "This is just normal text"
+            "Underlined": "Include search functionality",
+            "Tip": "Having a search functionality will make finding things much easier and faster, and provide an overall better user experience."
         },
         {
             "id": 3,
-            "Tip": ""
+            "Underlined": "Make personal projects",
+            "Tip": "Personal projects are a great thing to have on your resume and can help your practice and improve your skills."
         },
         {
             "id": 4,
-            "Tip": "Super cool. Scroll down(codeBlockTwoRef)"
+            "Underlined": "Format Your Code",
+            "Tip": "Readability and formatting is an important part of creating good code. It makes it much easier to tell what's going on and read code when it's properly formatted. Scroll down(codeBlockTwoRef) to see examples in Python and Java."
         },
         {
             "id": 5,
-            "Tip": ""
+            "Underlined": "Adopt Good Coding Practices",
+            "Tip": "Using things like git version control, organizing your code into classes and components, documentation, testing, etc. can all help improve the quality of your code and software."
         },
         {
             "id": 6,
-            "Tip": ""
+            "Underlined": "Pair programming",
+            "Tip": "This is when you program with someone else. We do this all the time at IBM and USAA. Coding with someone else is a great way to learn new things, catch mistakes, and overall improve the quality of your code."
         },
         {
             "id": 7,
-            "Tip": ""
+            "Underlined": "Don't repeat yourself",
+            "Tip": "If you see blocks of code frequently repeating, there's probably a better way to write it. The use of for loops, classes, components, etc. are great ways to have reusable and cleaner code."            
         },
         {
             "id": 8,
-            "Tip": ""
+            "Underlined": "If it feels weird, it probably is",
+            "Tip": "If something you're doing feels weird and forced, there's probably a better way do it. Run your code through ChatGpt or another person to see if there are other ways you could potentially write it."
         },
         {
             "id": 9,
-            "Tip": ""
+            "Underlined": "Install homebrew",
+            "Tip": "This is a really good package manager for MacOS that be used used to download libraries and stuff. Scroll down(codeBlockThreeRef) to see the instructions on how to download it."
         },
         {
             "id": 10,
-            "Tip": ""
+            "Underlined": "Learn the names of stuff",
+            "Tip": "Learning the names of certain operators, functions, etc. will help when you're trying to explain code. For example, things like knowing what a ternary operator is called. It also help you better understand code when someone else is explaining."
+
         },
         {
             "id": 11,
-            "Tip": ""
+            "Underlined": "Spread things out",
+            "Tip": "When creating a UI, try not to overload a single page with too much information. Also when you're coding don't make your files excessively long. Break it into classes, components, other files, etc. Try to keep them relatively short, organized, and simple."
         },
         {
             "id": 12,
-            "Tip": ""
+            "Underlined": "Use dark mode",
+            "Tip": "Obviously you're free to do whatever you want, but using dark mode in a text editor typically improves code highlighting and readability. It also won't burn your eyes at night."
         },
         {
             "id": 13,
-            "Tip": ""
+            "Underlined": "Download Visual Studio Code",
+            "Tip": "VSCode is an extremely useful text editor with a lot cool features and can be used for basically any language or purpose."
         },
         {
             "id": 14,
-            "Tip": ""
+            "Underlined": "Use Python when working with Excel",
+            "Tip": "Obviously you can't use Python to help with all Excel tasks, but I'd definitely look into using Python with Excel."
         },
         {
             "id": 15,
-            "Tip": ""
+            "Underlined": "Use debug mode",
+            "Tip": "Debug mode is a great way see the values of the variables you're working with and other helpful information. I feel like debug is particularly useful in CSC 231 and definitely something worth learning."
+        },
+        {
+            "id": 16,
+            "Underlined": "Use JSON files",
+            "Tip": "If all you're data is static, you can use a JSON file instead of setting up a database. That's what I did for this website. Also, if you're websites static you can host it on GitHub pages for free."
+        },
+        {
+            "id": 17,
+            "Underlined": "Try out multiple programming languages",
+            "Tip": "I met a lot of people at UNCW who were biased against basically any language that wasn't Python. Don't be afraid to try out new languages and know that different syntax really isn't that hard to learn. I personally really like certain aspects of Java."
+        },
+        {
+            "id": 18,
+            "Underlined": "Practice",
+            "Tip": "A great way to get good anything is to practice it frequently. Programming is no different."
+        },
+        {
+            "id": 19,
+            "Underlined": "Try new things",
+            "Tip": "This is kind of building on point 17, just try new things and see what you like when programming."
+        },
+        {
+            "id": 20,
+            "Underlined": "Learn how to exit a nano file",
+            "Tip": "When you're editing a file using the nano command press control + o to save, then press enter to write the changes. Then control + x to exit"
+        },
+        {
+            "id": 21,
+            "Underlined": "Use ChatGPT",
+            "Tip": "It's a great a tool for helping you while you're programming. However, I'd strongly recommend trying to learn and understand the code it generates."
+        },
+        {
+            "id": 22,
+            "Underlined": "Learn a JavaScript framework",
+            "Tip": "A framework will make creating a web application much easier. I'd recommend Vue.js (with the Composition API) because it's very beginner friendly. I used Vue.js to create this website."
+        },
+        {
+            "id": 23,
+            "Underlined": "Get an internship",
+            "Tip": "Having a SWE internship during college will definitely help you when searching for a fulltime job."
+        },
+        {
+            "id": 24,
+            "Underlined": "Have a basic understanding of regex",
+            "Tip": "You learn about Regex in CSC 360. It can be a very useful tool and something worth checking out."
+        },
+        {
+            "id": 25,
+            "Underlined": "Do Leetcode problems",
+            "Tip": "They can be a great way to practice your skills and prepare for coding interviews."
         }
     ],
     "ComponentData": [
@@ -68,6 +134,16 @@
             "Language": "JSON",
             "FormatCode": "[\n     {\n        \"key\": \"alt+cmd+=\",\n        \"command\": \"workbench.action.openSettingsJson\"\n     }\n  ]",
             "CopyCode": "//This list should be the only content in the file\n[\n\t{\n\t\t\"key\": \"alt+cmd+=\",\n\t\t\"command\": \"workbench.action.openSettingsJson\"\n\t}\n]"
+        }
+    ],
+    "CodeLinks": [
+        {
+            "Name": "Python",
+            "link": "https://peps.python.org/pep-0008/"
+        },
+        {
+            "Name": "Java",
+            "link": "https://google.github.io/styleguide/javaguide.html"
         }
     ]
 }
