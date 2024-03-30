@@ -121,6 +121,7 @@ const filteredEntries = computed(() => {
 
 .accordion-content {
   margin-top: 20px;
+  font-size: 18.5px;
 }
 
 .menu-attribute {
