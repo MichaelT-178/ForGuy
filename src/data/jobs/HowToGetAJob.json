@@ -69,11 +69,27 @@
         },
         {
             "Name": "Don't get Discouraged",
-            "Description": "I must have applied to literally like a 1,000 companies when I was looking for internships and full-time jobs. I was rejected countless times, usually by companies much less \"prestigious\" then USAA, the NSA, and IBM. Don't let rejection get you down, and keep being persistent and trying. Also, just because you got rejected from a position at a smaller company, doesn't mean a bigger company won't hire you."
+            "Description": "I must have applied to literally like a 1,000 companies when I was looking for internships and full-time jobs. I was rejected countless times, usually by companies much less \"prestigious\" then USAA, the NSA, and IBM."
+        },
+        {
+            "Name": "Don't let rejection get you down",
+            "Description": "Adding to the last point, keep being persistent and trying. Just because you got rejected from a position at a smaller company, doesn't mean a bigger, more prestigious company won't hire you. I got reject by like 1000 small, obscure companies before IBM hired me."
+        },
+        {
+            "Name": "Graduate Early",
+            "Description": "The competition won't be as intense if you start applying to jobs that start in January. If you graduate in May you'll be going up against a much larger applicant pool."
+        },
+        {
+            "Name": "Look for Entry-Level Roles",
+            "Description": "This is pretty intuitive, but looks for jobs that are entry-level, junior, new grad, etc."
         },
         {
             "Name": "Go to the Career Fair",
             "Description": "The UNCW computer science career fair is typically held in late September and February. I'd recommend going as companies interested in hiring UNCW students will be there."
+        },
+        {
+            "Name": "Make your Resume Look Good",
+            "Description": "Having a clean, well-organized, and professional resume can have a positive impact and help you stand out. I've had hiring managers in the past tell me how much they liked my resume. See (here)[/Jobs/ResumeTemplate] for the template I use."
         },
         {
             "Name": "Check your UNCW Email Frequently",
