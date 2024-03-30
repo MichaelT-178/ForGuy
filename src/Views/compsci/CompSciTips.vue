@@ -1,11 +1,11 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Setup Job Alerts</h1>
-        <p class="description">These are tips on how to setup a profile on LinkedIn. It's pretty straight forward.</p>
+        <h1 class="tip-header">Computer Science Tips</h1>
+        <p class="description">These are some more general tips I have for computer science.</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"></p>
-                <p class="text-section" v-html="processedTipContent(tip)"></p>
+                <p class="text-section" v-html="processedTipContent(formatTip(tip))"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -29,6 +29,7 @@ const shortcut = jsonData.value["ComponentData"][0];
 //Add refs here
 const codeBlockRef = ref(null);
 const codeBlockTwoRef = ref(null);
+const codeBlockThreeRef = ref(null);
 
 
 const scrollToRef = (refName) => {
@@ -37,6 +38,7 @@ const scrollToRef = (refName) => {
     const refs = {
         codeBlockRef,
         codeBlockTwoRef,
+        codeBlockThreeRef,
     };
 
     const targetElement = refs[refName]?.value?.$el;
@@ -48,9 +50,12 @@ const scrollToRef = (refName) => {
     }
 }
 
+const formatTip = (tip) => {
+    return `<u>${tip.Underlined}</u>. ${tip.Tip}`;
+}
 
 const processedTipContent = (tip) => {
-    return tip.Tip.replace(/Scroll down\((.*?)\)/g, (match, refName) => {
+    return tip.replace(/Scroll down\((.*?)\)/g, (match, refName) => {
         return `<span href="#" class="scroll-down" data-ref-name="${refName}">Scroll down</span>`;
     });
 }

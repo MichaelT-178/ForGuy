@@ -2,7 +2,7 @@
   <div class="container">
     <div class="text-container">
       <h2 class="code-name">{{ codeInfo.Name }}</h2>
-      <p class="description">{{ codeInfo.Description }}</p>
+      <p class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
     </div>
     <div class="code-block">
       <div class="copy-bar">
@@ -18,8 +18,10 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref, computed } from 'vue';
+import { highlightLinkText } from '../../components/FormatLinks.vue'
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
