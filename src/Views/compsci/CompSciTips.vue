@@ -10,8 +10,10 @@
         </div>
         <p style="margin-bottom: 60px;"></p>
         <CodeBlock :codeInfo="shortcut" ref="codeBlockRef"></CodeBlock>
+
         <p style="margin-bottom: 100px;"></p>
-        <CodeBlock :codeInfo="shortcut" ref="codeBlockTwoRef"></CodeBlock>
+        <CodeBlock :codeInfo="javaCode" ref="codeBlockTwoRef"></CodeBlock>
+
         <p style="margin-bottom: 60px;"></p>
     </div>
 </template>
@@ -22,9 +24,11 @@ import { ref, onMounted } from 'vue';
 import AllData from "../../data/CompSci/CompSciTips.json";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
+
 const jsonData = ref(AllData);
 let tips = jsonData.value["Tips"];
 const shortcut = jsonData.value["ComponentData"][0];
+const javaCode = jsonData.value["ComponentData"][1];
 
 //Add refs here
 const codeBlockRef = ref(null);
