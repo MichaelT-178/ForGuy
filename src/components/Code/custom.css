@@ -24,8 +24,9 @@ code {
   color: #D19A66;
 }
 
-/* Java class name */
-.token.class-name {
+/* Java class name and primitive types*/
+.token.class-name,
+.token.primitive-type {
     color: #E5C07B
 }
 
