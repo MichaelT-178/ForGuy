@@ -7,7 +7,8 @@ code {
     color: #C678DD;
 }
 
-.token.punctuation {
+.token.punctuation,
+.token.constant {
     color: #ABB2BF;
 }
 
@@ -17,6 +18,10 @@ code {
 
 .token.builtin {
     color: #56B6C2;
+}
+
+.token.boolean {
+  color: #D19A66;
 }
 
 /* Java class name */
