@@ -8,15 +8,19 @@ code {
 }
 
 .token.punctuation,
-.token.constant {
+.token.constant,
+.token.always-gray {
     color: #ABB2BF;
 }
 
-.token.number {
+.token.number,
+.token.self-orange {
     color: #D19A66;
 }
 
-.token.builtin {
+/* Teal */
+.token.builtin,
+.token.teal-highlight {
     color: #56B6C2;
 }
 
@@ -46,7 +50,8 @@ code {
 
 /* JavaScript function */
 .token.function,
-.token.function-variable.function {
+.token.function-variable.function,
+.token.always-blue {
     color: #61AFEF;
 }
 
@@ -68,7 +73,8 @@ code {
 	background: #282C34;
 }
 
-.token.property {
+.token.property,
+.token.self-red {
     color: #E06C75;
 }
 

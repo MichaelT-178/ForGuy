@@ -14,6 +14,9 @@
         <p style="margin-bottom: 100px;"></p>
         <CodeBlock :codeInfo="javaCode" ref="codeBlockTwoRef"></CodeBlock>
 
+        <p style="margin-bottom: 100px;"></p>
+        <CodeBlock :codeInfo="pythonCode" ref="codeBlockThreeRef"></CodeBlock>
+
         <p style="margin-bottom: 60px;"></p>
     </div>
 </template>
@@ -29,6 +32,7 @@ const jsonData = ref(AllData);
 let tips = jsonData.value["Tips"];
 const shortcut = jsonData.value["ComponentData"][0];
 const javaCode = jsonData.value["ComponentData"][1];
+const pythonCode = jsonData.value["ComponentData"][2];
 
 //Add refs here
 const codeBlockRef = ref(null);
