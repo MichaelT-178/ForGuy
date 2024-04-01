@@ -11,11 +11,22 @@
         <p style="margin-bottom: 60px;"></p>
         <CodeBlock :codeInfo="shortcut" ref="codeBlockRef"></CodeBlock>
 
-        <p style="margin-bottom: 100px;"></p>
+        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+
+        <p style="margin-bottom: 80px;"></p>
         <CodeBlock :codeInfo="javaCode" ref="codeBlockTwoRef"></CodeBlock>
 
-        <p style="margin-bottom: 100px;"></p>
+        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+
+        <p style="margin-bottom: 80px;"></p>
         <CodeBlock :codeInfo="pythonCode" ref="codeBlockThreeRef"></CodeBlock>
+
+        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+
+        <p style="margin-bottom: 80px;"></p>
+        <CodeBlock :codeInfo="homebrewCode" ref="codeBlockFourRef"></CodeBlock>
+
+        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
 
         <p style="margin-bottom: 60px;"></p>
     </div>
@@ -33,11 +44,13 @@ let tips = jsonData.value["Tips"];
 const shortcut = jsonData.value["ComponentData"][0];
 const javaCode = jsonData.value["ComponentData"][1];
 const pythonCode = jsonData.value["ComponentData"][2];
+const homebrewCode = jsonData.value["ComponentData"][3];
 
 //Add refs here
 const codeBlockRef = ref(null);
 const codeBlockTwoRef = ref(null);
 const codeBlockThreeRef = ref(null);
+const codeBlockFourRef = ref(null);
 
 
 const scrollToRef = (refName) => {
@@ -47,6 +60,7 @@ const scrollToRef = (refName) => {
         codeBlockRef,
         codeBlockTwoRef,
         codeBlockThreeRef,
+        codeBlockFourRef,
     };
 
     const targetElement = refs[refName]?.value?.$el;
@@ -67,6 +81,13 @@ const processedTipContent = (tip) => {
         return `<span href="#" class="scroll-down" data-ref-name="${refName}">Scroll down</span>`;
     });
 }
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
 
 onMounted(() => {
     document.querySelectorAll('.scroll-down').forEach(element => {
@@ -154,6 +175,20 @@ onMounted(() => {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     margin-top: -13px;
+}
+
+.scroll-up-btn {
+    text-align: center; 
+    font-size: 23.5px; 
+    margin-top: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: blue;
+}
+
+.scroll-up-btn:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {
