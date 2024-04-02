@@ -352,6 +352,14 @@
             "Pay": ""
         },
         {
+            "Name": "NetApp",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/netapp/jobs/",
+            "Contact": "",
+            "Tips": "The title of the job was \"AI intern\".",
+            "Pay": ""
+        },
+        {
             "Name": "Lockheed Martin",
             "Location": "Greensboro, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lockheed-martin/jobs/",
@@ -405,6 +413,14 @@
             "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
             "Contact": "",
             "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "BASF",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/basf/jobs/",
+            "Contact": "",
+            "Tips": "The title of the job was \"Business Systems Intern\".",
             "Pay": ""
         },
         {
@@ -557,6 +573,14 @@
             "LinkedIn": "https://www.linkedin.com/company/credit-suisse/jobs/",
             "Contact": "",
             "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Actalent",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/actalentservices/jobs/",
+            "Contact": "",
+            "Tips": "The name of the position was \"Solutions Test Engineer\"",
             "Pay": ""
         },
         {
