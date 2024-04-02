@@ -8,6 +8,7 @@
                 <p class="text-section" v-html="processedTipContent(formatTip(tip))"></p>
             </div>
         </div>
+        
         <p style="margin-bottom: 60px;"></p>
         <CodeBlock :codeInfo="shortcut" ref="codeBlockRef"></CodeBlock>
 
