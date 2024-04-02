@@ -20,8 +20,22 @@ WHEN YOU'RE DONE CHANGE THE DOWNLOAD LINK ON THE HOME PAGE.
 
 ## Commands to run when you clone
 
+```
+git clone https://github.com/MichaelT-178/ForGuy.git
+```
+
+```
 cd ForGuy
+```
+<br>
 
+This might take a while, just be patient.
+```
 npm install vite --save-dev
+```
 
+<br>
+
+```
 npm run dev
+```
