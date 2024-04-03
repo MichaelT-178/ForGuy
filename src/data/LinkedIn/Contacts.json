@@ -269,6 +269,26 @@
             "Image": "REMason.jpg"
         },
         {
+            "Name": "Sathivada Sitaram",
+            "Company": "Cerebra Consulting Inc",
+            "Role": "IT Recruiter",
+            "Location": "New Brunswick, New Jersey",
+            "Email": "Sitaram.sathivada@cerebra-consulting.com",
+            "LinkedIn": "https://www.linkedin.com/in/sathivada-sitaram-83609a232/",
+            "Details": "This person contacted me via email about a contract SWE job.",
+            "Image": "Cerebra.jpg"
+        },
+        {
+            "Name": "Ryan Hinterleiter",
+            "Company": "Brooksource",
+            "Role": "Senior Technical Recruiter",
+            "Location": "Charlotte, North Carolina",
+            "Email": "(980) 280-9232 OR (704) 269-4114",
+            "LinkedIn": "https://www.linkedin.com/in/ryan-hinterleiter-9a5b31195/",
+            "Details": "I'm aware the email is a phone number. This guy contacted me via LinkedIn/phone about a contract SWE job at Ally Financial, but it seemed like you would start at Brooksource. I unfortunately never got his email.",
+            "Image": "Brooksource.jpg"
+        },
+        {
             "Name": "Dale Cohen",
             "Company": "Cohen Cognition and Perception Lab at UNCW",
             "Role": "Professor of Psychology",
