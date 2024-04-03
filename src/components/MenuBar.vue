@@ -40,7 +40,7 @@
               <span v-if="!isSearchBarOpen"
                 class="material-icons" 
                 @click="toggleSearchBar" 
-                style="flex-shrink: 0; margin-top: 3.2px">
+                style="flex-shrink: 0; margin-top: 3.25px">
                 search
               </span>
             </div>
