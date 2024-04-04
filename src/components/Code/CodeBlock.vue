@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="text-container">
+    <div :class="text-container">
       <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
       <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
     </div>
@@ -20,7 +20,7 @@
 
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watchEffect } from 'vue';
 import { highlightLinkText } from '../../components/FormatLinks.vue'
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
@@ -44,6 +44,7 @@ const props = defineProps({
     required: true,
   },
 });
+
 
 const copyIcon = ref('content_copy');
 
@@ -95,6 +96,10 @@ const getLanguageColor = computed(() => {
 
 });
 
+watchEffect(() => {
+  document.documentElement.style.setProperty('--dynamic-width', props.codeInfo.Name === '' ? '640px' : '700px');
+});
+
 </script>
 
 
@@ -106,7 +111,7 @@ const getLanguageColor = computed(() => {
 }
 
 .text-container {
-  max-width: 700px; 
+  max-width: var(--dynamic-width);
 }
 
 .code-name {
@@ -121,7 +126,7 @@ const getLanguageColor = computed(() => {
 }
 
 .code-block {
-  width: 700px;
+  width: var(--dynamic-width);
   margin: 20px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
