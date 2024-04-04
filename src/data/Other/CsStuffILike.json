@@ -55,6 +55,14 @@
             "Language": "Python",
             "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Sam\": \"UT\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  print(f\"Michael went to {peoples_college['Michael']}\")",
             "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Sam\": \"UT\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nprint(f\"Michael went to {peoples_college['Michael']}\")\n"
+        },
+        {
+            "Name": "ForEach UI Loops",
+            "Description": "ForEach loops are used to help build user interfaces in SwiftUI.",
+            "Language": "Swift",
+            "FormatCode": "ForEach(menu) { menuItem in\n     NavigationLink(destination: menuItem.destination) {\n         Label {\n\t    Text(menuItem.text)\n\t } icon: {\n\t    Image(systemName: menuItem.picture)\n\t         .foregroundColor(shakyPaleRed)\n\t    }\n         }\n     }\n  }",
+            "CopyCode": "ForEach(menu) { menuItem in\n\tNavigationLink(destination: menuItem.destination) {\n\t\tLabel {\n\t\t\tText(menuItem.text)\n\t\t} icon: {\n\t\t\tImage(systemName: menuItem.picture)\n\t\t\t\t.foregroundColor(shakyPaleRed)\n\t\t\t}\n\t\t}\n\t}\n}"
         }
     ]
 }
+
