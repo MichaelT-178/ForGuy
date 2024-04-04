@@ -34,6 +34,7 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/GitHub.json';
@@ -61,6 +62,19 @@ const codeBlockRef = ref(null);
 // const codeBlockTwoRef = ref(null);
 // const codeBlockThreeRef = ref(null);
 // const codeBlockFourRef = ref(null);
+
+// const secondSix = ref(null);
+// const secondSeven = ref(null);
+// const secondEight = ref(null);
+// const secondTwentyOne = ref(null);
+// const secondGitHub = ref(null);
+
+// const normalSix = ref(null);
+// const normalSeven = ref(null);
+// const normalEight = ref(null);
+// const normalTwentyOne = ref(null);
+// const normalGitHub = ref(null);
+
 
 
 const scrollToRef = (refName) => {
