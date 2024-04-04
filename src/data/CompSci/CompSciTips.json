@@ -157,7 +157,7 @@
         {
             "Name": "Install Homebrew on MacOS",
             "Description": "Run these two commands in your terminal to install homebrew. The first will install XCode Command Line Tools, the second will install homebrew.",
-            "Language": null,
+            "Language": "Command",
             "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/\n  HEAD/install.sh)\"",
             "CopyCode": ""
         }
