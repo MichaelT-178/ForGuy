@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div :class="text-container">
+    <div class="text-container">
       <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
       <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
     </div>
@@ -98,6 +98,10 @@ const getLanguageColor = computed(() => {
 
 watchEffect(() => {
   document.documentElement.style.setProperty('--dynamic-width', props.codeInfo.Name === '' ? '640px' : '700px');
+  document.documentElement.style.setProperty('--background-color', props.codeInfo.Language.toLowerCase().trim() === 'swift' ? '#18171B' : '#282C34');
+
+  const newBackgroundColor = props.codeInfo.Language.toLowerCase().trim() === 'swift' ? '#18171B' : '#282C34';
+  document.documentElement.style.setProperty('--token-operator-background', newBackgroundColor);
 });
 
 </script>
@@ -130,7 +134,7 @@ watchEffect(() => {
   margin: 20px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #282C34;
+  background-color: var(--background-color);
   color: white;
   margin-top: -5px;
 }
@@ -171,7 +175,7 @@ watchEffect(() => {
 }
 
 code {
-  background-color: #282C34;
+  background-color: var(--background-color);
   border-radius: 3px;
   font-size: 14px;
   margin-left: 16px;
