@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="text-container">
-      <h2 class="code-name">{{ codeInfo.Name }}</h2>
-      <p class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
+      <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
+      <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
     </div>
     <div class="code-block">
       <div class="copy-bar">
-        <span class="language-name">{{ codeInfo.Language ?? "Command"}}</span>
+        <span class="language-name">{{ codeInfo.Language }}</span>
         <span class="material-icons copy-icon" 
              :class="{'icon-done': copyIcon === 'done'}" 
              :style="{ color: copyIcon === 'done' ? '#00FF4D' : getLanguageColor }"
@@ -28,7 +28,7 @@ import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-json';
-// import 'prismjs/themes/prism-coy.css';
+import 'prismjs/themes/prism-coy.css';
 import './custom.css';
 
 const props = defineProps({
@@ -86,6 +86,10 @@ const getLanguageColor = computed(() => {
   if (props.codeInfo.Language === null) return "#DFC200";
 
   const color = props.codeInfo.Language.toLowerCase().trim();
+
+  if (!(color in colors)) {
+    return "#DFC200";
+  }
 
   return colors[color]
 
