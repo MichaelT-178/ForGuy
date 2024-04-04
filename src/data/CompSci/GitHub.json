@@ -1,4 +1,183 @@
 {
+    "SetupGitHub": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "FormatCode": "[\n     {\n        \"key\": \"alt+cmd+=\",\n        \"command\": \"workbench.action.openSettingsJson\"\n     }\n  ]",
+                "CopyCode": "//This list should be the only content in the file\n[\n\t{\n\t\t\"key\": \"alt+cmd+=\",\n\t\t\"command\": \"workbench.action.openSettingsJson\"\n\t}\n]"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "This is cool. Scroll down(codeBlockRef) to see."
+        },
+        {
+            "id": 3,
+            "instruction": "This is a link to a [website](https://chat.openai.com/c/c4ba024f-06ea-457f-a393-0d7b925dfd0f)"
+        },
+        {
+            "id": 4,
+            "instruction": ""
+        },
+        {
+            "id": 5,
+            "instruction": ""
+        },
+        {
+            "id": 6,
+            "instruction": ""
+        },
+        {
+            "id": 7,
+            "instruction": ""
+        },
+        {
+            "id": 8,
+            "instruction": ""
+        },
+        {
+            "id": 9,
+            "instruction": ""
+        },
+        {
+            "id": 10,
+            "instruction": ""
+        },
+        {
+            "id": 11,
+            "instruction": ""
+        },
+        {
+            "id": 12,
+            "instruction": ""
+        },
+        {
+            "id": 13,
+            "instruction": ""
+        },
+        {
+            "id": 14,
+            "instruction": ""
+        },
+        {
+            "id": 15,
+            "instruction": ""
+        },
+        {
+            "id": 16,
+            "instruction": ""
+        },
+        {
+            "id": 17,
+            "instruction": ""
+        },
+        {
+            "id": 18,
+            "instruction": ""
+        },
+        {
+            "id": 19,
+            "instruction": ""
+        },
+        {
+            "id": 20,
+            "instruction": ""
+        }
+    ],
+    "CreateGitHubRepo": [
+        {
+            "id": 1,
+            "instruction": ""
+        },
+        {
+            "id": 2,
+            "instruction": ""
+        },
+        {
+            "id": 3,
+            "instruction": ""
+        },
+        {
+            "id": 4,
+            "instruction": ""
+        },
+        {
+            "id": 5,
+            "instruction": ""
+        },
+        {
+            "id": 6,
+            "instruction": ""
+        },
+        {
+            "id": 7,
+            "instruction": ""
+        },
+        {
+            "id": 8,
+            "instruction": ""
+        },
+        {
+            "id": 9,
+            "instruction": ""
+        },
+        {
+            "id": 10,
+            "instruction": ""
+        },
+        {
+            "id": 11,
+            "instruction": ""
+        },
+        {
+            "id": 12,
+            "instruction": ""
+        },
+        {
+            "id": 13,
+            "instruction": ""
+        },
+        {
+            "id": 14,
+            "instruction": ""
+        },
+        {
+            "id": 15,
+            "instruction": ""
+        }
+    ],
+    "SetupSecondGitHub": [
+        {
+            "id": 6,
+            "instruction": ""
+        },
+        {
+            "id": 7,
+            "instruction": ""
+        },
+        {
+            "id": 8,
+            "instruction": ""
+        },
+        {
+            "id": 21,
+            "instruction": ""
+        }
+    ],
+    "CreateSecondGitHubRepo": [
+        {
+            "id": 7,
+            "instruction": ""
+        },
+        {
+            "id": 8,
+            "instruction": ""
+        }
+    ],
     "ExistingFolderPts": [
         {
             "id": 1,
