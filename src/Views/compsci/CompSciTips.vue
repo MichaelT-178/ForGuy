@@ -61,7 +61,7 @@ const scrollToRef = (refName) => {
         codeBlockRef,
         codeBlockTwoRef,
         codeBlockThreeRef,
-        codeBlockFourRef,
+        codeBlockFourRef
     };
 
     const targetElement = refs[refName]?.value?.$el;

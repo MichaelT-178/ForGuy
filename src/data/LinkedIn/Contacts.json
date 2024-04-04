@@ -289,6 +289,16 @@
             "Image": "Brooksource.jpg"
         },
         {
+            "Name": "Tushar Maity",
+            "Company": "Ascendion",
+            "Role": "Talent Development Expert",
+            "Location": "Basking Ridge, New Jersey",
+            "Email": "tusharmaity@ascendion.com",
+            "LinkedIn": "https://www.linkedin.com/in/tushar-maity-46b241164/",
+            "Details": "This person contacted me about an opportunity via email.",
+            "Image": "Ascendion.jpg"
+        },
+        {
             "Name": "Dale Cohen",
             "Company": "Cohen Cognition and Perception Lab at UNCW",
             "Role": "Professor of Psychology",
@@ -317,6 +327,16 @@
             "LinkedIn": "https://www.linkedin.com/in/morgan-o-connell-974749227/",
             "Details": "This seems to be a summer program in Wilmington. Contact her via email. It's not a SWE job, but it seems like it might be a good summer job.",
             "Image": "MarineQuest.jpg"
+        },
+        {
+            "Name": "Greg Olsen",
+            "Company": "Motion Recruitment",
+            "Role": "Executive Director",
+            "Location": "Washington D.C. Metro Area",
+            "Email": "greg.olsen@motionrecruitment.com",
+            "LinkedIn": "https://www.linkedin.com/in/greg-olsen-73131972/",
+            "Details": "This guy contacted me via email about a Junior Research Engineer position.",
+            "Image": "Motion.jpg"
         },
         {
             "Name": "",
