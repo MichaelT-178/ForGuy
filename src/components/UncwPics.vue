@@ -53,8 +53,7 @@ export const NorthCarolinaPics = [
     { text: "Sunset through the buildings in Durham", image: Pic21 }, //RedSunsetMarch.jpg
     { text: "Durham Sidewalk and Sunset", image: Pic22 }, //DurhamSidewalkSunset.jpg
     { text: "Firey Clouds in Durham", image: Pic23 }, //FireyClouds.jpg
-    { text: "Rolling Clouds in Late February", image: Pic24 }, //RollingClouds.jpg
-    { text: "Blooming Flowers in Late March", image: Pic24 }, //SpringFlowers.jpg
+    { text: "Rolling Clouds in Late February", image: Pic24 } //RollingClouds.jpg
     
 ]
 
