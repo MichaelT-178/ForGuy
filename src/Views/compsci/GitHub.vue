@@ -9,8 +9,7 @@
         <h2 class="gh-header-two">What is GitHub and Git?</h2>
         <p class="description-two">How to get an existing folder onto GitHub.</p>
 
-
-
+        
         <h2 class="gh-header-two">How to Create a GitHub Account</h2>
         <p class="description-two">These are instructions to setup Git and create a GitHub account.</p>
 
@@ -19,8 +18,6 @@
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))"></span></p>
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
-
-
 
         <h2 class="gh-header-two" ref="codeBlockRef">Existing Folder Commands</h2>
         <p class="description-two">How to get an existing folder onto GitHub.</p>
@@ -161,6 +158,8 @@ onMounted(() => {
 }
 
 .bullet-pt {
+    display: flex;
+    align-items: flex-start;
     margin-top: -10px;
     margin-left: 20px;
     margin-bottom: 24px;
@@ -184,12 +183,15 @@ onMounted(() => {
     border-radius: 50%;
     color: white;
     font-size: 15px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-right: 10px;
+    user-select: none;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 700px) {
