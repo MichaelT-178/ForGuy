@@ -2,14 +2,7 @@
     "SetupGitHub": [
         {
             "id": 1,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "JSON",
-                "FormatCode": "[\n     {\n        \"key\": \"alt+cmd+=\",\n        \"command\": \"workbench.action.openSettingsJson\"\n     }\n  ]",
-                "CopyCode": "//This list should be the only content in the file\n[\n\t{\n\t\t\"key\": \"alt+cmd+=\",\n\t\t\"command\": \"workbench.action.openSettingsJson\"\n\t}\n]"
-            }
+            "instruction": "If you have any issues with anything definitely feel free to contact me. Note that some of these commands will be different if you're using windows."
         },
         {
             "id": 2,
