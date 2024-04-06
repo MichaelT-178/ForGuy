@@ -1,14 +1,22 @@
 <template>
     <div class="container">
         <h1 class="gh-header">GitHub</h1>
-        <p class="description">This is a description of GitHub and common commands.</p>
+        <p class="description">This page contains information related to Git and GitHub.</p>
         <img src="../../assets/GitHub.png" alt="GitHub" class="github-pic"/>
         
         <h2 class="gh-header-two">What is GitHub and Git?</h2>
-        <p class="description-two">How to get an existing folder onto GitHub.</p>\
+        <p class="description-two">{{ description }}</p>\
+        
+
+        <h2 class="gh-header-two" style="margin-top: -3px;">Scroll Links</h2>
+        <p class="description-two">Use these links to scroll to different parts of the page.</p>
+        <div v-for="link in scrollLinks" :key="link.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
+                </span><span v-html="createRefContent(link)"></span></p>
+        </div>
 
         <!-- How to create a GitHub account Section -->
-        <h2 class="gh-header-two">How to Create a GitHub Account</h2>
+        <h2 class="gh-header-two" ref="createGHAccount">How to Create a GitHub Account</h2>
         <p class="description-two">These are instructions to setup Git and create a GitHub account.</p>
 
         <div v-for="point in setupGitHub" :key="point.id">
@@ -17,9 +25,10 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        
+        <p style="margin-top: 100px;"></p>
+
         <!-- How to create a GitHub Repository Section -->
-        <h2 class="gh-header-two">How to Create a GitHub Repository</h2>
+        <h2 class="gh-header-two" ref="createGHRepo">How to Create a GitHub Repository</h2>
         <p class="description-two">This is how you create a GitHub repo and set it up locally.</p>
 
         <div v-for="point in createGitHubRepo" :key="point.id">
@@ -28,9 +37,10 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
+        <p style="margin-top: 100px;"></p>
 
         <!-- How to create a Second GitHub account Section -->
-        <h2 class="gh-header-two">How to Create Another GitHub Account</h2>
+        <h2 class="gh-header-two" ref="multipleGHAccounts">How to Create Another GitHub Account</h2>
         <p class="description-two">To add another GitHub account to your computer do the original 5-25 steps with these modified steps.</p>
 
         <div v-for="point in setupSecondGitHub" :key="point.id">
@@ -39,9 +49,10 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
+        <p style="margin-top: 100px;"></p>
 
         <!-- How to create a Second GitHub Repository Section -->
-        <h2 class="gh-header-two">How to Create a GitHub Repository Using a Different Account</h2>
+        <h2 class="gh-header-two" ref="multipleDifferentAccount">How to Create a GitHub Repository Using a Different Account</h2>
         <p class="description-two">This is how you create a GitHub repository for an account other than your main one</p>
 
         <div v-for="point in createSecondGitHubRepo" :key="point.id">
@@ -49,21 +60,37 @@
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
-        
+
+        <p style="margin-top: 100px;"></p>
+
+        <!-- Git Commands -->
+        <h2 class="gh-header-two" ref="GitCommands">Git Commands</h2>
+        <p class="description-two">These are frequently used Git commands.</p>
+
+        <CmdTable tableName="" :items="gitCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
         <!-- General Tips for Working with GitHub -->
-        <h2 class="gh-header-two" ref="codeBlockRef">General Tips</h2>
+        <h2 class="gh-header-two" ref="GeneralTips">General Tips</h2>
         <p class="description-two">These are general tips for working with GitHub</p>
 
         <div v-for="tip in generalTips" :key="tip.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ tip.id }}</span><span v-html="createHyperLink(tip.instruction)"></span></p>
             <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-        </div>
+        </div>  
 
 
+        <p style="margin-top: 100px;"></p>
+
+        <!-- Three Main Commands -->
+        <h2 class="gh-header-two" ref="ThreeCommands">Three Main Git Commands</h2>
+        <p class="description-two">These are the three main git commands to push changes to your repo.</p>
+
+        <CmdTable tableName="" :items="threeCommands" class="cmd-table" ref="practiceTable"></CmdTable>
+
+        <p style="margin-top: 100px;"></p>
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="codeBlockRef">How to Fork a Repository</h2>
+        <h2 class="gh-header-two" ref="ForkRepo">How to Fork a Repository</h2>
         <p class="description-two">How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs.</p>
 
         <div v-for="point in createFork" :key="point.id">
@@ -71,9 +98,10 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
+        <p style="margin-top: 100px;"></p>
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="codeBlockRef">Existing Folder Commands</h2>
+        <h2 class="gh-header-two" ref="ExistingCmds">Existing Folder Commands</h2>
         <p class="description-two">How to get an existing folder onto GitHub.</p>
 
         <div v-for="point in existingFolderPts" :key="point.id">
@@ -82,10 +110,10 @@
 
         <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        
+        <p style="margin-top: 100px;"></p>
 
         <!-- Amotions Workflow -->
-        <h2 class="gh-header-two" ref="codeBlockRef">Amotions Workflow</h2>
+        <h2 class="gh-header-two" ref="AmotionsWorkflow">Amotions Workflow</h2>
         <p class="description-two">This was my git workflow at Amotions. It's a little more extensive than your average workflow since we pushed to production so fast.</p>
 
 
@@ -110,6 +138,13 @@
         <p class="centered-txt">Git Deletion Commands</p>
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table" ref="practiceTable"></CmdTable>
+    
+        <p style="margin-top: 50px;"></p>
+
+        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+
+        <p style="margin-bottom: 50px;"></p>
+
     </div>
 </template>
 
@@ -124,18 +159,25 @@ import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 const jsonData = ref(AllData);
 
+const description = jsonData.value["Description"][0]["description"];
+const scrollLinks = jsonData.value["ScrollLinks"];
 
 
 const setupGitHub = jsonData.value["SetupGitHub"];
 const createGitHubRepo = jsonData.value["CreateGitHubRepo"];
 
-
-
 const setupSecondGitHub = jsonData.value["SetupSecondGitHub"];
 const createSecondGitHubRepo = jsonData.value["CreateSecondGitHubRepo"];
 
-
+const gitCommands = jsonData.value["GitCommands"]; 
 const generalTips = jsonData.value["GeneralTips"];
+
+const threeCommands = jsonData.value["ThreeCommands"];
+const createFork = jsonData.value["CreateFork"];
+
+
+const existingFolderPts = jsonData.value["ExistingFolderPts"];
+const existingFolderCmds = jsonData.value["ExistingFolder"];
 
 
 const amotionsWorkflowOne = jsonData.value["AmotionsWorkflowOne"];
@@ -146,26 +188,17 @@ const amotionsPts = jsonData.value["AmotionsPts"];
 const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
 
 
-
-const createFork = jsonData.value["CreateFork"];
-
-
-
-
-
-
-const existingFolderPts = jsonData.value["ExistingFolderPts"];
-const existingFolderCmds = jsonData.value["ExistingFolder"];
-
-
-
-
-
 //Add refs here
-const codeBlockRef = ref(null);
-// const codeBlockTwoRef = ref(null);
-// const codeBlockThreeRef = ref(null);
-// const codeBlockFourRef = ref(null);
+const createGHAccount = ref(null);
+const createGHRepo = ref(null);
+const multipleGHAccounts = ref(null);
+const multipleDifferentAccount = ref(null);
+const GitCommands = ref(null);
+const GeneralTips = ref(null);
+const ThreeCommands = ref(null);
+const ForkRepo = ref(null);
+const ExistingCmds = ref(null);
+const AmotionsWorkflow = ref(null);
 
 const secondSix = ref(null);
 const secondSeven = ref(null);
@@ -182,12 +215,21 @@ const normalGitHubSeven = ref(null);
 const normalGitHubEight = ref(null);
 
 
-
 const scrollToRef = (refName) => {
 
     const offset = 80;
 
     const refs = {
+        createGHAccount,
+        createGHRepo,
+        multipleGHAccounts,
+        multipleDifferentAccount,
+        GitCommands,
+        GeneralTips,
+        ThreeCommands,
+        ForkRepo,
+        ExistingCmds,
+        AmotionsWorkflow,
         secondSix,
         secondSeven,
         secondNine,
@@ -215,6 +257,17 @@ const scrollToRef = (refName) => {
     } else {
         console.warn("No target element found for refName:", refName);
     }
+}
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+const createRefContent = (refVal) => {
+    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span>.</span>`;
 }
 
 const processedTipContent = (tip) => {
@@ -326,6 +379,20 @@ onMounted(() => {
     margin-right: 10px;
     user-select: none;
     margin-bottom: 10px;
+}
+
+.scroll-up-btn {
+    text-align: center; 
+    font-size: 23.5px; 
+    margin-top: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: blue;
+}
+
+.scroll-up-btn:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {
