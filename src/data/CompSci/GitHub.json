@@ -1,4 +1,62 @@
 {
+    "Description": [
+        {
+            "id": 1,
+            "description": "GitHub is a website that uses git to help with collaboration and version control of coding projects. In simple terms, it's a place to upload your code and modify it in a controlled way. Git is version control system that allows you to add, revert, commit, push, etc. code to your repository."
+        }
+    ],
+    "ScrollLinks": [
+        {
+            "id": 1,
+            "name": "How to Create a GitHub Account",
+            "ref": "createGHAccount"
+        },
+        {
+            "id": 2,
+            "name": "How to Create a GitHub Repository",
+            "ref": "createGHRepo"
+        },
+        {
+            "id": 3,
+            "name": "How to Create Multiple GitHub Accounts",
+            "ref": "multipleGHAccounts"
+        },
+        {
+            "id": 4,
+            "name": "How to Create a GitHub Repository Using a Different Account",
+            "ref": "multipleDifferentAccount"
+        },
+        {
+            "id": 5,
+            "name": "Git Commands",
+            "ref": "GitCommands"
+        },
+        {
+            "id": 6,
+            "name": "General Tips",
+            "ref": "GeneralTips"
+        },
+        {
+            "id": 7,
+            "name": "Three Main Git Commands",
+            "ref": "ThreeCommands"
+        },
+        {
+            "id": 8,
+            "name": "How to Fork a Repository",
+            "ref": "ForkRepo"
+        },
+        {
+            "id": 9,
+            "name": "Existing Folder Commands",
+            "ref": "ExistingCmds"
+        },
+        {
+            "id": 10,
+            "name": "My Old Amotions Workflow",
+            "ref": "AmotionsWorkflow"
+        }
+    ],
     "SetupGitHub": [
         {
             "id": 1,
@@ -369,7 +427,7 @@
         {
             "Command": "git checkout -b <branchName>",
             "Description": "Create a new branch",
-            "Example": "git checkout -b <branchName>"
+            "Example": "git checkout -b create-assessment"
         },
         {
             "Command": "git pull origin dev",
@@ -378,7 +436,7 @@
         },
         {
             "Command": "git status",
-            "Description": "Check that you’re on the correct branch and that the steps worked.",
+            "Description": "Check that you're on the correct branch and that the steps worked.",
             "Example": "git status"
         }
     ],
@@ -406,7 +464,7 @@
         {
             "Command": "git push origin <branchName>",
             "Description": "Push branch to the GitHub origin",
-            "Example": "git push origin <branchName>"
+            "Example": "git push origin create-assessment"
         }
     ],
     "AmotionsPts": [
@@ -461,7 +519,7 @@
         {
             "Command": "git push origin --delete <remote-branch-name>",
             "Description": "Delete remote branch",
-            "Example": "git push origin --delete <remote-branch-name>"
+            "Example": "git push origin --delete create-assessment"
         },
         {
             "Command": "git checkout main",
@@ -471,12 +529,29 @@
         {
             "Command": "git branch -d <local-branch-name>",
             "Description": "Delete local branch",
-            "Example": "git branch -d <local-branch-name>"
+            "Example": "git branch -d create-assessment"
         },
         {
             "Command": "git branch -D <local-branch-name>",
             "Description": "Confirm deletion of local branch. Note the capital 'D'.",
-            "Example": "git status"
+            "Example": "git branch -D create-assessment"
+        }
+    ],
+    "ThreeCommands": [
+        {
+            "Command": "git add .",
+            "Description": "Stage all changes",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"Message\"",
+            "Description": "Stage all changes. Add a commit message.",
+            "Example": "git commit -m \"Added assessment exam\""
+        },
+        {
+            "Command": "git push",
+            "Description": "Push changes to your remote repository.",
+            "Example": "git push"
         }
     ],
     "GeneralTips": [
@@ -536,6 +611,68 @@
         {
             "id": 9,
             "instruction": "Make git commit messages short. They don't have to be long. Give a very brief overview of the problem, so it doesn't run off screen. A person at IBM gave me this advice."
+        }
+    ],
+    "GitCommands": [
+        {
+            "Command": "git add .",
+            "Description": "Stage all changes",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"Message\"",
+            "Description": "Stage all changes. Add a commit message.",
+            "Example": "git commit -m \"Added search functionality to Home page\""
+        },
+        {
+            "Command": "git push",
+            "Description": "Push changes to your remote repository.",
+            "Example": "git push"
+        },
+        {
+            "Command": "git status",
+            "Description": "See what branch you're currently on",
+            "Example": "git status"
+        },
+        {
+            "Command": "git checkout -b <branch-name>",
+            "Description": "Create a new branch and switch to it immediately",
+            "Example": "git checkout -b create-review-page"
+        },
+        {
+            "Command": "git branch <branch-name>",
+            "Description": "create a new branch without switching to it",
+            "Example": "git branch create-review-page"
+        },
+        {
+            "Command": "git push -u origin <branch-name>",
+            "Description": "Push the new branch to the remote repository",
+            "Example": "git push -u origin create-review-page"
+        },
+        {
+            "Command": "git push --set-upstream origin <branch-name>",
+            "Description": "Pushes the local branch's commits to a remote branch on the origin. Do once when pushing a new branch.",
+            "Example": "git push --set-upstream origin create-assessment"
+        },
+        {
+            "Command": "git stash",
+            "Description": "Takes all staged and unstaged changes and saves them for later. Then reverts your working directory to the last commit state.",
+            "Example": "git stash"
+        },
+        {
+            "Command": "git stash list",
+            "Description": "List all stashed changes",
+            "Example": "git stash list"
+        },
+        {
+            "Command": "git stash apply",
+            "Description": "Apply all stashed changes",
+            "Example": "git stash apply"
+        },
+        {
+            "Command": "git diff",
+            "Description": "Show differences between commits, branches, files, etc.",
+            "Example": "git diff"
         }
     ],
     "CreateFork": [
@@ -623,7 +760,7 @@
             "Example": "git add ."
         },
         {
-            "Command": "git commit -m \"Initial Commit\"",
+            "Command": "git commit -m \"Message\"",
             "Description": "Commit all files to GitHub",
             "Example": "git commit -m \"Initial Commit\""
         },
@@ -633,9 +770,9 @@
             "Example": "git branch -M main"
         },
         {
-            "Command": "git remote add origin <repo-https-link>",
-            "Description": "Add remote GitHub origin.",
-            "Example": "git remote add origin <repo-https-link>"
+            "Command": "git remote add origin <repo-http-link>",
+            "Description": "Add remote GitHub origin. It can also be the SSH link.",
+            "Example": "git remote add origin https://github.com/John-Smith/PacMan.git"
         },
         {
             "Command": "git push -u origin main",
