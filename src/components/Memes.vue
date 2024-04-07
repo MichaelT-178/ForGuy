@@ -41,7 +41,10 @@ import Meme39 from "../assets/memes/BobbyDropTables.jpg";
 import Meme40 from "../assets/memes/SendaCV.jpg";
 import Meme41 from "../assets/memes/ApplicantAndEmployer.jpg";
 import Meme42 from "../assets/memes/TooManyApplicants.jpg";
-
+import Meme43 from "../assets/memes/Hammurabi.jpg";
+import Meme44 from "../assets/memes/lamp.jpg";
+import Meme45 from "../assets/memes/lightmode.jpg";
+import Meme46 from "../assets/memes/recommendation.jpg";
 
 export const memeObjects = [
     { 
@@ -253,6 +256,26 @@ export const memeObjects = [
         text: "Computer science student vs Earth",
         transcription: "Javascript developer position open Nice! Not the best salary but...think I will apply See how you compare to the other 1,146 applicants.",
         image: Meme42 
-    } //TooManyApplicants.jpg
+    }, //TooManyApplicants.jpg
+    { 
+        text: "CSC 302 Flashbacks",
+        transcription: "Everyone: it's a game for kids. Programmers: ",
+        image: Meme43
+    }, //Hammurabi.jpg
+    { 
+        text: "Light mode users be like",
+        transcription: "Blind Myself With a Lamp For No Reason!!",
+        image: Meme44
+    }, //lamp.jpg
+    {
+        text: "I fear no man, but that THING...it scares me.",
+        transcription: "Programmers who use light themed IDE Satan",
+        image: Meme45
+    }, //lightmode.jpg
+    {
+        text: "\"Freethinkers\" when Youtube Algorithm",
+        transcription: "Dudes be like \"I don't watch TV, I'm not gonna let the mainstream media tell me how to think\". My brother in christ you let recommendation_watchnext.serve() determine your whole personality.",
+        image: Meme46
+    }, //recommendation.jpg
 ]
 </script>
