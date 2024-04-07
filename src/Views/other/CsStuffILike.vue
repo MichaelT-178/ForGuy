@@ -22,8 +22,5 @@ const codeSyntax = jsonData.value["Code"];
 </script>
 
 <style scoped>
-.code-blocks {
-    margin-left: 100px;
-}
 
 </style>
