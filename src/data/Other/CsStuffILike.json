@@ -109,8 +109,8 @@
             "Name": "Markdown Links",
             "Description": "This is the syntax to hyperlink text in a markdown file.",
             "Language": "Markdown",
-            "FormatCode": "[Cool Link](https://uncw.edu/)",
-            "CopyCode": "[Cool Link](https://uncw.edu/)"
+            "FormatCode": "[Uncw Link](https://uncw.edu/)",
+            "CopyCode": "[Uncw Link](https://uncw.edu/)"
         }
     ]
 }
