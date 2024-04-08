@@ -1,22 +1,26 @@
 <template>
   <div class="container">
-    <div class="text-container">
-      <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
-      <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
-    </div>
-    <div class="code-block">
-      <div class="copy-bar">
-        <span class="language-name">{{ codeInfo.Language }}</span>
-        <span class="material-icons copy-icon" 
-             :class="{'icon-done': copyIcon === 'done'}" 
-             :style="{ color: copyIcon === 'done' ? '#00FF4D' : getLanguageColor }"
-             @click="copyCode"
-         >{{ copyIcon }}</span>
+    <!-- Wrapper div added for alignment -->
+    <div class="aligned-container">
+      <div class="text-container">
+        <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
+        <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
       </div>
-      <pre><code v-html="highlightedCode"></code></pre>
+      <div class="code-block">
+        <div class="copy-bar">
+          <span class="language-name">{{ codeInfo.Language }}</span>
+          <span class="material-icons copy-icon" 
+               :class="{'icon-done': copyIcon === 'done'}" 
+               :style="{ color: copyIcon === 'done' ? '#00FF4D' : getLanguageColor }"
+               @click="copyCode"
+           >{{ copyIcon }}</span>
+        </div>
+        <pre><code v-html="highlightedCode"></code></pre>
+      </div>
     </div>
   </div>
 </template>
+
 
 
 <script setup>
@@ -110,12 +114,19 @@ watchEffect(() => {
 <style scoped>
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
-.text-container {
-  max-width: var(--dynamic-width);
+.aligned-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: var(--dynamic-width);
+}
+
+.text-container, .code-block {
+  width: 100%;
 }
 
 .code-name {
