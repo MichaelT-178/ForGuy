@@ -8,7 +8,7 @@
         <p class="description-two">{{ description }}</p>\
         
 
-        <h2 class="gh-header-two" style="margin-top: -3px;">Scroll Links</h2>
+        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">Scroll Links</h2>
         <p class="description-two">Use these links to scroll to different parts of the page.</p>
         <div v-for="link in scrollLinks" :key="link.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
@@ -25,7 +25,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a GitHub Repository Section -->
         <h2 class="gh-header-two" ref="createGHRepo">How to Create a GitHub Repository</h2>
@@ -37,7 +37,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a Second GitHub account Section -->
         <h2 class="gh-header-two" ref="multipleGHAccounts">How to Create Another GitHub Account</h2>
@@ -49,7 +49,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a Second GitHub Repository Section -->
         <h2 class="gh-header-two" ref="multipleDifferentAccount">How to Create a GitHub Repository Using a Different Account</h2>
@@ -61,13 +61,15 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Git Commands -->
         <h2 class="gh-header-two" ref="GitCommands">Git Commands</h2>
         <p class="description-two">These are frequently used Git commands.</p>
 
         <CmdTable tableName="" :items="gitCommands" class="cmd-table" ref="practiceTable"></CmdTable>
+
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- General Tips for Working with GitHub -->
         <h2 class="gh-header-two" ref="GeneralTips">General Tips</h2>
@@ -78,8 +80,7 @@
             <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>  
 
-
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Three Main Commands -->
         <h2 class="gh-header-two" ref="ThreeCommands">Three Main Git Commands</h2>
@@ -87,7 +88,7 @@
 
         <CmdTable tableName="" :items="threeCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ForkRepo">How to Fork a Repository</h2>
@@ -98,7 +99,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ExistingCmds">Existing Folder Commands</h2>
@@ -110,7 +111,7 @@
 
         <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <p style="margin-top: 100px;"></p>
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Amotions Workflow -->
         <h2 class="gh-header-two" ref="AmotionsWorkflow">Amotions Workflow</h2>
@@ -139,11 +140,7 @@
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table" ref="practiceTable"></CmdTable>
     
-        <p style="margin-top: 50px;"></p>
-
         <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
-
-        <p style="margin-bottom: 50px;"></p>
 
     </div>
 </template>
@@ -189,6 +186,7 @@ const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
 
 
 //Add refs here
+const scrollLinksRef = ref(null);
 const createGHAccount = ref(null);
 const createGHRepo = ref(null);
 const multipleGHAccounts = ref(null);
@@ -220,6 +218,7 @@ const scrollToRef = (refName) => {
     const offset = 80;
 
     const refs = {
+        scrollLinksRef,
         createGHAccount,
         createGHRepo,
         multipleGHAccounts,
@@ -271,7 +270,7 @@ const createRefContent = (refVal) => {
 }
 
 const processedTipContent = (tip) => {
-    return tip.replace(/(Different for multiple accounts|Scroll back up to original step)\((.*?)\)/g, (match, phrase, refName) => {
+    return tip.replace(/(Different for multiple accounts|Scroll back up to original step|Scroll back to links)\((.*?)\)/g, (match, phrase, refName) => {
         return `<span href="#" class="scroll-down" data-ref-name="${refName}">${phrase}</span>`;
     });
 }
@@ -381,6 +380,17 @@ onMounted(() => {
     margin-bottom: 10px;
 }
 
+.scroll-up-link {
+    text-align: center; 
+    font-size: 23.5px; 
+    margin-top: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: blue;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
 .scroll-up-btn {
     text-align: center; 
     font-size: 23.5px; 
@@ -388,6 +398,8 @@ onMounted(() => {
     margin-right: 40px;
     cursor: pointer;
     color: blue;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .scroll-up-btn:hover {
