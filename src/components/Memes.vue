@@ -45,6 +45,7 @@ import Meme43 from "../assets/memes/Hammurabi.jpg";
 import Meme44 from "../assets/memes/lamp.jpg";
 import Meme45 from "../assets/memes/lightmode.jpg";
 import Meme46 from "../assets/memes/recommendation.jpg";
+import Meme47 from "../assets/memes/WhenYouHearBack.jpg";
 
 export const memeObjects = [
     { 
@@ -277,5 +278,10 @@ export const memeObjects = [
         transcription: "Dudes be like \"I don't watch TV, I'm not gonna let the mainstream media tell me how to think\". My brother in christ you let recommendation_watchnext.serve() determine your whole personality.",
         image: Meme46
     }, //recommendation.jpg
+    {
+        text: "The NSA application process be like",
+        transcription: "When you applied for the job. When you hear back from the recruiter.",
+        image: Meme47
+    } //WhenYouHearBack
 ]
 </script>
