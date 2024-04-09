@@ -46,6 +46,8 @@ import Meme44 from "../assets/memes/lamp.jpg";
 import Meme45 from "../assets/memes/lightmode.jpg";
 import Meme46 from "../assets/memes/recommendation.jpg";
 import Meme47 from "../assets/memes/WhenYouHearBack.jpg";
+import Meme48 from "../assets/memes/Extensions.jpg"
+
 
 export const memeObjects = [
     { 
@@ -282,6 +284,11 @@ export const memeObjects = [
         text: "The NSA application process be like",
         transcription: "When you applied for the job. When you hear back from the recruiter.",
         image: Meme47
-    } //WhenYouHearBack
+    }, //WhenYouHearBack
+    {
+        text: "It's like VSCode on Steroids",
+        transcription: "Plain VSCode. VSCode with extensions.",
+        image: Meme48
+    } //Extensions
 ]
 </script>
