@@ -79,87 +79,92 @@
                 "Action": "Search document by line number."
             },
             {
-                "id": 16,
+                "id": 15,
+                "Shortcut": "command + shift + f",
+                "Action": "Open side search-bar, to search for key term."
+            },
+            {
+                "id": 17,
                 "Shortcut": "Command + shift + v",
                 "Action": "Previews what a Markdown file will look like. Go to md file, then do shortcut."
             },
             {
-                "id": 17,
+                "id": 18,
                 "Shortcut": "Highlight lines, command + k, then f",
                 "Action": "Format highlighted code correctly (according to formatting settings)"
             },
             {
-                "id": 18,
+                "id": 19,
                 "Shortcut": "command + a",
                 "Action": "Highlight all lines in the code document"
             },
             {
-                "id": 19,
+                "id": 20,
                 "Shortcut": "command + shift + n",
                 "Action": "Create a new window"
             },
             {
-                "id": 20,
+                "id": 21,
                 "Shortcut": "option + click",
                 "Action": "Allows you to put multiple cursors on lines that aren't directly below or above each other. For multi-line editing."
             },
             {
-                "id": 21,
+                "id": 22,
                 "Shortcut": "command + option, then down arrow",
                 "Action": "Create multiple cursors in VS Code that move down every line. For multi-line editing."
             },
             {
-                "id": 22,
+                "id": 23,
                 "Shortcut": "command + x",
                 "Action": "Delete the entire line and newline that a cursor is on"
             },
             {
-                "id": 23,
+                "id": 24,
                 "Shortcut": "command + right arrow ",
                 "Action": ""
             },
             {
-                "id": 24,
+                "id": 25,
                 "Shortcut": "command + p",
                 "Action": "Open command search pallette"
             },
             {
-                "id": 25,
+                "id": 26,
                 "Shortcut": "command + right arrow",
                 "Action": "Move a cursor (or multiple cursors) to the end of their line"
             },
             {
-                "id": 26,
+                "id": 27,
                 "Shortcut": "command + shift + right arrow",
                 "Action": "Move a cursor (or multiple cursors) to the end of their line, and highlight that part of the line."
             },
             {
-                "id": 27,
+                "id": 28,
                 "Shortcut": "option + up arrow",
                 "Action": "Swap a line with the line above it"
             },
             {
-                "id": 28,
+                "id": 29,
                 "Shortcut": "option + down arrow",
                 "Action": "Swap a line with the line below it"
             },
             {
-                "id": 29,
+                "id": 30,
                 "Shortcut": "tab",
                 "Action": "When you're typing \"tab\" will autofill the first text editor suggestion from the list."
             },
             {
-                "id": 30,
+                "id": 3,
                 "Shortcut": "command + shift + f",
                 "Action": "Search an entire folder for a word"
             },
             {
-                "id": 31,
+                "id": 32,
                 "Shortcut": "command + shift + h",
                 "Action": "Open component to Find and replace all instances of a string in an entire folder."
             },
             {
-                "id": 32,
+                "id": 33,
                 "Shortcut": "Command + k + s (press s after holding down cmd + k)",
                 "Action": "View Keyboard shortcuts menu vscode. Can create a shortcut"
             }
