@@ -46,7 +46,8 @@ import Meme44 from "../assets/memes/lamp.jpg";
 import Meme45 from "../assets/memes/lightmode.jpg";
 import Meme46 from "../assets/memes/recommendation.jpg";
 import Meme47 from "../assets/memes/WhenYouHearBack.jpg";
-import Meme48 from "../assets/memes/Extensions.jpg"
+import Meme48 from "../assets/memes/Extensions.jpg";
+import Meme49 from "../assets/memes/null.jpg";
 
 
 export const memeObjects = [
@@ -284,11 +285,16 @@ export const memeObjects = [
         text: "The NSA application process be like",
         transcription: "When you applied for the job. When you hear back from the recruiter.",
         image: Meme47
-    }, //WhenYouHearBack
+    }, //WhenYouHearBack.jpg
     {
         text: "It's like VSCode on Steroids",
         transcription: "Plain VSCode. VSCode with extensions.",
         image: Meme48
-    } //Extensions
+    }, //Extensions.jpg
+    {
+        text: "He kinda gave us NullPointerException's tho 😍",
+        transcription: "To the programmer who invented null: Thanks for nothing.",
+        image: Meme49
+    } //null.jpg
 ]
 </script>
