@@ -30,11 +30,8 @@ const downloadButton = ref(null);
 const jsonData = ref(AllData);
 const info = jsonData.value["information"];
 
-
 const header = info[0].title;
 const description = info[0].description;
-
-
 
 
 function downloadResumeDocx() {
@@ -52,6 +49,7 @@ function downloadResumeDocx() {
     downloadButton.value.innerText = "Download DOCX";
   }, 2000); 
 }
+
 
 function updateCurrentPage(event) {
   const container = event.target;
