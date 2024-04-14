@@ -101,6 +101,19 @@
 
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
+
+        <!-- Reset To Previous Branch -->
+        <h2 class="gh-header-two" ref="resetBranch">Reset To Previous Branch</h2>
+        <p class="description-two">Reset your current working directory to a previous branch</p>
+
+        <div v-for="point in resetBranchSteps" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
+
+        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+
+
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ExistingCmds">Existing Folder Commands</h2>
         <p class="description-two">How to get an existing folder onto GitHub.</p>
@@ -170,8 +183,9 @@ const gitCommands = jsonData.value["GitCommands"];
 const generalTips = jsonData.value["GeneralTips"];
 
 const threeCommands = jsonData.value["ThreeCommands"];
-const createFork = jsonData.value["CreateFork"];
 
+const createFork = jsonData.value["CreateFork"];
+const resetBranchSteps = jsonData.value["ResetBranch"];
 
 const existingFolderPts = jsonData.value["ExistingFolderPts"];
 const existingFolderCmds = jsonData.value["ExistingFolder"];
@@ -195,6 +209,7 @@ const GitCommands = ref(null);
 const GeneralTips = ref(null);
 const ThreeCommands = ref(null);
 const ForkRepo = ref(null);
+const resetBranch = ref(null);
 const ExistingCmds = ref(null);
 const AmotionsWorkflow = ref(null);
 
@@ -215,7 +230,7 @@ const normalGitHubEight = ref(null);
 
 const scrollToRef = (refName) => {
 
-    const offset = 80;
+    const offset = 75;
 
     const refs = {
         scrollLinksRef,
@@ -227,6 +242,7 @@ const scrollToRef = (refName) => {
         GeneralTips,
         ThreeCommands,
         ForkRepo,
+        resetBranch,
         ExistingCmds,
         AmotionsWorkflow,
         secondSix,
@@ -341,6 +357,7 @@ onMounted(() => {
     margin-top: -15px;
     font-size: 19px;
     width: 690px;
+    margin-bottom: 27px;
 }
 
 .bullet-pt {
