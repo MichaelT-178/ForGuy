@@ -1,21 +1,21 @@
 <template>
   <div class="contact-form">
-    <h1>Contact Me</h1>
-    <p class="intro-text">Feel free to message me and I'll try to respond as soon as possible!</p>
+    <h1>{{ text[0].title }}</h1>
+    <p class="intro-text">{{ text[0].desc }}</p>
 
     <div class="form-group">
-      <label for="name" class="form-label">Your Name<span style="color: #EF0000;">*</span></label>
-      <input autocomplete="off" type="text" id="name" name="name" v-model="userName" placeholder="Enter your name"/>
+      <label for="name" class="form-label">{{ text[1].Header }}<span style="color: #EF0000;">*</span></label>
+      <input autocomplete="off" type="text" id="name" name="name" v-model="userName" :placeholder="text[1].Placeholder"/>
     </div>
 
     <div class="form-group">
-      <label for="email" class="form-label">Your Email<span style="color: #EF0000;">*</span></label>
-      <input type="email" id="email" name="email" v-model="userEmail" placeholder="Enter your email" />
+      <label for="email" class="form-label">{{ text[2].Header }}<span style="color: #EF0000;">*</span></label>
+      <input type="email" id="email" name="email" v-model="userEmail" :placeholder="text[2].Placeholder" />
     </div>
 
     <div class="form-group">
-      <label for="message" class="form-label">Message<span style="color: #EF0000;">*</span></label>
-      <textarea id="message" name="message" v-model="userMessage" class="square-text-area" placeholder="Enter your message"></textarea>
+      <label for="message" class="form-label">{{ text[3].Header }}<span style="color: #EF0000;">*</span></label>
+      <textarea id="message" name="message" v-model="userMessage" class="square-text-area" :placeholder="text[3].Placeholder"></textarea>
     </div>
 
     <button 
@@ -36,14 +36,18 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import AllData from '../data/Contact.json';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+
+const jsonData = ref(AllData);
+const text = jsonData.value["Contact"];
 
 const userName = ref('');
 const userEmail = ref('');
 const userMessage = ref('');
 const isButtonClicked = ref(false);
-const buttonText = ref('Submit'); 
+const buttonText = ref(text[4].submit); 
 
 emailjs.init('bCe2UFI1L7SfXITtA');
 
@@ -58,7 +62,7 @@ const submitForm = () => {
   if (!isFormValid.value) return;
 
   isButtonClicked.value = true;
-  buttonText.value = 'Sending...';
+  buttonText.value = text[4].sending; //sending ...
 
   const templateParams = {
     from_name: userName.value,
@@ -71,14 +75,14 @@ const submitForm = () => {
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {
-      Swal.fire('Sent!', 'Your message has been sent successfully!', 'success');
+      Swal.fire(text[5].successMsg, text[5].successDesc, 'success');
       userName.value = '';
       userEmail.value = '';
       userMessage.value = '';
       return response;
     })
     .catch((err) => {
-      Swal.fire('Error!', 'Something went wrong when sending your message! See console.', 'error');
+      Swal.fire(text[6].errorMsg, text[6].errorDesc, 'error');
       console.error('Failed to send email:', err);
       throw err;
     })
