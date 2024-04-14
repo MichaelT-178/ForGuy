@@ -1,10 +1,4 @@
 {
-    "Description": [
-        {
-            "id": 1,
-            "description": "GitHub is a website that uses git to help with collaboration and version control of coding projects. In simple terms, it's a place to upload your code and modify it in a controlled way. Git is version control system that allows you to add, revert, commit, push, etc. code to your repository."
-        }
-    ],
     "ScrollLinks": [
         {
             "id": 1,
@@ -844,6 +838,76 @@
             "Command": "git push -u origin main",
             "Description": "Push changes to the main branch.",
             "Example": "git push -u origin main"
+        }
+    ],
+    "Text": [
+        {
+            "title": "GitHub",
+            "desc": "This page contains information related to Git and GitHub."
+        },
+        {
+            "title": "What is GitHub and Git?",
+            "desc": "GitHub is a website that uses git to help with collaboration and version control of coding projects. In simple terms, it's a place to upload your code and modify it in a controlled way. Git is version control system that allows you to add, revert, commit, push, etc. code to your repository."
+        },
+        {
+            "title": "Scroll Links",
+            "desc": "Use these links to scroll to different parts of the page."
+        },
+        {
+            "title": "How to Create a GitHub Account",
+            "desc": "These are instructions to setup Git and create a GitHub account."
+        },
+        {
+            "title": "How to Create a GitHub Repository",
+            "desc": "This is how you create a GitHub repo and set it up locally."
+        },
+        {
+            "title": "How to Create Another GitHub Account",
+            "desc": "To add another GitHub account to your computer do the original 5-25 steps with these modified steps."
+        },
+        {
+            "title": "How to Create a GitHub Repository Using a Different Account",
+            "desc": "This is how you create a GitHub repository for an account other than your main one"
+        },
+        {
+            "title": "Git Commands",
+            "desc": "These are frequently used Git commands."
+        },
+        {
+            "title": "General Tips",
+            "desc": "These are general tips for working with GitHub."
+        },
+        {
+            "title": "Three Main Git Commands",
+            "desc": "These are the three main git commands to push changes to your repo."
+        },
+        {
+            "title": "How to Fork a Repository",
+            "desc": "How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs."
+        },
+        {
+            "title": "Reset To Previous Branch",
+            "desc": "Reset your current working directory to a previous branch."
+        },
+        {
+            "title": "Existing Folder Commands",
+            "desc": "How to get an existing folder onto GitHub."
+        },
+        {
+            "title": "Amotions Workflow",
+            "desc": "This was my git workflow at Amotions. It's a little more extensive than your average workflow since we pushed to production so fast."
+        },
+        {
+            "amotions": "* Make changes/additions to code. Close terminal *"
+        },
+        {
+            "amotions": "Make a pull request on github."
+        },
+        {
+            "amotions": "Once branch is merged into dev. Merge into Main."
+        },
+        {
+            "amotions": "Git Deletion Commands"
         }
     ]
 }
