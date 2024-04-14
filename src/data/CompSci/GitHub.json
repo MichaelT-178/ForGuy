@@ -48,11 +48,16 @@
         },
         {
             "id": 9,
-            "name": "Existing Folder Commands",
-            "ref": "ExistingCmds"
+            "name": "Reset To Previous Branch",
+            "ref": "resetBranch"
         },
         {
             "id": 10,
+            "name": "Add Existing Folder To GitHub",
+            "ref": "ExistingCmds"
+        },
+        {
+            "id": 11,
             "name": "My Old Amotions Workflow",
             "ref": "AmotionsWorkflow"
         }
@@ -731,6 +736,67 @@
                 "Language": "Command",
                 "FormatCode": "git add .\n  git commit -m \"Made changes\"\n  git push",
                 "CopyCode": "git add .\ngit commit -m \"Made changes\"\ngit push"
+            }
+        }
+    ],
+    "ResetBranch": [
+        {
+            "id": 1,
+            "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git log",
+                "CopyCode": "git log"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Run the command below with the hash you just copied to revert back to that commit.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git reset --hard <hash-you-copied>",
+                "CopyCode": "git reset --hard"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Add new changes to your local repo."
+        },
+        {
+            "id": 4,
+            "instruction": "Add your changes, like usual.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .",
+                "CopyCode": "git add ."
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Commit your changes, like usual.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git commit -m \"Messages\"",
+                "CopyCode": "git commit -m \"Messages\""
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Push your changes to main with the \"--force\" tag.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git push origin main --force",
+                "CopyCode": "git push origin main --force"
             }
         }
     ],
