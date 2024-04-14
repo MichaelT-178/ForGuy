@@ -1,23 +1,23 @@
 <template>
     <div class="container">
-        <h1 class="gh-header">GitHub</h1>
-        <p class="description">This page contains information related to Git and GitHub.</p>
+        <h1 class="gh-header">{{ text[0].title }}</h1>
+        <p class="description">{{ text[0].desc }}</p>
         <img src="../../assets/GitHub.png" alt="GitHub" class="github-pic"/>
         
-        <h2 class="gh-header-two">What is GitHub and Git?</h2>
-        <p class="description-two">{{ description }}</p>\
+        <h2 class="gh-header-two">{{ text[1].title }}</h2>
+        <p class="description-two">{{ text[1].desc }}</p>
         
 
-        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">Scroll Links</h2>
-        <p class="description-two">Use these links to scroll to different parts of the page.</p>
+        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">{{ text[2].title }}</h2>
+        <p class="description-two">{{ text[2].desc }}</p>
         <div v-for="link in scrollLinks" :key="link.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
                 </span><span v-html="createRefContent(link)"></span></p>
         </div>
 
         <!-- How to create a GitHub account Section -->
-        <h2 class="gh-header-two" ref="createGHAccount">How to Create a GitHub Account</h2>
-        <p class="description-two">These are instructions to setup Git and create a GitHub account.</p>
+        <h2 class="gh-header-two" ref="createGHAccount">{{ text[3].title }}</h2>
+        <p class="description-two">{{ text[3].desc }}</p>
 
         <div v-for="point in setupGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -28,8 +28,8 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a GitHub Repository Section -->
-        <h2 class="gh-header-two" ref="createGHRepo">How to Create a GitHub Repository</h2>
-        <p class="description-two">This is how you create a GitHub repo and set it up locally.</p>
+        <h2 class="gh-header-two" ref="createGHRepo">{{ text[4].title }}</h2>
+        <p class="description-two">{{ text[4].desc }}</p>
 
         <div v-for="point in createGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -40,8 +40,8 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a Second GitHub account Section -->
-        <h2 class="gh-header-two" ref="multipleGHAccounts">How to Create Another GitHub Account</h2>
-        <p class="description-two">To add another GitHub account to your computer do the original 5-25 steps with these modified steps.</p>
+        <h2 class="gh-header-two" ref="multipleGHAccounts">{{ text[5].title }}</h2>
+        <p class="description-two">{{ text[5].desc }}</p>
 
         <div v-for="point in setupSecondGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -52,8 +52,8 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- How to create a Second GitHub Repository Section -->
-        <h2 class="gh-header-two" ref="multipleDifferentAccount">How to Create a GitHub Repository Using a Different Account</h2>
-        <p class="description-two">This is how you create a GitHub repository for an account other than your main one</p>
+        <h2 class="gh-header-two" ref="multipleDifferentAccount">{{ text[6].title }}</h2>
+        <p class="description-two">{{ text[6].desc }}</p>
 
         <div v-for="point in createSecondGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -64,16 +64,16 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Git Commands -->
-        <h2 class="gh-header-two" ref="GitCommands">Git Commands</h2>
-        <p class="description-two">These are frequently used Git commands.</p>
+        <h2 class="gh-header-two" ref="GitCommands">{{ text[7].title }}</h2>
+        <p class="description-two">{{ text[7].desc }}</p>
 
         <CmdTable tableName="" :items="gitCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- General Tips for Working with GitHub -->
-        <h2 class="gh-header-two" ref="GeneralTips">General Tips</h2>
-        <p class="description-two">These are general tips for working with GitHub</p>
+        <h2 class="gh-header-two" ref="GeneralTips">{{ text[8].title }}</h2>
+        <p class="description-two">{{ text[8].desc }}</p>
 
         <div v-for="tip in generalTips" :key="tip.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ tip.id }}</span><span v-html="createHyperLink(tip.instruction)"></span></p>
@@ -83,16 +83,16 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Three Main Commands -->
-        <h2 class="gh-header-two" ref="ThreeCommands">Three Main Git Commands</h2>
-        <p class="description-two">These are the three main git commands to push changes to your repo.</p>
+        <h2 class="gh-header-two" ref="ThreeCommands">{{ text[9].title }}</h2>
+        <p class="description-two">{{ text[9].desc }}</p>
 
         <CmdTable tableName="" :items="threeCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="ForkRepo">How to Fork a Repository</h2>
-        <p class="description-two">How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs.</p>
+        <h2 class="gh-header-two" ref="ForkRepo">{{ text[10].title }}</h2>
+        <p class="description-two">{{ text[10].desc }}</p>
 
         <div v-for="point in createFork" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
@@ -103,8 +103,8 @@
 
 
         <!-- Reset To Previous Branch -->
-        <h2 class="gh-header-two" ref="resetBranch">Reset To Previous Branch</h2>
-        <p class="description-two">Reset your current working directory to a previous branch</p>
+        <h2 class="gh-header-two" ref="resetBranch">{{ text[11].title }}</h2>
+        <p class="description-two">{{ text[11].desc }}</p>
 
         <div v-for="point in resetBranchSteps" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
@@ -115,8 +115,8 @@
 
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="ExistingCmds">Existing Folder Commands</h2>
-        <p class="description-two">How to get an existing folder onto GitHub.</p>
+        <h2 class="gh-header-two" ref="ExistingCmds">{{ text[12].title }}</h2>
+        <p class="description-two">{{ text[12].desc }}</p>
 
         <div v-for="point in existingFolderPts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
@@ -127,29 +127,29 @@
         <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
 
         <!-- Amotions Workflow -->
-        <h2 class="gh-header-two" ref="AmotionsWorkflow">Amotions Workflow</h2>
-        <p class="description-two">This was my git workflow at Amotions. It's a little more extensive than your average workflow since we pushed to production so fast.</p>
+        <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[13].title }}</h2>
+        <p class="description-two">{{ text[13].desc }}</p>
 
 
         <CmdTable tableName="" :items="amotionsWorkflowOne" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <p class="centered-txt">* Make changes/additions to code. Close terminal *</p>
+        <p class="centered-txt">{{ text[14].amotions }}</p>
 
         <CmdTable tableName="" :items="amotionsWorkflowTwo" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <p class="centered-txt">Make a pull request on github.</p>
+        <p class="centered-txt">{{ text[15].amotions }}</p>
 
         <div v-for="point in amotionsPts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">Once branch is merged into dev. Merge into Main.</p>
+        <p class="centered-txt">{{ text[16].amotions }}</p>
 
         <div v-for="point in amotionsPtsTwo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">Git Deletion Commands</p>
+        <p class="centered-txt">{{ text[17].amotions }}</p>
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table" ref="practiceTable"></CmdTable>
     
@@ -169,7 +169,7 @@ import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 const jsonData = ref(AllData);
 
-const description = jsonData.value["Description"][0]["description"];
+
 const scrollLinks = jsonData.value["ScrollLinks"];
 
 
@@ -197,6 +197,8 @@ const amotionsWorkflowThree = jsonData.value["AmotionsWorkflowThree"];
 
 const amotionsPts = jsonData.value["AmotionsPts"];
 const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
+
+const text = jsonData.value["Text"];
 
 
 //Add refs here
