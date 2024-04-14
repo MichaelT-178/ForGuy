@@ -6,15 +6,15 @@
         },
         {
             "id": 2,
-            "description": "Search bars. Ever since I started coding I've had a somewhat strange fascination with this component. It seems like they're everywhere but people still have difficulty implementing them in their projects. That's why I made sure not to \"cheat\" the search bar in this project (it was originally supposed to be a box pop-up thing). Search bars can provide extremely useful functionality in your project and I'd recommend implementing them wherever they'd be helpful."
+            "description": "Search bars. Ever since I started coding I've had a somewhat strange fascination with search bars. It seems like they're everywhere but people still have difficulty implementing them in their projects. That's why I made sure not to \"cheat\" the search bar functionality in this project (it was originally supposed to be a box pop-up thing). Search bars can be extremely useful in your project and I'd recommend implementing them wherever you think they'd be helpful."
         },
         {
             "id": 3,
-            "description": "Steve Jobs talking about programming. In this [video](https://youtu.be/BRTOlPdyPYU?si=bHpOkJwOGw70NRpz) Steve Jobs talks about how he thinks everyone should learn to code. I like the point he makes about how programming teaches you how to think in the real world. I often find myself using java syntax to describe real-life events in my head."
+            "description": "Steve Jobs talking about programming. In this [video](https://youtu.be/BRTOlPdyPYU?si=bHpOkJwOGw70NRpz) Steve Jobs talks about how he thinks everyone should learn to code. I like the point he makes about how programming teaches you how to think in the real world. I often find myself using Java syntax to describe real-life events in my head."
         },
         {
             "id": 4,
-            "description": "GitHub pages. I love GitHub pages and it's where this website is currently being hosted. It allows you to host any static website for free, which I find very convenient as my websites usually don't use databases or dynamic rendering."
+            "description": "GitHub pages. I love GitHub pages and it's where this website is currently being hosted. It allows you to host any static website for free which I find very convenient as my websites usually don't use databases or dynamic rendering."
         },
         {
             "id": 5,
@@ -22,7 +22,7 @@
         },
         {
             "id": 6,
-            "description": "Visual Studio Code is the main text editor I use. I find it very versatile and useful in basically all my programming tasks. I'd strongly recommend [downloading it](https://code.visualstudio.com/download) and trying it out."
+            "description": "Visual Studio Code is the main text editor I use. I find it very versatile and I use it in basically all my programming tasks. I'd strongly recommend [downloading it](https://code.visualstudio.com/download) and trying it out."
         },
         {
             "id": 7,
@@ -30,15 +30,15 @@
         },
         {
             "id": 8,
-            "description": "Markdown. I really like the idea markdowns syntax and I find it convenient when creating ReadMes. I took inspiration from markdowns syntax for hyperlinking in this project."
+            "description": "Markdown. I really like markdowns syntax and I find it convenient when creating ReadMes. I took inspiration from markdowns syntax for the hyperlinks in this project."
         },
         {
             "id": 9,
-            "description": "Emailjs. This is a javascript library that allows you send emails for free. I used it in the \"Contact Me\" for in this project."
+            "description": "Emailjs. This is a JavaScript library that allows you send emails for free. I used it in the \"Contact Me\" page in this project. Here's the [link](https://www.emailjs.com/) to set it up."
         },
         {
             "id": 10,
-            "description": "termcolor. This is a python library that allows you to color your terminal output. I find it very useful to differentiate between messages and I think it looks nice."
+            "description": "The \"termcolor\" library. This is a Python library that allows you to color the text in your terminal output. I find it very useful to differentiate between messages and I think it looks nice."
         }
     ],
     "Code": [
