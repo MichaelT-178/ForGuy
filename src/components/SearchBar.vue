@@ -44,7 +44,7 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
-import SearchData from '../data/SearchData.json'; 
+import SearchPages from '../data/SearchPages.json'; 
 
 const searchQuery = ref('');
 const filteredResults = ref([]);
@@ -64,7 +64,7 @@ const handleEnterPress = (event) => {
 
 const filterResults = () => {
   if (searchQuery.value) {
-    filteredResults.value = SearchData.filter((item) =>
+    filteredResults.value = SearchPages.filter((item) =>
       item.MenuName.toLowerCase().includes(searchQuery.value.toLowerCase())
     ).slice(0, 11); //Only 11 results show at a time.
   } else {
