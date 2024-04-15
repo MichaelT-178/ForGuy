@@ -25,7 +25,7 @@
         "Emoji": "💡",
         "MenuName": "How To Get a Job",
         "AllText": "TODO",
-        "Link": "/Jobs/HowToGetAJob.vue"
+        "Link": "/Jobs/HowToGetAJob"
     },
     {
         "id": 5,
