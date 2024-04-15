@@ -3,10 +3,10 @@
         <img src="../../assets/VisualStudio.png" alt="Visual Studio Code Pic" />
     </div>
     <div class="info-container">
-        <h1>{{ info.Header }}</h1>
-        <p v-html="info.Body"></p>
+        <h1>{{ text.Header }}</h1>
+        <p v-html="text.Body"></p>
 
-        <h1>Links</h1>
+        <h1>{{ text.Links }}</h1>
         <ul class="links-list">
             <li v-for="link in links" :key="link.Name">
                 <a v-if="link.WebLink" :href="link.WebLink" @click="scrollToTop" class="link">{{ link.Name }}</a>
@@ -23,7 +23,7 @@ import { ref } from 'vue';
 import AllData from "../../data/CompSci/VisualStudioCode.json";
 
 const jsonData = ref(AllData);
-const info = jsonData.value["Info"][0];
+const text = jsonData.value["Text"][0];
 const links = jsonData.value["Links"];
 
 const scrollToTop = () => {

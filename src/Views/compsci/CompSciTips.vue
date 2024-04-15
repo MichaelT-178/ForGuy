@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Computer Science Tips</h1>
-        <p class="description">These are some more general tips I have for computer science.</p>
+        <h1 class="tip-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"></p>
@@ -12,22 +12,22 @@
         <p style="margin-bottom: 60px;"></p>
         <CodeBlock :codeInfo="shortcut" ref="codeBlockRef"></CodeBlock>
 
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
 
         <p style="margin-bottom: 80px;"></p>
         <CodeBlock :codeInfo="javaCode" ref="codeBlockTwoRef"></CodeBlock>
 
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
 
         <p style="margin-bottom: 80px;"></p>
         <CodeBlock :codeInfo="pythonCode" ref="codeBlockThreeRef"></CodeBlock>
 
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
 
         <p style="margin-bottom: 80px;"></p>
         <CodeBlock :codeInfo="homebrewCode" ref="codeBlockFourRef"></CodeBlock>
 
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
 
         <p style="margin-bottom: 60px;"></p>
     </div>
@@ -41,7 +41,8 @@ import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
 const jsonData = ref(AllData);
-let tips = jsonData.value["Tips"];
+const text = jsonData.value["Text"][0];
+const tips = jsonData.value["Tips"];
 const shortcut = jsonData.value["ComponentData"][0];
 const javaCode = jsonData.value["ComponentData"][1];
 const pythonCode = jsonData.value["ComponentData"][2];

@@ -1,10 +1,10 @@
 <template>
-    <h1>Apps To Download</h1>
-    <p class="description">These are phone apps that I'd recommend doing. I chose them based on how useful and enjoyable they are to use.</p>
+    <h1>{{ text.page }}</h1>
+    <p class="description">{{ text.desc }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="app-section">
-        <h2>Apps To Download</h2>
-        <p>These are apps that I think would be worth downloading. <a :href="emailStr" class="email-btn">Email yourself all these download links.</a></p>
+        <h2>{{ text.header2 }}</h2>
+        <p>{{ text.desc2 }}<a :href="emailStr" class="email-btn">{{ text.email }}</a></p>
         <div class="app-menu">
             <div v-for="app in appsToDownload" :key="app.Name" class="app-item">
                 <AccordionMenu :item="app" :isOpen="allOpen" />
@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="app-section">
-        <h2>Apps You've Probably Already Downloaded</h2>
-        <p>These are popular apps that you have probably already downloaded.</p>
+        <h2>{{ text.header3 }}</h2>
+        <p>{{ text.desc3 }}</p>
         <div class="app-menu">
             <div v-for="app in appsProbablyDownloaded" :key="app.Name" class="app-item">
                 <AccordionMenu :item="app" :isOpen="allOpen" />
@@ -31,6 +31,7 @@ import AccordionMenu from "../../components/AccordionMenu.vue";
 import { bodyContent } from "../../components/AppEmail.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const appsToDownload = jsonData.value["AppsToDownload"];
 const appsProbablyDownloaded = jsonData.value["Kinda Obviously"];
 const allOpen = ref(false);
