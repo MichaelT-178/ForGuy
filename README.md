@@ -15,7 +15,7 @@ WHEN YOU'RE DONE CHANGE THE DOWNLOAD LINK ON THE HOME PAGE.
 1. Go to src/Views/folder where you want to put your new view 
 2. Go to router/index.js and add your path to your view 
 3. Go to src/components/MenuItems.vue add your item.
-4. Go to src/data/SearchData.json
+4. Go to src/data/SearchPages.json
 
 
 ## Commands to run when you clone
