@@ -1,15 +1,14 @@
 
 <template>
   <div class="container">
-      <h1 class="tip-header">Search Results</h1>
-      <p class="description">The search term <span style="color: darkblue">"{{ searchQuery }}"</span> appears in the following pages.</p>
-      <div class="tips-container">
-          <div v-for="tip in tips" :key="tip.id" class="tip-section">
-              <p class="tip-text" :data-index="tip.id"></p>
-              <p class="text-section" v-html="tip.tip"></p>
-          </div>
-      </div>
-      <p style="margin-bottom: 60px;"></p>
+    <h1 class="search-header">Search Results</h1>
+    <p class="description">The search term <span style="color: darkblue">"{{ searchQuery }}"</span> appears in the following pages.</p>
+
+    <div v-for="contact in contacts" :key="contact.Company">
+        <SearchCard :contact="contact"></SearchCard>
+    </div>
+
+    <p style="margin-bottom: 60px;"></p>
   </div>
 </template>
 
@@ -19,6 +18,17 @@ import { useRoute } from 'vue-router';
 import SearchData from '../data/SearchData.json';
 //import SearchData from '../components/data/SearchData.vue';
 //#5943b6
+
+
+//NEW DELETE
+import AllData from "../data/LinkedIn/Contacts.json";
+import SearchCard from "../components/SearchCard.vue"
+
+const jsonData = ref(AllData);
+const contacts = jsonData.value["Contacts"];
+//NEW DELETE
+
+
 
 const route = useRoute();
 
@@ -40,7 +50,7 @@ watch(() => route.params.SearchQuery, (newSearchQuery) => {
     width: 100%;
 }
 
-.tip-header {
+.search-header {
     text-align: left;
     border-bottom: 1.5px solid #d8dee4;
     padding-bottom: 7px;
@@ -51,61 +61,20 @@ watch(() => route.params.SearchQuery, (newSearchQuery) => {
     margin-top: -8px;
     font-size: 19px;
     width: 690px;
-}
-
-.tips-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.tip-section {
-    margin-bottom: 5px;
-    width: 575px;
-}
-
-.tip-text {
-    position: relative;
-    width: auto;
-    font-size: 21px;
-    font-weight: 500;
-}
-
-.tip-text::before {
-    content: attr(data-index);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkblue;
-    color: white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-left: -35px;
-    position: absolute;
-    top: 0;
-    transform: translateY(-50%);
-    font-size: 14px;
-}
-
-.text-section {
-    font-size: 19.5px;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    margin-top: -13px;
+    margin-bottom: 4px;
 }
 
 @media (max-width: 700px) {
-    .tip-header {
-        width: 490px;
-    }
-    
-    .description {
+
+    .search-header {
+        text-align: left;
+        border-bottom: 1.5px solid #d8dee4;
+        padding-bottom: 7px;
         width: 490px;
     }
 
-    .tip-section {
-        width: 375px;
+    .description {
+        width: 490px;
     }
 }
 
