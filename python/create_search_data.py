@@ -43,6 +43,22 @@ def transform_json(json_obj):
     
     return result
 
+def make_json_object(key, value):
+    """
+    Converts JSON attribute to it's own object 
+
+    Example:
+    Input:
+        "Title": "Visual Studio Code Shortcuts"
+
+    Output:
+        {
+            "Title": "Visual Studio Code Shortcuts",
+        }
+    
+    """
+    return {key: value}
+
 
 # Classes
 def get_classestoavoid():
@@ -163,15 +179,59 @@ def get_compsciminor():
         return { "Title": Title, "Link": Link, "Results": Results }
 
 
+
 # CompSci
 
 def get_vscodeshortcuts():
     with open("../src/data/CompSci/VSCodeShortcuts.json", "r") as file:
         content = json.load(file)
 
+        # VSCode Shortcuts 
+        title = content["VSCodeShortcuts"]["Title"]
+        desc = content["VSCodeShortcuts"]["Description"]
+        shortcuts = content["VSCodeShortcuts"]["Shortcuts"]
+
+        shortcuts.append(make_json_object("Title", title))
+        shortcuts.append(make_json_object("Description", desc))
+
+
+        # Pycharm
+        titlePy = content["PyCharm"]["Title"]
+        descPy = content["PyCharm"]["Description"]
+        shortcutsPy = content["PyCharm"]["Shortcuts"]
+
+        shortcutsPy.append(make_json_object("Title", titlePy))
+        shortcutsPy.append(make_json_object("Description", descPy))
+
+        
+        #Eclipse 
+        titleEc = content["Eclipse"]["Title"]
+        descEc = content["Eclipse"]["Description"]
+        shortcutsEc = content["Eclipse"]["Shortcuts"]
+
+        shortcutsEc.append(make_json_object("Title", titleEc))
+        shortcutsEc.append(make_json_object("Description", descEc))
+
+        #Xcode
+        titleX = content["XCode"]["Title"]
+        descX = content["XCode"]["Description"]
+        shortcutsX = content["XCode"]["Shortcuts"]
+
+        shortcutsX.append(make_json_object("Title", titleX))
+        shortcutsX.append(make_json_object("Description", descX))
+
+        #Slack
+        titleSl = content["Slack"]["Title"]
+        descSl = content["Slack"]["Description"]
+        shortcutsSl = content["Slack"]["Shortcuts"]
+
+        shortcutsSl.append(make_json_object("Title", titleSl))
+        shortcutsSl.append(make_json_object("Description", descSl))
+
+
         Title = "VSCode Shortcuts"
         Link = "/compsci/VSCodeShortcuts"
-        Results = None
+        Results = shortcuts + shortcutsPy + shortcutsEc + shortcutsX + shortcutsSl
 
         return { "Title": Title, "Link": Link, "Results": Results }
     
@@ -534,4 +594,4 @@ all_data = [
 
 
 
-print(format_json(classesivetaken))
+print(format_json(vscodeshortcuts))
