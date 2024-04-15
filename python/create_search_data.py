@@ -768,5 +768,5 @@ all_data = [
 ]
 
 
-
-print(format_json(uiux_tips))
+with open("delete.json", "w", encoding='utf-8') as file:
+    json.dump(all_data, file, ensure_ascii=False, indent=4)
