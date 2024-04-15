@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <h1 class="gh-header">CS Stuff I like</h1>
-        <p class="description">These are various computer science and programming-related things I like.</p>
+        <h1 class="gh-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
 
-        <h2 class="gh-header-two">Comp Sci Stuff I like</h2>
-        <p class="description-two">These are various computer science related things I like.</p>
+        <h2 class="gh-header-two">{{ text.header2 }}</h2>
+        <p class="description-two">{{ text.desc2 }}</p>
 
         <div v-for="point in csStuff" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -12,14 +12,14 @@
             </p>
         </div>
 
-        <h1 class="header-three">Goated Syntax</h1>
-        <p class="description-three">These are code snippets that show syntax and functionality I like.</p>
+        <h1 class="header-three">{{ text.header3 }}</h1>
+        <p class="description-three">{{ text.desc3 }}</p>
 
         <div v-for="code in codeSyntax" :key="code.Name" class="code-blocks">
             <CodeBlock :codeInfo="code"></CodeBlock>
         </div>
 
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
 
     </div>
 </template>
@@ -32,6 +32,7 @@ import CodeBlock from '../../components/Code/CodeBlock.vue';
 import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 
 const csStuff = jsonData.value["CsStuff"];
 const codeSyntax = jsonData.value["Code"];
@@ -44,6 +45,7 @@ const scrollToTop = () => {
 };
 
 </script>
+
 
 <style scoped>
 

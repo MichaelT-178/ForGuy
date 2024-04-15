@@ -1,5 +1,20 @@
 {
-    "description": "These are certifications that I think would be useful to get for various reasons. They would help to build your resume and teach you about important and useful skills in \"real-world\" software engineering. While I've never attained any of these certifications myself, I still think they could be very useful and teach you good information.",
+    "Text": [
+        {
+            "page": "Useful Certifications",
+            "desc1": "These are certifications that I think would be useful to get for various reasons. They would help to build your resume and teach you about important and useful skills in \"real-world\" software engineering. While I've never attained any of these certifications myself, I still think they could be very useful and teach you good information.",
+            "header2": "Cloud Certifications",
+            "desc2": "Cloud computing is a very popular, widely-used tool in software engineering these days. I think these certifications would greatly help you in basically any SWE job you get.",
+            "header3": "Certifications for Essential Skills",
+            "desc3": "These are certifications for very commonly used skills in software engineering jobs. I've been asked about my knowledge on these skills in basically every SWE interview I've done so far.",
+            "header4": "Machine Learning Certifications",
+            "desc4": "Artificial Intelligence and Machine Learning are all the rage these days so I thought I'd add a section on it. I also feel like UNCW's AI concentration isn't the best way to learn real-world application of these skills and that a certification might be easier and more useful to get.",
+            "header5": "Academic Certifications and Degrees",
+            "desc5": "These are certifications and degrees from Universities that you might find helpful. I think having some form of education from another University can make up for the lack of \"prestige\" UNCW has.",
+            "header6": "General Tips",
+            "desc6": "These are general tips I have a for attaining certifications to make the most out of the experience and get the most value out of the certification itself. These tips might also make the process easier."
+        }
+    ],
     "Cloud Certifications": [
         {
             "Name": "Amazon Web Services",

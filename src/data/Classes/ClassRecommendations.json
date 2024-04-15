@@ -1,4 +1,14 @@
 {
+    "Text": [
+        {
+            "page": "Class Recommendations",
+            "desc1": "These are classes and professors I really enjoyed taking or have heard good things about.",
+            "header2": "Class Recommendations",
+            "desc2": "These are classes I would recommend taking for various reasons.",
+            "header3": "Professor Recommendations",
+            "desc3": "These are Professors I would recommend taking whenever possible."
+        }
+    ],
     "Classes": [
         {
             "Name": "HST 101: Western Civilization I",

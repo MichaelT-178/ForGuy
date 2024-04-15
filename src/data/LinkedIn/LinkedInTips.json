@@ -1,6 +1,13 @@
 {
+    "Text": [
+        {
+            "page": "LinkedIn Tips",
+            "desc": "These are tips I have for how to use LinkedIn effectively and have a good experience."
+        }
+    ],
     "LinkedInTips": [
         {
+            "Tip": "Tip 1",
             "Name": "Setup Job Alerts",
             "Explanation": "Job alerts are used to notify you about new job openings. ",
             "Instructions": [
@@ -14,6 +21,7 @@
             ]
         },
         {
+            "Tip": "Tip 2",
             "Name": "Set Viewing Options",
             "Explanation": "This will determine what people see when you view their profile. I'd recommend private mode.",
             "Instructions": [
@@ -23,10 +31,12 @@
             ]
         },
         {
+            "Tip": "Tip 3",
             "Name": "Setup Your Profile",
             "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this (page)[/LinkedIn/SetUpProfile] for details."
         },
         {
+            "Tip": "Tip 4",
             "Name": "Setup Notification Settings",
             "Explanation": "",
             "Instructions": [
@@ -35,6 +45,7 @@
             ]
         },
         {
+            "Tip": "Tip 5",
             "Name": "Connect With People",
             "Explanation": "",
             "Instructions": [
@@ -44,14 +55,17 @@
             ]
         },
         {
+            "Tip": "Tip 6",
             "Name": "Try LinkedIn Premium for Free",
             "Explanation": "LinkedIn premium isn't worth the money in my opinion. However, LinkedIn does give you one month free, so I'd definitely recommend trying it out and coming to your own conclusions."
         },
         {
+            "Tip": "Tip 7",
             "Name": "Try to Get 500+ Connections on LinkedIn",
             "Explanation": "Doing this will help boost you in the algorithm, look good to recruiters, and help expand your network."
         },
         {
+            "Tip": "Tip 8",
             "Name": "Use the \"People\" Tab",
             "Explanation": "If you go to a companies page, and go to the “People” tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
             "Instructions": [

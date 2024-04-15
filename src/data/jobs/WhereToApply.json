@@ -1,6 +1,12 @@
 {
-    "Page": "Where To Apply",
-    "Description": "This is mostly just a giant compilation of companies where I saw UNCW students/alumni working.",
+    "text": [
+        {
+            "page": "Where To Apply",
+            "toggleQuestion": "Why did I choose these companies?",
+            "toggleDescription": "This is mostly just a giant compilation of companies where I saw UNCW students/alumni working.",
+            "searchText": "Search Companies By Location..."
+        }
+    ],
     "Companies": [
         {
             "Name": "USAA",

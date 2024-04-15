@@ -908,6 +908,10 @@
         },
         {
             "amotions": "Git Deletion Commands"
+        },
+        {
+            "scrollToTop": "scrollToTop",
+            "scrollToLinks": "Scroll back to links(scrollLinksRef)"
         }
     ]
 }

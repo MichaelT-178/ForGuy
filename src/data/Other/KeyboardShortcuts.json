@@ -1,6 +1,10 @@
 {
-    "Title": "Keyboard Shortcuts",
-    "Description": "These are keyboard shortcuts for MacOS. If you aren't currently using linux you probably will in a future job. Also these can easily be converted to windows shortcuts using ChatGPT.",
+    "Text": [
+        {
+            "Title": "Keyboard Shortcuts",
+            "Description": "These are keyboard shortcuts for MacOS. If you aren't currently using linux you probably will in a future job. Also these can easily be converted to windows shortcuts using ChatGPT."
+        }
+    ],
     "Shortcuts": [
         {
             "id": 1,
