@@ -1,8 +1,8 @@
 <template>
-    <h1 class="job-header">LinkedIn Tips</h1>
-    <p class="job-description">These are tips I have for how to use LinkedIn effectively and have a good experience.</p>
-    <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
-        <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
+    <h1 class="job-header">{{ text.page }}</h1>
+    <p class="job-description">{{ text.desc }}</p>
+    <div v-for="tip in tips" :key="tip.Name" class="tip-section">
+        <p class="tip-text">{{ tip.Tip }}: {{ tip.Name }}</p>
         <AccordionMenu :item="tip" :isOpen="allOpen"/>
         <p style="margin-bottom: 35px;"></p>
     </div>
@@ -16,10 +16,12 @@ import AccordionMenu from "../../components/AccordionMenu.vue";
 
 import AllData from "../../data/LinkedIn/LinkedInTips.json";
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const tips = jsonData.value["LinkedInTips"];
 const allOpen = ref(false);
 
 </script>
+
 
 <style scoped>
 

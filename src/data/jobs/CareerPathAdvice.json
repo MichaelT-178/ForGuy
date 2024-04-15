@@ -1,4 +1,10 @@
 {
+    "Text": [
+        {
+            "page": "Career Path Advice",
+            "desc": "This is a possible career path you could consider taking."
+        }
+    ],
     "CareerPathAdvice": [
         {
             "id": 1,

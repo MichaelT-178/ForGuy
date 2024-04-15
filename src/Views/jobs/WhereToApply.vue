@@ -1,11 +1,11 @@
 <template>
     <main class="where-to-apply-page">
         <div class="top-section">
-            <h1>Where To Apply</h1>
-            <span class="expand-text" @click="toggleExplanation">Why did I choose these companies?</span>
-            <p class="companies-found" v-if="explainOpen">{{ pageDescription }}</p>
+            <h1>{{ text.page }}</h1>
+            <span class="expand-text" @click="toggleExplanation">{{ text.toggleQuestion }}</span>
+            <p class="companies-found" v-if="explainOpen">{{ text.toggleDescription }}</p>
             <div class="search-expand-wrapper">
-                <input type="text" v-model="searchQuery" placeholder="Search Companies By Location..." class="search-bar" />
+                <input type="text" v-model="searchQuery" :placeholder="text.searchText" class="search-bar" />
                 <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
             </div>
             <p class="companies-found" v-if="searchQuery.length != 0">Found {{ filteredCompanies.length }} companies in "{{ searchQuery }}"</p>
@@ -18,13 +18,14 @@
     </main>
 </template>
 
+
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import AllData from "../../data/jobs/WhereToApply.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
-const pageDescription = jsonData.value["Description"];
+const text = jsonData.value["text"][0];
 const searchQuery = ref('');
 const allOpen = ref(false);
 const explainOpen = ref(false);
@@ -59,6 +60,7 @@ onUnmounted(() => {
 });
 
 </script>
+
 
 <style scoped>
 

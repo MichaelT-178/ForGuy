@@ -1,6 +1,6 @@
 <template>
-    <h1 class="job-header">How to Get a Job</h1>
-    <p class="job-description">These are tips I have for getting a software engineering job.</p>
+    <h1 class="job-header">{{ text.page }}</h1>
+    <p class="job-description">{{ text.desc }}</p>
     <div v-for="(tip, index) in tips" :key="tip.Name" class="tip-section">
         <p class="tip-text">Tip {{ index + 1 }}: {{ tip.Name }}</p>
         <AccordionMenu :item="tip" :isOpen="allOpen"/>
@@ -9,13 +9,13 @@
     <p style="margin-bottom: 60px;"></p>
 </template>
 
-
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/jobs/HowToGetAJob.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const tips = jsonData.value["Tips"];
 const allOpen = ref(false);
 
