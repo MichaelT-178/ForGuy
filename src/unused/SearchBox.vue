@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref, computed, watchEffect } from 'vue';
-import SearchData from '../data/SearchData.json';
+import SearchPages from '../data/SearchPages.json';
 
 const props = defineProps({
   isOpen: Boolean
@@ -46,7 +46,7 @@ watchEffect(() => {
   showBox.value = props.isOpen;
 });
 
-const jsonData = ref(SearchData);
+const jsonData = ref(SearchPages);
 const searchMenu = jsonData.value;
 
 const filteredSearchMenu = computed(() => {
