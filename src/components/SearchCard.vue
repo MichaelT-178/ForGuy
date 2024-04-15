@@ -3,10 +3,9 @@
 
     <div class="search-card">
 
-        
         <h2 class="title"><span>Search Card</span></h2>
 
-
+        
     </div>
 
     </router-link>
