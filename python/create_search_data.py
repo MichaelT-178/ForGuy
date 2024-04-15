@@ -59,6 +59,58 @@ def make_json_object(key, value):
     """
     return {key: value}
 
+def modify_list_with_code_separation(og_list, key_to_separate):
+    """
+    Takes a list with JSON objects that have an attribute which is 
+    an object. The JSON objects that have an attribute will be split 
+    into the two different list elements. The original list element 
+    without the attribute thats and object, and an object.
+
+    Example:
+    Input
+        {
+            "id": 2,
+            "instruction": "To get started, download git. I'd recommend installing git using Homebrew. Install the Homebrew package manager using the following two commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/\n  install/HEAD/install.sh)\"",
+                "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+            }
+        },
+
+    Output:
+       {
+          "id": 2,
+          "instruction": "To get started, download git. I'd recommend installing git using Homebrew. Install the Homebrew package manager using the following two commands."
+       }
+
+    """
+
+    was_found = False 
+
+    for item in og_list:
+        if key_to_separate in item:
+            was_found = True
+    
+    if not was_found:
+        return og_list
+    
+    modified_list = []
+
+    for item in og_list:
+
+        # Create a new dictionary from the original. If an object contains key_to_remove exclude it.
+        item_copy = {key: value for key, value in item.items() if key != key_to_separate}
+        modified_list.append(item_copy)
+        
+        # If key_to_remove attribute 
+        if key_to_separate in item:
+            modified_list.append(item[key_to_separate])
+
+    return modified_list
+
 
 # Classes
 def get_classestoavoid():
@@ -156,7 +208,8 @@ def get_classesivetaken():
 
         Title = "Classes I've Taken"
         Link = "/Classes/ClassesIveTaken"
-        Results = text + freshman_first + freshman_second + sophomore_first + sophomore_second + junior_first + junior_second + senior + ap_classes
+        Results = (text + freshman_first + freshman_second + sophomore_first + 
+                   sophomore_second + junior_first + junior_second + senior + ap_classes)
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -239,9 +292,12 @@ def get_visualstudiocode():
     with open("../src/data/CompSci/VisualStudioCode.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        links = content["Links"]
+
         Title = "Visual Studio Code"
         Link = "/compsci/VisualStudioCode"
-        Results = None
+        Results = text + links
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -249,19 +305,30 @@ def get_settings():
     with open("../src/data/CompSci/settings.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        settings = content["settings"]
+
         Title = "VSCode Settings"
         Link = "/compsci/VSCodeSettings"
-        Results = None
+        Results = text + settings
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_uiux_tips():
     with open("../src/data/CompSci/UIUX_Tips.json", "r") as file:
         content = json.load(file)
+        
+        text = content["Text"]
+        tips = content["UIDesignTips"]
+        ibmTips = content["IBMDesignTips"]
+
+        ibmTips = [transform_json(tip) for tip in ibmTips]
+
+        other = [transform_json({"Other": content["Other"]})]
 
         Title = "UI/UX Design Tips"
         Link = "/compsci/UIDesignTips"
-        Results = None
+        Results = text + tips + ibmTips + other
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -269,9 +336,14 @@ def get_compscitips():
     with open("../src/data/CompSci/CompSciTips.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        tips = content["Tips"]
+        componentData = content["ComponentData"]
+        codeLinks = content["CodeLinks"]
+
         Title = "Comp Sci Tips"
         Link = "/compsci/CompSciTips"
-        Results = None
+        Results = text + tips + componentData + codeLinks
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -279,9 +351,12 @@ def get_vscodeextensions():
     with open("../src/data/CompSci/VSCodeExtensions.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        extensions = content["Extensions"]
+
         Title = "VSCode Extensions"
         Link = "/compsci/VSCodeExtensions"
-        Results = None
+        Results = text + extensions
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -289,21 +364,70 @@ def get_github():
     with open("../src/data/CompSci/GitHub.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        scrollLinks = content["ScrollLinks"]
+
+        setupGithub = content["SetupGitHub"]
+        setupGithub = modify_list_with_code_separation(setupGithub, "Code")
+
+        createGitHubRepo = content["CreateGitHubRepo"]
+        createGitHubRepo = modify_list_with_code_separation(createGitHubRepo, "Code")
+
+        setupSecondGitHub = content["SetupSecondGitHub"]
+        setupSecondGitHub = modify_list_with_code_separation(setupSecondGitHub, "Code")
+
+        createSecondGitHubRepo = content["CreateSecondGitHubRepo"]
+        createSecondGitHubRepo = modify_list_with_code_separation(createSecondGitHubRepo, "Code")
+
+        amotionsWorkflowOne = content["AmotionsWorkflowOne"]
+        amotionsWorkflowTwo = content["AmotionsWorkflowTwo"]
+
+        amotionsPts = content["AmotionsPts"]
+        amotionsPtsTwo = content["AmotionsPtsTwo"]
+        amotionsWorkflowThree = content["AmotionsWorkflowThree"]
+
+        threeCommands = content["ThreeCommands"]
+
+        generalTips = content["GeneralTips"]
+        generalTips = modify_list_with_code_separation(generalTips, "Code")
+
+        gitCommands = content["GitCommands"]
+        
+        createFork = content["CreateFork"]
+        createFork = modify_list_with_code_separation(createFork, "Code")
+
+        resetBranch = content["ResetBranch"]
+        resetBranch = modify_list_with_code_separation(resetBranch, "Code")
+
+        existingFolderPts = content["ExistingFolderPts"]
+        existingFolder = content["ExistingFolder"]
+
         Title = "GitHub"
         Link = "/compsci/GitHub"
-        Results = None
+        Results = (text + scrollLinks + setupGithub
+                  + createGitHubRepo + setupSecondGitHub
+                  + createSecondGitHubRepo + amotionsWorkflowOne
+                  + amotionsWorkflowTwo + amotionsPts + amotionsPtsTwo 
+                  + amotionsWorkflowThree + threeCommands + generalTips
+                  + gitCommands + createFork + resetBranch
+	              + existingFolderPts + existingFolder)
 
         return { "Title": Title, "Link": Link, "Results": Results }
-
 
 # Jobs
 def get_offersreceived():
     with open("../src/data/Jobs/OffersReceived.json", "r") as file:
         content = json.load(file)
 
+
+        text = content["text"]
+        internships = content["internships"]
+        fullTime = content["fullTime"]
+        interviews = content["interviews"]
+
         Title = "Offers I've Received"
         Link = "/Jobs/OffersReceived"
-        Results = None
+        Results = text + internships + fullTime + interviews
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -311,19 +435,14 @@ def get_howtogetajob():
     with open("../src/data/Jobs/HowToGetAJob.json", "r") as file:
         content = json.load(file)
 
-        Title = ""
-        Link = ""
-        Results = None
+        text = content["Text"]
 
-        return { "Title": Title, "Link": Link, "Results": Results }
-
-def get_howtogetajob():
-    with open("../src/data/Jobs/HowToGetAJob.json", "r") as file:
-        content = json.load(file)
+        tips = content["Tips"]
+        tips = [transform_json(tip) for tip in tips]
 
         Title = "How To Get a Job"
         Link = "/Jobs/HowToGetAJob"
-        Results = None
+        Results = text + tips
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -331,9 +450,12 @@ def get_interviewtips():
     with open("../src/data/Jobs/InterviewTips.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        tips = content["Tips"]
+
         Title = "Interview Tips"
         Link = "/jobs/InterviewTips"
-        Results = None
+        Results = text + tips
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -341,9 +463,12 @@ def get_wheretoapply():
     with open("../src/data/Jobs/WhereToApply.json", "r") as file:
         content = json.load(file)
 
+        text = content["text"]
+        companies = content["Companies"]
+
         Title = "Where To Apply"
         Link = "/Jobs/WhereToApply"
-        Results = None
+        Results = text + companies
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -351,9 +476,12 @@ def get_careerpathadvice():
     with open("../src/data/Jobs/CareerPathAdvice.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        advice = content["CareerPathAdvice"]
+
         Title = "Career Path Advice"
         Link = "/Jobs/CareerPathAdvice"
-        Results = None
+        Results = text + advice
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -361,12 +489,13 @@ def get_resumetemplatetext():
     with open("../src/data/Jobs/ResumeTemplateText.json", "r") as file:
         content = json.load(file)
 
+        information = content["information"]
+
         Title = "Resume Template"
         Link = "/Jobs/ResumeTemplate"
-        Results = None
+        Results = information
 
         return { "Title": Title, "Link": Link, "Results": Results }
-
 
 # LinkedIn
 def get_whatislinkedin():
@@ -594,4 +723,4 @@ all_data = [
 
 
 
-print(format_json(vscodeshortcuts))
+print(format_json(uiux_tips))
