@@ -679,10 +679,10 @@ def get_contact_me():
         content = json.load(file)
 
         contact = content["Contact"]
-        
+
         Title = "Contact Me"
         Link = "/ContactMe"
-        Results = None
+        Results = contact
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
