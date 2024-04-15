@@ -501,10 +501,12 @@ def get_resumetemplatetext():
 def get_whatislinkedin():
     with open("../src/data/LinkedIn/WhatIsLinkedIn.json", "r") as file:
         content = json.load(file)
+        
+        info = content["Info"]
 
         Title = "What Is LinkedIn?"
         Link = "/LinkedIn/WhatIsLinkedIn"
-        Results = None
+        Results = info
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -512,9 +514,14 @@ def get_linkedintips():
     with open("../src/data/LinkedIn/LinkedInTips.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        tips = content["LinkedInTips"]
+
+        tips = [transform_json(tip) for tip in tips]
+
         Title = "LinkedIn Tips"
         Link = "/LinkedIn/LinkedinTips"
-        Results = None
+        Results = text + tips
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -522,9 +529,12 @@ def get_setupprofile():
     with open("../src/data/LinkedIn/SetupProfile.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        instructions = content["Instructions"]
+
         Title = "Setup a Profile"
         Link = "/LinkedIn/SetupProfile"
-        Results = None
+        Results = text + instructions
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -532,9 +542,12 @@ def get_setupjobalerts():
     with open("../src/data/LinkedIn/SetupJobAlerts.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        instructions = content["Instructions"]
+
         Title = "Setup Job Alerts"
         Link = "/LinkedIn/SetupJobAlerts"
-        Results = None
+        Results = text + instructions
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -542,9 +555,12 @@ def get_contacts():
     with open("../src/data/LinkedIn/Contacts.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        contacts = content["Contacts"]
+
         Title = "Contacts"
         Link = "/LinkedIn/Contacts"
-        Results = None
+        Results = text + contacts
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -554,19 +570,27 @@ def get_keyboardshortcuts():
     with open("../src/data/Other/KeyboardShortcuts.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        shortcuts = content["Shortcuts"]
+
         Title = "Keyboard Shortcuts"
         Link = "/Other/KeyboardShortcuts"
-        Results = None
+        Results = text + shortcuts
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_appstodownload():
     with open("../src/data/Other/AppsToDownload.json", "r") as file:
         content = json.load(file)
+        
+        text = content["Text"]
+        apps = content["AppsToDownload"]
+        kinda = content["Kinda Obviously"]
+
 
         Title = "Apps To Download"
         Link = "/Other/AppsToDownload"
-        Results = None
+        Results = text + apps + kinda
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -574,9 +598,12 @@ def get_uncwpics():
     with open("../src/data/Other/UncwPics.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        pics = content["Pics"]
+
         Title = "UNCW Pictures"
         Link = "/Other/UncwPics"
-        Results = None
+        Results = text + pics
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -584,9 +611,17 @@ def get_terminalcommands():
     with open("../src/data/Other/TerminalCommands.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        creation = content["Creation"]
+        navigation = content["Navigation"]
+        display = content["Display"]
+        delete = content["Delete"]
+        programming = content["Programming"]
+        practice = content["Practice"]
+
         Title = "Terminal Commands"
         Link = "/Other/TerminalCommands"
-        Results = None
+        Results = text + creation + navigation + display + delete + programming + practice
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -604,9 +639,12 @@ def get_memes():
     with open("../src/data/Other/Memes.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        memes = content["Memes"]
+
         Title = "Memes"
         Link = "/Other/Memes"
-        Results = None
+        Results = text + memes
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -614,9 +652,13 @@ def get_csstuffilike():
     with open("../src/data/Other/CsStuffILike.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        csStuff = content["CsStuff"]
+        code = content["Code"]
+
         Title = "CS Stuff I Like"
         Link = "/Other/CompSciStuff"
-        Results = None
+        Results = text + csStuff + code
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
@@ -624,9 +666,11 @@ def get_home():
     with open("../src/data/Home.json", "r") as file:
         content = json.load(file)
 
+        home = content["Home"]
+
         Title = "Home"
         Link = "/"
-        Results = None
+        Results = home
 
         return { "Title": Title, "Link": Link, "Results": Results }
     
@@ -634,6 +678,8 @@ def get_contact_me():
     with open("../src/data/Contact.json", "r") as file:
         content = json.load(file)
 
+        contact = content["Contact"]
+        
         Title = "Contact Me"
         Link = "/ContactMe"
         Results = None
