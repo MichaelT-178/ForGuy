@@ -1,10 +1,10 @@
 <template>
-    <h1>Offers I've Received</h1>
-    <p class="description">{{ description }}</p>
+    <h1>{{ text.page }}</h1>
+    <p class="description">{{ text.desc1 }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="job-section">
-        <h2>Internship Offers</h2>
-        <p>These are the Internship Offers I have received.</p>
+        <h2>{{ text.header2 }}</h2>
+        <p>{{ text.desc2 }}</p>
         <div class="job-menu">
             <div v-for="internship in internships" :key="internship.Name" class="job-item">
                 <AccordionMenu :item="internship" :isOpen="allOpen" />
@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>Full-Time Offers</h2>
-        <p>These are the full-time Offers I have received.</p>
+        <h2>{{ text.header3 }}</h2>
+        <p>{{ text.desc3 }}</p>
         <div class="job-menu">
             <div v-for="job in fullTimeJobs" :key="job.Name" class="job-item">
                 <AccordionMenu :item="job" :isOpen="allOpen" />
@@ -21,8 +21,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>Companies Where I interviewed</h2>
-        <p>These are the companies where I got an interview, but not an offer for various reasons.</p>
+        <h2>{{ text.header4 }}</h2>
+        <p>{{ text.desc4 }}</p>
         <div class="job-menu">
             <div v-for="interview in interviews" :key="interview.Name" class="job-item">
                 <AccordionMenu :item="interview" :isOpen="allOpen" />
@@ -38,7 +38,7 @@ import AllData from "../../data/jobs/OffersReceived.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
-const description = jsonData.value["description"];
+const text = jsonData.value["text"][0];
 const internships = jsonData.value["internships"];
 const fullTimeJobs = jsonData.value["fullTime"];
 const interviews = jsonData.value["interviews"];

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Setup Job Alerts</h1>
-        <p class="description">These are tips on how to setup a profile on LinkedIn. It's pretty straight forward.</p>
+        <h1 class="tip-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
                 <p class="tip-text" :data-index="instruction.id"></p>
@@ -18,6 +18,7 @@ import AllData from "../../data/LinkedIn/SetupProfile.json";
 import { createHyperLink, createRouterLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const instructions = jsonData.value["Instructions"];
 
 const formatLink = (text) => {

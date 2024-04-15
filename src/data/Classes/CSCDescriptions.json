@@ -1,5 +1,12 @@
 {
-    "Description": "This page contains information only about the computer science courses I took at UNCW. Not non-cs courses.",
+    "Text": [
+        {
+            "page": "CSC Descriptions",
+            "desc": "What information does this page contain?",
+            "pageDescription": "This page contains information only about the computer science courses I took at UNCW. Not non-cs courses.",
+            "searchText": "Search Courses By Name or Description..."
+        }
+    ],
     "Courses": [
         {
             "Name": "CSC 131: Introduction to Computer Science",

@@ -1,5 +1,12 @@
 {
-    "Description": "I've recently learned that you're a Business Administration major, not a Computer Science major. I think a computer science minor could still be very helpful and enhance your degree. Basically all modern businesses use and rely on Software, so it'd be useful to have a basic understanding of it. It can also help automate excel tasks. Learn more about the minor [here](https://uncw.edu/academics/majors-programs/cse/computer-science-minor/?gad_source=1&gclid=CjwKCAjwzN-vBhAkEiwAYiO7oBoInQTdiPLGK78yFVc886jh_agnyvdVbJTZ-M2EyOmiGyhkvMwxaRoCP-MQAvD_BwE). For the minor you need to take CSC 131, CSC 133, CSC 231, CSC 331, and two 3-credit hour CSC electives. These are descriptions of those classes and two possible electives.",
+    "Text": [
+        {
+            "Minor": "Computer Science Minor",
+            "Description": "I've recently learned that you're a Business Administration major, not a Computer Science major. I think a computer science minor could still be very helpful and enhance your degree. Basically all modern businesses use and rely on Software, so it'd be useful to have a basic understanding of it. It can also help automate excel tasks. Learn more about the minor [here](https://uncw.edu/academics/majors-programs/cse/computer-science-minor/?gad_source=1&gclid=CjwKCAjwzN-vBhAkEiwAYiO7oBoInQTdiPLGK78yFVc886jh_agnyvdVbJTZ-M2EyOmiGyhkvMwxaRoCP-MQAvD_BwE). For the minor you need to take CSC 131, CSC 133, CSC 231, CSC 331, and two 3-credit hour CSC electives. These are descriptions of those classes and two possible electives.",
+            "Major": "Computer Science Major",
+            "DescriptionTwo": "It's probably not too late to become a computer science major with a business concentration and still graduate in 4 years. I've listed coursework below. To learn more about the degree run a \"What-If\" analysis in [Seanet](https://degreeworks-respdashboard.uncw.edu/RespDashboard/worksheets/WEB31). If you're interested and have questions feel free to reach out."
+        }
+    ],
     "Classes": [
         {
             "Name": "CSC 131: Introduction to Computer Science",
@@ -113,7 +120,6 @@
             ]
         }
     ],
-    "DescriptionTwo": "It's probably not too late to become a computer science major with a business concentration and still graduate in 4 years. I've listed coursework below. To learn more about the degree run a \"What-If\" analysis in [Seanet](https://degreeworks-respdashboard.uncw.edu/RespDashboard/worksheets/WEB31). If you're interested and have questions feel free to reach out.",
     "SemesterClasses": [
         {
             "Name": "Junior Year - 1st Semester",
