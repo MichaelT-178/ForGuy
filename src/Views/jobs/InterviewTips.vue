@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Interview Tips</h1>
-        <p class="description">These are tips I have for preparing for and participating in an interview. These are mostly common software engineering topics I was asked about in interviews.</p>
+        <h1 class="tip-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"></p>
@@ -12,14 +12,18 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/jobs/InterviewTips.json";
 import { createRouterLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const tips = jsonData.value["Tips"];
+
 </script>
+
 
 <style scoped>
 

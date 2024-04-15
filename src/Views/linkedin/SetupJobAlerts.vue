@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">Setup Job Alerts</h1>
-        <p class="description">This is how to Setup Job Alerts on LinkedIn. It's pretty simple.</p>
+        <h1 class="tip-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
                 <p class="tip-text" :data-index="instruction.id"></p>
@@ -12,14 +12,18 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/LinkedIn/SetupJobAlerts.json";
 import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const instructions = jsonData.value["Instructions"];
+ 
 </script>
+
 
 <style scoped>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="tip-header">UI/UX Design Tips</h1>
-        <p class="description">These are UI/UX Design Tips.</p>
+        <h1 class="tip-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"></p>
@@ -19,6 +19,7 @@ import AllData from "../../data/CompSci/UIUX_Tips.json";
 import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"];
 const tips = jsonData.value["UIDesignTips"];
 
 const formatTip = (tip) => {

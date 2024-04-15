@@ -1,10 +1,10 @@
 <template>
-    <h1>VSCode Extensions</h1>
-    <p class="description">When you click on a link it will take you to a website. To download the extension just click the green "install" button and it will open in VSCode.</p>
+    <h1>{{ text.page }}</h1>
+    <p class="description">{{ text.desc }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="extension-section">
-        <h2>VSCode Extensions</h2>
-        <p>These are VSCode Extensions that I think would be worth downloading. <a :href="emailStr" class="email-btn">Email yourself all these download links.</a></p>
+        <h2>{{ text.header2 }}</h2>
+        <p>{{ text.desc2 }}<a :href="emailStr" class="email-btn">{{ text.email }}</a></p>
         <div class="extension-menu">
             <div v-for="extension in extensions" :key="extension.Name" class="extension-item">
                 <AccordionMenu :item="extension" :isOpen="allOpen" />
@@ -22,6 +22,7 @@ import AccordionMenu from "../../components/AccordionMenu.vue";
 import { bodyContent } from "../../components/ExtensionEmail.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const extensions = jsonData.value["Extensions"];
 const allOpen = ref(false);
 

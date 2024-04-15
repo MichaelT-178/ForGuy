@@ -1,15 +1,15 @@
 <template>
     <div class="uncw-pics-page">
-        <h1>UNCW Pictures</h1>
-        <p>Beautiful Pictures I took in Wilmington</p>
+        <h1>{{ text.page }}</h1>
+        <p>{{ text.desc }}</p>
         
         <div class="uncw-pics-container" v-for="(pic, index) in uncwPics" :key="index">
             <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
             <img :src="pic.image" alt="Uncw Picture">
         </div>
         
-        <h1>North Carolina Pics</h1>
-        <p>Other Pictures taken in North Carolina</p>
+        <h1>{{ text.header2 }}</h1>
+        <p>{{ text.desc2 }}</p>
         
         <div class="uncw-pics-container" v-for="(pic, index) in NorthCarolinaPics" :key="index">
             <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
@@ -19,7 +19,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { uncwPics, NorthCarolinaPics } from "../../components/UncwPics.vue";
+import AllData from "../../data/Other/UncwPics.json";
+
+const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 
 </script>
 

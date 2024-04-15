@@ -1,7 +1,7 @@
 <template>
     <div class="meme-page">
-        <h1>Memes</h1>
-        <p>Computer Science Memes</p>
+        <h1>{{ text.page }}</h1>
+        <p>{{ text.desc }}</p>
         
         <div class="meme-container" v-for="(meme, index) in memeObjects" :key="index">
             <div class="meme-text">{{ index + 1 }}. {{ meme.text }}</div>
@@ -11,10 +11,17 @@
     </div>
 </template>
 
+
 <script setup>
+import { ref } from 'vue';
 import { memeObjects } from "../../components/Memes.vue"
+import AllData from "../../data/Other/Memes.json";
+
+const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 
 </script>
+
 
 <style scoped>
 .meme-page {
