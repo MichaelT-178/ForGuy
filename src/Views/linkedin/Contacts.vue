@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <h1 class="contact-header">Contacts</h1>
-        <p class="description">These are useful job contacts from various companies.</p>
+        <h1 class="contact-header">{{ text.page }}</h1>
+        <p class="description">{{ text.desc }}</p>
         <div class="contacts-container">
             <div v-for="contact in contacts" :key="contact.Company" class="contact-section">
                 <ContactCard :contact="contact"></ContactCard>
@@ -18,6 +18,7 @@ import AllData from "../../data/LinkedIn/Contacts.json";
 import ContactCard from "../../components/ContactCard.vue"
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const contacts = jsonData.value["Contacts"];
 
 </script>

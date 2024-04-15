@@ -1,7 +1,7 @@
 <template>
     <ShortcutTable 
-        :title="title" 
-        :description="description" 
+        :title="text.Title" 
+        :description="text.Description" 
         :shortcuts="shortcuts">
     </ShortcutTable>
     <p style="margin-bottom: 100px;"></p>
@@ -14,8 +14,7 @@ import AllData from '../../data/Other/KeyboardShortcuts.json';
 import ShortcutTable from '../../components/ShortcutTable.vue';
 
 const jsonData = ref(AllData);
-const title = jsonData.value["Title"];
-const description = jsonData.value["Description"];
+const text = jsonData.value["Text"][0];
 const shortcuts = jsonData.value["Shortcuts"];
 
 </script>

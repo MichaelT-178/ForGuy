@@ -1,4 +1,13 @@
 {
+    "Text": [
+        {
+            "page": "VSCode Extensions",
+            "desc": "When you click on a link it will take you to a website. To download the extension just click the green \"install\" button and it will open in VSCode.",
+            "header2": "VSCode Extensions",
+            "desc2": "These are VSCode Extensions that I think would be worth downloading. ",
+            "email": "Email yourself all these download links."
+        }
+    ],
     "Extensions": [
         {
             "Name": "Live Server",

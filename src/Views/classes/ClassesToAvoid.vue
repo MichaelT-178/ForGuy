@@ -1,10 +1,10 @@
 <template>
-    <h1>Classes To Avoid</h1>
-    <p class="description">These are classes and professors I would recommend avoiding if possible. I'm not trying to be mean with this page, just help you avoid difficult situations and classes.</p>
+    <h1>{{ text.page }}</h1>
+    <p class="description">{{ text.desc }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="item-section">
-        <h2>Classes To Avoid</h2>
-        <p>These are classes I would not recommend taking for various reasons.</p>
+        <h2>{{ text.header2 }}</h2>
+        <p>{{ text.desc2 }}</p>
         <div class="item-menu">
             <div v-for="course in classes" :key="course.Name" class="item-item">
                 <AccordionMenu :item="course" :isOpen="allOpen" />
@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="item-section">
-        <h2>Professor To Avoid</h2>
-        <p>These are Professors I would not recommend taking if possible.</p>
+        <h2>{{ text.header3 }}</h2>
+        <p>{{ text.desc3 }}</p>
         <div class="item-menu">
             <div v-for="professor in professors" :key="professor.Name" class="item-item">
                 <AccordionMenu :item="professor" :isOpen="allOpen" />
@@ -29,6 +29,7 @@ import AllData from "../../data/Classes/ClassesToAvoid.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const classes = jsonData.value["Classes"];
 const professors = jsonData.value["Professors"];
 const allOpen = ref(false);

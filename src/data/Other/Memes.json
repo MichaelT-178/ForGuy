@@ -1,131 +1,206 @@
 {
-    "Description": "",
-    "MemeDescriptions": [
+    "Text": [
         {
-            "Description": "You can download it though"
+            "page": "Memes",
+            "desc": "Computer Science Memes"
+        }
+    ],
+    "Memes": [
+        { 
+            "text": "You can download it though",
+            "transcription": "I made a Shaky Pale Marine IOS app. Well that just sounds like the mobile website with extra steps."
+        },
+        { 
+            "text": "Eureka",
+            "transcription": "I've finally found it after 15 years. The scroll of truth! An IOS app for SPM isn't useful. Nyehhh."
+        },
+        { 
+            "text": "Like half my professors in college",
+            "transcription": "Teacher: copy these notes carefully they will be on the test Literally 5 seconds later:"
+        },
+        { 
+            "text": "How would I manage?",
+            "transcription": "U get $200 Million but u can't use Google Books for 3 Days Would u do it?? google.com Google news maps books perspectives fligh sign in"
+        },
+        { 
+            "text": "Extremely true",
+            "transcription": "8 hours writing a personal project in assembly at 1am 1 hour of writing javascript at 2pm for my job that pays me"
+        },
+        { 
+            "text": "CSC 231 professors: *heavy breathing*",
+            "transcription": "The Dutch government was forced to release the source code of their DigiD digital authentication iOS app. It is written in C#. Ahh I see the problem is that there are too many if statements. Here's a solution implementing binary search in O(log n). Jeroen Frijters @JeroenFrijters 1d github.com/MinBZK/woo-bes... tyrannoSaurav @TyrannoSaurav Replying to @JeroenFrijters"
+        },
+        { 
+            "text": "Testing ain't in bro 😭",
+            "transcription": "Write code write tests the tests fail the tests fail write more tests to narrow down the problem Those tests pass The bug was in the test ProgrammerHumor.io"
+        },
+        { 
+            "text": "I'm too American to understand this.",
+            "transcription": "So what's your idea of a perfect date? DD/MM/YYYY I find other formats a bit confusing. Pun hub IG: PunHubOnline"
+        },
+        { 
+            "text": "!anIdealSituation",
+            "transcription": "POV: Me showing up to my final exam (I need a 124% to pass)"
+        },
+        { 
+            "text": "\"FileNoteFoundException\"",
+            "transcription": "Backenders doing frontend menu 1 - Reports 2 - Charts 3 - Exit Select: [_] Frontenders doing backend internal server error 500"
+        },
+        { 
+            "text": "Goated feeling",
+            "transcription": "How it feels to exit you final period on a cloudy Friday before winter break"
+        },
+        { 
+            "text": "They're definitely talking about me.",
+            "transcription": "What's with all these muscled up guys in CS classes I am an accounting major where all the guys are weak with tiny noodles arms and girls have staches. Last week I was walking outside a compsci classroom I saw the class was full of incredibly muscled guys. They were so ripped that even the dumbbells seemed to blush in their presence. These guys had biceps that could make Hercules jealous and abs that looked like they were chiseled by Michelangelo himself. What gives? r/csMajors u/Boring_Inspector9857 • 7h 440 59 share Join"
+        },
+        { 
+            "text": "High CPU usage 😍",
+            "transcription": "I wrote a while(true) loop With break statements right?"
+        }, 
+        { 
+            "text": "Lowkey everything's basically a txt file in programming.",
+            "transcription": "database.sql database.xlsx database.txt"
+        },
+        { 
+            "text": "Command + / goes so hard",
+            "transcription": "comments to describe the program comments to temporarily remove part of code"
+        },
+        { 
+            "text": "I feel like some companies actually do this.",
+            "transcription": "Hey! what's going on? Sick bastard! // brute-force attack protection if isPasswordCorrect && isFirstLoginAttempt { Error(\"Wrong login or password\") } "
+        },
+        { 
+            "text": "Anything to make it work.",
+            "transcription": "I'm a Pull Stack Developer. I just pull things off the internet and put it into my code. 5:13 AM 19 Dec 20 Twitter for Android 647 Retweets 122 Quote Tweets 5,154 Likes"
+        },
+        { 
+            "text": "The sheer...verbosity of it all 😳🤯",
+            "transcription": "Python Hello World Java Public Static void Hello World"
+        },
+        { 
+            "text": "Don't do that, Don't give me hope",
+            "transcription": "When someone suggests Hurricane Fred finna cancel school Don't do that. Don't give me hope."
+        },
+        { 
+            "text": "CSC 351 gang",
+            "transcription": "HTTP status ranges in a nutshell 1xx: hold on 2xx: here you go 3xx: go away 4xx: you fucked up 5xx: I fucked up"
+        },
+        { 
+            "text": "*0.00004 seconds faster",
+            "transcription": "C++ devs when their thousand line code is .4 seconds faster than a 10 line python code I am speed"
+        },
+        { 
+            "text": "Fidelity Investments be like",
+            "transcription": "Unc, Duke, and Ncsu students RTP employers Uncw RTP employers"
+        },
+        { 
+            "text": "Michael: the USAA ping pong TYRANT. (All credit goes to Obed for creating this masterpiece)",
+            "transcription": "Team Art of War Hudson Nam-rata yoga mat Sadia yum! Michael Vaish I hate men!"
+        },
+        { 
+            "text": "At least it works",
+            "transcription": "An ios app shaky pale marine woah. This is useless"
+        },
+        { 
+            "text": "Why can't it feel like that at night 😫",
+            "transcription": "My bed when I have to wake up for class We're hitting comfort levels that shouldn't even be possible"
+        },
+        { 
+            "text": "It's lowkey not that bad.",
+            "transcription": "Some Famous Severs Amazon Google Microsoft Zoom app"
+        },
+        { 
+            "text": "*Dies by suffocation*",
+            "transcription": "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning"
+        },
+        { 
+            "text": "The hardest part about React",
+            "transcription": "That's right, I use React R I can't E Setup A Node Environment C Help T"
+        },
+        { 
+            "text": "This happens at least once whenever I try to create a slideshow.",
+            "transcription": "I'm a PNG. You can download me. And you're transparent, right? e transparent, right?"
+        },
+        { 
+            "text": "CSC 342 gang",
+            "transcription": "She bit me 8 times Liar! It's just 1 byte"
+        },
+        { 
+            "text": "Computer fan noise goes hard.",
+            "transcription": "We are going to freeze to death if we don't do something We only have on option left Run Android Studio"
+        },
+        { 
+            "text": "Applying to jobs be like",
+            "transcription": "Noooooooooooo I don't wanna sign up with facebook sign up with google Name First Name Last Name Pick a username create a password Confirm password Data of birth select month Gender select gender zip code Sign In with Google Sign in with Facebook Sign in with Twitter Sign in with email Sign in with phone Please login to continue Password access create your account Sign up with Email Confirm your email address please click on the link below to confirm your email address Confirm your email Please note: the link will expire in 15 minutes."
+        },
+        { 
+            "text": "This needs to be a real language",
+            "transcription": "As a way to encourage the younger generation to try out programming most of the key words in C# have been permanently renamed. This should increase the amount of younger game developers coming the next few years. default public float rizz; private bool IsSus() try if(rizz > vibe) return true; else return false; catch(Exception e) Debug.LogError(e.Message); throw; gen z highkey period rizz; lowkey fax IsSus() fuck_around vibe_check(rizz ratios vibe) its_giving no_cap; big_yikes its_giving cap; find_out(Tea t) Shoutout.SpillTea(t.Yap); yeet; Fear the phantom (horror game) @Phantom_TheGame"
+        },
+        { 
+            "text": "3 spooky 5 me",
+            "transcription": "surface web deep web dark web page two of google"
+        },
+        { 
+            "text": "This is literally CSC 231",
+            "transcription": "algorithms and data structures professors watching someone loop through a list instead of creating a custom recursive binary heap object to store 7 integers."
+        },
+        { 
+            "text": "Your crush thinks your a 2 (r.i.p).",
+            "transcription": "Your crush knows binary. She thinks you're a 10. She thinks you're a 10."
+        }, 
+        { 
+            "text": "Java is too VERBOSE",
+            "transcription": "When I'm in a Being verbose competition and my opponent is the Java programming language"
+        },
+        { 
+            "text": "So Real",
+            "transcription": "When you come back from a vacation HelloWorld(\"print\")"
+        },
+        { 
+            "text": "CSC 351 Gang",
+            "transcription": "Hi, this is your son's school. We're having some computer trouble. Oh, dear - did he break something? In a way - Did you really name your son Robert'); DROP TABLE Students;--? Oh, yes. Little Bobby Tables, we call him. Well, we've lost this year's student records. I hope you're happy. And I hope you've learned to sanitize your database inputs."
+        },
+        { 
+            "text": "Lenovo's Interview Process ",
+            "transcription": "Send a cv get rejected send a cv interview with Hr interview with developers technical interview get rejected"
+        },
+        { 
+            "text": "They're even now",
+            "transcription": "Me who lied on my resume my new employer who lied on the job description"
+        }, 
+        { 
+            "text": "Computer science student vs Earth",
+            "transcription": "Javascript developer position open Nice! Not the best salary but...think I will apply See how you compare to the other 1,146 applicants."
+        },
+        { 
+            "text": "CSC 302 Flashbacks",
+            "transcription": "Everyone: it's a game for kids. Programmers: "
+        },
+        { 
+            "text": "Light mode users be like",
+            "transcription": "Blind Myself With a Lamp For No Reason!!"
         },
         {
-            "Description": "Eureka"
+            "text": "I fear no man, but that THING...it scares me.",
+            "transcription": "Programmers who use light themed IDE Satan"
         },
         {
-            "Description": "Like half my professors in college"
+            "text": "\"Freethinkers\" when Youtube Algorithm",
+            "transcription": "Dudes be like \"I don't watch TV, I'm not gonna let the mainstream media tell me how to think\". My brother in christ you let recommendation_watchnext.serve() determine your whole personality."
         },
         {
-            "Description": "How would I manage?"
+            "text": "The NSA application process be like",
+            "transcription": "When you applied for the job. When you hear back from the recruiter."
         },
         {
-            "Description": "Extremely true"
+            "text": "It's like VSCode on Steroids",
+            "transcription": "Plain VSCode. VSCode with extensions."
         },
         {
-            "Description": "CSC 231 professors: *heavy breathing*"
-        },
-        {
-            "Description": "Testing ain't in bro 😭"
-        },
-        {
-            "Description": "I'm too American to understand this."
-        },
-        {
-            "Description": "!anIdealSituation"
-        },
-        {
-            "Description": "\"FileNoteFoundException\""
-        },
-        {
-            "Description": "Goated feeling"
-        },
-        {
-            "Description": "They're definitely talking about me."
-        },
-        {
-            "Description": "High CPU usage 😍"
-        },
-        {
-            "Description": "Lowkey everything's basically a txt file in programming."
-        },
-        {
-            "Description": "Command + / goes so hard"
-        },
-        {
-            "Description": "I feel like some companies actually do this."
-        },
-        {
-            "Description": "Anything to make it work."
-        },
-        {
-            "Description": "The sheer...verbosity of it all 😳🤯"
-        },
-        {
-            "Description": "Don't do that, Don't give me hope"
-        },
-        {
-            "Description": "CSC 351 gang"
-        },
-        {
-            "Description": "*0.00004 seconds faster"
-        },
-        {
-            "Description": "Fidelity Investments be like"
-        },
-        {
-            "Description": "Michael: the USAA ping pong TYRANT. (All credit goes to Obed for creating this masterpiece)"
-        },
-        {
-            "Description": "At least it works"
-        },
-        {
-            "Description": "Why can't it feel like that at night 😫"
-        },
-        {
-            "Description": "It's lowkey not that bad."
-        },
-        {
-            "Description": "*Dies by suffocation*"
-        },
-        {
-            "Description": "The hardest part about React"
-        },
-        {
-            "Description": "This happens at least once whenever I try to create a slideshow."
-        },
-        {
-            "Description": "CSC 342 gang"
-        },
-        {
-            "Description": "Computer fan noise goes hard."
-        },
-        {
-            "Description": "Applying to jobs be like"
-        },
-        {
-            "Description": "This needs to be a real language"
-        },
-        {
-            "Description": "3 spooky 5 me"
-        },
-        {
-            "Description": "This is literally CSC 231"
-        },
-        {
-            "Description": "Your crush thinks your a 2 (r.i.p)."
-        },
-        {
-            "Description": "Java is too VERBOSE"
-        },
-        {
-            "Description": "So Real"
-        },
-        {
-            "Description": "CSC 351 Gang"
-        },
-        {
-            "Description": "Lenovo's Interview Process "
-        },
-        {
-            "Description": "They're even now"
-        },
-        {
-            "Description": "Computer science student vs Earth"
+            "text": "He kinda gave us NullPointerException's tho 😍",
+            "transcription": "To the programmer who invented null: Thanks for nothing."
         }
     ]
 }

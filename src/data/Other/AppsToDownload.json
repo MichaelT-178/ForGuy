@@ -1,4 +1,15 @@
 {
+    "Text": [
+        {
+            "page": "Apps To Download",
+            "desc": "These are phone apps that I'd recommend doing. I chose them based on how useful and enjoyable they are to use.",
+            "header2": "Apps To Download",
+            "desc2": "These are apps that I think would be worth downloading. ",
+            "email": "Email yourself all these download links.",
+            "header3": "Apps You've Probably Already Downloaded",
+            "desc3": "These are popular apps that you have probably already downloaded."
+        }
+    ],
     "AppsToDownload": [
         {
             "Name": "Genius Scan",

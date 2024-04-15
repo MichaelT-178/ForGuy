@@ -1,4 +1,15 @@
 {
+    "Text": [
+        {
+            "page": "CS Stuff I like",
+            "desc": "These are various computer science and programming-related things I like.",
+            "header2": "Comp Sci Stuff I like",
+            "desc2": "These are various computer science related things I like.",
+            "header3": "Goated Syntax",
+            "desc3": "These are code snippets that show syntax and functionality I like.",
+            "scrollToTop": "Scroll To Top"
+        }
+    ],
     "CsStuff": [
         {
             "id": 1,

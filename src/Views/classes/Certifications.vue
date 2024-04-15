@@ -1,10 +1,10 @@
 <template>
-    <h1>Useful Certifications</h1>
-    <p class="description">{{ description }}</p>
+    <h1>{{ text.page }}</h1>
+    <p class="description">{{ text.desc1 }}</p>
     <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
     <div class="job-section">
-        <h2>Cloud Certifications</h2>
-        <p>Cloud computing is a very popular, widely-used tool in software engineering these days. I think these certifications would greatly help you in basically any SWE job you get.</p>
+        <h2>{{ text.header2 }}</h2>
+        <p>{{ text.desc2 }}</p>
         <div class="job-menu">
             <div v-for="cloudCert in cloudCertifications" :key="cloudCert.Name" class="job-item">
                 <AccordionMenu :item="cloudCert" :isOpen="allOpen" />
@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>Certifications for Essential Skills</h2>
-        <p>These are certifications for very commonly used skills in software engineering jobs. I've been asked about my knowledge on these skills in basically every SWE interview I've done so far.</p>
+        <h2>{{ text.header3 }}</h2>
+        <p>{{ text.desc3 }}</p>
         <div class="job-menu">
             <div v-for="skillCerts in skillCertifications" :key="skillCerts.Name" class="job-item">
                 <AccordionMenu :item="skillCerts" :isOpen="allOpen" />
@@ -21,8 +21,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>Machine Learning Certifications</h2>
-        <p>Artificial Intelligence and Machine Learning are all the rage these days so I thought I'd add a section on it. I also feel like UNCW's AI concentration isn't the best way to learn real-world application of these skills and that a certification might be easier and more useful to get.</p>
+        <h2>{{ text.header4 }}</h2>
+        <p>{{ text.desc4 }}</p>
         <div class="job-menu">
             <div v-for="mlCert in mlCertifications" :key="mlCert.Name" class="job-item">
                 <AccordionMenu :item="mlCert" :isOpen="allOpen" />
@@ -30,8 +30,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>Academic Certifications and Degrees</h2>
-        <p>These are certifications and degrees from Universities that you might find helpful. I think having some form of education from another University can make up for the lack of "prestige" UNCW has.</p>
+        <h2>{{ text.header5 }}</h2>
+        <p>{{ text.desc5 }}</p>
         <div class="job-menu">
             <div v-for="academicCert in academicCertifications" :key="academicCert.Name" class="job-item">
                 <AccordionMenu :item="academicCert" :isOpen="allOpen" />
@@ -39,8 +39,8 @@
         </div>
     </div>
     <div class="job-section">
-        <h2>General Tips</h2>
-        <p>These are general tips I have a for attaining certifications to make the most out of the experience and get the most value out of the certification itself. These tips might also make the process easier.</p>
+        <h2>{{ text.header6 }}</h2>
+        <p>{{ text.desc6 }}</p>
         <div class="job-menu">
             <div v-for="tip in generalTips" :key="tip.Name" class="job-item">
                 <AccordionMenu :item="tip" :isOpen="allOpen" />
@@ -56,7 +56,7 @@ import AllData from "../../data/Classes/UsefulCertifications.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
-const description = jsonData.value["description"];
+const text = jsonData.value["Text"][0];
 const cloudCertifications = jsonData.value["Cloud Certifications"];
 const skillCertifications = jsonData.value["Certifications for Essential Skills"];
 const mlCertifications = jsonData.value["Machine Learning Certifications"];

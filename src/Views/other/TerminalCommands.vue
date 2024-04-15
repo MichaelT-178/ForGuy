@@ -1,6 +1,6 @@
 <template>
     <div class="content-container">
-        <h1 class="title">Terminal Commands</h1>
+        <h1 class="title">{{ text.page }}</h1>
         <p class="description">This is the Terminal Commands page. There's a <span @click="scrollToPracticeTable" class="scroll-txt">practice sequence</span> table at the bottom.</p>
         <CmdTable tableName="Create" :items="createCommands" class="cmd-table"></CmdTable>
         <CmdTable tableName="Navigation" :items="navigationCommands" class="cmd-table"></CmdTable>
@@ -18,6 +18,7 @@ import CmdTable from "../../components/CommandTable.vue";
 import AllData from "../../data/Other/TerminalCommands.json";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const createCommands = jsonData.value["Creation"];
 const navigationCommands = jsonData.value["Navigation"];
 const displayCommands = jsonData.value["Display"];
