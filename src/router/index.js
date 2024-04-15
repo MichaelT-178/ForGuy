@@ -77,7 +77,7 @@ const routes = [
         component: InterviewTips
     },
     {
-        path: '/Jobs/HowToGetAJob.vue',
+        path: '/Jobs/HowToGetAJob',
         component: HowToGetAJob
     },
     {
