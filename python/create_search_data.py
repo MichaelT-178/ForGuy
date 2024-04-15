@@ -768,5 +768,9 @@ all_data = [
 ]
 
 
-with open("delete.json", "w", encoding='utf-8') as file:
+# with open("delete.json", "w", encoding='utf-8') as file:
+#     json.dump(all_data, file, ensure_ascii=False, indent=4)
+
+with open("../data/SearchData.json", "w", encoding='utf-8') as file:
     json.dump(all_data, file, ensure_ascii=False, indent=4)
+    
