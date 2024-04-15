@@ -1,4 +1,14 @@
 {
+    "Text": [
+        {
+            "page": "Classes To Avoid",
+            "desc": "These are classes and professors I would recommend avoiding if possible. I'm not trying to be mean with this page, just help you avoid difficult situations and classes.",
+            "header2": "Classes To Avoid",
+            "desc2": "These are classes I would not recommend taking for various reasons.",
+            "header3": "Professor To Avoid",
+            "desc3": "These are Professors I would not recommend taking if possible."
+        }
+    ],
     "Classes": [
         {
             "Name": "CSC 302: Introduction to Artificial Intelligence",

@@ -1,11 +1,11 @@
 <template>
     <main class="csc-descriptions-page">
         <div class="top-section">
-            <h1>CSC Descriptions</h1>
-            <span class="expand-text" @click="toggleExplanation">What information does this page contain?</span>
-            <p class="courses-found" v-if="explainOpen">{{ pageDescription }}</p>
+            <h1>{{ text.page }}</h1>
+            <span class="expand-text" @click="toggleExplanation">{{ text.desc }}</span>
+            <p class="courses-found" v-if="explainOpen">{{ text.pageDescription }}</p>
             <div class="search-expand-wrapper">
-                <input type="text" v-model="searchQuery" placeholder="Search Courses By Name or Description..." class="search-bar" />
+                <input type="text" v-model="searchQuery" :placeholder="text.searchText" class="search-bar" />
                 <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
             </div>
             <p class="courses-found" v-if="searchQuery.length != 0">Found {{ filteredCourses.length }} course{{ filteredCourses.length == 1 ? '' : 's' }} that contain the term "<span style="color: darkblue">{{ searchQuery }}</span>" in their name or description.</p>
@@ -24,7 +24,7 @@ import AllData from "../../data/Classes/CSCDescriptions.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
-const pageDescription = jsonData.value["Description"];
+const text = jsonData.value["Text"][0];
 const searchQuery = ref('');
 const allOpen = ref(false);
 const explainOpen = ref(false);

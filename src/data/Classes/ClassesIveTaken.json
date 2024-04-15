@@ -1,5 +1,13 @@
 {
-    "Description": "These are all the classes I've taken at UNCW and information about them. I graduated in December 2023 with a 3.50 gpa.",
+    "Text": [
+        {
+            "page": "Classes I've Taken",
+            "desc": "What information does this page contain?",
+            "pageDescription": "These are all the classes I've taken at UNCW and information about them. I graduated in December 2023 with a 3.50 gpa.",
+            "searchText": "Search Courses By Key Term...",
+            "grad": "🎉 Graduated Early in December 2023 🎉"
+        }
+    ],
     "Freshman": {
         "First": [
             {

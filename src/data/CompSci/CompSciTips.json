@@ -1,4 +1,11 @@
 {
+    "Text": [
+        {
+            "page": "Computer Science Tips",
+            "desc": "These are some more general tips I have for computer science.",
+            "scrollToTop": "Scroll To Top"
+        }
+    ],
     "Tips": [
         {
             "id": 1,

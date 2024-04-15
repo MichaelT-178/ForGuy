@@ -1,5 +1,16 @@
-{
-    "description": "These are the internship and full-time offers I have received. I also included a section about companies that I've interviewed with. I think these would be great companies to look out for during your job search.",
+{   
+    "text": [
+        {
+            "page": "Offers I've Received",
+            "desc1": "These are the internship and full-time offers I have received. I also included a section about companies that I've interviewed with. I think these would be great companies to look out for during your job search.",
+            "header2": "Internship Offers",
+            "desc2": "These are the Internship Offers I have received.",
+            "header3": "Full-Time Offers",
+            "desc3": "These are the full-time Offers I have received.",
+            "header4": "Companies Where I interviewed",
+            "desc4": "These are the companies where I got an interview, but not an offer for various reasons."
+        }
+    ],
     "internships": [
         {
             "Name": "USAA",

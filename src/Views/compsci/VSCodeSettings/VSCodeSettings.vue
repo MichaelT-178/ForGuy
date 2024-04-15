@@ -1,11 +1,11 @@
 <template>
     <div>
-      <h1 class="header">My Visual Studio Code Settings</h1>
-      <p class="description">This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.</p>
+      <h1 class="header">{{ text.page }}</h1>
+      <p class="description">{{ text.desc }}</p>
       <div class="bar">
-        <span class="settings-header">Settings.json</span>
-        <button @click="downloadJson" ref="downloadButton">Download JSON</button>
-        <button @click="copyJson" ref="copyButton">Copy JSON</button>
+        <span class="settings-header">{{ text.header }}</span>
+        <button @click="downloadJson" ref="downloadButton">{{ text.downloadBtn }}</button>
+        <button @click="copyJson" ref="copyButton">{{ text.copyBtn }}</button>
       </div>
       <div class="file1">
         <div class="json-container">
@@ -15,14 +15,19 @@
     </div>
 </template>
 
+
 <script setup>
 import { ref, computed } from 'vue';
 import Prism from 'prismjs';
+import AllData from '../../../data/CompSci/settings.json';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism-coy.css';
 import './custom.css';
 import { settings } from '../../../data/CompSci/settings.vue';
 //import 'prismjs/themes/prism-solarizedlight.css';
+
+const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 
 const copyButton = ref(null);
 const downloadButton = ref(null);
