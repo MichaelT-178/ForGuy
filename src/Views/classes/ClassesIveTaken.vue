@@ -1,11 +1,11 @@
 <template>
     <main class="classes-ive-taken-page">
         <div class="top-section">
-            <h1>Classes I've Taken</h1>
-            <span class="expand-text" @click="toggleExplanation">What information does this page contain?</span>
-            <p class="description" v-if="explainOpen">{{ pageDescription }}</p>
+            <h1>{{ text.page }}</h1>
+            <span class="expand-text" @click="toggleExplanation">{{ text.desc }}</span>
+            <p class="description" v-if="explainOpen">{{ text.pageDescription }}</p>
             <div class="search-expand-wrapper">
-                <input type="text" v-model="searchQuery" placeholder="Search Courses By Key Term..." class="search-bar" />
+                <input type="text" v-model="searchQuery" :placeholder="text.searchText" class="search-bar" />
                 <button @click="toggleAll" class="expand-all-btn">{{ allOpen ? 'Close All' : 'Expand All' }}</button>
             </div>
         </div>
@@ -17,7 +17,7 @@
                 <AccordionMenu :item="course" :isOpen="allOpen"/>
             </div>
         </section>
-        <p class="graduation">🎉 Graduated Early in December 2023 🎉</p>
+        <p class="graduation">{{ text.grad }}</p>
         <p style="margin-bottom: 100px;"></p>
     </main>
 </template>
@@ -29,10 +29,10 @@ import AllData from "../../data/Classes/ClassesIveTaken.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
 
 const jsonData = ref(AllData);
+const text = jsonData.value["Text"][0];
 const searchQuery = ref('');
 const allOpen = ref(false);
 const explainOpen = ref(false);
-const pageDescription = jsonData.value["Description"];
 
 const filterCourses = (courses) => {
     if (!searchQuery.value) return courses;

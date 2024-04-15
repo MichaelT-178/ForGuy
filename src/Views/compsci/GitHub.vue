@@ -25,7 +25,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- How to create a GitHub Repository Section -->
         <h2 class="gh-header-two" ref="createGHRepo">{{ text[4].title }}</h2>
@@ -37,7 +37,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- How to create a Second GitHub account Section -->
         <h2 class="gh-header-two" ref="multipleGHAccounts">{{ text[5].title }}</h2>
@@ -49,7 +49,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- How to create a Second GitHub Repository Section -->
         <h2 class="gh-header-two" ref="multipleDifferentAccount">{{ text[6].title }}</h2>
@@ -61,7 +61,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- Git Commands -->
         <h2 class="gh-header-two" ref="GitCommands">{{ text[7].title }}</h2>
@@ -69,7 +69,7 @@
 
         <CmdTable tableName="" :items="gitCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- General Tips for Working with GitHub -->
         <h2 class="gh-header-two" ref="GeneralTips">{{ text[8].title }}</h2>
@@ -80,7 +80,7 @@
             <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>  
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- Three Main Commands -->
         <h2 class="gh-header-two" ref="ThreeCommands">{{ text[9].title }}</h2>
@@ -88,7 +88,7 @@
 
         <CmdTable tableName="" :items="threeCommands" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ForkRepo">{{ text[10].title }}</h2>
@@ -99,7 +99,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent()"></span>
 
 
         <!-- Reset To Previous Branch -->
@@ -111,7 +111,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
 
         <!-- Upload Existing Folder section -->
@@ -124,7 +124,7 @@
 
         <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table" ref="practiceTable"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent('Scroll back to links(scrollLinksRef)')"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
         <!-- Amotions Workflow -->
         <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[13].title }}</h2>
@@ -153,7 +153,7 @@
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table" ref="practiceTable"></CmdTable>
     
-        <p class="scroll-up-btn" @click="scrollToTop">Scroll To Top</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text[18].scrollToTop }}</p>
 
     </div>
 </template>

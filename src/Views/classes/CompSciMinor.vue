@@ -1,14 +1,14 @@
 <template>
-    <h1 class="job-header">Computer Science Minor</h1>
-    <p class="job-description" v-html="createHyperLink(description)"></p>
+    <h1 class="job-header">{{ text.Minor }}</h1>
+    <p class="job-description" v-html="createHyperLink(text.Description)"></p>
     <div v-for="course in classes" :key="course.Name" class="class-section">
         <p class="class-text">{{ course.Name }} <span v-html="course.Elective" style="color: purple"></span></p>
         <AccordionMenu :item="course" :isOpen="allOpen"/>
         <p style="margin-bottom: 35px;"></p>
     </div>
     <p style="margin-bottom: 100px;"></p>
-    <h1 class="job-header">Computer Science Major</h1>
-    <p class="job-description" v-html="createHyperLink(descriptionTwo)"></p>
+    <h1 class="job-header">{{ text.Major }}</h1>
+    <p class="job-description" v-html="createHyperLink(text.DescriptionTwo)"></p>
     <div v-for="course in semesterClasses" :key="course.Name" class="class-section">
         <p class="class-text">{{ course.Name }}</p>
         <AccordionMenu :item="course" :isOpen="allOpen"/>
@@ -26,9 +26,8 @@ import AccordionMenu from "../../components/AccordionMenu.vue";
 import { createHyperLink } from "../../components/FormatLinks.vue";
 
 const jsonData = ref(AllData);
-const description = jsonData.value["Description"];
+const text = jsonData.value["Text"];
 const classes = jsonData.value["Classes"];
-const descriptionTwo = jsonData.value["DescriptionTwo"];
 const semesterClasses = jsonData.value["SemesterClasses"];
 
 </script>

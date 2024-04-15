@@ -1,4 +1,12 @@
 {
+    "Text": [
+        {
+            "page": "Terminal Commands",
+            "desc": "This is the Terminal Commands page. There's a",
+            "desc2": "practice sequence",
+            "desc3": "table at the bottom."
+        }
+    ],
     "Creation": [
         {
             "Command": "mkdir",
