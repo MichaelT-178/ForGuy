@@ -10,7 +10,7 @@ export const menuItems = [
         subMenu: [
             { text: "Where To Apply",        icon: "work",         link: "/Jobs/WhereToApply" },
             { text: "Resume Template",       icon: "description",  link: "/Jobs/ResumeTemplate" },
-            { text: "How To Get a Job",      icon: "lightbulb",    link: "/Jobs/HowToGetAJob.vue" },
+            { text: "How To Get a Job",      icon: "lightbulb",    link: "/Jobs/HowToGetAJob" },
             { text: "Offers I've Received",  icon: "handshake",    link: "/Jobs/OffersReceived" },
             { text: "Interview Tips",        icon: "group",        link: "/jobs/InterviewTips" },
             { text: "Career Path Advice",    icon: "explore",      link: "/Jobs/CareerPathAdvice" }
