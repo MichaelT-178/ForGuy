@@ -1,34 +1,33 @@
 <template>
-    <router-link to="/ContactMe" class="no-style-link">
+    <router-link :to="resultPage.Link" class="no-style-link">
+        <div class="search-card">
+            <h2 class="title"><span>{{ resultPage.Title }}</span></h2>
+            
+            <div v-for="result in resultPage.MatchedResults" :key="result.title">
+                <div v-for="(value, key) in result" :key="key">
+                    <div v-html="value"></div>
+                </div>
+            </div>
 
-    <div class="search-card">
-
-        <h2 class="title"><span>Search Card</span></h2>
-
-        
-    </div>
-
+        </div>
     </router-link>
 </template>
-  
-  
-<script setup>
-import { ref } from 'vue';
 
-const resultPage = defineProps({
-  contact: {
+
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  resultPage: {
     type: Object,
-    default: () => ({
-      Title: "",
-      Link: "",
-      Results: []
-    })
+    required: true,
+    default: () => ({})
   }
 });
 
 </script>
-  
-  
+
+
 <style scoped>
 
 .search-card {
