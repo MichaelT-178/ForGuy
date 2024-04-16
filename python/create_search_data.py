@@ -1,7 +1,4 @@
-import json 
-import os
-import subprocess
-from termcolor import colored as c
+import json
 
 """
 What to do with Vue components?????????

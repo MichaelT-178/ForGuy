@@ -16,10 +16,10 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/CompSci/UIUX_Tips.json";
-import { createHyperLink } from "../../components/FormatLinks.vue";
+import { createHyperLink } from "../../components/Markdown.vue";
 
 const jsonData = ref(AllData);
-const text = jsonData.value["Text"];
+const text = jsonData.value["Text"][0];
 const tips = jsonData.value["UIDesignTips"];
 
 const formatTip = (tip) => {
