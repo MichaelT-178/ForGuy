@@ -115,6 +115,36 @@
             "Image": "Garmin.jpg"
         },
         {
+            "Name": "Caleb Barnwell",
+            "Company": "Seminaut Inc",
+            "Role": "Chief Executive Officer",
+            "Location": "Remote",
+            "Email": "cmibarnwell@seminautdigital.com",
+            "LinkedIn": "https://www.linkedin.com/in/caleb-barnwell/",
+            "Details": "This guy contact me about a SWE internship in Fall 2022.",
+            "Image": "Seminaut.jpg"
+        },
+        {
+            "Name": "Sara Gibson",
+            "Company": "Veterans United Home Loans",
+            "Role": "Recruiter",
+            "Location": "St. Louis, Missouri",
+            "Email": "Sara.Gibson@veteransunited.com",
+            "LinkedIn": "https://www.linkedin.com/in/saramallen7/",
+            "Details": "This women contacted me about a SWE internship in Fall 2022.",
+            "Image": "Veterans.jpg"
+        },
+        {
+            "Name": "Kevin Norton",
+            "Company": "Mission Technologies, a division of HII",
+            "Role": "University Relations and Recruiting Lead",
+            "Location": "Arlington, Virginia",
+            "Email": "Kevin.Norton@hii-tsd.com",
+            "LinkedIn": "https://www.linkedin.com/in/kevin-norton-recruiter/",
+            "Details": "This guy contacted me about a SWE internship in Fall 2022.",
+            "Image": "Mission.jpg"
+        },
+        {
             "Name": "Liz Flowers",
             "Company": "Lenders Cooperative",
             "Role": "Head of Client Success",
