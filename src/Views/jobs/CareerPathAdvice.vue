@@ -16,7 +16,7 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/jobs/CareerPathAdvice.json";
-import { createRouterLink } from "../../components/FormatLinks.vue";
+import { createRouterLink } from "../../components/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
