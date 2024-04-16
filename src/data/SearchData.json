@@ -1,6 +1,6 @@
 [
     {
-        "Title": "Home",
+        "Title": "Home 🏠",
         "Link": "/",
         "Results": [
             {
@@ -22,7 +22,7 @@
         ]
     },
     {
-        "Title": "Where To Apply",
+        "Title": "Where To Apply 🧳",
         "Link": "/Jobs/WhereToApply",
         "Results": [
             {
@@ -409,6 +409,46 @@
                 "Location": "Cary, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/tata-consultancy-services/jobs/",
                 "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Brooksource",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/brooksource/jobs/",
+                "Contact": "(980) 280-9232",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Cerebra Consulting Inc",
+                "Location": "New Brunswick, New Jersey",
+                "LinkedIn": "https://www.linkedin.com/company/cerebra-consulting-inc/jobs/",
+                "Contact": "Sathivada Sitaram (Sitaram.sathivada@cerebra-consulting.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Mission Technologies, a division of HII",
+                "Location": "Arlington, Virginia",
+                "LinkedIn": "https://www.linkedin.com/company/mission-technologies-a-division-of-hii/jobs/",
+                "Contact": "Kevin Norton (Kevin.Norton@hii-tsd.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Veterans United Home Loans",
+                "Location": "St. Louis, Missouri",
+                "LinkedIn": "https://www.linkedin.com/company/veteransunited/jobs/",
+                "Contact": "Sara Gibson (Sara.Gibson@veteransunited.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Seminaut Inc",
+                "Location": "San Marcos, Texas (Remote)",
+                "LinkedIn": "https://www.linkedin.com/company/seminaut-inc/jobs/",
+                "Contact": "Caleb Barnwell (cmibarnwell@seminautdigital.com)",
                 "Tips": "",
                 "Pay": ""
             },
@@ -1426,7 +1466,7 @@
         ]
     },
     {
-        "Title": "Resume Template",
+        "Title": "Resume Template 📄",
         "Link": "/Jobs/ResumeTemplate",
         "Results": [
             {
@@ -1520,7 +1560,7 @@
         ]
     },
     {
-        "Title": "How To Get a Job",
+        "Title": "How To Get a Job 💡",
         "Link": "/Jobs/HowToGetAJob",
         "Results": [
             {
@@ -1616,7 +1656,7 @@
         ]
     },
     {
-        "Title": "Offers I've Received",
+        "Title": "Offers I've Received 🤝🏻",
         "Link": "/Jobs/OffersReceived",
         "Results": [
             {
@@ -1706,7 +1746,7 @@
         ]
     },
     {
-        "Title": "Interview Tips",
+        "Title": "Interview Tips 💬",
         "Link": "/jobs/InterviewTips",
         "Results": [
             {
@@ -1788,7 +1828,7 @@
         ]
     },
     {
-        "Title": "Career Path Advice",
+        "Title": "Career Path Advice 🧭",
         "Link": "/Jobs/CareerPathAdvice",
         "Results": [
             {
@@ -1826,7 +1866,7 @@
         ]
     },
     {
-        "Title": "What Is LinkedIn?",
+        "Title": "What Is LinkedIn? 🌐",
         "Link": "/LinkedIn/WhatIsLinkedIn",
         "Results": [
             {
@@ -1836,7 +1876,7 @@
         ]
     },
     {
-        "Title": "Setup a Profile",
+        "Title": "Setup a Profile 🤳🏻",
         "Link": "/LinkedIn/SetupProfile",
         "Results": [
             {
@@ -1930,7 +1970,7 @@
         ]
     },
     {
-        "Title": "Setup Job Alerts",
+        "Title": "Setup Job Alerts 🔔",
         "Link": "/LinkedIn/SetupJobAlerts",
         "Results": [
             {
@@ -2012,7 +2052,7 @@
         ]
     },
     {
-        "Title": "LinkedIn Tips",
+        "Title": "LinkedIn Tips 🧐",
         "Link": "/LinkedIn/LinkedinTips",
         "Results": [
             {
@@ -2067,7 +2107,7 @@
         ]
     },
     {
-        "Title": "Contacts",
+        "Title": "Contacts 👤",
         "Link": "/LinkedIn/Contacts",
         "Results": [
             {
@@ -2181,6 +2221,36 @@
                 "LinkedIn": "https://www.linkedin.com/in/brandon-bernal-291882234/",
                 "Details": "The UNCW computer science department sent an email about this guy recruiting for SWE positions in Cary, NC.",
                 "Image": "Garmin.jpg"
+            },
+            {
+                "Name": "Caleb Barnwell",
+                "Company": "Seminaut Inc",
+                "Role": "Chief Executive Officer",
+                "Location": "Remote",
+                "Email": "cmibarnwell@seminautdigital.com",
+                "LinkedIn": "https://www.linkedin.com/in/caleb-barnwell/",
+                "Details": "This guy contact me about a SWE internship in Fall 2022.",
+                "Image": "Seminaut.jpg"
+            },
+            {
+                "Name": "Sara Gibson",
+                "Company": "Veterans United Home Loans",
+                "Role": "Recruiter",
+                "Location": "St. Louis, Missouri",
+                "Email": "Sara.Gibson@veteransunited.com",
+                "LinkedIn": "https://www.linkedin.com/in/saramallen7/",
+                "Details": "This women contacted me about a SWE internship in Fall 2022.",
+                "Image": "Veterans.jpg"
+            },
+            {
+                "Name": "Kevin Norton",
+                "Company": "Mission Technologies, a division of HII",
+                "Role": "University Relations and Recruiting Lead",
+                "Location": "Arlington, Virginia",
+                "Email": "Kevin.Norton@hii-tsd.com",
+                "LinkedIn": "https://www.linkedin.com/in/kevin-norton-recruiter/",
+                "Details": "This guy contacted me about a SWE internship in Fall 2022.",
+                "Image": "Mission.jpg"
             },
             {
                 "Name": "Liz Flowers",
@@ -2455,7 +2525,7 @@
         ]
     },
     {
-        "Title": "Class Recommendations",
+        "Title": "Class Recommendations 👍",
         "Link": "/Classes/ClassRecommendations",
         "Results": [
             {
@@ -2562,7 +2632,7 @@
         ]
     },
     {
-        "Title": "Classes I've Taken",
+        "Title": "Classes I've Taken 👨🏻‍🏫",
         "Link": "/Classes/ClassesIveTaken",
         "Results": [
             {
@@ -3086,7 +3156,7 @@
         ]
     },
     {
-        "Title": "CSC Descriptions",
+        "Title": "CSC Descriptions 📝",
         "Link": "/Classes/CSCDescriptions",
         "Results": [
             {
@@ -3317,7 +3387,7 @@
         ]
     },
     {
-        "Title": "Classes To Avoid",
+        "Title": "Classes To Avoid ❌",
         "Link": "/Classes/ClassesToAvoid",
         "Results": [
             {
@@ -3359,7 +3429,7 @@
         ]
     },
     {
-        "Title": "Comp Sci Minor",
+        "Title": "Comp Sci Minor 💻",
         "Link": "/Classes/CompSciMinor",
         "Results": [
             {
@@ -3471,7 +3541,7 @@
         ]
     },
     {
-        "Title": "Useful Certifications",
+        "Title": "Useful Certifications 🏆",
         "Link": "/Classes/Certifications",
         "Results": [
             {
@@ -3604,7 +3674,7 @@
         ]
     },
     {
-        "Title": "Visual Studio Code",
+        "Title": "Visual Studio Code 🎨",
         "Link": "/compsci/VisualStudioCode",
         "Results": [
             {
@@ -3631,7 +3701,7 @@
         ]
     },
     {
-        "Title": "GitHub",
+        "Title": "GitHub 🐙",
         "Link": "/compsci/GitHub",
         "Results": [
             {
@@ -4516,7 +4586,7 @@
         ]
     },
     {
-        "Title": "VSCode Settings",
+        "Title": "VSCode Settings ⚙️",
         "Link": "/compsci/VSCodeSettings",
         "Results": [
             {
@@ -5312,7 +5382,7 @@
         ]
     },
     {
-        "Title": "UI/UX Design Tips",
+        "Title": "UI/UX Design Tips 🖼️",
         "Link": "/compsci/UIDesignTips",
         "Results": [
             {
@@ -5404,7 +5474,7 @@
         ]
     },
     {
-        "Title": "VSCode Extensions",
+        "Title": "VSCode Extensions 🧩",
         "Link": "/compsci/VSCodeExtensions",
         "Results": [
             {
@@ -5519,7 +5589,7 @@
         ]
     },
     {
-        "Title": "VSCode Shortcuts",
+        "Title": "VSCode Shortcuts 🚀",
         "Link": "/compsci/VSCodeShortcuts",
         "Results": [
             {
@@ -5760,7 +5830,7 @@
         ]
     },
     {
-        "Title": "Comp Sci Tips",
+        "Title": "Comp Sci Tips 🖥️",
         "Link": "/compsci/CompSciTips",
         "Results": [
             {
@@ -5937,12 +6007,12 @@
         ]
     },
     {
-        "Title": "General Tips",
+        "Title": "General Tips 🧘🏻",
         "Link": "/Other/GeneralTips",
         "Results": null
     },
     {
-        "Title": "Apps To Download",
+        "Title": "Apps To Download 📲",
         "Link": "/Other/AppsToDownload",
         "Results": [
             {
@@ -6027,7 +6097,7 @@
         ]
     },
     {
-        "Title": "CS Stuff I Like",
+        "Title": "CS Stuff I Like ❤️",
         "Link": "/Other/CompSciStuff",
         "Results": [
             {
@@ -6152,7 +6222,7 @@
         ]
     },
     {
-        "Title": "Terminal Commands",
+        "Title": "Terminal Commands ⌨️",
         "Link": "/Other/TerminalCommands",
         "Results": [
             {
@@ -6454,7 +6524,7 @@
         ]
     },
     {
-        "Title": "Keyboard Shortcuts",
+        "Title": "Keyboard Shortcuts ⚡️",
         "Link": "/Other/KeyboardShortcuts",
         "Results": [
             {
@@ -6604,7 +6674,7 @@
         ]
     },
     {
-        "Title": "Memes",
+        "Title": "Memes 😂",
         "Link": "/Other/Memes",
         "Results": [
             {
@@ -6810,7 +6880,7 @@
         ]
     },
     {
-        "Title": "UNCW Pictures",
+        "Title": "UNCW Pictures 📸",
         "Link": "/Other/UncwPics",
         "Results": [
             {
@@ -6897,7 +6967,7 @@
         ]
     },
     {
-        "Title": "Contact Me",
+        "Title": "Contact Me ✉️",
         "Link": "/ContactMe",
         "Results": [
             {

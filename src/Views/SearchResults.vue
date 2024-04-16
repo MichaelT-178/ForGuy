@@ -3,7 +3,7 @@
         <h1 class="search-header">Search Results</h1>
         
         <p class="description">The search term <span style="color: darkblue">"{{ searchQuery }}"</span> 
-        appears in the following pages:<span><strong style="color: darkblue">{{ totalCount }} times</strong></span></p>
+        appears in the following pages: <span><strong style="color: darkblue">{{ totalCount }} times</strong></span></p>
 
         <SearchCard v-for="item in searchResults" :key="item.Title" :resultPage="item" />
         <p style="margin-bottom: 60px;"></p>
