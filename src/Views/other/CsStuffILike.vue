@@ -29,7 +29,7 @@
 import { ref } from 'vue';
 import AllData from '../../data/Other/CsStuffILike.json';
 import CodeBlock from '../../components/Code/CodeBlock.vue';
-import { createHyperLink } from "../../components/FormatLinks.vue";
+import { createHyperLink } from "../../components/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];

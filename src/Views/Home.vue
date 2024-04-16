@@ -14,7 +14,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { createHyperLink, createRouterLink, createDownloadLink } from '../components/FormatLinks.vue';
+import { createHyperLink, createRouterLink, createDownloadLink } from '../components/Markdown.vue';
 import AllData from '../data/Home.json';
 
 const jsonData = ref(AllData);
