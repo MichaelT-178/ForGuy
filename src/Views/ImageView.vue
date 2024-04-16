@@ -13,7 +13,7 @@
 
 <script setup>
 import { useRoute } from 'vue-router';
-import { highlightLinkText } from '../components/FormatLinks.vue';
+import { highlightLinkText } from '../components/Markdown.vue';
 
 const route = useRoute();
 
