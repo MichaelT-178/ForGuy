@@ -122,7 +122,7 @@ def get_classestoavoid():
         professors = content["Professors"]
 
 
-        Title = "Classes To Avoid"
+        Title = "Classes To Avoid ❌"
         Link = "/Classes/ClassesToAvoid"
         Results = text + classes + professors
 
@@ -139,7 +139,7 @@ def get_classrecommendations():
 
         professors = [transform_json(obj) for obj in professors]
 
-        Title = "Class Recommendations"
+        Title = "Class Recommendations 👍"
         Link = "/Classes/ClassRecommendations"
         Results = text + classes + professors
 
@@ -159,7 +159,7 @@ def get_usefulcertifications():
         tips = content["GeneralTips"]
 
 
-        Title = "Useful Certifications"
+        Title = "Useful Certifications 🏆"
         Link = "/Classes/Certifications"
         Results = text + cloud_certs + essential_skills + machine_learning + degrees + tips
 
@@ -174,7 +174,7 @@ def get_cscdescriptions():
 
         courses = [transform_json(course) for course in courses]
 
-        Title = "CSC Descriptions"
+        Title = "CSC Descriptions 📝"
         Link = "/Classes/CSCDescriptions"
         Results = text + courses
 
@@ -206,7 +206,7 @@ def get_classesivetaken():
         senior = [transform_json(course) for course in senior]
 
 
-        Title = "Classes I've Taken"
+        Title = "Classes I've Taken 👨🏻‍🏫"
         Link = "/Classes/ClassesIveTaken"
         Results = (text + freshman_first + freshman_second + sophomore_first + 
                    sophomore_second + junior_first + junior_second + senior + ap_classes)
@@ -225,7 +225,7 @@ def get_compsciminor():
         semester_classes = [transform_json(course) for course in semester_classes]
         
 
-        Title = "Comp Sci Minor"    
+        Title = "Comp Sci Minor 💻"    
         Link = "/Classes/CompSciMinor"
         Results = text + classes + semester_classes
 
@@ -282,7 +282,7 @@ def get_vscodeshortcuts():
         shortcutsSl.append(make_json_object("Description", descSl))
 
 
-        Title = "VSCode Shortcuts"
+        Title = "VSCode Shortcuts 🚀"
         Link = "/compsci/VSCodeShortcuts"
         Results = shortcuts + shortcutsPy + shortcutsEc + shortcutsX + shortcutsSl
 
@@ -295,7 +295,7 @@ def get_visualstudiocode():
         text = content["Text"]
         links = content["Links"]
 
-        Title = "Visual Studio Code"
+        Title = "Visual Studio Code 🎨"
         Link = "/compsci/VisualStudioCode"
         Results = text + links
 
@@ -308,7 +308,7 @@ def get_settings():
         text = content["Text"]
         settings = content["settings"]
 
-        Title = "VSCode Settings"
+        Title = "VSCode Settings ⚙️"
         Link = "/compsci/VSCodeSettings"
         Results = text + settings
 
@@ -326,7 +326,7 @@ def get_uiux_tips():
 
         other = [transform_json({"Other": content["Other"]})]
 
-        Title = "UI/UX Design Tips"
+        Title = "UI/UX Design Tips 🖼️"
         Link = "/compsci/UIDesignTips"
         Results = text + tips + ibmTips + other
 
@@ -341,7 +341,7 @@ def get_compscitips():
         componentData = content["ComponentData"]
         codeLinks = content["CodeLinks"]
 
-        Title = "Comp Sci Tips"
+        Title = "Comp Sci Tips 🖥️"
         Link = "/compsci/CompSciTips"
         Results = text + tips + componentData + codeLinks
 
@@ -354,7 +354,7 @@ def get_vscodeextensions():
         text = content["Text"]
         extensions = content["Extensions"]
 
-        Title = "VSCode Extensions"
+        Title = "VSCode Extensions 🧩"
         Link = "/compsci/VSCodeExtensions"
         Results = text + extensions
 
@@ -402,7 +402,7 @@ def get_github():
         existingFolderPts = content["ExistingFolderPts"]
         existingFolder = content["ExistingFolder"]
 
-        Title = "GitHub"
+        Title = "GitHub 🐙"
         Link = "/compsci/GitHub"
         Results = (text + scrollLinks + setupGithub
                   + createGitHubRepo + setupSecondGitHub
@@ -425,7 +425,7 @@ def get_offersreceived():
         fullTime = content["fullTime"]
         interviews = content["interviews"]
 
-        Title = "Offers I've Received"
+        Title = "Offers I've Received 🤝🏻"
         Link = "/Jobs/OffersReceived"
         Results = text + internships + fullTime + interviews
 
@@ -440,7 +440,7 @@ def get_howtogetajob():
         tips = content["Tips"]
         tips = [transform_json(tip) for tip in tips]
 
-        Title = "How To Get a Job"
+        Title = "How To Get a Job 💡"
         Link = "/Jobs/HowToGetAJob"
         Results = text + tips
 
@@ -453,7 +453,7 @@ def get_interviewtips():
         text = content["Text"]
         tips = content["Tips"]
 
-        Title = "Interview Tips"
+        Title = "Interview Tips 💬"
         Link = "/jobs/InterviewTips"
         Results = text + tips
 
@@ -466,7 +466,7 @@ def get_wheretoapply():
         text = content["text"]
         companies = content["Companies"]
 
-        Title = "Where To Apply"
+        Title = "Where To Apply 🧳"
         Link = "/Jobs/WhereToApply"
         Results = text + companies
 
@@ -479,7 +479,7 @@ def get_careerpathadvice():
         text = content["Text"]
         advice = content["CareerPathAdvice"]
 
-        Title = "Career Path Advice"
+        Title = "Career Path Advice 🧭"
         Link = "/Jobs/CareerPathAdvice"
         Results = text + advice
 
@@ -491,7 +491,7 @@ def get_resumetemplatetext():
 
         information = content["information"]
 
-        Title = "Resume Template"
+        Title = "Resume Template 📄"
         Link = "/Jobs/ResumeTemplate"
         Results = information
 
@@ -504,7 +504,7 @@ def get_whatislinkedin():
         
         info = content["Info"]
 
-        Title = "What Is LinkedIn?"
+        Title = "What Is LinkedIn? 🌐"
         Link = "/LinkedIn/WhatIsLinkedIn"
         Results = info
 
@@ -519,7 +519,7 @@ def get_linkedintips():
 
         tips = [transform_json(tip) for tip in tips]
 
-        Title = "LinkedIn Tips"
+        Title = "LinkedIn Tips 🧐"
         Link = "/LinkedIn/LinkedinTips"
         Results = text + tips
 
@@ -532,7 +532,7 @@ def get_setupprofile():
         text = content["Text"]
         instructions = content["Instructions"]
 
-        Title = "Setup a Profile"
+        Title = "Setup a Profile 🤳🏻"
         Link = "/LinkedIn/SetupProfile"
         Results = text + instructions
 
@@ -545,7 +545,7 @@ def get_setupjobalerts():
         text = content["Text"]
         instructions = content["Instructions"]
 
-        Title = "Setup Job Alerts"
+        Title = "Setup Job Alerts 🔔"
         Link = "/LinkedIn/SetupJobAlerts"
         Results = text + instructions
 
@@ -558,7 +558,7 @@ def get_contacts():
         text = content["Text"]
         contacts = content["Contacts"]
 
-        Title = "Contacts"
+        Title = "Contacts 👤"
         Link = "/LinkedIn/Contacts"
         Results = text + contacts
 
@@ -573,7 +573,7 @@ def get_keyboardshortcuts():
         text = content["Text"]
         shortcuts = content["Shortcuts"]
 
-        Title = "Keyboard Shortcuts"
+        Title = "Keyboard Shortcuts ⚡️"
         Link = "/Other/KeyboardShortcuts"
         Results = text + shortcuts
 
@@ -588,7 +588,7 @@ def get_appstodownload():
         kinda = content["Kinda Obviously"]
 
 
-        Title = "Apps To Download"
+        Title = "Apps To Download 📲"
         Link = "/Other/AppsToDownload"
         Results = text + apps + kinda
 
@@ -601,7 +601,7 @@ def get_uncwpics():
         text = content["Text"]
         pics = content["Pics"]
 
-        Title = "UNCW Pictures"
+        Title = "UNCW Pictures 📸"
         Link = "/Other/UncwPics"
         Results = text + pics
 
@@ -619,7 +619,7 @@ def get_terminalcommands():
         programming = content["Programming"]
         practice = content["Practice"]
 
-        Title = "Terminal Commands"
+        Title = "Terminal Commands ⌨️"
         Link = "/Other/TerminalCommands"
         Results = text + creation + navigation + display + delete + programming + practice
 
@@ -629,7 +629,7 @@ def get_generaltips():
     with open("../src/data/Other/GeneralTips.json", "r") as file:
         content = json.load(file)
 
-        Title = "General Tips"
+        Title = "General Tips 🧘🏻"
         Link = "/Other/GeneralTips"
         Results = None
 
@@ -642,7 +642,7 @@ def get_memes():
         text = content["Text"]
         memes = content["Memes"]
 
-        Title = "Memes"
+        Title = "Memes 😂"
         Link = "/Other/Memes"
         Results = text + memes
 
@@ -656,7 +656,7 @@ def get_csstuffilike():
         csStuff = content["CsStuff"]
         code = content["Code"]
 
-        Title = "CS Stuff I Like"
+        Title = "CS Stuff I Like ❤️"
         Link = "/Other/CompSciStuff"
         Results = text + csStuff + code
 
@@ -668,7 +668,7 @@ def get_home():
 
         home = content["Home"]
 
-        Title = "Home"
+        Title = "Home 🏠"
         Link = "/"
         Results = home
 
@@ -680,7 +680,7 @@ def get_contact_me():
 
         contact = content["Contact"]
 
-        Title = "Contact Me"
+        Title = "Contact Me ✉️"
         Link = "/ContactMe"
         Results = contact
 
