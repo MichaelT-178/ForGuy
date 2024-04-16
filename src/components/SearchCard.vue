@@ -33,7 +33,7 @@ const props = defineProps({
 
 .search-card {
     padding: 0px 0px 10px 30px; /* Top, right, bottom, left */
-    border: 1px solid darkblue; 
+    border: 1px solid #727272;
     border-radius: 5px;
     width: 600px;
     margin: 20px auto;
@@ -44,12 +44,12 @@ const props = defineProps({
 }
   
 .search-card:hover {
-    border: 1px solid red;
+    border: 1px solid darkblue;
     cursor: pointer;
 }
 
 .search-card:hover .title span {
-    color: red; /* This line changes the text color */
+    color: darkblue; /* line changes the text color */
 }
 
 .no-style-link {
