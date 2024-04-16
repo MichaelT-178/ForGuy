@@ -99,7 +99,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent()"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
 
 
         <!-- Reset To Previous Branch -->
@@ -163,7 +163,7 @@
 import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/GitHub.json';
 import CmdTable from "../../components/CommandTable.vue";
-import { createHyperLink } from "../../components/FormatLinks.vue";
+import { createHyperLink } from "../../components/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
