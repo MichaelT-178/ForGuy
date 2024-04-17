@@ -29,7 +29,7 @@ cd ForGuy
 ```
 <br>
 
-This might take a while, just be patient.
+**This might take a while, just be patient. Give it like 5 minutes.**
 ```
 npm install vite --save-dev
 ```
