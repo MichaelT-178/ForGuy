@@ -37,7 +37,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import AllData from '../data/Contact.json';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 const jsonData = ref(AllData);
