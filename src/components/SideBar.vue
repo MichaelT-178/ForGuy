@@ -22,7 +22,7 @@
   </div>
 </template>
 
-  
+
 <script setup>
 import { ref } from 'vue';
 import { menuItems } from './MenuItems.vue';
@@ -38,20 +38,20 @@ const closeMenu = () => {
 
 const toggleSubMenu = (index) => {
   if (activeIndex.value === index) {
-    activeIndex.value = null; // close if already open
+    activeIndex.value = null;
   } else {
-    activeIndex.value = index; // open the clicked menu
+    activeIndex.value = index;
   }
 };
 
 const navigateTo = (link) => {
   router.push(link);
-  closeMenu(); // Closes the menu when a link is navigated to
+  closeMenu();
 };
+
 </script>
 
-  
-  
+
 <style scoped>
 .menu-overlay {
   position: fixed;
@@ -63,7 +63,7 @@ const navigateTo = (link) => {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box; /* Ensures padding and border are within the width and height */
+  box-sizing: border-box;
 }
 
 .header {
@@ -71,7 +71,7 @@ const navigateTo = (link) => {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  width: calc(100% - 40px); /* Adjusts width accounting for padding */
+  width: calc(100% - 40px);
   box-sizing: border-box;
 }
 
@@ -99,7 +99,7 @@ const navigateTo = (link) => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-sizing: border-box; /* Include padding and border in the element's box */
+  box-sizing: border-box;
 }
 
 .menu-text:hover {
@@ -120,7 +120,7 @@ const navigateTo = (link) => {
 }
 
 .active-text, .active-icon {
-  color: #ffd483; /* Highlights text and expand icon in yellow when active */
+  color: #ffd483;
 }
 
 .expand-icon {
@@ -133,13 +133,13 @@ const navigateTo = (link) => {
 
 .sub-menu {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 148, 148, 0.85);
   padding: 5px 20px;
   box-sizing: border-box;
 }
 
 .sub-menu:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 148, 148, 0.85);
 }
 
 .sub-menu div {
