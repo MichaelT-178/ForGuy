@@ -113,9 +113,11 @@ const closeAll = () => {
 
 .menu-icon {
   margin-left: 3px;
+  margin-top: -9px;
 }
 
 .search-icon {
   margin-right: 3px;
+  margin-top: -9px;
 }
 </style>
