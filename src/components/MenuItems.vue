@@ -3,10 +3,12 @@
 export const menuItems = [
     {
         text: "Home",
+        icon: "Home",
         route: "/",
     },
     {
         text: "Jobs",
+        icon: "work",
         subMenu: [
             { text: "Where To Apply",        icon: "work",         link: "/Jobs/WhereToApply" },
             { text: "Resume Template",       icon: "description",  link: "/Jobs/ResumeTemplate" },
@@ -18,6 +20,7 @@ export const menuItems = [
     },
     {
         text: "LinkedIn",
+        icon: "handshake",
         subMenu: [
             { text: "What Is LinkedIn?",  icon: "person_add",      link: "/LinkedIn/WhatIsLinkedin" },
             { text: "Setup a Profile",    icon: "account_circle",  link: "/LinkedIn/SetupProfile" },
