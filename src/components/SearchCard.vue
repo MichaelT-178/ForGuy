@@ -44,7 +44,7 @@ const props = defineProps({
 }
   
 .search-card:hover {
-    border: 1px solid darkblue;
+    border: 1px solid blue;
     cursor: pointer;
 }
 
