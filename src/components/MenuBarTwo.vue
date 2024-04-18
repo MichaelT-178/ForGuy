@@ -1,0 +1,121 @@
+<template>
+  <div class="top-menu">
+    <!-- Overlay -->
+    <div class="overlay" v-if="isMenuOpen" @click="closeMenu"></div>
+    <div class="search-overlay" v-if="isSearchBarOpen" @click="closeSearchBar"></div>
+
+    <span class="material-icons menu-icon" v-if="!isSearchBarOpen" @click="toggleMenu">
+      menu
+    </span>
+
+    <!-- SideBar Component -->
+    <SideBar v-if="isMenuOpen" @close-menu="isMenuOpen = false"/>
+
+    <div v-if="isSearchBarOpen" class="search-bar-wrapper">
+      <SearchBar @close-search="closeSearchBar"></SearchBar>
+    </div>
+
+    <span class="material-icons search-icon" v-if="!isMenuOpen && !isSearchBarOpen" @click="toggleSearchBar">
+      search
+    </span>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import SearchBar from './SearchBarTwo.vue';
+import SideBar from './SideBar.vue';
+
+const isSearchBarOpen = ref(false);
+const isMenuOpen = ref(false);
+
+const toggleSearchBar = () => {
+  isSearchBarOpen.value = !isSearchBarOpen.value;
+  if (isSearchBarOpen.value) {
+    isMenuOpen.value = false; // Ensure the menu closes when the search bar opens
+  }
+};
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+  if (isMenuOpen.value) {
+    isSearchBarOpen.value = false; // Ensure the search bar closes when the menu opens
+  }
+};
+
+const closeMenu = () => {
+  isMenuOpen.value = false;
+};
+
+const closeSearchBar = () => {
+  console.log("CLICKED SEARCH")
+  isSearchBarOpen.value = false;
+};
+
+const closeAll = () => {
+  isMenuOpen.value = false;
+  isSearchBarOpen.value = false;
+};
+
+</script>
+
+<style scoped>
+.overlay {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; /* Ensure overlay is above other content */
+}
+
+.search-overlay {
+  position: fixed;
+  top: 60.2px; /* Assuming the top-menu height is 40px */
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 40px); /* Height minus the menu bar height */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10; /* Ensure overlay is above other content */
+}
+
+.top-menu {
+  background-color: teal;
+  padding: 10px 20px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 15; /* Ensure menu is above overlay */
+}
+
+.search-bar-wrapper {
+  position: fixed;
+  top: 40px; /* Positioned below the menu bar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100vw - 40px);
+  margin-top: -30px;
+  z-index: 20; /* Ensure search bar is on top of everything */
+}
+
+.material-icons {
+  transform: translateY(5.1px);
+  color: #fff;
+  cursor: pointer;
+  font-size: 27px;
+}
+
+.material-icons:hover {
+  color: #ffd483;
+}
+
+.menu-icon {
+  margin-left: 3px;
+}
+
+.search-icon {
+  margin-right: 3px;
+}
+</style>

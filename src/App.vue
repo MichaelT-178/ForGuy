@@ -1,18 +1,29 @@
 <template>
   <div class="app">
-    <Menu />
+    <component :is="isMobile ? MenuBarTwo : Menu" />
 
     <router-view />
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import Menu from './components/MenuBar.vue';
+import MenuBarTwo from './components/MenuBarTwo.vue';
 
-//activeSubMenuIndex === index && showMenu 
+const isMobile = ref(window.innerWidth <= 700);
 
-//https://fonts.google.com/icons
+const updateWindowSize = () => {
+  isMobile.value = window.innerWidth <= 700;
+};
 
+onMounted(() => {
+  window.addEventListener('resize', updateWindowSize);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWindowSize);
+});
 </script>
 
 
