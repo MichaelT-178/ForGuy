@@ -1,6 +1,3 @@
-ChatGPT 4
-
-User
 <template>
   <div class="menu-overlay">
     <div class="header">
@@ -17,7 +14,7 @@ User
       </div>
       <div v-if="menuItem.subMenu && activeIndex === index" class="sub-menu">
         <div v-for="(subItem, subIndex) in menuItem.subMenu" :key="subIndex" @click.stop="navigateTo(subItem.link)">
-          <span class="material-icons" style="margin-right: 8.5px">{{ subItem.icon }}</span>
+          <span class="material-symbols-outlined" style="margin-right: 8.5px">{{ subItem.icon }}</span>
           {{ subItem.text }}
         </div>
       </div>
@@ -26,12 +23,10 @@ User
 </template>
 
   
-  
-  
 <script setup>
 import { ref } from 'vue';
 import { menuItems } from './MenuItems.vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 const emit = defineEmits(['close-menu']);
 const router = useRouter();
@@ -68,6 +63,7 @@ const navigateTo = (link) => {
   z-index: 10;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box; /* Ensures padding and border are within the width and height */
 }
 
 .header {
@@ -75,7 +71,8 @@ const navigateTo = (link) => {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  width: calc(100% - 40px);
+  width: calc(100% - 40px); /* Adjusts width accounting for padding */
+  box-sizing: border-box;
 }
 
 .views-text {
@@ -87,6 +84,7 @@ const navigateTo = (link) => {
   cursor: pointer;
   font-size: 30px;
   color: white;
+  margin-right: -40px;
 }
 
 .close-icon:hover {
@@ -101,6 +99,7 @@ const navigateTo = (link) => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  box-sizing: border-box; /* Include padding and border in the element's box */
 }
 
 .menu-text:hover {
@@ -112,8 +111,8 @@ const navigateTo = (link) => {
   align-items: center;
   padding: 10px 20px;
   font-size: 1.5em;
-  /* width: 90.23%; */
   width: 100%;
+  box-sizing: border-box;
 }
 
 .material-icons.menu-icon, .expand-icon {
@@ -129,13 +128,14 @@ const navigateTo = (link) => {
   font-size: 30px;
   margin-left: auto;
   margin-right: 0px;
+  box-sizing: border-box;
 }
 
 .sub-menu {
-  /* width: 95.1%; */
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 5px 0px 5px 20px;
+  padding: 5px 20px;
+  box-sizing: border-box;
 }
 
 .sub-menu:hover {
@@ -148,6 +148,7 @@ const navigateTo = (link) => {
   font-size: 1em;
   padding: 5px 0;
   margin-bottom: 6px;
+  box-sizing: border-box;
 }
 
 .sub-menu div:hover {
@@ -155,3 +156,4 @@ const navigateTo = (link) => {
 }
 
 </style>
+
