@@ -6,6 +6,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Menu from './components/MenuBar.vue';
@@ -24,21 +25,22 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('resize', updateWindowSize);
 });
+
 </script>
 
 
 <style>
-    /* Ensure no space at the top */
-    body, html {
-        margin: 0;
-        padding: 0;
-        background-color: #f5f5f5;
-    }
 
-    img {
-        width: 100%; 
-        height: auto;
-        display: block;
-    }
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
 
 </style>
