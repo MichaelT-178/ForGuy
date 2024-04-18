@@ -3,7 +3,7 @@
 export const menuItems = [
     {
         text: "Home",
-        icon: "Home",
+        icon: "home",
         route: "/",
     },
     {
@@ -31,6 +31,7 @@ export const menuItems = [
     },
     {
         text: "Classes",
+        icon: "co_present",
         subMenu: [
             { text: "Class Recommendations",  icon: "thumb_up",       link: "/Classes/ClassRecommendations" },
             { text: "Classes I've Taken",     icon: "co_present",     link: "/Classes/ClassesIveTaken" }, //interactive_space, wysiwyg
@@ -42,6 +43,7 @@ export const menuItems = [
     },
     {
         text: "Comp Sci",
+        icon: "laptop_mac",
         subMenu: [
             { text: "Visual Studio Code",  icon: "laptop_mac",         link: "/CompSci/VisualStudioCode" },
             { text: "GitHub",              icon: "hub",                link: "/CompSci/GitHub" },
@@ -54,6 +56,7 @@ export const menuItems = [
     },
     {
         text: "Other",
+        icon: "folder",
         subMenu: [
             { text: "General Tips",        icon: "self_improvement",  link: "/Other/GeneralTips" },
             { text: "Apps To Download",    icon: "phone_iphone",      link: "/Other/AppsToDownload" },
@@ -66,6 +69,7 @@ export const menuItems = [
     },
     {
         text: "Contact",
+        icon: "mail",
         route: "/ContactMe"
     }
 ];
