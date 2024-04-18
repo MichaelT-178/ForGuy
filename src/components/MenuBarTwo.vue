@@ -1,6 +1,6 @@
 <template>
   <div class="top-menu">
-    <!-- Overlay -->
+
     <div class="overlay" v-if="isMenuOpen" @click="closeMenu"></div>
     <div class="search-overlay" v-if="isSearchBarOpen" @click="closeSearchBar"></div>
 
@@ -8,7 +8,6 @@
       menu
     </span>
 
-    <!-- SideBar Component -->
     <SideBar v-if="isMenuOpen" @close-menu="isMenuOpen = false"/>
 
     <div v-if="isSearchBarOpen" class="search-bar-wrapper">
@@ -21,6 +20,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref } from 'vue';
 import SearchBar from './SearchBarTwo.vue';
@@ -32,14 +32,14 @@ const isMenuOpen = ref(false);
 const toggleSearchBar = () => {
   isSearchBarOpen.value = !isSearchBarOpen.value;
   if (isSearchBarOpen.value) {
-    isMenuOpen.value = false; // Ensure the menu closes when the search bar opens
+    isMenuOpen.value = false;
   }
 };
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
   if (isMenuOpen.value) {
-    isSearchBarOpen.value = false; // Ensure the search bar closes when the menu opens
+    isSearchBarOpen.value = false;
   }
 };
 
@@ -48,16 +48,11 @@ const closeMenu = () => {
 };
 
 const closeSearchBar = () => {
-  console.log("CLICKED SEARCH")
-  isSearchBarOpen.value = false;
-};
-
-const closeAll = () => {
-  isMenuOpen.value = false;
   isSearchBarOpen.value = false;
 };
 
 </script>
+
 
 <style scoped>
 .overlay {
@@ -66,17 +61,17 @@ const closeAll = () => {
   width: 100vw;
   height: 200vh;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10; /* Ensure overlay is above other content */
+  z-index: 10;
 }
 
 .search-overlay {
   position: fixed;
-  top: 60.2px; /* Assuming the top-menu height is 40px */
+  top: 60.2px;
   left: 0;
   width: 100vw;
-  height: calc(100vh - 40px); /* Height minus the menu bar height */
+  height: calc(100vh - 40px);
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10; /* Ensure overlay is above other content */
+  z-index: 10;
 }
 
 .top-menu {
@@ -87,17 +82,17 @@ const closeAll = () => {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: 15; /* Ensure menu is above overlay */
+  z-index: 15;
 }
 
 .search-bar-wrapper {
   position: fixed;
-  top: 40px; /* Positioned below the menu bar */
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100vw - 40px);
   margin-top: -30px;
-  z-index: 20; /* Ensure search bar is on top of everything */
+  z-index: 20;
 }
 
 .material-icons {
@@ -120,4 +115,5 @@ const closeAll = () => {
   margin-right: 3px;
   margin-top: -9px;
 }
+
 </style>
