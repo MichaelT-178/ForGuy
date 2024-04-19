@@ -145,7 +145,7 @@ const navigateTo = (link) => {
 .sub-menu div {
   display: flex;
   align-items: center;
-  font-size: 1em;
+  font-size: 1.07em;
   padding: 5px 0;
   margin-bottom: 6px;
   box-sizing: border-box;
