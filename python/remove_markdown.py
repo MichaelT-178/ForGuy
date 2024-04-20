@@ -1,15 +1,26 @@
-import json
 import re
 
 class RemoveMarkdown:
+    """
+    Removes markdown syntax in SearchData.json
+    """
 
     def __init__(self, content):
         self.content = content
 
+        # [Cool Website](https://www.target.com/)
         self.hyperlink = r'\[([^\]]+)\]\((https?:\/\/[^\s]+)\)'
+
+        # (Contact me)[/ContactMe]
         self.routerlink = r'\(([^)]+)\)\[([^\s]+)\]'
+
+        # @NSA and DoD@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'UNCW is designated as a National Center of Academic Excellence in Cyber Defense Education (CAE-CDE) by the National Security Agency and Department of Homeland Security. Link -> www.uncw.edu/ccde. (I took this picture in Congdon Hall)', 'Pic': 'NSA.png'} }]
         self.routerlink_props = r'@([^@]+)@\[\s*({.*?})\s*\]'
+
+        # &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
         self.download_link = r'\&([^\]]+)\&\((https?:\/\/[^\s]+)\)'
+
+        # Scroll down(codeBlockRef), Different for multiple accounts(secondGitHubEight), etc.
         self.scroll_link = r'(Different for multiple accounts|Scroll back up to original step|Scroll back to links|Scroll down)\((.*?)\)'
 
 
@@ -18,25 +29,24 @@ class RemoveMarkdown:
             for idx, result in enumerate(item["Results"]):
                 for key, value in result.items():
 
-                    t, new_text = self.undo_link(value, self.hyperlink)
-                    t, new_text = self.undo_link(new_text, self.routerlink)
-                    t, new_text = self.undo_link(new_text, self.routerlink_props)
-                    t, new_text = self.undo_link(new_text, self.download_link)
-                    t, new_text = self.undo_link(new_text, self.scroll_link)
+                    new_text = self.undo_link(value, self.hyperlink)
+                    new_text = self.undo_link(new_text, self.routerlink)
+                    new_text = self.undo_link(new_text, self.routerlink_props)
+                    new_text = self.undo_link(new_text, self.download_link)
+                    new_text = self.undo_link(new_text, self.scroll_link)
 
                     item["Results"][idx][key] = new_text
 
         return self.content
 
+
     def undo_link(self, text, markdown_pattern):
         if isinstance(text, int):
-            return False, text
-        
-        match = re.search(markdown_pattern, text)
+            return text
 
         cleaned_text = re.sub(markdown_pattern, r'\1', text)
 
-        return match is not None, cleaned_text
+        return cleaned_text
     
 
 
