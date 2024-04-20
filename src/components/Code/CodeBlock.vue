@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- Wrapper div added for alignment -->
     <div class="aligned-container">
       <div class="text-container">
         <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
@@ -191,6 +190,25 @@ code {
   font-size: 14px;
   margin-left: 16px;
   line-height: 20px;
+}
+
+@media (max-width: 700px) {
+  .aligned-container {
+    width: 500px;
+  }
+
+  .copy-bar {
+    justify-content: start;
+  }
+
+  .language-name {
+    flex-grow: 0;
+    margin-right: 10px;
+  }
+
+  .copy-icon {
+    order: -1;
+  }
 }
 
 </style>
