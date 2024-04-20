@@ -1,15 +1,15 @@
 [
     {
-        "Title": "Home",
+        "Title": "Home 🏠",
         "Link": "/",
         "Results": [
             {
                 "Header": "What is this website?",
-                "Body": "The main purpose of this website is to help you start your software engineering career. We're going to get you an internship, we're going to get you a job, and we're going to get you PAID. I understand that the current job market is difficult to get into, not just for UNCW students, but for computer science majors as a whole. This site contains information that will help you in your job search and in your academic career. I also included some other more general topics throughout the website that I thought you might like. If you want me to add a section or want me to elaborate or add more information to an existing section, please don't hesitate to (Contact me)[/ContactMe]."
+                "Body": "The main purpose of this website is to help you start your software engineering career. We're going to get you an internship, we're going to get you a job, and we're going to get you PAID. I understand that the current job market is difficult to get into, not just for UNCW students, but for computer science majors as a whole. This site contains information that will help you in your job search and in your academic career. I also included some other more general topics throughout the website that I thought you might like. If you want me to add a section or want me to elaborate or add more information to an existing section, please don't hesitate to Contact me."
             },
             {
                 "Header": "Why should you listen to me?",
-                "Body": "I am a recent UNCW computer science alumni and I'm currently working as a Software Engineer at IBM in Research Triangle Park making six-figures my first month out of college. During college I had two SWE internships, one at USAA and the other at a startup company called Amotions, Inc. I've also received a couple other full-time and internship offers as well. My situation is somewhat rare for a UNCW alumni and I want to help get you in the same boat, if that's something you're interested in. So far, I've successfully helped a friend of mine at UNCW (class of 2025) get a SWE internship at USAA and I feel like I've developed pretty good job-searching strategies over the years. I think you would find some of these techniques and strategies useful, so I've shared them fairly in depth throughout this website. As mentioned earlier, if you need any help with anything please do not hesitate to (contact me)[/ContactMe]. Definitely don't hesitate to spam me with questions, I'd be more than happy to answer all of them to the best of my ability. "
+                "Body": "I am a recent UNCW computer science alumni and I'm currently working as a Software Engineer at IBM in Research Triangle Park making six-figures my first month out of college. During college I had two SWE internships, one at USAA and the other at a startup company called Amotions, Inc. I've also received a couple other full-time and internship offers as well. My situation is somewhat rare for a UNCW alumni and I want to help get you in the same boat, if that's something you're interested in. So far, I've successfully helped a friend of mine at UNCW (class of 2025) get a SWE internship at USAA and I feel like I've developed pretty good job-searching strategies over the years. I think you would find some of these techniques and strategies useful, so I've shared them fairly in depth throughout this website. As mentioned earlier, if you need any help with anything please do not hesitate to contact me. Definitely don't hesitate to spam me with questions, I'd be more than happy to answer all of them to the best of my ability. "
             },
             {
                 "Header": "Explanation of Search Functionality",
@@ -17,12 +17,12 @@
             },
             {
                 "Header": "Download or View Source Code",
-                "Body": "You can view the source code in this [GitHub Repository](https://github.com/MichaelT-178/ForGuy). This web application is written in Vue.js and is currently being hosted on GitHub pages. In case something happens to this website, you can also download the source code by clicking &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)."
+                "Body": "You can view the source code in this GitHub Repository. This web application is written in Vue.js and is currently being hosted on GitHub pages. In case something happens to this website, you can also download the source code by clicking here."
             }
         ]
     },
     {
-        "Title": "Where To Apply",
+        "Title": "Where To Apply 🧳",
         "Link": "/Jobs/WhereToApply",
         "Results": [
             {
@@ -37,7 +37,7 @@
                 "LinkedIn": "https://www.linkedin.com/company/usaa/jobs/",
                 "Handshake": "https://uncw.joinhandshake.com/stu/employers/18568#jobs",
                 "Contact": "",
-                "Tips": "The official name of this SWE position is \"IT Intern\". Set up notifications via handshake for USAA if you're interested. I think the San Antonio summer application comes out in early-mid September. The Plano one comes out in early-mid October. Apply as soon as the application comes out and I think your chances of getting the job will be pretty high. I could help you through the interview process, and if you did your internship in Plano I could help you with housing. You could also set job alerts using this link -> [Here](https://www.usaajobs.com/). Go to the bottom section of the page titled \"Join our talent community\" and enter your information to subscribe to their job alert mailing list. Also the return offer rate for full-time positions at USAA is VERY high (~85%) so keep that in mind through the process. This is a very fun, easy, low-stress internship with lots of great learning and networking opportunities. You'll meet a lot of other college kids in the same boat as you, which I think is good.",
+                "Tips": "The official name of this SWE position is \"IT Intern\". Set up notifications via handshake for USAA if you're interested. I think the San Antonio summer application comes out in early-mid September. The Plano one comes out in early-mid October. Apply as soon as the application comes out and I think your chances of getting the job will be pretty high. I could help you through the interview process, and if you did your internship in Plano I could help you with housing. You could also set job alerts using this link -> Here. Go to the bottom section of the page titled \"Join our talent community\" and enter your information to subscribe to their job alert mailing list. Also the return offer rate for full-time positions at USAA is VERY high (~85%) so keep that in mind through the process. This is a very fun, easy, low-stress internship with lots of great learning and networking opportunities. You'll meet a lot of other college kids in the same boat as you, which I think is good.",
                 "Pay": "$25.75 per hour"
             },
             {
@@ -70,7 +70,7 @@
                 "Location": "Fort G. Meade, Maryland",
                 "LinkedIn": "https://www.linkedin.com/company/national-security-agency/jobs/",
                 "Contact": "",
-                "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months. Also I took like 3 months after I did the video interview to hear back and get an offer, so be patient. Also, UNCW seems to have some sort of connection with the @NSA and DoD@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'UNCW is designated as a National Center of Academic Excellence in Cyber Defense Education (CAE-CDE) by the National Security Agency and Department of Homeland Security. Link -> www.uncw.edu/ccde. (I took this picture in Congdon Hall)', 'Pic': 'NSA.png'} }].",
+                "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months. Also I took like 3 months after I did the video interview to hear back and get an offer, so be patient. Also, UNCW seems to have some sort of connection with the NSA and DoD.",
                 "Pay": "The full-time SWE position offer I received paid $81,233 a year."
             },
             {
@@ -78,7 +78,7 @@
                 "Location": "Washington DC - Baltimore Area",
                 "LinkedIn": "https://www.linkedin.com/company/deptofdefense/jobs/",
                 "Contact": "",
-                "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months. Also, UNCW seems to have some sort of connection with the @NSA and DoD@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'UNCW is designated as a National Center of Academic Excellence in Cyber Defense Education (CAE-CDE) by the National Security Agency and Department of Homeland Security. Link -> www.uncw.edu/ccde. (I took this picture in Congdon Hall)', 'Pic': 'NSA.png'} }].",
+                "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months. Also, UNCW seems to have some sort of connection with the NSA and DoD.",
                 "Pay": ""
             },
             {
@@ -144,7 +144,7 @@
                 "Name": "IBM",
                 "Location": "Durham, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/fidelity-investments/jobs/",
-                "Contact": "Me. Use the (contact form)[/ContactMe] to express interest.",
+                "Contact": "Me. Use the contact form to express interest.",
                 "Tips": "Apply here for full-time jobs after you gain some experience through your internships.",
                 "Pay": ""
             },
@@ -409,6 +409,46 @@
                 "Location": "Cary, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/tata-consultancy-services/jobs/",
                 "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Brooksource",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/brooksource/jobs/",
+                "Contact": "(980) 280-9232",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Cerebra Consulting Inc",
+                "Location": "New Brunswick, New Jersey",
+                "LinkedIn": "https://www.linkedin.com/company/cerebra-consulting-inc/jobs/",
+                "Contact": "Sathivada Sitaram (Sitaram.sathivada@cerebra-consulting.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Mission Technologies, a division of HII",
+                "Location": "Arlington, Virginia",
+                "LinkedIn": "https://www.linkedin.com/company/mission-technologies-a-division-of-hii/jobs/",
+                "Contact": "Kevin Norton (Kevin.Norton@hii-tsd.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Veterans United Home Loans",
+                "Location": "St. Louis, Missouri",
+                "LinkedIn": "https://www.linkedin.com/company/veteransunited/jobs/",
+                "Contact": "Sara Gibson (Sara.Gibson@veteransunited.com)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Seminaut Inc",
+                "Location": "San Marcos, Texas (Remote)",
+                "LinkedIn": "https://www.linkedin.com/company/seminaut-inc/jobs/",
+                "Contact": "Caleb Barnwell (cmibarnwell@seminautdigital.com)",
                 "Tips": "",
                 "Pay": ""
             },
@@ -1426,7 +1466,7 @@
         ]
     },
     {
-        "Title": "Resume Template",
+        "Title": "Resume Template 📄",
         "Link": "/Jobs/ResumeTemplate",
         "Results": [
             {
@@ -1520,7 +1560,7 @@
         ]
     },
     {
-        "Title": "How To Get a Job",
+        "Title": "How To Get a Job 💡",
         "Link": "/Jobs/HowToGetAJob",
         "Results": [
             {
@@ -1530,7 +1570,7 @@
             {
                 "Name": "Possible Career Path",
                 "Description": "This is a possible career path you could take inspiration from.",
-                "Career Path": "In summer 2024 try to get a job at Datacor, Inc. or nCino. The job at \"Datacor, inc.\" is remote and pays. If interested contact me using the (form)[/ContactMe], I know a guy., During your junior year work as a TAC Student Technician., Apply to USAA in early September or Early October for summer 2025. The position is called \"IT Intern\". Look out for the one in Plano, TX., Go to the Career fair in September and apply for Pearson as a backup., During the second semester of your junior year work as an intern at Amotions, Inc. and get credit for CSC 498., Work at USAA in summer 2025 (preferably Plano so I can help you with housing)., Graduate early in December 2025 and start applying to \"reach\" companies."
+                "Career Path": "In summer 2024 try to get a job at Datacor, Inc. or nCino. The job at \"Datacor, inc.\" is remote and pays. If interested contact me using the form, I know a guy., During your junior year work as a TAC Student Technician., Apply to USAA in early September or Early October for summer 2025. The position is called \"IT Intern\". Look out for the one in Plano, TX., Go to the Career fair in September and apply for Pearson as a backup., During the second semester of your junior year work as an intern at Amotions, Inc. and get credit for CSC 498., Work at USAA in summer 2025 (preferably Plano so I can help you with housing)., Graduate early in December 2025 and start applying to \"reach\" companies."
             },
             {
                 "Name": "Apply to USAA",
@@ -1594,7 +1634,7 @@
             },
             {
                 "Name": "Make your Resume Look Good",
-                "Description": "Having a clean, well-organized, and professional resume can have a positive impact and help you stand out. I've had hiring managers in the past tell me how much they liked my resume. See (here)[/Jobs/ResumeTemplate] for the template I use."
+                "Description": "Having a clean, well-organized, and professional resume can have a positive impact and help you stand out. I've had hiring managers in the past tell me how much they liked my resume. See here for the template I use."
             },
             {
                 "Name": "Check your UNCW Email Frequently",
@@ -1602,7 +1642,7 @@
             },
             {
                 "Name": "Visit Professor Websites",
-                "Description": "Professor websites typically have upcoming research opportunities that you can contact them about. An example would be Dr. Layman's [GitHub Pages](https://llayman.github.io/) website."
+                "Description": "Professor websites typically have upcoming research opportunities that you can contact them about. An example would be Dr. Layman's GitHub Pages website."
             },
             {
                 "Name": "Let Me Know If You Have Questions",
@@ -1611,12 +1651,12 @@
             {
                 "Name": "Helpful Website Links",
                 "Description": "These are websites I think you'd find helpful in your job search",
-                "Websites": "[LinkedIn](https://www.linkedin.com/feed/), [HandShake](https://uncw.joinhandshake.com/stu/postings), [Job Pulse: Internships](https://jobpulse.fyi/Software-Engineer-Internship), [Job Pulse: Entry-level Full Time](https://jobpulse.fyi/Software-Engineer-NewGrad)"
+                "Websites": "LinkedIn, HandShake, Job Pulse: Internships, Job Pulse: Entry-level Full Time"
             }
         ]
     },
     {
-        "Title": "Offers I've Received",
+        "Title": "Offers I've Received 🤝🏻",
         "Link": "/Jobs/OffersReceived",
         "Results": [
             {
@@ -1632,7 +1672,7 @@
             {
                 "Name": "USAA",
                 "Job Title": "IT Intern",
-                "Contact": "Express interest and I will help you out. My manager and I kind of keep in touch. Use the (Contact Form)[/ContactMe].",
+                "Contact": "Express interest and I will help you out. My manager and I kind of keep in touch. Use the Contact Form.",
                 "Location": "Plano, Texas or San Antonio, Texas",
                 "Details": "The application period for Summer 2025 positions will begin in early September for the San Antonio location, and in early October for the office in Plano, Texas. Apply asap if you're interested. Also, be aware that those dates might change. Set job alerts on handshake to stay up to date."
             },
@@ -1647,7 +1687,14 @@
                 "Job Title": "Software Engineer Intern",
                 "Location": "Remote (California)",
                 "Contact": "pianpian@amotionsinc.com",
-                "Details": "If you're interested I think it'd be best to have me contact her for you. Express interest to me via the (contact form)[/ContactMe] and I'll write you a letter of recommendation and send her your resume. You could also just use the email above and contact her yourself if you wanted. Also note, that while this position is in California, I don't think the timezone difference should be an issue since they have their meetings at night. This is not a paid position but it's still a great way to gain experience, get something to put on your resume, and you could get credit for CSC 498. @This was my poster@[{ 'name': 'ImageView', 'params': { 'Name': 'Amotions Poster', 'Description': 'This was my CSC 498 poster for the computing showcase. I got a 100 on it.', 'Pic': 'AmotionsPoster.png'} }]."
+                "Details": "If you're interested I think it'd be best to have me contact her for you. Express interest to me via the contact form and I'll write you a letter of recommendation and send her your resume. You could also just use the email above and contact her yourself if you wanted. Also note, that while this position is in California, I don't think the timezone difference should be an issue since they have their meetings at night. This is not a paid position but it's still a great way to gain experience, get something to put on your resume, and you could get credit for CSC 498. This was my poster."
+            },
+            {
+                "Name": "iD Tech Camps",
+                "Job Title": "STEM Instructor",
+                "Location": "Remote (North Carolina)",
+                "Contact": "wlawrence@idtech.com",
+                "Details": "This was a part-time programming tutoring offer I received while working at IBM. The hours seemed very flexible and it paid $16 an hour."
             },
             {
                 "Name": "USAA",
@@ -1660,14 +1707,14 @@
                 "Name": "IBM",
                 "Job Title": "MultiCloud SaaS Platform Developer",
                 "Location": "Durham, North Carolina (RTP)",
-                "Contact": "Express interest and I will help you out. However my word probably means very little. Use the (Contact Form)[/ContactMe].",
+                "Contact": "Express interest and I will help you out. However my word probably means very little. Use the Contact Form.",
                 "Description": "This is where I'm currently working. The base pay is very good. I'd recommend working here if possible."
             },
             {
                 "Name": "National Security Agency",
                 "Job Title": "Cryptographic Systems Solutions Software Engineer",
                 "Location": "Fort G. Meade, Maryland",
-                "Description": "You need to get a security clearance to work at the NSA. I went through basically the entire process and I could help you out if needed. Base pay is $81,233. UNCW has some connection with the NSA, @I saw this in Congdon Hall@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'UNCW is designated as a National Center of Academic Excellence in Cyber Defense Education (CAE-CDE) by the National Security Agency and Department of Homeland Security. Link -> www.uncw.edu/ccde. (I took this picture in Congdon Hall)', 'Pic': 'NSA.png'} }]."
+                "Description": "You need to get a security clearance to work at the NSA. I went through basically the entire process and I could help you out if needed. Base pay is $81,233. UNCW has some connection with the NSA, I saw this in Congdon Hall."
             },
             {
                 "Name": "Soft Technology Consultant",
@@ -1706,7 +1753,7 @@
         ]
     },
     {
-        "Title": "Interview Tips",
+        "Title": "Interview Tips 💬",
         "Link": "/jobs/InterviewTips",
         "Results": [
             {
@@ -1735,7 +1782,7 @@
             },
             {
                 "id": 6,
-                "tip": "Gain a general understanding of Kubernetes, docker, pods, and containers. (Look into certifications)[/Classes/Certifications]. It would be very good to learn."
+                "tip": "Gain a general understanding of Kubernetes, docker, pods, and containers. Look into certifications. It would be very good to learn."
             },
             {
                 "id": 7,
@@ -1788,7 +1835,7 @@
         ]
     },
     {
-        "Title": "Career Path Advice",
+        "Title": "Career Path Advice 🧭",
         "Link": "/Jobs/CareerPathAdvice",
         "Results": [
             {
@@ -1797,7 +1844,7 @@
             },
             {
                 "id": 1,
-                "advice": "In summer 2024 try to get a job at Datacor, Inc. or nCino. The job at \"Datacor, inc.\" is remote and pays. If interested, tell me using the (form)[/ContactMe], I know a guy."
+                "advice": "In summer 2024 try to get a job at Datacor, Inc. or nCino. The job at \"Datacor, inc.\" is remote and pays. If interested, tell me using the form, I know a guy."
             },
             {
                 "id": 2,
@@ -1805,7 +1852,7 @@
             },
             {
                 "id": 3,
-                "advice": "Your junior year you could work as a TAC Student Worker Technician while on campus. See the (Where To Apply)[/Jobs/WhereToApply] page for more details."
+                "advice": "Your junior year you could work as a TAC Student Worker Technician while on campus. See the Where To Apply page for more details."
             },
             {
                 "id": 4,
@@ -1826,7 +1873,7 @@
         ]
     },
     {
-        "Title": "What Is LinkedIn?",
+        "Title": "What Is LinkedIn? 🌐",
         "Link": "/LinkedIn/WhatIsLinkedIn",
         "Results": [
             {
@@ -1836,7 +1883,7 @@
         ]
     },
     {
-        "Title": "Setup a Profile",
+        "Title": "Setup a Profile 🤳🏻",
         "Link": "/LinkedIn/SetupProfile",
         "Results": [
             {
@@ -1845,11 +1892,11 @@
             },
             {
                 "id": 1,
-                "instruction": "Before you do anything else, change your profile viewing settings. LinkedIn will notify people that you viewed their profile if you don't change this setting. Go to this [link](https://www.linkedin.com/mypreferences/d/profile-viewing-options) and select \"private mode\". Press the back button when you're done."
+                "instruction": "Before you do anything else, change your profile viewing settings. LinkedIn will notify people that you viewed their profile if you don't change this setting. Go to this link and select \"private mode\". Press the back button when you're done."
             },
             {
                 "id": 2,
-                "instruction": "Go to the [LinkedIn](https://www.linkedin.com/feed/) home page, just to start from the beginning."
+                "instruction": "Go to the LinkedIn home page, just to start from the beginning."
             },
             {
                 "id": 3,
@@ -1925,12 +1972,12 @@
             },
             {
                 "id": 21,
-                "instruction": "Go to the (Setup Job Alerts)[/LinkedIn/SetupJobAlerts] page, to learn how to get notified about job openings about certain companies."
+                "instruction": "Go to the Setup Job Alerts page, to learn how to get notified about job openings about certain companies."
             }
         ]
     },
     {
-        "Title": "Setup Job Alerts",
+        "Title": "Setup Job Alerts 🔔",
         "Link": "/LinkedIn/SetupJobAlerts",
         "Results": [
             {
@@ -1939,7 +1986,7 @@
             },
             {
                 "id": 1,
-                "instruction": "Before you do anything, make sure you have notifications set up for job alerts using this [link](https://www.linkedin.com/mypreferences/d/notification-subcategories/job-alerts). I'd recommend enabling In-app, push, and email notifications for job alerts. Once you done, press the back button."
+                "instruction": "Before you do anything, make sure you have notifications set up for job alerts using this link. I'd recommend enabling In-app, push, and email notifications for job alerts. Once you done, press the back button."
             },
             {
                 "id": 2,
@@ -1947,7 +1994,7 @@
             },
             {
                 "id": 3,
-                "instruction": "Go to the [LinkedIn](https://www.linkedin.com/feed/) home page."
+                "instruction": "Go to the LinkedIn home page."
             },
             {
                 "id": 4,
@@ -1987,7 +2034,7 @@
             },
             {
                 "id": 13,
-                "instruction": "Go to the [LinkedIn](https://www.linkedin.com/feed/) home page."
+                "instruction": "Go to the LinkedIn home page."
             },
             {
                 "id": 14,
@@ -2012,7 +2059,7 @@
         ]
     },
     {
-        "Title": "LinkedIn Tips",
+        "Title": "LinkedIn Tips 🧐",
         "Link": "/LinkedIn/LinkedinTips",
         "Results": [
             {
@@ -2034,7 +2081,7 @@
             {
                 "Tip": "Tip 3",
                 "Name": "Setup Your Profile",
-                "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this (page)[/LinkedIn/SetUpProfile] for details."
+                "Explanation": "Set up your profile so recruiters can learn more about you and your work experience. Go to this page for details."
             },
             {
                 "Tip": "Tip 4",
@@ -2046,7 +2093,7 @@
                 "Tip": "Tip 5",
                 "Name": "Connect With People",
                 "Explanation": "",
-                "Instructions": "To connect with people simply look their name up in the search bar on the [feed page](https://www.linkedin.com/feed/)., Click their profile in the results., Near the top of their profile click the blue \"Connect\" button."
+                "Instructions": "To connect with people simply look their name up in the search bar on the feed page., Click their profile in the results., Near the top of their profile click the blue \"Connect\" button."
             },
             {
                 "Tip": "Tip 6",
@@ -2062,12 +2109,12 @@
                 "Tip": "Tip 8",
                 "Name": "Use the \"People\" Tab",
                 "Explanation": "If you go to a companies page, and go to the “People” tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
-                "Instructions": "For this example lets use nCino, Inc., Go to the [People Tab](https://www.linkedin.com/company/ncino-inc-/people/) of the company website., Look around the page to learn more about the people from the company., Note: In my opinion, the People tab looks better and is more intuitive to use on the mobile app."
+                "Instructions": "For this example lets use nCino, Inc., Go to the People Tab of the company website., Look around the page to learn more about the people from the company., Note: In my opinion, the People tab looks better and is more intuitive to use on the mobile app."
             }
         ]
     },
     {
-        "Title": "Contacts",
+        "Title": "Contacts 👤",
         "Link": "/LinkedIn/Contacts",
         "Results": [
             {
@@ -2181,6 +2228,36 @@
                 "LinkedIn": "https://www.linkedin.com/in/brandon-bernal-291882234/",
                 "Details": "The UNCW computer science department sent an email about this guy recruiting for SWE positions in Cary, NC.",
                 "Image": "Garmin.jpg"
+            },
+            {
+                "Name": "Caleb Barnwell",
+                "Company": "Seminaut Inc",
+                "Role": "Chief Executive Officer",
+                "Location": "Remote",
+                "Email": "cmibarnwell@seminautdigital.com",
+                "LinkedIn": "https://www.linkedin.com/in/caleb-barnwell/",
+                "Details": "This guy contact me about a SWE internship in Fall 2022.",
+                "Image": "Seminaut.jpg"
+            },
+            {
+                "Name": "Sara Gibson",
+                "Company": "Veterans United Home Loans",
+                "Role": "Recruiter",
+                "Location": "St. Louis, Missouri",
+                "Email": "Sara.Gibson@veteransunited.com",
+                "LinkedIn": "https://www.linkedin.com/in/saramallen7/",
+                "Details": "This women contacted me about a SWE internship in Fall 2022.",
+                "Image": "Veterans.jpg"
+            },
+            {
+                "Name": "Kevin Norton",
+                "Company": "Mission Technologies, a division of HII",
+                "Role": "University Relations and Recruiting Lead",
+                "Location": "Arlington, Virginia",
+                "Email": "Kevin.Norton@hii-tsd.com",
+                "LinkedIn": "https://www.linkedin.com/in/kevin-norton-recruiter/",
+                "Details": "This guy contacted me about a SWE internship in Fall 2022.",
+                "Image": "Mission.jpg"
             },
             {
                 "Name": "Liz Flowers",
@@ -2455,7 +2532,7 @@
         ]
     },
     {
-        "Title": "Class Recommendations",
+        "Title": "Class Recommendations 👍",
         "Link": "/Classes/ClassRecommendations",
         "Results": [
             {
@@ -2472,7 +2549,7 @@
                 "Title": "Western Civilization I",
                 "Professor": "Corey Ellithorpe",
                 "Format": "In-Person",
-                "Description": "This class was incredible. It was basically just the professor telling us stories about ancient history the entire time. The periods covered were predominantly Ancient Mesopotamia, Egypt, Greece, Rome, Muslim Empire, Viking, and Old England. The class was 3 super easy essays, 4 tests (all the same length), and a couple quizzes throughout. Tragically, it seems like Dr. Ellithorpe is now teaching at the [University of South Florida](https://www.usf.edu/arts-sciences/departments/history/people/corey-ellithorpe.aspx). However, I'd definitely watch out to see if he comes back and take it with him if possible."
+                "Description": "This class was incredible. It was basically just the professor telling us stories about ancient history the entire time. The periods covered were predominantly Ancient Mesopotamia, Egypt, Greece, Rome, Muslim Empire, Viking, and Old England. The class was 3 super easy essays, 4 tests (all the same length), and a couple quizzes throughout. Tragically, it seems like Dr. Ellithorpe is now teaching at the University of South Florida. However, I'd definitely watch out to see if he comes back and take it with him if possible."
             },
             {
                 "Name": "CSC 351: Applied Software Security",
@@ -2489,7 +2566,7 @@
                 "Professor": "Shauna White",
                 "Format": "Basically Remote",
                 "Contact": "turners@uncw.edu",
-                "Description": "This class is a great and easy way to get 3 credit hours. You can take this \"class\" if you get a computer science internship. All you have to do in this class is write one paragraph a week about what you did in your internship and at the end you present your poster at the computing showcase. The \"presentation\" is extremely easy and you just stand by your poster. I only had like two people come up to me the entire time to ask me about my poster. You don't present in front of a group. The class is pass/fail and you can't sign for it using seanet. Email Mrs. White (turners@uncw.edu) to express your interest and she'll help you sign up. Note that your internship supervisor should say you're working 15 hours a week to get the full 3 credit hours. Here's a picture of my @computing showcase poster@[{ 'name': 'ImageView', 'params': { 'Name': 'Amotions Poster', 'Description': 'This was my CSC 498 poster for the computing showcase. I got a 100 on it.', 'Pic': 'AmotionsPoster.png'} }]."
+                "Description": "This class is a great and easy way to get 3 credit hours. You can take this \"class\" if you get a computer science internship. All you have to do in this class is write one paragraph a week about what you did in your internship and at the end you present your poster at the computing showcase. The \"presentation\" is extremely easy and you just stand by your poster. I only had like two people come up to me the entire time to ask me about my poster. You don't present in front of a group. The class is pass/fail and you can't sign for it using seanet. Email Mrs. White (turners@uncw.edu) to express your interest and she'll help you sign up. Note that your internship supervisor should say you're working 15 hours a week to get the full 3 credit hours. Here's a picture of my computing showcase poster."
             },
             {
                 "Name": "MUS 115: Music in Society",
@@ -2497,7 +2574,7 @@
                 "Title": "Music in Society",
                 "Professor": "Nicholas Fife",
                 "Format": "Synchronous Remote",
-                "Description": "This is the easiest class I've taken since like 1st grade. All we would do is open note quizzes that's questions just were copied and pasted facts directly from the slides with a word left out. The quizzes were open notes/internet as well. We also did 2 extremely short easy concert review papers. You could tell he seriously didn't care about grading stuff or making the class hard.  Unfortunately Dr. Fife seems to now be teaching at [Winthrop University](https://www.winthrop.edu/cvpa/faculty-staff/bios/fife-nicholas.aspx). I'd still keep an eye out, maybe he'll come back. Also I'm sure this class would be pretty easy no matter the format or professor."
+                "Description": "This is the easiest class I've taken since like 1st grade. All we would do is open note quizzes that's questions just were copied and pasted facts directly from the slides with a word left out. The quizzes were open notes/internet as well. We also did 2 extremely short easy concert review papers. You could tell he seriously didn't care about grading stuff or making the class hard.  Unfortunately Dr. Fife seems to now be teaching at Winthrop University. I'd still keep an eye out, maybe he'll come back. Also I'm sure this class would be pretty easy no matter the format or professor."
             },
             {
                 "Name": "ARH 201: Ancient Art and Archaeology",
@@ -2550,7 +2627,7 @@
                 "Professor": "Dr. Corey Ellithorpe",
                 "Website": "https://www.usf.edu/arts-sciences/departments/history/people/corey-ellithorpe.aspx",
                 "Classes": "HST 101",
-                "Description": "Dr. Ellithorpe GOATED. He's a god-tier story teller and teaches history in a very theatrical way. There were times I was literally borderline shaking cause of how exciting some of the stories were. He would also sometimes end the class on a cliff-hanger which was always fun. Tragically, it seems like now he's teaching at the University of South Florida. @Hopefully he'll come back@[{ 'name': 'ImageView', 'params': { 'Name': 'Dr. Corey Ellithorpe 🐐', 'Description': '\\\\\\\"I think I&&&&ll miss you forever, like the stars miss the sun in the morning sky\\\\\\\" - Lana Del Rey', 'Pic': 'Ellithorpe.png'} }]."
+                "Description": "Dr. Ellithorpe GOATED. He's a god-tier story teller and teaches history in a very theatrical way. There were times I was literally borderline shaking cause of how exciting some of the stories were. He would also sometimes end the class on a cliff-hanger which was always fun. Tragically, it seems like now he's teaching at the University of South Florida. Hopefully he'll come back."
             },
             {
                 "Name": "Dr. Curry Guinn",
@@ -2562,7 +2639,7 @@
         ]
     },
     {
-        "Title": "Classes I've Taken",
+        "Title": "Classes I've Taken 👨🏻‍🏫",
         "Link": "/Classes/ClassesIveTaken",
         "Results": [
             {
@@ -2838,7 +2915,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Corey Ellithorpe",
-                "Description": "This class was easily one my favorite classes I've ever taken. The title \"Europe in the World I\" is not a super accurate name for what you learn about in this class. Dr. Ellithorpe is an amazing professor and teaches history in a super entertaining story-telling way. There were times I was on edge of my seat borderline shaking at how exciting the stories were. Dr. Ellithorpe also understands that people are taking the class as an elective and aren't history majors, so he makes it relatively easy and fun. The grades are just quizzes, 3 easy essays, and 4 tests of the same length. The historical periods covered are the Ancient Near East and Egypt, Greece, Rome, and Medieval Europe. Tragically, Dr. Ellithorpe appears to now be working at the [University of South Florida](https://www.usf.edu/arts-sciences/departments/history/people/corey-ellithorpe.aspx). Hopefully he'll come back to UNCW someday.",
+                "Description": "This class was easily one my favorite classes I've ever taken. The title \"Europe in the World I\" is not a super accurate name for what you learn about in this class. Dr. Ellithorpe is an amazing professor and teaches history in a super entertaining story-telling way. There were times I was on edge of my seat borderline shaking at how exciting the stories were. Dr. Ellithorpe also understands that people are taking the class as an elective and aren't history majors, so he makes it relatively easy and fun. The grades are just quizzes, 3 easy essays, and 4 tests of the same length. The historical periods covered are the Ancient Near East and Egypt, Greece, Rome, and Medieval Europe. Tragically, Dr. Ellithorpe appears to now be working at the University of South Florida. Hopefully he'll come back to UNCW someday.",
                 "Grading": "Quizzes - 15% (10 Quizzes, 1.5 each), Essays - 30% (3 Essays total), Tests - 50% (4 total, 12.5 each), Attendance - 5%",
                 "Tips": "This class is now called HST 101: Western Civilization I, even though that's not really what we covered in class. Take a ton of notes during class."
             },
@@ -2886,7 +2963,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Shauna White",
-                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/ApartmentRegistry). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
+                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this GitHub repository. Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
                 "Skills": "Java, JavaFx, SceneBuilder",
                 "Tips": "",
                 "Grading": "Homework - 10%, Test 1 - 10%, Test 2 - 10%, Final Project - 10%, Labs - 25%, Final Exam - 25%, Attendance - 5%"
@@ -2912,7 +2989,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Curry Guinn",
-                "Description": "I found this class somewhat difficult. It's like a harder a version of discrete math/history of modern computing class. Topics include finite-state machines, regex, turing machines, etc. It's like mathematical puzzles and graphs. You do basically no coding in this class except briefly using python to test regex. I also liked when the professor would discuss the history of computing, future of artificial intelligence, and other stuff like that. I would HIGHLY recommend taking this class with Dr. Curry Guinn. He's more then happy to help you with stuff and is a good teacher/nice person. Also at the end you do a writing assignment on a book about [Alan Turing's life](https://www.amazon.com/Alan-Turing-Enigma-Inspired-Imitation/dp/069116472X/ref=asc_df_069116472X/?tag=hyprod-20&linkCode=df0&hvadid=312045876164&hvpos=&hvnetw=g&hvrand=9784359152110339481&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009703&hvtargid=pla-395340046790&psc=1&mcid=37fdbb254d6e30e4ba9d009104adadde&gclid=CjwKCAiAi6uvBhADEiwAWiyRdiagAK0FsLs-0VK2R8ZZGxNhy7EJ4UCefSRx319-5tF1r6TzVZME3xoCN58QAvD_BwE). While I would always do my work in college, I didn't read a single page of the book and still got a 100% on the assignment. I just skimmed parts of it online and used chatGPT. It's not a difficult writing assignment. Also, you take the quizzes online at home.",
+                "Description": "I found this class somewhat difficult. It's like a harder a version of discrete math/history of modern computing class. Topics include finite-state machines, regex, turing machines, etc. It's like mathematical puzzles and graphs. You do basically no coding in this class except briefly using python to test regex. I also liked when the professor would discuss the history of computing, future of artificial intelligence, and other stuff like that. I would HIGHLY recommend taking this class with Dr. Curry Guinn. He's more then happy to help you with stuff and is a good teacher/nice person. Also at the end you do a writing assignment on a book about Alan Turing's life. While I would always do my work in college, I didn't read a single page of the book and still got a 100% on the assignment. I just skimmed parts of it online and used chatGPT. It's not a difficult writing assignment. Also, you take the quizzes online at home.",
                 "Skills": "A very small amount of Python",
                 "Tips": "Study the homework a lot before the tests and take good notes during class. Don't rely on the slides",
                 "Grading": "Quizzes - 10% (Roughly 8), Homework Assignments - 25% (Roughly 8 assignments), Test 1 - 15%, Test 2 - 15%, Final Exam - 35%"
@@ -2938,7 +3015,7 @@
                 "Format": "Mostly Remote",
                 "Credit Hours": "3",
                 "Professor": "Shauna White",
-                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. @This was my poster@[{ 'name': 'ImageView', 'params': { 'Name': 'Amotions Poster', 'Description': 'This was my CSC 498 poster for the computing showcase. I got a 100 on it.', 'Pic': 'AmotionsPoster.png'} }]. I got a 100 on it.",
+                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. This was my poster. I got a 100 on it.",
                 "Skills": "Whatever skills your internship uses.",
                 "Tips": "You can't sign up for this class via Seanet. Contact Shauna White (turners@uncw.edu) if you're interested.",
                 "Grading": "Weekly Paragraphs - 50%, Poster presentation - 50%"
@@ -2951,7 +3028,7 @@
                 "Format": "Synchronous Remote",
                 "Credit Hours": "3",
                 "Professor": "Nicholas Fife",
-                "Description": "This is the easiest class I've taken since Elementary school. The only grades were open-note/slides tests and quizzes and like 2 one-page papers. The open notes tests and quizzes are just questions taken directly from the slides with a word left out. You were allowed to use the slides during the tests. The papers we're an extremely easy completion grade and were like 1 page long. It was a concert review and he let you just watch youtube concerts. Tragically, Dr. Fife now works at [Winthrop University](https://www.winthrop.edu/cvpa/faculty-staff/bios/fife-nicholas.aspx). Hopefully he'll come back someday.",
+                "Description": "This is the easiest class I've taken since Elementary school. The only grades were open-note/slides tests and quizzes and like 2 one-page papers. The open notes tests and quizzes are just questions taken directly from the slides with a word left out. You were allowed to use the slides during the tests. The papers we're an extremely easy completion grade and were like 1 page long. It was a concert review and he let you just watch youtube concerts. Tragically, Dr. Fife now works at Winthrop University. Hopefully he'll come back someday.",
                 "Grading": "Weekly quizzes - 40%, Virtual Concert Reports - 20%, Midterm - 20%, Final Exam - 20%",
                 "Tips": ""
             },
@@ -3014,7 +3091,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Sridhar Narayan",
-                "Description": "This was definitely one of my least favorite classes in the UNCW comp sci curriculum. At the beginning of the class you write parts of made-up UNCW programming language called \"Jiffy\" using Java. After that you work with mostly [SML](https://cs.lmu.edu/~ray/notes/introml/) and [Prolog](https://www.tutorialspoint.com/prolog/prolog_basic_programs.htm). I don't think there's any real reason to know these languages and found that large part of the class kind of pointless. The more useful parts of the class include learning about memory-management, compilers, and other programming language concepts. There are 3 tests throughout each worth 17% of your final grade. The tests are infamously difficult and I'd recommend studying your notes from class, slides, and homeworks. At the end there is a 20-minute long group presentation on a programming language. Most groups have 3 members and my group was assigned Kotlin. We got a 100 on the project and he basically said it was a \"give me\" completion grade. However, I consider us lucky as Kotlin was one of the more well-known languages he assigned. Some obscure ones I saw included Erlang, Clojure, F#, Groovy, etc. More well-known ones included C#, Kotlin, and Ruby.",
+                "Description": "This was definitely one of my least favorite classes in the UNCW comp sci curriculum. At the beginning of the class you write parts of made-up UNCW programming language called \"Jiffy\" using Java. After that you work with mostly SML and Prolog. I don't think there's any real reason to know these languages and found that large part of the class kind of pointless. The more useful parts of the class include learning about memory-management, compilers, and other programming language concepts. There are 3 tests throughout each worth 17% of your final grade. The tests are infamously difficult and I'd recommend studying your notes from class, slides, and homeworks. At the end there is a 20-minute long group presentation on a programming language. Most groups have 3 members and my group was assigned Kotlin. We got a 100 on the project and he basically said it was a \"give me\" completion grade. However, I consider us lucky as Kotlin was one of the more well-known languages he assigned. Some obscure ones I saw included Erlang, Clojure, F#, Groovy, etc. More well-known ones included C#, Kotlin, and Ruby.",
                 "Skills": "SML, Prolog, Java, Skippy",
                 "Tips": "He sometimes asks obscure questions about stuff you only learned in class on tests, so take notes.",
                 "Grading": "Assignments - 39%, Programming Language Presentation - 10%, Test 1 - 17%, Test 2 - 17%, Final Exam - 17%"
@@ -3041,7 +3118,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Marni Ferner",
-                "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to each other or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/AirlineDatabase). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
+                "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to each other or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this GitHub repository. Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
                 "Skills": "SQL, PHP, HTML",
                 "Grading": "Labs - 20% (lowest two dropped), Quizzes and homework - 20%, Group project - 24%, Test 1 - 12%, Test 2 - 12%, Final Exam - 12%",
                 "Tips": ""
@@ -3086,7 +3163,7 @@
         ]
     },
     {
-        "Title": "CSC Descriptions",
+        "Title": "CSC Descriptions 📝",
         "Link": "/Classes/CSCDescriptions",
         "Results": [
             {
@@ -3171,7 +3248,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Shauna White",
-                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/ApartmentRegistry). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
+                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this GitHub repository. Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
                 "Skills": "Java, JavaFx, SceneBuilder",
                 "Text Editor": "Intellij IDEA or PyCharm",
                 "Tips": "",
@@ -3227,7 +3304,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Curry Guinn",
-                "Description": "I found this class somewhat difficult. It's like a harder a version of discrete math/history of modern computing class. Topics include finite-state machines, regex, turing machines, etc. It's like mathematical puzzles and graphs. You do basically no coding in this class except briefly using python to test regex. I also liked when the professor would discuss the history of computing, future of artificial intelligence, and other stuff like that. I would HIGHLY recommend taking this class with Dr. Curry Guinn. He's more then happy to help you with stuff and is a good teacher/nice person. Also at the end you do a writing assignment on a book about [Alan Turing's life](https://www.amazon.com/Alan-Turing-Enigma-Inspired-Imitation/dp/069116472X/ref=asc_df_069116472X/?tag=hyprod-20&linkCode=df0&hvadid=312045876164&hvpos=&hvnetw=g&hvrand=9784359152110339481&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009703&hvtargid=pla-395340046790&psc=1&mcid=37fdbb254d6e30e4ba9d009104adadde&gclid=CjwKCAiAi6uvBhADEiwAWiyRdiagAK0FsLs-0VK2R8ZZGxNhy7EJ4UCefSRx319-5tF1r6TzVZME3xoCN58QAvD_BwE). While I would always do my work in college, I didn't read a single page of the book and still got a 100% on the assignment. I just skimmed parts of it online and used chatGPT. It's not a difficult writing assignment. Also, you take the quizzes online at home.",
+                "Description": "I found this class somewhat difficult. It's like a harder a version of discrete math/history of modern computing class. Topics include finite-state machines, regex, turing machines, etc. It's like mathematical puzzles and graphs. You do basically no coding in this class except briefly using python to test regex. I also liked when the professor would discuss the history of computing, future of artificial intelligence, and other stuff like that. I would HIGHLY recommend taking this class with Dr. Curry Guinn. He's more then happy to help you with stuff and is a good teacher/nice person. Also at the end you do a writing assignment on a book about Alan Turing's life. While I would always do my work in college, I didn't read a single page of the book and still got a 100% on the assignment. I just skimmed parts of it online and used chatGPT. It's not a difficult writing assignment. Also, you take the quizzes online at home.",
                 "Skills": "A very small amount of Python",
                 "Tips": "Study the homework a lot before the tests and take good notes during class. Don't rely on the slides",
                 "Grading": "Quizzes - 10% (Roughly 8), Homework Assignments - 25% (Roughly 8 assignments), Test 1 - 15%, Test 2 - 15%, Final Exam - 35%"
@@ -3266,7 +3343,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Sridhar Narayan",
-                "Description": "This was definitely one of my least favorite classes in the UNCW comp sci curriculum. At the beginning of the class you write parts of made-up UNCW programming language called \"Jiffy\" using Java. After that you work with mostly [SML](https://cs.lmu.edu/~ray/notes/introml/) and [Prolog](https://www.tutorialspoint.com/prolog/prolog_basic_programs.htm). I don't think there's any real reason to know these languages and found that large part of the class kind of pointless. The more useful parts of the class include learning about memory-management, compilers, and other programming language concepts. There are 3 tests throughout each worth 17% of your final grade. The tests are infamously difficult and I'd recommend studying your notes from class, slides, and homeworks. At the end there is a 20-minute long group presentation on a programming language. Most groups have 3 members and my group was assigned Kotlin. We got a 100 on the project and he basically said it was a \"give me\" completion grade. However, I consider us lucky as Kotlin was one of the more well-known languages he assigned. Some obscure ones I saw included Erlang, Clojure, F#, Groovy, etc. More well-known ones included C#, Kotlin, and Ruby.",
+                "Description": "This was definitely one of my least favorite classes in the UNCW comp sci curriculum. At the beginning of the class you write parts of made-up UNCW programming language called \"Jiffy\" using Java. After that you work with mostly SML and Prolog. I don't think there's any real reason to know these languages and found that large part of the class kind of pointless. The more useful parts of the class include learning about memory-management, compilers, and other programming language concepts. There are 3 tests throughout each worth 17% of your final grade. The tests are infamously difficult and I'd recommend studying your notes from class, slides, and homeworks. At the end there is a 20-minute long group presentation on a programming language. Most groups have 3 members and my group was assigned Kotlin. We got a 100 on the project and he basically said it was a \"give me\" completion grade. However, I consider us lucky as Kotlin was one of the more well-known languages he assigned. Some obscure ones I saw included Erlang, Clojure, F#, Groovy, etc. More well-known ones included C#, Kotlin, and Ruby.",
                 "Skills": "SML, Prolog, Java, Skippy",
                 "Text Editor": "Eclipse and Visual Studio Code",
                 "Tips": "He sometimes asks obscure questions about stuff you only learned in class on tests, so take notes.",
@@ -3295,7 +3372,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Marni Ferner",
-                "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to each other or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/AirlineDatabase). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
+                "Description": "Overall I liked this class. I've always been curious about how database work and how SQL is tied into their functionality. The first part of this class is just like databases graphs and showing how the keys are connected to each other or whatever. The second part is SQL and writing queries for a database. The last part is php and a group project. I enjoyed the group project and you don't present it. You don't present it because everyone basically does the same thing. It's also not that hard. You can find the source code for our project in this GitHub repository. Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it. Also, the labs you do throughout are completion grades and the Final Exam is the same format as the first two tests.",
                 "Skills": "SQL, PHP, Html",
                 "Text Editor": "Visual Studio Code",
                 "Grading": "Labs - 20% (lowest two dropped), Quizzes and homework - 20%, Group project - 24%, Test 1 - 12%, Test 2 - 12%, Final Exam - 12%",
@@ -3309,7 +3386,7 @@
                 "Format": "Mostly Remote",
                 "Credit Hours": "3",
                 "Professor": "Shauna White",
-                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. @This was my poster@[{ 'name': 'ImageView', 'params': { 'Name': 'Amotions Poster', 'Description': 'This was my CSC 498 poster for the computing showcase. I got a 100 on it.', 'Pic': 'AmotionsPoster.png'} }]. I got a 100 on it.",
+                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. This was my poster. I got a 100 on it.",
                 "Skills": "Whatever skills your internship uses.",
                 "Tips": "You can't sign up for this class via Seanet. Contact Shauna White (turners@uncw.edu) if you're interested.",
                 "Grading": "Weekly Paragraphs - 50%, Poster presentation - 50%"
@@ -3317,7 +3394,7 @@
         ]
     },
     {
-        "Title": "Classes To Avoid",
+        "Title": "Classes To Avoid ❌",
         "Link": "/Classes/ClassesToAvoid",
         "Results": [
             {
@@ -3359,14 +3436,14 @@
         ]
     },
     {
-        "Title": "Comp Sci Minor",
+        "Title": "Comp Sci Minor 💻",
         "Link": "/Classes/CompSciMinor",
         "Results": [
             {
                 "Minor": "Computer Science Minor",
-                "Description": "I've recently learned that you're a Business Administration major, not a Computer Science major. I think a computer science minor could still be very helpful and enhance your degree. Basically all modern businesses use and rely on Software, so it'd be useful to have a basic understanding of it. It can also help automate excel tasks. Learn more about the minor [here](https://uncw.edu/academics/majors-programs/cse/computer-science-minor/?gad_source=1&gclid=CjwKCAjwzN-vBhAkEiwAYiO7oBoInQTdiPLGK78yFVc886jh_agnyvdVbJTZ-M2EyOmiGyhkvMwxaRoCP-MQAvD_BwE). For the minor you need to take CSC 131, CSC 133, CSC 231, CSC 331, and two 3-credit hour CSC electives. These are descriptions of those classes and two possible electives.",
+                "Description": "I've recently learned that you're a Business Administration major, not a Computer Science major. I think a computer science minor could still be very helpful and enhance your degree. Basically all modern businesses use and rely on Software, so it'd be useful to have a basic understanding of it. It can also help automate excel tasks. Learn more about the minor here. For the minor you need to take CSC 131, CSC 133, CSC 231, CSC 331, and two 3-credit hour CSC electives. These are descriptions of those classes and two possible electives.",
                 "Major": "Computer Science Major",
-                "DescriptionTwo": "It's probably not too late to become a computer science major with a business concentration and still graduate in 4 years. I've listed coursework below. To learn more about the degree run a \"What-If\" analysis in [Seanet](https://degreeworks-respdashboard.uncw.edu/RespDashboard/worksheets/WEB31). If you're interested and have questions feel free to reach out."
+                "DescriptionTwo": "It's probably not too late to become a computer science major with a business concentration and still graduate in 4 years. I've listed coursework below. To learn more about the degree run a \"What-If\" analysis in Seanet. If you're interested and have questions feel free to reach out."
             },
             {
                 "Name": "CSC 131: Introduction to Computer Science",
@@ -3417,7 +3494,7 @@
                 "Format": "In-Person",
                 "Credit Hours": "3",
                 "Professor": "Shauna White",
-                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this [GitHub repository](https://github.com/MichaelT-178/ApartmentRegistry). Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
+                "Description": "This class is easy if you have any experience whatsoever with Java. It's like CSC 131 for Java instead of python. The labs are pretty easy as well as the tests. She lets you have a cheat sheet for the tests. For one lab you work in a group of 3. At the end you work in a group of 5 for a 10-minute long project presentation. The project is a JavaFx project written using Java, JavaFx, FXML, and SceneBuilder. JavaFx is a framework for building GUI's for Java. It adds logic to your FXML code, and you can use it to build UI components programmatically in your project, I did both in ours. I personally really like the framework and the end project was definitely my favorite programming project I did for UNCW. You can find the source code for our project in this GitHub repository. Note that we didn't use GitHub while we were working on the project, which made coding sharing difficult, which is why I kind of did all of it.",
                 "Skills": "Java, JavaFx, SceneBuilder",
                 "Text Editor": "Intellij IDEA or PyCharm",
                 "Tips": "",
@@ -3447,7 +3524,7 @@
                 "Credit Hours": "3",
                 "Elective": "(Possible Elective #2)",
                 "Professor": "Shauna White",
-                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. @This was my poster@[{ 'name': 'ImageView', 'params': { 'Name': 'Amotions Poster', 'Description': 'This was my CSC 498 poster for the computing showcase. I got a 100 on it.', 'Pic': 'AmotionsPoster.png'} }]. I got a 100 on it.",
+                "Description": "This is a 3 credit hour class that's pass/fail. All you do is write 1 paragraph a week summarizing what you did at your internship and at the end you create a poster presentation demonstrating what you did during your internship. Note that you don't present the poster in-front of a group. You just hang it up in Congdon Hall and stand by it the entire time. I only had like 2 people come up to ask me about it during the 2-hour showcase. Also, it's just a completion grade, so it's pretty low-stress. The computing showcase is a great place to meet and talk to employers in the Wilmington area. This was my poster. I got a 100 on it.",
                 "Skills": "Whatever skills your internship uses.",
                 "Tips": "You can't sign up for this class via Seanet. Contact Shauna White (turners@uncw.edu) if you're interested.",
                 "Grading": "Weekly Paragraphs - 50%, Poster presentation - 50%"
@@ -3471,7 +3548,7 @@
         ]
     },
     {
-        "Title": "Useful Certifications",
+        "Title": "Useful Certifications 🏆",
         "Link": "/Classes/Certifications",
         "Results": [
             {
@@ -3604,7 +3681,7 @@
         ]
     },
     {
-        "Title": "Visual Studio Code",
+        "Title": "Visual Studio Code 🎨",
         "Link": "/compsci/VisualStudioCode",
         "Results": [
             {
@@ -3631,7 +3708,7 @@
         ]
     },
     {
-        "Title": "GitHub",
+        "Title": "GitHub 🐙",
         "Link": "/compsci/GitHub",
         "Results": [
             {
@@ -3703,8 +3780,8 @@
                 "amotions": "Git Deletion Commands"
             },
             {
-                "scrollToTop": "scrollToTop",
-                "scrollToLinks": "Scroll back to links(scrollLinksRef)"
+                "scrollToTop": "Scroll To Top",
+                "scrollToLinks": "Scroll back to links"
             },
             {
                 "id": 1,
@@ -3811,12 +3888,12 @@
             },
             {
                 "id": 6,
-                "instruction": "It will then ask you questions and prompt you for answers. Just press return/enter for all of them. Different for multiple accounts(secondSix).",
+                "instruction": "It will then ask you questions and prompt you for answers. Just press return/enter for all of them. Different for multiple accounts.",
                 "ref": "normalSix"
             },
             {
                 "id": 7,
-                "instruction": "Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Different for multiple accounts(secondSeven).",
+                "instruction": "Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Different for multiple accounts.",
                 "ref": "normalSeven"
             },
             {
@@ -3839,7 +3916,7 @@
             },
             {
                 "id": 9,
-                "instruction": "9. Now we're going to create an SSH key to add to GitHub. Run the two following commands. The second command will print and copy the ssh key to your clipboard. Different for multiple accounts(secondNine).",
+                "instruction": "9. Now we're going to create an SSH key to add to GitHub. Run the two following commands. The second command will print and copy the ssh key to your clipboard. Different for multiple accounts.",
                 "ref": "normalNine"
             },
             {
@@ -3851,7 +3928,7 @@
             },
             {
                 "id": 10,
-                "instruction": "Your SSH key should now be copied to your keyboard. Now go back to your Github account at [github.com](https://github.com/)."
+                "instruction": "Your SSH key should now be copied to your keyboard. Now go back to your Github account at github.com."
             },
             {
                 "id": 11,
@@ -3879,7 +3956,7 @@
             },
             {
                 "id": 17,
-                "instruction": "Now generate a person access token by going to this [GitHub link](https://github.com/settings/tokens). To get this page manually you would go to the GitHub main page -> side bar -> settings -> (Scroll down left-hand side) Developer settings -> Personal access tokens."
+                "instruction": "Now generate a person access token by going to this GitHub link. To get this page manually you would go to the GitHub main page -> side bar -> settings -> (Scroll down left-hand side) Developer settings -> Personal access tokens."
             },
             {
                 "id": 18,
@@ -3917,7 +3994,7 @@
             },
             {
                 "id": 23,
-                "instruction": "In the file that's open in your terminal paste the following. Note change \"NameForThisAccount\" in the first line with basically any name for this new account. I'd recommend something like \"main\" or \"personal\". Different for multiple accounts(secondTwentyThree).",
+                "instruction": "In the file that's open in your terminal paste the following. Note change \"NameForThisAccount\" in the first line with basically any name for this new account. I'd recommend something like \"main\" or \"personal\". Different for multiple accounts.",
                 "ref": "normalTwentyThree"
             },
             {
@@ -3944,7 +4021,7 @@
             },
             {
                 "id": 1,
-                "instruction": "Go to [github.com](https://github.com/)."
+                "instruction": "Go to github.com."
             },
             {
                 "id": 2,
@@ -3968,12 +4045,12 @@
             },
             {
                 "id": 7,
-                "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select https or ssh, either one works but I\"d recommend selecting ssh. Then copy the link next to it that looks like \"git@github.com:Michael-W23/Wind.git\" if you selected ssh. Different for multiple accounts(secondGitHubSeven).",
+                "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select https or ssh, either one works but I\"d recommend selecting ssh. Then copy the link next to it that looks like \"git@github.com:Michael-W23/Wind.git\" if you selected ssh. Different for multiple accounts.",
                 "ref": "normalGitHubSeven"
             },
             {
                 "id": 8,
-                "instruction": "Run the following command to create a local clone. Note the link should be whatever you just copied. Replace the \"git@github.com:John-Smith/PacMan.git\" with the actual link. Different for multiple accounts(secondGitHubEight)",
+                "instruction": "Run the following command to create a local clone. Note the link should be whatever you just copied. Replace the \"git@github.com:John-Smith/PacMan.git\" with the actual link. Different for multiple accounts",
                 "ref": "normalGitHubEight"
             },
             {
@@ -4048,12 +4125,12 @@
             },
             {
                 "id": 6,
-                "instruction": "After you enter the command from step 5 you'll be asked the following question, \"Enter file in which to save the key (/Users/elijahdembe/.ssh/id_ed25519):\". Write the name of the file where you want to save the new SSH key without an extension.  For this example lets call it \"id_ed25519_two\", then press return/enter. Scroll back up to original step(normalSix).",
+                "instruction": "After you enter the command from step 5 you'll be asked the following question, \"Enter file in which to save the key (/Users/elijahdembe/.ssh/id_ed25519):\". Write the name of the file where you want to save the new SSH key without an extension.  For this example lets call it \"id_ed25519_two\", then press return/enter. Scroll back up to original step.",
                 "ref": "secondSix"
             },
             {
                 "id": 7,
-                "instruction": "This is basically but the same as the regular step 7, but with a changed file name. Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step(normalSeven).",
+                "instruction": "This is basically but the same as the regular step 7, but with a changed file name. Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step.",
                 "ref": "secondSeven"
             },
             {
@@ -4065,7 +4142,7 @@
             },
             {
                 "id": 9,
-                "instruction": "This is basically but the same as the regular step 9, but with a changed file name. Run the following two commands (one at a  time) to copy the ssh key to your clipboard. The second command will print and copy the ssh key to your clipboard. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step(normalNine).",
+                "instruction": "This is basically but the same as the regular step 9, but with a changed file name. Run the following two commands (one at a  time) to copy the ssh key to your clipboard. The second command will print and copy the ssh key to your clipboard. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step.",
                 "ref": "secondNine"
             },
             {
@@ -4077,7 +4154,7 @@
             },
             {
                 "id": 23,
-                "instruction": "This is basically the same as regular step 23. Change \"NameForThisAccount\" to something other than your other account's name. Also the IdentityFile has been updated. Scroll back up to original step(normalTwentyThree).",
+                "instruction": "This is basically the same as regular step 23. Change \"NameForThisAccount\" to something other than your other account's name. Also the IdentityFile has been updated. Scroll back up to original step.",
                 "ref": "secondTwentyThree"
             },
             {
@@ -4089,12 +4166,12 @@
             },
             {
                 "id": 7,
-                "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select the \"ssh\" button. Note that you HAVE to select \"ssh\" for this to work with a different account. Then copy the link next to it that looks like \"git clone git@github.com:John-Smith/PacMan.git\". Scroll back up to original step(normalGitHubSeven).",
+                "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select the \"ssh\" button. Note that you HAVE to select \"ssh\" for this to work with a different account. Then copy the link next to it that looks like \"git clone git@github.com:John-Smith/PacMan.git\". Scroll back up to original step.",
                 "ref": "secondGitHubSeven"
             },
             {
                 "id": 8,
-                "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. Scroll back up to original step(normalGitHubEight).",
+                "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. Scroll back up to original step.",
                 "ref": "secondGitHubEight"
             },
             {
@@ -4165,7 +4242,7 @@
             },
             {
                 "id": 2,
-                "instruction": "Select \"dev\" for the base branch in the top left corner, write a comment about your pull request, then click the green \"Create pull request\" button. If you click the \"Create pull request\" button before you select the \"dev\" base branch, just follow the steps in this page to refactor -> [Link](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-base-branch-of-a-pull-request)."
+                "instruction": "Select \"dev\" for the base branch in the top left corner, write a comment about your pull request, then click the green \"Create pull request\" button. If you click the \"Create pull request\" button before you select the \"dev\" base branch, just follow the steps in this page to refactor -> Link."
             },
             {
                 "id": 3,
@@ -4277,7 +4354,7 @@
             },
             {
                 "id": 5,
-                "instruction": "Learn markdown. Markdown is how you add styling to ReadMe's. You can also use HTML to style an md file. This [website](https://www.markdownguide.org/basic-syntax/) is a good source to learn markdown."
+                "instruction": "Learn markdown. Markdown is how you add styling to ReadMe's. You can also use HTML to style an md file. This website is a good source to learn markdown."
             },
             {
                 "id": 6,
@@ -4516,7 +4593,7 @@
         ]
     },
     {
-        "Title": "VSCode Settings",
+        "Title": "VSCode Settings ⚙️",
         "Link": "/compsci/VSCodeSettings",
         "Results": [
             {
@@ -5312,7 +5389,7 @@
         ]
     },
     {
-        "Title": "UI/UX Design Tips",
+        "Title": "UI/UX Design Tips 🖼️",
         "Link": "/compsci/UIDesignTips",
         "Results": [
             {
@@ -5392,7 +5469,7 @@
             {
                 "id": 15,
                 "Underlined": "Read \"8 Golden Rules of Interface Design\" by Ben Schneiderman",
-                "Tip": "This is a relatively short article that Dr. Layman shared with us in CSC 450. It has some really good advice and you can check it out [here](https://www.cs.umd.edu/users/ben/goldenrules.html)."
+                "Tip": "This is a relatively short article that Dr. Layman shared with us in CSC 450. It has some really good advice and you can check it out here."
             },
             {
                 "Underlined": "Top Prompts and hints for Front end code Maintenance from a random IBM repository",
@@ -5404,7 +5481,7 @@
         ]
     },
     {
-        "Title": "VSCode Extensions",
+        "Title": "VSCode Extensions 🧩",
         "Link": "/compsci/VSCodeExtensions",
         "Results": [
             {
@@ -5519,7 +5596,7 @@
         ]
     },
     {
-        "Title": "VSCode Shortcuts",
+        "Title": "VSCode Shortcuts 🚀",
         "Link": "/compsci/VSCodeShortcuts",
         "Results": [
             {
@@ -5760,7 +5837,7 @@
         ]
     },
     {
-        "Title": "Comp Sci Tips",
+        "Title": "Comp Sci Tips 🖥️",
         "Link": "/compsci/CompSciTips",
         "Results": [
             {
@@ -5771,7 +5848,7 @@
             {
                 "id": 1,
                 "Underlined": "Create a shortcut to access your settings.json file in VSCode",
-                "Tip": "This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down(codeBlockRef) to see instructions on making a shortcut."
+                "Tip": "This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down to see instructions on making a shortcut."
             },
             {
                 "id": 2,
@@ -5786,7 +5863,7 @@
             {
                 "id": 4,
                 "Underlined": "Format Your Code",
-                "Tip": "Readability and formatting is an important part of creating good code. Formatting your code makes it much easier to read and understand what's going on. It also makes your code look cleaner and more organized. Scroll down(codeBlockTwoRef) using this link to see an example in Java. Scroll down(codeBlockThreeRef) using this link to see an example in Python."
+                "Tip": "Readability and formatting is an important part of creating good code. Formatting your code makes it much easier to read and understand what's going on. It also makes your code look cleaner and more organized. Scroll down using this link to see an example in Java. Scroll down using this link to see an example in Python."
             },
             {
                 "id": 5,
@@ -5811,7 +5888,7 @@
             {
                 "id": 9,
                 "Underlined": "Install homebrew",
-                "Tip": "This is a really good package manager for MacOS that be used used to download libraries and stuff. Scroll down(codeBlockFourRef) to see the instructions on how to download it."
+                "Tip": "This is a really good package manager for MacOS that be used used to download libraries and stuff. Scroll down to see the instructions on how to download it."
             },
             {
                 "id": 10,
@@ -5937,12 +6014,12 @@
         ]
     },
     {
-        "Title": "General Tips",
+        "Title": "General Tips 🧘🏻",
         "Link": "/Other/GeneralTips",
         "Results": ""
     },
     {
-        "Title": "Apps To Download",
+        "Title": "Apps To Download 📲",
         "Link": "/Other/AppsToDownload",
         "Results": [
             {
@@ -6027,7 +6104,7 @@
         ]
     },
     {
-        "Title": "CS Stuff I Like",
+        "Title": "CS Stuff I Like ❤️",
         "Link": "/Other/CompSciStuff",
         "Results": [
             {
@@ -6041,7 +6118,7 @@
             },
             {
                 "id": 1,
-                "description": "A project called \"plane-notify\" created by Jack Sweeney. This [video](https://youtu.be/bJUl3OAIT0k?si=UYgUxgV7gaWCYgkN) does a really good job describing what it is. It's basically a bot that tracks Elon Musks jet. It's written python and you can see the source code [here](https://github.com/Jxck-S/plane-notify). Also, Jack Sweeney accepted my connect request on Linkedin which is pretty cool."
+                "description": "A project called \"plane-notify\" created by Jack Sweeney. This video does a really good job describing what it is. It's basically a bot that tracks Elon Musks jet. It's written python and you can see the source code here. Also, Jack Sweeney accepted my connect request on Linkedin which is pretty cool."
             },
             {
                 "id": 2,
@@ -6049,7 +6126,7 @@
             },
             {
                 "id": 3,
-                "description": "Steve Jobs talking about programming. In this [video](https://youtu.be/BRTOlPdyPYU?si=bHpOkJwOGw70NRpz) Steve Jobs talks about how he thinks everyone should learn to code. I like the point he makes about how programming teaches you how to think in the real world. I often find myself using Java syntax to describe real-life events in my head."
+                "description": "Steve Jobs talking about programming. In this video Steve Jobs talks about how he thinks everyone should learn to code. I like the point he makes about how programming teaches you how to think in the real world. I often find myself using Java syntax to describe real-life events in my head."
             },
             {
                 "id": 4,
@@ -6061,7 +6138,7 @@
             },
             {
                 "id": 6,
-                "description": "Visual Studio Code is the main text editor I use. I find it very versatile and I use it in basically all my programming tasks. I'd strongly recommend [downloading it](https://code.visualstudio.com/download) and trying it out."
+                "description": "Visual Studio Code is the main text editor I use. I find it very versatile and I use it in basically all my programming tasks. I'd strongly recommend downloading it and trying it out."
             },
             {
                 "id": 7,
@@ -6073,7 +6150,7 @@
             },
             {
                 "id": 9,
-                "description": "Emailjs. This is a JavaScript library that allows you send emails for free. I used it in the \"Contact Me\" page in this project. Here's the [link](https://www.emailjs.com/) to set it up."
+                "description": "Emailjs. This is a JavaScript library that allows you send emails for free. I used it in the \"Contact Me\" page in this project. Here's the link to set it up."
             },
             {
                 "id": 10,
@@ -6146,13 +6223,13 @@
                 "Name": "Markdown Links",
                 "Description": "This is the syntax to hyperlink text in a markdown file.",
                 "Language": "Markdown",
-                "FormatCode": "[Uncw Link](https://uncw.edu/)",
-                "CopyCode": "[Uncw Link](https://uncw.edu/)"
+                "FormatCode": "Uncw Link",
+                "CopyCode": "Uncw Link"
             }
         ]
     },
     {
-        "Title": "Terminal Commands",
+        "Title": "Terminal Commands ⌨️",
         "Link": "/Other/TerminalCommands",
         "Results": [
             {
@@ -6454,7 +6531,7 @@
         ]
     },
     {
-        "Title": "Keyboard Shortcuts",
+        "Title": "Keyboard Shortcuts ⚡️",
         "Link": "/Other/KeyboardShortcuts",
         "Results": [
             {
@@ -6604,7 +6681,7 @@
         ]
     },
     {
-        "Title": "Memes",
+        "Title": "Memes 😂",
         "Link": "/Other/Memes",
         "Results": [
             {
@@ -6810,7 +6887,7 @@
         ]
     },
     {
-        "Title": "UNCW Pictures",
+        "Title": "UNCW Pictures 📸",
         "Link": "/Other/UncwPics",
         "Results": [
             {
@@ -6897,7 +6974,7 @@
         ]
     },
     {
-        "Title": "Contact Me",
+        "Title": "Contact Me ✉️",
         "Link": "/ContactMe",
         "Results": [
             {
