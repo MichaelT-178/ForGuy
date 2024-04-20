@@ -624,7 +624,7 @@ def get_generaltips():
 
         Title = "General Tips 🧘🏻"
         Link = "/Other/GeneralTips"
-        Results = None
+        Results = ""
 
         return { "Title": Title, "Link": Link, "Results": Results }
 

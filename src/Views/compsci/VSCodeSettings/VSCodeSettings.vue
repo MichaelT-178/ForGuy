@@ -7,17 +7,20 @@
         <button @click="downloadJson" ref="downloadButton">{{ text.downloadBtn }}</button>
         <button @click="copyJson" ref="copyButton">{{ text.copyBtn }}</button>
       </div>
-      <div class="file1">
+      <div v-if="isWideScreen">
         <div class="json-container">
           <pre v-html="highlightedJson"></pre>
         </div>
+      </div>
+      <div v-else>
+        <img src="./Settings.jpg" class="settings-pic">
       </div>
     </div>
 </template>
 
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import Prism from 'prismjs';
 import AllData from '../../../data/CompSci/settings.json';
 import 'prismjs/components/prism-json';
@@ -31,6 +34,24 @@ const text = jsonData.value["Text"][0];
 
 const copyButton = ref(null);
 const downloadButton = ref(null);
+
+
+const windowWidth = ref(window.innerWidth);
+
+const updateWidth = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWidth);
+});
+
+const isWideScreen = computed(() => windowWidth.value >= 875);
+
 
 const copyJson = () => {
   navigator.clipboard.writeText(settings)
@@ -133,6 +154,37 @@ pre {
   padding: 10px;
   margin-top: 0; 
   box-sizing: border-box; 
+}
+
+@media (max-width: 875px) {
+
+  .header {
+    max-width: 87%; 
+  }
+
+  .description {
+    max-width: 87%; 
+  }
+
+  .json-container {
+    display: none;
+  }
+  
+  .settings-pic {
+    max-width: 90%;
+    margin: 0 auto; 
+    margin-bottom: 30px;
+  }
+
+  .bar {
+    max-width: 90%;
+  }
+
+  button {
+    padding: 4px 9px;
+    font-size: 14.5px;
+  }
+
 }
 
 </style>
