@@ -106,7 +106,6 @@ const scrollToTop = () => {
     width: 690px;
 }
 
-
 .header-three {
     margin-top: 40px;
     margin-bottom: -10px;
@@ -133,23 +132,24 @@ const scrollToTop = () => {
     text-decoration: underline;
 }
 
+
 @media (max-width: 700px) {
 
-    .gh-header {
-        width: 490px;
-    }
-    
-    .description {
-        width: 490px;
-    }
-    
-    .gh-header-two {
-        width: 490px;
+    .gh-header, .description, .gh-header-two, .description-two {
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
     }
 
-    .description-two {
-        width: 490px;
+    .bullet-pt {
+        width: 92%;
     }
+
+    .description-three {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
 }
 
 </style>
