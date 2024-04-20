@@ -136,4 +136,21 @@ button:hover {
   background-color: #AF9800;
 }
 
+
+@media (max-width: 700px) {
+
+  .content-container {
+    width: 91%;
+  }
+
+  .pdf-page-container {
+    width: 100%;
+  }
+
+  .info-bar {
+    width: 100.61%;
+  }
+
+}
+
 </style>
