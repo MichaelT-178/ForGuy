@@ -1,12 +1,8 @@
 import json
+from remove_markdown import RemoveMarkdown 
 
 """
-What to do with Vue components?????????
-
-Replace markdown.
-
-ADD PATH AND NAME TO JSON FILES 
-
+This file creates the src/data/SearchData.json page.
 """
 
 
@@ -765,9 +761,13 @@ all_data = [
 ]
 
 
-# with open("delete.json", "w", encoding='utf-8') as file:
-#     json.dump(all_data, file, ensure_ascii=False, indent=4)
+remove_md = RemoveMarkdown(all_data)
+real_json = remove_md.undo_all_links()
+
+
+with open("delete.json", "w", encoding='utf-8') as file:
+    json.dump(real_json, file, ensure_ascii=False, indent=4)
 
 with open("../src/data/SearchData.json", "w", encoding='utf-8') as file:
-    json.dump(all_data, file, ensure_ascii=False, indent=4)
+    json.dump(real_json, file, ensure_ascii=False, indent=4)
     
