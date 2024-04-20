@@ -21,6 +21,7 @@ export const highlightLinkText = (text) => {
 //[The link](https://www.target.com/)
 export const createHyperLink = (text) => {
   const markdownLinkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g;
+  
   return text.replace(markdownLinkPattern, (match, label, url) => 
     `<a href="${url}" target="_blank"
         style="color: #007AFF; text-decoration: none;" 
