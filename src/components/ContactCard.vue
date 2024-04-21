@@ -5,7 +5,8 @@
     <div v-if="contact.Company"><span class="attr">Company</span>: {{ contact.Company }}</div>
     <div v-if="contact.Role"><span class="attr">Role</span>: {{ contact.Role }}</div>
     <div v-if="contact.Location"><span class="attr">Location</span>: {{ contact.Location }}</div>
-    <div v-if="contact.Email"><span class="attr">Email</span>: <a :href="`mailto:${contact.Email}`" class="blue-link">{{ contact.Email }}</a></div>
+    <!-- <div v-if="contact.Email"><span class="attr">Email</span>: <a :href="`mailto:${contact.Email}`" class="blue-link">{{ contact.Email }}</a></div> -->
+    <div v-if="contact.Email"><span class="attr">Email</span>: <span class="blue-link" @click="emailCopied">{{ contact.Email }}</span></div>
     <div v-if="contact.Contact"><span class="attr">Contact</span>: <a :href="contact.Contact" target="_blank" class="blue-link">{{ contact.Contact }}</a></div>
     <template v-if="contact.LinkedIn">
       <span class="attr">LinkedIn</span>:
@@ -42,6 +43,21 @@ const props = defineProps({
 });
 
 const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, import.meta.url).href);
+
+const emit = defineEmits(['emailCopied'])
+
+
+const emailCopied = () => {
+  const email = props.contact.Email;
+
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      emit('emailCopied');
+    })
+    .catch(err => {
+      console.error('Failed to copy email to clipboard:', err);
+    });
+};
 
 </script>
 
@@ -86,10 +102,12 @@ const imagePath = ref(new URL(`../assets/Companies/${props.contact.Image}`, impo
 
 .blue-link {
   color: #0000EE; 
+  text-decoration: underline;
 }
 
 .blue-link:hover {
   color: #000086;
+  cursor: pointer;
 }
 
 .purple-link:hover {
