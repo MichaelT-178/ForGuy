@@ -97,7 +97,7 @@ export const memeObjects = [
         image: Meme9 
     }, //PercentToPass.jpg
     { 
-        text: "\"FileNoteFoundException\"",
+        text: "\"FileNotFoundException\"",
         transcription: "Backenders doing frontend menu 1 - Reports 2 - Charts 3 - Exit Select: [_] Frontenders doing backend internal server error 500",
         image: Meme10 
     }, //BackendersDoingFrontEnd.jpg
