@@ -23,19 +23,30 @@ class RemoveMarkdown:
         # Scroll down(codeBlockRef), Different for multiple accounts(secondGitHubEight), etc.
         self.scroll_link = r'(Different for multiple accounts|Scroll back up to original step|Scroll back to links|Scroll down)\((.*?)\)'
 
+        # Keys to remove from the search objects
+        self.exclude_keys = ["FormatCode", "id"]
 
     def undo_all_links(self):
         for item in self.content:
             for idx, result in enumerate(item["Results"]):
+
+                keys_to_remove = []
+
                 for key, value in result.items():
+                    if key in self.exclude_keys:
+                        keys_to_remove.append(key)
+                    else:
+                        new_text = self.undo_link(value, self.hyperlink)
+                        new_text = self.undo_link(new_text, self.routerlink)
+                        new_text = self.undo_link(new_text, self.routerlink_props)
+                        new_text = self.undo_link(new_text, self.download_link)
+                        new_text = self.undo_link(new_text, self.scroll_link)
 
-                    new_text = self.undo_link(value, self.hyperlink)
-                    new_text = self.undo_link(new_text, self.routerlink)
-                    new_text = self.undo_link(new_text, self.routerlink_props)
-                    new_text = self.undo_link(new_text, self.download_link)
-                    new_text = self.undo_link(new_text, self.scroll_link)
+                        # Make's it obvious whats's happening. Could be result[key]
+                        item["Results"][idx][key] = new_text
 
-                    item["Results"][idx][key] = new_text
+                for key in keys_to_remove:
+                    del item["Results"][idx][key]
 
         return self.content
 
