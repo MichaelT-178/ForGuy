@@ -43,7 +43,7 @@
             "transcription": "POV: Me showing up to my final exam (I need a 124% to pass)"
         },
         { 
-            "text": "\"FileNoteFoundException\"",
+            "text": "\"FileNotFoundException\"",
             "transcription": "Backenders doing frontend menu 1 - Reports 2 - Charts 3 - Exit Select: [_] Frontenders doing backend internal server error 500"
         },
         { 
