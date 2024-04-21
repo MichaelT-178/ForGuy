@@ -85,7 +85,7 @@
             "Name": "File Reading",
             "Description": "Python's file reading syntax is easily my favorite part of the language. So simple and useful.",
             "Language": "Python",
-            "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)",
+            "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n      for line in file:\n          print(line)",
             "CopyCode": "with open(\"cool.txt\", \"r\") as file:\n\tfor line in file:\n\t\tprint(line)"
         },
         {
@@ -104,10 +104,10 @@
         },
         {
             "Name": "Dictionaries and F-Strings",
-            "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string.",
+            "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string. I also really like the for-loop syntax to iterate over a dictionary/JSON object.",
             "Language": "Python",
-            "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Sam\": \"UT\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  print(f\"Michael went to {peoples_college['Michael']}\")",
-            "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Sam\": \"UT\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nprint(f\"Michael went to {peoples_college['Michael']}\")\n"
+            "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Hudson\": \"UTD\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  for key, value in peoples_college.items():\n      print(f\"{key}: went to {value}\")\n      print(f\"Michael: went to {'Michael'}\")",
+            "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Hudson\": \"UTD\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nfor key, value in peoples_college.items():  \n\tprint(f\"{key}: went to {value}\")\n\tprint(f\"Michael: went to {'Michael'}\")\n"
         },
         {
             "Name": "ForEach UI Loops",

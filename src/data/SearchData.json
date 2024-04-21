@@ -1761,75 +1761,57 @@
                 "desc": "These are tips I have for preparing for and participating in an interview. These are mostly common software engineering topics I was asked about in interviews."
             },
             {
-                "id": 1,
                 "tip": "Study the 4 concepts of OOP. Polymorphism, Abstraction, Inheritance, Encapsulation"
             },
             {
-                "id": 2,
                 "tip": "Study basic algorithms and data structures. You don't need to memorize them. But know the basics of how they work."
             },
             {
-                "id": 3,
                 "tip": "You probably won't have to code them, but know the basics of stacks, linked-lists, binary search, queues, etc."
             },
             {
-                "id": 4,
                 "tip": "Prepare to discuss your previous programming/software engineering experience. Even it's just school, discuss the topics you've learned and projects you've worked on."
             },
             {
-                "id": 5,
                 "tip": "Know the basics of GitHub and Git. At least be able to explain the general idea of those concepts."
             },
             {
-                "id": 6,
                 "tip": "Gain a general understanding of Kubernetes, docker, pods, and containers. Look into certifications. It would be very good to learn."
             },
             {
-                "id": 7,
                 "tip": "Know the super basic concepts of Amazon Web Services and Cloud computing. An AWS certification would probably look good."
             },
             {
-                "id": 8,
                 "tip": "Know basic security practices (I'd strongly recommend taking CSC 351)."
             },
             {
-                "id": 9,
                 "tip": "Know what HTTP and HTTPS are. CSC 351 discusses this concept which is another reason I'd recommend taking it."
             },
             {
-                "id": 10,
                 "tip": "Know the basics of databases. Like what's MongoDB, NoSQL, relational databases, etc."
             },
             {
-                "id": 11,
                 "tip": "Know the basics of Memory management in Java and C++. Particularly Garbage collection."
             },
             {
-                "id": 12,
                 "tip": "Know basic testing testing practices. Know the basics of the following: Unit tests, White box testing, Black box testing, JUnit, etc."
             },
             {
-                "id": 13,
                 "tip": "Have a basic understanding of C pointers and reference operators"
             },
             {
-                "id": 14,
                 "tip": "Look at the job description and see what skills are listed. Study those as well."
             },
             {
-                "id": 15,
                 "tip": "Obviously come on time and don't be late."
             },
             {
-                "id": 16,
                 "tip": "Appear enthusiastic to be there and about what's being discussed"
             },
             {
-                "id": 17,
                 "tip": "Come well-groomed and act professional."
             },
             {
-                "id": 18,
                 "tip": "Come prepared with follow up questions for the interviewer. This will help demonstrate your interest and knowledge."
             }
         ]
@@ -1843,31 +1825,24 @@
                 "desc": "This is a possible career path you could consider taking."
             },
             {
-                "id": 1,
                 "advice": "In summer 2024 try to get a job at Datacor, Inc. or nCino. The job at \"Datacor, inc.\" is remote and pays. If interested, tell me using the form, I know a guy."
             },
             {
-                "id": 2,
                 "advice": "In September and October 2024, start applying for jobs in Summer 2025. Apply at companies such as USAA, Pearson, etc."
             },
             {
-                "id": 3,
                 "advice": "Your junior year you could work as a TAC Student Worker Technician while on campus. See the Where To Apply page for more details."
             },
             {
-                "id": 4,
                 "advice": "Your second semester junior year you could work as a SWE intern at Amotions, Inc. and get credit for CSC 498."
             },
             {
-                "id": 5,
                 "advice": "In Summer 2025 you could work at USAA or some other bigger company after you've gained more experience."
             },
             {
-                "id": 6,
                 "advice": "You could graduate in December 2025 and look for jobs that start in the winter when it's less competitive."
             },
             {
-                "id": 7,
                 "advice": "This is just a possible path. Obviously you can do whatever you want."
             }
         ]
@@ -1891,87 +1866,66 @@
                 "desc": "These are tips on how to setup a profile on LinkedIn. It's pretty straight forward."
             },
             {
-                "id": 1,
                 "instruction": "Before you do anything else, change your profile viewing settings. LinkedIn will notify people that you viewed their profile if you don't change this setting. Go to this link and select \"private mode\". Press the back button when you're done."
             },
             {
-                "id": 2,
                 "instruction": "Go to the LinkedIn home page, just to start from the beginning."
             },
             {
-                "id": 3,
                 "instruction": "In the upper right corner, click on your profile picture that says \"Me\" under it. Press the \"View Profile\" button."
             },
             {
-                "id": 4,
                 "instruction": "To the right of your profile picture. Click on the pencil icon and fill out all required fields for your intro."
             },
             {
-                "id": 5,
                 "instruction": "After that click the \"Add profile section\". Under the \"Core\" menu option press \"Add about\"."
             },
             {
-                "id": 6,
                 "instruction": "Once the \"Add About\" input box opens, write a description about yourself summarizing your experience, passions, skills, goals, etc."
             },
             {
-                "id": 7,
                 "instruction": "After that click the \"Add profile section\" again. Under the \"Core\" menu option press \"Add position\"."
             },
             {
-                "id": 8,
                 "instruction": "Once the \"Add Experience\" input box opens, fill out all fields for your position. Make sure to add skills used and a description, despite those fields being optional. Press \"Save\" when you're done."
             },
             {
-                "id": 9,
                 "instruction": "Now that you have one position added, you should see an \"Experience\" section now. Add more positions by pressing the plus symbol."
             },
             {
-                "id": 10,
                 "instruction": "Go back to the top of the page and press \"Add profile section\" again. Under \"Core\" select \"Add education\"."
             },
             {
-                "id": 11,
                 "instruction": "I'd recommend adding both Weddington High School and UNCW. Adding your high school will help you find people you went to high school with and show you went right to college after you graduated."
             },
             {
-                "id": 12,
                 "instruction": "Go back to the top of the page and press \"Add profile section\" again. Under \"Additional\" select \"Add volunteer experience\"."
             },
             {
-                "id": 13,
                 "instruction": "Fill out any Volunteering experience you've done."
             },
             {
-                "id": 14,
                 "instruction": "Go back to the top of the page and press \"Add profile section\" again. Under \"Additional\" select \"Add volunteer experience\"."
             },
             {
-                "id": 15,
                 "instruction": "Add skills you're proficient in so people can see what you know how to do."
             },
             {
-                "id": 16,
                 "instruction": "Go back to the top of the page and press \"Add profile section\" again. Under \"Recommended\" select \"Add courses\"."
             },
             {
-                "id": 17,
                 "instruction": "Add relevant coursework you've taken."
             },
             {
-                "id": 18,
                 "instruction": "Go back to the top of the page and press \"Add profile section\" again. Under \"Recommended\" select \"Add licenses & certifications\"."
             },
             {
-                "id": 19,
                 "instruction": "Add any certifications you have. For example, if you're certified in Microsoft Excel you could add that."
             },
             {
-                "id": 20,
                 "instruction": "After you've done all that, look up companies you're interested in working for and follow them. Also connect with people you know."
             },
             {
-                "id": 21,
                 "instruction": "Go to the Setup Job Alerts page, to learn how to get notified about job openings about certain companies."
             }
         ]
@@ -1985,75 +1939,57 @@
                 "desc": "This is how to Setup Job Alerts on LinkedIn. It's pretty simple."
             },
             {
-                "id": 1,
                 "instruction": "Before you do anything, make sure you have notifications set up for job alerts using this link. I'd recommend enabling In-app, push, and email notifications for job alerts. Once you done, press the back button."
             },
             {
-                "id": 2,
                 "instruction": "For this example, lets create a job alert for \"Software Engineer\" at nCino in Wilmington, North Carolina."
             },
             {
-                "id": 3,
                 "instruction": "Go to the LinkedIn home page."
             },
             {
-                "id": 4,
                 "instruction": "Go the search bar and type \"nCino\". Click on \"nCino, inc\" company in the suggested results. Then click the name again."
             },
             {
-                "id": 5,
                 "instruction": "You should now be on nCino's LinkedIn page. The \"Home\" tab should be highlighted green under the Follow and Learn more buttons."
             },
             {
-                "id": 6,
                 "instruction": "In the same tab bar as the \"Home\" tab, click the \"Jobs\" tab."
             },
             {
-                "id": 7,
                 "instruction": "Right under the tabs you should see a card that says \"Create job alert for nCino, Inc.\". Click the \"Create job alert\" button on the right."
             },
             {
-                "id": 8,
                 "instruction": "In the \"Job title\" field type \"Software Engineer\". In the \"Job location\" field type \"Wilmington\" and select \"Wilmington, North Carolina, United States\" from the suggested menu."
             },
             {
-                "id": 9,
                 "instruction": "Select the workplace formats you want to work in. You can choose between On-Site, Hybrid, Remote, or a combination of all three."
             },
             {
-                "id": 10,
                 "instruction": "After you do that press the \"Create job alert\" button. You should now have a job alert for Software Engineering positions at nCino, Inc. in Wilmington, NC."
             },
             {
-                "id": 11,
                 "instruction": "Continue to do this for other companies you like"
             },
             {
-                "id": 12,
                 "instruction": "You can also do this for locations. Lets create another alert for \"Software Engineer\" in Atlanta."
             },
             {
-                "id": 13,
                 "instruction": "Go to the LinkedIn home page."
             },
             {
-                "id": 14,
                 "instruction": "At the top click the \"Jobs\". Then go to the search bar and type \"Software Engineer\". In the filed next to it that says \"United States\" type \"Atlanta\" and select it from the suggestion menu. Then click enter."
             },
             {
-                "id": 15,
                 "instruction": "You should now be at the result screen. Above the results you should see a blue bar that says \"Software Engineer in Atlanta, Georgia, United States\" in white text"
             },
             {
-                "id": 16,
                 "instruction": "Next to the white text, toggle the \"Set Alert\" button. The title bar should turn from blue to white and you should get a pop up saying you're alert has been created."
             },
             {
-                "id": 17,
                 "instruction": "You have now created a job alert for Software Engineering positions in Atlanta, Georgia."
             },
             {
-                "id": 18,
                 "instruction": "You can create job alerts for any position, company, location, etc."
             }
         ]
@@ -3784,115 +3720,93 @@
                 "scrollToLinks": "Scroll back to links"
             },
             {
-                "id": 1,
                 "name": "How to Create a GitHub Account",
                 "ref": "createGHAccount"
             },
             {
-                "id": 2,
                 "name": "How to Create a GitHub Repository",
                 "ref": "createGHRepo"
             },
             {
-                "id": 3,
                 "name": "How to Create Multiple GitHub Accounts",
                 "ref": "multipleGHAccounts"
             },
             {
-                "id": 4,
                 "name": "How to Create a GitHub Repository Using a Different Account",
                 "ref": "multipleDifferentAccount"
             },
             {
-                "id": 5,
                 "name": "Git Commands",
                 "ref": "GitCommands"
             },
             {
-                "id": 6,
                 "name": "General Tips",
                 "ref": "GeneralTips"
             },
             {
-                "id": 7,
                 "name": "Three Main Git Commands",
                 "ref": "ThreeCommands"
             },
             {
-                "id": 8,
                 "name": "How to Fork a Repository",
                 "ref": "ForkRepo"
             },
             {
-                "id": 9,
                 "name": "Reset To Previous Branch",
                 "ref": "resetBranch"
             },
             {
-                "id": 10,
                 "name": "Add Existing Folder To GitHub",
                 "ref": "ExistingCmds"
             },
             {
-                "id": 11,
                 "name": "My Old Amotions Workflow",
                 "ref": "AmotionsWorkflow"
             },
             {
-                "id": 1,
                 "instruction": "If you have any issues with anything definitely feel free to contact me. Note that some of these commands will be different if you're using windows."
             },
             {
-                "id": 2,
                 "instruction": "To get started, download git. I'd recommend installing git using Homebrew. Install the Homebrew package manager using the following two commands."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/\n  install/HEAD/install.sh)\"",
                 "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
             },
             {
-                "id": 3,
                 "instruction": "Now install git via Homebrew. Note that this might take a while. Be patient."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "brew install git",
                 "CopyCode": "brew install git"
             },
             {
-                "id": 4,
                 "instruction": "Configure Git. Replace the values in quotations with your name and email address. I'd recommend using the same email address you used to setup your Github account. I'd recommend just setting your username to \"Elijah Dembe\"."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git config --global user.name \"Your Name\"\n  git config --global user.email \"youremail@example.com\"",
                 "CopyCode": "git config --global user.name \"Your Name\"\ngit config --global user.email \"youremail@example.com\""
             },
             {
-                "id": 5,
                 "instruction": "Now generate a new SSH key. Run the following command in your terminal with the same email you used in the previous step. Replace youremail@example.com with your actual email address."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "ssh-keygen -t ed25519 -b 4096 -C \"youremail@example.com\"",
                 "CopyCode": "ssh-keygen -t ed25519 -b 4096 -C \"youremail@example.com\""
             },
             {
-                "id": 6,
                 "instruction": "It will then ask you questions and prompt you for answers. Just press return/enter for all of them. Different for multiple accounts.",
                 "ref": "normalSix"
             },
             {
-                "id": 7,
                 "instruction": "Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Different for multiple accounts.",
                 "ref": "normalSeven"
             },
@@ -3900,22 +3814,18 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "eval \"$(ssh-agent -s)\"\n\n  ssh-add ~/.ssh/id_ed25519",
                 "CopyCode": "eval \"$(ssh-agent -s)\"\n\nssh-add ~/.ssh/id_ed25519"
             },
             {
-                "id": 8,
                 "instruction": "Run the following to ensure you have git installed. If it says something like \"git version 2.39.3\", you're good."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git --version",
                 "CopyCode": "git --version"
             },
             {
-                "id": 9,
                 "instruction": "9. Now we're going to create an SSH key to add to GitHub. Run the two following commands. The second command will print and copy the ssh key to your clipboard. Different for multiple accounts.",
                 "ref": "normalNine"
             },
@@ -3923,77 +3833,60 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ~/.ssh\n\n  cat id_ed25519.pub | tee >(pbcopy)",
                 "CopyCode": "cd ~/.ssh\n\ncat id_ed25519.pub | tee >(pbcopy)"
             },
             {
-                "id": 10,
                 "instruction": "Your SSH key should now be copied to your keyboard. Now go back to your Github account at github.com."
             },
             {
-                "id": 11,
                 "instruction": "On GitHub, in the top-right corner click on the circular profile picture. A sidebar should appear."
             },
             {
-                "id": 12,
                 "instruction": "In the sidebar click \"settings\"."
             },
             {
-                "id": 13,
                 "instruction": "You should now be taken to a new page. On the left-hand side click \"SSH and GPG\" keys."
             },
             {
-                "id": 14,
                 "instruction": "Click the green \"New SSH key\" button. Create a title for the key, it doesn't have to be anything special. You could just call it \"Elijah's key\"."
             },
             {
-                "id": 15,
                 "instruction": "Paste the SSH key in the box. It should already be copied to your clipboard."
             },
             {
-                "id": 16,
                 "instruction": "Click \"Add SSH key\" at the bottom. It should then take you back to the old page with a light blue bar that says \"You have successfully added the key 'Elijah's Key'\"."
             },
             {
-                "id": 17,
                 "instruction": "Now generate a person access token by going to this GitHub link. To get this page manually you would go to the GitHub main page -> side bar -> settings -> (Scroll down left-hand side) Developer settings -> Personal access tokens."
             },
             {
-                "id": 18,
                 "instruction": "Click the gray \"Generate new token\" drop-down button. In the drop-down menu select \"Generate new token (classic)\"."
             },
             {
-                "id": 19,
                 "instruction": "You'll be taken to a new page with multiple fields titled \"New personal access token (classic)\". In the \"Note\" field just type something like \"Elijah's Personal Access Token\". Then select 90 days for the expiration. Then check ALL the boxes below. Then select the green \"Generate token\" button at the bottom once you're done."
             },
             {
-                "id": 20,
                 "instruction": "A new personal access token should have been generated. Copy it, and keep it somewhere safe. You will NOT be able to see it again. It should look like ghp_followed by a bunch random characters."
             },
             {
-                "id": 21,
                 "instruction": "Add a nano config file by running the following command."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "nano .config",
                 "CopyCode": "nano .config"
             },
             {
-                "id": 22,
                 "instruction": "Now run the following command to open your nano file. This is where you'll add your personal access token information."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "nano ~/.ssh/config",
                 "CopyCode": "nano ~/.ssh/config"
             },
             {
-                "id": 23,
                 "instruction": "In the file that's open in your terminal paste the following. Note change \"NameForThisAccount\" in the first line with basically any name for this new account. I'd recommend something like \"main\" or \"personal\". Different for multiple accounts.",
                 "ref": "normalTwentyThree"
             },
@@ -4001,55 +3894,43 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "# Main account\n  Host github.com-NameForThisAccount\n   HostName github.com\n   User git\n   IdentityFile ~/.ssh/id_ed25519\n   IdentitiesOnly yes",
                 "CopyCode": "# Main account\nHost github.com-NameForThisAccount\n HostName github.com\n User git\n IdentityFile ~/.ssh/id_ed25519\n IdentitiesOnly yes"
             },
             {
-                "id": 24,
                 "instruction": "To save the file do the following. Press control + o. Then press return/enter. Then press control + x."
             },
             {
-                "id": 25,
                 "instruction": "Run the following command again to verify the changes were saved. Then press control + x to exit."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "nano ~/.ssh/config",
                 "CopyCode": "nano ~/.ssh/config"
             },
             {
-                "id": 1,
                 "instruction": "Go to github.com."
             },
             {
-                "id": 2,
                 "instruction": "On the left-hand side click the green \"New\" button."
             },
             {
-                "id": 3,
                 "instruction": "In the \"Repository name *\" field enter a name for your repository. It can be basically anything."
             },
             {
-                "id": 4,
                 "instruction": "Decide if you want to make the repo \"private\" or \"public\". Select the corresponding radio button. I'd recommend \"public\" for this example."
             },
             {
-                "id": 5,
                 "instruction": "I'd recommend checking the \"Add a README file\" button."
             },
             {
-                "id": 6,
                 "instruction": "Select the green \"Create repository\" button at the bottom."
             },
             {
-                "id": 7,
                 "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select https or ssh, either one works but I\"d recommend selecting ssh. Then copy the link next to it that looks like \"git@github.com:Michael-W23/Wind.git\" if you selected ssh. Different for multiple accounts.",
                 "ref": "normalGitHubSeven"
             },
             {
-                "id": 8,
                 "instruction": "Run the following command to create a local clone. Note the link should be whatever you just copied. Replace the \"git@github.com:John-Smith/PacMan.git\" with the actual link. Different for multiple accounts",
                 "ref": "normalGitHubEight"
             },
@@ -4057,79 +3938,64 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git clone git@github.com:John-Smith/PacMan.git",
                 "CopyCode": "git clone git@github.com:John-Smith/PacMan.git"
             },
             {
-                "id": 9,
                 "instruction": "Change into the cloned repository. Using the \"cd\" command. Note you should cd into whatever the repos name is."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd PacMan",
                 "CopyCode": "cd PacMan"
             },
             {
-                "id": 10,
                 "instruction": "Add files and make your changes. You can just run the following command for this example."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "touch \"test.py\"",
                 "CopyCode": "touch \"test.py\""
             },
             {
-                "id": 11,
                 "instruction": "Add all your changes."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git add .",
                 "CopyCode": "git add ."
             },
             {
-                "id": 12,
                 "instruction": "Commit your changes with a message about your changes in quotations."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git commit -m \"Added blank test file\"",
                 "CopyCode": "git commit -m \"Added blank test file\""
             },
             {
-                "id": 13,
                 "instruction": "Push your changes."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git push",
                 "CopyCode": "git push"
             },
             {
-                "id": 14,
                 "instruction": "Go back to your repository on GitHub and you should see that the \"test.py\" file has been added."
             },
             {
-                "id": 15,
                 "instruction": "Note that commands 11-13 are how you will add, commit, and push all your future changes."
             },
             {
-                "id": 6,
                 "instruction": "After you enter the command from step 5 you'll be asked the following question, \"Enter file in which to save the key (/Users/elijahdembe/.ssh/id_ed25519):\". Write the name of the file where you want to save the new SSH key without an extension.  For this example lets call it \"id_ed25519_two\", then press return/enter. Scroll back up to original step.",
                 "ref": "secondSix"
             },
             {
-                "id": 7,
                 "instruction": "This is basically but the same as the regular step 7, but with a changed file name. Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step.",
                 "ref": "secondSeven"
             },
@@ -4137,11 +4003,9 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "eval \"$(ssh-agent -s)\"\n\n  ssh-add ~/.ssh/id_ed25519_two",
                 "CopyCode": "eval \"$(ssh-agent -s)\"\n\nssh-add ~/.ssh/id_ed25519_two"
             },
             {
-                "id": 9,
                 "instruction": "This is basically but the same as the regular step 9, but with a changed file name. Run the following two commands (one at a  time) to copy the ssh key to your clipboard. The second command will print and copy the ssh key to your clipboard. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step.",
                 "ref": "secondNine"
             },
@@ -4149,11 +4013,9 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ~/.ssh\n\n  cat id_ed25519_two.pub | tee >(pbcopy)",
                 "CopyCode": "cd ~/.ssh\n\ncat id_ed25519_two.pub | tee >(pbcopy)"
             },
             {
-                "id": 23,
                 "instruction": "This is basically the same as regular step 23. Change \"NameForThisAccount\" to something other than your other account's name. Also the IdentityFile has been updated. Scroll back up to original step.",
                 "ref": "secondTwentyThree"
             },
@@ -4161,16 +4023,13 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "# Main account\n  Host github.com-NameForThisAccount\n   HostName github.com\n   User git\n   IdentityFile ~/.ssh/id_ed25519_two\n   IdentitiesOnly yes",
                 "CopyCode": "# Main account\nHost github.com-NameForThisAccount\n HostName github.com\n User git\n IdentityFile ~/.ssh/id_ed25519_two\n IdentitiesOnly yes"
             },
             {
-                "id": 7,
                 "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select the \"ssh\" button. Note that you HAVE to select \"ssh\" for this to work with a different account. Then copy the link next to it that looks like \"git clone git@github.com:John-Smith/PacMan.git\". Scroll back up to original step.",
                 "ref": "secondGitHubSeven"
             },
             {
-                "id": 8,
                 "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. Scroll back up to original step.",
                 "ref": "secondGitHubEight"
             },
@@ -4178,7 +4037,6 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git",
                 "CopyCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
             },
             {
@@ -4237,47 +4095,36 @@
                 "Example": "git push origin create-assessment"
             },
             {
-                "id": 1,
                 "instruction": "Go to GitHub, go to the Amotions repo, click \"branches\", and click \"create a pull request\" on the branch."
             },
             {
-                "id": 2,
                 "instruction": "Select \"dev\" for the base branch in the top left corner, write a comment about your pull request, then click the green \"Create pull request\" button. If you click the \"Create pull request\" button before you select the \"dev\" base branch, just follow the steps in this page to refactor -> Link."
             },
             {
-                "id": 3,
                 "instruction": "On GitHub a bot will generate a netlify bot will generate a preview link, next to the text that says Deploy Preview. Wait like 5 minutes for all changes to be made, then click on the link to see changes."
             },
             {
-                "id": 4,
                 "instruction": "Go to \"Slack\" and in the \"#engineering\" section ask someone to review and test the pull request before merging. In your post include the Github PR link and the preview link."
             },
             {
-                "id": 5,
                 "instruction": "Once your changes are approved click the green “Merge pull request” button. Then click “Confirm merge”. Do not delete the branch yet."
             },
             {
-                "id": 1,
                 "instruction": "Go to the \"code tab\", than go back to the \"pull request\" tab and click the green \"New pull request\" button (On the right, near the top). You're going to merge your branch with main now."
             },
             {
-                "id": 2,
                 "instruction": "Select the branch you want to merge in the \"compare:\" drop down. Base should be main. Click the green \"Create pull request\" button (On the right, near the top)."
             },
             {
-                "id": 3,
                 "instruction": "Write your commit message then click the green \"Create pull request\" button."
             },
             {
-                "id": 4,
                 "instruction": "Wait for the automatic tests to finish, then click the green \"Merge pull request\" button. Then click \"Confirm merge\". "
             },
             {
-                "id": 5,
                 "instruction": "Wait like 5 minutes, check that it's working of the production website, then report on Slack in \"#general\"."
             },
             {
-                "id": 6,
                 "instruction": "Delete your branch"
             },
             {
@@ -4316,60 +4163,48 @@
                 "Example": "git push"
             },
             {
-                "id": 1,
                 "instruction": "Install homebrew. Homebrew is a great package manager for git and other software."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "brew install git",
                 "CopyCode": "brew install git"
             },
             {
-                "id": 2,
                 "instruction": "Include a ReadMe. ReadMes are a great way to add a description about your project as well as other information."
             },
             {
-                "id": 3,
                 "instruction": "Don't edit ReadMes on GitHub do it in a local repo/.md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git fetch origin\n  git commit -m \"Pulled changes\"",
                 "CopyCode": "git fetch origin\ngit commit -m \"Pulled changes\""
             },
             {
-                "id": 4,
                 "instruction": "If you want to remove git from a folder use the following command."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "rm -rf .git",
                 "CopyCode": "rm -rf .git"
             },
             {
-                "id": 5,
                 "instruction": "Learn markdown. Markdown is how you add styling to ReadMe's. You can also use HTML to style an md file. This website is a good source to learn markdown."
             },
             {
-                "id": 6,
                 "instruction": "Pull remote changes to your local repo before you start working. It's usually a good idea to pull changes from the same branch into your local repo before you start making changes."
             },
             {
-                "id": 7,
                 "instruction": "Check issues GitHub. If you see something wrong with a repo, check the \"issues\" tab. Someone before you might have asked about the issue and got a response. You can also open an issue if you want to add something or you're having trouble with something."
             },
             {
-                "id": 8,
                 "instruction": "Store personal access tokens somewhere safe. You only see your personal access token, once when it's first generated. Store it somewhere safe in case you need it again."
             },
             {
-                "id": 9,
                 "instruction": "Make git commit messages short. They don't have to be long. Give a very brief overview of the problem, so it doesn't run off screen. A person at IBM gave me this advice."
             },
             {
@@ -4433,131 +4268,105 @@
                 "Example": "git diff"
             },
             {
-                "id": 1,
                 "instruction": "Go to the Github repository you want to fork. "
             },
             {
-                "id": 2,
                 "instruction": "Click the \"fork\" button on the right-hand side."
             },
             {
-                "id": 3,
                 "instruction": "In the drop down click \"Create a new fork\"."
             },
             {
-                "id": 4,
                 "instruction": "You should be taken to a new page. Change the name/description if you want. Then click the green \"Create fork\" button."
             },
             {
-                "id": 5,
                 "instruction": "There should now be a fork on your GitHub page."
             },
             {
-                "id": 6,
                 "instruction": "To make changes locally clone the repo. First go the green \"Code\" button, in the drop down select the \"SSH\" tab and copy the url. Then clone it using the following command. Change the SSH link in the command to be the actual forked repo link. Make sure to add the \"-NameForThisAccount\" after the github.com if you're using a Github account other than your main one."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git clone git@github.com:John-Smith/PacMan.git",
                 "CopyCode": "git clone git@github.com:John-Smith/PacMan.git"
             },
             {
-                "id": 7,
                 "instruction": "Change into the local repo using the cd command. Replace with the actual name of the repo."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd PacMan",
                 "CopyCode": "cd PacMan"
             },
             {
-                "id": 8,
                 "instruction": "Make changes to your local repository that you want to add."
             },
             {
-                "id": 9,
                 "instruction": "Run the following three commands like any other project to push your changes."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git add .\n  git commit -m \"Made changes\"\n  git push",
                 "CopyCode": "git add .\ngit commit -m \"Made changes\"\ngit push"
             },
             {
-                "id": 1,
                 "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git log",
                 "CopyCode": "git log"
             },
             {
-                "id": 2,
                 "instruction": "Run the command below with the hash you just copied to revert back to that commit."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git reset --hard <hash-you-copied>",
                 "CopyCode": "git reset --hard"
             },
             {
-                "id": 3,
                 "instruction": "Add new changes to your local repo."
             },
             {
-                "id": 4,
                 "instruction": "Add your changes, like usual."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git add .",
                 "CopyCode": "git add ."
             },
             {
-                "id": 5,
                 "instruction": "Commit your changes, like usual."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git commit -m \"Messages\"",
                 "CopyCode": "git commit -m \"Messages\""
             },
             {
-                "id": 6,
                 "instruction": "Push your changes to main with the \"--force\" tag."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git push origin main --force",
                 "CopyCode": "git push origin main --force"
             },
             {
-                "id": 1,
                 "instruction": "Go to your terminal."
             },
             {
-                "id": 2,
                 "instruction": "cd into the folder you want to upload."
             },
             {
-                "id": 3,
                 "instruction": "Run the following commands in your terminal."
             },
             {
@@ -5397,77 +5206,62 @@
                 "desc": "These are UI/UX Design Tips."
             },
             {
-                "id": 1,
                 "Underlined": "Have a \"Center\" of the page that contains all necessary components and information",
                 "Tip": "The sides could contain components that disappear when the screen shrinks to a different width. You could also change the components being displayed and have a component with identical functionality."
             },
             {
-                "id": 2,
                 "Underlined": "Think of your UI as a vertical stack",
                 "Tip": "Code and design your UI starting from the top to bottom. Add side components after you design the center. Not that a \"div\" element in HTML vertically stacks elements on the page. Think about components like stacking bricks on top of each other."
             },
             {
-                "id": 3,
                 "Underlined": "Use padding and relative positioning instead of absolute positioning",
                 "Tip": "This will help your UI components collapse and expand synchronously with different screen sizes."
             },
             {
-                "id": 4,
                 "Underlined": "Use fonts, logos, and colors to make your UI look unique, not designs",
                 "Tip": "Many UI designs and components are very similar, but you probably haven't really noticed due to the different fonts, logos, and colors. For example, the YouTube subscription page and the instagram main scroll page and basically the exact same, but look completely different due to their different fonts, colors, and overall \"vibe\". Try not to make excessively weird/confusing UI designs. Try for the for the most part to use vertically stacked rectangles, squares, and circles were appropriate."
             },
             {
-                "id": 5,
                 "Underlined": "Provide \"responsive\" feedback to the user",
                 "Tip": "Whenever the user hovers over something or clicks something, have the UI respond to it in someway. For example, when the user hovers over a button, change its color or make it bigger to indicate that it does something when clicked. Whenever a button is clicked always indicate through either button text changes, color changes, alerts, etc. whether the action was performed successfully or not. "
             },
             {
-                "id": 6,
                 "Underlined": "Don't use flashy colors excessively",
                 "Tip": "Most popular UI's such as YouTube, TikTok, Instagram, etc. use mostly muted colors such as grey, white, and black with a small \"splash\" of colors like blue, red, purple, etc. A completely bright neon red UI probably won't look good, and a completely grey UI might come across as dull or bland. Try to find a good mixture of both, I'd say like 85-90% muted, and 10% colorful. Also try to spread the color throughout the UI and not have it all be in one place."
             },
             {
-                "id": 7,
                 "Underlined": "Take Inspiration from other UI's",
                 "Tip": "Kind of elaborating on point 4, be observant when you're using apps and look out for UI designs you like and try to take inspiration from them. "
             },
             {
-                "id": 8,
                 "Underlined": "Collapse horizontally stacked elements into vertically stacked elements when the screen's width decreases",
                 "Tip": "For example, say you have a row of horizontally aligned cards. When the user shrinks the width of the screen the cards could go underneath one another in a vertical stack."
             },
             {
-                "id": 9,
                 "Underlined": "Include “whitespace” in your UI",
                 "Tip": "What I mean by \"whitespace\" in this context is part of the screen that contains just color and no UI components. The main benefit of this is that will help your design adapt to different screen sizes better. Since the size of the colored background isn't essential it can expand and shrink as necessary. It also helps keep your UI look \"Clean\" and not overly cluttered."
             },
             {
-                "id": 10,
                 "Underlined": "For mobile development, use cards that take up the entire width of the screen",
                 "Tip": "A common UI design for apps is to make white cards that take the entire width of the screen. These cards could contain information and components like buttons."
             },
             {
-                "id": 11,
                 "Underlined": "Make an intuitive user interface",
                 "Tip": "Try to make a somewhat simple, easy to understand user interface. Make buttons that perform intuitive actions, place views in places that makes sense, create obvious navigation, etc."
             },
             {
-                "id": 12,
                 "Underlined": "Don't make \"deceptive\" components",
                 "Tip": "What I mean by this is don't use icons and buttons that perform non-intuitive actions. An example of this would be a search magnifying glass icon that leads into a different screen where you select items. That's not what you'd expect that icon to do when clicked."
             },
             {
-                "id": 13,
                 "Underlined": "Draw your UI on paper",
                 "Tip": "Drawing designs on paper is a great way to save time and plan what you're going to do."
             },
             {
-                "id": 14,
                 "Underlined": "Include functionality to \"undo\" an action",
                 "Tip": "Make sure you app has easy, intuitive ways to undo an action. An example of this would be the ability to unsend or edit a text in a messaging app."
             },
             {
-                "id": 15,
                 "Underlined": "Read \"8 Golden Rules of Interface Design\" by Ben Schneiderman",
                 "Tip": "This is a relatively short article that Dr. Layman shared with us in CSC 450. It has some really good advice and you can check it out here."
             },
@@ -5600,167 +5394,134 @@
         "Link": "/compsci/VSCodeShortcuts",
         "Results": [
             {
-                "id": 1,
                 "Shortcut": "command + z",
                 "Action": "Undo an action"
             },
             {
-                "id": 2,
                 "Shortcut": "command + shift + z",
                 "Action": "Redo an action"
             },
             {
-                "id": 3,
                 "Shortcut": "command + s",
                 "Action": "Save changes in a file"
             },
             {
-                "id": 4,
                 "Shortcut": "Highlight lines + command + / ",
                 "Action": "Comment out multiple highlighted lines. Works for any language"
             },
             {
-                "id": 5,
                 "Shortcut": "shift + option + down arrow",
                 "Action": "Duplicate the line the cursor is on below it."
             },
             {
-                "id": 6,
                 "Shortcut": "hover over + Command + shift + p. Then type \"Developer: Inspect Editor Tokens and Scope\"",
                 "Action": "See information about a token. Particularly it's color. Press command + shift + p to close info card."
             },
             {
-                "id": 7,
                 "Shortcut": "Highlight lines + shift + option + f",
                 "Action": "Indent/Format/Align code"
             },
             {
-                "id": 8,
                 "Shortcut": "Highlight lines, shift + tab",
                 "Action": "Move the code back a tab space on multiple lines"
             },
             {
-                "id": 9,
                 "Shortcut": "control + a + k",
                 "Action": "Delete the line the cursor is on in VSCode"
             },
             {
-                "id": 10,
                 "Shortcut": "control + shift + ` (backtick)",
                 "Action": "Create a new terminal in VSCode"
             },
             {
-                "id": 11,
                 "Shortcut": "command + k",
                 "Action": "clear a terminal"
             },
             {
-                "id": 12,
                 "Shortcut": "cursor at end of line + command + delete",
                 "Action": "Delete the line that the cursor is at the end of"
             },
             {
-                "id": 13,
                 "Shortcut": "command + up arrow",
                 "Action": "Go to very top of document"
             },
             {
-                "id": 14,
                 "Shortcut": "command + down arrow",
                 "Action": "Go to very bottom of document"
             },
             {
-                "id": 15,
                 "Shortcut": "control + g. Then type line number in search bar",
                 "Action": "Search document by line number."
             },
             {
-                "id": 15,
                 "Shortcut": "command + shift + f",
                 "Action": "Open side search-bar, to search for key term."
             },
             {
-                "id": 17,
                 "Shortcut": "Command + shift + v",
                 "Action": "Previews what a Markdown file will look like. Go to md file, then do shortcut."
             },
             {
-                "id": 18,
                 "Shortcut": "Highlight lines, command + k, then f",
                 "Action": "Format highlighted code correctly (according to formatting settings)"
             },
             {
-                "id": 19,
                 "Shortcut": "command + a",
                 "Action": "Highlight all lines in the code document"
             },
             {
-                "id": 20,
                 "Shortcut": "command + shift + n",
                 "Action": "Create a new window"
             },
             {
-                "id": 21,
                 "Shortcut": "option + click",
                 "Action": "Allows you to put multiple cursors on lines that aren't directly below or above each other. For multi-line editing."
             },
             {
-                "id": 22,
                 "Shortcut": "command + option, then down arrow",
                 "Action": "Create multiple cursors in VS Code that move down every line. For multi-line editing."
             },
             {
-                "id": 23,
                 "Shortcut": "command + x",
                 "Action": "Delete the entire line and newline that a cursor is on"
             },
             {
-                "id": 24,
                 "Shortcut": "command + right arrow ",
                 "Action": ""
             },
             {
-                "id": 25,
                 "Shortcut": "command + p",
                 "Action": "Open command search pallette"
             },
             {
-                "id": 26,
                 "Shortcut": "command + right arrow",
                 "Action": "Move a cursor (or multiple cursors) to the end of their line"
             },
             {
-                "id": 27,
                 "Shortcut": "command + shift + right arrow",
                 "Action": "Move a cursor (or multiple cursors) to the end of their line, and highlight that part of the line."
             },
             {
-                "id": 28,
                 "Shortcut": "option + up arrow",
                 "Action": "Swap a line with the line above it"
             },
             {
-                "id": 29,
                 "Shortcut": "option + down arrow",
                 "Action": "Swap a line with the line below it"
             },
             {
-                "id": 30,
                 "Shortcut": "tab",
                 "Action": "When you're typing \"tab\" will autofill the first text editor suggestion from the list."
             },
             {
-                "id": 3,
                 "Shortcut": "command + shift + f",
                 "Action": "Search an entire folder for a word"
             },
             {
-                "id": 32,
                 "Shortcut": "command + shift + h",
                 "Action": "Open component to Find and replace all instances of a string in an entire folder."
             },
             {
-                "id": 33,
                 "Shortcut": "Command + k + s (press s after holding down cmd + k)",
                 "Action": "View Keyboard shortcuts menu vscode. Can create a shortcut"
             },
@@ -5771,7 +5532,6 @@
                 "Description": "These are shortcuts for VSCode. I also included shortcuts for other text editors in the tables below."
             },
             {
-                "id": 1,
                 "Shortcut": "command + d",
                 "Action": "Duplicate the line the cursor is on below it."
             },
@@ -5782,27 +5542,22 @@
                 "Description": "These are shortcuts for PyCharm."
             },
             {
-                "id": 1,
                 "Shortcut": "command + d",
                 "Action": "Delete the line the cursor is on"
             },
             {
-                "id": 2,
                 "Shortcut": "command + option + down arrow",
                 "Action": "Duplicate the line the cursor is on below it."
             },
             {
-                "id": 3,
                 "Shortcut": "command + option + a + drag",
                 "Action": "Multi-line editing"
             },
             {
-                "id": 4,
                 "Shortcut": "click out, command + option + a",
                 "Action": "End multiline editing/get cursor back to normal"
             },
             {
-                "id": 5,
                 "Shortcut": "control + h",
                 "Action": "Search entire folder for keyword"
             },
@@ -5813,7 +5568,6 @@
                 "Description": "These are shortcuts for Eclipse."
             },
             {
-                "id": 1,
                 "Shortcut": "shift + control + down arrow",
                 "Action": "Multi-line editing"
             },
@@ -5824,7 +5578,6 @@
                 "Description": "These are shortcuts for Xcode."
             },
             {
-                "id": 1,
                 "Shortcut": "command + shift + c",
                 "Action": "Create a code block"
             },
@@ -5846,132 +5599,106 @@
                 "scrollToTop": "Scroll To Top"
             },
             {
-                "id": 1,
                 "Underlined": "Create a shortcut to access your settings.json file in VSCode",
                 "Tip": "This will allow you to easily make changes to the file, without having to find it using a lengthy process. Scroll down to see instructions on making a shortcut."
             },
             {
-                "id": 2,
                 "Underlined": "Include search functionality",
                 "Tip": "Having a search functionality will make finding things much easier and faster, and provide an overall better user experience."
             },
             {
-                "id": 3,
                 "Underlined": "Make personal projects",
                 "Tip": "Personal projects are a great thing to have on your resume and can help your practice and improve your skills."
             },
             {
-                "id": 4,
                 "Underlined": "Format Your Code",
                 "Tip": "Readability and formatting is an important part of creating good code. Formatting your code makes it much easier to read and understand what's going on. It also makes your code look cleaner and more organized. Scroll down using this link to see an example in Java. Scroll down using this link to see an example in Python."
             },
             {
-                "id": 5,
                 "Underlined": "Adopt Good Coding Practices",
                 "Tip": "Using things like git version control, organizing your code into classes and components, documentation, testing, etc. can all help improve the quality of your code and software."
             },
             {
-                "id": 6,
                 "Underlined": "Pair programming",
                 "Tip": "This is when you program with someone else. We do this all the time at IBM and USAA. Coding with someone else is a great way to learn new things, catch mistakes, and overall improve the quality of your code."
             },
             {
-                "id": 7,
                 "Underlined": "Don't repeat yourself",
                 "Tip": "If you see blocks of code frequently repeating, there's probably a better way to write it. The use of for loops, classes, components, etc. are great ways to have reusable and cleaner code."
             },
             {
-                "id": 8,
                 "Underlined": "If it feels weird, it probably is",
                 "Tip": "If something you're doing feels weird and forced, there's probably a better way do it. Run your code through ChatGpt or another person to see if there are other ways you could potentially write it."
             },
             {
-                "id": 9,
                 "Underlined": "Install homebrew",
                 "Tip": "This is a really good package manager for MacOS that be used used to download libraries and stuff. Scroll down to see the instructions on how to download it."
             },
             {
-                "id": 10,
                 "Underlined": "Learn the names of stuff",
                 "Tip": "Learning the names of certain operators, functions, etc. will help when you're trying to explain code. For example, things like knowing what a ternary operator is called. It also help you better understand code when someone else is explaining."
             },
             {
-                "id": 11,
                 "Underlined": "Spread things out",
                 "Tip": "When creating a UI, try not to overload a single page with too much information. Also when you're coding don't make your files excessively long. Break it into classes, components, other files, etc. Try to keep them relatively short, organized, and simple."
             },
             {
-                "id": 12,
                 "Underlined": "Use dark mode",
                 "Tip": "Obviously you're free to do whatever you want, but using dark mode in a text editor typically improves code highlighting and readability. It also won't burn your eyes at night."
             },
             {
-                "id": 13,
                 "Underlined": "Download Visual Studio Code",
                 "Tip": "VSCode is an extremely useful text editor with a lot cool features and can be used for basically any language or purpose."
             },
             {
-                "id": 14,
                 "Underlined": "Use Python when working with Excel",
                 "Tip": "Obviously you can't use Python to help with all Excel tasks, but I'd definitely look into using Python with Excel."
             },
             {
-                "id": 15,
                 "Underlined": "Use debug mode",
                 "Tip": "Debug mode is a great way see the values of the variables you're working with and other helpful information. I feel like debug is particularly useful in CSC 231 and definitely something worth learning."
             },
             {
-                "id": 16,
                 "Underlined": "Use JSON files",
                 "Tip": "If all you're data is static, you can use a JSON file instead of setting up a database. That's what I did for this website. Also, if you're websites static you can host it on GitHub pages for free."
             },
             {
-                "id": 17,
                 "Underlined": "Try out multiple programming languages",
                 "Tip": "I met a lot of people at UNCW who were biased against basically any language that wasn't Python. Don't be afraid to try out new languages and know that different syntax really isn't that hard to learn. I personally really like certain aspects of Java."
             },
             {
-                "id": 18,
                 "Underlined": "Practice",
                 "Tip": "A great way to get good anything is to practice it frequently. Programming is no different."
             },
             {
-                "id": 19,
                 "Underlined": "Try new things",
                 "Tip": "This is kind of building on point 17, just try new things and see what you like when programming."
             },
             {
-                "id": 20,
                 "Underlined": "Learn how to exit a nano file",
                 "Tip": "When you're editing a file using the nano command press control + o to save, then press enter to write the changes. Then control + x to exit"
             },
             {
-                "id": 21,
                 "Underlined": "Use ChatGPT",
                 "Tip": "It's a great a tool for helping you while you're programming. However, I'd strongly recommend trying to learn and understand the code it generates."
             },
             {
-                "id": 22,
                 "Underlined": "Learn a JavaScript framework",
                 "Tip": "A framework will make creating a web application much easier. I'd recommend Vue.js (with the Composition API) because it's very beginner friendly. I used Vue.js to create this website."
             },
             {
-                "id": 23,
                 "Underlined": "Get an internship",
                 "Tip": "Having a SWE internship during college will definitely help you when searching for a fulltime job."
             },
             {
-                "id": 24,
                 "Underlined": "Have a basic understanding of regex",
                 "Tip": "You learn about Regex in CSC 360. It can be a very useful tool and something worth checking out."
             },
             {
-                "id": 25,
                 "Underlined": "Do Leetcode problems",
                 "Tip": "They can be a great way to practice your skills and prepare for coding interviews."
             },
             {
-                "id": 26,
                 "Underlined": "Automate processes using code",
                 "Tip": "There is usually a way to do things programmatically. Things like operating system commands, key presses, file changes can usually be automated using code."
             },
@@ -5979,28 +5706,24 @@
                 "Name": "Create a Shortcut to Access VSCode Setting.json",
                 "Description": "\nOpen Visual Studio Code, then press \"command + shift + p\". Then, in the dialogue box type \"Open Keyboard Shortcuts (JSON)\". Click on the matching result. Copy and paste the json below into the file then save it. Now the shortcut \"Command + option + =\" should open settings.json",
                 "Language": "JSON",
-                "FormatCode": "[\n     {\n        \"key\": \"alt+cmd+=\",\n        \"command\": \"workbench.action.openSettingsJson\"\n     }\n  ]",
                 "CopyCode": "//This list should be the only content in the file\n[\n\t{\n\t\t\"key\": \"alt+cmd+=\",\n\t\t\"command\": \"workbench.action.openSettingsJson\"\n\t}\n]"
             },
             {
                 "Name": "Properly Formatted Java file",
                 "Description": "This is a properly formatted Java file. Note the use of whitespace, particularly around the equal signs, if-else statements and for-loop blocks. Also note the comments and variable naming conventions and casing. Learn more here -> https://google.github.io/styleguide/javaguide.html.",
                 "Language": "Java",
-                "FormatCode": "/**\n   * This class implements an array-based list for a maximum of 20 boats\n   *   \n   * @author Michael Totaro\n   */\n  public class BoatList {\n\n      /** Capacity of the list containing names of Boats */\n      public static final int MAX_BOATS = 20;\n\n      /**\n       * Creates an array-based list of boats, adds some boats, removes a boat,\n       * queries if a boat exists in the list, and prints the list.\n       *\n       * @param args command line arguments (not used)\n       */\n      public static void main(String[] args) {\n          String[] boats = new String[MAX_BOATS];\n\n          int numberOfBoats = 0;\n\n          numberOfBoats = addBoat(boats, numberOfBoats, \"Natalie\");\n          numberOfBoats = addBoat(boats, numberOfBoats, \"Wendell\");\n          numberOfBoats = addBoat(boats, numberOfBoats, \"Lori\");\n          numberOfBoats = addBoat(boats, numberOfBoats, \"Steve\");\n          numberOfBoats = addBoat(boats, numberOfBoats, \"Kevin\");\n\n          System.out.println(\"\\nBoat List:\");\n          printList(boats);\n\n          int index = findBoat(boats, \"Rosa\");\n\n          if (index == -1) {\n              numberOfBoats = addBoat(boats, numberOfBoats, \"Rosa\");\n          } else {\n              System.out.println(boats[index] + \" is located at index \" +\n                                 index + \" in the boats list.\");\n          }\n\n          numberOfBoats = removeBoat(boats, numberOfBoats, \"Wendell\");\n\n          System.out.println(\"\\nBoat List:\");\n          printList(boats);\n      }\n\n      /**\n       * Adds a boat to the list.\n       *\n       * @param list the array of boat names\n       * @param numberOfBoats the current number of boats in the list\n       * @param boat the boat to add to the list\n       * @return the new number of boats on the list\n       * @throws IllegalArgumentException if list is full\n       */\n      public static int addBoat(String[] list, int numberOfBoats, String boat) {\n\n          if (numberOfBoats >= list.length) {\n              throw new IllegalArgumentException(\"No room in list\");\n          }\n\n          list[numberOfBoats++] = boat;\n\n          return numberOfBoats;\n      }\n\n      /**\n       * Prints the list with each element on a separate line.\n       *\n       * @param boats the array of boat names\n       */\n      public static void printList(String[] boats) {\n          for (String boatName : boats) {\n              System.out.println(boatName);\n          }\n      }\n\n      /**\n       * Removes a boat from the list.\n       *\n       * @param list the array of boat names\n       * @param numOfBoats the current number of boats in the list\n       * @param boat the boat to remove from the list\n       * @return the new number of boat on the list\n       */\n      public static int removeBoat(String[] list, int numOfBoats, String boat) {\n          boolean found = false;\n\n          for (int i = 0; i < numOfBoats; i++) {\n              if (found) {\n                  list[i - 1] = list[i];\n              }\n\n              if (list[i].equals(boat)) {\n                  found = true;\n                  numOfBoats--;\n              }\n          }\n\n          return numOfBoats;\n      }\n\n      /**\n       * Determines if the given boat is in the list.\n       *\n       * @param list the array of boat names\n       * @param boat the boat to find in the list\n       * @return the index of the list element containing boat\n       *         or -1 if boat does not exist in the list\n       */\n      public static int findBoat(String[] list, String boat) {\n          for (int i = 0; i < list.length; i++) {\n              if (list[i] == boat) {\n                  return i;\n              }\n          }\n\n          return -1;\n      }\n  }",
                 "CopyCode": "/**\n * This class implements an array-based list for a maximum of 20 boats\n *\n * @author Michael Totaro\n */\n  public class BoatList {\n\n\t/** Capacity of the list containing names of Boats */\n\tpublic static final int MAX_BOATS = 20;\n\n\t/**\n\t * Creates an array-based list of boats, adds some boats, removes a boat,\n\t * queries if a boat exists in the list, and prints the list.\n\t *\n\t * @param args command line arguments (not used)\n\t */\n\tpublic static void main(String[] args) {\n\t\tString[] boats = new String[MAX_BOATS];\n\n\t\tint numberOfBoats = 0;\n\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Natalie\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Wendell\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Lori\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Steve\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Kevin\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\n\t\tint index = findBoat(boats, \"Rosa\");\n\n\t\tif (index == -1) {\n\t\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Rosa\");\n\t\t} else {\n\t\t\tSystem.out.println(boats[index] + \" is located at index \" +\n\t\t\t\t\t\t\t   index + \" in the boats list.\");\n\t\t}\n\n\t\tnumberOfBoats = removeBoat(boats, numberOfBoats, \"Wendell\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\t}\n\n\t/**\n\t * Adds a boat to the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numberOfBoats the current number of boats in the list\n\t * @param boat the boat to add to the list\n\t * @return the new number of boats on the list\n\t * @throws IllegalArgumentException (with message \"No room in list\") if list is full\n\t */\n\tpublic static int addBoat(String[] list, int numberOfBoats, String boat) {\n\n\t\tif (numberOfBoats >= list.length) {\n\t\t\tthrow new IllegalArgumentException(\"No room in list\");\n\t\t}\n\n\t\tlist[numberOfBoats++] = boat;\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Prints the list with each element on a separate line.\n\t *\n\t * @param boats the array of boat names\n\t */\n\tpublic static void printList(String[] boats) {\n\t\tfor (String boatName : boats) {\n\t\t\tSystem.out.println(boatName);\n\t\t}\n\t}\n\n\t/**\n\t * Removes a boat from the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numOfBoats the current number of boats in the list\n\t * @param boat the boat to remove from the list\n\t * @return the new number of boat on the list\n\t */\n\tpublic static int removeBoat(String[] list, int numberOfBoats, String boat) {\n\t\tboolean found = false;\n\n\t\tfor (int i = 0; i < numberOfBoats; i++) {\n\t\t\tif (found) {\n\t\t\t\tlist[i - 1] = list[i];\n\t\t\t}\n\n\t\t\tif (list[i].equals(boat)) {\n\t\t\t\tfound = true;\n\t\t\t\tnumberOfBoats--;\n\t\t\t}\n\t\t}\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Determines if the given boat is in the list.\n\t *\n\t * @param list the array of boat names\n\t * @param boat the boat to find in the list\n\t * @return the index of the list element containing boat\n\t *         or -1 if boat does not exist in the list\n\t */\n\tpublic static int findBoat(String[] list, String boat) {\n\t\tfor (int i = 0; i < list.length; i++) {\n\t\t\tif (list[i] == boat) {\n\t\t\t\treturn i;\n\t\t\t}\n\t\t}\n\n\t\treturn -1;\n\t}\n}"
             },
             {
                 "Name": "Properly Formatted Python file",
                 "Description": "This is a properly formatted Python file. Note the use of whitespace around the if-else and for-loop blocks. Also note the comments. Learn more here -> https://peps.python.org/pep-0008/.",
                 "Language": "Python",
-                "FormatCode": "# Name: Michael Totaro\n  # Date: 10/24/2022\n  # Purpose: Create and demonstrate CarList class (Not a real assignment).\n  # collaborators/resources: None other than Dr. Pence\n\n  class Car:\n      \"\"\" This class is a basic car object. \"\"\"\n      def __init__(self, car_id, company, year, color, miles):\n          \"\"\"\n          Initializer for a Car object.\n          :param id: Id of the car\n          :param company: Maker of the car\n          :param year: Year car was made\n          :param color: Color of the car\n          :param miles: Miles driven by the car\n          \"\"\"\n          self.id = car_id\n          self.company = company\n          self.year = year\n          self.color = color\n          self.miles = miles\n\n      def __str__(self):\n          \"\"\"\n          Creates a string representation of a car object.\n          :return: string representation of a car object.\n          \"\"\"\n          car_str = (f\"\\nCar {self.id}\\n\"\n                     f\"Company: {self.company}\\n\"\n                     f\"Year: {self.year}\\n\"\n                     f\"Color: {self.color}\\n\"\n                     f\"Miles: {self.miles}\")\n\n          return car_str + \"\\n\"\n\n\n  class CarList:\n      \"\"\"\n      This class is data structure of car objects.\n      You can add, remove, and print the list.\n      \"\"\"\n      def __init__(self):\n          \"\"\"\n          Initializes an empty car list\n          \"\"\"\n          self.car_list = []\n\n      def add_car(self, new_car):\n          \"\"\"\n          Adds a car to the car list if conditions are met.\n          :param new_car: Car object to be added to the list\n          :return: True if the car was added successfully else false.\n          :raises ValueError: If parameter is not an instance of a car object\n          \"\"\"\n\n          if not isinstance(new_car, Car):\n              raise ValueError(\"Parameter must be an instance of a car object.\")\n\n          for car in self.car_list:\n              if car.id == new_car.id:\n                  print(f\"A car in the list already has the id '{new_car.id}'!\")\n                  return False\n\n          self.car_list.append(new_car)\n\n          return True\n\n      def remove_car_by_id(self, car_id):\n          \"\"\"\n          Removes car in the list by id.\n          :param car_id: The id of the car to be removed.\n          :raises ValueError: If parameter is not an int.\n          \"\"\"\n\n          if not isinstance(car_id, int):\n              raise ValueError(\"car_id must be an integer.\")\n\n          for car in self.car_list:\n              if car.id == car_id:\n                  self.car_list.remove(car)\n                  print(f\"Car {car_id} removed successfully!\")\n                  return\n\n          print(f\"No car with the id {car_id} was found!\")\n\n      def __str__(self):\n          \"\"\"\n          Creates a string representation of a CarList object.\n          :return: The cars in the list as a string\n          \"\"\"\n          return \"\\n\" + \" \".join([str(car) for car in self.car_list])\n\n      def __len__(self):\n          \"\"\"\n          Get the length of the car_list\n          :return: The length of the car list\n          \"\"\"\n          return len(self.car_list)\n\n\n  def main():\n      \"\"\"\n      The driver code to test the CarList class.\n      \"\"\"\n      car_list = CarList()\n\n      car_list.add_car(Car(1, \"Honda\", 2012, \"gray\", 12430))\n      car_list.add_car(Car(2, \"Toyota\", 2005, \"black\", 25430))\n      car_list.add_car(Car(3, \"Ford\", 1999, \"red\", 19430))\n\n      try:\n          car_list.add_car(\"This is a string object\")\n      except ValueError as e:\n          print(e)\n\n      car_list.add_car(Car(1, \"Used id\", 1999, \"red\", 19430))\n\n      print(f\"Length of list before you remove a car {len(car_list)}\")\n\n      car_list.remove_car_by_id(1)\n\n      print(f\"Length of list after you remove a car {len(car_list)}\")\n\n      car_list.remove_car_by_id(100000)\n\n      print(car_list)\n\n  main()",
                 "CopyCode": "# Name: Michael Totaro\n# Date: 10/24/2022\n# Purpose: Create and demonstrate CarList class (Not a real assignment).\n# collaborators/resources: None other than Dr. Pence\n\nclass Car:\n\t\"\"\" This class is a basic car object. \"\"\"\n\tdef __init__(self, car_id, company, year, color, miles):\n\t\t\"\"\"\n\t\tInitializer for a Car object.\n\t\t:param id: Id of the car\n\t\t:param company: Maker of the car\n\t\t:param year: Year car was made\n\t\t:param color: Color of the car\n\t\t:param miles: Miles driven by the car\n\t\t\"\"\"\n\t\tself.id = car_id\n\t\tself.company = company\n\t\tself.year = year\n\t\tself.color = color\n\t\tself.miles = miles\n\n\tdef __str__(self):\n\t\t\"\"\"\n\t\tCreates a string representation of a car object.\n\t\t:return: string representation of a car object.\n\t\t\"\"\"\n\t\tcar_str = (f\"\\nCar {self.id}\\n\"\n\t\t\t\t   f\"Company: {self.company}\\n\"\n\t\t\t\t   f\"Year: {self.year}\\n\"\n\t\t\t\t   f\"Color: {self.color}\\n\"\n\t\t\t\t   f\"Miles: {self.miles}\")\n\n\t\treturn car_str + \"\\n\"\n\n\nclass CarList:\n\t\"\"\"\n\tThis class is data structure of car objects.\n\tYou can add, remove, and print the list.\n\t\"\"\"\n\tdef __init__(self):\n\t\t\"\"\"\n\t\tInitializes an empty car list\n\t\t\"\"\"\n\t\tself.car_list = []\n\n\tdef add_car(self, new_car):\n\t\t\"\"\"\n\t\tAdds a car to the car list if conditions are met.\n\t\t:param new_car: Car object to be added to the list\n\t\t:return: True if the car was added successfully else false.\n\t\t:raises ValueError: If parameter is not an instance of a car object\n\t\t\"\"\"\n\n\t\tif not isinstance(new_car, Car):\n\t\t\traise ValueError(\"Parameter must be an instance of a car object.\")\n\n\t\tfor car in self.car_list:\n\t\t\tif car.id == new_car.id:\n\t\t\t\tprint(f\"A car in the list already has the id '{new_car.id}'!\")\n\t\t\t\treturn False\n\n\t\tself.car_list.append(new_car)\n\n\t\treturn True\n\n\tdef remove_car_by_id(self, car_id):\n\t\t\"\"\"\n\t\tRemoves car in the list by id.\n\t\t:param car_id: The id of the car to be removed.\n\t\t:raises ValueError: If parameter is not an int.\n\t\t\"\"\"\n\n\t\tif not isinstance(car_id, int):\n\t\t\traise ValueError(\"car_id must be an integer.\")\n\n\t\tfor car in self.car_list:\n\t\t\tif car.id == car_id:\n\t\t\t\tself.car_list.remove(car)\n\t\t\t\tprint(f\"Car {car_id} removed successfully!\")\n\t\t\t\treturn\n\n\t\tprint(f\"No car with the id {car_id} was found!\")\n\n\tdef __str__(self):\n\t\t\"\"\"\n\t\tCreates a string representation of a CarList object.\n\t\t:return: The cars in the list as a string\n\t\t\"\"\"\n\t\treturn \"\\n\" + \" \".join([str(car) for car in self.car_list])\n\n\tdef __len__(self):\n\t\t\"\"\"\n\t\tGet the length of the car_list\n\t\t:return: The length of the car list\n\t\t\"\"\"\n\t\treturn len(self.car_list)\n\n\ndef main():\n\t\"\"\"\n\tThe driver code to test the CarList class.\n\t\"\"\"\n\tcar_list = CarList()\n\n\tcar_list.add_car(Car(1, \"Honda\", 2012, \"gray\", 12430))\n\tcar_list.add_car(Car(2, \"Toyota\", 2005, \"black\", 25430))\n\tcar_list.add_car(Car(3, \"Ford\", 1999, \"red\", 19430))\n\n\ttry:\n\t\tcar_list.add_car(\"This is a string object\")\n\texcept ValueError as e:\n\t\tprint(e)\n\n\tcar_list.add_car(Car(1, \"Used id\", 1999, \"red\", 19430))\n\n\tprint(f\"Length of list before you remove a car {len(car_list)}\")\n\n\tcar_list.remove_car_by_id(1)\n\n\tprint(f\"Length of list after you remove a car {len(car_list)}\")\n\n\tcar_list.remove_car_by_id(100000)\n\n\tprint(car_list)\n\nmain()"
             },
             {
                 "Name": "Install Homebrew on MacOS",
                 "Description": "Run these two commands in your terminal to install homebrew. The first will install XCode Command Line Tools, the second will install homebrew.",
                 "Language": "Command",
-                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/\n  HEAD/install.sh)\"",
                 "CopyCode": ""
             },
             {
@@ -6117,113 +5840,93 @@
                 "scrollToTop": "Scroll To Top"
             },
             {
-                "id": 1,
                 "description": "A project called \"plane-notify\" created by Jack Sweeney. This video does a really good job describing what it is. It's basically a bot that tracks Elon Musks jet. It's written python and you can see the source code here. Also, Jack Sweeney accepted my connect request on Linkedin which is pretty cool."
             },
             {
-                "id": 2,
                 "description": "Search bars. Ever since I started coding I've had a somewhat strange fascination with search bars. It seems like they're everywhere but people still have difficulty implementing them in their projects. That's why I made sure not to \"cheat\" the search bar functionality in this project (it was originally supposed to be a box pop-up thing). Search bars can be extremely useful in your project and I'd recommend implementing them wherever you think they'd be helpful."
             },
             {
-                "id": 3,
                 "description": "Steve Jobs talking about programming. In this video Steve Jobs talks about how he thinks everyone should learn to code. I like the point he makes about how programming teaches you how to think in the real world. I often find myself using Java syntax to describe real-life events in my head."
             },
             {
-                "id": 4,
                 "description": "GitHub pages. I love GitHub pages and it's where this website is currently being hosted. It allows you to host any static website for free which I find very convenient as my websites usually don't use databases or dynamic rendering."
             },
             {
-                "id": 5,
                 "description": "Pushing to GitHub. I like the feeling of pushing code to GitHub and have it successfully working. I find it satisfying."
             },
             {
-                "id": 6,
                 "description": "Visual Studio Code is the main text editor I use. I find it very versatile and I use it in basically all my programming tasks. I'd strongly recommend downloading it and trying it out."
             },
             {
-                "id": 7,
                 "description": "The UNCW Computer Science curriculum. I think UNCW has a great CS curriculum that allows for a lot of creativity and flexibility. It also teaches you a diverse spectrum of skills which will help prepare you for the real world."
             },
             {
-                "id": 8,
                 "description": "Markdown. I really like markdowns syntax and I find it convenient when creating ReadMes. I took inspiration from markdowns syntax for the hyperlinks in this project."
             },
             {
-                "id": 9,
                 "description": "Emailjs. This is a JavaScript library that allows you send emails for free. I used it in the \"Contact Me\" page in this project. Here's the link to set it up."
             },
             {
-                "id": 10,
                 "description": "The \"termcolor\" library. This is a Python library that allows you to color the text in your terminal output. I find it very useful to differentiate between messages and I think it looks nice."
             },
             {
                 "Name": "List Comprehension",
                 "Description": "This is a great way to create and populate a list in Python.",
                 "Language": "Python",
-                "FormatCode": "increment_list = [x + 1 for x in range(len(4))]",
                 "CopyCode": "increment_list = [x + 1 for x in range(len(4))]"
             },
             {
                 "Name": "Ternary Operator",
                 "Description": "Condensed if-else statement. Appears in Java, JavaScript, C++, Swift, etc.",
                 "Language": "Java",
-                "FormatCode": "String cool = (5 % 2 == 0) ? \"Hello\" : \"Cool\";",
                 "CopyCode": "String cool = (5 % 2 == 0) ? \"Hello\" : \"Cool\";"
             },
             {
                 "Name": "ForEach Loops/Arrow Functions",
                 "Description": "ForEach loops act like a regular for loop. Arrow functions have concise syntax",
                 "Language": "JavaScript",
-                "FormatCode": "const myFunction = () => {\n    animals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n    animals.forEach(animal => {\n        console.log(animal);\n    });\n  }\n",
                 "CopyCode": "const myFunction = () => {\n\tanimals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n\tanimals.forEach(animal => {\n\t\tconsole.log(animal);\n\t});\n}"
             },
             {
                 "Name": "Nil-Coalescing Operator",
                 "Description": "If name isn't null, set \"unwrappedValue\" to that value. If name is null set to \"Anonymous\". Appears in JavaScript, TypeScript, Swift. Note it's called \"nullish\" in JavaScript and TypeScript.",
                 "Language": "Swift",
-                "FormatCode": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\"\n\n  let ternaryEquivalent = (name != nil) ? name : \"Anonymous\"",
                 "CopyCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\"\n\nlet ternaryEquivalent = (name != nil) ? name : \"Anonymous\"\n"
             },
             {
                 "Name": "File Reading",
                 "Description": "Python's file reading syntax is easily my favorite part of the language. So simple and useful.",
                 "Language": "Python",
-                "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)",
                 "CopyCode": "with open(\"cool.txt\", \"r\") as file:\n\tfor line in file:\n\t\tprint(line)"
             },
             {
                 "Name": "JavaScript Object Notation",
                 "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class. YAML and XML are too jank in my opinion. You can think of a json file as a list of Python dictionaries or strings.",
                 "Language": "JSON",
-                "FormatCode": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }",
                 "CopyCode": "{\n\t\"Car\": \"Honda\",\n\t\"Color\": \"Gray\",\n\t\"Miles\": 12400,\n\t\"Year\": \"2015\"\n}"
             },
             {
                 "Name": "Try/Catch Block",
                 "Description": "I *LOVE* the try/catch/throw syntax in Java. It's just a vibe. I use this syntax to describe real life events in my head all the time.",
                 "Language": "Java",
-                "FormatCode": "try {\n      schedule.get(i).checkConflict(theEvent);\n  } catch (ConflictException e) {\n      throw new IllegalArgumentException(\"Can't be added due to a conflict.\");\n  } ",
                 "CopyCode": "try {\n\tschedule.get(i).checkConflict(theEvent);\n} catch (ConflictException e) {\n\tthrow new IllegalArgumentException(\"The event cannot be added due to a conflict.\");\n} "
             },
             {
                 "Name": "Dictionaries and F-Strings",
-                "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string.",
+                "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string. I also really like the for-loop syntax to iterate over a dictionary/JSON object.",
                 "Language": "Python",
-                "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Sam\": \"UT\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  print(f\"Michael went to {peoples_college['Michael']}\")",
-                "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Sam\": \"UT\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nprint(f\"Michael went to {peoples_college['Michael']}\")\n"
+                "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Hudson\": \"UTD\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nfor key, value in peoples_college.items():  \n\tprint(f\"{key}: went to {value}\")\n\tprint(f\"Michael: went to {'Michael'}\")\n"
             },
             {
                 "Name": "ForEach UI Loops",
                 "Description": "ForEach loops are used to help build user interfaces in SwiftUI.",
                 "Language": "Swift",
-                "FormatCode": "ForEach(menu) { menuItem in\n     NavigationLink(destination: menuItem.destination) {\n         Label {\n\t    Text(menuItem.text)\n\t } icon: {\n\t    Image(systemName: menuItem.picture)\n\t         .foregroundColor(shakyPaleRed)\n\t    }\n         }\n     }\n  }",
                 "CopyCode": "ForEach(menu) { menuItem in\n\tNavigationLink(destination: menuItem.destination) {\n\t\tLabel {\n\t\t\tText(menuItem.text)\n\t\t} icon: {\n\t\t\tImage(systemName: menuItem.picture)\n\t\t\t\t.foregroundColor(shakyPaleRed)\n\t\t\t}\n\t\t}\n\t}\n}"
             },
             {
                 "Name": "Markdown Links",
                 "Description": "This is the syntax to hyperlink text in a markdown file.",
                 "Language": "Markdown",
-                "FormatCode": "Uncw Link",
                 "CopyCode": "Uncw Link"
             }
         ]
@@ -6539,142 +6242,114 @@
                 "Description": "These are keyboard shortcuts for MacOS. If you aren't currently using linux you probably will in a future job. Also these can easily be converted to windows shortcuts using ChatGPT."
             },
             {
-                "id": 1,
                 "Shortcut": "command + z",
                 "Action": "Undo an action"
             },
             {
-                "id": 2,
                 "Shortcut": "command + shift + z",
                 "Action": "Redo an action"
             },
             {
-                "id": 3,
                 "Shortcut": "command + s",
                 "Action": "Save changes in a file"
             },
             {
-                "id": 4,
                 "Shortcut": "command + option + s",
                 "Action": "Save all changed files in a folder"
             },
             {
-                "id": 5,
                 "Shortcut": "command + k ",
                 "Action": "Clear a terminal"
             },
             {
-                "id": 6,
                 "Shortcut": "command + up arrow",
                 "Action": "Go to top of document"
             },
             {
-                "id": 7,
                 "Shortcut": "command + down arrow",
                 "Action": "Go to bottom of document"
             },
             {
-                "id": 8,
                 "Shortcut": "command + shift + 3",
                 "Action": "Screenshot on mac"
             },
             {
-                "id": 9,
                 "Shortcut": "command + shift + 5 + Press Record Entire Screen",
                 "Action": "Screen record on a mac."
             },
             {
-                "id": 10,
                 "Shortcut": "Highlight text + command + k",
                 "Action": "Hyperlink Text"
             },
             {
-                "id": 11,
                 "Shortcut": "command + f",
                 "Action": "Search for a word in a webpage."
             },
             {
-                "id": 12,
                 "Shortcut": "control + up arrow",
                 "Action": "Show all open windows on mac"
             },
             {
-                "id": 13,
                 "Shortcut": "command + c, command + v",
                 "Action": "Copy and paste an item"
             },
             {
-                "id": 14,
                 "Shortcut": "Command + shift + . ",
                 "Action": "Show hidden files in a folder/directory."
             },
             {
-                "id": 15,
                 "Shortcut": "control + c",
                 "Action": "Cancel an operation in terminal"
             },
             {
-                "id": 16,
                 "Shortcut": "control + z",
                 "Action": "Suspend an operation in terminal (I use this if control + c isn't working)"
             },
             {
-                "id": 17,
                 "Shortcut": "control + u",
                 "Action": "Deletes the entire line you’re typing in the terminal"
             },
             {
-                "id": 18,
                 "Shortcut": "command + o",
                 "Action": "Open Finder (with the open button, so you can open files without having to double click)"
             },
             {
-                "id": 19,
                 "Shortcut": "control + command + space bar",
                 "Action": "Open emoji keyboard menu"
             },
             {
-                "id": 20,
                 "Shortcut": "control + command + space bar, then click keyboard",
                 "Action": "Gets math and other special characters by first opening emoji keyboard menu, then in the upper right hand corner click on the little keyboard icon"
             },
             {
-                "id": 21,
                 "Shortcut": "control + right click google doc table Table Properties -> Color -> Table Border -> Select White ",
                 "Action": "Make the columns of a google doc table invisible. This will be helpful for the CSC 385 final paper."
             },
             {
-                "id": 22,
                 "Shortcut": "command + .",
                 "Action": "Create a superscript in google doc"
             },
             {
-                "id": 23,
                 "Shortcut": "command + ,",
                 "Action": "Create a subscript in google doc"
             },
             {
-                "id": 24,
                 "Shortcut": "command + n",
                 "Action": "Create a new terminal/command prompt"
             },
             {
-                "id": 25,
                 "Shortcut": "command + t",
                 "Action": "Create new window in terminal"
             },
             {
-                "id": 26,
                 "Shortcut": "command + a",
                 "Action": "Select all files in a directory in Finder"
             },
             {
-                "id": 27,
                 "Shortcut": "Control + k ",
                 "Action": "Press to start and save crop of a screenshot on mac"
             },
             {
-                "id": 28,
                 "Shortcut": "highlight, command + b",
                 "Action": "Bold/unbold text in TextEdit on mac"
             }
