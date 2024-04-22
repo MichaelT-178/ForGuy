@@ -137,6 +137,11 @@
             "id": 26,
             "Underlined": "Automate processes using code",
             "Tip": "There is usually a way to do things programmatically. Things like operating system commands, key presses, file changes can usually be automated using code."
+        },
+        {
+            "id": 27,
+            "Underlined": "Use \"code .\" to open folders in VSCode",
+            "Tip": "To install press \"command + shift + p\" then in the search bar results select \"Shell Command: Install code command in PATH\". Now you can 'cd' into a folder and run 'code .' to open it in VSCode."
         }
     ],
     "ComponentData": [

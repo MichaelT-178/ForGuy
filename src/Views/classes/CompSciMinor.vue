@@ -101,30 +101,6 @@ const semesterClasses = jsonData.value["SemesterClasses"];
     width: 575px;
 }
 
-.tip-text {
-    position: relative;
-    width: auto;
-    font-size: 21px;
-    font-weight: 500;
-}
-
-.tip-text::before {
-    content: attr(data-index);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkblue;
-    color: white;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-left: -35px;
-    position: absolute;
-    top: 0;
-    transform: translateY(-50%);
-    font-size: 14px;
-}
-
 .text-section {
     font-size: 19.5px;
     word-wrap: break-word; 

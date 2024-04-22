@@ -4,7 +4,7 @@
         <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
-                <p class="tip-text" :data-index="tip.id"></p>
+                <p class="tip-text" :data-index="tip.id"><span class="invisible-index">{{ tip.id }}</span></p>
                 <p class="text-section" v-html="processedTipContent(formatTip(tip))"></p>
             </div>
         </div>
@@ -191,6 +191,12 @@ onMounted(() => {
 .scroll-up-btn:hover {
     color: darkblue;
     text-decoration: underline;
+}
+
+.invisible-index {
+  z-index: -1;
+  position: absolute;
+  font-size: 0;
 }
 
 @media (max-width: 700px) {
