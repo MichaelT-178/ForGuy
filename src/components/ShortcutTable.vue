@@ -17,7 +17,7 @@
                     :key="item.id" 
                     :class="{'row-odd': index % 2 === 0, 'row-even': index % 2 !== 0}">
                     <td>{{ item.Shortcut }}</td>
-                    <td>{{ item.Action }}</td>
+                    <td v-html="createRouterLink(item.Action)"></td>
                 </tr>
                 </tbody>
             </table>
@@ -27,6 +27,8 @@
 
 
 <script setup>
+
+import { createRouterLink } from "../components/Markdown.vue"
 
 const props = defineProps({
     title: String,
