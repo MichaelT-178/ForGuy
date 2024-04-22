@@ -622,9 +622,12 @@ def get_generaltips():
     with open("../src/data/Other/GeneralTips.json", "r") as file:
         content = json.load(file)
 
+        text = content["Text"]
+        tips = content["GeneralTips"]
+
         Title = "General Tips 🧘🏻"
         Link = "/Other/GeneralTips"
-        Results = ""
+        Results = text + tips
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
