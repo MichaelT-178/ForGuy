@@ -4,7 +4,7 @@
         <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
-                <p class="tip-text" :data-index="tip.id"></p>
+                <p class="tip-text" :data-index="tip.id"><span class="invisible-index">{{ tip.id }}</span></p>
                 <p class="text-section" v-html="createRouterLink(tip.tip)"></p>
             </div>
         </div>
@@ -87,6 +87,12 @@ const tips = jsonData.value["Tips"];
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     margin-top: -13px;
+}
+
+.invisible-index {
+  z-index: -1;
+  position: absolute;
+  font-size: 0;
 }
 
 @media (max-width: 700px) {

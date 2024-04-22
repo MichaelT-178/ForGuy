@@ -4,7 +4,7 @@
         <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
-                <p class="tip-text" :data-index="instruction.id"></p>
+                <p class="tip-text" :data-index="instruction.id"><span class="invisible-index">{{ tip.id }}</span></p>
                 <p class="text-section" v-html="formatLink(instruction.instruction)"></p>
             </div>
         </div>
@@ -89,6 +89,12 @@ const formatLink = (text) => {
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     margin-top: -13px;
+}
+
+.invisible-index {
+  z-index: -1;
+  position: absolute;
+  font-size: 0;
 }
 
 @media (max-width: 700px) {
