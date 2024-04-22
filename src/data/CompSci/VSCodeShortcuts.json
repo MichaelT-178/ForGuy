@@ -167,6 +167,11 @@
                 "id": 33,
                 "Shortcut": "Command + k + s (press s after holding down cmd + k)",
                 "Action": "View Keyboard shortcuts menu vscode. Can create a shortcut"
+            },
+            {
+                "id": 34,
+                "Shortcut": "code .",
+                "Action": "This is a command used to open a folder in VSCode. First change into your directory using \"cd\" then type \"code .\" to open it in VSCode. See tip 27 in the (Comp Sci Tips)[/CompSci/CompSciTips] page."
             }
         ]
     },

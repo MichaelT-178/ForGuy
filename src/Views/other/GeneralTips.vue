@@ -4,8 +4,8 @@
         <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
-                <p class="tip-text" :data-index="tip.id"></p>
-                <p class="text-section" v-html="createHyperLink(tip.tip)"></p>
+                <p class="tip-text" :data-index="tip.id"><span class="invisible-index">{{ tip.id }}</span></p>
+                <p class="text-section" v-html="createHyperLink(formatTip(tip))"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -21,6 +21,10 @@ import { createHyperLink } from "../../components/Markdown.vue";
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
 const tips = jsonData.value["GeneralTips"];
+
+const formatTip = (tip) => {
+    return `<u>${tip.underlined}</u>. ${tip.tip}`;
+}
 
 </script>
 
@@ -87,6 +91,12 @@ const tips = jsonData.value["GeneralTips"];
     word-wrap: break-word; 
     overflow-wrap: break-word; 
     margin-top: -13px;
+}
+
+.invisible-index {
+  z-index: -1;
+  position: absolute;
+  font-size: 0;
 }
 
 @media (max-width: 700px) {
