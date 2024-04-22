@@ -4,7 +4,7 @@
         <p class="description">{{ text.desc }}</p>
         <div class="tips-container">
             <div v-for="instruction in instructions" :key="instruction.id" class="tip-section">
-                <p class="tip-text" :data-index="instruction.id"><span class="invisible-index">{{ tip.id }}</span></p>
+                <p class="tip-text" :data-index="instruction.id"><span class="invisible-index">{{ instruction.id }}</span></p>
                 <p class="text-section" v-html="formatLink(instruction.instruction)"></p>
             </div>
         </div>
