@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @mousemove="updateMousePosition">
     <div class="search-bar-container">
       <div class="input-icon-container">
         <span class="material-icons">
@@ -8,8 +8,8 @@
         <!-- Search bar -->
         <input type="text" 
                v-model="searchQuery" 
-               placeholder="Search by name or term..." 
-               :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery}"
+               placeholder="Search by name or term..."
+               :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery || enterPressed }"
                @keydown.enter="handleEnterPress"
         >
         <span class="material-icons" id="close-icon" @click="closeSearchBar">close</span>
@@ -29,7 +29,7 @@
         </router-link>
       </div>
       <!-- No Results but query entered -->
-      <div v-else-if="searchQuery && !filteredResults.length" class="results">
+      <div v-else-if="searchQuery && !filteredResults.length && !enterPressed" class="results">
         <div class="result-item" @click="goToResultsPage">
           <!-- <span class="emoji">🔍</span> -->
           Press <span style="color: #7A008D">return/enter</span> to see results for "{{ searchQuery }}"
@@ -42,31 +42,64 @@
 
 
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, onBeforeUnmount } from 'vue';
 import { useRouter } from 'vue-router';
 import SearchPages from '../data/SearchPages.json'; 
 
 const searchQuery = ref('');
 const filteredResults = ref([]);
+const isHovering = ref(false);
+const enterPressed = ref(false);
 const emit = defineEmits(['close-search']);
 const router = useRouter();
 
+const updateIsHovering = (event) => {
+  isHovering.value = event.clientY < 65;
+};
+
+document.addEventListener('mousemove', updateIsHovering);
+
+
 const goToResultsPage = () => {
-  emit('close-search');
   router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
 };
 
+
 const handleEnterPress = (event) => {
   if (event.key === 'Enter') {
+    enterPressed.value = true;
+
+    const previousQuery = searchQuery.value;
+
     goToResultsPage();
-  }
+
+    searchQuery.value = '';
+    event.target.placeholder = `Hover off to see results for "${previousQuery}"`;
+
+    function checkHoverAndClose() {
+      if (!isHovering.value) {
+        closeSearchBar();
+      } else {
+        const unwatch = watch(isHovering, (newVal) => {
+          if (!newVal) {
+            closeSearchBar();
+            unwatch();
+          }
+        }); //End of const unwatch
+      } //end of if-else statement 
+    }; //End of function
+
+    checkHoverAndClose();
+
+  } //End of main if statement 
 };
+
 
 const filterResults = () => {
   if (searchQuery.value) {
     filteredResults.value = SearchPages.filter((item) =>
       item.MenuName.toLowerCase().includes(searchQuery.value.toLowerCase())
-    ).slice(0, 11); //Only 11 results show at a time.
+    ).slice(0, 11);  // Only 11 results show at a time.
   } else {
     filteredResults.value = [];
   }
@@ -74,7 +107,12 @@ const filterResults = () => {
 
 const closeSearchBar = () => {
   emit('close-search');
+  enterPressed.value = false;
 };
+
+onBeforeUnmount(() => {
+  document.removeEventListener('mousemove', updateIsHovering);
+});
 
 watch(searchQuery, filterResults);
 
@@ -181,5 +219,3 @@ watch(searchQuery, filterResults);
 }
 
 </style>
-
-  
