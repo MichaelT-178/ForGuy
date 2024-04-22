@@ -5,7 +5,7 @@
         <div class="tips-container">
             <div v-for="tip in tips" :key="tip.id" class="tip-section">
                 <p class="tip-text" :data-index="tip.id"><span class="invisible-index">{{ tip.id }}</span></p>
-                <p class="text-section" v-html="createHyperLink(formatTip(tip))"></p>
+                <p class="text-section" v-html="createRouterLink(createHyperLink(formatTip(tip)))"></p>
             </div>
         </div>
         <p style="margin-bottom: 60px;"></p>
@@ -16,7 +16,7 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/Other/GeneralTips.json";
-import { createHyperLink } from "../../components/Markdown.vue";
+import { createHyperLink, createRouterLink } from "../../components/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
