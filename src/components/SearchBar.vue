@@ -9,7 +9,7 @@
         <input type="text" 
                v-model="searchQuery" 
                placeholder="Search by name or term..."
-               :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery || enterPressed }"
+               :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery }"
                @keydown.enter="handleEnterPress"
         >
         <span class="material-icons" id="close-icon" @click="closeSearchBar">close</span>
@@ -29,7 +29,7 @@
         </router-link>
       </div>
       <!-- No Results but query entered -->
-      <div v-else-if="searchQuery && !filteredResults.length && !enterPressed" class="results">
+      <div v-else-if="searchQuery && !filteredResults.length" class="results">
         <div class="result-item" @click="goToResultsPage">
           <!-- <span class="emoji">🔍</span> -->
           Press <span style="color: #7A008D">return/enter</span> to see results for "{{ searchQuery }}"
@@ -89,10 +89,19 @@ const handleEnterPress = (event) => {
       } //end of if-else statement 
     }; //End of function
 
+
+    emit('remove-overlay', false);
+    
     checkHoverAndClose();
 
   } //End of main if statement 
 };
+
+watch(searchQuery, (newValue) => {
+  if (newValue !== "") {
+    emit('remove-overlay', true);
+  }
+});
 
 
 const filterResults = () => {
