@@ -1,6 +1,5 @@
 <template>
     <div>
-      <div class="overlay" v-if="isSearchBarOpen"></div>
       <header>
         <div class="top-menu" @mouseover="showMenu = true" @mouseout="hideMenu">
           <div class="menu-items" v-show="!isSearchBarOpen">  
@@ -45,7 +44,7 @@
               </span>
             </div>
             <div class="overlay" v-if="isSearchBarOpen"></div>
-          <SearchBar v-if="isSearchBarOpen" @close-search="isSearchBarOpen = false"></SearchBar>
+          <SearchBar v-if="isSearchBarOpen" @close-search="isSearchBarOpen = false" @remove-overlay="handleRemoveOverlay"></SearchBar>
         </div>
       </header>
     </div>
@@ -92,6 +91,11 @@ const closeSearchOnOutsideClick = (event) => {
   }
 };
 
+const handleRemoveOverlay = (isVisible) => {
+  const overlay = document.querySelector('.overlay');
+  overlay.style.backgroundColor = isVisible ? 'rgba(0, 0, 0, 0.6)' : 'rgba(0, 0, 0, 0)';
+}
+
 onMounted(() => {
   window.addEventListener('click', closeSearchOnOutsideClick);
 });
@@ -111,7 +115,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: calc(100% - 40px);
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
