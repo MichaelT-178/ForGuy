@@ -60,8 +60,8 @@ const closeSearchBar = () => {
   left: 0;
   width: 100vw;
   height: 200vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .search-overlay {
@@ -70,7 +70,7 @@ const closeSearchBar = () => {
   left: 0;
   width: 100vw;
   height: calc(100vh - 40px);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
 
