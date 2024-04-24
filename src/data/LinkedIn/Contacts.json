@@ -165,6 +165,26 @@
             "Image": "lenovo.jpg"
         },
         {
+            "Name": "Andy Herrmann",
+            "Company": "U.S. Department of State",
+            "Role": "Division Chief",
+            "Location": "Washington D.C. Metro Area",
+            "Email": "DOSITRecruitment@state.gov",
+            "LinkedIn": "https://www.linkedin.com/in/kermit1/",
+            "Details": "The UNCW Comp Sci department sent out an email about a DOS recruiting event with this name and email.",
+            "Image": "DOS.jpg"
+        },
+        {
+            "Name": "Erika Marsek",
+            "Company": "Strategic Staffing Solutions",
+            "Role": "Recruiter",
+            "Location": "Charlotte, North Carolina",
+            "Email": "emarsek@strategicstaff.com",
+            "LinkedIn": "https://www.linkedin.com/in/erikamarsek/",
+            "Details": "This women contact me about a W2 role in Charlotte. It seemed like they wanted someone with more experience though.",
+            "Image": "S3.jpg"
+        },
+        {
             "Name": "Person #1",
             "Company": "Datacor, Inc",
             "Role": "Chief Technology Officer",
@@ -368,7 +388,7 @@
             "Name": "Greg Olsen",
             "Company": "Motion Recruitment",
             "Role": "Executive Director",
-            "Location": "Washington D.C. Metro Area",
+            "Location": "Washington D.C.",
             "Email": "greg.olsen@motionrecruitment.com",
             "LinkedIn": "https://www.linkedin.com/in/greg-olsen-73131972/",
             "Details": "This guy contacted me via email about a Junior Research Engineer position.",
