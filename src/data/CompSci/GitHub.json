@@ -736,7 +736,7 @@
     "ResetBranch": [
         {
             "id": 1,
-            "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to.",
+            "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to. Copy the hash then press 'q' to exit.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -778,8 +778,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git commit -m \"Messages\"",
-                "CopyCode": "git commit -m \"Messages\""
+                "FormatCode": "git commit -m \"Message\"",
+                "CopyCode": "git commit -m \"Message\""
             }
         },
         {
