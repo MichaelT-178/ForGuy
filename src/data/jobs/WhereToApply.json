@@ -62,7 +62,7 @@
             "Name": "Department Of State",
             "Location": "Washington DC - Baltimore Area",
             "LinkedIn": "https://www.linkedin.com/company/doscareers/jobs/",
-            "Contact": "",
+            "Contact": "DOSITRecruitment@state.gov",
             "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months",
             "Pay": ""
         },
@@ -457,6 +457,14 @@
             "Name": "Ally",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Vanguard",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/vanguard/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -1130,6 +1138,14 @@
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/sylvan-learning/jobs/",
             "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Strategic Staffing Solutions",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/strategic-staffing-solutions/jobs/",
+            "Contact": "emarsek@strategicstaff.com (Erika Marsek)",
             "Tips": "",
             "Pay": ""
         },
