@@ -28,7 +28,7 @@
 
 <script setup>
 
-import { createRouterLink } from "../components/Markdown.vue"
+import { createRouterLink } from "../utils/Markdown.vue";
 
 const props = defineProps({
     title: String,
