@@ -23,7 +23,7 @@
 import { ref } from 'vue';
 import AllData from "../../data/Classes/CompSciMinor.json";
 import AccordionMenu from "../../components/AccordionMenu.vue";
-import { createHyperLink } from "../../components/Markdown.vue";
+import { createHyperLink } from "../../utils/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];

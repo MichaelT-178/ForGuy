@@ -24,7 +24,7 @@
 
 <script setup>
 import { ref, computed, watchEffect } from 'vue';
-import { highlightLinkText } from '../../components/Markdown.vue'
+import { highlightLinkText } from '../../utils/Markdown.vue'
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
