@@ -110,8 +110,12 @@ const emailCopied = () => {
   cursor: pointer;
 }
 
+.purple-link {
+  color: #551A8B;
+}
+
 .purple-link:hover {
-  color: #2E0057;
+  color: #21003F;
 }
 
 .contact-card img {
