@@ -16,7 +16,7 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/Other/GeneralTips.json";
-import { createHyperLink, createRouterLink } from "../../components/Markdown.vue";
+import { createHyperLink, createRouterLink } from "../../utils/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
