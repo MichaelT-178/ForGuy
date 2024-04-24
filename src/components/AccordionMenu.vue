@@ -31,7 +31,7 @@ import {
   createHyperLink,
   createRouterLink,
   createRouterLinkWithProps
-} from './Markdown.vue';
+} from '../utils/Markdown.vue';
 
 const props = defineProps({
   item: Object,
