@@ -163,7 +163,7 @@
 import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/GitHub.json';
 import CmdTable from "../../components/CommandTable.vue";
-import { createHyperLink } from "../../components/Markdown.vue";
+import { createHyperLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
