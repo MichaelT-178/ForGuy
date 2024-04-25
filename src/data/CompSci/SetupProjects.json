@@ -1,0 +1,35 @@
+{
+    "Text": [
+        {
+            "title": "Setup Projects",
+            "desc": "This page contains information about setting up various projects."
+        },
+        {
+            "title": "Scroll Links",
+            "desc": "Use these links to scroll to different parts of the page."
+        }
+
+    ],
+    "ScrollLinks": [
+        {
+            "id": 1,
+            "name": "How to Create a GitHub Account",
+            "ref": "createGHAccount"
+        },
+        {
+            "id": 2,
+            "name": "How to Create a GitHub Repository",
+            "ref": "createGHRepo"
+        },
+        {
+            "id": 3,
+            "name": "How to Create Multiple GitHub Accounts",
+            "ref": "multipleGHAccounts"
+        },
+        {
+            "id": 4,
+            "name": "How to Create a GitHub Repository Using a Different Account",
+            "ref": "multipleDifferentAccount"
+        }
+    ]
+}

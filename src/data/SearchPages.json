@@ -145,48 +145,54 @@
     },
     {
         "id": 25,
+        "Emoji": "🛠️",
+        "MenuName": "Setup Projects",
+        "Link": "/CompSci/SetupProjects"
+    },
+    {
+        "id": 26,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 26,
+        "id": 27,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 27,
+        "id": 28,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 28,
+        "id": 29,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 29,
+        "id": 30,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 30,
+        "id": 31,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 31,
+        "id": 32,
         "Emoji": "😂",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 32,
+        "id": 33,
         "Emoji": "📸",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"

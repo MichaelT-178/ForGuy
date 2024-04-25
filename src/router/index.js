@@ -33,6 +33,7 @@ import VSCodeSettings from '../Views/compsci/VSCodeSettings/VSCodeSettings.vue';
 import VSCodeExtensions from '../Views/compsci/VSCodeExtensions.vue';
 import VSCodeShortcuts from '../Views/compsci/VSCodeShortcuts.vue';
 import UIDesignTips from '../Views/compsci/UIDesignTips.vue';
+import SetupProjects from '../Views/compsci/SetupProjects.vue'
 import CompSciTips from '../Views/compsci/CompSciTips.vue';
 
 //Other 
@@ -151,6 +152,10 @@ const routes = [
     {
         path: '/compsci/UIDesignTips',
         component: UIDesignTips
+    },
+    {
+        path: '/compsci/SetupProjects',
+        component: SetupProjects
     },
     {
         path: '/compsci/CompSciTips',
