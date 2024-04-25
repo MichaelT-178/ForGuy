@@ -325,6 +325,18 @@ def get_uiux_tips():
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_setup_projects():
+    with open("../src/data/CompSci/SetupProjects.json", "r") as file:
+        content = json.load(file)
+        
+        text = content["Text"]
+
+        Title = "Setup Project 🛠️"
+        Link = "/compsci/SetupProjects"
+        Results = None
+
+        return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_compscitips():
     with open("../src/data/CompSci/CompSciTips.json", "r") as file:
         content = json.load(file)
@@ -439,7 +451,7 @@ def get_howtogetajob():
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
-def get_interviewtips():
+def get_interviews():
     with open("../src/data/Jobs/InterviewTips.json", "r") as file:
         content = json.load(file)
 
@@ -696,12 +708,12 @@ visualstudiocode = get_visualstudiocode()
 settings = get_settings()
 uiux_tips = get_uiux_tips()
 compscitips = get_compscitips()
+setupprojects = get_setup_projects()
 vscodeextensions = get_vscodeextensions()
 github = get_github()
 offersreceived = get_offersreceived()
 howtogetajob = get_howtogetajob()
-howtogetajob = get_howtogetajob()
-interviewtips = get_interviewtips()
+interviewtips = get_interviews()
 wheretoapply = get_wheretoapply()
 careerpathadvice = get_careerpathadvice()
 resumetemplatetext = get_resumetemplatetext()
@@ -750,6 +762,7 @@ all_data = [
     uiux_tips,
     vscodeextensions,
     vscodeshortcuts,
+    setupprojects,
     compscitips,
 
     generaltips,
