@@ -51,6 +51,7 @@ export const menuItems = [
             { text: "UI/UX Design Tips",   icon: "brush",              link: "/CompSci/UIDesignTips" },
             { text: "VSCode Extensions",   icon: "extension",          link: "/CompSci/VSCodeExtensions" },
             { text: "VSCode Shortcuts",    icon: "rocket_launch",      link: "/CompSci/VSCodeShortcuts" },
+            { text: "Setup Projects",      icon: "construction",       link: "/CompSci/SetupProjects" },
             { text: "Comp Sci Tips",       icon: "device_hub",         link: "/CompSci/CompSciTips" } 
         ]
     },
