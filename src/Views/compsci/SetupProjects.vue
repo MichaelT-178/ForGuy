@@ -12,6 +12,29 @@
             <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
                 </span><span v-html="createRefContent(link)"></span></p>
         </div>
+        
+
+        <!-- Setup Node.js -->
+        <h2 class="gh-header-two" ref="nodeRef">{{ text[2].title }}</h2>
+        <p class="description-two">{{ text[2].desc }}</p>
+
+        <div v-for="point in setupNode" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="highlightLinkText(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
+
+
+
+        <!-- Setup Vue -->
+        <h2 class="gh-header-two" ref="vueRef">{{ text[3].title }}</h2>
+        <p class="description-two">{{ text[3].desc }}</p>
+
+        <div v-for="point in setupVue" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="point.instruction" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
 
         
 
@@ -23,45 +46,30 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/SetupProjects.json';
+import { createHyperLink, highlightLinkText } from "../../utils/Markdown.vue";
+import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 const jsonData = ref(AllData);
 
 const text = jsonData.value["Text"];
 const scrollLinks = jsonData.value["ScrollLinks"];
+const setupNode = jsonData.value["SetupNode"];
+const setupVue = jsonData.value["SetupVue"];
 
 const createRefContent = (refVal) => {
     return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span>.</span>`;
 }
 
-//Add refs here
+
+
 const scrollLinksRef = ref(null);
-const createGHAccount = ref(null);
-const createGHRepo = ref(null);
-const multipleGHAccounts = ref(null);
-const multipleDifferentAccount = ref(null);
-const GitCommands = ref(null);
-const GeneralTips = ref(null);
-const ThreeCommands = ref(null);
-const ForkRepo = ref(null);
-const resetBranch = ref(null);
-const ExistingCmds = ref(null);
-const AmotionsWorkflow = ref(null);
+const nodeRef = ref(null);
+const vueRef = ref(null);
 
-const secondSix = ref(null);
-const secondSeven = ref(null);
-const secondNine = ref(null);
-const secondTwentyThree = ref(null);
-const secondGitHubSeven = ref(null);
-const secondGitHubEight = ref(null);
 
-const normalSix = ref(null);
-const normalSeven = ref(null);
-const normalNine = ref(null);
-const normalTwentyThree = ref(null);
-const normalGitHubSeven = ref(null);
-const normalGitHubEight = ref(null);
+
 
 
 const scrollToRef = (refName) => {
@@ -70,29 +78,8 @@ const scrollToRef = (refName) => {
 
     const refs = {
         scrollLinksRef,
-        createGHAccount,
-        createGHRepo,
-        multipleGHAccounts,
-        multipleDifferentAccount,
-        GitCommands,
-        GeneralTips,
-        ThreeCommands,
-        ForkRepo,
-        resetBranch,
-        ExistingCmds,
-        AmotionsWorkflow,
-        secondSix,
-        secondSeven,
-        secondNine,
-        secondTwentyThree,
-        secondGitHubSeven,
-        secondGitHubEight,
-        normalSix,
-        normalSeven,
-        normalNine,
-        normalTwentyThree,
-        normalGitHubSeven,
-        normalGitHubEight
+        nodeRef,
+        vueRef
     };
 
     const targetElement = refs[refName]?.value;
@@ -116,6 +103,16 @@ const scrollToTop = () => {
     behavior: 'smooth'
   });
 };
+
+onMounted(() => {
+    document.querySelectorAll('.scroll-down').forEach(element => {
+        element.addEventListener('click', (event) => {
+            event.preventDefault();
+            const refName = event.target.getAttribute('data-ref-name');
+            scrollToRef(refName);
+        });
+    });
+});
 
 </script>
 
@@ -146,6 +143,17 @@ const scrollToTop = () => {
     margin-top: -8px;
     font-size: 19px;
     width: 690px;
+}
+
+:deep(.scroll-down) {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+:deep(.scroll-down:hover) {
+    text-decoration: underline;
+    color: darkblue;
 }
 
 .gh-header-two {
