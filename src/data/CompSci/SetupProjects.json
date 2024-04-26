@@ -105,7 +105,7 @@
         },
         {
             "id": 5,
-            "instruction": "Run the application to make sure everything's working. The page should say Vite + Vue.",
+            "instruction": "Run the application to make sure everything's working. The page should say Vite + Vue. Press control + c to stop running locally.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -132,8 +132,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd into src",
-                "CopyCode": "cd into src"
+                "FormatCode": "cd src",
+                "CopyCode": "cd src"
             }
         },
         {
@@ -171,7 +171,7 @@
         },
         {
             "id": 11,
-            "instruction": "In the index.js file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work.",
+            "instruction": "In the index.js file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work. Save the file when you're finished (command + s).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -204,13 +204,13 @@
         },
         {
             "id": 14,
-            "instruction": "Paste the following code into \"RouterBtn.vue\" file.",
+            "instruction": "Paste the following code into \"RouterBtn.vue\" file in your components folder.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
-                "FormatCode": "<template>\n        <router-link :to=\"path\" class=\"button\">\n  \t  {{ buttonText }}\n        </router-link>\n  </template>\n\n\n  <script setup>\n\n  const props = defineProps({\n        path: {\n  \t  type: String,\n  \t  required: true\n        },\n        buttonText: {\n  \t  type: String,\n  \t  required: true\n        }\n  });\n\n  </script>\n\n\n  <style scoped>\n\n  .button {\n       display: inline-block;\n       padding: 10px 20px;\n       color: white;\n       background-color: #007bff;\n       border: none;\n       border-radius: 4px;\n       text-align: center;\n       text-decoration: none;\n       font-size: 16px;\n  }\n\n  .button:hover {\n       background-color: #0056b3;\n  }\n\n  </style>",
-                "CopyCode": "<template>\n\t<router-link :to=\"path\" class=\"button\">\n\t\t{{ buttonText }}\n\t</router-link>\n</template>\n\n\n<script setup>\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n</script>\n\n\n<style scoped>\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n</style>"
+                "FormatCode": "<template>\n        <router-link :to=\"path\" :class=\"button\">\n  \t  {{ buttonText }}\n        </router-link>\n  </template>\n\n\n  <script setup>\n\n  const props = defineProps({\n        path: {\n  \t  type: String,\n  \t  required: true\n        },\n        buttonText: {\n  \t  type: String,\n  \t  required: true\n        }\n  });\n\n  </script>\n\n\n  <style scoped>\n\n  .button {\n       display: inline-block;\n       padding: 10px 20px;\n       color: white;\n       background-color: #007bff;\n       border: none;\n       border-radius: 4px;\n       text-align: center;\n       text-decoration: none;\n       font-size: 16px;\n  }\n\n  .button:hover {\n       background-color: #0056b3;\n  }\n\n  </style>",
+                "CopyCode": "<template>\n\t<router-link :to=\"path\" :class=\"button\">\n\t\t{{ buttonText }}\n\t</router-link>\n</template>\n\n\n<script setup>\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n</script>\n\n\n<style scoped>\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n</style>"
             }
         },
         {
@@ -226,7 +226,7 @@
         },
         {
             "id": 16,
-            "instruction": "Paste the following code in the \"Home.vue\" file.",
+            "instruction": "Paste the following code in the \"Home.vue\" file in the views folder.",
             "Code": {
                 "Name": "",
                 "Description": "",
