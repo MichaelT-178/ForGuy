@@ -9,18 +9,21 @@ code {
 
 .token.punctuation,
 .token.constant,
-.token.always-gray {
+.token.always-gray,
+.token.gray-js {
     color: #ABB2BF;
 }
 
 .token.number,
-.token.self-orange {
+.token.self-orange, 
+.token.orange-js {
     color: #D19A66;
 }
 
 /* Teal */
 .token.builtin,
-.token.teal-highlight {
+.token.teal-highlight,
+.token.teal-js {
     color: #56B6C2;
 }
 
@@ -78,7 +81,8 @@ code {
 }
 
 .token.property,
-.token.self-red {
+.token.self-red,
+.token.red-js {
     color: #E06C75;
 }
 
