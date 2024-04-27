@@ -77,6 +77,12 @@ def modify_list_with_code_separation(og_list, key_to_separate):
        {
           "id": 2,
           "instruction": "To get started, download git. I'd recommend installing git using Homebrew. Install the Homebrew package manager using the following two commands."
+       },
+       {
+          "Name": "",
+          "Description": "",
+          "Language": "Command",
+          "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
        }
 
     """
