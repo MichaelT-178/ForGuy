@@ -797,14 +797,18 @@
     "ExistingFolderPts": [
         {
             "id": 1,
-            "instruction": "Go to your terminal."
+            "instruction": "Go to [GitHub](https://github.com/) and create a new empty repository."
         },
         {
             "id": 2,
-            "instruction": "cd into the folder you want to upload."
+            "instruction": "Go to your terminal."
         },
         {
             "id": 3,
+            "instruction": "cd into the folder you want to upload."
+        },
+        {
+            "id": 4,
             "instruction": "Run the following commands in your terminal."
         }
     ],
@@ -831,7 +835,7 @@
         },
         {
             "Command": "git remote add origin <repo-http-link>",
-            "Description": "Add remote GitHub origin. It can also be the SSH link.",
+            "Description": "Add remote GitHub origin. It can also be the SSH link. Can be found it github descriptions.",
             "Example": "git remote add origin https://github.com/John-Smith/PacMan.git"
         },
         {
