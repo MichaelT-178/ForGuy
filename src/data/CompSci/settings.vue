@@ -22,9 +22,6 @@ export const settings =
 '    //My Default python path for vs code\n' + 
 '    "python.defaultInterpreterPath": "~/.pyenv/versions/3.10.6/bin/python",\n' + 
 '\n' + 
-'    //Work bench color theme\n' + 
-'    "workbench.colorTheme": "Atom One Dark",\n' + 
-'\n' + 
 '    //Sets Tab Size to 4 spaces\n' + 
 '    "editor.tabSize": 4,\n' + 
 '\n' + 
@@ -64,14 +61,14 @@ export const settings =
 '\n' + 
 '    // Set to false to show .git folder\n' + 
 '    "files.exclude": {\n' + 
-'        "**/.git": false,\n' +
-'    },\n' +
+'        "**/.git": false,\n' + 
+'    },\n' + 
 '\n' + 
 '    /**\n' + 
 '        How to change a color\n' + 
 '     1. hover over the keyword whose color you want changed\n' + 
 '     2. Press command + shift + p on mac\n' + 
-'     3. Seach and click "Developer: Inspect Editor Tokens and Scopes"\n' + 
+'     3. Search and click "Developer: Inspect Editor Tokens and Scopes"\n' + 
 '     4. In the box that opens next to "textmate scopes" copy the first line\n' + 
 '        and paste it under the scope keyword that\'s above the color you want\n' + 
 '        to change the keyword too. If it doesn\'t work try the other lines.\n' + 
@@ -79,7 +76,6 @@ export const settings =
 '        then press enter\n' + 
 '    */\n' + 
 '  "editor.tokenColorCustomizations": {\n' + 
-'\n' + 
 '\n' + 
 '    "[Atom One Dark]": {\n' + 
 '        "textMateRules": [\n' + 
@@ -134,7 +130,10 @@ export const settings =
 '                    "entity.name.variable.field.cs",\n' + 
 '\n' + 
 '                    /** Makes const variables in Javascript gray */\n' + 
-'                    "variable.other.constant.js"\n' + 
+'                    "variable.other.constant.js",\n' + 
+'\n' + 
+'                    /** In Vue.js make . in car.Brand object gray */\n' + 
+'                    "punctuation.accessor.js"\n' + 
 '                ],\n' + 
 '                "settings": {\n' + 
 '                    "foreground": "#ABB2BF" //Gray\n' + 
@@ -176,7 +175,7 @@ export const settings =
 '                }\n' + 
 '            },\n' + 
 '\n' + 
-'            //Changes certain functions from library such as testbed.devices[devivces] to pink.\n' + 
+'            //Changes certain functions from library such as testbed.devices[devices] to pink.\n' + 
 '            // {\n' + 
 '            //     "scope": [\n' + 
 '            //         /** Changes certain functions from library pink in python */\n' + 
@@ -320,10 +319,27 @@ export const settings =
 '    "*.db": "sqlite-viewer.option"\n' + 
 '},\n' + 
 '\n' + 
+'"workbench.colorTheme": "Atom One Dark",\n' + 
+'\n' + 
+'"files.associations": {\n' + 
+'    "*.css": "tailwindcss"\n' + 
+'},\n' + 
+'\n' + 
 '"yaml.schemas": {\n' + 
-'    "Kubernetes": "*.yaml"\n' +
-'}\n\n' +
-'}' +
-'\n'
+'    "Kubernetes": "*.yaml"\n' + 
+'},\n' + 
+'"git.autofetch": true,\n' + 
+'"cSpell.userWords": [\n' + 
+'    "autofetch",\n' + 
+'    "donot",\n' + 
+'    "javadoc",\n' + 
+'    "pyenv",\n' + 
+'    "tailwindcss",\n' + 
+'    "typeparameters"\n' + 
+'],\n' + 
+'"diffEditor.ignoreTrimWhitespace": false\n' + 
+'\n' + 
+'}\n' +
+''
 
 </script>

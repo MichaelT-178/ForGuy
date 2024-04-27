@@ -17,6 +17,13 @@ WHEN YOU'RE DONE CHANGE THE DOWNLOAD LINK ON THE HOME PAGE.
 3. Go to src/components/MenuItems.vue add your item.
 4. Go to src/data/SearchPages.json
 
+### How to Update Settings.json in VSCode Settings page
+
+1. Go to python/real_settings.txt and paste your updated json data.
+2. Run create_settings_file.py
+
+
+
 
 ## Commands to run when you clone
 
