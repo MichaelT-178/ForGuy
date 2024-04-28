@@ -3,7 +3,8 @@ code {
 }
 
 .token.keyword,
-.token.operator {
+.token.operator,
+.token.purple-js {
     color: #C678DD;
 }
 
@@ -33,7 +34,8 @@ code {
 
 /* Java class name and primitive types*/
 .token.class-name,
-.token.primitive-type {
+.token.primitive-type,
+.token.yellow-js {
     color: #E5C07B
 }
 
@@ -62,7 +64,8 @@ code {
 /* JavaScript function */
 .token.function,
 .token.function-variable.function,
-.token.always-blue {
+.token.always-blue,
+.token.blue-js {
     color: #61AFEF;
 }
 
