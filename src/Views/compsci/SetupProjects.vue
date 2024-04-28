@@ -36,6 +36,16 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
+
+        <!-- Setup React -->
+        <h2 class="gh-header-two" ref="reactRef">{{ text[4].title }}</h2>
+        <p class="description-two">{{ text[4].desc }}</p>
+
+        <div v-for="point in setupReact" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="createHyperLink(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
         
 
 
@@ -57,9 +67,11 @@ const text = jsonData.value["Text"];
 const scrollLinks = jsonData.value["ScrollLinks"];
 const setupNode = jsonData.value["SetupNode"];
 const setupVue = jsonData.value["SetupVue"];
+const setupReact = jsonData.value["SetupReact"];
+
 
 const createRefContent = (refVal) => {
-    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span>.</span>`;
+    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span></span>`;
 }
 
 
@@ -67,6 +79,7 @@ const createRefContent = (refVal) => {
 const scrollLinksRef = ref(null);
 const nodeRef = ref(null);
 const vueRef = ref(null);
+const reactRef = ref(null);
 
 
 
@@ -74,12 +87,13 @@ const vueRef = ref(null);
 
 const scrollToRef = (refName) => {
 
-    const offset = 75;
+    const offset = 50;
 
     const refs = {
         scrollLinksRef,
         nodeRef,
-        vueRef
+        vueRef,
+        reactRef
     };
 
     const targetElement = refs[refName]?.value;
