@@ -192,6 +192,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\n  import Home from '../views/Home.vue';\n  import SecondPage from '../views/SecondPage.vue';\n\n  const routes = [\n      {\n\t  path: '/',\n\t  component: Home\n      },\n      {\n\t  path: '/second-page',\n\t  component: SecondPage\n      }\n  ]\n\n  const router = createRouter({\n       history: createWebHistory('/'),\n       routes\n  });\n\n  export default router;",
                 "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/'),\n\troutes\n});\n\nexport default router;"
             }
@@ -203,6 +204,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "import { createApp } from 'vue'\n  import App from './App.vue'\n  import router from './router'\n\n  createApp(App).use(router).mount('#app');",
                 "CopyCode": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport router from './router'\n\ncreateApp(App).use(router).mount('#app');"
             }
@@ -225,6 +227,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "<template>\n        <router-link :to=\"path\" :class=\"button\">\n  \t  {{ buttonText }}\n        </router-link>\n  </template>\n\n\n  <script setup>\n\n  const props = defineProps({\n        path: {\n  \t  type: String,\n  \t  required: true\n        },\n        buttonText: {\n  \t  type: String,\n  \t  required: true\n        }\n  });\n\n  </script>\n\n\n  <style scoped>\n\n  .button {\n       display: inline-block;\n       padding: 10px 20px;\n       color: white;\n       background-color: #007bff;\n       border: none;\n       border-radius: 4px;\n       text-align: center;\n       text-decoration: none;\n       font-size: 16px;\n  }\n\n  .button:hover {\n       background-color: #0056b3;\n  }\n\n  </style>",
                 "CopyCode": "<template>\n\t<router-link :to=\"path\" :class=\"button\">\n\t\t{{ buttonText }}\n\t</router-link>\n</template>\n\n\n<script setup>\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n</script>\n\n\n<style scoped>\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n</style>"
             }
@@ -247,6 +250,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "<template>\n      <p class=\"title\">HOME PAGE</p>\n      <LinkBtn\n  \t  :path=\"'/second-page'\"\n  \t  :buttonText=\"'Go to 2nd page'\">\n      </LinkBtn>\n  </template>\n\n\n  <script setup>\n  import LinkBtn from '../components/RouterBtn.vue';\n  </script>\n\n\n  <style scoped>\n\n  .title {\n     color: red;\n     font-family: Arial, sans-serif;\n  }\n\n  </style>",
                 "CopyCode": "<template>\n\t<p class=\"title\">HOME PAGE</p>\n\t<LinkBtn\n\t\t:path=\"'/second-page'\"\n\t\t:buttonText=\"'Go to 2nd page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
             }
@@ -258,6 +262,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "<template>\n      <p class=\"title\">Second Page</p>\n      <LinkBtn\n  \t  :path=\"'/'\"\n  \t  :buttonText=\"'Go to Home page'\">\n      </LinkBtn>\n  </template>\n\n\n  <script setup>\n  import LinkBtn from '../components/RouterBtn.vue';\n  </script>\n\n\n  <style scoped>\n\n  .title {\n     color: purple;\n     font-family: Arial, sans-serif;\n  }\n\n  </style>",
                 "CopyCode": "<template>\n\t<p class=\"title\">Second Page</p>\n\t<LinkBtn\n\t\t:path=\"'/'\"\n\t\t:buttonText=\"'Go to Home page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: purple;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
             }
@@ -269,6 +274,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "Vue",
                 "FormatCode": "<template>\n      <p class=\"temp-header\">TEST WEBSITE</p>\n      <router-view></router-view>\n  </template>\n\n\n  <script setup>\n\n  </script>\n\n\n  <style scoped>\n  .temp-header {\n     font-size: 25px;\n  }\n\n  </style>",
                 "CopyCode": "<template>\n\t<p class=\"temp-header\">TEST WEBSITE</p>\n\t<router-view></router-view>\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.temp-header {\n\tfont-size: 25px;\n}\n\n</style>"
             }
@@ -403,6 +409,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "CSS",
                 "FormatCode": "@tailwind base;\n  @tailwind components;\n  @tailwind utilities;",
                 "CopyCode": "@tailwind base;\n@tailwind components;\n@tailwind utilities;" 
             }
@@ -458,6 +465,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "CSS",
                 "FormatCode": ".button {\n      display: inline-block;\n      padding: 10px 20px;\n      color: white;\n      background-color: #007bff;\n      border: none;\n      border-radius: 4px;\n      text-align: center;\n      text-decoration: none;\n      font-size: 16px;\n  }\n\n  .button:hover {\n      background-color: #0056b3;\n  }\n",
                 "CopyCode": ".button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n" 
             }
@@ -469,6 +477,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "CSS",
                 "FormatCode": ".title {\n      color: pink;\n      font-family: Arial, sans-serif;\n  }\n",
                 "CopyCode": ".title {\n\tcolor: pink;\n\tfont-family: Arial, sans-serif;\n}\n" 
             }
@@ -491,6 +500,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "React",
                 "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router>\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
                 "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router>\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
             }
@@ -502,6 +512,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "React",
                 "FormatCode": "import React from 'react'\n  import { Link } from 'react-router-dom'\n  import '../styles/components/RouterBtn.css'\n\n  function RouterBtn({ path, buttonText }) {\n    return (\n      <Link to={path} className=\"button\">\n        {buttonText}\n      </Link>\n    );\n  }\n\n  export default RouterBtn;",
                 "CopyCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    <Link to={path} className=\"button\">\n      {buttonText}\n    </Link>\n  );\n}\n\nexport default RouterBtn;" 
             }
@@ -513,6 +524,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "React",
                 "FormatCode": "import React from 'react'\n  import RouterBtn from '../components/RouterBtn'\n  import '../styles/views/Home.css'\n\n  function HomePage() {\n    return (\n      <div>\n        <p className=\"title\">HOME PAGE</p>\n        <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n      </div>\n    );\n  }\n\n  export default HomePage;",
                 "CopyCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    <div>\n      <p className=\"title\">HOME PAGE</p>\n      <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n    </div>\n  );\n}\n\nexport default HomePage;"
             }
@@ -524,6 +536,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "React",
                 "FormatCode": "import { React, useState } from 'react'\n  import RouterBtn from '../components/RouterBtn'\n\n  function SecondPage() {\n    const [count, setCount] = useState(0);\n\n    const incrementCount = () => {\n      setCount(count + 1);\n    };\n\n    return (\n      <div>\n        <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n        <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n        <div>\n          <button onClick={incrementCount}\n          className=\"mt-2 px-4 py-2 text-white bg-gray-500\">\n            Count {count}\n          </button>\n        </div>\n      </div>\n    );\n  }\n\n  export default SecondPage;\n",
                 "CopyCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n      <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n      <div>\n        <button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700\">\n          Count {count}\n        </button>\n      </div>\n    </div>\n  );\n}\n\nexport default SecondPage;\n"
             }
@@ -535,6 +548,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "React",
                 "FormatCode": "import { AppRouter } from './router'\n  import './App.css'\n\n  function App() {\n    return (\n      <>\n        <p class=\"text-2xl\">TEST WEBSITE</p>\n        <AppRouter />\n      </>\n    );\n  }\n\n  export default App",
                 "CopyCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    <>\n      <p class=\"text-2xl\">TEST WEBSITE</p>\n      <AppRouter />\n    </>\n  );\n}\n\nexport default App" 
             }
@@ -546,6 +560,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
+                "DisplayLang": "CSS",
                 "FormatCode": "#root {\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 2rem;\n    text-align: center;\n  }",
                 "CopyCode": "#root {\n\tmax-width: 1280px;\n\tmargin: 0 auto;\n\tpadding: 2rem;\n\ttext-align: center;\n}"
             }
