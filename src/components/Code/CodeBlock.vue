@@ -7,7 +7,7 @@
       </div>
       <div class="code-block">
         <div class="copy-bar">
-          <span class="language-name">{{ codeInfo.Language }}</span>
+          <span class="language-name">{{ codeInfo.DisplayLang || codeInfo.Language }}</span>
           <span class="material-icons copy-icon" 
                :class="{'icon-done': copyIcon === 'done'}" 
                :style="{ color: copyIcon === 'done' ? '#00FF4D' : getLanguageColor }"
@@ -41,6 +41,7 @@ const props = defineProps({
       Name: "",
       Description: "",
       Language: "",
+      DisplayLang: "",
       FormatCode: "",
       CopyCode :""
     }),
@@ -75,7 +76,9 @@ const highlightedCode = computed(() => {
 
 const getLanguageColor = computed(() => {
 
-  //I prefer this approach over a switch statement
+  const language = props.codeInfo.DisplayLang || props.codeInfo.Language;
+  
+  // I prefer this approach over a switch statement
   const colors = {
     python: '#3572A5',
     java: '#C6821E',
@@ -84,19 +87,13 @@ const getLanguageColor = computed(() => {
     swift: '#F05138',
     ruby: '#701516',
     vue: '#41b883',
-    react: '#087EA4',
+    css: '#563d7c',
+    react: '#61DAFB', //#087EA4 #61DAFB
     json: '#FF9A00'
-  }
+  };
 
-  if (props.codeInfo.Language === null) return "#DFC200";
-
-  const color = props.codeInfo.Language.toLowerCase().trim();
-
-  if (!(color in colors)) {
-    return "#DFC200";
-  }
-
-  return colors[color]
+  const colorKey = language.toLowerCase().trim();
+  return colors[colorKey] || "#DFC200";
 
 });
 
