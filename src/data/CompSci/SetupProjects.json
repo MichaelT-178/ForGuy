@@ -90,7 +90,8 @@
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "Java",
+                "Language": "fxml",
+                "DisplayLang": "FXML",
                 "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"application.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
                 "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
             }
