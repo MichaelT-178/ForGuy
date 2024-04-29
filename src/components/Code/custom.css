@@ -11,7 +11,8 @@ code {
 .token.punctuation,
 .token.constant,
 .token.always-gray,
-.token.gray-js {
+.token.gray-js,
+.token.fxml-gray {
     color: #ABB2BF;
 }
 
@@ -75,17 +76,20 @@ code {
 }
 
 /* Swift nil */
-.token.nil.constant {
+.token.nil.constant,
+.token.fxml-orange {
     color: #D19A66;
 }
 
-.token.string {
+.token.string,
+.token.fxml-green {
     color: #98C379;
 }
 
 .token.property,
 .token.self-red,
-.token.red-js {
+.token.red-js,
+.token.fxml-red {
     color: #E06C75;
 }
 
