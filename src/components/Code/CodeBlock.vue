@@ -30,6 +30,7 @@ import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-swift';
+import 'prismjs/components/prism-javafx';
 import 'prismjs/components/prism-json';
 import 'prismjs/themes/prism-coy.css';
 import './custom.css';
@@ -69,6 +70,12 @@ const highlightedCode = computed(() => {
   }
 
   const language = props.codeInfo.Language.toLowerCase();
+
+
+
+  console.log(`Javafx: ${Prism.languages['javafx']}`)
+
+
   const prismLanguage = Prism.languages[language] || Prism.languages.plain;
   return Prism.highlight(props.codeInfo.FormatCode, prismLanguage, language);
 });
@@ -88,6 +95,7 @@ const getLanguageColor = computed(() => {
     ruby: '#701516',
     vue: '#41b883',
     css: '#563d7c',
+    javafx: '#C6821E',
     react: '#61DAFB', //#087EA4 #61DAFB
     json: '#FF9A00'
   };
