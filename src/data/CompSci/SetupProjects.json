@@ -63,6 +63,54 @@
             "instruction": "If you don't have Node.js installed on your computer, you can install it by using this link -> https://nodejs.org/en."
         },
         {
+            "id": 12,
+            "instruction": "Vue Config",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import vue from '@vitejs/plugin-vue'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [vue()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [vue()],\n})"
+            }
+        },
+        {
+            "id": 12,
+            "instruction": "React Config",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import react from '@vitejs/plugin-react'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [react()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [react()],\n})"
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "Vue Router",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\n  import Home from '../views/Home.vue';\n  import SecondPage from '../views/SecondPage.vue';\n\n  const routes = [\n      {\n\t  path: '/',\n\t  component: Home\n      },\n      {\n\t  path: '/second-page',\n\t  component: SecondPage\n      }\n  ]\n\n  const router = createRouter({\n       history: createWebHistory('/name-of-github-repo/'),\n       routes\n  });\n\n  export default router;",
+                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/name-of-github-repo/'),\n\troutes\n});\n\nexport default router;"
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "React Router",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router basename=\"/name-of-github-repo\">\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
+            }
+        },
+        {
             "id": 3,
             "instruction": "Main.java Eclipse",
             "Code": {
