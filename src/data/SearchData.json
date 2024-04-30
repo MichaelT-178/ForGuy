@@ -1507,7 +1507,7 @@
                 "Section": "School Projects",
                 "Title": "Summer Camp Manager Java, JavaFx, FXML",
                 "Repo": "Repository: https://github.com/elijahdembe-uncw/CampKidManager.git",
-                "Description": "A UNCW programming project that allows the user to manage and update the information of campers at an imaginary summer camp called “Seahawk Fitness”."
+                "Description": "A UNCW programming project that allows the user to manage and update the information of campers at an imaginary summer camp called \"Seahawk Fitness\"."
             },
             {
                 "Section": "Personal Projects",
@@ -2044,7 +2044,7 @@
             {
                 "Tip": "Tip 8",
                 "Name": "Use the \"People\" Tab",
-                "Explanation": "If you go to a companies page, and go to the “People” tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
+                "Explanation": "If you go to a companies page, and go to the \"People\" tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
                 "Instructions": "For this example lets use nCino, Inc., Go to the People Tab of the company website., Look around the page to learn more about the people from the company., Note: In my opinion, the People tab looks better and is more intuitive to use on the mobile app."
             }
         ]
@@ -4107,7 +4107,7 @@
                 "instruction": "Go to \"Slack\" and in the \"#engineering\" section ask someone to review and test the pull request before merging. In your post include the Github PR link and the preview link."
             },
             {
-                "instruction": "Once your changes are approved click the green “Merge pull request” button. Then click “Confirm merge”. Do not delete the branch yet."
+                "instruction": "Once your changes are approved click the green \"Merge pull request\" button. Then click \"Confirm merge\". Do not delete the branch yet."
             },
             {
                 "instruction": "Go to the \"code tab\", than go back to the \"pull request\" tab and click the green \"New pull request\" button (On the right, near the top). You're going to merge your branch with main now."
@@ -5238,7 +5238,7 @@
                 "Tip": "For example, say you have a row of horizontally aligned cards. When the user shrinks the width of the screen the cards could go underneath one another in a vertical stack."
             },
             {
-                "Underlined": "Include “whitespace” in your UI",
+                "Underlined": "Include \"whitespace\" in your UI",
                 "Tip": "What I mean by \"whitespace\" in this context is part of the screen that contains just color and no UI components. The main benefit of this is that will help your design adapt to different screen sizes better. Since the size of the colored background isn't essential it can expand and shrink as necessary. It also helps keep your UI look \"Clean\" and not overly cluttered."
             },
             {
