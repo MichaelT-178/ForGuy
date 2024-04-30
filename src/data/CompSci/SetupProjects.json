@@ -5,8 +5,8 @@
             "desc": "This page contains information about setting up various projects."
         },
         {
-            "title": "Scroll Links",
-            "desc": "Use these links to scroll to different parts of the page."
+            "title": "Display Links",
+            "desc": "Use these links to display different instruction sets."
         },
         {
             "title": "How to Install Node.js",
@@ -29,21 +29,21 @@
             "desc": ""
         }
     ],
-    "ScrollLinks": [
+    "DisplayLinks": [
         {
             "id": 1,
             "name": "How to Setup Node.js",
-            "ref": "nodeRef"
+            "ref": "node"
         },
         {
             "id": 2,
             "name": "How to Setup a Vue Project",
-            "ref": "vueRef"
+            "ref": "vue"
         },
         {
             "id": 3,
             "name": "How to Setup a React Project",
-            "ref": "reactRef"
+            "ref": "react"
         }
     ],
     "SetupNode": [
