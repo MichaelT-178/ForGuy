@@ -64,18 +64,18 @@
         },
         {
             "id": 3,
-            "instruction": "DELETE THIS",
+            "instruction": "Main.java Eclipse",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "FormatCode": "package application;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = getClass().getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Apartment Registry\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
-                "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Apartment Registry\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+                "FormatCode": "package application;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = getClass().getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
+                "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
             }
         },
         {
             "id": 4,
-            "instruction": "DELETE THIS",
+            "instruction": "ExampleController.java Eclipse",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -86,13 +86,57 @@
         },
         {
             "id": 5,
-            "instruction": "DELETE THIS",
+            "instruction": "Counter.fxml Eclipse",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
                 "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"application.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
                 "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Main.java Intellij IDEA",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.counter;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  import java.net.URL;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = Main.class.getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
+                "CopyCode": "package package com.example.counter;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(Main.class.getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "ExampleController.java Intellij IDEA",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.counter;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
+                "CopyCode": "package com.example.counter;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "Counter.fxml Intellij IDEA",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"com.example.counter.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
+                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "module-info.java Intellij IDEA",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "module Counter {\n      requires javafx.fxml;\n      requires javafx.controls;\n\n      opens com.example.counter;\n  }",
+                "CopyCode": "module Counter {\n\trequires javafx.fxml;\n\trequires javafx.controls;\n\n\topens com.example.counter;\n}"
             }
         }
     ],
