@@ -67,7 +67,7 @@
         {
             "Tip": "Tip 8",
             "Name": "Use the \"People\" Tab",
-            "Explanation": "If you go to a companies page, and go to the “People” tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
+            "Explanation": "If you go to a companies page, and go to the \"People\" tab you can see information about employees who work there. This information includes what employees went to your school, how many work in engineering, etc. That’s how I got a lot of information on this site.",
             "Instructions": [
                 "For this example lets use nCino, Inc.",
                 "Go to the [People Tab](https://www.linkedin.com/company/ncino-inc-/people/) of the company website.",
