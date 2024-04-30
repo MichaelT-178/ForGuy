@@ -5,58 +5,57 @@
 
         <img src="../../assets/React.png" alt="React" class="react-pic"/>
 
-        <!-- Scroll Links -->
-        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">{{ text[1].title }}</h2>
+        <!-- Display Links -->
+        <h2 class="gh-header-two" style="margin-top: -3px;">{{ text[1].title }}</h2>
         <p class="description-two">{{ text[1].desc }}</p>
-        <div v-for="link in scrollLinks" :key="link.id">
-            <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
-                </span><span v-html="createRefContent(link)"></span></p>
+        <div v-for="link in displayLinks" :key="link.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}</span>
+                <span :class="{ 'display-link': currentSection !== link.ref, 'active-link': currentSection === link.ref }" 
+                      @click="toggleSection(link.ref)">
+                    {{ link.name }}
+                </span>
+            </p>
         </div>
         
+        <p class="scroll-down" ref="scrollToRef">INVISIBLE SCROLL DOWN</p>
 
         <!-- Setup Node.js -->
-        <h2 class="gh-header-two" ref="nodeRef">{{ text[2].title }}</h2>
-        <p class="description-two">{{ text[2].desc }}</p>
-
-        <div v-for="point in setupNode" :key="point.id">
-            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
-                </span><span v-html="highlightLinkText(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        <div v-if="currentSection === 'node'">
+            <h2 class="gh-header-two">{{ text[2].title }}</h2>
+            <p class="description-two">{{ text[2].desc }}</p>
+            <div v-for="point in setupNode" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="highlightLinkText(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
         </div>
-
 
 
         <!-- Setup Vue -->
-        <h2 class="gh-header-two" ref="vueRef">{{ text[3].title }}</h2>
-        <p class="description-two">{{ text[3].desc }}</p>
-
-        <div v-for="point in setupVue" :key="point.id">
-            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
-                </span><span v-html="point.instruction" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        <div v-if="currentSection === 'vue'">
+            <h2 class="gh-header-two" ref="vueRef">{{ text[3].title }}</h2>
+            <p class="description-two">{{ text[3].desc }}</p>
+            <div v-for="point in setupVue" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="point.instruction" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
         </div>
-
 
         <!-- Setup React -->
-        <h2 class="gh-header-two" ref="reactRef">{{ text[4].title }}</h2>
-        <p class="description-two">{{ text[4].desc }}</p>
-
-        <div v-for="point in setupReact" :key="point.id">
-            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
-                </span><span v-html="createHyperLink(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        <div v-if="currentSection === 'react'">
+            <h2 class="gh-header-two">{{ text[4].title }}</h2>
+            <p class="description-two">{{ text[4].desc }}</p>
+            <div v-for="point in setupReact" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
         </div>
-        
-
-
-
 
     </div>
 </template>
 
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 import AllData from '../../data/CompSci/SetupProjects.json';
 import { createHyperLink, highlightLinkText } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
@@ -64,69 +63,21 @@ import CodeBlock from '../../components/Code/CodeBlock.vue';
 const jsonData = ref(AllData);
 
 const text = jsonData.value["Text"];
-const scrollLinks = jsonData.value["ScrollLinks"];
+const displayLinks = jsonData.value["DisplayLinks"];
 const setupNode = jsonData.value["SetupNode"];
 const setupVue = jsonData.value["SetupVue"];
 const setupReact = jsonData.value["SetupReact"];
 
+const currentSection = ref('node');
+const scrollToRef = ref(null);
 
-const createRefContent = (refVal) => {
-    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span></span>`;
-}
+const toggleSection = (section) => {
+    currentSection.value = section;
 
-
-
-const scrollLinksRef = ref(null);
-const nodeRef = ref(null);
-const vueRef = ref(null);
-const reactRef = ref(null);
-
-
-
-
-
-const scrollToRef = (refName) => {
-
-    const offset = 50;
-
-    const refs = {
-        scrollLinksRef,
-        nodeRef,
-        vueRef,
-        reactRef
-    };
-
-    const targetElement = refs[refName]?.value;
-
-    if (targetElement) {
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    } else {
-        console.warn("No target element found for refName:", refName);
+    if (scrollToRef.value) {
+        scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
     }
-}
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
 };
-
-onMounted(() => {
-    document.querySelectorAll('.scroll-down').forEach(element => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            const refName = event.target.getAttribute('data-ref-name');
-            scrollToRef(refName);
-        });
-    });
-});
 
 </script>
 
@@ -159,13 +110,24 @@ onMounted(() => {
     width: 690px;
 }
 
-:deep(.scroll-down) {
+.scroll-down {
+    margin-bottom: -20px;
+    visibility: hidden;
+    user-select: none;
+}
+
+.display-link {
     text-decoration: none;
     color: blue;
     cursor: pointer;
 }
 
-:deep(.scroll-down:hover) {
+.display-link:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.active-link {
     text-decoration: underline;
     color: darkblue;
 }
