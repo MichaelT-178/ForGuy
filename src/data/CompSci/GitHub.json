@@ -485,7 +485,7 @@
         },
         {
             "id": 5,
-            "instruction": "Once your changes are approved click the green “Merge pull request” button. Then click “Confirm merge”. Do not delete the branch yet."
+            "instruction": "Once your changes are approved click the green \"Merge pull request\" button. Then click \"Confirm merge\". Do not delete the branch yet."
         }
     ],
     "AmotionsPtsTwo": [
