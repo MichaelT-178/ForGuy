@@ -48,7 +48,7 @@
         },
         {
             "id": 9,
-            "Underlined": "Include “whitespace” in your UI",
+            "Underlined": "Include \"whitespace\" in your UI",
             "Tip": "What I mean by \"whitespace\" in this context is part of the screen that contains just color and no UI components. The main benefit of this is that will help your design adapt to different screen sizes better. Since the size of the colored background isn't essential it can expand and shrink as necessary. It also helps keep your UI look \"Clean\" and not overly cluttered."
         },
         {
