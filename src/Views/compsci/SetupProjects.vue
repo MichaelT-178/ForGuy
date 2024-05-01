@@ -114,6 +114,9 @@ const intellijJavaFX = jsonData.value["IntellijJavaFX"];
 const eclipseJavaFX = jsonData.value["EclipseJavaFX"];
 
 
+const sqlite = jsonData.value["SQLite3"];
+
+
 
 const currentSection = ref('node');
 const scrollToRef = ref(null);
