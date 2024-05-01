@@ -1,42 +1,18 @@
-import json
+import sqlite3
 
-with open("../src/data/Classes/ClassesIveTaken.json", "r") as file:
-    content = json.load(file)
+conn = sqlite3.connect('Cars.db')
 
-freshman_classes = content["Freshman"]["First"]
-freshman_classes_two = content["Freshman"]["Second"]
-sophomore_classes = content["Sophomore"]["First"]
-sophomore_classes_two = content["Sophomore"]["Second"]
-junior_classes = content["Junior"]["First"]
-junior_classes_two = content["Junior"]["Second"]
-senior = content["Senior"]["First"]
+cursor = conn.cursor()
 
+cursor.execute('''
+	CREATE TABLE Cars (
+		Maker VARCHAR(20),
+		Color VARCHAR(20),
+		Year INT
+	);
+''')
 
-def print_json(json_data):
-    formatted_json = json.dumps(json_data, indent=4)
-    return formatted_json + ","
+conn.commit()
+conn.close()
 
-
-
-
-for a_class in freshman_classes:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in freshman_classes_two:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in sophomore_classes:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in sophomore_classes_two:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in junior_classes :
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in junior_classes_two:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
-for a_class in senior:
-    if "CSC" in a_class["Name"].upper():
-        print(print_json(a_class))
+print("\033[92m" + "Cars table successfully created!" + "\033[0m")
