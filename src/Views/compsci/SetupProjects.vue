@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <h1 class="gh-header">{{ text[0].title }}</h1>
-        <p class="description">{{ text[0].desc }}</p>
+        <h1 class="gh-header">{{ text[1].title }}</h1>
+        <p class="description">{{ text[1].desc }}</p>
 
         <img src="../../assets/React.png" alt="React" class="react-pic"/>
 
         <!-- Display Links -->
-        <h2 class="gh-header-two" style="margin-top: -3px;">{{ text[1].title }}</h2>
-        <p class="description-two">{{ text[1].desc }}</p>
+        <h2 class="gh-header-two" style="margin-top: -3px;">{{ text[2].title }}</h2>
+        <p class="description-two">{{ text[2].desc }}</p>
         <div v-for="link in displayLinks" :key="link.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}</span>
                 <span :class="{ 'display-link': currentSection !== link.ref, 'active-link': currentSection === link.ref }" 
@@ -21,10 +21,10 @@
 
         <!-- Setup Node.js -->
         <div v-if="currentSection === 'node'">
-            <h2 class="gh-header-two">{{ text[2].title }}</h2>
-            <p class="description-two">{{ text[2].desc }}</p>
+            <h2 class="gh-header-two">{{ text[3].title }}</h2>
+            <p class="description-two">{{ text[3].desc }}</p>
             <div v-for="point in setupNode" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="highlightLinkText(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
                 <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
             </div>
         </div>
@@ -32,8 +32,8 @@
 
         <!-- Setup Vue -->
         <div v-if="currentSection === 'vue'">
-            <h2 class="gh-header-two" ref="vueRef">{{ text[3].title }}</h2>
-            <p class="description-two">{{ text[3].desc }}</p>
+            <h2 class="gh-header-two" ref="vueRef">{{ text[4].title }}</h2>
+            <p class="description-two">{{ text[4].desc }}</p>
             <div v-for="point in setupVue" :key="point.id">
                 <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="point.instruction" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
                 <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
@@ -42,14 +42,55 @@
 
         <!-- Setup React -->
         <div v-if="currentSection === 'react'">
-            <h2 class="gh-header-two">{{ text[4].title }}</h2>
-            <p class="description-two">{{ text[4].desc }}</p>
+            <h2 class="gh-header-two">{{ text[5].title }}</h2>
+            <p class="description-two">{{ text[5].desc }}</p>
             <div v-for="point in setupReact" :key="point.id">
                 <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
                 <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
             </div>
         </div>
 
+        <!-- Setup GitHub Pages-->
+        <div v-if="currentSection === 'gh-pages'">
+            <h2 class="gh-header-two">{{ text[6].title }}</h2>
+            <p class="description-two" v-html="createHyperLink(text[6].desc)"></p>
+            <div v-for="point in githubPages" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
+        </div>
+
+        <!-- Setup Vite GitHub Pages-->
+        <div v-if="currentSection === 'vite-gh-pages'">
+            <h2 class="gh-header-two">{{ text[7].title }}</h2>
+            <p class="description-two" v-html="createHyperLink(text[7].desc)"></p>
+            <div v-for="point in viteGHPages" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
+        </div>
+
+        <!-- Intellij IDEA JavaFX -->
+        <div v-if="currentSection === 'intellij'">
+            <h2 class="gh-header-two">{{ text[8].title }}</h2>
+            <p class="description-two" v-html="createHyperLink(text[8].desc)"></p>
+            <div v-for="point in intellijJavaFX" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
+        </div>
+
+         <!-- Eclipse JavaFX -->
+        <div v-if="currentSection === 'eclipse'">
+            <h2 class="gh-header-two">{{ text[9].title }}</h2>
+            <p class="description-two" v-html="createHyperLink(text[9].desc)"></p>
+            <div v-for="point in eclipseJavaFX" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
+                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            </div>
+        </div>
+
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text[0].scrollToTop }}</p>
     </div>
 </template>
 
@@ -67,6 +108,12 @@ const displayLinks = jsonData.value["DisplayLinks"];
 const setupNode = jsonData.value["SetupNode"];
 const setupVue = jsonData.value["SetupVue"];
 const setupReact = jsonData.value["SetupReact"];
+const githubPages = jsonData.value["GithubPages"];
+const viteGHPages = jsonData.value["ViteGithubPages"];
+const intellijJavaFX = jsonData.value["IntellijJavaFX"];
+const eclipseJavaFX = jsonData.value["EclipseJavaFX"];
+
+
 
 const currentSection = ref('node');
 const scrollToRef = ref(null);
@@ -77,6 +124,13 @@ const toggleSection = (section) => {
     if (scrollToRef.value) {
         scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
     }
+};
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 400,
+    behavior: 'smooth'
+  });
 };
 
 </script>
@@ -168,6 +222,21 @@ const toggleSection = (section) => {
     margin-right: 10px;
     user-select: none;
     margin-bottom: 10px;
+}
+
+.scroll-up-btn {
+    text-align: center; 
+    font-size: 30px; 
+    margin-top: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+    color: blue;
+    margin-bottom: 70px;
+}
+
+.scroll-up-btn:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 @media (max-width: 700px) {

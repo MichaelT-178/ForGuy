@@ -1,6 +1,9 @@
 {
     "Text": [
         {
+            "scrollToTop": "Scroll To Top"
+        },
+        {
             "title": "Setup Projects",
             "desc": "This page contains information about setting up various projects."
         },
@@ -21,12 +24,20 @@
             "desc": "How to setup a React.js project that uses Vite and Tailwind.css."
         },
         {
-            "title": "",
-            "desc": ""
+            "title": "Deploy a Vanilla JS Project to GitHub Pages",
+            "desc": "How to deploy a project that doesn't use Vite or a JS framework to GitHub pages. This is a good reference [video](https://youtu.be/XGcuxuhV-Jg?si=pRZydG5hC_oyluSn)."
         },
         {
-            "title": "",
-            "desc": ""
+            "title": "Deploy a Vite Project to GitHub Pages",
+            "desc": "How to deploy a project that uses Vite and JS framework to GitHub pages (Vue, React, Etc.). This is a good reference [video](https://youtu.be/yo2bMGnIKE8?si=EpFNOE8JC9Dtyxcz)."
+        },
+        {
+            "title": "How to Setup a JavaFX Project (Intellij IDEA)",
+            "desc": "This is how to setup a basic JavaFX project in Intellij IDEA."
+        },
+        {
+            "title": "How to Setup a JavaFX Project (Eclipse)",
+            "desc": "This is how to setup a basic JavaFX project in Eclipse."
         }
     ],
     "DisplayLinks": [
@@ -44,12 +55,34 @@
             "id": 3,
             "name": "How to Setup a React Project",
             "ref": "react"
+        },
+        {
+            "id": 4,
+            "name": "Deploy a Vanilla JS Project to GitHub Pages",
+            "ref": "gh-pages"
+        },
+        {
+            "id": 5,
+            "name": "Deploy a Vite Project to GitHub Pages",
+            "ref": "vite-gh-pages"
+        },
+        {
+            "id": 6,
+            "name": "How to Setup a JavaFX Project (Intellij IDEA)",
+            "ref": "intellij"
+        },
+        {
+            "id": 7,
+            "name": "How to Setup a JavaFX Project (Eclipse)",
+            "ref": "eclipse"
         }
+
+
     ],
     "SetupNode": [
         {
             "id": 1,
-            "instruction": "Check if you already have node installed by running the following command in your terminal.",
+            "instruction": "Check if you already have node installed by running the following command in your terminal. It should print the version if it's installed.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -60,132 +93,7 @@
         },
         {
             "id": 2,
-            "instruction": "If you don't have Node.js installed on your computer, you can install it by using this link -> https://nodejs.org/en."
-        },
-        {
-            "id": 12,
-            "instruction": "Vue Config",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Javascript",
-                "DisplayLang": "Vue",
-                "FormatCode": "import { defineConfig } from 'vite'\n  import vue from '@vitejs/plugin-vue'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [vue()],\n  })",
-                "CopyCode": "import { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [vue()],\n})"
-            }
-        },
-        {
-            "id": 12,
-            "instruction": "React Config",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Javascript",
-                "DisplayLang": "Vue",
-                "FormatCode": "import { defineConfig } from 'vite'\n  import react from '@vitejs/plugin-react'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [react()],\n  })",
-                "CopyCode": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [react()],\n})"
-            }
-        },
-        {
-            "id": 14,
-            "instruction": "Vue Router",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Javascript",
-                "DisplayLang": "Vue",
-                "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\n  import Home from '../views/Home.vue';\n  import SecondPage from '../views/SecondPage.vue';\n\n  const routes = [\n      {\n\t  path: '/',\n\t  component: Home\n      },\n      {\n\t  path: '/second-page',\n\t  component: SecondPage\n      }\n  ]\n\n  const router = createRouter({\n       history: createWebHistory('/name-of-github-repo/'),\n       routes\n  });\n\n  export default router;",
-                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/name-of-github-repo/'),\n\troutes\n});\n\nexport default router;"
-            }
-        },
-        {
-            "id": 14,
-            "instruction": "React Router",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Javascript",
-                "DisplayLang": "Vue",
-                "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router basename=\"/name-of-github-repo\">\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
-                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
-            }
-        },
-        {
-            "id": 3,
-            "instruction": "Main.java Eclipse",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "FormatCode": "package application;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = getClass().getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
-                "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
-            }
-        },
-        {
-            "id": 4,
-            "instruction": "ExampleController.java Eclipse",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "FormatCode": "package application;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
-                "CopyCode": "package application;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
-            }
-        },
-        {
-            "id": 5,
-            "instruction": "Counter.fxml Eclipse",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "fxml",
-                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"application.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
-                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
-            }
-        },
-        {
-            "id": 6,
-            "instruction": "Main.java Intellij IDEA",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "FormatCode": "package com.example.counter;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  import java.net.URL;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = Main.class.getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
-                "CopyCode": "package package com.example.counter;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(Main.class.getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
-            }
-        },
-        {
-            "id": 7,
-            "instruction": "ExampleController.java Intellij IDEA",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "FormatCode": "package com.example.counter;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
-                "CopyCode": "package com.example.counter;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
-            }
-        },
-        {
-            "id": 8,
-            "instruction": "Counter.fxml Intellij IDEA",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "fxml",
-                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"com.example.counter.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
-                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
-            }
-        },
-        {
-            "id": 9,
-            "instruction": "module-info.java Intellij IDEA",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "FormatCode": "module Counter {\n      requires javafx.fxml;\n      requires javafx.controls;\n\n      opens com.example.counter;\n  }",
-                "CopyCode": "module Counter {\n\trequires javafx.fxml;\n\trequires javafx.controls;\n\n\topens com.example.counter;\n}"
-            }
+            "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
         }
     ],
     "SetupVue": [
@@ -711,6 +619,482 @@
                 "FormatCode": "npm run dev",
                 "CopyCode": "npm run dev" 
             }
+        }
+    ],
+    "GithubPages": [
+        {
+            "id": 1,
+            "instruction": "Write your non-vite html, css, and javascript code, then push it to github. Make sure there's a file named \"index.html\" in the top-most directory of your folder."
+        },
+        {
+            "id": 2,
+            "instruction": "When you're ready to deploy do the following steps."
+        },
+        {
+            "id": 3,
+            "instruction": "Go to your repository. In the top click on \"Settings\" with the gear icon next to it."
+        },
+        {
+            "id": 4,
+            "instruction": "On the left-hand side under \"Code and automation\" select \"Pages\"."
+        },
+        {
+            "id": 5,
+            "instruction": "Under \"Build and Deployment\" you should see a section titled \"Branch\". Under it select the \"None\" button and decide what branch you want to deploy. You likely want to deploy the \"main\" branch. You also likely don't want to change the \"(root)\" button."
+        },
+        {
+            "id": 6,
+            "instruction": "Once done, press \"Save\"."
+        },
+        {
+            "id": 7,
+            "instruction": "Wait about a minute, then refresh the page. You should now see the link to your GitHub pages website."
+        }
+    ],
+    "ViteGithubPages": [
+        {
+            "id": 1,
+            "instruction": "Ensure that the code for your app is already on GitHub and you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd your-project-name\n  git status\n  cd ..",
+                "CopyCode": "cd your-project-name\ngit status\ncd .."
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Change into your local Vite project repository if you're not already in it and open it in VSCode. You can open it using the \"code .\" command if you have it installed.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd your-project-name\n  code .",
+                "CopyCode": "cd your-project-name\ncode ."
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Step 3 if you're using Vue. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import vue from '@vitejs/plugin-vue'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [vue()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [vue()],\n})"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Step 3 if you're using React. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import react from '@vitejs/plugin-react'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [react()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [react()],\n})"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Step 4 if you're using Vue router, go to your index.js file in the src/router directory. Where it says \"history: createWebHistory(‘/’)\". Change the createWebHistory parameter to be the name of your GitHub repository starting and ending with slashes. If you're not using Vue-router you can skip this step.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\n  import Home from '../views/Home.vue';\n  import SecondPage from '../views/SecondPage.vue';\n\n  const routes = [\n      {\n\t  path: '/',\n\t  component: Home\n      },\n      {\n\t  path: '/second-page',\n\t  component: SecondPage\n      }\n  ]\n\n  const router = createRouter({\n       history: createWebHistory('/name-of-github-repo/'),\n       routes\n  });\n\n  export default router;",
+                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/name-of-github-repo/'),\n\troutes\n});\n\nexport default router;"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"<Router>\" change it to include a \"basename\" prop which value will be the name of your github repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router basename=\"/name-of-github-repo\">\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Run the following commands in your terminal. Make sure you're still in your local repository using \"pwd\".",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pwd\n  npm run build\n  git add dist -f\n  git commit -m \"Adding dist\"\n  git subtree push --prefix dist origin gh-pages",
+                "CopyCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Now go to your Github repository, You should see that a new branch named \"gh-pages\" has been added."
+        },
+        {
+            "id": 7,
+            "instruction": "Click on \"Settings\" on the right-hand side of the top-bar with a gear icon next to it."
+        },
+        {
+            "id": 8,
+            "instruction": "Now under \"Code and automation\" on the left-hand side click on \"Pages\" and wait while it deploys to Github pages. You should eventually see a link there where you can access your site. You should be done now. The following steps are to make changes to your deployed site."
+        },
+        {
+            "id": 9,
+            "instruction": "To update the site while working on the main branch run the following commands. These will update both the main branch and gh-pages branch. You could make a python script that uses the \"os\" library to automate this process.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .\n  git commit -m \"Message\"\n  git push origin main\n  npm run build\n  git add dist -f\n  git commit -m \"Message\"\n  git subtree push --prefix dist origin gh-pages",
+                "CopyCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "If the subtree push doesn't work for some reason try the following. ",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force ",
+                "CopyCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force "
+            }
+        }
+    ],
+    "IntellijJavaFX": [
+        {
+            "id": 1,
+            "instruction": "To download Intellij Idea go this [page](https://www.jetbrains.com/idea/download/?section=mac). Scroll down to the section titled \"IntelliJ IDEA Community Edition\"."
+        },
+        {
+            "id": 2,
+            "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download is [here](https://gluonhq.com/products/javafx/).",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "uname -m",
+                "CopyCode": "uname -m"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "When you download the JavaFX SDK note where it is downloaded and what version it is. You'll need this information later."
+        },
+        {
+            "id": 4,
+            "instruction": "Open Intellij IDEA and in the top-most Apple bar select File -> New -> Project."
+        },
+        {
+            "id": 5,
+            "instruction": "In the pop-up window on the left-hand side under the \"Generators\" header select \"JavaFX\"."
+        },
+        {
+            "id": 6,
+            "instruction": "In the \"Name\" field type \"Counter\". The language should be Java. The build system should be Maven."
+        },
+        {
+            "id": 7,
+            "instruction": "For the \"JDK\" field select \"Download JDK\" in the drop-down menu. If the fields are filled out you should be good. Just press \"Download\". Then wait for it to download."
+        },
+        {
+            "id": 8,
+            "instruction": "Once the JDK is done downloading press the \"Next\" button. Then on the next screen just press \"Create\" without checking any of the boxes."
+        },
+        {
+            "id": 9,
+            "instruction": "You should now have a JavaFX project created and be in the text editor view."
+        },
+        {
+            "id": 10,
+            "instruction": "In the \"src\" file go to main -> java -> com.example.counter. Delete the HelloApplication and HelloController java files in the folder. You can delete them by right-clicking the files and pressing \"Delete\" in the menu. Leave the checked boxes as they are and click \"Ok\" when the pop-up window appears. Click \"Delete Anyway\" if the \"Usages Detected\" pop-up window appears."
+        },
+        {
+            "id": 11,
+            "instruction": "Now select the src -> main -> java -> com.example.counter folder. Right click and select new -> JavaFX Application. Name it \"Main\" then click ok. Then do new -> Java Class and call it \"ExampleController\" then press enter/return to create it."
+        },
+        {
+            "id": 12,
+            "instruction": "Now in the src -> main -> resources -> com.example.counter folder, right click on the hello-view.fxml code. Click \"Delete\" in the menu bar. Click \"Ok\" in a confirmation window pops up. Don't uncheck anything."
+        },
+        {
+            "id": 13,
+            "instruction": "Now in right-click the com.example.counter folder and do New -> FXML File. In the input field type \"Counter\" and press return/enter."
+        },
+        {
+            "id": 14,
+            "instruction": "In the \"Counter.fxml\" file paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"com.example.counter.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
+                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            }
+        },
+        {
+            "id": 15,
+            "instruction": "Now go back to src -> main -> java -> com.example.counter. In the \"Main.java\" file paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.counter;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  import java.net.URL;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = Main.class.getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
+                "CopyCode": "package package com.example.counter;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(Main.class.getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+            }
+        },
+        {
+            "id": 16,
+            "instruction": "Now in the same folder open the \"ExampleController.java\" file. Paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.counter;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
+                "CopyCode": "package com.example.counter;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "Now select the project \"Counter\" then right-click and in the menu select \"Open Module Settings\" near the bottom of the menu."
+        },
+        {
+            "id": 18,
+            "instruction": "In the pop-up window under \"Platform Settings\" on the left-hand side select \"Global Libraries\"."
+        },
+        {
+            "id": 19,
+            "instruction": "Click the Plus sign at the top that says \"New Global Library\" when hovered over. Select \"Java\" then try to find your Java SDK folder you downloaded in step 2. It should look like \"javafx-sdk-22.01\" and will probably be in your downloads folder. Once you find it go into the \"lib\" folder and select all files that have a \".jar\" extension. You can select multiple files by holding down \"command\". Once done press \"Open\". Click OK when the pop-up window appears."
+        },
+        {
+            "id": 20,
+            "instruction": "In the \"Name\" field at the top, delete the current name, then type \"JavaFX-22\" or \"JavaFX-whatever version you're using\". Then click OK."
+        },
+        {
+            "id": 21,
+            "instruction": "Now right-click the Counter folder again. Go back down to \"Open Module Settings\" and click \"Global Libraries\"."
+        },
+        {
+            "id": 22,
+            "instruction": "Under the + sign you should now see \"JavaFX-22\". Right-click it, then press \"Add to Modules\" in the menu. Click \"Ok\" in the pop-up window. Then click \"Apply\" in the bottom right. Then click \"OK\"."
+        },
+        {
+            "id": 23,
+            "instruction": "Now right click the src -> main -> java folder and do New -> File. Type \"module-info.java\" in the input field then press return/enter. The file should appear in your \"java\" folder."
+        },
+        {
+            "id": 24,
+            "instruction": "Paste the following code In the \"module-info.java\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "module Counter {\n      requires javafx.fxml;\n      requires javafx.controls;\n\n      opens com.example.counter;\n  }",
+                "CopyCode": "module Counter {\n\trequires javafx.fxml;\n\trequires javafx.controls;\n\n\topens com.example.counter;\n}"
+            }
+        },
+        {
+            "id": 25,
+            "instruction": "Now go back to your Main.java file in the src -> main -> java -> com.example.counter folder. Click the green arrow button at the top-right to run your application. After you do that you should be able to run the app but select any folder and pressing the run button in the future."
+        }
+    ],
+    "EclipseJavaFX": [
+        {
+            "id": 1,
+            "instruction": "Download the x86_64 version of Eclipse using this [link](https://www.eclipse.org/downloads/packages/installer). Follow the prompts. When you get to the eclipse installer window click on \"Eclipse IDE for Java and DSL Developers\"."
+        },
+        {
+            "id": 2,
+            "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download is [here](https://gluonhq.com/products/javafx/).",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "uname -m",
+                "CopyCode": "uname -m"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "When you download the JavaFX SDK note where it is downloaded and what version it is. You'll need this information later. "
+        },
+        {
+            "id": 4,
+            "instruction": "Go back to eclipse and in the top-most Apple bar thing click the following. File -> New -> Other."
+        },
+        {
+            "id": 5,
+            "instruction": "A pop-up window should appear titled \"Select a wizard\"."
+        },
+        {
+            "id": 6,
+            "instruction": "In the JavaFX folder select \"JavaFX project\". Then click next."
+        },
+        {
+            "id": 7,
+            "instruction": "Enter a project name in the input field. Let's call this project \"Counter\"."
+        },
+        {
+            "id": 8,
+            "instruction": "Under Module, make sure \"Create module-info.java file\" is NOT selected. Leave all other settings default. Click \"Finish\"."
+        },
+        {
+            "id": 9,
+            "instruction": "In the left-hand menu make sure there’s a folder tilted \"Counter\". Go to the src folder of the project and delete the file called \"module-info.java\"."
+        },
+        {
+            "id": 10,
+            "instruction": "Now in the left-hand menu, right-click on your project and select Build Path -> Configure Build Path. A window should pop-up titled \"Properties for Counter\"."
+        },
+        {
+            "id": 11,
+            "instruction": "In the main view, select the \"Libraries\" tab. In the tab under \"ModulePath\" you should see something named \"JavaFX SDK\"."
+        },
+        {
+            "id": 12,
+            "instruction": "Select \"JavaFX SDK\" and on the right-hand side click the \"remove\" button."
+        },
+        {
+            "id": 13,
+            "instruction": "Now select \"ClassPath\" under \"ModulePath\" and then on the right-hand side click \"Add Library...\"."
+        },
+        {
+            "id": 14,
+            "instruction": "In the \"Add Library\" pop-up select \"JavaFX SDK\" -> Next -> Finish. It should now appear under \"ClassPath\"."
+        },
+        {
+            "id": 15,
+            "instruction": "Select \"ClassPath\" and click \"Add Library\" again."
+        },
+        {
+            "id": 16,
+            "instruction": "In the \"Add Library\" pop-up select \"User Library\" -> Next. Then Select \"User Libraries\" on the right-hand side. Then in the pop-up on the right-hand click \"New\". In the \"User Library Name\" input field type \"JavaFX\" then click \"Ok\"."
+        },
+        {
+            "id": 17,
+            "instruction": "Select \"JavaFX\" and click \"Add External JARs\" on the right-hand side. Go to where your javafx-sdk-22.0.1 (or whatever version you downloaded) folder is. Click on it and go to the \"lib\" folder. Select all files ending in \".jar\" and then click open. When you're done click \"Apply and Close\". NOTE: Hold down the command key to select multiple files."
+        },
+        {
+            "id": 18,
+            "instruction": "Then click \"Finish\" and \"Apply and Close\"."
+        },
+        {
+            "id": 19,
+            "instruction": "You should be at your eclipse workspace again. Click on your project on the left-hand side and select Build Path -> Configure Build Path like we did earlier."
+        },
+        {
+            "id": 20,
+            "instruction": "Now JavaFX should appear under \"ClassPath\". Click \"Apply\" and then \"Apply and Close\"."
+        },
+        {
+            "id": 21,
+            "instruction": "Now select the top-folder of your project called \"Counter\". In the top bar of eclipse you should see a green circular button with a white arrow in it. Click the small black arrow to the right of it. Click \"Run Configurations\"."
+        },
+        {
+            "id": 22,
+            "instruction": "On the left-hand side of the pop-up window right-click on \"Java Application\". Select \"New Configuration\" in the menu."
+        },
+        {
+            "id": 23,
+            "instruction": "In the \"New Configuration\" pop-up window select the Main tab. Make sure under Main class that application.Main is in the input field."
+        },
+        {
+            "id": 24,
+            "instruction": "Then click the \"arguments\" tab to the right of the main tab."
+        },
+        {
+            "id": 25,
+            "instruction": "Don't close eclipse, but open your terminal. We need to find a path. Paste the following command in your terminal and press \"tab\" to complete it. Press enter/return when done.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd Downloads/javafx-sdk-",
+                "CopyCode": "cd Downloads/javafx-sdk-"
+            }
+        },
+        {
+            "id": 26,
+            "instruction": "Now change into the \"lib\" directory. Then print and copy the current path. It will automatically be copied to your clipboard.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd lib\n  pwd | tee >(pbcopy)",
+                "CopyCode": "cd lib\npwd | tee >(pbcopy)"
+            }
+        },
+        {
+            "id": 27,
+            "instruction": "Replace the \"path-to-your-sdk\" in the following statement with what you just copied to your clipboard using the pbcopy command. ",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Path",
+                "FormatCode": "--module-path path-to-your-sdk --add-modules javafx.controls,javafx.fxml",
+                "CopyCode": "--module-path path-to-your-sdk --add-modules javafx.controls,javafx.fxml"
+            }
+        },
+        {
+            "id": 28,
+            "instruction": "In the \"VM arguments\" input box paste the module path you created in step 27."
+        },
+        {
+            "id": 29,
+            "instruction": "Under the \"VM arguments\" input box, uncheck the \"Use the -XstartOnFirstThread argument when launching with SWT\" box. If you don't uncheck this box the Window might not appear when you try to run your program."
+        },
+        {
+            "id": 30,
+            "instruction": "Click \"Apply\" in the bottom right, then click \"Close\"."
+        },
+        {
+            "id": 31,
+            "instruction": "In the \"Main.java\" file, delete it's contents and paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package application;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  import java.net.URL;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = getClass().getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
+                "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+            }
+        },
+        {
+            "id": 32,
+            "instruction": "In the \"application\" folder create a new fxml file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"Counter.fxml\". Then click \"Finish\" when done."
+        },
+        {
+            "id": 33,
+            "instruction": "Paste the following fxml code into the \"Counter.fxml\" file. You would typically make the fxml file using SceneBuilder in CSC 331. You can download SceneBuilder [here](https://gluonhq.com/products/scene-builder/).",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"application.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
+                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            }
+        },
+        {
+            "id": 34,
+            "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package application;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
+                "CopyCode": "package application;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
+            }
+
+        },
+        {
+            "id": 35,
+            "instruction": "Click the green circular button with the white arrow to run your app."
         }
     ]
 }
