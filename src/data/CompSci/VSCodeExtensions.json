@@ -70,6 +70,12 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
         },
         {
+            "Name": "Inline fold",
+            "Author": "Mohammed Alamri",
+            "Description": "Allows you to minimize tailwind css code in your html for a less cluttered look.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold"
+        },
+        {
             "Name": "Python",
             "Author": "Microsoft",
             "Description": "Python language support lets run, debug, etc. python code.",

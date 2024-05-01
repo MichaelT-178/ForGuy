@@ -32,6 +32,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Prettier%0A` +
 `https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode%0A%0A` +
 
+`Inline fold%0A` +
+`https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold%0A%0A` + 
+
 `Python%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ms-python.python%0A%0A` +
 
