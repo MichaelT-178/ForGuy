@@ -83,7 +83,7 @@ export const memeObjects = [
         image: Meme6 
     }, //ToManyIfStatements.jpg
     { 
-        text: "Testing ain't in bro 😭",
+        text: "Testing ain't it bro 😭",
         transcription: "Write code write tests the tests fail the tests fail write more tests to narrow down the problem Those tests pass The bug was in the test ProgrammerHumor.io",
         image: Meme7 
     }, //BugInTest.jpg
@@ -253,7 +253,7 @@ export const memeObjects = [
         image: Meme40 
     }, //SendaCV.jpg
     { 
-        text: "They're even now",
+        text: "They're even now. (This isn't about me, I don't lie on my resume I just thought it was funny)",
         transcription: "Me who lied on my resume my new employer who lied on the job description",
         image: Meme41 
     }, //ApplicantAndEmployer.jpg
@@ -263,7 +263,7 @@ export const memeObjects = [
         image: Meme42 
     }, //TooManyApplicants.jpg
     { 
-        text: "CSC 302 Flashbacks",
+        text: "CSC 302 Flashbacks (Tower of Hanoi)",
         transcription: "Everyone: it's a game for kids. Programmers: ",
         image: Meme43
     }, //Hammurabi.jpg
