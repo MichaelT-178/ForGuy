@@ -96,7 +96,7 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref, nextTick, onMounted } from 'vue';
 import AllData from '../../data/CompSci/SetupProjects.json';
 import { createHyperLink, highlightLinkText } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
@@ -113,20 +113,18 @@ const viteGHPages = jsonData.value["ViteGithubPages"];
 const intellijJavaFX = jsonData.value["IntellijJavaFX"];
 const eclipseJavaFX = jsonData.value["EclipseJavaFX"];
 
-
-const sqlite = jsonData.value["SQLite3"];
-
-
-
-const currentSection = ref('node');
+const currentSection = ref(localStorage.getItem('currentSection') || 'node');
 const scrollToRef = ref(null);
 
 const toggleSection = (section) => {
     currentSection.value = section;
+    localStorage.setItem('currentSection', section);
 
-    if (scrollToRef.value) {
-        scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
-    }
+    nextTick(() => {
+        if (scrollToRef.value) {
+            scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 };
 
 const scrollToTop = () => {
@@ -135,6 +133,18 @@ const scrollToTop = () => {
     behavior: 'smooth'
   });
 };
+
+onMounted(() => {
+    const navigationEntries = performance.getEntriesByType('navigation');
+    
+    if (navigationEntries.length > 0 && navigationEntries[0].type === 'reload') {
+        // Page was just refreshed do nothing
+    } else {
+        //Came from a different route
+        currentSection.value = 'node';
+        localStorage.setItem('currentSection', 'node');
+    }
+});
 
 </script>
 
