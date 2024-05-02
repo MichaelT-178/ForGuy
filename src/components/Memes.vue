@@ -48,6 +48,7 @@ import Meme46 from "../assets/memes/recommendation.jpg";
 import Meme47 from "../assets/memes/WhenYouHearBack.jpg";
 import Meme48 from "../assets/memes/Extensions.jpg";
 import Meme49 from "../assets/memes/null.jpg";
+import Meme50 from "../assets/memes/ProgrammerTester.jpg";
 
 
 export const memeObjects = [
@@ -295,6 +296,11 @@ export const memeObjects = [
         text: "He kinda gave us NullPointerException's tho 😍",
         transcription: "To the programmer who invented null: Thanks for nothing.",
         image: Meme49
-    } //null.jpg
+    }, //null.jpg
+    {
+        text: "Friendliest Programmer/Tester Interaction",
+        transcription: "Doctor and nurse Programmer and Tester",
+        image: Meme50
+    } //ProgrammerTester.jpg
 ]
 </script>
