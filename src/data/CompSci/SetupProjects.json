@@ -308,8 +308,8 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "FormatCode": "<template>\n      <p class=\"temp-header\">TEST WEBSITE</p>\n      <router-view></router-view>\n  </template>\n\n\n  <script setup>\n\n  </script>\n\n\n  <style scoped>\n  .temp-header {\n     font-size: 25px;\n  }\n\n  </style>",
-                "CopyCode": "<template>\n\t<p class=\"temp-header\">TEST WEBSITE</p>\n\t<router-view></router-view>\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.temp-header {\n\tfont-size: 25px;\n}\n\n</style>"
+                "FormatCode": "<template>\n      <p class=\"test-header\">TEST WEBSITE</p>\n      <router-view />\n  </template>\n\n\n  <script setup>\n\n  </script>\n\n\n  <style scoped>\n  .test-header {\n     font-size: 25px;\n  }\n\n  </style>",
+                "CopyCode": "<template>\n\t<p class=\"test-header\">TEST WEBSITE</p>\n\t<router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.test-header {\n\tfont-size: 25px;\n}\n\n</style>"
             }
         },
         {
@@ -654,7 +654,7 @@
     "ViteGithubPages": [
         {
             "id": 1,
-            "instruction": "Ensure that the code for your app is already on GitHub and you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good.",
+            "instruction": "Ensure that the code for your app is already on GitHub and that you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -665,7 +665,7 @@
         },
         {
             "id": 2,
-            "instruction": "Change into your local Vite project repository if you're not already in it and open it in VSCode. You can open it using the \"code .\" command if you have it installed.",
+            "instruction": "Change into your local Vite project repository and open it in VSCode. You can open it using the \"code .\" command if you have it installed.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -712,7 +712,7 @@
         },
         {
             "id": 4,
-            "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"<Router>\" change it to include a \"basename\" prop which value will be the name of your github repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.",
+            "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"Router\" change it to include a \"basename\" prop and set its value to be the name of your GitHub repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -739,7 +739,7 @@
         },
         {
             "id": 7,
-            "instruction": "Click on \"Settings\" on the right-hand side of the top-bar with a gear icon next to it."
+            "instruction": "Click on the \"Settings\" tab on the right-hand side of the top-bar. It has a gear icon next to it."
         },
         {
             "id": 8,
