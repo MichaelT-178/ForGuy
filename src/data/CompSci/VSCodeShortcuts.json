@@ -236,6 +236,11 @@
                 "id": 1,
                 "Shortcut": "command + shift + c",
                 "Action": "Create a code block"
+            },
+            {
+                "id": 2,
+                "Shortcut": "shift + return + return + return",
+                "Action": "Move the cursor out of a code block."
             }
         ]
     }
