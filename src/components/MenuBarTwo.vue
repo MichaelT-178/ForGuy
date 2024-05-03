@@ -31,6 +31,7 @@ const isMenuOpen = ref(false);
 
 const toggleSearchBar = () => {
   isSearchBarOpen.value = !isSearchBarOpen.value;
+
   if (isSearchBarOpen.value) {
     isMenuOpen.value = false;
   }
@@ -38,6 +39,7 @@ const toggleSearchBar = () => {
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
+
   if (isMenuOpen.value) {
     isSearchBarOpen.value = false;
   }
