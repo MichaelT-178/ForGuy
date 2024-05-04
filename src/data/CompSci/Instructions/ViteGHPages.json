@@ -1,0 +1,126 @@
+{
+    "Info": [
+        {
+            "title": "Deploy a Vite Project to GitHub Pages",
+            "desc": "How to deploy a project that uses Vite and JS framework to GitHub pages (Vue, React, Etc.). This is a good reference [video](https://youtu.be/yo2bMGnIKE8?si=EpFNOE8JC9Dtyxcz).",
+            "ref": "vite-gh-pages"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "Ensure that the code for your app is already on GitHub and that you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd your-project-name\n  git status\n  cd ..",
+                "CopyCode": "cd your-project-name\ngit status\ncd .."
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Change into your local Vite project repository and open it in VSCode. You can open it using the \"code .\" command if you have it installed.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd your-project-name\n  code .",
+                "CopyCode": "cd your-project-name\ncode ."
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Step 3 if you're using Vue. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import vue from '@vitejs/plugin-vue'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [vue()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [vue()],\n})"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Step 3 if you're using React. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "FormatCode": "import { defineConfig } from 'vite'\n  import react from '@vitejs/plugin-react'\n\n  // https://vitejs.dev/config/\n  export default defineConfig({\n    base: '/name-of-github-repo/',\n    plugins: [react()],\n  })",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [react()],\n})"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Step 4 if you're using Vue router, go to your index.js file in the src/router directory. Where it says \"history: createWebHistory(‘/’)\". Change the createWebHistory parameter to be the name of your GitHub repository starting and ending with slashes. If you're not using Vue-router you can skip this step.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\n  import Home from '../views/Home.vue';\n  import SecondPage from '../views/SecondPage.vue';\n\n  const routes = [\n      {\n\t  path: '/',\n\t  component: Home\n      },\n      {\n\t  path: '/second-page',\n\t  component: SecondPage\n      }\n  ]\n\n  const router = createRouter({\n       history: createWebHistory('/name-of-github-repo/'),\n       routes\n  });\n\n  export default router;",
+                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/name-of-github-repo/'),\n\troutes\n});\n\nexport default router;"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"Router\" change it to include a \"basename\" prop and set its value to be the name of your GitHub repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router basename=\"/name-of-github-repo\">\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Run the following commands in your terminal. Make sure you're still in your local repository using \"pwd\".",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pwd\n  npm run build\n  git add dist -f\n  git commit -m \"Adding dist\"\n  git subtree push --prefix dist origin gh-pages",
+                "CopyCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Now go to your Github repository, You should see that a new branch named \"gh-pages\" has been added."
+        },
+        {
+            "id": 7,
+            "instruction": "Click on the \"Settings\" tab on the right-hand side of the top-bar. It has a gear icon next to it."
+        },
+        {
+            "id": 8,
+            "instruction": "Now under \"Code and automation\" on the left-hand side click on \"Pages\" and wait while it deploys to Github pages. You should eventually see a link there where you can access your site. You should be done now. The following steps are to make changes to your deployed site."
+        },
+        {
+            "id": 9,
+            "instruction": "To update the site while working on the main branch run the following commands. These will update both the main branch and gh-pages branch. You could make a python script that uses the \"os\" library to automate this process.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .\n  git commit -m \"Message\"\n  git push origin main\n  npm run build\n  git add dist -f\n  git commit -m \"Message\"\n  git subtree push --prefix dist origin gh-pages",
+                "CopyCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "If the subtree push doesn't work for some reason try the following. ",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force ",
+                "CopyCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force "
+            }
+        }
+    ]
+}
