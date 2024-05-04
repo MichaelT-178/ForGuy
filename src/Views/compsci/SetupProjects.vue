@@ -2,7 +2,6 @@
     <div class="container">
         <h1 class="gh-header">{{ text[1].title }}</h1>
         <p class="description">{{ text[1].desc }}</p>
-
         <img src="../../assets/React.png" alt="React" class="react-pic"/>
 
         <!-- Display Links -->
@@ -19,73 +18,12 @@
         
         <p class="scroll-down" ref="scrollToRef">INVISIBLE SCROLL DOWN</p>
 
-        <!-- Setup Node.js -->
-        <div v-if="currentSection === 'node'">
-            <h2 class="gh-header-two">{{ text[3].title }}</h2>
-            <p class="description-two">{{ text[3].desc }}</p>
-            <div v-for="point in setupNode" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-
-        <!-- Setup Vue -->
-        <div v-if="currentSection === 'vue'">
-            <h2 class="gh-header-two" ref="vueRef">{{ text[4].title }}</h2>
-            <p class="description-two">{{ text[4].desc }}</p>
-            <div v-for="point in setupVue" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="point.instruction" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-        <!-- Setup React -->
-        <div v-if="currentSection === 'react'">
-            <h2 class="gh-header-two">{{ text[5].title }}</h2>
-            <p class="description-two">{{ text[5].desc }}</p>
-            <div v-for="point in setupReact" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-        <!-- Setup GitHub Pages-->
-        <div v-if="currentSection === 'gh-pages'">
-            <h2 class="gh-header-two">{{ text[6].title }}</h2>
-            <p class="description-two" v-html="createHyperLink(text[6].desc)"></p>
-            <div v-for="point in githubPages" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-        <!-- Setup Vite GitHub Pages-->
-        <div v-if="currentSection === 'vite-gh-pages'">
-            <h2 class="gh-header-two">{{ text[7].title }}</h2>
-            <p class="description-two" v-html="createHyperLink(text[7].desc)"></p>
-            <div v-for="point in viteGHPages" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-        <!-- Intellij IDEA JavaFX -->
-        <div v-if="currentSection === 'intellij'">
-            <h2 class="gh-header-two">{{ text[8].title }}</h2>
-            <p class="description-two" v-html="createHyperLink(text[8].desc)"></p>
-            <div v-for="point in intellijJavaFX" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
-            </div>
-        </div>
-
-         <!-- Eclipse JavaFX -->
-        <div v-if="currentSection === 'eclipse'">
-            <h2 class="gh-header-two">{{ text[9].title }}</h2>
-            <p class="description-two" v-html="createHyperLink(text[9].desc)"></p>
-            <div v-for="point in eclipseJavaFX" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)" /></p>
+        <!-- Dynamic Section for Each Instruction Set -->
+        <div v-for="(set, index) in filteredSets" :key="index">
+            <h2 class="gh-header-two">{{ set.Info[0].title }}</h2>
+            <p class="description-two" v-html="createHyperLink(set.Info[0].desc)"></p>
+            <div v-for="point in set.Instructions" :key="point.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
                 <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
             </div>
         </div>
@@ -96,25 +34,25 @@
 
 
 <script setup>
-import { ref, nextTick, onMounted } from 'vue';
-import AllData from '../../data/CompSci/SetupProjects.json';
+import { computed, ref, nextTick, onMounted } from 'vue';
 import { createHyperLink, highlightLinkText } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
+import AllData from '../../data/CompSci/Instructions/DisplayLinks.json';
+import { AllSets } from '../../data/CompSci/Instructions/InstructionSets.vue';
 
 const jsonData = ref(AllData);
-
 const text = jsonData.value["Text"];
 const displayLinks = jsonData.value["DisplayLinks"];
-const setupNode = jsonData.value["SetupNode"];
-const setupVue = jsonData.value["SetupVue"];
-const setupReact = jsonData.value["SetupReact"];
-const githubPages = jsonData.value["GithubPages"];
-const viteGHPages = jsonData.value["ViteGithubPages"];
-const intellijJavaFX = jsonData.value["IntellijJavaFX"];
-const eclipseJavaFX = jsonData.value["EclipseJavaFX"];
+
+
+const scrollToRef = ref(null);
 
 const currentSection = ref(localStorage.getItem('currentSection') || 'node');
-const scrollToRef = ref(null);
+
+const filteredSets = computed(() => {
+    return AllSets.filter(set => set.Info[0].ref === currentSection.value);
+});
+
 
 const toggleSection = (section) => {
     currentSection.value = section;
@@ -128,24 +66,22 @@ const toggleSection = (section) => {
 };
 
 const scrollToTop = () => {
-  window.scrollTo({
-    top: 400,
-    behavior: 'smooth'
-  });
+    window.scrollTo({
+        top: 400,
+        behavior: 'smooth'
+    });
 };
 
 onMounted(() => {
     const navigationEntries = performance.getEntriesByType('navigation');
-    
     if (navigationEntries.length > 0 && navigationEntries[0].type === 'reload') {
         // Page was just refreshed do nothing
     } else {
-        //Came from a different route
+        // Came from a different route
         currentSection.value = 'node';
         localStorage.setItem('currentSection', 'node');
     }
 });
-
 </script>
 
 

@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+            "desc": "How to make an extremely simple REST Api using Flask and SQLite3 in the backend.",
+            "ref": "flask-sqlite3"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
