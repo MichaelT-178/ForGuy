@@ -1,0 +1,26 @@
+{
+    "Info": [
+        {
+            "title": "How to Install Node.js",
+            "desc": "How to install Node.js before setting up your project.",
+            "ref": "node"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "Check if you already have node installed by running the following command in your terminal. It should print the version if it's installed.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "node -v",
+                "CopyCode": "node -v"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
+        }
+    ]
+}
