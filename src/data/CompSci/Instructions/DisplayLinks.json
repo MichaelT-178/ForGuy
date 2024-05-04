@@ -1,0 +1,62 @@
+{
+    "Text": [
+        {
+            "scrollToTop": "Scroll To Top"
+        },
+        {
+            "title": "Setup Projects",
+            "desc": "This page contains information about setting up various projects."
+        },
+        {
+            "title": "Display Links",
+            "desc": "Use these links to display different instruction sets."
+        }
+    ],
+    "DisplayLinks": [
+        {
+            "id": 1,
+            "name": "How to Setup Node.js",
+            "ref": "node"
+        },
+        {
+            "id": 2,
+            "name": "How to Setup a Vue Project",
+            "ref": "vue"
+        },
+        {
+            "id": 3,
+            "name": "How to Setup a React Project",
+            "ref": "react"
+        },
+        {
+            "id": 4,
+            "name": "Deploy a Vanilla JS Project to GitHub Pages",
+            "ref": "gh-pages"
+        },
+        {
+            "id": 5,
+            "name": "Deploy a Vite Project to GitHub Pages",
+            "ref": "vite-gh-pages"
+        },
+        {
+            "id": 6,
+            "name": "How to Setup a JavaFX Project (Intellij IDEA)",
+            "ref": "intellij"
+        },
+        {
+            "id": 7,
+            "name": "How to Setup a JavaFX Project (Eclipse)",
+            "ref": "eclipse"
+        },
+        {
+            "id": 8,
+            "name": "How to Populate a SQLite3 Database",
+            "ref": "basic-sqlite"
+        },
+        {
+            "id": 9,
+            "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+            "ref": "flask-sqlite3"
+        }
+    ]
+}
