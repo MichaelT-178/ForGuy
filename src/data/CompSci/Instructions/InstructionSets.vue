@@ -8,6 +8,7 @@ import IntellijJavaFX from './IntellijJavaFX.json';
 import EclipseJavaFX from './EclipseJavaFX.json';
 import SQLite3 from './SQLite3.json';
 import FlaskSQLite from './FlaskSQLite.json';
+import TikTok from './TikTok.json';
 
 export const AllSets = [
     SetupNode,
@@ -18,7 +19,8 @@ export const AllSets = [
     IntellijJavaFX,
     EclipseJavaFX,
     SQLite3,
-    FlaskSQLite
+    FlaskSQLite,
+    TikTok
 ]
 
 </script>
