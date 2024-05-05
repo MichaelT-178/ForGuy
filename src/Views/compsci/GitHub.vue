@@ -284,7 +284,7 @@ const scrollToTop = () => {
 };
 
 const createRefContent = (refVal) => {
-    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span>.</span>`;
+    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span></span>`;
 }
 
 const processedTipContent = (tip) => {
