@@ -1,0 +1,99 @@
+{
+    "Info": [
+        {
+            "title": "How to Install TikTok Downloader",
+            "desc": "How to install TikTok Downloader and use it with my CLI tool.",
+            "ref": "tiktok"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "Clone my forked TikTok downloader repository using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git clone https://github.com/MichaelT-178/tiktok-downloader.git",
+                "CopyCode": "git clone https://github.com/MichaelT-178/tiktok-downloader.git"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Change into the tiktok-downloader directory and run the following commands for setup.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd tiktok-downloader\n  mkdir downloads\n  npm i\n  node index\n  cd~",
+                "CopyCode": "cd tiktok-downloader\nmkdir downloads\nnpm i\nnode index\ncd~"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Install the \"termcolor\" package.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 termcolor",
+                "CopyCode": "pip3 termcolor"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Setup the folders for my CLI tool",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mkdir tiktoks\n  mkdir Modern-Python-Files\n  cd Modern-Python-Files\n  touch Tiktok_Downloader.py\n",
+                "CopyCode": "mkdir tiktoks\nmkdir Modern-Python-Files\ncd Modern-Python-Files\ntouch Tiktok_Downloader.py\n"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Open the \"Tiktok_Downloader.py\" file in your text-editor and paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "\"\"\"\n\n  This is a command line interface tool to make using\n  the tiktok-downloader from the link below easier and\n  more efficient.\n\n  https://github.com/n0l3r/tiktok-downloader\n\n  tiktok-downloader and tiktoks should be on your main\n  path for this to work. Ex: /Users/username/tiktoks\n\n  \"\"\"\n\n  import os\n  import subprocess\n  from termcolor import colored as c\n  import requests\n  import re\n  #This command worked to install bs4 -> sudo python3 -m pip install bs4\n\n  def get_website_link(app_link: str) -> str:\n\n      # Get a response from the website\n      response = requests.get(app_link)\n\n      if response.status_code == 200:\n\t  # Use regex to find link in giant HTML response.\n\t  website_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', \n\t\t\t\t\tresponse.text)\n\n\t  if website_link_info:\n\t      website_link = str(website_link_info.group(0))\n\t      return website_link.replace('\"canonical\":\"', '') \\ \n\t\t\t\t .replace('\",\"pageId', '') \\ \n\t\t\t\t .replace(r'\u002F', '/') \\ \n\t\t\t\t .strip()\n\t  else:\n\t      print(c(\"Website link not found in the HTML.\", 'red'))\n\t      return None\n      else:\n\t  print(f\"Failed to fetch the website link. Status code: \", end=\"\")\n\t  print(c(f\"{response.status_code}\", 'red'))\n\t  return None\n\n  def write_to_clipboard(output: str):\n      process = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'},\n\t\t\t\t  stdin=subprocess.PIPE)\n      process.communicate(output.encode('utf-8'))\n\n  print(c(\"Remember that you can NOT download slideshows\", 'red'))\n  print(c(\"The website link will be copied to the clipboard.\", 'blue'))\n  print(c(\"When prompted to \\\"Paste the URL\\\" paste the link.\", 'cyan'))\n\n  link = input(\"Enter TikTok app link: \")\n\n  if link.strip():\n      website_link = get_website_link(link)[:-1] #remove last \" char\n\n      write_to_clipboard(website_link)\n      print(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n      print(f\": {website_link}\")\n      #webbrowser.open(link.strip())\n\n  os.chdir(\"../tiktok-downloader\")\n  os.system('npm i')\n  os.system('node index')\n\n  #Get most recently downloaded video name\n  os.chdir(\"../tiktok-downloader/downloads\")\n  get_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n  name_of_file = get_file_name.decode('utf-8').strip()\n\n  # Name is currently just a giant string of integers. Ex: 721560283403.mp4\n  name = input(\"Rename the file (w/o extension): \")\n\n  name = name if name.strip() else name_of_file[:-4]\n\n  # Rename file\n  os.system(f\"mv {name_of_file} \\\"{name}\\\".mp4\")\n\n  # Move the file\n  os.chdir(\"../..\")\n  os.system(f\"mv ./tiktok-downloader/downloads/\\\"{name}\\\".mp4 ./tiktoks/\")\n\n  # Open finder to ensure it was downloaded correctly.\n  os.system(f\"open -a Finder ./tiktoks/\")\n",
+                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\nimport re\n#This command worked to install bs4 -> sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -> str:\n\n\t# Get a response from the website\n\tresponse = requests.get(app_link)\n\n\tif response.status_code == 200:\n\t\t# Use regex to find link in giant HTML response.\n\t\twebsite_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', response.text)\n\n\t\tif website_link_info:\n\t\t\twebsite_link = str(website_link_info.group(0))\n\t\t\treturn website_link.replace('\"canonical\":\"', '').replace('\",\"pageId', '').replace(r'\u002F', '/').strip()\n\t\telse:\n\t\t\tprint(c(\"Website link not found in the HTML.\", 'red'))\n\t\t\treturn None\n\telse:\n\t\tprint(c(f\"Failed to fetch the website link. Status code: {response.status_code}\", 'red'))\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\nprint(c(\"Later when prompted to \\\"Paste the URL\\\" paste the website link.\", 'cyan'))\n\nlink = input(\"Enter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_link(link)[:-1] #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"Rename the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "When you're done with the setup change back into your top-most directory.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd ~",
+                "CopyCode": "cd ~"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Run my CLI tool using the following commands. Have the TikTok link copied to clipboard and follow the prompts.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd Modern-Python-Files\n  python3 Tiktok_Downloader.py",
+                "CopyCode": "cd Modern-Python-Files\npython3 Tiktok_Downloader.py"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "After you're done go to the \"tiktoks\" folder you created earlier to see your downloaded tiktoks.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "open tiktoks",
+                "CopyCode": "open tiktoks"
+            }
+        }
+    ]
+}

@@ -1,12 +1,12 @@
-with open("yeet.txt", "r") as file:
-    print('{')
-    print('    "settings": [')
-    for line in file:
+import re
 
-        if line.strip() != "":
-            cool = line.strip().replace('"', '\\"')
-            print('        {')
-            print(f'            "text": "{cool}"')
-            print('        },')
-    print('    ]')
-    print('}')
+pattern = r"(?:\s*\.)\b(lastname|firstname|value)\b"
+pattern = r'(?<=\.)(lastname|firstname|value)'
+string = " guy.value"
+
+match = re.search(pattern, string)
+
+if match:
+    print("YEET")
+else:
+    print("No match")
