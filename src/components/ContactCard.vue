@@ -80,7 +80,7 @@ const emailCopied = () => {
 }
 
 .attr {
-  font-weight: 560;
+  font-weight: 800;
 }
 
 .contact-card p {
