@@ -9,14 +9,210 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "",
+            "instruction": "BEFORE YOU DO ANY OF THIS, go to the \"How to Setup a Vue Project\" link and complete all the instructions. Doing so is a prerequisite to this instruction set. I’d strongly recommend naming your project \"vue-sqlite-frontend\"."
+        },
+        {
+            "id": 2,
+            "instruction": "Create a directory for your flask api with an SQLite database.",
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
+                "Language": "Command",
+                "FormatCode": "mkdir flask_and_sqlite",
+                "CopyCode": "mkdir flask_and_sqlite"
             }
+        },
+        {
+            "id": 3,
+            "instruction": "Change into the directory",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite",
+                "CopyCode": "cd flask_and_sqlite"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Install the following package to create a virtual environment.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 install virtualenv",
+                "CopyCode": "pip3 install virtualenv"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Create the virtual environment folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "virtualenv venv",
+                "CopyCode": "virtualenv venv"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Activate the virtual environment folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "source venv/bin/activate",
+                "CopyCode": "source venv/bin/activate"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Now while you're virtual environment is still activated install the following packages.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 install Flask\n  pip3 install Flask-SQLAlchemy\n  pip3 install Flask-CORS\n  pip3 install python-dotenv",
+                "CopyCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "Temporarily deactivate the venv once those are installed using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "deactivate",
+                "CopyCode": "deactivate"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "Create the following files in your folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "touch app.py\n  touch config.py\n  touch db.py\n  touch models.py\n  touch routes.py\n  touch .env ",
+                "CopyCode": "touch app.py\ntouch config.py\ntouch db.py\ntouch models.py\ntouch routes.py\ntouch .env"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "In \"app.py\" paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "from flask import Flask\n  from db import init_db\n  from routes import routes_blueprint\n  from flask_cors import CORS\n  from config import Config\n\n  def create_app():\n      app = Flask(__name__)\n      app.config.from_object(Config)\n\n      CORS(app, resources={r'/*': {'origins': '*'}})\n      init_db(app)\n\n      app.register_blueprint(routes_blueprint)\n      return app\n\n  if __name__ == '__main__':\n      app = create_app()\n      app.run(debug=True)\n",
+                "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
+            }
+        },
+        {
+            "id": 11,
+            "instruction": "Paste the following code in \"config.py\".",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "import os\n\n  basedir = os.path.abspath(os.path.dirname(__file__))\n\n  class Config:\n      SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \\\n        'sqlite:///' + os.path.join(basedir, 'app.db')\n      SQLALCHEMY_TRACK_MODIFICATIONS = False\n",
+                "CopyCode": "import os\n\nbasedir = os.path.abspath(os.path.dirname(__file__))\n\nclass Config:\n\tSQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \\\n\t  'sqlite:///' + os.path.join(basedir, 'app.db')\n\tSQLALCHEMY_TRACK_MODIFICATIONS = False\n"
+            }
+        },
+        {
+            "id": 12,
+            "instruction": "Paste the following code in the \"db.py\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "from flask_sqlalchemy import SQLAlchemy\n\n  db = SQLAlchemy()\n\n  def init_db(app):\n      db.init_app(app)\n\n      with app.app_context():\n\t  db.create_all()\n",
+                "CopyCode": "from flask_sqlalchemy import SQLAlchemy\n\ndb = SQLAlchemy()\n\ndef init_db(app):\n\tdb.init_app(app)\n\n\twith app.app_context():\n\t\tdb.create_all()\n"
+            }
+        },
+        {
+            "id": 13,
+            "instruction": "Paste the following in \"models.py\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "from db import db\n\n  class User(db.Model):\n      id = db.Column(db.Integer, primary_key=True)\n      firstname = db.Column(db.String(80), nullable=False)\n      lastname = db.Column(db.String(120), unique=True, nullable=False)\n\n      def __repr__(self):\n\t  return f'<User {self.username}>'",
+                "CopyCode": "from db import db\n\nclass User(db.Model):\n\tid = db.Column(db.Integer, primary_key=True)\n\tfirstname = db.Column(db.String(80), nullable=False)\n\tlastname = db.Column(db.String(120), unique=True, nullable=False)\n\n\tdef __repr__(self):\n\t\treturn f'<User {self.username}>'"
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "Paste the following in the \"routes.py\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "from flask import Blueprint, request, jsonify\n  from models import User\n  from db import db\n\n  routes_blueprint = Blueprint('routes', __name__)\n\n  @routes_blueprint.route('/users', methods=['POST'])\n  def create_user():\n      firstname = request.json['firstname']\n      lastname = request.json['lastname']\n      user = User(firstname=firstname, lastname=lastname)\n      db.session.add(user)\n      db.session.commit()\n\n      response_data = {\n\t  'firstname': user.firstname,\n\t  'lastname': user.lastname\n      }\n\n      return jsonify(response_data), 201\n\n\n  @routes_blueprint.route('/users/<firstname>', methods=['GET'])\n  def get_user_by_name(firstname):\n      user = User.query.filter_by(firstname=firstname).first()\n\n      if user:\n\t  response_data = {\n\t      'firstname': user.firstname,\n\t      'lastname': user.lastname\n\t  }\n\n\t  return jsonify(response_data), 200\n      else:\n\t  return jsonify({'error': 'User not found'}), 404\n\n\n  @routes_blueprint.route('/db/drop/users', methods=['POST'])\n  def drop_user_table():\n      User.__table__.drop(db.engine)\n      return jsonify({'message': 'All tables dropped!'}), 200\n",
+                "CopyCode": "from flask import Blueprint, request, jsonify\nfrom models import User\nfrom db import db\n\nroutes_blueprint = Blueprint('routes', __name__)\n\n@routes_blueprint.route('/users', methods=['POST'])\ndef create_user():\n\tfirstname = request.json['firstname']\n\tlastname = request.json['lastname']\n\tuser = User(firstname=firstname, lastname=lastname)\n\tdb.session.add(user)\n\tdb.session.commit()\n\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 201\n\n\n@routes_blueprint.route('/users/<firstname>', methods=['GET'])\ndef get_user_by_name(firstname):\n\tuser = User.query.filter_by(firstname=firstname).first()\n\tif user:\n\t\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 200\n\telse:\n\t\treturn jsonify({'error': 'User not found'}), 404\n\n\n@routes_blueprint.route('/db/drop/users', methods=['POST'])\ndef drop_user_table():\n\tUser.__table__.drop(db.engine)\n\treturn jsonify({'message': 'All tables dropped!'}), 200"
+            }
+        },
+        {
+            "id": 15,
+            "instruction": "Paste the following in \".env\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "DATABASE_URL=sqlite:///mydatabase.db",
+                "CopyCode": "DATABASE_URL=sqlite:///mydatabase.db"
+            }
+        },
+        {
+            "id": 16,
+            "instruction": "Now change into your \"vue-sqlite-frontend\" folder you created in step 1. Install axios so you can so you can make HTTP requests to your REST Api.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd vue-sqlite-frontend\n  npm install axios",
+                "CopyCode": "cd vue-sqlite-frontend\nnpm install axios"
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files contents and paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "DisplayLang": "Vue",
+                "FormatCode": "<template>\n      <div>\n\t<input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t<input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t<button @click=\"createUser\">Create User</button>\n\n\t<div>\n\t  <input v-model=\"searchFirstName\" placeholder=\"Search First Name\">\n\t  <button @click=\"searchUser\">Search</button>\n\t</div>\n\n\t<table v-if=\"users.length\">\n\t  <thead>\n\t    <tr>\n\t      <th>First Name</th>\n\t      <th>Last Name</th>\n\t    </tr>\n\t  </thead>\n\t  <tbody>\n\t    <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t      <td>{{ user.firstname }}</td>\n\t      <td>{{ user.lastname }}</td>\n\t    </tr>\n\t  </tbody>\n\t</table>\n\n\t<div>\n\t   <button @click=\"dropTables\">Drop Tables</button>\n\t</div>\n\n     </div>\n  </template>\n\n\n  <script setup>\n  import { ref } from 'vue';\n  import axios from 'axios';\n\n  const firstName = ref('');\n  const lastName = ref('');\n  const searchFirstName = ref('');\n  const users = ref([]);\n\n  const createUser = async () => {\n      try {\n\t  const response = await axios.post('http://127.0.0.1:5000/users',{\n\t      firstname: firstName.value,\n\t      lastname: lastName.value\n\t  });\n\n\t  alert(`User Created: ${response.data.firstname}`);\n      } catch (error) {\n\t  console.error('There was an error!', error);\n      }\n  }\n\n  const searchUser = async () => {\n      try {\n\t  const response = await axios.get(\n\t      `http://127.0.0.1:5000/users/${searchFirstName.value}`\n\t  );\n\n\t  users.value = [response.data];\n      } catch (error) {\n\t  console.error('There was an error!', error);\n\t  users.value = [];\n      }\n  }\n\n  const dropTables = async () => {\n      try {\n\t  await axios.post('http://127.0.0.1:5000/db/drop/users');\n\t  alert('All tables dropped successfully!');\n      } catch (error) {\n\t  console.error('Error dropping tables:', error);\n      }\n  }\n\n  </script>",
+                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t   <!-- Drop Tables Button -->\n\t   <div>\n\t\t  <button @click=\"dropTables\">Drop Tables</button>\n\t   </div>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from 'axios';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tconst response = await axios.post('http://127.0.0.1:5000/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`http://127.0.0.1:5000/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\nconst dropTables = async () => {\n\ttry {\n\t\tawait axios.post('http://127.0.0.1:5000/db/drop/users');\n\t\talert('All tables dropped successfully!');\n\t} catch (error) {\n\t\tconsole.error('Error dropping tables:', error);\n\t}\n}\n\n</script>"
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "Now open TWO different terminals. In the first one, run your Flask api using the following commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite\n  source venv/bin/activate\n  flask run",
+                "CopyCode": "cd flask_and_sqlite\nsource venv/bin/activate\nflask run "
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "In your second terminal run the following commands. Open the link to see your frontend.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd vue-sqlite-frontend\n  npm run dev",
+                "CopyCode": "cd vue-sqlite-frontend\nnpm run dev"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "In your flask repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input value in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
         }
     ]
 }

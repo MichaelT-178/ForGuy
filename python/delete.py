@@ -1,18 +1,13 @@
-import sqlite3
+from termcolor import colored as c
 
-conn = sqlite3.connect('Cars.db')
 
-cursor = conn.cursor()
+cool = "nice"
 
-cursor.execute('''
-	CREATE TABLE Cars (
-		Maker VARCHAR(20),
-		Color VARCHAR(20),
-		Year INT
-	);
-''')
+print(f"Failed to fetch the website link. Status code:", end="")
+print(c(f" {cool}", 'red'))
 
-conn.commit()
-conn.close()
 
-print("\033[92m" + "Cars table successfully created!" + "\033[0m")
+
+
+
+print(c(f\" {response.status_code}\", 'red'))

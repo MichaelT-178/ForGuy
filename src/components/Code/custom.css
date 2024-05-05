@@ -37,7 +37,8 @@ code {
 /* Java class name and primitive types*/
 .token.class-name,
 .token.primitive-type,
-.token.yellow-js {
+.token.yellow-js,
+.token.always-yellow {
     color: #E5C07B
 }
 
@@ -51,7 +52,8 @@ code {
     color: #ABB2BF;
 }
 
-.token.comment {
+.token.comment,
+.token.html-comment {
     color: #5C6370
 }
 
@@ -67,7 +69,8 @@ code {
 .token.function,
 .token.function-variable.function,
 .token.always-blue,
-.token.blue-js {
+.token.blue-js,
+.token.always-blue-two {
     color: #61AFEF;
 }
 
