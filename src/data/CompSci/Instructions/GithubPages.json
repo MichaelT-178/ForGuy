@@ -17,7 +17,7 @@
         },
         {
             "id": 3,
-            "instruction": "Go to your repository. In the top click on \"Settings\" with the gear icon next to it."
+            "instruction": "Go to your repository. In the top-right click on \"Settings\" with the gear icon next to it."
         },
         {
             "id": 4,
@@ -33,7 +33,7 @@
         },
         {
             "id": 7,
-            "instruction": "Wait about a minute, then refresh the page. You should now see the link to your GitHub pages website."
+            "instruction": "Wait about 1-2 minutes, then refresh the page. You should now see the link to your GitHub pages website."
         }
     ]
 }
