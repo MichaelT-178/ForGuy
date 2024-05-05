@@ -672,6 +672,11 @@
             "Command": "git diff",
             "Description": "Show differences between commits, branches, files, etc.",
             "Example": "git diff"
+        },
+        {
+            "Command": "git reset",
+            "Description": "Unstage all changes (undo git add .)",
+            "Example": "git reset"
         }
     ],
     "CreateFork": [
@@ -791,6 +796,17 @@
                 "Language": "Command",
                 "FormatCode": "git push origin main --force",
                 "CopyCode": "git push origin main --force"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "If you get an error that says \"error: src refspec main does not match any\" the repo might not have a main branch. Try master instead.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git push origin master --force",
+                "CopyCode": "git push origin master --force"
             }
         }
     ],
