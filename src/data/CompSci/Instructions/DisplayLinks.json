@@ -50,7 +50,7 @@
         },
         {
             "id": 8,
-            "name": "How to Populate a SQLite3 Database",
+            "name": "How to Populate and Query a SQLite3 Database",
             "ref": "basic-sqlite"
         },
         {
