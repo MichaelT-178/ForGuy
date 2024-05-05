@@ -1,7 +1,7 @@
 {
     "Info": [
         {
-            "title": "How to Install TikTok Downloader",
+            "title": "How to Install and Use TikTok Downloader",
             "desc": "How to install TikTok Downloader and use it with my CLI tool.",
             "ref": "tiktok"
         }
@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Clone my forked TikTok downloader repository using the following command.",
+            "instruction": "Clone my forked tiktok-downloader repository using the following command.",
             "Code": {
                 "Name": "",
                 "Description": "",
