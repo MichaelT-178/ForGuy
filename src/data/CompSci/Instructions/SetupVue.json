@@ -130,7 +130,7 @@
         },
         {
             "id": 12,
-            "instruction": "In the index.js file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work. Save the file when you're finished (command + s).",
+            "instruction": "In the \"index.js\" file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work. Save the file when you're finished (command + s).",
             "Code": {
                 "Name": "",
                 "Description": "",
