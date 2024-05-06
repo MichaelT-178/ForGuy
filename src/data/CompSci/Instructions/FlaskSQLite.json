@@ -183,8 +183,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd src\n  touch axiosInstance.js",
-                "CopyCode": "cd src\ntouch axiosInstance.js"
+                "FormatCode": "touch src/axiosInstance.js",
+                "CopyCode": "touch src/axiosInstance.js"
             }
         },
         {
@@ -235,6 +235,31 @@
         {
             "id": 22,
             "instruction": "In your flask repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input value in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
+        },
+        {
+            "id": 23,
+            "instruction": "You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 23-24.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Error",
+                "FormatCode": "Access to XMLHttpRequest at 'http://127.0.0.1:5000/users' from origin\n  'http://localhost:5173' has been blocked by CORS policy: Response to\n  preflight request doesn't pass access control check:\n  No 'Access-Control-Allow-Origin' header is present on the requested\n  resource.",
+                "CopyCode": "Access to XMLHttpRequest at 'http://127.0.0.1:5000/users' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+            }
+        },
+        {
+            "id": 23,
+            "instruction": "In your app.py file paste the following code. Make sure the HTTP links are the same ones being used by your computer. Try this code out and see if it works. Make sure to rerun your backend and frontend code after you make changes.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "from flask import Flask\n  from db import init_db\n  from routes import routes_blueprint\n  from flask_cors import CORS\n  from config import Config\n\n  def create_app():\n      app = Flask(__name__)\n      app.config.from_object(Config)\n\n      CORS(app, resources={r'/*': {'origins': ['http://localhost:5173',\n\t\t\t\t\t       'http://127.0.0.1:5173']}})\n      init_db(app)\n\n      app.register_blueprint(routes_blueprint)\n      return app\n\n  if __name__ == '__main__':\n      app = create_app()\n      app.run(debug=True)\n",
+                "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
+            }
         }
+
+        
     ]
 }
