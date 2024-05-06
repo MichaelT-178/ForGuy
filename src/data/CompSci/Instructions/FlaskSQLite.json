@@ -178,18 +178,40 @@
         },
         {
             "id": 17,
-            "instruction": "Now open your Vue code and go to src -> views and open \"Home.vue\". Delete the files contents and paste the following code.",
+            "instruction": "In the src folder create an axios instance file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd src\n  touch axiosInstance.js",
+                "CopyCode": "cd src\ntouch axiosInstance.js"
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "FormatCode": "import axios from 'axios';\n\n  axios.defaults.baseURL = 'http://127.0.0.1:5000';\n  axios.defaults.headers.common['Content-Type'] = 'application/json';\n\n  export default axios;",
+                "CopyCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://127.0.0.1:5000';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files content and paste the following code.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
                 "DisplayLang": "Vue",
-                "FormatCode": "<template>\n      <div>\n\t<input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t<input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t<button @click=\"createUser\">Create User</button>\n\n\t<div>\n\t  <input v-model=\"searchFirstName\" placeholder=\"Search First Name\">\n\t  <button @click=\"searchUser\">Search</button>\n\t</div>\n\n\t<table v-if=\"users.length\">\n\t  <thead>\n\t    <tr>\n\t      <th>First Name</th>\n\t      <th>Last Name</th>\n\t    </tr>\n\t  </thead>\n\t  <tbody>\n\t    <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t      <td>{{ user.firstname }}</td>\n\t      <td>{{ user.lastname }}</td>\n\t    </tr>\n\t  </tbody>\n\t</table>\n\n\t<div>\n\t   <button @click=\"dropTables\">Drop Tables</button>\n\t</div>\n\n     </div>\n  </template>\n\n\n  <script setup>\n  import { ref } from 'vue';\n  import axios from 'axios';\n\n  const firstName = ref('');\n  const lastName = ref('');\n  const searchFirstName = ref('');\n  const users = ref([]);\n\n  const createUser = async () => {\n      try {\n\t  const response = await axios.post('http://127.0.0.1:5000/users',{\n\t      firstname: firstName.value,\n\t      lastname: lastName.value\n\t  });\n\n\t  alert(`User Created: ${response.data.firstname}`);\n      } catch (error) {\n\t  console.error('There was an error!', error);\n      }\n  }\n\n  const searchUser = async () => {\n      try {\n\t  const response = await axios.get(\n\t      `http://127.0.0.1:5000/users/${searchFirstName.value}`\n\t  );\n\n\t  users.value = [response.data];\n      } catch (error) {\n\t  console.error('There was an error!', error);\n\t  users.value = [];\n      }\n  }\n\n  const dropTables = async () => {\n      try {\n\t  await axios.post('http://127.0.0.1:5000/db/drop/users');\n\t  alert('User table dropped successfully!');\n      } catch (error) {\n\t  console.error('Error dropping tables:', error);\n      }\n  }\n\n  </script>",
-                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t   <!-- Drop Tables Button -->\n\t   <div>\n\t\t  <button @click=\"dropTables\">Drop Tables</button>\n\t   </div>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from 'axios';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tconst response = await axios.post('http://127.0.0.1:5000/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`http://127.0.0.1:5000/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\nconst dropTables = async () => {\n\ttry {\n\t\tawait axios.post('http://127.0.0.1:5000/db/drop/users');\n\t\talert('User table dropped successfully!');\n\t} catch (error) {\n\t\tconsole.error('Error dropping tables:', error);\n\t}\n}\n\n</script>"
+                "FormatCode": "<template>\n      <div>\n\t<input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t<input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t<button @click=\"createUser\">Create User</button>\n\n\t<div>\n\t  <input v-model=\"searchFName\" placeholder=\"Search First Name\">\n\t  <button @click=\"searchUser\">Search</button>\n\t</div>\n\n\t<table v-if=\"users.length\">\n\t  <thead>\n\t    <tr>\n\t      <th>First Name</th>\n\t      <th>Last Name</th>\n\t    </tr>\n\t  </thead>\n\t  <tbody>\n\t    <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t      <td>{{ user.firstname }}</td>\n\t      <td>{{ user.lastname }}</td>\n\t    </tr>\n\t  </tbody>\n\t</table>\n\n\t<div>\n\t   <button @click=\"dropTables\">Drop Tables</button>\n\t</div>\n\n     </div>\n  </template>\n\n\n  <script setup>\n  import { ref } from 'vue';\n  import axios from '../axiosInstance.js';\n\n  const firstName = ref('');\n  const lastName = ref('');\n  const searchFName = ref('');\n  const users = ref([]);\n\n  const createUser = async () => {\n      try {\n\t  const response = await axios.post('/users', {\n\t      firstname: firstName.value,\n\t      lastname: lastName.value\n\t  });\n\n\t  alert(`User Created: ${response.data.firstname}`);\n      } catch (error) {\n\t  console.error('There was an error!', error);\n      }\n  }\n\n  const searchUser = async () => {\n      try {\n\t  const response = await axios.get(`/users/${searchFName.value}`);\n\t  users.value = [response.data];\n      } catch (error) {\n\t  console.error('There was an error!', error);\n\t  users.value = [];\n      }\n  }\n\n  const dropTables = async () => {\n      try {\n\t  await axios.post('/db/drop/users');\n\t  alert('User table dropped successfully!');\n      } catch (error) {\n\t  console.error('Error dropping tables:', error);\n      }\n  }\n\n  </script>",
+                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t   <!-- Drop Tables Button -->\n\t   <div>\n\t\t  <button @click=\"dropTables\">Drop Tables</button>\n\t   </div>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\nconst dropTables = async () => {\n\ttry {\n\t\tawait axios.post('/db/drop/users');\n\t\talert('User table dropped successfully!');\n\t} catch (error) {\n\t\tconsole.error('Error dropping tables:', error);\n\t}\n}\n\n</script>"
             }
         },
         {
-            "id": 18,
+            "id": 20,
             "instruction": "Now open TWO different terminals. In the first one, run your Flask api using the following commands.",
             "Code": {
                 "Name": "",
@@ -200,7 +222,7 @@
             }
         },
         {
-            "id": 19,
+            "id": 21,
             "instruction": "In your second terminal run the following commands. Open the link to see your frontend.",
             "Code": {
                 "Name": "",
@@ -211,7 +233,7 @@
             }
         },
         {
-            "id": 20,
+            "id": 22,
             "instruction": "In your flask repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input value in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
         }
     ]
