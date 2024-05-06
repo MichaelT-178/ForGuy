@@ -123,7 +123,7 @@
         },
         {
             "id": 17,
-            "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"Cars.db\" in the results."
+            "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"Cars.db\" file in the results."
         }
     ]
 }
