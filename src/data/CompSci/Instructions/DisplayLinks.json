@@ -72,6 +72,21 @@
             "id": 12,
             "name": "How Add a Language to the Prism Library",
             "ref": "prism"
+        },
+        {
+            "id": 13,
+            "name": "How to Setup Cisco Secure Client and a VPN.",
+            "ref": "cisco"
+        },
+        {
+            "id": 14,
+            "name": "How to Setup a PHP and MySQL Project for UNCW.",
+            "ref": "php"
+        },
+        {
+            "id": 15,
+            "name": "How to Run an iOS app in Developer Mode",
+            "ref": "developermode"
         }
     ]
 }
