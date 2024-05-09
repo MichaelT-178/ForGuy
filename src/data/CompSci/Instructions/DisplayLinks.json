@@ -67,6 +67,11 @@
             "id": 11,
             "name": "How to Install and Use TikTok Downloader",
             "ref": "tiktok"
+        },
+        {
+            "id": 12,
+            "name": "How Add a Language to the Prism Library",
+            "ref": "prism"
         }
     ]
 }
