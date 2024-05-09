@@ -23,7 +23,7 @@
             <h2 class="gh-header-two">{{ set.Info[0].title }}</h2>
             <p class="description-two" v-html="createHyperLink(set.Info[0].desc)"></p>
             <div v-for="point in set.Instructions" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createDownloadLink(createHyperLink(point.instruction))"></span></p>
                 <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
             </div>
         </div>
@@ -35,7 +35,7 @@
 
 <script setup>
 import { computed, ref, nextTick, onMounted } from 'vue';
-import { createHyperLink, highlightLinkText } from "../../utils/Markdown.vue";
+import { createHyperLink, highlightLinkText, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 import AllData from '../../data/CompSci/Instructions/DisplayLinks.json';
 import { AllSets } from '../../data/CompSci/Instructions/InstructionSets.vue';
@@ -154,7 +154,7 @@ onMounted(() => {
     margin-left: 20px;
     margin-bottom: 24px;
     font-size: 19px;
-    width: 690px;
+    width: 640px;
 }
 
 .bullet-pt-span {
