@@ -26,7 +26,10 @@ code {
 /* Teal */
 .token.builtin,
 .token.teal-highlight,
-.token.teal-js {
+.token.teal-js,
+.token.regex-source,
+.token.regex-delimiter,
+.token.fxml-teal {
     color: #56B6C2;
 }
 
@@ -86,6 +89,7 @@ code {
 }
 
 .token.string,
+.token.green-js,
 .token.fxml-green {
     color: #98C379;
 }
@@ -93,6 +97,7 @@ code {
 .token.property,
 .token.self-red,
 .token.red-js,
+.token.red-js-two,
 .token.fxml-red {
     color: #E06C75;
 }

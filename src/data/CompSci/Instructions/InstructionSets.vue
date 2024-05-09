@@ -10,6 +10,7 @@ import SQLite3 from './SQLite3.json';
 import FlaskSQLite from './FlaskSQLite.json';
 import SQLiteApp from './DeployApp.json';
 import TikTok from './TikTok.json';
+import PrismLang from './PrismLang.json';
 
 export const AllSets = [
     SetupNode,
@@ -22,7 +23,8 @@ export const AllSets = [
     SQLite3,
     FlaskSQLite,
     SQLiteApp,
-    TikTok
+    TikTok,
+    PrismLang
 ]
 
 </script>
