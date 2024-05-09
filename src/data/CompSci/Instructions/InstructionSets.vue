@@ -11,6 +11,10 @@ import FlaskSQLite from './FlaskSQLite.json';
 import SQLiteApp from './DeployApp.json';
 import TikTok from './TikTok.json';
 import PrismLang from './PrismLang.json';
+import CiscoSecure from './CiscoSecure.json';
+import PhpAndMySQL from './PhpAndMySQL.json';
+import DeveloperMode from './DeveloperMode.json';
+
 
 export const AllSets = [
     SetupNode,
@@ -24,7 +28,10 @@ export const AllSets = [
     FlaskSQLite,
     SQLiteApp,
     TikTok,
-    PrismLang
+    PrismLang,
+    CiscoSecure,
+    PhpAndMySQL,
+    DeveloperMode
 ]
 
 </script>
