@@ -561,8 +561,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "brew install git",
-                "CopyCode": "brew install git"
+                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/\n  install/HEAD/install.sh)\"",
+                "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
             }
         },
         {
@@ -571,7 +571,7 @@
         },
         {
             "id": 3,
-            "instruction": "Don't edit ReadMes on GitHub do it in a local repo/.md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes.",
+            "instruction": "Don't edit ReadMes on GitHub do it in a local repo/md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -582,7 +582,7 @@
         },
         {
             "id": 4,
-            "instruction": "If you want to remove git from a folder use the following command.",
+            "instruction": "If you want to remove git from a folder/directory use the following command.",
             "Code": {
                 "Name": "",
                 "Description": "",

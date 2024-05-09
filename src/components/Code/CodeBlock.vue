@@ -32,6 +32,7 @@ import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-fxml';
 import 'prismjs/components/prism-json';
+import 'prismjs/components/prism-customyaml';
 import 'prismjs/themes/prism-coy.css';
 import './custom.css';
 
