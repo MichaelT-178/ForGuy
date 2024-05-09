@@ -21,7 +21,6 @@
 </template>
 
 
-
 <script setup>
 import { ref, computed, watchEffect } from 'vue';
 import { highlightLinkText } from '../../utils/Markdown.vue'
