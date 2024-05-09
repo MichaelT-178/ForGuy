@@ -2,7 +2,7 @@
     "Info": [
         {
             "title": "Deploy a Vite Project to GitHub Pages",
-            "desc": "How to deploy a project that uses Vite and JS framework to GitHub pages (Vue, React, Etc.). This is a good reference [video](https://youtu.be/yo2bMGnIKE8?si=EpFNOE8JC9Dtyxcz).",
+            "desc": "How to deploy a project that uses Vite and a JS framework to GitHub pages (Vue, React, Etc.). This is a good reference [video](https://youtu.be/yo2bMGnIKE8?si=EpFNOE8JC9Dtyxcz).",
             "ref": "vite-gh-pages"
         }
     ],
