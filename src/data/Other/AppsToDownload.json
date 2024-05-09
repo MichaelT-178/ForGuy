@@ -42,6 +42,11 @@
             "Link": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106"
         },
         {
+            "Name": "GitHub",
+            "Description": "Can be used to help with authentication and allows you to access your repositories on your phone.",
+            "Link": "https://apps.apple.com/us/app/github/id1477376905"
+        },
+        {
             "Name": "Microsoft Teams",
             "Description": "This is the GPS app I use. It's extremely useful when driving. It can help you find optimal routes, calculates new routes if you make a wrong turn, and has settings that allow you to avoid freeways, toll roads, etc. It also shows you things like where cops are, crashes, hazards, etc. Overall a super helpful app and I'd definitely recommend it.",
             "Link": "https://apps.apple.com/us/app/microsoft-teams/id1113153706"
