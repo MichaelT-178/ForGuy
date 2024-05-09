@@ -13,7 +13,7 @@
         },
         {
             "id": 2,
-            "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download is [here](https://gluonhq.com/products/javafx/).",
+            "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download it [here](https://gluonhq.com/products/javafx/).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -24,7 +24,7 @@
         },
         {
             "id": 3,
-            "instruction": "When you download the JavaFX SDK note where it is downloaded and what version it is. You'll need this information later."
+            "instruction": "When you download the JavaFX SDK, note where it is downloaded and what version it is. You'll need this information later."
         },
         {
             "id": 4,
@@ -44,7 +44,7 @@
         },
         {
             "id": 8,
-            "instruction": "Once the JDK is done downloading press the \"Next\" button. Then on the next screen just press \"Create\" without checking any of the boxes."
+            "instruction": "Once the JDK is done installing, press the \"Next\" button. Then on the next screen just press \"Create\" without checking any of the boxes."
         },
         {
             "id": 9,

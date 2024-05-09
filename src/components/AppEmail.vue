@@ -20,6 +20,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Waze%0A` +
 `https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106%0A%0A` +
 
+`GitHub%0A` +
+`https://apps.apple.com/us/app/github/id1477376905%0A%0A` +
+
 `Microsoft Teams%0A` +
 `https://apps.apple.com/us/app/microsoft-teams/id1113153706%0A%0A` +
 
