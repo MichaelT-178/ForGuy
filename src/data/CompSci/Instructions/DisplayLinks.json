@@ -54,6 +54,11 @@
             "ref": "basic-sqlite"
         },
         {
+            "id": 20,
+            "name": "How to Setup an Amazon Web Services Account",
+            "ref": "aws"
+        },
+        {
             "id": 9,
             "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
             "ref": "flask-sqlite3"
