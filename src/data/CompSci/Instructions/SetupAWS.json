@@ -21,7 +21,7 @@
         },
         {
             "id": 4,
-            "instruction": "On this page click the \"Complete your AWS registration\" button. Then fill out your billing information. Note you will NOT be charged for usage below AWS Free Tier Limits. They might hold $1 until they verify your identity. See here to learn more about the free tier limits. Continue and do the necessary verifications."
+            "instruction": "On this page click the \"Complete your AWS registration\" button. Then fill out your billing information. Note you will NOT be charged for usage below AWS Free Tier Limits. They might hold $1 until they verify your identity. Press \"Continue\" and do the necessary verifications."
         },
         {
             "id": 5,
@@ -189,7 +189,7 @@
         },
         {
             "id": 39,
-            "instruction": "Enter your credentials from the testuser_accessKeys.csv file you just downloaded. \"Default region name [None]\" should be \"us-east-1\". Then when prompted for \"Default output format [None]\" put \"json\"."
+            "instruction": "Enter your credentials from the \"testuser_accessKeys.csv\" file you just downloaded. \"Default region name [None]\" should be \"us-east-1\". Then when prompted for \"Default output format [None]\" put \"json\"."
         },
         {
             "id": 40,
@@ -204,7 +204,15 @@
         },
         {
             "id": 41,
-            "instruction": "Paste the following line in the bash_profile \"export PATH=~/.local/bin:$PATH\". To exit do \"control + o\". Then return. Then \"control + x\"."
+            "instruction": "Paste the following line in the bash_profile \"export PATH=~/.local/bin:$PATH\". To exit do \"control + o\". Then \"return\". Then \"control + x\".",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Copy and Paste",
+                "FormatCode": "export PATH=~/.local/bin:$PATH",
+                "CopyCode": "export PATH=~/.local/bin:$PATH"
+            }
         },
         {
             "id": 42,
