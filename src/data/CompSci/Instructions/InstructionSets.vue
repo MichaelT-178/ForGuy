@@ -7,6 +7,7 @@ import ViteGHPages from './ViteGHPages.json';
 import IntellijJavaFX from './IntellijJavaFX.json';
 import EclipseJavaFX from './EclipseJavaFX.json';
 import SQLite3 from './SQLite3.json';
+import SetupAWS from './SetupAWS.json';
 import FlaskSQLite from './FlaskSQLite.json';
 import SQLiteApp from './DeployApp.json';
 import TikTok from './TikTok.json';
@@ -25,6 +26,7 @@ export const AllSets = [
     IntellijJavaFX,
     EclipseJavaFX,
     SQLite3,
+    SetupAWS,
     FlaskSQLite,
     SQLiteApp,
     TikTok,
