@@ -259,7 +259,5 @@
                 "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
             }
         }
-
-        
     ]
 }
