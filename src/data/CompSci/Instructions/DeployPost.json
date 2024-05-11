@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+            "desc": "",
+            "ref": "deploy-PostgreSQL"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "First do the following",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "ls",
+                "CopyCode": "ls"
+            }
+        }
+    ]
+}

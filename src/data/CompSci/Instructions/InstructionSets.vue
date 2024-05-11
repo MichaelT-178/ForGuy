@@ -8,9 +8,15 @@ import IntellijJavaFX from './IntellijJavaFX.json';
 import EclipseJavaFX from './EclipseJavaFX.json';
 import SQLite3 from './SQLite3.json';
 import SetupAWS from './SetupAWS.json';
+import SetupDocker from './docker.json'
 import FlaskSQLite from './FlaskSQLite.json';
-import SQLiteApp from './DeployApp.json';
+import DeploySQLite from './DeployApp.json';
+import FlaskPost from './FlaskPost.json';
+import DeployPost from './DeployPost.json';
+import SpringApp from './SpringApp.json';
+import DeploySpring from './DeploySpring.json';
 import TikTok from './TikTok.json';
+import YouTube from './Youtube.json';
 import PrismLang from './PrismLang.json';
 import CiscoSecure from './CiscoSecure.json';
 import PhpAndMySQL from './PhpAndMySQL.json';
@@ -27,9 +33,15 @@ export const AllSets = [
     EclipseJavaFX,
     SQLite3,
     SetupAWS,
+    SetupDocker,
     FlaskSQLite,
-    SQLiteApp,
+    DeploySQLite,
+    FlaskPost,
+    DeployPost,
+    SpringApp,
+    DeploySpring,
     TikTok,
+    YouTube,
     PrismLang,
     CiscoSecure,
     PhpAndMySQL,
