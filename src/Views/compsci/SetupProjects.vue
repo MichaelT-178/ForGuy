@@ -35,10 +35,15 @@
 
 <script setup>
 import { computed, ref, nextTick, onMounted } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
 import { createHyperLink, highlightLinkText, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 import AllData from '../../data/CompSci/Instructions/DisplayLinks.json';
 import { AllSets } from '../../data/CompSci/Instructions/InstructionSets.vue';
+
+
+const router = useRouter();
+const route = useRoute();
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"];
@@ -53,10 +58,11 @@ const filteredSets = computed(() => {
     return AllSets.filter(set => set.Info[0].ref === currentSection.value);
 });
 
-
 const toggleSection = (section) => {
     currentSection.value = section;
     localStorage.setItem('currentSection', section);
+
+    router.push(`/CompSci/SetupProjects/${section}`);
 
     nextTick(() => {
         if (scrollToRef.value) {
@@ -72,16 +78,43 @@ const scrollToTop = () => {
     });
 };
 
+//Gets ""
+const getSectionFromLink = (path) => {
+    const segments = path.split('/').filter(segment => segment !== '');
+    return segments.length > 0 ? segments[segments.length - 1] : '';
+}
+
+
 onMounted(() => {
     const navigationEntries = performance.getEntriesByType('navigation');
+
+    const currentLink = route.fullPath;
+    const linkSection = (currentLink.includes("SetupProjects/")) ? getSectionFromLink(currentLink) : null;
+
+
     if (navigationEntries.length > 0 && navigationEntries[0].type === 'reload') {
         // Page was just refreshed do nothing
     } else {
         // Came from a different route
-        currentSection.value = 'node';
-        localStorage.setItem('currentSection', 'node');
+        const section = linkSection ?? 'node';
+
+        currentSection.value = section;
+        localStorage.setItem('currentSection', section);
+
+        if (linkSection != null) {
+            nextTick(() => {
+                if (scrollToRef.value) {
+                    scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
+
+                    setTimeout(() => {
+                        window.scrollBy(0, -25);
+                    }, 850);
+                }
+            });
+        }
     }
 });
+
 </script>
 
 
@@ -102,7 +135,7 @@ onMounted(() => {
 
 .react-pic {
     width: 690px;
-    height: 280px;
+    height: 290px;
     margin-top: -5px;
     margin-bottom: 20px;
 }
