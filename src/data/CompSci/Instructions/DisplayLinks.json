@@ -54,42 +54,72 @@
             "ref": "basic-sqlite"
         },
         {
-            "id": 20,
+            "id": 9,
             "name": "How to Setup an Amazon Web Services Account",
             "ref": "aws"
         },
         {
-            "id": 9,
+            "id": 10,
+            "name": "How to Install and Setup Docker",
+            "ref": "docker"
+        },
+        {
+            "id": 11,
             "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
             "ref": "flask-sqlite3"
         },
         {
-            "id": 10,
+            "id": 12,
             "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
             "ref": "deploy-sqlite"
         },
         {
-            "id": 11,
+            "id": 13,
+            "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+            "ref": "flask-PostgreSQL"
+        },
+        {
+            "id": 14,
+            "name": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+            "ref": "deploy-PostgreSQL"
+        },
+        {
+            "id": 15,
+            "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+            "ref": "react-sqlite"
+        },
+        {
+            "id": 16,
+            "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+            "ref": "deploy-spring"
+        },
+        {
+            "id": 17,
             "name": "How to Install and Use TikTok Downloader",
             "ref": "tiktok"
         },
         {
-            "id": 12,
+            "id": 18,
+            "name": "How to Install and Use YouTube Downloader",
+            "ref": "youtube"
+        },
+        {
+            "id": 19,
             "name": "How Add a Language to the Prism Library",
             "ref": "prism"
         },
         {
-            "id": 13,
+            "id": 20,
             "name": "How to Setup Cisco Secure Client and a VPN.",
             "ref": "cisco"
         },
         {
-            "id": 14,
+            "id": 21,
             "name": "How to Setup a PHP and MySQL Project for UNCW.",
             "ref": "php"
         },
         {
-            "id": 15,
+            "id": 22,
             "name": "How to Run an iOS app in Developer Mode",
             "ref": "developermode"
         }
