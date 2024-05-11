@@ -74,7 +74,7 @@ const routes = [
         component: OffersReceived
     },
     {
-        path: '/jobs/InterviewTips',
+        path: '/Jobs/InterviewTips',
         component: InterviewTips
     },
     {
@@ -130,35 +130,41 @@ const routes = [
         component: Certifications
     },
     {
-        path: '/compsci/VisualStudioCode',
+        path: '/CompSci/VisualStudioCode',
         component: VisualStudioCode
     },
     {
-        path: '/compsci/GitHub',
+        path: '/CompSci/GitHub',
         component: GitHubView
     },
     {
-        path: '/compsci/VSCodeSettings',
+        path: '/CompSci/VSCodeSettings',
         component: VSCodeSettings
     },
     {
-        path: '/compsci/VSCodeExtensions',
+        path: '/CompSci/VSCodeExtensions',
         component: VSCodeExtensions
     },
     {
-        path: '/compsci/VSCodeShortcuts',
+        path: '/CompSci/VSCodeShortcuts',
         component: VSCodeShortcuts
     },
     {
-        path: '/compsci/UIDesignTips',
+        path: '/CompSci/UIDesignTips',
         component: UIDesignTips
     },
     {
-        path: '/compsci/SetupProjects',
+        path: '/CompSci/SetupProjects',
         component: SetupProjects
     },
     {
-        path: '/compsci/CompSciTips',
+        path: '/CompSci/SetupProjects/:section',
+        name: 'CompSci',
+        component: SetupProjects,
+        props: true
+    },
+    {
+        path: '/CompSci/CompSciTips',
         component: CompSciTips
     },
     {
