@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+            "desc": "",
+            "ref": "deploy-spring"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "First do the following",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "ls",
+                "CopyCode": "ls"
+            }
+        }
+    ]
+}
