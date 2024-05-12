@@ -630,6 +630,22 @@
             "Pay": ""
         },
         {
+            "Name": "The John Hopkins University (Undergraduate Research Assistant)",
+            "Location": "Baltimore, Maryland",
+            "LinkedIn": "https://www.linkedin.com/school/johns-hopkins-university/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "MetLife",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/metlife/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Hardee Hunt & Williams",
             "Location": "Wrightsville Beach, North Carolina. Near Wilmington",
             "LinkedIn": "https://www.linkedin.com/company/hardee-hunt-&-williams/jobs/",
@@ -890,6 +906,14 @@
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "LinkedIn": "https://www.linkedin.com/company/target/jobs/",
             "Contact": "thewanglab.org@gmail.com",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Qualitest",
+            "Location": "Greensboro, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/qualitest/jobs/",
+            "Contact": "",
             "Tips": "",
             "Pay": ""
         },
