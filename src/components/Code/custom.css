@@ -5,7 +5,8 @@ code {
 .token.keyword,
 .token.operator,
 .token.purple-js,
-.token.fxml-purple {
+.token.fxml-purple,
+.token.always-purple {
     color: #C678DD;
 }
 
