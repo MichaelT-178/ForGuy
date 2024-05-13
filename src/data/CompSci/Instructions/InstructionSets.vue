@@ -20,6 +20,7 @@ import YouTube from './Youtube.json';
 import PrismLang from './PrismLang.json';
 import CiscoSecure from './CiscoSecure.json';
 import PhpAndMySQL from './PhpAndMySQL.json';
+import SwiftFirebase from './SwiftFirebase.json';
 import DeveloperMode from './DeveloperMode.json';
 
 
@@ -39,6 +40,7 @@ export const AllSets = [
     FlaskPost,
     DeployPost,
     SpringApp,
+    SwiftFirebase,
     DeploySpring,
     TikTok,
     YouTube,
