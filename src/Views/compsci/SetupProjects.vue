@@ -5,15 +5,17 @@
         <img src="../../assets/React.png" alt="React" class="react-pic"/>
 
         <!-- Display Links -->
-        <h2 class="gh-header-two" style="margin-top: -3px;">{{ text[2].title }}</h2>
-        <p class="description-two">{{ text[2].desc }}</p>
-        <div v-for="link in displayLinks" :key="link.id">
-            <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}</span>
-                <span :class="{ 'display-link': currentSection !== link.ref, 'active-link': currentSection === link.ref }" 
-                      @click="toggleSection(link.ref)">
-                    {{ link.name }}
-                </span>
-            </p>
+        <div v-for="(group, groupName) in displayLinks" :key="groupName">
+            <h2 class="gh-header-two" style="margin-top: -3px;">{{ group.title }}</h2>
+            <p class="description-two">{{ group.desc }}</p>
+            <div v-for="link in group.links" :key="link.id">
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}</span>
+                    <span :class="{ 'display-link': currentSection !== link.ref, 'active-link': currentSection === link.ref }"
+                          @click="toggleSection(link.ref)">
+                        {{ link.name }}
+                    </span>
+                </p>
+            </div>
         </div>
         
         <p class="scroll-down" ref="scrollToRef">INVISIBLE SCROLL DOWN</p>

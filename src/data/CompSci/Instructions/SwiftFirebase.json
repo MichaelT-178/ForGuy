@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to create an iOS app with Swift and Firebase",
+            "desc": "This explains how to create an iOS written in SwiftUI with a Firebase backend.",
+            "ref": "swift-firebase"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}

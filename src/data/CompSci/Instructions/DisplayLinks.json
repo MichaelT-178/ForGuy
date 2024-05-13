@@ -6,122 +6,165 @@
         {
             "title": "Setup Projects",
             "desc": "This page contains information about setting up various projects."
-        },
-        {
-            "title": "Display Links",
-            "desc": "Use these links to display different instruction sets."
         }
     ],
-    "DisplayLinks": [
-        {
-            "id": 1,
-            "name": "How to Setup Node.js",
-            "ref": "node"
+    "DisplayLinks": {
+        "FrameworkProjects": {
+            "title": "Display Links", 
+            "desc": "Use these links to display different instruction sets.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Setup Node.js",
+                    "ref": "node"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Setup a Vue Project",
+                    "ref": "vue"
+                },
+                {
+                    "id": 3,
+                    "name": "How to Setup a React Project",
+                    "ref": "react"
+                }
+            ]
         },
-        {
-            "id": 2,
-            "name": "How to Setup a Vue Project",
-            "ref": "vue"
+        "Pages": {
+            "title": "Deploy Projects to GitHub Pages", 
+            "desc": "These explain how to deploy Vanilla or Vite project to GitHub pages.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "Deploy a Vanilla JS Project to GitHub Pages",
+                    "ref": "gh-pages"
+                },
+                {
+                    "id": 2,
+                    "name": "Deploy a Vite Project to GitHub Pages",
+                    "ref": "vite-gh-pages"
+                }
+            ]
         },
-        {
-            "id": 3,
-            "name": "How to Setup a React Project",
-            "ref": "react"
+        "REST": {
+            "title": "How to Setup REST Apis with Frontends",
+            "desc": "These explain how to use AWS, Docker, REST Apis, etc. for full-stack applications.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Setup an Amazon Web Services Account",
+                    "ref": "aws"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Install and Setup Docker",
+                    "ref": "docker"
+                },
+                {
+                    "id": 3,
+                    "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+                    "ref": "flask-sqlite3"
+                },
+                {
+                    "id": 4,
+                    "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                    "ref": "deploy-sqlite"
+                },
+                {
+                    "id": 5,
+                    "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                    "ref": "flask-PostgreSQL"
+                },
+                {
+                    "id": 6,
+                    "name": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+                    "ref": "deploy-PostgreSQL"
+                },
+                {
+                    "id": 7,
+                    "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+                    "ref": "react-sqlite"
+                },
+                {
+                    "id": 8,
+                    "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+                    "ref": "deploy-spring"
+                }
+            ] 
         },
-        {
-            "id": 4,
-            "name": "Deploy a Vanilla JS Project to GitHub Pages",
-            "ref": "gh-pages"
+        "UNCW": {
+            "title": "How to Setup UNCW School Projects", 
+            "desc": "These explain how to setup a JavaFX Project, Cisco Secure Client, and a PHP project.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Setup a JavaFX Project (Intellij IDEA)",
+                    "ref": "intellij"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Setup a JavaFX Project (Eclipse)",
+                    "ref": "eclipse"
+                },
+                {
+                    "id": 3,
+                    "name": "How to Setup Cisco Secure Client and a VPN.",
+                    "ref": "cisco"
+                },
+                {
+                    "id": 4,
+                    "name": "How to Setup a PHP and MySQL Project for UNCW.",
+                    "ref": "php"
+                }
+            ] 
         },
-        {
-            "id": 5,
-            "name": "Deploy a Vite Project to GitHub Pages",
-            "ref": "vite-gh-pages"
+        "Downloaders": {
+            "title": "How to Setup TikTok and YouTube Downloaders", 
+            "desc": "These explain how to setup and use TikTok and Youtube CLI tools.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Install and Use TikTok Downloader",
+                    "ref": "tiktok"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Install and Use YouTube Downloader",
+                    "ref": "youtube"
+                }
+            ] 
         },
-        {
-            "id": 6,
-            "name": "How to Setup a JavaFX Project (Intellij IDEA)",
-            "ref": "intellij"
+        "IOS": {
+            "title": "How to Setup an iOS App", 
+            "desc": "These explain how to setup an iOS app with Firebase and run it in developer mode.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to create an IOS app with Swift and Firebase",
+                    "ref": "swift-firebase"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Run an iOS app in Developer Mode",
+                    "ref": "developermode"
+                }
+            ] 
         },
-        {
-            "id": 7,
-            "name": "How to Setup a JavaFX Project (Eclipse)",
-            "ref": "eclipse"
-        },
-        {
-            "id": 8,
-            "name": "How to Populate and Query a SQLite3 Database",
-            "ref": "basic-sqlite"
-        },
-        {
-            "id": 9,
-            "name": "How to Setup an Amazon Web Services Account",
-            "ref": "aws"
-        },
-        {
-            "id": 10,
-            "name": "How to Install and Setup Docker",
-            "ref": "docker"
-        },
-        {
-            "id": 11,
-            "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
-            "ref": "flask-sqlite3"
-        },
-        {
-            "id": 12,
-            "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
-            "ref": "deploy-sqlite"
-        },
-        {
-            "id": 13,
-            "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
-            "ref": "flask-PostgreSQL"
-        },
-        {
-            "id": 14,
-            "name": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
-            "ref": "deploy-PostgreSQL"
-        },
-        {
-            "id": 15,
-            "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-            "ref": "react-sqlite"
-        },
-        {
-            "id": 16,
-            "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
-            "ref": "deploy-spring"
-        },
-        {
-            "id": 17,
-            "name": "How to Install and Use TikTok Downloader",
-            "ref": "tiktok"
-        },
-        {
-            "id": 18,
-            "name": "How to Install and Use YouTube Downloader",
-            "ref": "youtube"
-        },
-        {
-            "id": 19,
-            "name": "How Add a Language to the Prism Library",
-            "ref": "prism"
-        },
-        {
-            "id": 20,
-            "name": "How to Setup Cisco Secure Client and a VPN.",
-            "ref": "cisco"
-        },
-        {
-            "id": 21,
-            "name": "How to Setup a PHP and MySQL Project for UNCW.",
-            "ref": "php"
-        },
-        {
-            "id": 22,
-            "name": "How to Run an iOS app in Developer Mode",
-            "ref": "developermode"
+        "Other": {
+            "title": "How to Setup Miscellaneous Projects", 
+            "desc": "These explain how to setup miscellaneous projects.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Populate and Query a SQLite3 Database",
+                    "ref": "basic-sqlite"
+                },
+                {
+                    "id": 2,
+                    "name": "How Add a Language to the Prism Library",
+                    "ref": "prism"
+                }
+            ] 
         }
-    ]
+    }
 }
