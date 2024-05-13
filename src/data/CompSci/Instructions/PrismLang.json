@@ -1,7 +1,7 @@
 {
     "Info": [
         {
-            "title": "How add a Language to the Prism Library",
+            "title": "How to Add a Language to the Prism Library",
             "desc": "How to add syntax highlighting for a new language in the Prism library.",
             "ref": "prism"
         }
