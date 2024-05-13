@@ -19,6 +19,10 @@
             }
         },
         {
+            "id": 1,
+            "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
+        },
+        {
             "id": 3,
             "instruction": "",
             "Code": {
