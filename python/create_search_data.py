@@ -468,7 +468,7 @@ def get_flask_sqlite3():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Make a Simple REST Api using Vue, Flask and SQLite3 🕸️"
+		Title = "How to Make a Simple REST Api using Vue, Flask and SQLite3 🧪"
 		Link = "/CompSci/SetupProjects/flask-sqlite3"
 		Results = info + instructions
 
@@ -482,7 +482,7 @@ def get_deploy_sqlite():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 📦"
+		Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀"
 		Link = "/CompSci/SetupProjects/deploy-sqlite"
 		Results = info + instructions
 
@@ -496,7 +496,7 @@ def get_flask_postgresql():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🗄️"
+		Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🧰"
 		Link = "/CompSci/SetupProjects/flask-PostgreSQL"
 		Results = info + instructions
 
@@ -510,7 +510,7 @@ def get_deploy_postgresql():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 📥"
+		Title = "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 🚀"
 		Link = "/CompSci/SetupProjects/deploy-PostgreSQL"
 		Results = info + instructions
 
