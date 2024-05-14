@@ -52,22 +52,28 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker"
         },
         {
-            "Name": "Dev Containers",
-            "Author": "Microsoft",
-            "Description": "Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.",
-            "Link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers"
-        },
-        {
             "Name": "GitHub Copilot",
             "Author": "GitHub",
             "Description": "AI pair programmer tool for code generation. I personally prefer ChatGPT but this could probably be useful.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
         },
         {
+            "Name": "Spring Boot Tools",
+            "Author": "VMware",
+            "Description": "Provides support for Spring Boot applications.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot"
+        },
+        {
             "Name": "Code Spell Checker",
             "Author": "Street Side Software",
             "Description": "Spell checks code, json files, etc.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+        },
+        {
+            "Name": "Dev Containers",
+            "Author": "Microsoft",
+            "Description": "Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers"
         },
         {
             "Name": "Rainbow CSV",
