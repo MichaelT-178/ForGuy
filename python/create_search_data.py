@@ -524,7 +524,7 @@ def get_react_sqlite():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Make a simple REST Api using React, Spring Boot and SQLite 🌷"
+		Title = "How to Make a simple REST Api using React, Spring Boot and SQLite 🍃"
 		Link = "/CompSci/SetupProjects/react-sqlite"
 		Results = info + instructions
 
