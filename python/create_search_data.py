@@ -331,17 +331,358 @@ def get_uiux_tips():
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
-def get_setup_projects():
-    with open("../src/data/CompSci/SetupProjects.json", "r") as file:
+def get_display_links():
+    with open("../src/data/CompSci/Instructions/DisplayLinks.json", "r") as file:
         content = json.load(file)
-        
+
         text = content["Text"]
 
-        Title = "Setup Project 🛠️"
-        Link = "/compsci/SetupProjects"
-        Results = None
+        display_links = content["DisplayLinks"]
 
+        display_link_list = []
+
+        for _, details in display_links.items():
+            
+            title_obj = make_json_object("title", details['title'])
+            desc_obj = make_json_object("desc", details['desc'])
+            links_obj = details['links']
+
+            links_obj.insert(0, title_obj)
+            links_obj.insert(0, desc_obj)
+
+            display_link_list.append(links_obj)
+
+        flattened_list = [item for sublist in display_link_list for item in sublist]
+        
+        Title = "Setup Project 🛠️"
+        Link = "/CompSci/SetupProjects"
+        Results = text + flattened_list
+        
         return { "Title": Title, "Link": Link, "Results": Results }
+
+
+# 365 - 687
+def get_node():
+	with open("../src/data/CompSci/Instructions/SetupNode.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Install Node.js 🌐"
+		Link = "/CompSci/SetupProjects/node"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_vue():
+	with open("../src/data/CompSci/Instructions/SetupVue.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Vue.js Project 🌁"
+		Link = "/CompSci/SetupProjects/vue"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_react():
+	with open("../src/data/CompSci/Instructions/SetupReact.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a React.js Project ⚛️"
+		Link = "/CompSci/SetupProjects/react"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_gh_pages():
+	with open("../src/data/CompSci/Instructions/GithubPages.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy a Vanilla JS Project to GitHub Pages 📜"
+		Link = "/CompSci/SetupProjects/gh-pages"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_vite_gh_pages():
+	with open("../src/data/CompSci/Instructions/ViteGHPages.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy a Vite Project to GitHub Pages ⚡️"
+		Link = "/CompSci/SetupProjects/vite-gh-pages"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_aws():
+     with open("../src/data/CompSci/Instructions/SetupAWS.json", "r") as file:
+        content = json.load(file)
+        
+        info = content["Info"]
+        instructions = content["Instructions"]
+        instructions = modify_list_with_code_separation(instructions, "Code")
+
+        Title = "How to Setup an Amazon Web Services Account ☁️"
+        Link = "/CompSci/SetupProjects/aws"
+        Results = info + instructions
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_docker():
+	with open("../src/data/CompSci/Instructions/docker.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Install and Setup Docker 🐳"
+		Link = "/CompSci/SetupProjects/docker"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_flask_sqlite3():
+	with open("../src/data/CompSci/Instructions/FlaskSQLite.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Make a Simple REST Api using Vue, Flask and SQLite3 🕸️"
+		Link = "/CompSci/SetupProjects/flask-sqlite3"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_deploy_sqlite():
+	with open("../src/data/CompSci/Instructions/DeployApp.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 📦"
+		Link = "/CompSci/SetupProjects/deploy-sqlite"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_flask_postgresql():
+	with open("../src/data/CompSci/Instructions/FlaskPost.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🗄️"
+		Link = "/CompSci/SetupProjects/flask-PostgreSQL"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_deploy_postgresql():
+	with open("../src/data/CompSci/Instructions/DeployPost.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 📥"
+		Link = "/CompSci/SetupProjects/deploy-PostgreSQL"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_react_sqlite():
+	with open("../src/data/CompSci/Instructions/SpringApp.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Make a simple REST Api using React, Spring Boot and SQLite 🌷"
+		Link = "/CompSci/SetupProjects/react-sqlite"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_deploy_spring():
+	with open("../src/data/CompSci/Instructions/DeploySpring.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀"
+		Link = "/CompSci/SetupProjects/deploy-spring"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_intellij():
+	with open("../src/data/CompSci/Instructions/IntellijJavaFX.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a JavaFX Project (Intellij IDEA) ✈️"
+		Link = "/CompSci/SetupProjects/intellij"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_eclipse():
+	with open("../src/data/CompSci/Instructions/EclipseJavaFX.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a JavaFX Project (Eclipse) 🌑"
+		Link = "/CompSci/SetupProjects/eclipse"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_cisco():
+	with open("../src/data/CompSci/Instructions/CiscoSecure.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup Cisco Secure Client and a VPN 🌎"
+		Link = "/CompSci/SetupProjects/cisco"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_php():
+	with open("../src/data/CompSci/Instructions/PhpAndMySQL.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a PHP and MySQL Project for UNCW. 🐘"
+		Link = "/CompSci/SetupProjects/php"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_tiktok():
+	with open("../src/data/CompSci/Instructions/TikTok.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Install and Use TikTok Downloader 🎥"
+		Link = "/CompSci/SetupProjects/tiktok"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_youtube():
+	with open("../src/data/CompSci/Instructions/Youtube.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Install and Use YouTube Downloader 📺"
+		Link = "/CompSci/SetupProjects/youtube"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_swift_firebase():
+	with open("../src/data/CompSci/Instructions/SwiftFirebase.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to create an iOS app with Swift and Firebase 🍎"
+		Link = "/CompSci/SetupProjects/swift-firebase"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_developermode():
+	with open("../src/data/CompSci/Instructions/DeveloperMode.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Run an iOS app in Developer Mode 📱"
+		Link = "/CompSci/SetupProjects/developermode"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_basic_sqlite():
+	with open("../src/data/CompSci/Instructions/SQLite3.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Populate a SQLite3 Database 📊"
+		Link = "/CompSci/SetupProjects/basic-sqlite"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_prism():
+	with open("../src/data/CompSci/Instructions/PrismLang.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Add a Language to the Prism Library 🌈"
+		Link = "/CompSci/SetupProjects/prism"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_compscitips():
     with open("../src/data/CompSci/CompSciTips.json", "r") as file:
@@ -548,7 +889,7 @@ def get_setupprofile():
         Results = text + instructions
 
         return { "Title": Title, "Link": Link, "Results": Results }
-
+    
 def get_setupjobalerts():
     with open("../src/data/LinkedIn/SetupJobAlerts.json", "r") as file:
         content = json.load(file)
@@ -699,8 +1040,7 @@ def get_contact_me():
         Results = contact
 
         return { "Title": Title, "Link": Link, "Results": Results }
-
-
+    
 
 classestoavoid = get_classestoavoid()
 classrecommendations = get_classrecommendations()
@@ -714,7 +1054,35 @@ visualstudiocode = get_visualstudiocode()
 settings = get_settings()
 uiux_tips = get_uiux_tips()
 compscitips = get_compscitips()
-setupprojects = get_setup_projects()
+
+
+displaylinks = get_display_links()
+node = get_node()
+vue = get_vue()
+react = get_react()
+ghpages = get_gh_pages()
+viteghpages = get_vite_gh_pages()
+aws = get_aws()
+docker = get_docker()
+flasksqlite3 = get_flask_sqlite3()
+deploysqlite = get_deploy_sqlite()
+flaskpostgresql = get_flask_postgresql()
+deploypostgresql = get_deploy_postgresql()
+reactsqlite = get_react_sqlite()
+deployspring = get_deploy_spring()
+intellij = get_intellij()
+eclipse = get_eclipse()
+cisco = get_cisco()
+php = get_php()
+tiktok = get_tiktok()
+youtube = get_youtube()
+swiftfirebase = get_swift_firebase()
+developermode = get_developermode()
+basicsqlite = get_basic_sqlite()
+prism = get_prism()
+
+
+
 vscodeextensions = get_vscodeextensions()
 github = get_github()
 offersreceived = get_offersreceived()
@@ -767,8 +1135,33 @@ all_data = [
     settings,
     uiux_tips,
     vscodeextensions,
+
+    displaylinks,
+    node,
+    vue,
+    react,
+    ghpages,
+    viteghpages,
+    aws,
+    docker,
+    flasksqlite3,
+    deploysqlite,
+    flaskpostgresql,
+    deploypostgresql,
+    reactsqlite,
+    deployspring,
+    intellij,
+    eclipse,
+    cisco,
+    php,
+    tiktok,
+    youtube,
+    swiftfirebase,
+    developermode,
+    basicsqlite,
+    prism,
+
     vscodeshortcuts,
-    setupprojects,
     compscitips,
 
     generaltips,

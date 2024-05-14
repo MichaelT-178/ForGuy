@@ -253,7 +253,7 @@ export const memeObjects = [
         image: Meme40 
     }, //SendaCV.jpg
     { 
-        text: "They're even now. (This isn't about me, I don't lie on my resume I just thought it was funny)",
+        text: "They're even now. (This isn't about me. I don't lie on my resume, I just thought it was funny)",
         transcription: "Me who lied on my resume my new employer who lied on the job description",
         image: Meme41 
     }, //ApplicantAndEmployer.jpg
