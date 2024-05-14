@@ -23,14 +23,17 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Docker%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker%0A%0A` +
 
-`Dev Containers%0A` +
-`https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers%0A%0A` +
-
 `GitHub Copilot%0A` +
 `https://marketplace.visualstudio.com/items?itemName=GitHub.copilot%0A%0A` +
 
+`Spring Boot Tools%0A` +
+`https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot%0A%0A` +
+
 `Code Spell Checker%0A` +
 `https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker%0A%0A` +
+
+`Dev Containers%0A` +
+`https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers%0A%0A` +
 
 `Rainbow CSV%0A` +
 `https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv%0A%0A` +
