@@ -151,6 +151,144 @@
     },
     {
         "id": 26,
+        "Emoji": "🌐",
+        "MenuName": "How to Install Node.js",
+        "Link": "/CompSci/SetupProjects/node"
+    },
+    {
+        "id": 27,
+        "Emoji": "🌁",
+        "MenuName": "How to Setup a Vue.js Project",
+        "Link": "/CompSci/SetupProjects/vue"
+    },
+    {
+        "id": 28,
+        "Emoji": "⚛️",
+        "MenuName": "How to Setup a React.js Project",
+        "Link": "/CompSci/SetupProjects/react"
+    },
+    {
+        "id": 29,
+        "Emoji": "📜",
+        "MenuName": "Deploy a Vanilla JS Project to GitHub Pages",
+        "Link": "/CompSci/SetupProjects/gh-pages"
+    },
+    {
+        "id": 30,
+        "Emoji": "⚡️",
+        "MenuName": "Deploy a Vite Project to GitHub Pages",
+        "Link": "/CompSci/SetupProjects/vite-gh-pages"
+    },
+    {
+        "id": 31,
+        "Emoji": "☁️",
+        "MenuName": "How to Setup an Amazon Web Services Account",
+        "Link": "/CompSci/SetupProjects/aws"
+    },
+    {
+        "id": 32,
+        "Emoji": "🐳",
+        "MenuName": "How to Install and Setup Docker",
+        "Link": "/CompSci/SetupProjects/docker"
+    },
+    {
+        "id": 33,
+        "Emoji": "🕸️",
+        "MenuName": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+        "Link": "/CompSci/SetupProjects/flask-sqlite3"
+    },
+    {
+        "id": 34,
+        "Emoji": "📦",
+        "MenuName": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+        "Link": "/CompSci/SetupProjects/deploy-sqlite"
+    },
+    {
+        "id": 35,
+        "Emoji": "🗄️",
+        "MenuName": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+        "Link": "/CompSci/SetupProjects/flask-PostgreSQL"
+    },
+    {
+        "id": 36,
+        "Emoji": "📥",
+        "MenuName": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+        "Link": "/CompSci/SetupProjects/deploy-PostgreSQL"
+    },
+    {
+        "id": 37,
+        "Emoji": "🍃",
+        "MenuName": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+        "Link": "/CompSci/SetupProjects/react-sqlite"
+    },
+    {
+        "id": 38,
+        "Emoji": "🚀",
+        "MenuName": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+        "Link": "/CompSci/SetupProjects/deploy-spring"
+    },
+    {
+        "id": 39,
+        "Emoji": "✈️",
+        "MenuName": "How to Setup a JavaFX Project (Intellij IDEA)",
+        "Link": "/CompSci/SetupProjects/intellij"
+    },
+    {
+        "id": 40,
+        "Emoji": "🌑",
+        "MenuName": "How to Setup a JavaFX Project (Eclipse)",
+        "Link": "/CompSci/SetupProjects/eclipse"
+    },
+    {
+        "id": 41,
+        "Emoji": "🌎",
+        "MenuName": "How to Setup Cisco Secure Client and a VPN",
+        "Link": "/CompSci/SetupProjects/cisco"
+    },
+    {
+        "id": 42,
+        "Emoji": "🐘",
+        "MenuName": "How to Setup a PHP and MySQL Project for UNCW.",
+        "Link": "/CompSci/SetupProjects/php"
+    },
+    {
+        "id": 43,
+        "Emoji": "🎥",
+        "MenuName": "How to Install and Use TikTok Downloader",
+        "Link": "/CompSci/SetupProjects/tiktok"
+    },
+    {
+        "id": 44,
+        "Emoji": "📺",
+        "MenuName": "How to Install and Use YouTube Downloader",
+        "Link": "/CompSci/SetupProjects/youtube"
+    },
+    {
+        "id": 45,
+        "Emoji": "🍎",
+        "MenuName": "How to create an iOS app with Swift and Firebase",
+        "Link": "/CompSci/SetupProjects/swift-firebase"
+    },
+    {
+        "id": 46,
+        "Emoji": "📱",
+        "MenuName": "How to Run an iOS app in Developer Mode",
+        "Link": "/CompSci/SetupProjects/developermode"
+    },
+    {
+        "id": 47,
+        "Emoji": "📊",
+        "MenuName": "How to Populate a SQLite3 Database",
+        "Link": "/CompSci/SetupProjects/basic-sqlite"
+    },
+    {
+        "id": 48,
+        "Emoji": "🌈",
+        "MenuName": "How to Add a Language to the Prism Library",
+        "Link": "/CompSci/SetupProjects/prism"
+    },
+    {
+        "id": 26,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
@@ -202,143 +340,5 @@
         "Emoji": "✉️",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"
-    },
-    {
-        "id": 34,
-        "Emoji": "🎥",
-        "MenuName": "How to Install and Use TikTok Downloader",
-        "Link": "/CompSci/SetupProjects/tiktok"
-    },
-    {
-        "id": 35,
-        "Emoji": "🌑",
-        "MenuName": "How to Setup a JavaFX Project (Eclipse)",
-        "Link": "/CompSci/SetupProjects/eclipse"
-    },
-    {
-        "id": 36,
-        "Emoji": "🌎",
-        "MenuName": "How to Setup Cisco Secure Client and a VPN",
-        "Link": "/CompSci/SetupProjects/cisco"
-    },
-    {
-        "id": 37,
-        "Emoji": "📦",
-        "MenuName": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
-        "Link": "/CompSci/SetupProjects/deploy-sqlite"
-    },
-    {
-        "id": 38,
-        "Emoji": "⚡️",
-        "MenuName": "Deploy a Vite Project to GitHub Pages",
-        "Link": "/CompSci/SetupProjects/vite-gh-pages"
-    },
-    {
-        "id": 39,
-        "Emoji": "📥",
-        "MenuName": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
-        "Link": "/CompSci/SetupProjects/deploy-PostgreSQL"
-    },
-    {
-        "id": 40,
-        "Emoji": "🍃",
-        "MenuName": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-        "Link": "/CompSci/SetupProjects/react-sqlite"
-    },
-    {
-        "id": 41,
-        "Emoji": "🚀",
-        "MenuName": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
-        "Link": "/CompSci/SetupProjects/deploy-spring"
-    },
-    {
-        "id": 42,
-        "Emoji": "📺",
-        "MenuName": "How to Install and Use YouTube Downloader",
-        "Link": "/CompSci/SetupProjects/youtube"
-    },
-    {
-        "id": 43,
-        "Emoji": "⚛️",
-        "MenuName": "How to Setup a React.js Project",
-        "Link": "/CompSci/SetupProjects/react"
-    },
-    {
-        "id": 44,
-        "Emoji": "🐳",
-        "MenuName": "How to Install and Setup Docker",
-        "Link": "/CompSci/SetupProjects/docker"
-    },
-    {
-        "id": 45,
-        "Emoji": "📜",
-        "MenuName": "Deploy a Vanilla JS Project to GitHub Pages",
-        "Link": "/CompSci/SetupProjects/gh-pages"
-    },
-    {
-        "id": 46,
-        "Emoji": "📊",
-        "MenuName": "How to Populate a SQLite3 Database",
-        "Link": "/CompSci/SetupProjects/basic-sqlite"
-    },
-    {
-        "id": 47,
-        "Emoji": "🌁",
-        "MenuName": "How to Setup a Vue.js Project",
-        "Link": "/CompSci/SetupProjects/vue"
-    },
-    {
-        "id": 48,
-        "Emoji": "🐘",
-        "MenuName": "How to Setup a PHP and MySQL Project for UNCW.",
-        "Link": "/CompSci/SetupProjects/php"
-    },
-    {
-        "id": 49,
-        "Emoji": "✈️",
-        "MenuName": "How to Setup a JavaFX Project (Intellij IDEA)",
-        "Link": "/CompSci/SetupProjects/intellij"
-    },
-    {
-        "id": 50,
-        "Emoji": "🗄️",
-        "MenuName": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
-        "Link": "/CompSci/SetupProjects/flask-PostgreSQL"
-    },
-    {
-        "id": 51,
-        "Emoji": "🍎",
-        "MenuName": "How to create an iOS app with Swift and Firebase",
-        "Link": "/CompSci/SetupProjects/swift-firebase"
-    },
-    {
-        "id": 52,
-        "Emoji": "🌈",
-        "MenuName": "How to Add a Language to the Prism Library",
-        "Link": "/CompSci/SetupProjects/prism"
-    },
-    {
-        "id": 53,
-        "Emoji": "🕸️",
-        "MenuName": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
-        "Link": "/CompSci/SetupProjects/flask-sqlite3"
-    },
-    {
-        "id": 54,
-        "Emoji": "📱",
-        "MenuName": "How to Run an iOS app in Developer Mode",
-        "Link": "/CompSci/SetupProjects/developermode"
-    },
-    {
-        "id": 55,
-        "Emoji": "🌐",
-        "MenuName": "How to Install Node.js",
-        "Link": "/CompSci/SetupProjects/node"
-    },
-    {
-        "id": 56,
-        "Emoji": "☁️",
-        "MenuName": "How to Setup an Amazon Web Services Account",
-        "Link": "/CompSci/SetupProjects/aws"
     }
 ]
