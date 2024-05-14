@@ -9,14 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Download Cisco Secure Client using this [link](). This isn't a required step but it would be useful ",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "uname -m",
-                "CopyCode": "uname -m"
-            }    
+            "instruction": "If you're not on UNCW wifi you'll need a VPN connection. Go to the \"How to Setup Cisco Secure Client and a VPN\" instruction set if you need one. If you're on UNCW wifi you can skip this step. It's not a difficult process."
         },
         {
             "id": 2,

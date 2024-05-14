@@ -85,6 +85,7 @@ html {
 
 .expand-text:hover {
     color: #0000D7;
+    cursor: pointer;
 }
 
 .companies-found {
