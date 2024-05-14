@@ -36,7 +36,7 @@
 
 
 <script setup>
-import { computed, ref, nextTick, onMounted } from 'vue';
+import { computed, ref, nextTick, onMounted, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { createHyperLink, highlightLinkText, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
@@ -80,12 +80,18 @@ const scrollToTop = () => {
     });
 };
 
-//Gets ""
+//Gets the ref from the end of the link
 const getSectionFromLink = (path) => {
     const segments = path.split('/').filter(segment => segment !== '');
     return segments.length > 0 ? segments[segments.length - 1] : '';
 }
 
+// Updates if the user is using the SearchBar
+watch(() => route.params.section, (newSection, oldSection) => {
+    if (newSection != "") {
+        toggleSection(newSection);
+    }
+});
 
 onMounted(() => {
     const navigationEntries = performance.getEntriesByType('navigation');
