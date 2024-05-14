@@ -241,7 +241,7 @@
     },
     {
         "id": 40,
-        "Emoji": "🌷",
+        "Emoji": "🍃",
         "MenuName": "How to Make a simple REST Api using React, Spring Boot and SQLite",
         "Link": "/CompSci/SetupProjects/react-sqlite"
     },

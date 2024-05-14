@@ -6,6 +6,11 @@
         appears in the following pages: <span><strong style="color: darkblue">{{ totalCount }} time{{ totalCount === 1 ? '' : 's' }}</strong></span></p>
 
         <SearchCard v-for="item in searchResults" :key="item.Title" :resultPage="item" />
+        
+        <!-- If no results were found show this image and text -->
+        <img :src="ShrugPhoto" alt="No results" class="shrug-photo" v-if="totalCount === 0">
+        <p class="no-results-txt" v-if="totalCount === 0">No Results! Better luck next time!</p>
+
         <p style="margin-bottom: 60px;"></p>
     </div>
 </template>
@@ -16,6 +21,7 @@ import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import SearchData from "../data/SearchData.json";
 import SearchCard from "../components/SearchCard.vue";
+import ShrugPhoto from '../assets/Shrug.png';
   
 const route = useRoute();
 const searchQuery = ref(route.params.SearchQuery || '');
@@ -115,6 +121,19 @@ watch(() => route.params.SearchQuery, (newSearchQuery) => {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+.shrug-photo {
+    width: 400px; 
+    margin-top: 20px; 
+    margin-left: 200;
+    border: 0.5px solid black;
+}
+
+.no-results-txt {
+    font-size: 22px;
+    color: darkblue;
+    margin-top: 10px;
 }
 
 .search-header {
