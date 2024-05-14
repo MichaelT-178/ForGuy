@@ -193,25 +193,25 @@
     },
     {
         "id": 33,
-        "Emoji": "🕸️",
+        "Emoji": "🧪",
         "MenuName": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
         "Link": "/CompSci/SetupProjects/flask-sqlite3"
     },
     {
         "id": 34,
-        "Emoji": "📦",
+        "Emoji": "🚀",
         "MenuName": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-sqlite"
     },
     {
         "id": 35,
-        "Emoji": "🗄️",
+        "Emoji": "🧰",
         "MenuName": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
         "Link": "/CompSci/SetupProjects/flask-PostgreSQL"
     },
     {
         "id": 36,
-        "Emoji": "📥",
+        "Emoji": "🚀",
         "MenuName": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-PostgreSQL"
     },
