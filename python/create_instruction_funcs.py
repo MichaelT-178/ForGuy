@@ -49,7 +49,7 @@ emojis = {
     "deploy-sqlite": "📦",
     "flask-PostgreSQL": "🗄️",
     "deploy-PostgreSQL": "📥",
-    "react-sqlite": "🌷",
+    "react-sqlite": "🍃",
     "deploy-spring": "🚀",
     "intellij": "✈️",
     "eclipse": "🌑",
