@@ -30,7 +30,7 @@
       </div>
       <!-- No Results but query entered -->
       <div v-else-if="searchQuery && !filteredResults.length" class="results">
-        <div class="result-item" @click="goToResultsPage">
+        <div class="result-item" @click="goToResultsPageAndClose">
           <!-- <span class="emoji">🔍</span> -->
           Press <span style="color: #7A008D">return/enter</span> to see results for "{{ searchQuery }}"
         </div>
@@ -59,11 +59,14 @@ const updateIsHovering = (event) => {
 
 document.addEventListener('mousemove', updateIsHovering);
 
-
 const goToResultsPage = () => {
   router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
 };
 
+const goToResultsPageAndClose = () => {
+  closeSearchBar();
+  goToResultsPage();
+};
 
 const handleEnterPress = (event) => {
   if (event.key === 'Enter') {
@@ -85,7 +88,7 @@ const handleEnterPress = (event) => {
             closeSearchBar();
             unwatch();
           }
-        }); //End of const unwatch
+        }); //End of const unwatch function
       } //end of if-else statement 
     }; //End of function
 
