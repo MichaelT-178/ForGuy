@@ -3,7 +3,7 @@
         {
             "page": "Where To Apply",
             "toggleQuestion": "Why did I choose these companies?",
-            "toggleDescription": "This is basically just a giant compilation of companies where I saw UNCW students/alumni working.",
+            "toggleDescription": "This is basically just a giant compilation of companies where I saw UNCW students/alumni working as Software Engineers.",
             "searchText": "Search Companies By Location..."
         }
     ],
@@ -465,6 +465,230 @@
             "Name": "Vanguard",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/vanguard/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Tandem",
+            "Location": "Remote, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/madeintandem/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Ekos",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/goekos/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "WEX",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/wexinc/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "RVO Health",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/rvohealth/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "TOURtech, Inc.",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/tourtechsupport-inc/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Q2 Solutions",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/q2-solutions/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "lululemon",
+            "Location": "N/A",
+            "LinkedIn": "https://www.linkedin.com/company/lululemon/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Floating Point Group",
+            "Location": "N/A",
+            "LinkedIn": "https://www.linkedin.com/company/floating-point-group/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "JXBX (Jukebox)",
+            "Location": "Remote",
+            "LinkedIn": "https://www.linkedin.com/company/jkbx/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Smartool.ai",
+            "Location": "N/A",
+            "LinkedIn": "https://www.linkedin.com/company/smartool-ai/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Pixelum.io",
+            "Location": "N/A",
+            "LinkedIn": "https://www.linkedin.com/company/pixelum-io/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "DealCloud, an Intapp Company",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/dealcloud-inc-/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "MicroD",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/microd-inc-/jobs/",
+            "Contact": "",
+            "Tips": "That name is CRAZY",
+            "Pay": ""
+        },
+        {
+            "Name": "Pratt Miller",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/pratt-&-miller-engineering/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "DigitalCrafts",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/school/digitalcrafts/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "theCoderSchool (Coding Instructor)",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/thecoderschool/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Few",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/workwithfew/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Lithios",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/lithios/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Coworks",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/coworks-app/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Go Energies",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/go-energies/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "PCI Energy Solutions",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/pci-energy-solutions/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Haversack",
+            "Location": "Huntersville, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/gohaversack/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "ChristianSteven Software",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/christiansteven-software/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Lovingly",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/lovingly/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Intapp",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/intapp/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Allscripts",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/allscripts/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "GBF, Inc",
+            "Location": "High Point, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/lazar-industries-llc/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Alamance County Government",
+            "Location": "Graham, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/alamance-county-government/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
