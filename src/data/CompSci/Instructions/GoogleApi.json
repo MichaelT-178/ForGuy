@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup a Google API Project",
+            "desc": "Explains how to setup a a project that utilizes the Google API.",
+            "ref": "google-api"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
