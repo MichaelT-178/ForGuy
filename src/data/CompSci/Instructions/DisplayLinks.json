@@ -89,6 +89,16 @@
                     "id": 8,
                     "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
                     "ref": "deploy-spring"
+                },
+                {
+                    "id": 9,
+                    "name": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
+                    "ref": "complex-mysql"
+                },
+                {
+                    "id": 10,
+                    "name": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
+                    "ref": "deploy-mysql"
                 }
             ] 
         },
@@ -134,6 +144,32 @@
                 }
             ] 
         },
+        "API": {
+            "title": "How to Setup Projects that Utilize API's", 
+            "desc": "These explain how to setup project that utilize APIs and make Chatbots.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Setup a Google API Project",
+                    "ref": "google-api"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Setup a Reddit API Project",
+                    "ref": "reddit-api"
+                },
+                {
+                    "id": 3,
+                    "name": "How to Setup a OpenAI API Project",
+                    "ref": "openai-api"
+                },
+                {
+                    "id": 4,
+                    "name": "How to Make a Custom Botpress Chatbot",
+                    "ref": "botpress"
+                }
+            ] 
+        },
         "IOS": {
             "title": "How to Setup an iOS App", 
             "desc": "These explain how to setup an iOS app with Firebase and run it in developer mode.",
@@ -145,8 +181,29 @@
                 },
                 {
                     "id": 2,
+                    "name": "How to Setup Core Data in a SwiftUI project.",
+                    "ref": "core-data"
+                },
+                {
+                    "id": 3,
                     "name": "How to Run an iOS app in Developer Mode",
                     "ref": "developermode"
+                }
+            ] 
+        },
+        "Auth": {
+            "title": "How to Setup Authentication in an App", 
+            "desc": "Explains how to setup OAuth and Two-Factor authentication in a Vue.js app.",
+            "links": [
+                {
+                    "id": 1,
+                    "name": "How to Setup OAuth Authentication",
+                    "ref": "oauth"
+                },
+                {
+                    "id": 2,
+                    "name": "How to Setup Two-Factor Authentication",
+                    "ref": "two-factor-auth"
                 }
             ] 
         },
@@ -161,8 +218,18 @@
                 },
                 {
                     "id": 2,
+                    "name": "How to Use Excel with Python",
+                    "ref": "excel"
+                },
+                {
+                    "id": 3,
                     "name": "How to Add a Language to the Prism Library",
                     "ref": "prism"
+                },
+                {
+                    "id": 4,
+                    "name": "How to Setup an Executable Python Script",
+                    "ref": "executable-python"
                 }
             ] 
         }

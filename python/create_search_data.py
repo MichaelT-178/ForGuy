@@ -515,7 +515,7 @@ def get_deploy_postgresql():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-
+     
 def get_react_sqlite():
 	with open("../src/data/CompSci/Instructions/SpringApp.json", "r") as file:
 		content = json.load(file)
@@ -543,7 +543,35 @@ def get_deploy_spring():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+     
+def get_complex_mysql():
+	with open("../src/data/CompSci/Instructions/ComplexMySQL.json", "r") as file:
+		content = json.load(file)
 
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Make a Complex REST Api using React, Spring Boot and MySQL 🗄️"
+		Link = "/CompSci/SetupProjects/complex-mysql"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_deploy_mysql():
+	with open("../src/data/CompSci/Instructions/DeployMySQL.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy the React, Spring Boot and MySQL app to Amazon Web Services 🚀"
+		Link = "/CompSci/SetupProjects/deploy-mysql"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+     
 def get_intellij():
 	with open("../src/data/CompSci/Instructions/IntellijJavaFX.json", "r") as file:
 		content = json.load(file)
@@ -628,6 +656,62 @@ def get_youtube():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_google_api():
+	with open("../src/data/CompSci/Instructions/GoogleApi.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Google API Project 🔍"
+		Link = "/CompSci/SetupProjects/google-api"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_reddit_api():
+	with open("../src/data/CompSci/Instructions/RedditApi.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Reddit API Project 📖"
+		Link = "/CompSci/SetupProjects/reddit-api"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_openai_api():
+	with open("../src/data/CompSci/Instructions/OpenAI.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a OpenAI API Project 💬"
+		Link = "/CompSci/SetupProjects/openai-api"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_botpress():
+	with open("../src/data/CompSci/Instructions/BotpressChatbot.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Make a Custom Botpress Chatbot 🤖"
+		Link = "/CompSci/SetupProjects/botpress"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+         
 def get_swift_firebase():
 	with open("../src/data/CompSci/Instructions/SwiftFirebase.json", "r") as file:
 		content = json.load(file)
@@ -638,6 +722,20 @@ def get_swift_firebase():
 
 		Title = "How to create an iOS app with Swift and Firebase 🍎"
 		Link = "/CompSci/SetupProjects/swift-firebase"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_core_data():
+	with open("../src/data/CompSci/Instructions/CoreData.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup Core Data in a SwiftUI project. 🏎️"
+		Link = "/CompSci/SetupProjects/core-data"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -656,6 +754,34 @@ def get_developermode():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_oauth():
+	with open("../src/data/CompSci/Instructions/OAuth.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup OAuth Authentication 🗝️"
+		Link = "/CompSci/SetupProjects/oauth"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+      
+def get_two_factor_auth():
+	with open("../src/data/CompSci/Instructions/TwoFactor.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup Two-Factor Authentication 🔐"
+		Link = "/CompSci/SetupProjects/two-factor-auth"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_basic_sqlite():
 	with open("../src/data/CompSci/Instructions/SQLite3.json", "r") as file:
 		content = json.load(file)
@@ -666,6 +792,20 @@ def get_basic_sqlite():
 
 		Title = "How to Populate a SQLite3 Database 📊"
 		Link = "/CompSci/SetupProjects/basic-sqlite"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_excel():
+	with open("../src/data/CompSci/Instructions/ReadExcel.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Use Excel with Python 📈"
+		Link = "/CompSci/SetupProjects/excel"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -683,7 +823,21 @@ def get_prism():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+      
+def get_executable_python():
+	with open("../src/data/CompSci/Instructions/ExecutablePython.json", "r") as file:
+		content = json.load(file)
 
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup an Executable Python Script 🐍"
+		Link = "/CompSci/SetupProjects/executable-python"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+      
 def get_compscitips():
     with open("../src/data/CompSci/CompSciTips.json", "r") as file:
         content = json.load(file)
@@ -1070,18 +1224,33 @@ flaskpostgresql = get_flask_postgresql()
 deploypostgresql = get_deploy_postgresql()
 reactsqlite = get_react_sqlite()
 deployspring = get_deploy_spring()
+
+complexmysql = get_complex_mysql()
+deploymysql = get_deploy_mysql()
+
 intellij = get_intellij()
 eclipse = get_eclipse()
 cisco = get_cisco()
 php = get_php()
 tiktok = get_tiktok()
 youtube = get_youtube()
+
+googleapi = get_google_api()
+redditapi = get_reddit_api()
+openai = get_openai_api()
+botpress = get_botpress()
+
 swiftfirebase = get_swift_firebase()
 developermode = get_developermode()
 basicsqlite = get_basic_sqlite()
 prism = get_prism()
+coredata = get_core_data()
 
+oauth = get_oauth()
+twofactor = get_two_factor_auth()
 
+excel = get_excel()
+exepython = get_executable_python()
 
 vscodeextensions = get_vscodeextensions()
 github = get_github()
@@ -1150,16 +1319,32 @@ all_data = [
     deploypostgresql,
     reactsqlite,
     deployspring,
+    complexmysql,
+    deploymysql,
+
     intellij,
     eclipse,
     cisco,
     php,
     tiktok,
     youtube,
+
+    googleapi, 
+    redditapi,
+    openai,
+    botpress,
+
     swiftfirebase,
+    coredata, 
     developermode,
+
+    oauth,
+    twofactor, 
+
     basicsqlite,
+    excel,
     prism,
+    exepython,
 
     vscodeshortcuts,
     compscitips,
