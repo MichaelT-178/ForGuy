@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup Core Data in a SwiftUI project.",
+            "desc": "Explains how to setup and use core data in your Swift application.",
+            "ref": "core-data"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
