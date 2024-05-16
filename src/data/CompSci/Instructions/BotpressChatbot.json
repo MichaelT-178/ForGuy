@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Make a Custom Botpress Chatbot",
+            "desc": "Explains how to make a Chatbot from Botpress and incorporate into a React app.",
+            "ref": "botpress"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
