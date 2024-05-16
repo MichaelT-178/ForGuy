@@ -217,126 +217,192 @@
     },
     {
         "id": 37,
+        "Emoji": "🚀",
+        "MenuName": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
+        "Link": "/CompSci/SetupProjects/deploy-mysql"
+    },
+    {
+        "id": 38,
+        "Emoji": "🗄️",
+        "MenuName": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
+        "Link": "/CompSci/SetupProjects/complex-mysql"
+    },
+    {
+        "id": 39,
         "Emoji": "🍃",
         "MenuName": "How to Make a simple REST Api using React, Spring Boot and SQLite",
         "Link": "/CompSci/SetupProjects/react-sqlite"
     },
     {
-        "id": 38,
+        "id": 40,
         "Emoji": "🚀",
         "MenuName": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-spring"
     },
     {
-        "id": 39,
+        "id": 41,
         "Emoji": "✈️",
         "MenuName": "How to Setup a JavaFX Project (Intellij IDEA)",
         "Link": "/CompSci/SetupProjects/intellij"
     },
     {
-        "id": 40,
+        "id": 42,
         "Emoji": "🌑",
         "MenuName": "How to Setup a JavaFX Project (Eclipse)",
         "Link": "/CompSci/SetupProjects/eclipse"
     },
     {
-        "id": 41,
+        "id": 43,
         "Emoji": "🌎",
         "MenuName": "How to Setup Cisco Secure Client and a VPN",
         "Link": "/CompSci/SetupProjects/cisco"
     },
     {
-        "id": 42,
+        "id": 44,
         "Emoji": "🐘",
         "MenuName": "How to Setup a PHP and MySQL Project for UNCW.",
         "Link": "/CompSci/SetupProjects/php"
     },
     {
-        "id": 43,
+        "id": 45,
         "Emoji": "🎥",
         "MenuName": "How to Install and Use TikTok Downloader",
         "Link": "/CompSci/SetupProjects/tiktok"
     },
     {
-        "id": 44,
+        "id": 46,
         "Emoji": "📺",
         "MenuName": "How to Install and Use YouTube Downloader",
         "Link": "/CompSci/SetupProjects/youtube"
     },
     {
-        "id": 45,
+        "id": 47,
+        "Emoji": "🔍",
+        "MenuName": "How to Setup a Google API Project",
+        "Link": "/CompSci/SetupProjects/google-api"
+    },
+    {
+        "id": 48,
+        "Emoji": "📖",
+        "MenuName": "How to Setup a Reddit API Project",
+        "Link": "/CompSci/SetupProjects/reddit-api"
+    },
+    {
+        "id": 49,
+        "Emoji": "💬",
+        "MenuName": "How to Setup a OpenAI API Project",
+        "Link": "/CompSci/SetupProjects/openai-api"
+    },
+    {
+        "id": 50,
+        "Emoji": "🤖",
+        "MenuName": "How to Make a Custom Botpress Chatbot",
+        "Link": "/CompSci/SetupProjects/botpress"
+    },
+    {
+        "id": 51,
         "Emoji": "🍎",
         "MenuName": "How to create an iOS app with Swift and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
     {
-        "id": 46,
+        "id": 52,
+        "Emoji": "🏎️",
+        "MenuName": "How to Setup Core Data in a SwiftUI project.",
+        "Link": "/CompSci/SetupProjects/core-data"
+    },
+    {
+        "id": 53,
         "Emoji": "📱",
         "MenuName": "How to Run an iOS app in Developer Mode",
         "Link": "/CompSci/SetupProjects/developermode"
     },
     {
-        "id": 47,
+        "id": 54,
+        "Emoji": "🗝️",
+        "MenuName": "How to Setup OAuth Authentication",
+        "Link": "/CompSci/SetupProjects/oauth"
+    },
+    {
+        "id": 55,
+        "Emoji": "🔐",
+        "MenuName": "How to Setup Two-Factor Authentication",
+        "Link": "/CompSci/SetupProjects/two-factor-auth"
+    },
+    {
+        "id": 56,
         "Emoji": "📊",
         "MenuName": "How to Populate a SQLite3 Database",
         "Link": "/CompSci/SetupProjects/basic-sqlite"
     },
     {
-        "id": 48,
+        "id": 57,
+        "Emoji": "📈",
+        "MenuName": "How to Use Excel with Python",
+        "Link": "/CompSci/SetupProjects/excel"
+    },
+    {
+        "id": 58,
         "Emoji": "🌈",
         "MenuName": "How to Add a Language to the Prism Library",
         "Link": "/CompSci/SetupProjects/prism"
     },
     {
-        "id": 26,
+        "id": 59,
+        "Emoji": "🐍",
+        "MenuName": "How to Setup an Executable Python Script",
+        "Link": "/CompSci/SetupProjects/executable-python"
+    },
+    {
+        "id": 60,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 27,
+        "id": 61,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 28,
+        "id": 62,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 29,
+        "id": 63,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 30,
+        "id": 64,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 31,
+        "id": 65,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 32,
+        "id": 66,
         "Emoji": "😂",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 33,
+        "id": 67,
         "Emoji": "📸",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"
     },
     {
-        "id": 33,
+        "id": 68,
         "Emoji": "✉️",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"

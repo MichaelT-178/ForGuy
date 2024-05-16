@@ -20,7 +20,6 @@
         
         <p class="scroll-down" ref="scrollToRef">INVISIBLE SCROLL DOWN</p>
 
-        <!-- Dynamic Section for Each Instruction Set -->
         <div v-for="(set, index) in filteredSets" :key="index">
             <h2 class="gh-header-two">{{ set.Info[0].title }}</h2>
             <p class="description-two" v-html="createHyperLink(set.Info[0].desc)"></p>
