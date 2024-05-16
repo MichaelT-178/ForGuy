@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup a OpenAI API Project",
+            "desc": "Explains how to setup and use OpenAI's API in your Vue app",
+            "ref": "openai-api"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}

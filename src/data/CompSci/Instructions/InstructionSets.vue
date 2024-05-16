@@ -22,7 +22,17 @@ import CiscoSecure from './CiscoSecure.json';
 import PhpAndMySQL from './PhpAndMySQL.json';
 import SwiftFirebase from './SwiftFirebase.json';
 import DeveloperMode from './DeveloperMode.json';
-
+import ExecutablePython from './ExecutablePython.json';
+import CoreData from './CoreData.json';
+import OAuth from './OAuth.json';
+import TwoFactor from './TwoFactor.json';
+import GoogleApi from './GoogleApi.json';
+import RedditApi from './RedditApi.json';
+import ReadExcel from './ReadExcel.json';
+import OpenAI from './OpenAI.json';
+import Chatbot from './BotpressChatbot.json';
+import ComplexMySQL from './ComplexMySQL.json';
+import DeployMySQL from './DeployMySQL.json';
 
 export const AllSets = [
     SetupNode,
@@ -47,7 +57,18 @@ export const AllSets = [
     PrismLang,
     CiscoSecure,
     PhpAndMySQL,
-    DeveloperMode
+    DeveloperMode,
+    ExecutablePython,
+    CoreData,
+    OAuth,
+    TwoFactor,
+    GoogleApi,
+    RedditApi,
+    ReadExcel,
+    OpenAI,
+    Chatbot,
+    ComplexMySQL,
+    DeployMySQL
 ]
 
 </script>
