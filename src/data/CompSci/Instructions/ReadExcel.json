@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Use Excel with Python",
+            "desc": "Simple instruction list of how to setup Python to work with Excel.",
+            "ref": "excel"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}

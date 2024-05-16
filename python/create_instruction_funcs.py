@@ -51,16 +51,44 @@ emojis = {
     "deploy-PostgreSQL": "🚀",
     "react-sqlite": "🍃",
     "deploy-spring": "🚀",
+
+    "complex-mysql": "🗄️",
+    "deploy-mysql": "🚀",
+
+
     "intellij": "✈️",
     "eclipse": "🌑",
     "cisco": "🌎",
     "php": "🐘",
     "tiktok": "🎥",
     "youtube": "📺",
+
+    "google-api": "🔍",
+    "reddit-api": "📖",
+    "openai-api": "💬",
+    "botpress": "🤖",
+
+
+
     "swift-firebase": "🍎",
+
+    "core-data": "🏎️",
+
     "developermode": "📱",
+
+    "oauth": "🗝️",
+    "two-factor-auth": "🔐",
+
+
     "basic-sqlite": "📊",
-    "prism": "🌈"
+    
+    "excel": "📈",
+
+
+    "prism": "🌈",
+
+    "executable-python": "🐍"
+
 }
 
 files = get_all_instructions_files()
@@ -96,7 +124,7 @@ for file in files:
 
     id_count += 1
 
-# print(add_to_search_pages[:-1])
+#print(add_to_search_pages[:-1])
 
 
 
@@ -136,5 +164,5 @@ for file in files:
             "\t\treturn { \"Title\": Title, \"Link\": Link, \"Results\": Results }\n"
         )
 
-#print(add_to_search_data)
-write_to_clipboard(add_to_search_data)
+print(add_to_search_data)
+# write_to_clipboard(add_to_search_data)
