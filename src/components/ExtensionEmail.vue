@@ -26,6 +26,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `GitHub Copilot%0A` +
 `https://marketplace.visualstudio.com/items?itemName=GitHub.copilot%0A%0A` +
 
+`Excel Viewer%0A` +
+`https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer%0A%0A` +
+
 `Spring Boot Tools%0A` +
 `https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot%0A%0A` +
 
