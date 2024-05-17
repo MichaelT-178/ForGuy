@@ -183,7 +183,7 @@ export const memeObjects = [
         image: Meme26 
     }, //SomeFamousServers.jpg
     { 
-        text: "*Dies by suffocation*",
+        text: "*Dies of suffocation*",
         transcription: "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning",
         image: Meme27 
     }, //CrowdedShore.jpg
@@ -233,7 +233,7 @@ export const memeObjects = [
         image: Meme36 
     }, //CrushKnowsBinary.jpg
     { 
-        text: "Java is too VERBOSE",
+        text: "Java is too damn VERBOSE",
         transcription: "When I'm in a Being verbose competition and my opponent is the Java programming language",
         image: Meme37 
     }, //VerboseJava.jpg
