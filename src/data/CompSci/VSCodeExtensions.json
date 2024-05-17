@@ -58,6 +58,12 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
         },
         {
+            "Name": "Excel Viewer",
+            "Author": "GrapeCity",
+            "Description": "Allows you to view excel files in VSCode.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer"
+        },
+        {
             "Name": "Spring Boot Tools",
             "Author": "VMware",
             "Description": "Provides support for Spring Boot applications.",
