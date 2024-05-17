@@ -17,6 +17,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Alarmy%0A` +
 `https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766%0A%0A` +
 
+`Coursicle%0A` +
+`https://apps.apple.com/us/app/coursicle/id1187418307%0A%0A` +
+
 `Waze%0A` +
 `https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106%0A%0A` +
 
