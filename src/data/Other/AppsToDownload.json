@@ -37,6 +37,11 @@
             "Link": "https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766"
         },
         {
+            "Name": "Coursicle",
+            "Description": "Allows you to track the open status of courses. Will send you a notification when a class goes from closed to open.",
+            "Link": "https://apps.apple.com/us/app/coursicle/id1187418307"
+        },
+        {
             "Name": "Waze",
             "Description": "This is the GPS app I use. It's extremely useful when driving. It can calculate the most optimal routes and redirect you if you go the wrong way.",
             "Link": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106"
