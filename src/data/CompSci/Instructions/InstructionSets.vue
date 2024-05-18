@@ -33,6 +33,8 @@ import OpenAI from './OpenAI.json';
 import Chatbot from './BotpressChatbot.json';
 import ComplexMySQL from './ComplexMySQL.json';
 import DeployMySQL from './DeployMySQL.json';
+import SpotifyApi from './SpotifyApi.json';
+
 
 export const AllSets = [
     SetupNode,
@@ -68,7 +70,8 @@ export const AllSets = [
     OpenAI,
     Chatbot,
     ComplexMySQL,
-    DeployMySQL
+    DeployMySQL,
+    SpotifyApi
 ]
 
 </script>
