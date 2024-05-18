@@ -1,8 +1,8 @@
 {
     "Info": [
         {
-            "title": "How to Install and Use TikTok Downloader",
-            "desc": "How to install TikTok Downloader and use it with my CLI tool.",
+            "title": "How to Setup TikTok Downloader (NOT WORKING)",
+            "desc": "How to install TikTok Downloader and use it with my CLI tool. *THE API ENDPOINT HAS BEEN DEPRECATED.*",
             "ref": "tiktok"
         }
     ],

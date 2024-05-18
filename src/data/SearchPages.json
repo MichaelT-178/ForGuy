@@ -266,13 +266,13 @@
     {
         "id": 45,
         "Emoji": "🎥",
-        "MenuName": "How to Install and Use TikTok Downloader",
+        "MenuName": "How to Setup TikTok Downloader (Not Working)",
         "Link": "/CompSci/SetupProjects/tiktok"
     },
     {
         "id": 46,
         "Emoji": "📺",
-        "MenuName": "How to Install and Use YouTube Downloader",
+        "MenuName": "How to Setup YouTube Downloader",
         "Link": "/CompSci/SetupProjects/youtube"
     },
     {
