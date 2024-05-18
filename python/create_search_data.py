@@ -683,6 +683,21 @@ def get_reddit_api():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+    
+def get_spotify_api():
+	with open("../src/data/CompSci/Instructions/SpotifyApi.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Spotify API Project 🎧"
+		Link = "/CompSci/SetupProjects/spotify-api"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+      
 
 def get_openai_api():
 	with open("../src/data/CompSci/Instructions/OpenAI.json", "r") as file:
@@ -1237,6 +1252,7 @@ youtube = get_youtube()
 
 googleapi = get_google_api()
 redditapi = get_reddit_api()
+spotifyapi = get_spotify_api()
 openai = get_openai_api()
 botpress = get_botpress()
 
@@ -1331,6 +1347,7 @@ all_data = [
 
     googleapi, 
     redditapi,
+    spotifyapi,
     openai,
     botpress,
 
