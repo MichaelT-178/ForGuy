@@ -289,108 +289,114 @@
     },
     {
         "id": 49,
+        "Emoji": "🎧",
+        "MenuName": "How to Setup a Spotify API Project",
+        "Link": "/CompSci/SetupProjects/spotify-api"
+    },
+    {
+        "id": 50,
         "Emoji": "💬",
         "MenuName": "How to Setup a OpenAI API Project",
         "Link": "/CompSci/SetupProjects/openai-api"
     },
     {
-        "id": 50,
+        "id": 51,
         "Emoji": "🤖",
         "MenuName": "How to Make a Custom Botpress Chatbot",
         "Link": "/CompSci/SetupProjects/botpress"
     },
     {
-        "id": 51,
+        "id": 52,
         "Emoji": "🍎",
         "MenuName": "How to create an iOS app with Swift and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
     {
-        "id": 52,
+        "id": 53,
         "Emoji": "🏎️",
         "MenuName": "How to Setup Core Data in a SwiftUI project.",
         "Link": "/CompSci/SetupProjects/core-data"
     },
     {
-        "id": 53,
+        "id": 54,
         "Emoji": "📱",
         "MenuName": "How to Run an iOS app in Developer Mode",
         "Link": "/CompSci/SetupProjects/developermode"
     },
     {
-        "id": 54,
+        "id": 55,
         "Emoji": "🗝️",
         "MenuName": "How to Setup OAuth Authentication",
         "Link": "/CompSci/SetupProjects/oauth"
     },
     {
-        "id": 55,
+        "id": 56,
         "Emoji": "🔐",
         "MenuName": "How to Setup Two-Factor Authentication",
         "Link": "/CompSci/SetupProjects/two-factor-auth"
     },
     {
-        "id": 56,
+        "id": 57,
         "Emoji": "📊",
         "MenuName": "How to Populate a SQLite3 Database",
         "Link": "/CompSci/SetupProjects/basic-sqlite"
     },
     {
-        "id": 57,
+        "id": 58,
         "Emoji": "📈",
         "MenuName": "How to Use Excel with Python",
         "Link": "/CompSci/SetupProjects/excel"
     },
     {
-        "id": 58,
+        "id": 59,
         "Emoji": "🌈",
         "MenuName": "How to Add a Language to the Prism Library",
         "Link": "/CompSci/SetupProjects/prism"
     },
     {
-        "id": 59,
+        "id": 60,
         "Emoji": "🐍",
         "MenuName": "How to Setup an Executable Python Script",
         "Link": "/CompSci/SetupProjects/executable-python"
     },
     {
-        "id": 60,
+        "id": 61,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 61,
+        "id": 62,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 62,
+        "id": 63,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 63,
+        "id": 64,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 64,
+        "id": 65,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 65,
+        "id": 66,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 66,
+        "id": 67,
         "Emoji": "😂",
         "MenuName": "Memes",
         "Link": "/Other/Memes"

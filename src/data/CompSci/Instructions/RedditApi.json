@@ -9,13 +9,78 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "",
+            "instruction": "Before you start make sure you have a normal reddit account. If you don't have one, sign up."
+        },
+        {
+            "id": 2,
+            "instruction": "Go [here](https://www.reddit.com/prefs/apps) to start registering your free app. Note that while the UI is old it's still the correct page."
+        },
+        {
+            "id": 3,
+            "instruction": "Click the grey \"are you a developer? create an app...\" button on the left-hand side."
+        },
+        {
+            "id": 4,
+            "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. "
+        },
+        {
+            "id": 5,
+            "instruction": "In the \"redirect uri\" field paste the following link. Then select \"I'm not a robot\" and press \"create app\".",
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
+                "Language": "Command",
+                "DisplayLang": "Redirect Link",
+                "FormatCode": "https://www.reddit.com/prefs/apps",
+                "CopyCode": "https://www.reddit.com/prefs/apps"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\"."
+        },
+        {
+            "id": 7,
+            "instruction": "Now go to your terminal and run the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 install praw",
+                "CopyCode": "pip3 install praw"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "Setup your folder for your script.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mkdir reddit_api_script;\n  cd reddit_api_script;\n  touch script.py",
+                "CopyCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "import praw\n\n  reddit = praw.Reddit(\n      client_id='YOUR_CLIENT_ID',\n      client_secret='YOUR_CLIENT_SECRET',\n      user_agent='script by u/YOUR_REDDIT_USERNAME',\n      password='YOUR_REDDIT_PASSWORD'\n  )\n\n  for submission in reddit.subreddit('sports').hot(limit=10):\n      print(submission.title)",
+                "CopyCode": "import praw\n\nreddit = praw.Reddit(\n\tclient_id='YOUR_CLIENT_ID',\n\tclient_secret='YOUR_CLIENT_SECRET',\n\tuser_agent='script by u/YOUR_REDDIT_USERNAME',\n\tpassword='YOUR_REDDIT_PASSWORD'\n)\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n\tprint(submission.title)"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "Run your script to test it out.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "python3 script.py",
+                "CopyCode": "python3 script.py"
             }
         }
     ]
