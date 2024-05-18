@@ -1,15 +1,15 @@
 {
     "Info": [
         {
-            "title": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
-            "desc": "Describes how to make a complex REST Api with React, Spring Boot, and MySQL.",
-            "ref": "complex-mysql"
+            "title": "How to Setup a Spotify API Project",
+            "desc": "Explains how to setup a a project that utilizes the Spotify API.",
+            "ref": "spotify-api"
         }
     ],
     "Instructions": [
         {
             "id": 1,
-            "instruction": "@GET @SET",
+            "instruction": "",
             "Code": {
                 "Name": "",
                 "Description": "",
