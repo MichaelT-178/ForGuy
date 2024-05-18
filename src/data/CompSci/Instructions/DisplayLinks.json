@@ -134,12 +134,12 @@
             "links": [
                 {
                     "id": 1,
-                    "name": "How to Install and Use TikTok Downloader",
+                    "name": "How to Setup TikTok Downloader (Not Working)",
                     "ref": "tiktok"
                 },
                 {
                     "id": 2,
-                    "name": "How to Install and Use YouTube Downloader",
+                    "name": "How to Setup YouTube Downloader",
                     "ref": "youtube"
                 }
             ] 

@@ -636,7 +636,7 @@ def get_tiktok():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Install and Use TikTok Downloader 🎥"
+		Title = "How to Setup TikTok Downloader 🎥"
 		Link = "/CompSci/SetupProjects/tiktok"
 		Results = info + instructions
 
@@ -650,7 +650,7 @@ def get_youtube():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Install and Use YouTube Downloader 📺"
+		Title = "How to Setup YouTube Downloader 📺"
 		Link = "/CompSci/SetupProjects/youtube"
 		Results = info + instructions
 

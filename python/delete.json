@@ -9,11 +9,11 @@
             },
             {
                 "Header": "Why should you listen to me?",
-                "Body": "I am a recent UNCW computer science alumni and I'm currently working as a Software Engineer at IBM in Research Triangle Park making six-figures my first month out of college. During college I had two SWE internships, one at USAA and the other at a startup company called Amotions, Inc. I've also received a couple other full-time and internship offers as well. My situation is somewhat rare for a UNCW alumni and I want to help get you in the same boat, if that's something you're interested in. So far, I've successfully helped a friend of mine at UNCW (class of 2025) get a SWE internship at USAA and I feel like I've developed pretty good job-searching strategies over the years. I think you would find some of these techniques and strategies useful, so I've shared them fairly in depth throughout this website. As mentioned earlier, if you need any help with anything please do not hesitate to contact me. Definitely don't hesitate to spam me with questions, I'd be more than happy to answer all of them to the best of my ability. "
+                "Body": "I am a recent UNCW computer science alumni and I'm currently working as a Software Engineer at IBM in Research Triangle Park making six-figures my first month out of college. During college I had two SWE internships, one at USAA and the other at a startup company called Amotions, Inc. I've also received a couple other full-time and internship offers as well. My situation is somewhat rare for a UNCW alumni and I want to help get you in the same boat, if that's something you're interested in. So far, I've successfully helped a friend of mine at UNCW (class of 2025) get a SWE internship at USAA and I feel like I've developed pretty good job-searching strategies over the years. I think you would find some of these techniques and strategies useful, so I've shared them fairly in depth throughout this website. As mentioned earlier, if you need any help with anything please do not hesitate to contact me. Definitely don't hesitate to spam me with questions, I'd be more than happy to answer all of them to the best of my ability."
             },
             {
                 "Header": "Explanation of Search Functionality",
-                "Body": "You can search for a page by typing it's name in the search bar. The results shown are pages that's name matches the search query. If you want to search for a term within a page, type the term in the search bar and then click return/enter. You'll be taken to a page showing views which contain the search term."
+                "Body": "You can search for a page by typing it's name in the search bar. The results shown are pages that's name matches the search query. If you want to search for a term within a page, type the term in the search bar and then click return/enter. You'll be taken to a page showing views which contain the search term. You can't be hovering over the search bar when you press enter/return to avoid a menu accidentally expanding. Just move your cursor to the side when you start typing. This isn't an issue when the sidebar is displayed."
             },
             {
                 "Header": "Download or View Source Code",
@@ -28,7 +28,7 @@
             {
                 "page": "Where To Apply",
                 "toggleQuestion": "Why did I choose these companies?",
-                "toggleDescription": "This is mostly just a giant compilation of companies where I saw UNCW students/alumni working.",
+                "toggleDescription": "This is basically just a giant compilation of companies where I saw UNCW students/alumni working as Software Engineers.",
                 "searchText": "Search Companies By Location..."
             },
             {
@@ -85,7 +85,7 @@
                 "Name": "Department Of State",
                 "Location": "Washington DC - Baltimore Area",
                 "LinkedIn": "https://www.linkedin.com/company/doscareers/jobs/",
-                "Contact": "",
+                "Contact": "DOSITRecruitment@state.gov",
                 "Tips": "Apply way before the job starts so you have enough time to get a security clearance. I went through basically the entire process so I can help you. Mine took roughly 3 months",
                 "Pay": ""
             },
@@ -445,6 +445,22 @@
                 "Pay": ""
             },
             {
+                "Name": "Barings",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/barings/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "StackWave",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/stackwave/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Seminaut Inc",
                 "Location": "San Marcos, Texas (Remote)",
                 "LinkedIn": "https://www.linkedin.com/company/seminaut-inc/jobs/",
@@ -456,6 +472,14 @@
                 "Name": "Syneos Health",
                 "Location": "Morrisville, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/syneos-health/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Sensus",
+                "Location": "Morrisville, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/sensus/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -480,6 +504,262 @@
                 "Name": "Ally",
                 "Location": "Charlotte, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Vanguard",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/vanguard/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Tandem",
+                "Location": "Remote, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/madeintandem/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Ekos",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/goekos/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "WEX",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/wexinc/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "RVO Health",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/rvohealth/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "TOURtech, Inc.",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/tourtechsupport-inc/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Q2 Solutions",
+                "Location": "Durham, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/q2-solutions/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "lululemon",
+                "Location": "N/A",
+                "LinkedIn": "https://www.linkedin.com/company/lululemon/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Floating Point Group",
+                "Location": "N/A",
+                "LinkedIn": "https://www.linkedin.com/company/floating-point-group/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "JXBX (Jukebox)",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/jkbx/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Smartool.ai",
+                "Location": "N/A",
+                "LinkedIn": "https://www.linkedin.com/company/smartool-ai/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Pixelum.io",
+                "Location": "N/A",
+                "LinkedIn": "https://www.linkedin.com/company/pixelum-io/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "DealCloud, an Intapp Company",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/dealcloud-inc-/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "MicroD",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/microd-inc-/jobs/",
+                "Contact": "",
+                "Tips": "That name is CRAZY",
+                "Pay": ""
+            },
+            {
+                "Name": "",
+                "Location": "",
+                "LinkedIn": "",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Pratt Miller",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/pratt-&-miller-engineering/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "DigitalCrafts",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/school/digitalcrafts/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "theCoderSchool (Coding Instructor)",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/thecoderschool/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Few",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/workwithfew/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Lithios",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/lithios/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Coworks",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/coworks-app/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Go Energies",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/go-energies/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Young Scientist Academy",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/young-scientist-academy/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "PCI Energy Solutions",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/pci-energy-solutions/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Haversack",
+                "Location": "Huntersville, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/gohaversack/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "ChristianSteven Software",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/christiansteven-software/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Lovingly",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/lovingly/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Intapp",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/intapp/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Grover Gaming",
+                "Location": "Greenville, North Carolina or Chicago, Illinois",
+                "LinkedIn": "https://www.linkedin.com/company/grovergaming/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Allscripts",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/allscripts/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "GBF, Inc",
+                "Location": "High Point, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/lazar-industries-llc/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Alamance County Government",
+                "Location": "Graham, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/alamance-county-government/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -552,6 +832,22 @@
                 "Name": "CentralSquare Technologies",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/centralsqtech/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "CastleBranch",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/castle-branch-inc-/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Brunswick County",
+                "Location": "Bolivia, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/brunswickcounty/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -637,6 +933,38 @@
                 "Pay": ""
             },
             {
+                "Name": "insightsoftware",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/outcomes-by-insightsoftware/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "TE Connectivity",
+                "Location": "Fuquay-Varina, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/te-connectivity/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "The John Hopkins University (Undergraduate Research Assistant)",
+                "Location": "Baltimore, Maryland",
+                "LinkedIn": "https://www.linkedin.com/school/johns-hopkins-university/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "MetLife",
+                "Location": "Cary, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/metlife/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Hardee Hunt & Williams",
                 "Location": "Wrightsville Beach, North Carolina. Near Wilmington",
                 "LinkedIn": "https://www.linkedin.com/company/hardee-hunt-&-williams/jobs/",
@@ -648,6 +976,14 @@
                 "Name": "Blue Cross NC",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/bluecrossnc/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Graham Capital Management, L.P.",
+                "Location": "Rowayton, Connecticut",
+                "LinkedIn": "https://www.linkedin.com/company/graham-capital-management/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -696,6 +1032,14 @@
                 "Name": "Uni-SPIRE",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/uni-spire-the-universal-writing-continuum/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "EarneyIT (IT Technician)",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/earneyit/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -889,6 +1233,14 @@
                 "Location": "Wilmington, North Carolina (UNCW Campus)",
                 "LinkedIn": "https://www.linkedin.com/company/target/jobs/",
                 "Contact": "thewanglab.org@gmail.com",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Qualitest",
+                "Location": "Greensboro, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/qualitest/jobs/",
+                "Contact": "",
                 "Tips": "",
                 "Pay": ""
             },
@@ -1157,6 +1509,14 @@
                 "Pay": ""
             },
             {
+                "Name": "Strategic Staffing Solutions",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/strategic-staffing-solutions/jobs/",
+                "Contact": "emarsek@strategicstaff.com (Erika Marsek)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "DKW Communications, Inc.",
                 "Location": "Washington, D.C.",
                 "LinkedIn": "https://www.linkedin.com/company/dkw-communications-inc-/jobs/",
@@ -1192,7 +1552,7 @@
                 "Name": "IT Jobs at UCPS",
                 "Location": "Charlotte, North Carolina. Weddington",
                 "LinkedIn": "https://www.linkedin.com/company/union-county-public-schools/jobs/",
-                "Contact": "james.parker@ucps.k12.nc.us (Jay Parker, not James)",
+                "Contact": "james.parker@ucps.k12.nc.us (Refer to him as Jay Parker)",
                 "Description": "Gi Iyer from Handshake gave me this information",
                 "Tips": "",
                 "Pay": ""
@@ -1272,6 +1632,14 @@
                 "Pay": ""
             },
             {
+                "Name": "Insight",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/insight/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Atomized",
                 "Location": "Charlotte, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/atomizedhq/jobs/",
@@ -1297,7 +1665,7 @@
             },
             {
                 "Name": "NASA",
-                "Location": "Hampton, Virginia",
+                "Location": "Hampton, Virginia or Huntsville, Alabama or Cape Canaveral, Florida or Pasadena, California.",
                 "LinkedIn": "https://www.linkedin.com/company/nasa/jobs/",
                 "Contact": "",
                 "Tips": "",
@@ -1741,7 +2109,7 @@
                 "Job Title": "IT Developer",
                 "Contact": "arosso@lenovo.com",
                 "Location": "Morrisville, North Carolina (RTP)",
-                "Description": "I did both of their interviews but was rejected. I think they wanted someone with more experience and could start sooner."
+                "Description": "I did both of their interviews but was rejected. I think they wanted someone with more experience that could start sooner."
             },
             {
                 "Name": "Cisco",
@@ -2172,7 +2540,7 @@
                 "Location": "Remote",
                 "Email": "cmibarnwell@seminautdigital.com",
                 "LinkedIn": "https://www.linkedin.com/in/caleb-barnwell/",
-                "Details": "This guy contact me about a SWE internship in Fall 2022.",
+                "Details": "This guy contacted me about a SWE internship in Fall 2022.",
                 "Image": "Seminaut.jpg"
             },
             {
@@ -2214,6 +2582,26 @@
                 "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
                 "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
                 "Image": "lenovo.jpg"
+            },
+            {
+                "Name": "Andy Herrmann",
+                "Company": "U.S. Department of State",
+                "Role": "Division Chief",
+                "Location": "Washington D.C. Metro Area",
+                "Email": "DOSITRecruitment@state.gov",
+                "LinkedIn": "https://www.linkedin.com/in/kermit1/",
+                "Details": "The UNCW Comp Sci department sent out an email about a DOS recruiting event with this name and email.",
+                "Image": "DOS.jpg"
+            },
+            {
+                "Name": "Erika Marsek",
+                "Company": "Strategic Staffing Solutions",
+                "Role": "Recruiter",
+                "Location": "Charlotte, North Carolina",
+                "Email": "emarsek@strategicstaff.com",
+                "LinkedIn": "https://www.linkedin.com/in/erikamarsek/",
+                "Details": "This women contacted me about a W2 role in Charlotte. It seemed like they wanted someone with more experience though.",
+                "Image": "S3.jpg"
             },
             {
                 "Name": "Person #1",
@@ -2282,7 +2670,7 @@
                 "Location": "Durham, North Carolina (Remote)",
                 "Contact": "wlawrence@idtech.com",
                 "LinkedIn": "https://www.linkedin.com/in/westonlawrence/",
-                "Details": "This guy contacted me about a video interview I sent in.",
+                "Details": "This was the guy who recruited and interviewed me for the tutoring position.",
                 "Image": "idTech.jpg"
             },
             {
@@ -2419,7 +2807,7 @@
                 "Name": "Greg Olsen",
                 "Company": "Motion Recruitment",
                 "Role": "Executive Director",
-                "Location": "Washington D.C. Metro Area",
+                "Location": "Washington D.C.",
                 "Email": "greg.olsen@motionrecruitment.com",
                 "LinkedIn": "https://www.linkedin.com/in/greg-olsen-73131972/",
                 "Details": "This guy contacted me via email about a Junior Research Engineer position.",
@@ -4169,13 +4557,13 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "brew install git"
+                "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
             },
             {
                 "instruction": "Include a ReadMe. ReadMes are a great way to add a description about your project as well as other information."
             },
             {
-                "instruction": "Don't edit ReadMes on GitHub do it in a local repo/.md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes."
+                "instruction": "Don't edit ReadMes on GitHub do it in a local repo/md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes."
             },
             {
                 "Name": "",
@@ -4184,7 +4572,7 @@
                 "CopyCode": "git fetch origin\ngit commit -m \"Pulled changes\""
             },
             {
-                "instruction": "If you want to remove git from a folder use the following command."
+                "instruction": "If you want to remove git from a folder/directory use the following command."
             },
             {
                 "Name": "",
@@ -4268,6 +4656,11 @@
                 "Example": "git diff"
             },
             {
+                "Command": "git reset",
+                "Description": "Unstage all changes (undo git add .)",
+                "Example": "git reset"
+            },
+            {
                 "instruction": "Go to the Github repository you want to fork. "
             },
             {
@@ -4313,7 +4706,7 @@
                 "CopyCode": "git add .\ngit commit -m \"Made changes\"\ngit push"
             },
             {
-                "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to."
+                "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to. Copy the hash then press 'q' to exit."
             },
             {
                 "Name": "",
@@ -4349,7 +4742,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "git commit -m \"Messages\""
+                "CopyCode": "git commit -m \"Message\""
             },
             {
                 "instruction": "Push your changes to main with the \"--force\" tag."
@@ -4359,6 +4752,18 @@
                 "Description": "",
                 "Language": "Command",
                 "CopyCode": "git push origin main --force"
+            },
+            {
+                "instruction": "If you get an error that says \"error: src refspec main does not match any\" the repo might not have a main branch. Try master instead."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git push origin master --force"
+            },
+            {
+                "instruction": "Go to GitHub and create a new empty repository."
             },
             {
                 "instruction": "Go to your terminal."
@@ -4391,7 +4796,7 @@
             },
             {
                 "Command": "git remote add origin <repo-http-link>",
-                "Description": "Add remote GitHub origin. It can also be the SSH link.",
+                "Description": "Add remote GitHub origin. It can also be the SSH link. Can be found it github descriptions.",
                 "Example": "git remote add origin https://github.com/John-Smith/PacMan.git"
             },
             {
@@ -5322,10 +5727,40 @@
                 "Link": "https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite"
             },
             {
+                "Name": "Docker",
+                "Author": "Microsoft",
+                "Description": "Makes it easy to create, manage, and debug containerized applications.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker"
+            },
+            {
+                "Name": "GitHub Copilot",
+                "Author": "GitHub",
+                "Description": "AI pair programmer tool for code generation. I personally prefer ChatGPT but this could probably be useful.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot"
+            },
+            {
+                "Name": "Excel Viewer",
+                "Author": "GrapeCity",
+                "Description": "Allows you to view excel files in VSCode.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer"
+            },
+            {
+                "Name": "Spring Boot Tools",
+                "Author": "VMware",
+                "Description": "Provides support for Spring Boot applications.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot"
+            },
+            {
                 "Name": "Code Spell Checker",
                 "Author": "Street Side Software",
                 "Description": "Spell checks code, json files, etc.",
                 "Link": "https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+            },
+            {
+                "Name": "Dev Containers",
+                "Author": "Microsoft",
+                "Description": "Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers"
             },
             {
                 "Name": "Rainbow CSV",
@@ -5344,6 +5779,12 @@
                 "Author": "Prettier",
                 "Description": "As the name implies, this is a code formatter extension meant to help with code styling.",
                 "Link": "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+            },
+            {
+                "Name": "Inline fold",
+                "Author": "Mohammed Alamri",
+                "Description": "Allows you to minimize tailwind css code in your html for a less cluttered look.",
+                "Link": "https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold"
             },
             {
                 "Name": "Python",
@@ -5386,6 +5827,2639 @@
                 "Author": "Shahil Kumar",
                 "Description": "Allows you to view docx files in VSCode.",
                 "Link": "https://marketplace.visualstudio.com/items?itemName=ShahilKumar.docxreader"
+            }
+        ]
+    },
+    {
+        "Title": "Setup Project 🛠️",
+        "Link": "/CompSci/SetupProjects",
+        "Results": [
+            {
+                "scrollToTop": "Scroll To Top"
+            },
+            {
+                "title": "Setup Projects",
+                "desc": "This page contains information about setting up various projects."
+            },
+            {
+                "desc": "Use these links to display different instruction sets."
+            },
+            {
+                "title": "Display Links"
+            },
+            {
+                "name": "How to Setup Node.js",
+                "ref": "node"
+            },
+            {
+                "name": "How to Setup a Vue Project",
+                "ref": "vue"
+            },
+            {
+                "name": "How to Setup a React Project",
+                "ref": "react"
+            },
+            {
+                "desc": "These explain how to deploy Vanilla or Vite project to GitHub pages."
+            },
+            {
+                "title": "Deploy Projects to GitHub Pages"
+            },
+            {
+                "name": "Deploy a Vanilla JS Project to GitHub Pages",
+                "ref": "gh-pages"
+            },
+            {
+                "name": "Deploy a Vite Project to GitHub Pages",
+                "ref": "vite-gh-pages"
+            },
+            {
+                "desc": "These explain how to use AWS, Docker, REST Apis, etc. for full-stack applications."
+            },
+            {
+                "title": "How to Setup REST Apis with Frontends"
+            },
+            {
+                "name": "How to Setup an Amazon Web Services Account",
+                "ref": "aws"
+            },
+            {
+                "name": "How to Install and Setup Docker",
+                "ref": "docker"
+            },
+            {
+                "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+                "ref": "flask-sqlite3"
+            },
+            {
+                "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                "ref": "deploy-sqlite"
+            },
+            {
+                "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                "ref": "flask-PostgreSQL"
+            },
+            {
+                "name": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+                "ref": "deploy-PostgreSQL"
+            },
+            {
+                "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+                "ref": "react-sqlite"
+            },
+            {
+                "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+                "ref": "deploy-spring"
+            },
+            {
+                "name": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
+                "ref": "complex-mysql"
+            },
+            {
+                "name": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
+                "ref": "deploy-mysql"
+            },
+            {
+                "desc": "These explain how to setup a JavaFX Project, Cisco Secure Client, and a PHP project."
+            },
+            {
+                "title": "How to Setup UNCW School Projects"
+            },
+            {
+                "name": "How to Setup a JavaFX Project (Intellij IDEA)",
+                "ref": "intellij"
+            },
+            {
+                "name": "How to Setup a JavaFX Project (Eclipse)",
+                "ref": "eclipse"
+            },
+            {
+                "name": "How to Setup Cisco Secure Client and a VPN.",
+                "ref": "cisco"
+            },
+            {
+                "name": "How to Setup a PHP and MySQL Project for UNCW.",
+                "ref": "php"
+            },
+            {
+                "desc": "These explain how to setup and use TikTok and Youtube CLI tools."
+            },
+            {
+                "title": "How to Setup TikTok and YouTube Downloaders"
+            },
+            {
+                "name": "How to Install and Use TikTok Downloader (Not Working)",
+                "ref": "tiktok"
+            },
+            {
+                "name": "How to Setup YouTube Downloader",
+                "ref": "youtube"
+            },
+            {
+                "desc": "These explain how to setup project that utilize APIs and make Chatbots."
+            },
+            {
+                "title": "How to Setup Projects that Utilize API's"
+            },
+            {
+                "name": "How to Setup a Google API Project",
+                "ref": "google-api"
+            },
+            {
+                "name": "How to Setup a Reddit API Project",
+                "ref": "reddit-api"
+            },
+            {
+                "name": "How to Setup a Spotify API Project",
+                "ref": "spotify-api"
+            },
+            {
+                "name": "How to Setup a OpenAI API Project",
+                "ref": "openai-api"
+            },
+            {
+                "name": "How to Make a Custom Botpress Chatbot",
+                "ref": "botpress"
+            },
+            {
+                "desc": "These explain how to setup an iOS app with Firebase and run it in developer mode."
+            },
+            {
+                "title": "How to Setup an iOS App"
+            },
+            {
+                "name": "How to create an IOS app with Swift and Firebase",
+                "ref": "swift-firebase"
+            },
+            {
+                "name": "How to Setup Core Data in a SwiftUI project.",
+                "ref": "core-data"
+            },
+            {
+                "name": "How to Run an iOS app in Developer Mode",
+                "ref": "developermode"
+            },
+            {
+                "desc": "Explains how to setup OAuth and Two-Factor authentication in a Vue.js app."
+            },
+            {
+                "title": "How to Setup Authentication in an App"
+            },
+            {
+                "name": "How to Setup OAuth Authentication",
+                "ref": "oauth"
+            },
+            {
+                "name": "How to Setup Two-Factor Authentication",
+                "ref": "two-factor-auth"
+            },
+            {
+                "desc": "These explain how to setup miscellaneous projects."
+            },
+            {
+                "title": "How to Setup Miscellaneous Projects"
+            },
+            {
+                "name": "How to Populate and Query a SQLite3 Database",
+                "ref": "basic-sqlite"
+            },
+            {
+                "name": "How to Use Excel with Python",
+                "ref": "excel"
+            },
+            {
+                "name": "How to Add a Language to the Prism Library",
+                "ref": "prism"
+            },
+            {
+                "name": "How to Setup an Executable Python Script",
+                "ref": "executable-python"
+            }
+        ]
+    },
+    {
+        "Title": "How to Install Node.js 🌐",
+        "Link": "/CompSci/SetupProjects/node",
+        "Results": [
+            {
+                "title": "How to Install Node.js",
+                "desc": "How to install Node.js before setting up your project.",
+                "ref": "node"
+            },
+            {
+                "instruction": "Check if you already have node installed by running the following command in your terminal. It should print the version if it's installed."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "node -v"
+            },
+            {
+                "instruction": "If you don't already have Node.js installed, you can download it using this link."
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "yaml",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a Vue.js Project 🌁",
+        "Link": "/CompSci/SetupProjects/vue",
+        "Results": [
+            {
+                "title": "How to Setup a Vue.js Project",
+                "desc": "How to setup a Vue.js project that uses Vite.",
+                "ref": "vue"
+            },
+            {
+                "instruction": "Install Vite."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install -g create-vite"
+            },
+            {
+                "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\". Replace \"your-project-name\" with the real name of your project."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm init vite@latest your-project-name -- --template vue"
+            },
+            {
+                "instruction": "Change into your project directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd your-project-name"
+            },
+            {
+                "instruction": "Change into your project directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install"
+            },
+            {
+                "instruction": "Run the application to make sure everything's working. The page should say Vite + Vue. Press control + c to stop running locally."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm run dev"
+            },
+            {
+                "instruction": "Install vue-router while in your new project directory"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install vue-router@4"
+            },
+            {
+                "instruction": "Change into the src directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd src"
+            },
+            {
+                "instruction": "Create the \"views\", \"router\", and \"utils\" directories in the src folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir -p views router utils"
+            },
+            {
+                "instruction": "Delete the \"HelloWorld.vue\" file in the \"components\" directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "rm components/HelloWorld.vue"
+            },
+            {
+                "instruction": "Delete the \"vue.svg\" file in the \"assests\" directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "rm assets/vue.svg"
+            },
+            {
+                "instruction": "In the \"router\" directory create an \"index.js\" file"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch router/index.js"
+            },
+            {
+                "instruction": "In the \"index.js\" file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work. Save the file when you're finished (command + s)."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/'),\n\troutes\n});\n\nexport default router;"
+            },
+            {
+                "instruction": "Now open the \"main.js\" file in the top-most directory of the src folder. Delete the contents of the file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport router from './router'\n\ncreateApp(App).use(router).mount('#app');"
+            },
+            {
+                "instruction": "In the components directory create a file named \"RouterBtn.vue\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch components/RouterBtn.vue"
+            },
+            {
+                "instruction": "Paste the following code into \"RouterBtn.vue\" file in your components folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "<template>\n\t<router-link :to=\"path\" class=\"button\">\n\t\t{{ buttonText }}\n\t</router-link>\n</template>\n\n\n<script setup>\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n</script>\n\n\n<style scoped>\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n</style>"
+            },
+            {
+                "instruction": "In the \"views\" directory create files named \"Home.vue\" and \"SecondPage.vue\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch views/Home.vue\ntouch views/SecondPage.vue"
+            },
+            {
+                "instruction": "Paste the following code in the \"Home.vue\" file in the views folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "<template>\n\t<p class=\"title\">HOME PAGE</p>\n\t<LinkBtn\n\t\t:path=\"'/second-page'\"\n\t\t:buttonText=\"'Go to 2nd page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
+            },
+            {
+                "instruction": "Paste the following code in the \"SecondPage.vue\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "<template>\n\t<p class=\"title\">Second Page</p>\n\t<LinkBtn\n\t\t:path=\"'/'\"\n\t\t:buttonText=\"'Go to Home page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: purple;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
+            },
+            {
+                "instruction": "Go to \"App.vue\" in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "<template>\n\t<p class=\"test-header\">TEST WEBSITE</p>\n\t<router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.test-header {\n\tfont-size: 25px;\n}\n\n</style>"
+            },
+            {
+                "instruction": "After you're done, save your code and run it using \"npm run dev\". I think this should be a good start to your project. Obviously you can delete and modify the files. The example files were just to show you how to set the project up."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm run dev"
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a React.js Project ⚛️",
+        "Link": "/CompSci/SetupProjects/react",
+        "Results": [
+            {
+                "title": "How to Setup a React.js Project",
+                "desc": "How to setup a React.js project that uses Vite and Tailwind.css.",
+                "ref": "react"
+            },
+            {
+                "instruction": "Make sure you have node installed by running the following command. If it's installed it should output the version."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "node -v"
+            },
+            {
+                "instruction": "Install Vite."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install -g create-vite"
+            },
+            {
+                "instruction": "Create a React project using Vite. Note that the template at the is \"React\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm create vite@latest my-react-project -- --template react"
+            },
+            {
+                "instruction": "Change into your project directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd my-react-project"
+            },
+            {
+                "instruction": "Install dependencies."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install"
+            },
+            {
+                "instruction": "Install Tailwind CSS. Note you can clear your terminal when you're by doing \"command + k\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install -D tailwindcss postcss autoprefixer\nnpx tailwindcss init -p"
+            },
+            {
+                "instruction": "Install the React router."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install react-router-dom@6"
+            },
+            {
+                "instruction": "Now open your repository in VSCode. You can use the \"code .\" command if you have it installed."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "code ."
+            },
+            {
+                "instruction": "Open the \"tailwind.config.js\" file in the topmost directory. Delete its current contents and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "CopyCode": "/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{js,jsx,ts,tsx}\",\n  ],\n  theme: {\n    extend: {\n      fontFamily: {\n        sans: ['Arial', 'sans-serif']\n      }\n    }\n  },\n  plugins: [],\n}"
+            },
+            {
+                "instruction": "Run the server locally just to make sure the project is running currently. The site should currently say \"Vite  + React\" if installed correctly. After confirming it's installed correctly, stop running the server and go back to your code. You can stop the server by doing \"control + c\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm run dev"
+            },
+            {
+                "instruction": "Go to the \"src\" repository of your project and open the file called \"index.css\". Delete its current contents and paste the following code. Save the file when you're done (command + s)."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "CSS",
+                "CopyCode": "@tailwind base;\n@tailwind components;\n@tailwind utilities;"
+            },
+            {
+                "instruction": "THIS IS AN OPTIONAL STEP. If you're getting an error where the \"@tailwind\" keyword is being underline yellow with a message saying \"Unknow word\". Go to your VSCode settings json file and paste the following JSON data. Go to this link for additional details. If there's no error or if you don't mind the error, you can skip this step. It should still work."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "CopyCode": "\"files.associations\": {\n\t\"*.css\": \"tailwindcss\"\n},"
+            },
+            {
+                "instruction": "Change into the src directory and make the components, styles, utils, views, and router folders. You can run \"ls\" at the end to confirm it worked."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd src\nmkdir -p components styles utils views router\nls"
+            },
+            {
+                "instruction": "Create the following folders in the \"styles\" directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd styles\nmkdir -p components views"
+            },
+            {
+                "instruction": "Create the following files in the components and views directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch components/RouterBtn.css\ntouch views/Home.css"
+            },
+            {
+                "instruction": "In the styles/components directory in the \"RouterBtn.css\" file paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "CSS",
+                "CopyCode": ".button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n"
+            },
+            {
+                "instruction": "In the styles/views directory in the \"Home.css\" file paste the following code"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "CSS",
+                "CopyCode": ".title {\n\tcolor: pink;\n\tfont-family: Arial, sans-serif;\n}\n"
+            },
+            {
+                "instruction": "Change back into the main src directory and create the following files in the various folders."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd ..\ntouch components/RouterBtn.jsx\ntouch views/Home.jsx\ntouch views/SecondPage.jsx\ntouch router/index.jsx"
+            },
+            {
+                "instruction": "In the src/router directory Open the \"index.jsx\" file and paste and save the following code in it."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router>\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}"
+            },
+            {
+                "instruction": "In the src/components directory open the \"RouterBtn.jsx\" file and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    <Link to={path} className=\"button\">\n      {buttonText}\n    </Link>\n  );\n}\n\nexport default RouterBtn;"
+            },
+            {
+                "instruction": "In the src/views directory open the \"Home.jsx\" file and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    <div>\n      <p className=\"title\">HOME PAGE</p>\n      <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n    </div>\n  );\n}\n\nexport default HomePage;"
+            },
+            {
+                "instruction": "In the src/views directory open the \"SecondPage.jsx\" file and paste the following code. This incorporates tailwind.css and state variables."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n      <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n      <div>\n        <button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700\">\n          Count {count}\n        </button>\n      </div>\n    </div>\n  );\n}\n\nexport default SecondPage;\n"
+            },
+            {
+                "instruction": "Now in \"App.jsx\" in the top-most directory of src, delete the contents of the file, and paste the following."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    <>\n      <p class=\"text-2xl\">TEST WEBSITE</p>\n      <AppRouter />\n    </>\n  );\n}\n\nexport default App"
+            },
+            {
+                "instruction": "In the top-most directory of the src file, open \"App.css\". Remove the contents of the file and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "CSS",
+                "CopyCode": "#root {\n\tmax-width: 1280px;\n\tmargin: 0 auto;\n\tpadding: 2rem;\n\ttext-align: center;\n}"
+            },
+            {
+                "instruction": "Now remove unused assets. Press \"command + k\" to clear your terminal after you're done."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd ~\ncd my-react-project\nrm src/assets/react.svg\nrm public/vite.svg"
+            },
+            {
+                "instruction": "Run your project to assure everything's working correctly."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm run dev"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy a Vanilla JS Project to GitHub Pages 📜",
+        "Link": "/CompSci/SetupProjects/gh-pages",
+        "Results": [
+            {
+                "title": "Deploy a Vanilla JS Project to GitHub Pages",
+                "desc": "How to deploy a project that doesn't use Vite or a JS framework to GitHub pages. This is a good reference video.",
+                "ref": "gh-pages"
+            },
+            {
+                "instruction": "Write your non-vite html, css, and javascript code, then push it to github. Make sure there's a file named \"index.html\" in the top-most directory of your folder."
+            },
+            {
+                "instruction": "When you're ready to deploy do the following steps."
+            },
+            {
+                "instruction": "Go to your repository. In the top-right click on \"Settings\" with the gear icon next to it."
+            },
+            {
+                "instruction": "On the left-hand side under \"Code and automation\" select \"Pages\"."
+            },
+            {
+                "instruction": "Under \"Build and Deployment\" you should see a section titled \"Branch\". Under it select the \"None\" button and decide what branch you want to deploy. You likely want to deploy the \"main\" branch. You also likely don't want to change the \"(root)\" button."
+            },
+            {
+                "instruction": "Once done, press \"Save\"."
+            },
+            {
+                "instruction": "Wait about 1-2 minutes, then refresh the page. You should now see the link to your GitHub pages website."
+            }
+        ]
+    },
+    {
+        "Title": "Deploy a Vite Project to GitHub Pages ⚡️",
+        "Link": "/CompSci/SetupProjects/vite-gh-pages",
+        "Results": [
+            {
+                "title": "Deploy a Vite Project to GitHub Pages",
+                "desc": "How to deploy a project that uses Vite and a JS framework to GitHub pages (Vue, React, Etc.). This is a good reference video.",
+                "ref": "vite-gh-pages"
+            },
+            {
+                "instruction": "Ensure that the code for your app is already on GitHub and that you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd your-project-name\ngit status\ncd .."
+            },
+            {
+                "instruction": "Change into your local Vite project repository and open it in VSCode. You can open it using the \"code .\" command if you have it installed."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd your-project-name\ncode ."
+            },
+            {
+                "instruction": "Step 3 if you're using Vue. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [vue()],\n})"
+            },
+            {
+                "instruction": "Step 3 if you're using React. Open the \"vite.config.js\" file in your folder. Delete the contents of the folder and paste in the following code. Change the \"name-of-github-repo\". To the actual name of your GitHub repository. Keep the slashes before and after the name."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n\tbase: '/name-of-github-repo/',\n\tplugins: [react()],\n})"
+            },
+            {
+                "instruction": "Step 4 if you're using Vue router, go to your index.js file in the src/router directory. Where it says \"history: createWebHistory(‘/’)\". Change the createWebHistory parameter to be the name of your GitHub repository starting and ending with slashes. If you're not using Vue-router you can skip this step."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "Vue",
+                "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport Home from '../views/Home.vue';\nimport SecondPage from '../views/SecondPage.vue';\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: Home\n\t},\n\t{\n\t\tpath: '/second-page',\n\t\tcomponent: SecondPage\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/name-of-github-repo/'),\n\troutes\n});\n\nexport default router;"
+            },
+            {
+                "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"Router\" change it to include a \"basename\" prop and set its value to be the name of your GitHub repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Javascript",
+                "DisplayLang": "React",
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}"
+            },
+            {
+                "instruction": "Run the following commands in your terminal. Make sure you're still in your local repository using \"pwd\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
+            },
+            {
+                "instruction": "Now go to your Github repository, You should see that a new branch named \"gh-pages\" has been added."
+            },
+            {
+                "instruction": "Click on the \"Settings\" tab on the right-hand side of the top-bar. It has a gear icon next to it."
+            },
+            {
+                "instruction": "Now under \"Code and automation\" on the left-hand side click on \"Pages\" and wait while it deploys to Github pages. You should eventually see a link there where you can access your site. You should be done now. The following steps are to make changes to your deployed site."
+            },
+            {
+                "instruction": "To update the site while working on the main branch run the following commands. These will update both the main branch and gh-pages branch. You could make a python script that uses the \"os\" library to automate this process."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages"
+            },
+            {
+                "instruction": "If the subtree push doesn't work for some reason try the following. "
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force "
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup an Amazon Web Services Account ☁️",
+        "Link": "/CompSci/SetupProjects/aws",
+        "Results": [
+            {
+                "title": "How to Setup an Amazon Web Services Account",
+                "desc": "How to setup an Amazon Web Services Account and the CLI tool.",
+                "ref": "aws"
+            },
+            {
+                "instruction": "Set up a free tier Amazon Web Services account using this link. Follow the prompts, it's pretty straight forward. When you get to the \"Sign in\" screen choose \"Root User\"."
+            },
+            {
+                "instruction": "Once you get to \"Console Home\" page click on the region next to your name in the top-right corner. It might say \"Ohio\". Make sure it says \"US East (N. Virginia)\" us-east-1."
+            },
+            {
+                "instruction": "Now click your name in the top-right corner. In the drop down menu click \"Account\". You should be taken to a page that says \"Complete sign-up\". If you don’t think you're on the right page try clicking here."
+            },
+            {
+                "instruction": "On this page click the \"Complete your AWS registration\" button. Then fill out your billing information. Note you will NOT be charged for usage below AWS Free Tier Limits. They might hold $1 until they verify your identity. Press \"Continue\" and do the necessary verifications."
+            },
+            {
+                "instruction": "Once you get to the page titled \"Sign up for AWS\" choose the \"Basic support - Free\" plan. Then press the \"Complete sign up\" button."
+            },
+            {
+                "instruction": "Wait a second to receive the confirmation email. After you receive it briefly read it and continue to the next steps."
+            },
+            {
+                "instruction": "After you read the email go here account. To see your credentials. We're about to setup the AWS in your terminal and we'll need them."
+            },
+            {
+                "instruction": "Now open your terminal and run the following command to download the installer."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "curl \"https://awscli.amazonaws.com/AWSCLIV2.pkg\" -o \"AWSCLIV2.pkg\""
+            },
+            {
+                "instruction": "Now install the package. When prompted for a password type the password you use to sign on to your computer."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "sudo installer -pkg AWSCLIV2.pkg -target /"
+            },
+            {
+                "instruction": "Confirm it's correctly installed by running the following command. This might take a second to output info."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "aws --version"
+            },
+            {
+                "instruction": "Now we want to configure the AWS Command Line Interface tool."
+            },
+            {
+                "instruction": "Start by opening this link."
+            },
+            {
+                "instruction": "If an alert component is being displayed titled \"You don't have MFA assigned\" click on the button titled \"Assign MFA\"."
+            },
+            {
+                "instruction": "Fill out the fields. I'd suggest you use your phones for your MFA Device. Just name it something like \"ElijahsPhone\". Note that no spaces are allowed in the name."
+            },
+            {
+                "instruction": "Open duo mobile on your phone then scan the QR code. Click on the link in step 2 to view it."
+            },
+            {
+                "instruction": "In your duo mobile app make the account name something like \"Elijah's AWS\"."
+            },
+            {
+                "instruction": "Fill in the first passcode, then wait for another passcode to generate and fill in the second password field on their website."
+            },
+            {
+                "instruction": "Now go to this link. To setup up an IAM user. This part of the video does a good job demonstrating what we're about to do in steps 19-36."
+            },
+            {
+                "instruction": "Click on \"User groups\" in the left-hand side. Then click \"Create group\"."
+            },
+            {
+                "instruction": "In the \"User group name\" filed type \"administrator\"."
+            },
+            {
+                "instruction": "In the \"Attach permissions policies\" cards search field look up the following. \"AdministratorAccess\" and \"AWSBudgetsActionsWithAWSResourceControlAccess\". Select the boxes on the left-side of the two results. When you're done click \"Create user group\"."
+            },
+            {
+                "instruction": "Now on the left-hand side go to \"Users\" and click \"Create user\"."
+            },
+            {
+                "instruction": "In the \"User name\" field type \"testuser\". Then select \"Provide user access to the AWS Management Console - optional\". Then choose \"I want to create an IAM user\". Click \"custom password\" and create a new password. The unselect \"Users must create a new password at next sign-in - Recommended\" then click \"Next\"."
+            },
+            {
+                "instruction": "Then in the next page, keep \"Add user to group\" selected. In the \"User groups\" table select \"administrator\" then click \"Next\"."
+            },
+            {
+                "instruction": "Scroll down and in the \"Tags - optional\" card press \"Add new tag\". In the \"Key\" field enter \"Name\" and in the \"Value - optional\" field enter \"adminuser\". Then click on \"Create user\"."
+            },
+            {
+                "instruction": "Click \"Download .csv file\", then click \"Return to users list\"."
+            },
+            {
+                "instruction": "In the table click on \"testuser\" in the User Name column."
+            },
+            {
+                "instruction": "In the new page, click on the \"Security credentials\" tab. Scroll down and in the \"Multi-factor authentication (MFA)\" click on the Assign MFA device button."
+            },
+            {
+                "instruction": "Enter the Device name. Something Like \"ElijahsPhoneTwo\". It can't be the same you used earlier. It has to be one word. Make sure \"Authenticator app\" is selected then press \"Next\"."
+            },
+            {
+                "instruction": "Open duo mobile on your phone then scan the QR code. Click on the link in step 2 to view it."
+            },
+            {
+                "instruction": "In your duo mobile app make the account name something like \"Elijah's AWS\"."
+            },
+            {
+                "instruction": "Fill in the first passcode, then wait for another passcode to generate and fill in the second field on their website. Then click \"Add MFA\"."
+            },
+            {
+                "instruction": "Now click \"Create access key\" under the \"Access keys\" card."
+            },
+            {
+                "instruction": "Then in the new page under \"Use case\" select \"Command Line Interface (CLI)\". Then scroll down under \"Confirmation\" check the box. Then press \"Next\"."
+            },
+            {
+                "instruction": "In the \"Description tag value\" field type \"elijah_iam_user_cli_access\". Then click \"Create access key\"."
+            },
+            {
+                "instruction": "In the next page, scroll down and click \"Download .csv file\" and then press \"Done\" next to it."
+            },
+            {
+                "instruction": "Go to this link to see your IAM account information."
+            },
+            {
+                "instruction": "Now open your terminal and type the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "aws configure"
+            },
+            {
+                "instruction": "Enter your credentials from the \"testuser_accessKeys.csv\" file you just downloaded. \"Default region name [None]\" should be \"us-east-1\". Then when prompted for \"Default output format [None]\" put \"json\"."
+            },
+            {
+                "instruction": "Run the following command to open your bash file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "nano ~/.bash_profile"
+            },
+            {
+                "instruction": "Paste the following line in the bash_profile \"export PATH=~/.local/bin:$PATH\". To exit do \"control + o\". Then \"return\". Then \"control + x\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Copy and Paste",
+                "CopyCode": "export PATH=~/.local/bin:$PATH"
+            },
+            {
+                "instruction": "Run the following command"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "source ~/.bash_profile"
+            }
+        ]
+    },
+    {
+        "Title": "How to Install and Setup Docker 🐳",
+        "Link": "/CompSci/SetupProjects/docker",
+        "Results": [
+            {
+                "title": "How to Install and Setup Docker",
+                "desc": "How to install and setup Docker on your computer.",
+                "ref": "docker"
+            },
+            {
+                "instruction": "Run the following command in your terminal to determine what chip you have. If it says \"x86_64\" you have an intel chip. If it says \"arm64\" you have an Apple chip."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "uname -m"
+            },
+            {
+                "instruction": "Go to Dockers website and click on the \"Get Started\" button."
+            },
+            {
+                "instruction": "Click on the drop-down menu of the blue button that says \"Download for Mac - Apple Chip\". Select the chip or operating system output in step 1."
+            },
+            {
+                "instruction": "Follow the installation prompts, it should be pretty intuitive."
+            },
+            {
+                "instruction": "Open the \"Docker\" app. Accept the agreement and recommended settings."
+            },
+            {
+                "instruction": "Sign up for a Docker account and complete the welcome survey afterwards."
+            },
+            {
+                "instruction": "Go to your terminal and run the following command. It it outputs something like \"Docker version 26.0.0, build 2ae903e\" you should be good."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "docker --version"
+            },
+            {
+                "instruction": "You should be good after that! You can test it further by running the following command. This command will download a test image and run it in a container."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "docker run hello-world"
+            }
+        ]
+    },
+    {
+        "Title": "How to Make a Simple REST Api using Vue, Flask and SQLite3 🧪",
+        "Link": "/CompSci/SetupProjects/flask-sqlite3",
+        "Results": [
+            {
+                "title": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
+                "desc": "How to make an extremely simple REST Api using Flask and SQLite3 in the backend.",
+                "ref": "flask-sqlite3"
+            },
+            {
+                "instruction": "BEFORE YOU DO ANY OF THIS, go to the \"How to Setup a Vue Project\" link and complete all the instructions. Doing so is a prerequisite to this instruction set. I’d strongly recommend naming your project \"vue-sqlite-frontend\"."
+            },
+            {
+                "instruction": "Create a directory for your Flask api using the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir flask_and_sqlite"
+            },
+            {
+                "instruction": "Change into the directory"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd flask_and_sqlite"
+            },
+            {
+                "instruction": "Install the following package to create a virtual environment."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install virtualenv"
+            },
+            {
+                "instruction": "Create the virtual environment folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "virtualenv venv"
+            },
+            {
+                "instruction": "Activate the virtual environment folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "source venv/bin/activate"
+            },
+            {
+                "instruction": "While you're virtual environment is still activated, install the following packages."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv"
+            },
+            {
+                "instruction": "Temporarily deactivate the virtual environment once the libraries are installed."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "deactivate"
+            },
+            {
+                "instruction": "Create the following files in your folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch app.py\ntouch config.py\ntouch db.py\ntouch models.py\ntouch routes.py\ntouch .env"
+            },
+            {
+                "instruction": "Paste the following code in the \"app.py\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
+            },
+            {
+                "instruction": "Paste the following code in the \"config.py\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import os\n\nbasedir = os.path.abspath(os.path.dirname(__file__))\n\nclass Config:\n\tSQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \\\n\t  'sqlite:///' + os.path.join(basedir, 'app.db')\n\tSQLALCHEMY_TRACK_MODIFICATIONS = False\n"
+            },
+            {
+                "instruction": "Paste the following code in the \"db.py\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "from flask_sqlalchemy import SQLAlchemy\n\ndb = SQLAlchemy()\n\ndef init_db(app):\n\tdb.init_app(app)\n\n\twith app.app_context():\n\t\tdb.create_all()\n"
+            },
+            {
+                "instruction": "Paste the following code in \"models.py\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "from db import db\n\nclass User(db.Model):\n\tid = db.Column(db.Integer, primary_key=True)\n\tfirstname = db.Column(db.String(80), nullable=False)\n\tlastname = db.Column(db.String(120), unique=True, nullable=False)\n\n\tdef __repr__(self):\n\t\treturn f'<User {self.username}>'"
+            },
+            {
+                "instruction": "Paste the following code in the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "from flask import Blueprint, request, jsonify\nfrom models import User\nfrom db import db\n\nroutes_blueprint = Blueprint('routes', __name__)\n\n@routes_blueprint.route('/users', methods=['POST'])\ndef create_user():\n\tfirstname = request.json['firstname']\n\tlastname = request.json['lastname']\n\tuser = User(firstname=firstname, lastname=lastname)\n\tdb.session.add(user)\n\tdb.session.commit()\n\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 201\n\n\n@routes_blueprint.route('/users/<firstname>', methods=['GET'])\ndef get_user_by_name(firstname):\n\tuser = User.query.filter_by(firstname=firstname).first()\n\tif user:\n\t\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 200\n\telse:\n\t\treturn jsonify({'error': 'User not found'}), 404\n\n\n@routes_blueprint.route('/db/drop/users', methods=['POST'])\ndef drop_user_table():\n\tUser.__table__.drop(db.engine)\n\treturn jsonify({'message': 'User table dropped!'}), 200"
+            },
+            {
+                "instruction": "Paste the following code in the \".env\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "DATABASE_URL=sqlite:///mydatabase.db"
+            },
+            {
+                "instruction": "Now change into your \"vue-sqlite-frontend\" folder that you created in step 1. Install axios so you can so you can make HTTP requests to your REST Api."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd vue-sqlite-frontend\nnpm install axios"
+            },
+            {
+                "instruction": "In the src folder create an axios instance file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch src/axiosInstance.js"
+            },
+            {
+                "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "CopyCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://127.0.0.1:5000';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;"
+            },
+            {
+                "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files content and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "DisplayLang": "Vue",
+                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t   <!-- Drop Tables Button -->\n\t   <div>\n\t\t  <button @click=\"dropTables\">Drop Tables</button>\n\t   </div>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\nconst dropTables = async () => {\n\ttry {\n\t\tawait axios.post('/db/drop/users');\n\t\talert('User table dropped successfully!');\n\t} catch (error) {\n\t\tconsole.error('Error dropping tables:', error);\n\t}\n}\n\n</script>"
+            },
+            {
+                "instruction": "Now open TWO different terminals. In the first one, run your Flask api using the following commands."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd flask_and_sqlite\nsource venv/bin/activate\nflask run "
+            },
+            {
+                "instruction": "In your second terminal run the following commands. Open the link to see your frontend."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd vue-sqlite-frontend\nnpm run dev"
+            },
+            {
+                "instruction": "In your flask repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input values in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the SQLite Viewer extension by Florian Klampfer."
+            },
+            {
+                "instruction": "You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 23-24."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Error",
+                "CopyCode": "Access to XMLHttpRequest at 'http://127.0.0.1:5000/users' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+            },
+            {
+                "instruction": "In your \"app.py\" file paste the following code. Make sure the HTTP links are the same ones being used by your computer. Try this code out and see if it works. Make sure to rerun your backend and frontend code after you make changes."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀",
+        "Link": "/CompSci/SetupProjects/deploy-sqlite",
+        "Results": [
+            {
+                "title": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                "desc": "Deploy the app you created in instruction set 9 to Amazon Web Services.",
+                "ref": "deploy-sqlite"
+            },
+            {
+                "instruction": "First do the following"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "ls"
+            }
+        ]
+    },
+    {
+        "Title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🧰",
+        "Link": "/CompSci/SetupProjects/flask-PostgreSQL",
+        "Results": [
+            {
+                "title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                "desc": "",
+                "ref": "flask-PostgreSQL"
+            },
+            {
+                "instruction": "First do the following"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "ls"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 🚀",
+        "Link": "/CompSci/SetupProjects/deploy-PostgreSQL",
+        "Results": [
+            {
+                "title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+                "desc": "",
+                "ref": "deploy-PostgreSQL"
+            },
+            {
+                "instruction": "First do the following"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "ls"
+            }
+        ]
+    },
+    {
+        "Title": "How to Make a simple REST Api using React, Spring Boot and SQLite 🍃",
+        "Link": "/CompSci/SetupProjects/react-sqlite",
+        "Results": [
+            {
+                "title": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+                "desc": "",
+                "ref": "react-sqlite"
+            },
+            {
+                "instruction": "First do the following"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "ls"
+            }
+        ]
+    },
+    {
+        "Title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀",
+        "Link": "/CompSci/SetupProjects/deploy-spring",
+        "Results": [
+            {
+                "title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+                "desc": "",
+                "ref": "deploy-spring"
+            },
+            {
+                "instruction": "First do the following"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "ls"
+            }
+        ]
+    },
+    {
+        "Title": "How to Make a Complex REST Api using React, Spring Boot and MySQL 🗄️",
+        "Link": "/CompSci/SetupProjects/complex-mysql",
+        "Results": [
+            {
+                "title": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
+                "desc": "Describes how to make a complex REST Api with React, Spring Boot, and MySQL.",
+                "ref": "complex-mysql"
+            },
+            {
+                "instruction": "@GET @SET"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services 🚀",
+        "Link": "/CompSci/SetupProjects/deploy-mysql",
+        "Results": [
+            {
+                "title": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
+                "desc": "",
+                "ref": "deploy-mysql"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a JavaFX Project (Intellij IDEA) ✈️",
+        "Link": "/CompSci/SetupProjects/intellij",
+        "Results": [
+            {
+                "title": "How to Setup a JavaFX Project (Intellij IDEA)",
+                "desc": "This is how to setup a basic JavaFX project in Intellij IDEA.",
+                "ref": "intellij"
+            },
+            {
+                "instruction": "To download Intellij Idea go this page. Scroll down to the section titled \"IntelliJ IDEA Community Edition\"."
+            },
+            {
+                "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download it here."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "uname -m"
+            },
+            {
+                "instruction": "When you download the JavaFX SDK, note where it is downloaded and what version it is. You'll need this information later."
+            },
+            {
+                "instruction": "Open Intellij IDEA and in the top-most Apple bar select File -> New -> Project."
+            },
+            {
+                "instruction": "In the pop-up window on the left-hand side under the \"Generators\" header select \"JavaFX\"."
+            },
+            {
+                "instruction": "In the \"Name\" field type \"Counter\". The language should be Java. The build system should be Maven."
+            },
+            {
+                "instruction": "For the \"JDK\" field select \"Download JDK\" in the drop-down menu. If the fields are filled out you should be good. Just press \"Download\". Then wait for it to download."
+            },
+            {
+                "instruction": "Once the JDK is done installing, press the \"Next\" button. Then on the next screen just press \"Create\" without checking any of the boxes."
+            },
+            {
+                "instruction": "You should now have a JavaFX project created and be in the text editor view."
+            },
+            {
+                "instruction": "In the \"src\" file go to main -> java -> com.example.counter. Delete the HelloApplication and HelloController java files in the folder. You can delete them by right-clicking the files and pressing \"Delete\" in the menu. Leave the checked boxes as they are and click \"Ok\" when the pop-up window appears. Click \"Delete Anyway\" if the \"Usages Detected\" pop-up window appears."
+            },
+            {
+                "instruction": "Now select the src -> main -> java -> com.example.counter folder. Right click and select new -> JavaFX Application. Name it \"Main\" then click ok. Then do new -> Java Class and call it \"ExampleController\" then press enter/return to create it."
+            },
+            {
+                "instruction": "Now in the src -> main -> resources -> com.example.counter folder, right click on the hello-view.fxml code. Click \"Delete\" in the menu bar. Click \"Ok\" in a confirmation window pops up. Don't uncheck anything."
+            },
+            {
+                "instruction": "Now in right-click the com.example.counter folder and do New -> FXML File. In the input field type \"Counter\" and press return/enter."
+            },
+            {
+                "instruction": "In the \"Counter.fxml\" file paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            },
+            {
+                "instruction": "Now go back to src -> main -> java -> com.example.counter. In the \"Main.java\" file paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "package package com.example.counter;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(Main.class.getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+            },
+            {
+                "instruction": "Now in the same folder open the \"ExampleController.java\" file. Paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "package com.example.counter;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
+            },
+            {
+                "instruction": "Now select the project \"Counter\" then right-click and in the menu select \"Open Module Settings\" near the bottom of the menu."
+            },
+            {
+                "instruction": "In the pop-up window under \"Platform Settings\" on the left-hand side select \"Global Libraries\"."
+            },
+            {
+                "instruction": "Click the Plus sign at the top that says \"New Global Library\" when hovered over. Select \"Java\" then try to find your Java SDK folder you downloaded in step 2. It should look like \"javafx-sdk-22.01\" and will probably be in your downloads folder. Once you find it go into the \"lib\" folder and select all files that have a \".jar\" extension. You can select multiple files by holding down \"command\". Once done press \"Open\". Click OK when the pop-up window appears."
+            },
+            {
+                "instruction": "In the \"Name\" field at the top, delete the current name, then type \"JavaFX-22\" or \"JavaFX-whatever version you're using\". Then click OK."
+            },
+            {
+                "instruction": "Now right-click the Counter folder again. Go back down to \"Open Module Settings\" and click \"Global Libraries\"."
+            },
+            {
+                "instruction": "Under the + sign you should now see \"JavaFX-22\". Right-click it, then press \"Add to Modules\" in the menu. Click \"Ok\" in the pop-up window. Then click \"Apply\" in the bottom right. Then click \"OK\"."
+            },
+            {
+                "instruction": "Now right click the src -> main -> java folder and do New -> File. Type \"module-info.java\" in the input field then press return/enter. The file should appear in your \"java\" folder."
+            },
+            {
+                "instruction": "Paste the following code In the \"module-info.java\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "module Counter {\n\trequires javafx.fxml;\n\trequires javafx.controls;\n\n\topens com.example.counter;\n}"
+            },
+            {
+                "instruction": "Now go back to your Main.java file in the src -> main -> java -> com.example.counter folder. Click the green arrow button at the top-right to run your application. After you do that you should be able to run the app but select any folder and pressing the run button in the future."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a JavaFX Project (Eclipse) 🌑",
+        "Link": "/CompSci/SetupProjects/eclipse",
+        "Results": [
+            {
+                "title": "How to Setup a JavaFX Project (Eclipse)",
+                "desc": "This is how to setup a basic JavaFX project in Eclipse.",
+                "ref": "eclipse"
+            },
+            {
+                "instruction": "Download the x86_64 version of Eclipse using this link. Follow the prompts. When you get to the eclipse installer window click on \"Eclipse IDE for Java and DSL Developers\"."
+            },
+            {
+                "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download it here."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "uname -m"
+            },
+            {
+                "instruction": "When you download the JavaFX SDK note where it is downloaded and what version it is. You'll need this information later. "
+            },
+            {
+                "instruction": "Go back to eclipse and in the top-most Apple bar thing click the following. File -> New -> Other."
+            },
+            {
+                "instruction": "A pop-up window should appear titled \"Select a wizard\"."
+            },
+            {
+                "instruction": "In the JavaFX folder select \"JavaFX project\". Then click next."
+            },
+            {
+                "instruction": "Enter a project name in the input field. Let's call this project \"Counter\"."
+            },
+            {
+                "instruction": "Under Module, make sure \"Create module-info.java file\" is NOT selected. Leave all other settings default. Click \"Finish\"."
+            },
+            {
+                "instruction": "In the left-hand menu make sure there’s a folder tilted \"Counter\". Go to the src folder of the project and delete the file called \"module-info.java\"."
+            },
+            {
+                "instruction": "Now in the left-hand menu, right-click on your project and select Build Path -> Configure Build Path. A window should pop-up titled \"Properties for Counter\"."
+            },
+            {
+                "instruction": "In the main view, select the \"Libraries\" tab. In the tab under \"ModulePath\" you should see something named \"JavaFX SDK\"."
+            },
+            {
+                "instruction": "Select \"JavaFX SDK\" and on the right-hand side click the \"remove\" button."
+            },
+            {
+                "instruction": "Now select \"ClassPath\" under \"ModulePath\" and then on the right-hand side click \"Add Library...\"."
+            },
+            {
+                "instruction": "In the \"Add Library\" pop-up select \"JavaFX SDK\" -> Next -> Finish. It should now appear under \"ClassPath\"."
+            },
+            {
+                "instruction": "Select \"ClassPath\" and click \"Add Library\" again."
+            },
+            {
+                "instruction": "In the \"Add Library\" pop-up select \"User Library\" -> Next. Then Select \"User Libraries\" on the right-hand side. Then in the pop-up on the right-hand click \"New\". In the \"User Library Name\" input field type \"JavaFX\" then click \"Ok\"."
+            },
+            {
+                "instruction": "Select \"JavaFX\" and click \"Add External JARs\" on the right-hand side. Go to where your javafx-sdk-22.0.1 (or whatever version you downloaded) folder is. Click on it and go to the \"lib\" folder. Select all files ending in \".jar\" and then click open. When you're done click \"Apply and Close\". NOTE: Hold down the command key to select multiple files."
+            },
+            {
+                "instruction": "Then click \"Finish\" and \"Apply and Close\"."
+            },
+            {
+                "instruction": "You should be at your eclipse workspace again. Click on your project on the left-hand side and select Build Path -> Configure Build Path like we did earlier."
+            },
+            {
+                "instruction": "Now JavaFX should appear under \"ClassPath\". Click \"Apply\" and then \"Apply and Close\"."
+            },
+            {
+                "instruction": "Now select the top-folder of your project called \"Counter\". In the top bar of eclipse you should see a green circular button with a white arrow in it. Click the small black arrow to the right of it. Click \"Run Configurations\"."
+            },
+            {
+                "instruction": "On the left-hand side of the pop-up window right-click on \"Java Application\". Select \"New Configuration\" in the menu."
+            },
+            {
+                "instruction": "In the \"New Configuration\" pop-up window select the Main tab. Make sure under Main class that application.Main is in the input field."
+            },
+            {
+                "instruction": "Then click the \"arguments\" tab to the right of the main tab."
+            },
+            {
+                "instruction": "Don't close eclipse, but open your terminal. We need to find a path. Paste the following command in your terminal and press \"tab\" to complete it. Press enter/return when done."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd Downloads/javafx-sdk-"
+            },
+            {
+                "instruction": "Now change into the \"lib\" directory. Then print and copy the current path. It will automatically be copied to your clipboard."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd lib\npwd | tee >(pbcopy)"
+            },
+            {
+                "instruction": "Replace the \"path-to-your-sdk\" in the following statement with what you just copied to your clipboard using the pbcopy command. "
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Path",
+                "CopyCode": "--module-path path-to-your-sdk --add-modules javafx.controls,javafx.fxml"
+            },
+            {
+                "instruction": "In the \"VM arguments\" input box paste the module path you created in step 27."
+            },
+            {
+                "instruction": "Under the \"VM arguments\" input box, uncheck the \"Use the -XstartOnFirstThread argument when launching with SWT\" box. If you don't uncheck this box the Window might not appear when you try to run your program."
+            },
+            {
+                "instruction": "Click \"Apply\" in the bottom right, then click \"Close\"."
+            },
+            {
+                "instruction": "In the \"Main.java\" file, delete it's contents and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
+            },
+            {
+                "instruction": "In the \"application\" folder create a new fxml file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"Counter.fxml\". Then click \"Finish\" when done."
+            },
+            {
+                "instruction": "Paste the following fxml code into the \"Counter.fxml\" file. You would typically make the fxml file using SceneBuilder in CSC 331. You can download SceneBuilder here."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+            },
+            {
+                "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "package application;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
+            },
+            {
+                "instruction": "Click the green circular button with the white arrow to run your app."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup Cisco Secure Client and a VPN 🌎",
+        "Link": "/CompSci/SetupProjects/cisco",
+        "Results": [
+            {
+                "title": "How to Setup Cisco Secure Client and a VPN",
+                "desc": "How to Setup Cisco Secure Client and a VPN connection for UNCW.",
+                "ref": "cisco"
+            },
+            {
+                "instruction": "Sign up for a Cisco account using this link."
+            },
+            {
+                "instruction": "Go to this link and sign in using the credentials you just created."
+            },
+            {
+                "instruction": "Under “Most Popular” click on the link that says something like \"Secure Client 5 :5.1.2.42\". Go back to this link if you clicked out of it."
+            },
+            {
+                "instruction": "Download the version that matches your operating system."
+            },
+            {
+                "instruction": "Follow the prompts from here, it should be pretty straight forward. "
+            },
+            {
+                "instruction": "Here's a good UNCW link on how to setup a VPN. Here."
+            },
+            {
+                "instruction": "Here are the CSC 455 instructions on how to setup a VPN. Note that this is a download link."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a PHP and MySQL Project for UNCW. 🐘",
+        "Link": "/CompSci/SetupProjects/php",
+        "Results": [
+            {
+                "title": "How to Setup a PHP and MySQL Project for UNCW.",
+                "desc": "How to Setup a PHP and MySQL Project for UNCW for CSC 455/355 using FileZilla and phpMyAdmin.",
+                "ref": "php"
+            },
+            {
+                "instruction": "If you're not on UNCW wifi you'll need a VPN connection. Go to the \"How to Setup Cisco Secure Client and a VPN\" instruction set if you need one. If you're on UNCW wifi you can skip this step. It's not a difficult process."
+            },
+            {
+                "instruction": "Go to this link to download FileZilla. Make sure you download the correct version for your operating system. You can check your architecture by running the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "uname -m"
+            },
+            {
+                "instruction": "In the top bar where it has the input fields put the following values. Just the values not the field labels. Note these values might've changed. Press the blue \"QuickConnect\" button when you finish."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "CopyCode": "Host: ada.cis.uncw.edu\nUsername: Your uncw email without @uncw.edu\nPassword: Your uncw password\nPort: 22"
+            },
+            {
+                "instruction": "You should see a folder in the bottom-right corner named your uncw username. Go inside it and open the \"public_html\" folder. If you don't see this folder, create it."
+            },
+            {
+                "instruction": "Drag all your PHP files and your index.html file into the \"public_html\" folder."
+            },
+            {
+                "instruction": "Use this link to see the website after you're done. Note: Replace “mst5084” with your UNCW username and keep the \"~\" character. "
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Link",
+                "CopyCode": "http://ada.cis.uncw.edu/~mst5084/index.html"
+            }
+        ]
+    },
+    {
+        "Title": "How to Install and Use TikTok Downloader 🎥",
+        "Link": "/CompSci/SetupProjects/tiktok",
+        "Results": [
+            {
+                "title": "How to Install and Use TikTok Downloader (NOT WORKING)",
+                "desc": "How to install TikTok Downloader and use it with my CLI tool.",
+                "ref": "tiktok"
+            },
+            {
+                "instruction": "Clone my forked tiktok-downloader repository using the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git clone https://github.com/MichaelT-178/tiktok-downloader.git"
+            },
+            {
+                "instruction": "Change into the tiktok-downloader directory and run the following commands for setup."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd tiktok-downloader\nmkdir downloads\nnpm i\nnode index\ncd~"
+            },
+            {
+                "instruction": "Install the \"termcolor\" package."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 termcolor"
+            },
+            {
+                "instruction": "Setup the folders for my CLI tool"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir tiktoks\nmkdir Modern-Python-Files\ncd Modern-Python-Files\ntouch Tiktok_Downloader.py\n"
+            },
+            {
+                "instruction": "Open the \"Tiktok_Downloader.py\" file in your text-editor and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\nimport re\n#This command worked to install bs4 -> sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -> str:\n\n\t# Get a response from the website\n\tresponse = requests.get(app_link)\n\n\tif response.status_code == 200:\n\t\t# Use regex to find link in giant HTML response.\n\t\twebsite_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', response.text)\n\n\t\tif website_link_info:\n\t\t\twebsite_link = str(website_link_info.group(0))\n\t\t\treturn website_link.replace('\"canonical\":\"', '').replace('\",\"pageId', '').replace(r'/', '/').strip()\n\t\telse:\n\t\t\tprint(c(\"Website link not found in the HTML.\", 'red'))\n\t\t\treturn None\n\telse:\n\t\tprint(c(f\"Failed to fetch the website link. Status code: {response.status_code}\", 'red'))\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\nprint(c(\"Later when prompted to \\\"Paste the URL\\\" paste the website link.\", 'cyan'))\n\nlink = input(\"Enter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_linklink #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"Rename the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
+            },
+            {
+                "instruction": "When you're done with the setup change back into your top-most directory."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd ~"
+            },
+            {
+                "instruction": "Run my CLI tool using the following commands. Have the TikTok link copied to clipboard and follow the prompts."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd Modern-Python-Files\npython3 Tiktok_Downloader.py"
+            },
+            {
+                "instruction": "After you're done go to the \"tiktoks\" folder you created earlier to see your downloaded tiktoks."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "open tiktoks"
+            },
+            {
+                "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" the endpoint might have expired. Go to the original repo here and copy the value for API_URL. Then go to your local cloned tiktok-downloader repo's \"index.js\" file and see if the API_URL is up to date. If not paste the new one as the new value for API_URL in your local repository."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup YouTube Downloader 📺",
+        "Link": "/CompSci/SetupProjects/youtube",
+        "Results": [
+            {
+                "title": "How to Install and Use YouTube Downloader",
+                "desc": "How to install YouTube Downloader and use it with my CLI tool.",
+                "ref": "youtube"
+            },
+            {
+                "instruction": "Check if you have Homebrew installed. If it outputs information about the version it should be good."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "brew --version"
+            },
+            {
+                "instruction": "Install Homebrew using the following command if the last one said it wasn't installed. Skip this step if it's already installed."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)\""
+            },
+            {
+                "instruction": "Upgrade Homebrew to make sure everything's up to date."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "brew upgrade"
+            },
+            {
+                "instruction": "Start installing yt-downloader by running the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl"
+            },
+            {
+                "instruction": "Finish installing yt-downloader with the following command"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "sudo chmod a+rx /usr/local/bin/youtube-dl"
+            },
+            {
+                "instruction": "Install the \"ffmpeg\" library via Homebrew."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "brew install ffmpeg"
+            },
+            {
+                "instruction": "Install \"yt-dlp\" via homebrew."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "brew install yt-dlp"
+            },
+            {
+                "instruction": "Ensure that \"yt-dlp\" installed correctly."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "which yt-dlp"
+            },
+            {
+                "instruction": "Upgrade the following brew packages."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "brew upgrade librist\nbrew upgrade mbedtls"
+            },
+            {
+                "instruction": "Now yt-dlp should be properly installed. In the next steps we'll setup my CLI tool."
+            },
+            {
+                "instruction": "Install the following 3 Python libraries. You'll need these installed for the script."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install pytube termcolor inquirer"
+            },
+            {
+                "instruction": "Create the following directories."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir YouTubeDownloader\nmkdir Videos"
+            },
+            {
+                "instruction": "Change into the directory and create new python file named \"yt_downloader.py\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd YouTubeDownloader\ntouch yt_downloader.py"
+            },
+            {
+                "instruction": "Past the following code into the \"\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "\"\"\"\nThis program is a command line interface tool for the\n\"yt-dlp\" library. It allows you to download entire\nyoutube videos, download specific intervals of the\nvideo and rename the mp4 file you're downloading.\n\"\"\"\n\nimport os; os.system('clear')\nimport subprocess\nfrom pytube import YouTube\nfrom termcolor import colored as c\nimport inquirer\n\nsave_dir = \"Videos\"\n\nCURRENT_DOWNLOAD_PATH = f\"../{save_dir}/\"\n\nif os.path.exists(CURRENT_DOWNLOAD_PATH):\n\tos.system(f\"open -a Finder '{CURRENT_DOWNLOAD_PATH}'\")\n\tprint(f\"{c('CURRENT DOWNLOAD PATH', 'magenta')}: {os.path.abspath(CURRENT_DOWNLOAD_PATH)}/\")\n\tprint(\"Finder has been opened to current download path. See updates in real time.\")\nelse:\n\tprint(c(f\"\nPath does not exist: \\\"{CURRENT_DOWNLOAD_PATH}\\\"\", 'red'))\n\tprint(\"Go and fix path\n\")\n\texit(0)\n\ndef time_to_seconds(time) -> int:\n\t\"\"\" Converts int seconds to formatted time. \"\"\"\n\tt = [int(x) for x in time.split(\":\")]\n\treturn t[1] + (t[0] * 60) if (len(t) == 2) else t[2] + (t[1] * 60) + (t[0] * 3600)\n\ndef seconds_to_time(seconds) -> str:\n\t\"\"\" Converts seconds to minutes \"\"\"\n\tif seconds < 60:\n\t\treturn f\"0:{seconds:02}\"\n\telif seconds < 3600:\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{minutes}:{seconds:02}\"\n\telse:\n\t\thours = seconds // 3600\n\t\tseconds %= 3600\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{hours}:{minutes:02}:{seconds:02}\"\n\ndef get_choice(the_message):\n\tgreen_yes = c(\"Yes\", 'green')\n\tred_no = c('No', 'red')\n\n\tprint()\n\tquestions = [\n\t\tinquirer.List('choice',\n\t\t\t\t\tmessage=the_message,\n\t\t\t\t\tchoices=[green_yes, red_no]\n\t\t\t\t\t),\n\t]\n\n\tanswers = inquirer.prompt(questions)\n\treturn answers\n\nurl = input(f\"\nEnter {c('youtube link', 'red')} : \")\n\nvideo_len = YouTube(url).length\n\nprint(f\"Video length is {c(seconds_to_time(video_len), 'cyan')}\")\n\nmessage = f\"Do you want to download a {c('specific time interval', 'blue')} (y/n) ? \"\nis_time_interval = get_choice(message)\n\n#'\\x1b[32mYes\\x1b[0m' the color made the string weird\nif \"Yes\" in is_time_interval['choice']:\n\tprint(\"\nThe format has to be (00:00:00) or (00:00). Ex: 3:12:11 or 8:07 or 21:32\")\n\n\tstart_time = input(\"\nEnter a start time: \").strip()\n\n\twhile time_to_seconds(start_time) > video_len:\n\t\tprint(\"\nInvalid start time\")\n\t\tstart_time = input(\"Enter a start time: \").strip()\n\n\tend_time = input(\"Enter an end time: \").strip()\n\n\twhile time_to_seconds(start_time) > video_len:\n\n\t\tprint(\"\nInvalid end time\")\n\n\t\tend_time = input(\"Enter an end time: \").strip()\n\n\tdownload_length = seconds_to_time(time_to_seconds(end_time) - time_to_seconds(start_time))\n\n\tprint(f\"\nLength of download will be -> {c(download_length, 'blue')}\n\")\n\n\tnew_name = \"\"\n\n\trename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\n\tdo_rename = get_choice(rename_message)\n\n\tif \"Yes\" in do_rename['choice']:\n\t\tname = input(\"\nNew name of file (without extension): \")\n\t\tnew_name = f'-o \"{name}.%(ext)s\"'\n\t\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\n\tprint()\n\tdownload_with_time = get_choice(\"Ready to download? \")\n\n\tif \"Yes\" in download_with_time['choice']:\n\n\t\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\t\tprint()\n\t\tos.system(f'yt-dlp {new_name.strip()} \"{url.strip()}\" --download-sections \"*{start_time}-{end_time}\"')\n\t\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_video_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_video = get_choice(convert_video_message)\n\tif \"Yes\" in convert_video['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n\n\texit(0)\n\n\nnew_name = \"\"\n\nprint()\nrename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\nrename_vid = get_choice(rename_message)\n\nif \"Yes\" in rename_vid['choice']:\n\n\tname = input(\"\nNew name of file (without extension): \")\n\tnew_name = f'-o \"{name.strip()}.%(ext)s\"'\n\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\nprint()\ndownload_vid = get_choice(\"Ready to download? \")\n\nif \"Yes\" in download_vid['choice']:\n\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\tprint()\n\n\t#--no-mtime sets the date created to now\n\tos.system(f'yt-dlp --no-mtime {new_name} \"{url.strip()}\"')\n\n\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t# Run the shell command and capture its output\n\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\n\t# Convert the byte string to a regular string\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_vid_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_vid = get_choice(convert_vid_message)\n\n\tif \"Yes\" in convert_vid['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n"
+            },
+            {
+                "instruction": "Now copy to Youtube and copy the link of the video you want to download. Keep your terminal open."
+            },
+            {
+                "instruction": "Now in your terminal use the following command to run the \"yt_downloader.py\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 yt_downloader.py"
+            },
+            {
+                "instruction": "Follow the prompts in the python file to download the YouTube video."
+            },
+            {
+                "instruction": "When you're done, use the following two commands to see your downloaded video."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd ~\nopen Videos"
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a Google API Project 🔍",
+        "Link": "/CompSci/SetupProjects/google-api",
+        "Results": [
+            {
+                "title": "How to Setup a Google API Project",
+                "desc": "Explains how to setup a a project that utilizes the Google API.",
+                "ref": "google-api"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a Reddit API Project 📖",
+        "Link": "/CompSci/SetupProjects/reddit-api",
+        "Results": [
+            {
+                "title": "How to Setup a Reddit API Project",
+                "desc": "Explains how to setup a a project that utilizes the Reddit API.",
+                "ref": "reddit-api"
+            },
+            {
+                "instruction": "Before you start make sure you have a normal reddit account. If you don't have one, sign up."
+            },
+            {
+                "instruction": "Go here to start registering your free app. Note that while the UI is old it's still the correct page."
+            },
+            {
+                "instruction": "Click the grey \"are you a developer? create an app...\" button on the left-hand side."
+            },
+            {
+                "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. "
+            },
+            {
+                "instruction": "In the \"redirect uri\" field paste the following link. Then select \"I'm not a robot\" and press \"create app\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Redirect Link",
+                "CopyCode": "https://www.reddit.com/prefs/apps"
+            },
+            {
+                "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\"."
+            },
+            {
+                "instruction": "Now go to your terminal and run the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install praw"
+            },
+            {
+                "instruction": "Setup your folder for your script."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py"
+            },
+            {
+                "instruction": "Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import praw\n\nreddit = praw.Reddit(\n\tclient_id='YOUR_CLIENT_ID',\n\tclient_secret='YOUR_CLIENT_SECRET',\n\tuser_agent='script by u/YOUR_REDDIT_USERNAME',\n\tpassword='YOUR_REDDIT_PASSWORD'\n)\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n\tprint(submission.title)"
+            },
+            {
+                "instruction": "Run your script to test it out."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 script.py"
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a Spotify API Project 🎧",
+        "Link": "/CompSci/SetupProjects/spotify-api",
+        "Results": [
+            {
+                "title": "How to Setup a Spotify API Project",
+                "desc": "Explains how to setup a a project that utilizes the Spotify API.",
+                "ref": "spotify-api"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a OpenAI API Project 💬",
+        "Link": "/CompSci/SetupProjects/openai-api",
+        "Results": [
+            {
+                "title": "How to Setup a OpenAI API Project",
+                "desc": "Explains how to setup and use OpenAI's API in your Vue app",
+                "ref": "openai-api"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Make a Custom Botpress Chatbot 🤖",
+        "Link": "/CompSci/SetupProjects/botpress",
+        "Results": [
+            {
+                "title": "How to Make a Custom Botpress Chatbot",
+                "desc": "Explains how to make a Chatbot from Botpress and incorporate into a React app.",
+                "ref": "botpress"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to create an iOS app with Swift and Firebase 🍎",
+        "Link": "/CompSci/SetupProjects/swift-firebase",
+        "Results": [
+            {
+                "title": "How to create an iOS app with Swift and Firebase",
+                "desc": "This explains how to create an iOS written in SwiftUI with a Firebase backend.",
+                "ref": "swift-firebase"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup Core Data in a SwiftUI project. 🏎️",
+        "Link": "/CompSci/SetupProjects/core-data",
+        "Results": [
+            {
+                "title": "How to Setup Core Data in a SwiftUI project.",
+                "desc": "Explains how to setup and use core data in your Swift application.",
+                "ref": "core-data"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Run an iOS app in Developer Mode 📱",
+        "Link": "/CompSci/SetupProjects/developermode",
+        "Results": [
+            {
+                "title": "How to Run an iOS app in Developer Mode",
+                "desc": "How to run an iOS app your currently developing on your phone.",
+                "ref": "developermode"
+            },
+            {
+                "instruction": "Go to Xcode and open your project. When you press the run button in the top bar it should say what IOS simulator your app will run on. Press the name of the simulator and a drop-down menu will appear. Under \"iOS Device\" there will (probably) be a message that says something like \"No eligible devices connected to 'My Mac'\". Click on this and go from there, most of the steps should be fairly intuitive."
+            },
+            {
+                "instruction": "For your team select \"John Smith (Personal Team)\" or whatever your name is."
+            },
+            {
+                "instruction": "To enable \"Developer mode\" on your iphone do the following sequence."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Sequence",
+                "CopyCode": "Settings > Privacy & Security > Scroll to the bottom > Developer Mode -> Toggle On"
+            },
+            {
+                "instruction": "Your login keychain password is (usually) the same password you use to logon to your mac. It's (probably) not your apple iD."
+            },
+            {
+                "instruction": "If you get the error \"Untrusted Developer, Your device management settings does not allow using an app from…\" when the app is loaded on your phone, do the following."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Sequence",
+                "CopyCode": "Settings > General > Device Management > select the profile to trust"
+            },
+            {
+                "instruction": "After you trust the developer, you should be good to go."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup OAuth Authentication 🗝️",
+        "Link": "/CompSci/SetupProjects/oauth",
+        "Results": [
+            {
+                "title": "How to Setup OAuth Authentication",
+                "desc": "Explains how to setup and use OAuth authentication in a Vue.js app.",
+                "ref": "oauth"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup Two-Factor Authentication 🔐",
+        "Link": "/CompSci/SetupProjects/two-factor-auth",
+        "Results": [
+            {
+                "title": "How to Setup Two-Factor Authentication",
+                "desc": "Explains how to setup and use two-factor authentication in a Vue.js app.",
+                "ref": "two-factor-auth"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            }
+        ]
+    },
+    {
+        "Title": "How to Populate a SQLite3 Database 📊",
+        "Link": "/CompSci/SetupProjects/basic-sqlite",
+        "Results": [
+            {
+                "title": "How to Populate a SQLite3 Database",
+                "desc": "This is an extremely basic way to populate a SQLite3 Database with Python and JSON",
+                "ref": "basic-sqlite"
+            },
+            {
+                "instruction": "Since sqlite3 is included in the standard library of python you don't need to download anything."
+            },
+            {
+                "instruction": "Make a folder called test_db. Then create two files to create and populate your table. Also create a json file to store data."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir test_db\ncd test_db\ntouch create_db.py\ntouch populate_db.py\ntouch cars.json"
+            },
+            {
+                "instruction": "Open the \"create_db.py\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import sqlite3\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\ncursor.execute('''\n\tCREATE TABLE Cars (\n\t\tMaker VARCHAR(20),\n\t\tColor VARCHAR(20),\n\t\tYear INT\n\t);\n''')\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully created!\" + \"\\033[0m\")"
+            },
+            {
+                "instruction": "Open the \"populate_db.py\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import sqlite3\nimport json\n\nwith open(\"cars.json\", 'r') as file:\n\tcontents = file.read()\n\tdata = json.loads(contents)\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\nfor car in data['Cars']:\n\n\tmaker = car[\"Maker\"]\n\tcolor = car[\"Color\"]\n\tyear = car[\"Year\"]\n\n\tsql = 'INSERT INTO Cars (maker, color, year) VALUES (?, ?, ?)'\n\n\tcursor.execute(sql, (maker, color, year))\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully populated!\" + \"\\033[0m\")"
+            },
+            {
+                "instruction": "Open the \"cars.json\" file and paste in the following data."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "CopyCode": "{\n\t\"Cars\": [\n\t\t{\n\t\t\t\"Maker\": \"Toyota\",\n\t\t\t\"Color\": \"Silver\",\n\t\t\t\"Year\": 2015\n\t\t},\n\t\t{\n\t\t\t\"Maker\": \"Honda\",\n\t\t\t\"Color\": \"Red\",\n\t\t\t\"Year\": 2005\n\t\t},\n\t\t{\n\t\t\t\"Maker\": \"Ford\",\n\t\t\t\"Color\": \"Blue\",\n\t\t\t\"Year\": 2020\n\t\t}\n\t]\n}"
+            },
+            {
+                "instruction": "Run the files in the following order to create and populate your database."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 create_db.py\npython3 populate_db.py"
+            },
+            {
+                "instruction": "You should now see \"Cars.db\" in your file directory. To view it as a table do the following steps."
+            },
+            {
+                "instruction": "In VSCode go to the \"Extensions\" tab on the left-hand side. It should look like 4 squares put together, with the top-right one removed from the rest."
+            },
+            {
+                "instruction": "In the search bar type \"SQLite Viewer\". Then click on the first result by \"Florian Klampfer\"."
+            },
+            {
+                "instruction": "Press the blue \"Install\" button to install the extension."
+            },
+            {
+                "instruction": "In the search bar type \"SQLite\". Then click on the first result by \"alexcvzz\"."
+            },
+            {
+                "instruction": "Press the blue \"Install\" button to install the extension."
+            },
+            {
+                "instruction": "Now go back to the top \"Explorer\" tab which looks like two pieces of paper. Click it and you should see your code."
+            },
+            {
+                "instruction": "Now open your \"Cars.db\" file. It should look like a table now. If it still doesn't look like a table add the following json attribute to your \"settings.json\" VSCode file (if you haven't already) and see if it works."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "CopyCode": "\"workbench.editorAssociations\": {\n\t\"*.db\": \"sqlite-viewer.option\"\n},"
+            },
+            {
+                "instruction": "Now try to query the table. Open your \"Cars.db\" file again and press \"command + shift + p\" to open the command palette. Type \"SQLite: New Query\" in the search bar and click on it."
+            },
+            {
+                "instruction": "In the --SQLite file. Paste the following SQL query."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "DisplayLang": "SQL",
+                "CopyCode": "SELECT DISTINCT Maker, Year\nFROM Cars\nWHERE Year > 2005;"
+            },
+            {
+                "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"Cars.db\" file in the results."
+            }
+        ]
+    },
+    {
+        "Title": "How to Use Excel with Python 📈",
+        "Link": "/CompSci/SetupProjects/excel",
+        "Results": [
+            {
+                "title": "How to Use Excel with Python",
+                "desc": "Simple instruction list of how to setup Python to work with Excel.",
+                "ref": "excel"
+            },
+            {
+                "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does this."
+            },
+            {
+                "instruction": "First off we're going to create our project folder and files."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir ExcelExample;\ncd ExcelExample;\ntouch data.csv;\ntouch convert.py;\ntouch read_excel.py"
+            },
+            {
+                "instruction": "Install the following three libraries in your project."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install pandas openpyxl XlsxWriter"
+            },
+            {
+                "instruction": "Open the \"data.csv\" and paste the following values"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "CSV",
+                "CopyCode": "Maker,Model,Year,Color,Engine,Fuel,Mileage\nToyota,Camry,2021,Red,V6,Gasoline,15000\nHonda,Civic,2019,Blue,I4,Gasoline,22000\nFord,Mustang,2018,Black,V8,Gasoline,27000\nNissan,Altima,2020,White,I4,Gasoline,12000\nChevrolet,Impala,2022,Grey,V6,Gasoline,5000\nBMW,325i,2021,Maroon,I6,Gasoline,13000\nTesla,Model S,2022,Black,Electric,Electric,10000\nHyundai,Sonata,2019,Silver,I4,Gasoline,18000\nSubaru,Outback,2018,Green,H4,Gasoline,25000\nAudi,A4,2020,Blue,I4,Gasoline,15000"
+            },
+            {
+                "instruction": "Open the \"convert.py\" file and paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nwith pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:\n\tdf.to_excel(writer, index=False, sheet_name='Cars')\n\n\tworkbook = writer.book\n\tworksheet = writer.sheets['Cars']\n\n\tdate_format = workbook.add_format({'num_format': '0'})\n\n\tworksheet.set_column('C:C', None, date_format)"
+            },
+            {
+                "instruction": "Run the \"convert.py\" file. Give it a second to finish."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 convert.py"
+            },
+            {
+                "instruction": "You can download the Excel Viewer extension if you want to view the output.xlsx file in VSCode. It's pretty cool, I'd recommend it."
+            },
+            {
+                "instruction": "If you downloaded the Excel Viewer you should now be able to see your \"Cars\" table in \"output.xlsx\". Note, to see changes you might have to close and reopen your xlsx file."
+            },
+            {
+                "instruction": "Now go to the \"read_excel.py\" file and paste the following code into it."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import pandas as pd\n\nexcel_path = \"output.xlsx\"\n\ndf = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n# Print the table\nprint(df.head())\n\ncount = 0\n\nfor mileage in df['Mileage']:\n\tif mileage >= 15000:\n\t\tcount += 1\n\nprint(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")"
+            },
+            {
+                "instruction": "Run your read_excel.py file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 read_excel.py"
+            }
+        ]
+    },
+    {
+        "Title": "How to Add a Language to the Prism Library 🌈",
+        "Link": "/CompSci/SetupProjects/prism",
+        "Results": [
+            {
+                "title": "How to Add a Language to the Prism Library",
+                "desc": "How to add syntax highlighting for a new language in the Prism library.",
+                "ref": "prism"
+            },
+            {
+                "instruction": "Fork the Prism library from GitHub so you can modify it. Go to this link to fork the repo. Simply click the \"Fork\" drop-down menu in the top-right and press \"Create a new fork\". Then change the description if you want and press the green \"Create fork\" button. Keep the \"Copy the multi branch only\" button selected."
+            },
+            {
+                "instruction": "Now you should be in your forked repository. Click the green \"Code\" button and copy the https link. Then create a local clone of your repository using the \"git clone\" command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git clone <https-link>"
+            },
+            {
+                "instruction": "Open your prism library code. In the components folder add a file named \"prism-your-language.js\". For this example lets do custom yaml highlighting."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd prism\ntouch components/prism-customyaml.js"
+            },
+            {
+                "instruction": "Open the \"prism-customyaml.js\" file and paste the following code in it."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "CopyCode": "Prism.languages.customyaml = {\n\t\"yaml-red\": {\n\t\tpattern: /.*:/,\n\t\tlookbehind: true,\n\t\talias: 'red',\n\t\tgreedy: true\n\t},\n\t\"yaml-gray\": {\n\t\tpattern: /[:\\-]/,\n\t\tlookbehind: true,\n\t\talias: 'gray',\n\t\tgreedy: true\n\t},\n\t\"yaml-green\": {\n\t\tpattern: /: (?!true|false\\\b)(.*)/,\n\t\tlookbehind: true,\n\t\talias: 'white',\n\t\tgreedy: true\n\t},\n\t\"yaml-orange\": {\n\t\tpattern: /: (true|false)/,\n\t\tlookbehind: true,\n\t\talias: 'white',\n\t\tgreedy: true\n\t}\n}"
+            },
+            {
+                "instruction": "Paste the following code in the \"components.js\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "JSON",
+                "CopyCode": "\"customyaml\":{\"title\": \"Custom Yaml\", \"owner\": \"YOUR-GITHUB-USERNAME\"},"
+            },
+            {
+                "instruction": "Paste the following code in the \"components.json\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "CopyCode": "\"customyaml\": {\n\t\"title\": \"Custom YAML\",\n\t\"owner\": \"YOUR-GITHUB-USERNAME\"\n},"
+            },
+            {
+                "instruction": "Add your changes to your forked repository."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "git add .\ngit commit -m \"Added custom yaml highlighting\"\ngit push"
+            },
+            {
+                "instruction": "Now run the following commands to update your frontend repository. Change the name \"your-frontend-code\" to your actual folder name. Give it like 20 seconds to update. NOTE: replace the \"&lthttps-link&gt\" to be your forked repositories https link that you copied in step 2. Do NOT include the angle brackets < >."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd your-frontend-code\nrm -rf node_modules/prismjs\nnpm install prismjs@<https-link>"
+            },
+            {
+                "instruction": "Add CSS styling for your language in a file called \"custom.css\". The css file should be on the same path where you're going to import the language."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "DisplayLang": "CSS",
+                "CopyCode": ".yaml-red {\n\tcolor: #E06C75\n}\n\n.yaml-gray {\n\tcolor: #ABB2BF\n}\n\n.yaml-green {\n\tcolor: #98C379;\n}\n\n.yaml-orange {\n\tcolor: #D19A66;\n}"
+            },
+            {
+                "instruction": "In your main file paste the following imports."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "CopyCode": "import Prism from 'prismjs';\nimport 'prismjs/components/prism-customyaml';\nimport 'prismjs/themes/prism-coy.css';\nimport './custom.css';\n"
+            },
+            {
+                "instruction": "Run your frontend code to see the changes."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm run dev"
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup an Executable Python Script 🐍",
+        "Link": "/CompSci/SetupProjects/executable-python",
+        "Results": [
+            {
+                "title": "How to Setup an Executable Python Script",
+                "desc": "Explains how to setup and run an executable Python script.",
+                "ref": "executable-python"
+            },
+            {
+                "instruction": "Before you start understand the purpose of an executable. Executables encapsulate your script, the interpreter, and any dependencies into a single file. This means your code can run independently, regardless of whether Python is installed on the user's system. This can be beneficial when trying to transfer files."
+            },
+            {
+                "instruction": "Make a folder and python file within the folder."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd executable\ntouch execute_script.py"
+            },
+            {
+                "instruction": "In your \"execute_script.py\" file paste the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "#!/usr/bin/env python3\nimport json\n\ndef main():\n\tprint(\"Hello World\")\n\nif __name__ == \"__main__\":\n\tmain()"
+            },
+            {
+                "instruction": "Change permissions for your script by running the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "chmod +x execute_script.py"
+            },
+            {
+                "instruction": "Run your script."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "./execute_script.py"
             }
         ]
     },
@@ -5586,6 +8660,10 @@
                 "Action": "Create a code block"
             },
             {
+                "Shortcut": "shift + return + return + return",
+                "Action": "Move the cursor out of a code block."
+            },
+            {
                 "Title": "Slack Shortcuts"
             },
             {
@@ -5708,7 +8786,7 @@
             },
             {
                 "Underlined": "Use \"code .\" to open folders in VSCode",
-                "Tip": "To install press \"command + shift + p\" then in the search bar results select \"Shell Command: Install code command in PATH\". Now you can 'cd' into a folder and run 'code .' to open it in VSCode."
+                "Tip": "First open VSCode. Then, to install press \"command + shift + p\" then in the search bar results select \"Shell Command: Install code command in PATH\". Now you should be able to 'cd' into a folder and run 'code .' to open it in VSCode. You could also open it by doing 'code project-name'."
             },
             {
                 "Name": "Create a Shortcut to Access VSCode Setting.json",
@@ -5873,9 +8951,19 @@
                 "Link": "https://apps.apple.com/us/app/alarmy-alarm-clock-sleep/id1163786766"
             },
             {
+                "Name": "Coursicle",
+                "Description": "Allows you to track the open status of courses. Will send you a notification when a class goes from closed to open.",
+                "Link": "https://apps.apple.com/us/app/coursicle/id1187418307"
+            },
+            {
                 "Name": "Waze",
                 "Description": "This is the GPS app I use. It's extremely useful when driving. It can calculate the most optimal routes and redirect you if you go the wrong way.",
                 "Link": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106"
+            },
+            {
+                "Name": "GitHub",
+                "Description": "Can be used to help with authentication and allows you to access your repositories on your phone.",
+                "Link": "https://apps.apple.com/us/app/github/id1477376905"
             },
             {
                 "Name": "Microsoft Teams",
@@ -6481,7 +9569,7 @@
                 "transcription": "The Dutch government was forced to release the source code of their DigiD digital authentication iOS app. It is written in C#. Ahh I see the problem is that there are too many if statements. Here's a solution implementing binary search in O(log n). Jeroen Frijters @JeroenFrijters 1d github.com/MinBZK/woo-bes... tyrannoSaurav @TyrannoSaurav Replying to @JeroenFrijters"
             },
             {
-                "text": "Testing ain't in bro 😭",
+                "text": "Testing ain't it bro 😭",
                 "transcription": "Write code write tests the tests fail the tests fail write more tests to narrow down the problem Those tests pass The bug was in the test ProgrammerHumor.io"
             },
             {
@@ -6561,7 +9649,7 @@
                 "transcription": "Some Famous Severs Amazon Google Microsoft Zoom app"
             },
             {
-                "text": "*Dies by suffocation*",
+                "text": "*Dies of suffocation*",
                 "transcription": "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning"
             },
             {
@@ -6617,7 +9705,7 @@
                 "transcription": "Send a cv get rejected send a cv interview with Hr interview with developers technical interview get rejected"
             },
             {
-                "text": "They're even now",
+                "text": "They're even now. (This isn't about me. I don't lie on my resume, I just thought it was funny)",
                 "transcription": "Me who lied on my resume my new employer who lied on the job description"
             },
             {
@@ -6625,7 +9713,7 @@
                 "transcription": "Javascript developer position open Nice! Not the best salary but...think I will apply See how you compare to the other 1,146 applicants."
             },
             {
-                "text": "CSC 302 Flashbacks",
+                "text": "CSC 302 Flashbacks (Tower of Hanoi)",
                 "transcription": "Everyone: it's a game for kids. Programmers: "
             },
             {
@@ -6651,6 +9739,10 @@
             {
                 "text": "He kinda gave us NullPointerException's tho 😍",
                 "transcription": "To the programmer who invented null: Thanks for nothing."
+            },
+            {
+                "text": "Friendliest Programmer/Tester Interaction",
+                "transcription": "Doctor and nurse Programmer and Tester"
             }
         ]
     },
@@ -6672,6 +9764,9 @@
             },
             {
                 "text": "Pink sky over the parking lot"
+            },
+            {
+                "text": "First day of Class on Campus 2021"
             },
             {
                 "text": "Geese!!"
@@ -6705,6 +9800,9 @@
             },
             {
                 "text": "Beautiful Orange Sky"
+            },
+            {
+                "text": "Theater Balcony in the Cultural Arts Building"
             },
             {
                 "text": "Sunny Terrapin Study Room"
