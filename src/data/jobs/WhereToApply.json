@@ -454,6 +454,14 @@
             "Pay": ""
         },
         {
+            "Name": "Sensus",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/sensus/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "HMF Express",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/hmf-express/jobs/",
@@ -590,6 +598,14 @@
             "Pay": ""
         },
         {
+            "Name": "",
+            "Location": "",
+            "LinkedIn": "",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Pratt Miller",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/pratt-&-miller-engineering/jobs/",
@@ -646,6 +662,14 @@
             "Pay": ""
         },
         {
+            "Name": "Young Scientist Academy",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/young-scientist-academy/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "PCI Energy Solutions",
             "Location": "Raleigh, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/pci-energy-solutions/jobs/",
@@ -681,6 +705,14 @@
             "Name": "Intapp",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/intapp/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Grover Gaming",
+            "Location": "Greenville, North Carolina or Chicago, Illinois",
+            "LinkedIn": "https://www.linkedin.com/company/grovergaming/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -782,6 +814,22 @@
             "Pay": ""
         },
         {
+            "Name": "CastleBranch",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/castle-branch-inc-/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Brunswick County",
+            "Location": "Bolivia, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/brunswickcounty/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Apperture Solutions",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/apperture-solutions/jobs/",
@@ -870,6 +918,14 @@
             "Pay": ""
         },
         {
+            "Name": "TE Connectivity",
+            "Location": "Fuquay-Varina, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/te-connectivity/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "The John Hopkins University (Undergraduate Research Assistant)",
             "Location": "Baltimore, Maryland",
             "LinkedIn": "https://www.linkedin.com/school/johns-hopkins-university/jobs/",
@@ -953,6 +1009,14 @@
             "Name": "Uni-SPIRE",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/uni-spire-the-universal-writing-continuum/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "EarneyIT (IT Technician)",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/earneyit/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -1545,6 +1609,14 @@
             "Pay": ""
         },
         {
+            "Name": "Insight",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/insight/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Atomized",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/atomizedhq/jobs/",
@@ -1570,7 +1642,7 @@
         },
         {
             "Name": "NASA",
-            "Location": "Hampton, Virginia",
+            "Location": "Hampton, Virginia or Huntsville, Alabama or Cape Canaveral, Florida or Pasadena, California.",
             "LinkedIn": "https://www.linkedin.com/company/nasa/jobs/",
             "Contact": "",
             "Tips": "",
