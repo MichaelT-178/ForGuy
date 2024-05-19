@@ -167,7 +167,7 @@
         },
         {
             "id": 16,
-            "instruction": "Now change into your \"vue-sqlite-frontend\" folder that you created in step 1. Install axios so you can so you can make HTTP requests to your REST Api.",
+            "instruction": "Now open a new terminal and change into your \"vue-sqlite-frontend\" folder that you created in step 1. Install axios so you can so you can make HTTP requests to your REST Api.",
             "Code": {
                 "Name": "",
                 "Description": "",
