@@ -85,13 +85,16 @@ code {
 
 /* Swift nil */
 .token.nil.constant,
-.token.fxml-orange {
+.token.fxml-orange,
+.token.attr-name,
+.token.name {
     color: #D19A66;
 }
 
 .token.string,
 .token.green-js,
-.token.fxml-green {
+.token.fxml-green,
+.token.attr-value {
     color: #98C379;
 }
 
@@ -99,6 +102,8 @@ code {
 .token.self-red,
 .token.red-js,
 .token.red-js-two,
+.token.tag,
+.token.doctype-tag,
 .token.fxml-red {
     color: #E06C75;
 }
