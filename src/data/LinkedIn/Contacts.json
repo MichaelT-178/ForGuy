@@ -225,6 +225,26 @@
             "Image": "IBM.jpg"
         },
         {
+            "Name": "Gianna Sheffield",
+            "Company": "Amazon",
+            "Role": "Software Engineer Manager",
+            "Location": "Seattle, Washington",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/gsheffi/",
+            "Details": "This women briefly went to UNCW and is a SWE manager at Amazon. She accepted my LinkedIn connect request, so if you wanted to message her, that might be a good way to do it.",
+            "Image": "Amazon.jpg"
+        },
+        {
+            "Name": "Phoebe Roberts",
+            "Company": "DataAnnotation",
+            "Role": "Recruiter",
+            "Location": "Remote",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/phoebe-roberts-74ab362b3/",
+            "Details": "This women messaged me on LinkedIn about a remote Swift iOS Developer position.",
+            "Image": "DataAnnotation.jpg"
+        },
+        {
             "Name": "John Richardson",
             "Company": "Raytheon Technologies",
             "Role": "IT Specialist",
