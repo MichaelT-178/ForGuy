@@ -9,7 +9,14 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "BEFORE YOU DO ANY OF THIS, go to the \"How to Setup a Vue Project\" link and complete all the instructions. Doing so is a prerequisite to this instruction set. I’d strongly recommend naming your project \"vue-sqlite-frontend\"."
+            "instruction": "BEFORE YOU DO ANY OF THIS, go to the \"How to Setup a Vue Project\" link above and complete all the instructions. Doing so is a prerequisite to this instruction set. I'd strongly recommend naming your project \"vue-sqlite-frontend\" so you can follow along with these instructions.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "npm install -g create-vite\n  npm init vite@latest vue-sqlite-frontend -- --template vue",
+                "CopyCode": "npm install -g create-vite\nnpm init vite@latest vue-sqlite-frontend -- --template vue"
+            }
         },
         {
             "id": 2,
