@@ -160,7 +160,8 @@
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "Command",
+                "Language": "fxml",
+                "DisplayLang": "Env",
                 "FormatCode": "DATABASE_URL=sqlite:///mydatabase.db",
                 "CopyCode": "DATABASE_URL=sqlite:///mydatabase.db"
             }
@@ -189,7 +190,7 @@
         },
         {
             "id": 18,
-            "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file.",
+            "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file in the \"src\" folder.",
             "Code": {
                 "Name": "",
                 "Description": "",
