@@ -59,52 +59,24 @@ const scrollToRef = ref(null);
 
 const currentSection = ref(localStorage.getItem('currentSection') || 'node');
 
-// const filteredSets = computed(() => {
-
-//     if (jsonData.value.MultiSet) {
-//         console.log("HERE FOUND ITS HERE");
-
-//         return jsonData.value.MultiSet.filter(set => set.Info[0].ref === currentSection.value);
-//     } else {
-//         return AllSets.filter(set => set.Info[0].ref === currentSection.value);
-//     }
-// });
 
 const filteredSets = computed(() => {
     let allFilteredSets = [];
-
+    
     AllSets.forEach(set => {
         if (set.MultiSet) {
-            // Include all sets from MultiSet without filtering by section
-            allFilteredSets.push(...set.MultiSet);
+            if (set.MultiSet[0].Info[0].ref === currentSection.value) {
+                allFilteredSets.push(...set.MultiSet);
+            }
         } else {
-            // Keep the filtering for regular sets
             if (set.Info[0].ref === currentSection.value) {
                 allFilteredSets.push(set);
             }
         }
     });
-
+    
     return allFilteredSets;
 });
-
-// const filteredSets = computed(() => {
-//     let allFilteredSets = [];
-
-//     AllSets.forEach(set => {
-//         if (set.MultiSet) {
-//             const filteredMultiSets = set.MultiSet.filter(set => set.Info[0].ref === currentSection.value);
-//             allFilteredSets.push(...filteredMultiSets);
-//         } else {
-
-//             if (set.Info[0].ref === currentSection.value) {
-//                 allFilteredSets.push(set);
-//             }
-//         }
-//     });
-
-//     return allFilteredSets;
-// });
 
 
 const toggleSection = (section) => {
