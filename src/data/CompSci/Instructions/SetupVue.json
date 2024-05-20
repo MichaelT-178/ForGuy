@@ -97,40 +97,29 @@
         },
         {
             "id": 9,
-            "instruction": "Delete the \"HelloWorld.vue\" file in the \"components\" directory.",
+            "instruction": "Delete unused assets and components.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "rm components/HelloWorld.vue",
-                "CopyCode": "rm components/HelloWorld.vue"
+                "FormatCode": "rm components/HelloWorld.vue;\n  rm assets/vue.svg",
+                "CopyCode": "rm components/HelloWorld.vue;\nrm assets/vue.svg"
             }
         },
         {
             "id": 10,
-            "instruction": "Delete the \"vue.svg\" file in the \"assests\" directory.",
+            "instruction": "Create the following files in your project.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "rm assets/vue.svg",
-                "CopyCode": "rm assets/vue.svg"
+                "FormatCode": "touch router/index.js;\n  touch components/RouterBtn.vue;\n  touch views/Home.vue;\n  touch views/SecondPage.vue",
+                "CopyCode": "touch router/index.js;\ntouch components/RouterBtn.vue;\ntouch views/Home.vue;\ntouch views/SecondPage.vue"
             }
         },
         {
             "id": 11,
-            "instruction": "In the \"router\" directory create an \"index.js\" file",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "touch router/index.js",
-                "CopyCode": "touch router/index.js"
-            }
-        },
-        {
-            "id": 12,
-            "instruction": "In the \"index.js\" file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like the following import statement -> \"import home-page from '../views/Home.vue';\" and have it still work. Save the file when you're finished (command + s).",
+            "instruction": "In \"router\" folder in the \"index.js\" file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like \"import home-page from '../views/Home.vue'\" and have it still work. Save the file when you're finished (command + s).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -141,7 +130,7 @@
             }
         },
         {
-            "id": 13,
+            "id": 12,
             "instruction": "Now open the \"main.js\" file in the top-most directory of the src folder. Delete the contents of the file and paste in the following code.",
             "Code": {
                 "Name": "",
@@ -153,19 +142,8 @@
             }
         },
         {
-            "id": 14,
-            "instruction": "In the components directory create a file named \"RouterBtn.vue\".",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "touch components/RouterBtn.vue",
-                "CopyCode": "touch components/RouterBtn.vue"
-            }
-        },
-        {
-            "id": 15,
-            "instruction": "Paste the following code into \"RouterBtn.vue\" file in your components folder.",
+            "id": 13,
+            "instruction": "Paste the following code into \"RouterBtn.vue\" file in your \"components\" folder.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -176,18 +154,7 @@
             }
         },
         {
-            "id": 16,
-            "instruction": "In the \"views\" directory create files named \"Home.vue\" and \"SecondPage.vue\".",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "touch views/Home.vue\n  touch views/SecondPage.vue",
-                "CopyCode": "touch views/Home.vue\ntouch views/SecondPage.vue"
-            }
-        },
-        {
-            "id": 17,
+            "id": 14,
             "instruction": "Paste the following code in the \"Home.vue\" file in the views folder.",
             "Code": {
                 "Name": "",
@@ -199,7 +166,7 @@
             }
         },
         {
-            "id": 18,
+            "id": 15,
             "instruction": "Paste the following code in the \"SecondPage.vue\" file.",
             "Code": {
                 "Name": "",
@@ -211,7 +178,7 @@
             }
         },
         {
-            "id": 19,
+            "id": 16,
             "instruction": "Go to \"App.vue\" in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file.",
             "Code": {
                 "Name": "",
@@ -223,7 +190,7 @@
             }
         },
         {
-            "id": 20,
+            "id": 17,
             "instruction": "After you're done, save your code and run it using \"npm run dev\". I think this should be a good start to your project. Obviously you can delete and modify the files. The example files were just to show you how to set the project up.",
             "Code": {
                 "Name": "",
