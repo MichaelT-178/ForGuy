@@ -119,7 +119,7 @@
         },
         {
             "id": 11,
-            "instruction": "In \"router\" folder in the \"index.js\" file paste the following code. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like \"import home-page from '../views/Home.vue'\" and have it still work. Save the file when you're finished (command + s).",
+            "instruction": "In the \"router\" folder, paste the following code in the \"index.js\" file. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like \"import home-page from '../views/Home.vue'\" and have it still work. Save the file when you're finished (command + s).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -143,7 +143,7 @@
         },
         {
             "id": 13,
-            "instruction": "Paste the following code into \"RouterBtn.vue\" file in your \"components\" folder.",
+            "instruction": "Paste the following code into the \"RouterBtn.vue\" file in your \"components\" folder in your \"src\" directory.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -155,7 +155,7 @@
         },
         {
             "id": 14,
-            "instruction": "Paste the following code in the \"Home.vue\" file in the views folder.",
+            "instruction": "Paste the following code in the \"Home.vue\" file in the \"views\" folder in your \"src\" directory.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -167,7 +167,7 @@
         },
         {
             "id": 15,
-            "instruction": "Paste the following code in the \"SecondPage.vue\" file.",
+            "instruction": "Paste the following code in the \"SecondPage.vue\" file in the same \"views\" folder.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -179,7 +179,7 @@
         },
         {
             "id": 16,
-            "instruction": "Go to \"App.vue\" in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file.",
+            "instruction": "Go to the \"App.vue\" file in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file.",
             "Code": {
                 "Name": "",
                 "Description": "",
