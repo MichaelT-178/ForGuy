@@ -24,8 +24,12 @@
             <h2 class="gh-header-two">{{ set.Info[0].title }}</h2>
             <p class="description-two" v-html="createHyperLink(set.Info[0].desc)"></p>
             <div v-for="point in set.Instructions" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createDownloadLink(createHyperLink(point.instruction))"></span></p>
-                <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span>
+                    <span v-html="createDownloadLink(createHyperLink(point.instruction))"></span>
+                </p>
+                <span v-if="point.Code">
+                    <CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock>
+                </span>
             </div>
         </div>
 
@@ -55,9 +59,53 @@ const scrollToRef = ref(null);
 
 const currentSection = ref(localStorage.getItem('currentSection') || 'node');
 
+// const filteredSets = computed(() => {
+
+//     if (jsonData.value.MultiSet) {
+//         console.log("HERE FOUND ITS HERE");
+
+//         return jsonData.value.MultiSet.filter(set => set.Info[0].ref === currentSection.value);
+//     } else {
+//         return AllSets.filter(set => set.Info[0].ref === currentSection.value);
+//     }
+// });
+
 const filteredSets = computed(() => {
-    return AllSets.filter(set => set.Info[0].ref === currentSection.value);
+    let allFilteredSets = [];
+
+    AllSets.forEach(set => {
+        if (set.MultiSet) {
+            // Include all sets from MultiSet without filtering by section
+            allFilteredSets.push(...set.MultiSet);
+        } else {
+            // Keep the filtering for regular sets
+            if (set.Info[0].ref === currentSection.value) {
+                allFilteredSets.push(set);
+            }
+        }
+    });
+
+    return allFilteredSets;
 });
+
+// const filteredSets = computed(() => {
+//     let allFilteredSets = [];
+
+//     AllSets.forEach(set => {
+//         if (set.MultiSet) {
+//             const filteredMultiSets = set.MultiSet.filter(set => set.Info[0].ref === currentSection.value);
+//             allFilteredSets.push(...filteredMultiSets);
+//         } else {
+
+//             if (set.Info[0].ref === currentSection.value) {
+//                 allFilteredSets.push(set);
+//             }
+//         }
+//     });
+
+//     return allFilteredSets;
+// });
+
 
 const toggleSection = (section) => {
     currentSection.value = section;
