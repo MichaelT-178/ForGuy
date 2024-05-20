@@ -20,7 +20,7 @@
         },
         {
             "id": 2,
-            "instruction": "Create a directory for your Flask api using the following command.",
+            "instruction": "Open a new terminal and create a directory for your Flask api using the following command.",
             "Code": {
                 "Name": "",
                 "Description": "",
