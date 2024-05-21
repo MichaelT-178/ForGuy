@@ -254,6 +254,14 @@
             "Pay": ""
         },
         {
+            "Name": "Infosys",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/infosys/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Center For Marine Science",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/center-for-marine-science/jobs/",
@@ -353,6 +361,38 @@
             "Name": "Outlier",
             "Location": "San Francisco, California",
             "LinkedIn": "https://www.linkedin.com/company/try-outlier/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "UCSF Center for Intelligent Imaging",
+            "Location": "San Francisco, California",
+            "LinkedIn": "https://www.linkedin.com/company/ucsf-center-for-intelligent-imaging/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Liquidnet",
+            "Location": "New York City, New York",
+            "LinkedIn": "https://www.linkedin.com/company/liquidnet/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Kimley-Horn",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/kimley-horn/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "American Express",
+            "Location": "Salt Lake City, Utah",
+            "LinkedIn": "https://www.linkedin.com/company/american-express/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -747,6 +787,14 @@
             "LinkedIn": "https://www.linkedin.com/company/basf/jobs/",
             "Contact": "",
             "Tips": "The title of the job was \"Business Systems Intern\".",
+            "Pay": ""
+        },
+        {
+            "Name": "Victra - Verizon Authorized Retailer",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/victra/jobs/",
+            "Contact": "",
+            "Tips": "",
             "Pay": ""
         },
         {
