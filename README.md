@@ -12,6 +12,8 @@ WHEN YOU'RE DONE CHANGE THE DOWNLOAD LINK ON THE HOME PAGE.
 
 CISCO SECURE CLIENT DOWNLOADS SETUP PROJECT
 
+TEMPLATES ZIP FOLDER
+
 ## How to Add a Section 
 
 1. Go to src/Views/folder where you want to put your new view 
