@@ -36,8 +36,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "npm create vite@latest my-react-project -- --template react",
-                "CopyCode": "npm create vite@latest my-react-project -- --template react" 
+                "FormatCode": "npm create vite@latest react-project -- --template react",
+                "CopyCode": "npm create vite@latest react-project -- --template react" 
             }
         },
         {
@@ -47,8 +47,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd my-react-project",
-                "CopyCode": "cd my-react-project" 
+                "FormatCode": "cd react-project",
+                "CopyCode": "cd react-project" 
             }
         },
         {
@@ -131,7 +131,7 @@
         },
         {
             "id": 12,
-            "instruction": "THIS IS AN OPTIONAL STEP. If you're getting an error where the \"@tailwind\" keyword is being underline yellow with a message saying \"Unknow word\". Go to your VSCode settings json file and paste the following JSON data. Go to this [link](https://flaviocopes.com/fix-unknown-at-rule-tailwind/) for additional details. If there's no error or if you don't mind the error, you can skip this step. It should still work.",
+            "instruction": "THIS IS AN OPTIONAL STEP. If the \"@tailwind\" keyword is being underlined yellow with a message saying \"Unknown word\", paste the following JSON data into your VSCode Settings file. See this [link](https://flaviocopes.com/fix-unknown-at-rule-tailwind/) for additional details. If there's no error or if you don't mind the error, you can skip this step. It should work either way it will just be underlined..",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -142,6 +142,17 @@
         },
         {
             "id": 13,
+            "instruction": "Now remove unused assets. Press \"command + k\" to clear your terminal after you're done.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rm src/assets/react.svg\n  rm public/vite.svg",
+                "CopyCode": "rm src/assets/react.svg\nrm public/vite.svg" 
+            }
+        },
+        {
+            "id": 14,
             "instruction": "Change into the src directory and make the components, styles, utils, views, and router folders. You can run \"ls\" at the end to confirm it worked.",
             "Code": {
                 "Name": "",
@@ -152,7 +163,7 @@
             }
         },
         {
-            "id": 14,
+            "id": 15,
             "instruction": "Create the following folders in the \"styles\" directory.",
             "Code": {
                 "Name": "",
@@ -163,7 +174,7 @@
             }
         },
         {
-            "id": 15,
+            "id": 16,
             "instruction": "Create the following files in the components and views directory.",
             "Code": {
                 "Name": "",
@@ -174,7 +185,7 @@
             }
         },
         {
-            "id": 16,
+            "id": 17,
             "instruction": "In the styles/components directory in the \"RouterBtn.css\" file paste the following code.",
             "Code": {
                 "Name": "",
@@ -186,7 +197,7 @@
             }
         },
         {
-            "id": 17,
+            "id": 18,
             "instruction": "In the styles/views directory in the \"Home.css\" file paste the following code",
             "Code": {
                 "Name": "",
@@ -198,7 +209,7 @@
             }
         },
         {
-            "id": 18,
+            "id": 19,
             "instruction": "Change back into the main src directory and create the following files in the various folders.",
             "Code": {
                 "Name": "",
@@ -209,7 +220,7 @@
             }
         },
         {
-            "id": 19,
+            "id": 20,
             "instruction": "In the src/router directory Open the \"index.jsx\" file and paste and save the following code in it.",
             "Code": {
                 "Name": "",
@@ -221,7 +232,7 @@
             }
         },
         {
-            "id": 20,
+            "id": 21,
             "instruction": "In the src/components directory open the \"RouterBtn.jsx\" file and paste the following code.",
             "Code": {
                 "Name": "",
@@ -233,7 +244,7 @@
             }
         },
         {
-            "id": 21,
+            "id": 22,
             "instruction": "In the src/views directory open the \"Home.jsx\" file and paste the following code.",
             "Code": {
                 "Name": "",
@@ -245,7 +256,7 @@
             }
         },
         {
-            "id": 22,
+            "id": 23,
             "instruction": "In the src/views directory open the \"SecondPage.jsx\" file and paste the following code. This incorporates tailwind.css and state variables.",
             "Code": {
                 "Name": "",
@@ -257,7 +268,7 @@
             }
         },
         {
-            "id": 23,
+            "id": 24,
             "instruction": "Now in \"App.jsx\" in the top-most directory of src, delete the contents of the file, and paste the following.",
             "Code": {
                 "Name": "",
@@ -269,7 +280,7 @@
             }
         },
         {
-            "id": 24,
+            "id": 25,
             "instruction": "In the top-most directory of the src file, open \"App.css\". Remove the contents of the file and paste the following code.",
             "Code": {
                 "Name": "",
@@ -278,17 +289,6 @@
                 "DisplayLang": "CSS",
                 "FormatCode": "#root {\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 2rem;\n    text-align: center;\n  }",
                 "CopyCode": "#root {\n\tmax-width: 1280px;\n\tmargin: 0 auto;\n\tpadding: 2rem;\n\ttext-align: center;\n}"
-            }
-        },
-        {
-            "id": 25,
-            "instruction": "Now remove unused assets. Press \"command + k\" to clear your terminal after you're done.",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "cd ~\n  cd my-react-project\n  rm src/assets/react.svg\n  rm public/vite.svg",
-                "CopyCode": "cd ~\ncd my-react-project\nrm src/assets/react.svg\nrm public/vite.svg" 
             }
         },
         {
