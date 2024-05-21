@@ -16,22 +16,26 @@
                 {
                     "id": 1,
                     "name": "How to Setup Node.js",
-                    "ref": "node"
+                    "ref": "node",
+                    "ScrollTo": "NodeLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup a Vue Project",
-                    "ref": "vue"
+                    "ref": "vue",
+                    "ScrollTo": "VueLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Setup a React Project",
-                    "ref": "react"
+                    "ref": "react",
+                    "ScrollTo": "ReactLink"
                 },
                 {
                     "id": 4,
                     "name": "Create a Project Templates Folder",
-                    "ref": "templates"
+                    "ref": "templates",
+                    "ScrollTo": "TemplatesLink"
                 }
             ]
         },
@@ -42,12 +46,14 @@
                 {
                     "id": 1,
                     "name": "Deploy a Vanilla JS Project to GitHub Pages",
-                    "ref": "gh-pages"
+                    "ref": "gh-pages",
+                    "ScrollTo": "GHPagesLink"
                 },
                 {
                     "id": 2,
                     "name": "Deploy a Vite Project to GitHub Pages",
-                    "ref": "vite-gh-pages"
+                    "ref": "vite-gh-pages",
+                    "ScrollTo": "ViteGHPagesLink"
                 }
             ]
         },
@@ -58,52 +64,62 @@
                 {
                     "id": 1,
                     "name": "How to Setup an Amazon Web Services Account",
-                    "ref": "aws"
+                    "ref": "aws",
+                    "ScrollTo": "AWSLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Install and Setup Docker",
-                    "ref": "docker"
+                    "ref": "docker",
+                    "ScrollTo": "DockerLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
-                    "ref": "flask-sqlite3"
+                    "ref": "flask-sqlite3",
+                    "ScrollTo": "FlaskSqliteLink"
                 },
                 {
                     "id": 4,
                     "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
-                    "ref": "deploy-sqlite"
+                    "ref": "deploy-sqlite",
+                    "ScrollTo": "DeploySqliteLink"
                 },
                 {
                     "id": 5,
                     "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
-                    "ref": "flask-PostgreSQL"
+                    "ref": "flask-PostgreSQL",
+                    "ScrollTo": "FlaskPostLink"
                 },
                 {
                     "id": 6,
                     "name": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
-                    "ref": "deploy-PostgreSQL"
+                    "ref": "deploy-PostgreSQL",
+                    "ScrollTo": "DeployPostLink"
                 },
                 {
                     "id": 7,
                     "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-                    "ref": "react-sqlite"
+                    "ref": "react-sqlite",
+                    "ScrollTo": "ReactSqliteLink"
                 },
                 {
                     "id": 8,
                     "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
-                    "ref": "deploy-spring"
+                    "ref": "deploy-spring",
+                    "ScrollTo": "DeploySpringLink"
                 },
                 {
                     "id": 9,
                     "name": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
-                    "ref": "complex-mysql"
+                    "ref": "complex-mysql",
+                    "ScrollTo": "ComplexMySqlLink"
                 },
                 {
                     "id": 10,
                     "name": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
-                    "ref": "deploy-mysql"
+                    "ref": "deploy-mysql",
+                    "ScrollTo": "DeployMySqlLink"
                 }
             ] 
         },
@@ -114,22 +130,26 @@
                 {
                     "id": 1,
                     "name": "How to Setup a JavaFX Project (Intellij IDEA)",
-                    "ref": "intellij"
+                    "ref": "intellij",
+                    "ScrollTo": "IntellijLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup a JavaFX Project (Eclipse)",
-                    "ref": "eclipse"
+                    "ref": "eclipse",
+                    "ScrollTo": "EclipseLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Setup Cisco Secure Client and a VPN.",
-                    "ref": "cisco"
+                    "ref": "cisco",
+                    "ScrollTo": "CiscoLink"
                 },
                 {
                     "id": 4,
                     "name": "How to Setup a PHP and MySQL Project for UNCW.",
-                    "ref": "php"
+                    "ref": "php",
+                    "ScrollTo": "PhpLink"
                 }
             ] 
         },
@@ -140,12 +160,14 @@
                 {
                     "id": 1,
                     "name": "How to Setup TikTok Downloader (Not Working)",
-                    "ref": "tiktok"
+                    "ref": "tiktok",
+                    "ScrollTo": "TikTokLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup YouTube Downloader",
-                    "ref": "youtube"
+                    "ref": "youtube",
+                    "ScrollTo": "YoutubeLink"
                 }
             ] 
         },
@@ -156,27 +178,32 @@
                 {
                     "id": 1,
                     "name": "How to Setup a Google API Project",
-                    "ref": "google-api"
+                    "ref": "google-api",
+                    "ScrollTo": "GoogleApiLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup a Reddit API Project",
-                    "ref": "reddit-api"
+                    "ref": "reddit-api",
+                    "ScrollTo": "RedditApiLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Setup a Spotify API Project",
-                    "ref": "spotify-api"
+                    "ref": "spotify-api",
+                    "ScrollTo": "SpotifyApiLink"
                 },
                 {
                     "id": 4,
                     "name": "How to Setup a OpenAI API Project",
-                    "ref": "openai-api"
+                    "ref": "openai-api",
+                    "ScrollTo": "OpenaiLink"
                 },
                 {
                     "id": 5,
                     "name": "How to Make a Custom Botpress Chatbot",
-                    "ref": "botpress"
+                    "ref": "botpress",
+                    "ScrollTo": "BotPressLink"
                 }
             ] 
         },
@@ -187,17 +214,20 @@
                 {
                     "id": 1,
                     "name": "How to create an IOS app with Swift and Firebase",
-                    "ref": "swift-firebase"
+                    "ref": "swift-firebase",
+                    "ScrollTo": "SwiftFirebaseLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup Core Data in a SwiftUI project.",
-                    "ref": "core-data"
+                    "ref": "core-data",
+                    "ScrollTo": "CoreDataLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Run an iOS app in Developer Mode",
-                    "ref": "developermode"
+                    "ref": "developer-mode",
+                    "ScrollTo": "DeveloperModeLink"
                 }
             ] 
         },
@@ -208,12 +238,14 @@
                 {
                     "id": 1,
                     "name": "How to Setup OAuth Authentication",
-                    "ref": "oauth"
+                    "ref": "oauth",
+                    "ScrollTo": "OAuthLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Setup Two-Factor Authentication",
-                    "ref": "two-factor-auth"
+                    "ref": "two-factor-auth",
+                    "ScrollTo": "TwoFactorLink"
                 }
             ] 
         },
@@ -224,22 +256,26 @@
                 {
                     "id": 1,
                     "name": "How to Populate and Query a SQLite3 Database",
-                    "ref": "basic-sqlite"
+                    "ref": "basic-sqlite",
+                    "ScrollTo": "BasicSqliteLink"
                 },
                 {
                     "id": 2,
                     "name": "How to Use Excel with Python",
-                    "ref": "excel"
+                    "ref": "excel",
+                    "ScrollTo": "ExcelLink"
                 },
                 {
                     "id": 3,
                     "name": "How to Add a Language to the Prism Library",
-                    "ref": "prism"
+                    "ref": "prism",
+                    "ScrollTo": "PrismLink"
                 },
                 {
                     "id": 4,
                     "name": "How to Setup an Executable Python Script",
-                    "ref": "executable-python"
+                    "ref": "executable-python",
+                    "ScrollTo": "ExecPythonLink"
                 }
             ] 
         }
