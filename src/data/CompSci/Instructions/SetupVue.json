@@ -20,13 +20,13 @@
         },
         {
             "id": 2,
-            "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\". Replace \"your-project-name\" with the real name of your project.",
+            "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\".",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "npm init vite@latest your-project-name -- --template vue",
-                "CopyCode": "npm init vite@latest your-project-name -- --template vue"
+                "FormatCode": "npm init vite@latest vue-project -- --template vue",
+                "CopyCode": "npm init vite@latest vue-project -- --template vue"
             }
         },
         {
@@ -36,8 +36,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd your-project-name",
-                "CopyCode": "cd your-project-name"
+                "FormatCode": "cd vue-project",
+                "CopyCode": "cd vue-project"
             }
         },
         {
