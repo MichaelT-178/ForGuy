@@ -2,6 +2,7 @@
 import SetupNode from './SetupNode.json';
 import SetupVue from './SetupVue.json';
 import SetupReact from './SetupReact.json';
+import TemplatesFolder from './TemplatesFolder.json';
 import GithubPages from './GithubPages.json';
 import ViteGHPages from './ViteGHPages.json';
 import IntellijJavaFX from './IntellijJavaFX.json';
@@ -40,6 +41,7 @@ export const AllSets = [
     SetupNode,
     SetupVue,
     SetupReact,
+    TemplatesFolder,
     GithubPages,
     ViteGHPages,
     IntellijJavaFX,
