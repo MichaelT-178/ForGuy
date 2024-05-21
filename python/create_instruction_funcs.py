@@ -74,7 +74,7 @@ emojis = {
 
     "core-data": "🏎️",
 
-    "developermode": "📱",
+    "developer-mode": "📱",
 
     "oauth": "🗝️",
     "two-factor-auth": "🔐",
