@@ -27,6 +27,11 @@
                     "id": 3,
                     "name": "How to Setup a React Project",
                     "ref": "react"
+                },
+                {
+                    "id": 4,
+                    "name": "Create a Project Templates Folder",
+                    "ref": "templates"
                 }
             ]
         },
