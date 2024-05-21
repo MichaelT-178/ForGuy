@@ -5997,7 +5997,7 @@
             },
             {
                 "name": "How to Run an iOS app in Developer Mode",
-                "ref": "developermode"
+                "ref": "developer-mode"
             },
             {
                 "desc": "Explains how to setup OAuth and Two-Factor authentication in a Vue.js app."
@@ -8037,12 +8037,12 @@
     },
     {
         "Title": "How to Run an iOS app in Developer Mode 📱",
-        "Link": "/CompSci/SetupProjects/developermode",
+        "Link": "/CompSci/SetupProjects/developer-mode",
         "Results": [
             {
                 "title": "How to Run an iOS app in Developer Mode",
                 "desc": "How to run an iOS app your currently developing on your phone.",
-                "ref": "developermode"
+                "ref": "developer-mode"
             },
             {
                 "instruction": "Go to Xcode and open your project. When you press the run button in the top bar it should say what IOS simulator your app will run on. Press the name of the simulator and a drop-down menu will appear. Under \"iOS Device\" there will (probably) be a message that says something like \"No eligible devices connected to 'My Mac'\". Click on this and go from there, most of the steps should be fairly intuitive."
