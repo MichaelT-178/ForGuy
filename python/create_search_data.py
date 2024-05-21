@@ -778,7 +778,7 @@ def get_developermode():
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
 		Title = "How to Run an iOS app in Developer Mode 📱"
-		Link = "/CompSci/SetupProjects/developermode"
+		Link = "/CompSci/SetupProjects/developer-mode"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
