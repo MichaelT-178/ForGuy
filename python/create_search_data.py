@@ -403,6 +403,20 @@ def get_react():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+      
+def get_templates():
+	with open("../src/data/CompSci/Instructions/TemplatesFolder.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Create a Project Templates Folder 📁"
+		Link = "/CompSci/SetupProjects/templates"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_gh_pages():
 	with open("../src/data/CompSci/Instructions/GithubPages.json", "r") as file:
@@ -1229,6 +1243,7 @@ displaylinks = get_display_links()
 node = get_node()
 vue = get_vue()
 react = get_react()
+templates = get_templates()
 ghpages = get_gh_pages()
 viteghpages = get_vite_gh_pages()
 aws = get_aws()
@@ -1325,6 +1340,7 @@ all_data = [
     node,
     vue,
     react,
+    templates,
     ghpages,
     viteghpages,
     aws,
