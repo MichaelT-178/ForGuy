@@ -8,7 +8,7 @@
         <div v-for="(group, groupName) in displayLinks" :key="groupName">
             <h2 class="gh-header-two" style="margin-top: -3px;">{{ group.title }}</h2>
             <p class="description-two">{{ group.desc }}</p>
-            <div v-for="link in group.links" :key="link.id">
+            <div :id="link.ScrollTo" v-for="link in group.links" :key="link.id">
                 <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}</span>
                     <span :class="{ 'display-link': currentSection !== link.ref, 'active-link': currentSection === link.ref }"
                           @click="toggleSection(link.ref)">
@@ -24,8 +24,9 @@
             <h2 class="gh-header-two">{{ set.Info[0].title }}</h2>
             <p class="description-two" v-html="createHyperLink(set.Info[0].desc)"></p>
             <div v-for="point in set.Instructions" :key="point.id">
-                <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span>
-                    <span v-html="createDownloadLink(createHyperLink(point.instruction))"></span>
+                <p class="bullet-pt">
+                    <span class="bullet-pt-span">{{ point.id }}</span>
+                    <span v-html="createDownloadLink(createHyperLink(createScrollToLink(point.instruction)))"></span>
                 </p>
                 <span v-if="point.Code">
                     <CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock>
@@ -59,6 +60,12 @@ const scrollToRef = ref(null);
 
 const currentSection = ref(localStorage.getItem('currentSection') || 'node');
 
+const createScrollToLink = (text) => {
+    const regex = /&([^&]+)&\[(\w+)\]/g;
+    return text.replace(regex, (match, linkText, refName) => {
+        return `<span class="display-link" data-ref="${refName}">${linkText}</span>`;
+    });
+};
 
 const filteredSets = computed(() => {
     let allFilteredSets = [];
@@ -85,11 +92,31 @@ const toggleSection = (section) => {
 
     router.push(`/CompSci/SetupProjects/${section}`);
 
+    document.querySelectorAll('.display-link').forEach(element => {
+        element.addEventListener('click', () => {
+            const refName = element.getAttribute('data-ref');
+            scrollToDisplayLink(refName);
+        });
+    });
+
     nextTick(() => {
         if (scrollToRef.value) {
             scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
         }
     });
+};
+
+//Scroll Link syntax is &Go to Setup Vue Project&[VueLink]
+const scrollToDisplayLink = (refName) => {
+    const element = document.getElementById(refName);
+
+    if (element) {
+        const topPosition = element.getBoundingClientRect().top + window.scrollY - 50;
+        window.scrollTo({
+            top: topPosition,
+            behavior: 'smooth'
+        });
+    }
 };
 
 const scrollToTop = () => {
@@ -129,6 +156,13 @@ onMounted(() => {
         localStorage.setItem('currentSection', section);
 
         if (linkSection != null) {
+            document.querySelectorAll('.display-link').forEach(element => {
+                element.addEventListener('click', () => {
+                    const refName = element.getAttribute('data-ref');
+                    scrollToDisplayLink(refName);
+                });
+            });
+
             nextTick(() => {
                 if (scrollToRef.value) {
                     scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
@@ -190,9 +224,21 @@ onMounted(() => {
     color: darkblue;
 }
 
+:deep(.display-link) {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+:deep(.display-link:hover) {
+    text-decoration: underline;
+    color: darkblue;
+}
+
 .active-link {
     text-decoration: underline;
     color: darkblue;
+    cursor: pointer;
 }
 
 .gh-header-two {
