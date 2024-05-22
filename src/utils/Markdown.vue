@@ -89,20 +89,21 @@ export const createDownloadLink = (text) => {
   
   const style = document.createElement('style');
   document.head.appendChild(style);
+
   style.textContent = `
     .custom-tooltip {
       position: absolute;
       visibility: hidden;
-      background-color: #B7B7B7;
+      background-color: #C7C7C7;
       color: black; 
       text-align: center;
       border-radius: 2px; 
-      padding: 3px 7px;
+      padding: 2px 4px;
       font-size: 13px;
       z-index: 1000;
       opacity: 0;
       transition: opacity 0.5s;
-      bottom: -25px;           /* Adjust position */
+      bottom: -23px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -112,7 +113,6 @@ export const createDownloadLink = (text) => {
     }
   `;
 
-  // Replace markdown link with HTML anchor and custom tooltip
   return text.replace(markdownLinkPattern, (match, label, downloadLink) => 
     `<div style="position: relative; display: inline-block;">
         <a href="${downloadLink}" download
