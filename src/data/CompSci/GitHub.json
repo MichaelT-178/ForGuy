@@ -17,7 +17,7 @@
         },
         {
             "id": 4,
-            "name": "How to Create a GitHub Repository Using a Different Account",
+            "name": "How to Create a GitHub Repository Using a Second Account",
             "ref": "multipleDifferentAccount"
         },
         {
@@ -391,7 +391,7 @@
     "CreateSecondGitHubRepo": [
         {
             "id": 7,
-            "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select the \"ssh\" button. Note that you HAVE to select \"ssh\" for this to work with a different account. Then copy the link next to it that looks like \"git clone git@github.com:John-Smith/PacMan.git\". Scroll back up to original step(normalGitHubSeven).",
+            "instruction": "In the light blue section titled \"Quick setup — if you've done this kind of thing before\". Select the \"ssh\" button. Note that you HAVE to select \"ssh\" for this to work with a second account. Then copy the link next to it that looks like \"git clone git@github.com:John-Smith/PacMan.git\". Scroll back up to original step(normalGitHubSeven).",
             "ref": "secondGitHubSeven"
         },
         {
@@ -886,7 +886,7 @@
             "desc": "To add another GitHub account to your computer do the original 5-25 steps with these modified steps."
         },
         {
-            "title": "How to Create a GitHub Repository Using a Different Account",
+            "title": "How to Create a GitHub Repository Using a Second Account",
             "desc": "This is how you create a GitHub repository for an account other than your main one"
         },
         {
