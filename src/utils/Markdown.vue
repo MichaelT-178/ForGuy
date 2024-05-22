@@ -86,13 +86,47 @@ window.navigateToVuePath = (toPropString) => {
 //&DownloadLink&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
 export const createDownloadLink = (text) => {
   const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
+  
+  
+  const style = document.createElement('style');
+  document.head.appendChild(style);
+  style.textContent = `
+    .custom-tooltip {
+      position: absolute;
+      visibility: hidden;
+      background-color: #B7B7B7;
+      color: black; 
+      text-align: center;
+      border-radius: 2px; 
+      padding: 3px 7px;
+      font-size: 13px;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.5s;
+      bottom: -25px;           /* Adjust position */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .custom-link:hover + .custom-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  `;
+
+  // Replace markdown link with HTML anchor and custom tooltip
   return text.replace(markdownLinkPattern, (match, label, downloadLink) => 
-    `<a href="${downloadLink}" download
-        style="color: #007AFF; text-decoration: none;" 
-        onmouseover="this.style.color='blue'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#007AFF'; this.style.textDecoration='none';"
-      >
-      ${label}</a>`
+    `<div style="position: relative; display: inline-block;">
+        <a href="${downloadLink}" download
+          class="custom-link"
+          style="color: #007AFF; text-decoration: none;"
+          onmouseover="this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.opacity=1;"
+          onmouseout="this.nextElementSibling.style.visibility='hidden'; this.nextElementSibling.style.opacity=0;">
+          ${label}
+        </a>
+        <div class="custom-tooltip">
+          Download
+        </div>
+      </div>`
   );
 };
 
