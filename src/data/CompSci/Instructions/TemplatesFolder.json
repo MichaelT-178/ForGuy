@@ -9,14 +9,25 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Complete the \"How to Setup a Vue Project\" instruction set above. Do everything EXACTLY as it says. Don't change the names of anything."
+            "instruction": "You can skip steps 2-4 by downloading the &templates.zip&(https://github.com/MichaelT-178/TestWebsite/blob/main/templates.zip?raw=true) folder and then running the following commands in your terminal",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mv Downloads/templates.zip ./\n  unzip templates.zip -d templates",
+                "CopyCode": "mv Downloads/templates.zip ./\nunzip templates.zip -d templates"
+            }
         },
         {
             "id": 2,
-            "instruction": "Complete the \"How to Setup a React Project\" instruction set above. Do everything EXACTLY as it says. Don't change the names of anything."
+            "instruction": "Complete the \"How to Setup a Vue Project\" instruction set above. Do everything EXACTLY as it says. Don't change the names of anything."
         },
         {
             "id": 3,
+            "instruction": "Complete the \"How to Setup a React Project\" instruction set above. Do everything EXACTLY as it says. Don't change the names of anything."
+        },
+        {
+            "id": 4,
             "instruction": "Create a \"templates\" folder and then move your Vue and React projects into the folder using the following commands.",
             "Code": {
                 "Name": "",
@@ -27,7 +38,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "instruction": "In the future whenever you to make a copy of one of the templates use the following command. Replace \"react-project\" with whatever project template you want to use. Also replace the path with your actual new path.",
             "Code": {
                 "Name": "",
