@@ -76,8 +76,7 @@ emojis = {
 
     "developer-mode": "📱",
 
-    "oauth": "🗝️",
-    "two-factor-auth": "🔐",
+    "oauth": "🔐",
 
 
     "basic-sqlite": "📊",

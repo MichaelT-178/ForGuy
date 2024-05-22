@@ -791,22 +791,8 @@ def get_oauth():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Setup OAuth Authentication 🗝️"
+		Title = "How to Setup OAuth Authentication 🔐"
 		Link = "/CompSci/SetupProjects/oauth"
-		Results = info + instructions
-
-		return { "Title": Title, "Link": Link, "Results": Results }
-      
-def get_two_factor_auth():
-	with open("../src/data/CompSci/Instructions/TwoFactor.json", "r") as file:
-		content = json.load(file)
-
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
-
-		Title = "How to Setup Two-Factor Authentication 🔐"
-		Link = "/CompSci/SetupProjects/two-factor-auth"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -1278,7 +1264,6 @@ prism = get_prism()
 coredata = get_core_data()
 
 oauth = get_oauth()
-twofactor = get_two_factor_auth()
 
 excel = get_excel()
 exepython = get_executable_python()
@@ -1372,7 +1357,6 @@ all_data = [
     developermode,
 
     oauth,
-    twofactor, 
 
     basicsqlite,
     excel,
