@@ -26,7 +26,6 @@ import DeveloperMode from './DeveloperMode.json';
 import ExecutablePython from './ExecutablePython.json';
 import CoreData from './CoreData.json';
 import OAuth from './OAuth.json';
-import TwoFactor from './TwoFactor.json';
 import GoogleApi from './GoogleApi.json';
 import RedditApi from './RedditApi.json';
 import ReadExcel from './ReadExcel.json';
@@ -65,7 +64,6 @@ export const AllSets = [
     ExecutablePython,
     CoreData,
     OAuth,
-    TwoFactor,
     GoogleApi,
     RedditApi,
     ReadExcel,
