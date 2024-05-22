@@ -87,7 +87,6 @@ window.navigateToVuePath = (toPropString) => {
 export const createDownloadLink = (text) => {
   const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
   
-  
   const style = document.createElement('style');
   document.head.appendChild(style);
   style.textContent = `
