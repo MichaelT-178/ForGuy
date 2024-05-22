@@ -9,15 +9,15 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Before you start make sure you have a regular Spotify account."
+            "instruction": "Before you start, make sure you have a regular Spotify account."
         },
         {
             "id": 2,
-            "instruction": "Go this [link](https://developer.spotify.com/) to start your project. Click \"Log in\" in the top-right and sign-in using your regular spotify credentials."
+            "instruction": "Go to this [link](https://developer.spotify.com/) to start your project. Click \"Log in\" in the top-right corner and sign-in using your regular spotify credentials."
         },
         {
             "id": 3,
-            "instruction": "Now go to the [dashboard](https://developer.spotify.com/dashboard). Accept the terms of service by checking the box, then pressing the purple button."
+            "instruction": "Now go to the [dashboard](https://developer.spotify.com/dashboard). Accept the terms of service by checking the box and then pressing the purple button."
         },
         {
             "id": 4,
