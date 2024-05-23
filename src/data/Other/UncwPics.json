@@ -4,7 +4,9 @@
             "page": "UNCW Pictures",
             "desc": "Beautiful Pictures I took in Wilmington",
             "header2": "North Carolina Pics",
-            "desc2": "Other Pictures taken in North Carolina"
+            "desc2": "Other Pictures taken in North Carolina",
+            "header3": "Texas Pics",
+            "desc3": "Pictures I took in Plano, Texas"
         }
     ],
     "Pics": [
@@ -87,7 +89,40 @@
             "text": "Rolling Clouds in Late February"
         }, 
         { 
-            "text": "This is a picture I took when I was interning at USAA in Plano, Texas."
+            "text": "View from my IBM Office"
+        },
+        { 
+            "text": "NCSU Train Tracks"
+        }, 
+        { 
+            "text": "Blue Light in Darkness"
+        }, 
+        { 
+            "text": "Spring in Durham"
+        }, 
+        { 
+            "text": "Visitor Outside My Window"
+        }, 
+        { 
+            "text": "Durham Pond in Spring"
+        }, 
+        { 
+            "text": "View from my USAA office window"
+        },
+        { 
+            "text": "Apartment picture Taken from USAA balcony"
+        },
+        { 
+            "text": "Lantern Store in Plano, Texas"
+        },
+        { 
+            "text": "Cloudy day in Texas"
+        },
+        { 
+            "text": "Picture of Pond in Texas"
+        },
+        { 
+            "text": "USAA Sign in front of the building where I worked"
         }
     ]
 }
