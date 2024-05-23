@@ -1,9 +1,9 @@
 {
     "Info": [
         {
-            "title": "How to Make a Custom Botpress Chatbot",
-            "desc": "Explains how to make a Chatbot from Botpress and incorporate into a React app.",
-            "ref": "botpress"
+            "title": "How to Deploy a Reddit Bot on AWS",
+            "desc": "Explain how to create and deploy a Reddit Bot on Amazon Web Services.",
+            "ref": "reddit-bot-aws"
         }
     ],
     "Instructions": [
