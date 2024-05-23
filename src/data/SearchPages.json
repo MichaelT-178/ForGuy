@@ -308,8 +308,8 @@
     {
         "id": 52,
         "Emoji": "🤖",
-        "MenuName": "How to Make a Custom Botpress Chatbot",
-        "Link": "/CompSci/SetupProjects/botpress"
+        "MenuName": "How to Deploy a Reddit Bot on AWS",
+        "Link": "/CompSci/SetupProjects/reddit-bot-aws"
     },
     {
         "id": 53,
