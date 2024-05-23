@@ -66,7 +66,7 @@ emojis = {
     "google-api": "🔍",
     "reddit-api": "📖",
     "openai-api": "💬",
-    "botpress": "🤖",
+    "reddit-bot-aws": "🤖",
 
 
 
