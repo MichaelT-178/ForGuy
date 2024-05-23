@@ -49,6 +49,8 @@ import Meme47 from "../assets/memes/WhenYouHearBack.jpg";
 import Meme48 from "../assets/memes/Extensions.jpg";
 import Meme49 from "../assets/memes/null.jpg";
 import Meme50 from "../assets/memes/ProgrammerTester.jpg";
+import Meme51 from "../assets/memes/TerminalMeme.jpg";
+import Meme52 from "../assets/memes/Googling.jpg"
 
 
 export const memeObjects = [
@@ -301,6 +303,16 @@ export const memeObjects = [
         text: "Friendliest Programmer/Tester Interaction",
         transcription: "Doctor and nurse Programmer and Tester",
         image: Meme50
-    } //ProgrammerTester.jpg
+    }, //ProgrammerTester.jpg
+    {
+        text: "\"Can you fix my printer?\" energy",
+        transcription: "Money Status Using The Terminal In Front Of Non-Programmers",
+        image: Meme51
+    }, //TerminalMeme.jpg
+    {
+        text: "I am Good Programming 😎",
+        transcription: "Not Sure If I Am a Good Programming Or Good at Googling",
+        image: Meme52
+    } //Googling.jpg
 ]
 </script>
