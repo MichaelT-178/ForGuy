@@ -173,7 +173,7 @@
         },
         "API": {
             "title": "How to Setup Projects that Utilize API's", 
-            "desc": "These explain how to setup project that utilize APIs and make Chatbots.",
+            "desc": "These explain how to setup project that utilize APIs.",
             "links": [
                 {
                     "id": 1,
@@ -201,9 +201,9 @@
                 },
                 {
                     "id": 5,
-                    "name": "How to Make a Custom Botpress Chatbot",
-                    "ref": "botpress",
-                    "ScrollTo": "BotPressLink"
+                    "name": "How to Deploy a Reddit Bot on AWS",
+                    "ref": "reddit-bot-aws",
+                    "ScrollTo": "RedditBotAWSLink"
                 }
             ] 
         },
