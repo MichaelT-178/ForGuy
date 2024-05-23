@@ -30,7 +30,7 @@ import GoogleApi from './GoogleApi.json';
 import RedditApi from './RedditApi.json';
 import ReadExcel from './ReadExcel.json';
 import OpenAI from './OpenAI.json';
-import Chatbot from './BotpressChatbot.json';
+import RedditBotAWS from './RedditBotAWS.json';
 import ComplexMySQL from './ComplexMySQL.json';
 import DeployMySQL from './DeployMySQL.json';
 import SpotifyApi from './SpotifyApi.json';
@@ -68,7 +68,7 @@ export const AllSets = [
     RedditApi,
     ReadExcel,
     OpenAI,
-    Chatbot,
+    RedditBotAWS,
     ComplexMySQL,
     DeployMySQL,
     SpotifyApi

@@ -727,16 +727,16 @@ def get_openai_api():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
-def get_botpress():
-	with open("../src/data/CompSci/Instructions/BotpressChatbot.json", "r") as file:
+def get_reddit_bot_aws():
+	with open("../src/data/CompSci/Instructions/RedditBotAWS.json", "r") as file:
 		content = json.load(file)
 
 		info = content["Info"]
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Make a Custom Botpress Chatbot 🤖"
-		Link = "/CompSci/SetupProjects/botpress"
+		Title = "How to Deploy a Reddit Bot on AWS 🤖"
+		Link = "/CompSci/SetupProjects/reddit-bot-aws"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -1255,7 +1255,7 @@ googleapi = get_google_api()
 redditapi = get_reddit_api()
 spotifyapi = get_spotify_api()
 openai = get_openai_api()
-botpress = get_botpress()
+redditbotaws = get_reddit_bot_aws()
 
 swiftfirebase = get_swift_firebase()
 developermode = get_developermode()
@@ -1350,7 +1350,7 @@ all_data = [
     redditapi,
     spotifyapi,
     openai,
-    botpress,
+    redditbotaws,
 
     swiftfirebase,
     coredata, 
