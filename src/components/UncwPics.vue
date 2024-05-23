@@ -77,7 +77,7 @@ export const NorthCarolinaPics = [
     { text: "Firey Clouds in Durham", image: Pic25 }, //FireyClouds.jpg
     { text: "Rolling Clouds in Late February", image: Pic26 }, //RollingClouds.jpg
     { text: "View from my IBM Office", image: Pic27 }, //IBMOfficeView.jpg
-    { text: "NCSU Train Tracks", image: Pic28 }, //TrainTracks.jpg
+    { text: "NCSU Train Tracks in mid-April", image: Pic28 }, //TrainTracks.jpg
     { text: "Blue Light in Darkness", image: Pic29 }, //BlueLight.jpg
     { text: "Spring in Durham", image: Pic30 }, //IBMMarch.jpg
     { text: "Visitor Outside My Window", image: Pic31 }, //Dove.jpg
