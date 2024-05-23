@@ -124,6 +124,39 @@
         {
             "id": 17,
             "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"Cars.db\" file in the results."
+        },
+        {
+            "id": 18,
+            "instruction": "If you want to delete the table, create a file named \"drop_table.py\" in your folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "touch drop_table.py",
+                "CopyCode": "touch drop_table.py"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "In the \"drop_table.py\" file paste the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "import sqlite3\n\n  conn = sqlite3.connect('Cars.db')\n  cursor = conn.cursor()\n\n  try:\n      cursor.execute(\"DROP TABLE Cars;\")\n  except sqlite3.OperationalError:\n      pass # Table might not exist. Just pass.\n\n  conn.commit()\n  conn.close()",
+                "CopyCode": "import sqlite3\n\nconn = sqlite3.connect('Cars.db')\ncursor = conn.cursor()\n\ntry:\n\tcursor.execute(\"DROP TABLE Cars;\")\nexcept sqlite3.OperationalError:\n\tpass # Table might not exist. Just pass.\n\nconn.commit()\nconn.close()"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "Run the \"drop_table.py\" file to delete your table.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "python3 drop_table.py",
+                "CopyCode": "python3 drop_table.py"
+            }
         }
     ]
 }
