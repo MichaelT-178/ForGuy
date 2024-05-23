@@ -64,7 +64,7 @@
         },
         {
             "id": 6,
-            "instruction": "Activate the virtual environment folder.",
+            "instruction": "Activate the virtual environment folder. Press \"command + k\" to clear your terminal after you're done.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -135,8 +135,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "FormatCode": "from flask_sqlalchemy import SQLAlchemy\n\n  db = SQLAlchemy()\n\n  def init_db(app):\n      db.init_app(app)\n\n      with app.app_context():\n\t  db.create_all()\n",
-                "CopyCode": "from flask_sqlalchemy import SQLAlchemy\n\ndb = SQLAlchemy()\n\ndef init_db(app):\n\tdb.init_app(app)\n\n\twith app.app_context():\n\t\tdb.create_all()\n"
+                "FormatCode": "from flask_sqlalchemy import SQLAlchemy\n  from dotenv import load_dotenv\n\n  load_dotenv()\n\n  db = SQLAlchemy()\n\n  def init_db(app):\n      db.init_app(app)\n\n      with app.app_context():\n\t  db.create_all()\n",
+                "CopyCode": "from flask_sqlalchemy import SQLAlchemy\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ndb = SQLAlchemy()\n\ndef init_db(app):\n\tdb.init_app(app)\n\n\twith app.app_context():\n\t\tdb.create_all()\n"
             }
         },
         {

@@ -15,12 +15,20 @@
             <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
             <img :src="pic.image" alt="Uncw Picture">
         </div>
+
+        <h1>{{ text.header3 }}</h1>
+        <p>{{ text.desc3 }}</p>
+        
+        <div class="uncw-pics-container" v-for="(pic, index) in TexasPics" :key="index">
+            <div class="uncw-pic-text">{{ index + 1 }}. {{ pic.text }}</div>
+            <img :src="pic.image" alt="Uncw Picture">
+        </div>
     </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import { uncwPics, NorthCarolinaPics } from "../../components/UncwPics.vue";
+import { uncwPics, NorthCarolinaPics, TexasPics } from "../../components/UncwPics.vue";
 import AllData from "../../data/Other/UncwPics.json";
 
 const jsonData = ref(AllData);
