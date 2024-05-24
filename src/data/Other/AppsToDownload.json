@@ -72,6 +72,11 @@
             "Link": "https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c"
         },
         {
+            "Name": "AWS Console",
+            "Description": "Allows you to easily see billing and information about running services.",
+            "Link": "https://apps.apple.com/us/app/aws-console/id580990573"
+        },
+        {
             "Name": "Amtrak",
             "Description": "This is an app for finding trains. While I wouldn't find it useful if I lived in Wilmington, I do find it very useful in RTP. You can sometimes get places faster, cheaper, safer, etc. than in an uber. I use it to get from Durham to Charlotte.",
             "Link": "https://apps.apple.com/us/app/amtrak/id405074003"
