@@ -38,6 +38,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `GrubHub%0A` +
 `https://apps.apple.com/us/app/grubhub-food-delivery/id302920553?ppid=9140aa46-ba99-49e6-834f-f3ae2844b70c%0A%0A` +
 
+`AWS Console%0A` + 
+`https://apps.apple.com/us/app/aws-console/id580990573%0A%0A` + 
+
 `Amtrak%0A` + 
 `https://apps.apple.com/us/app/amtrak/id405074003%0A%0A` + 
 

@@ -84,6 +84,7 @@ export const NorthCarolinaPics = [
     { text: "Durham Pond in Spring", image: Pic32 } //DurhamPond.jpg
 ]
 
+
 export const TexasPics = [
     { text: "View from my USAA office window", image: Pic33 }, //OfficeView.jpg
     { text: "Apartment picture Taken from USAA balcony", image: Pic34 }, //Texas.jpg
