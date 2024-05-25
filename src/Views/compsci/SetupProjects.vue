@@ -111,12 +111,23 @@ const scrollToDisplayLink = (refName) => {
     const element = document.getElementById(refName);
 
     if (element) {
-        const topPosition = element.getBoundingClientRect().top + window.scrollY - 50;
+        const topPosition = element.getBoundingClientRect().top + window.scrollY - 20;
         window.scrollTo({
             top: topPosition,
             behavior: 'smooth'
         });
     }
+
+    const spanElement = element.querySelector('span.display-link');
+
+    if (spanElement) {
+        spanElement.classList.add('temp-highlight');
+
+        spanElement.addEventListener('animationend', () => {
+            spanElement.classList.remove('temp-highlight');
+        }, { once: true });
+    }
+    
 };
 
 const scrollToTop = () => {
@@ -211,6 +222,28 @@ onMounted(() => {
     margin-bottom: -20px;
     visibility: hidden;
     user-select: none;
+}
+
+@keyframes fadeOutHighlight {
+    to {
+        opacity: 0;
+    }
+}
+
+.temp-highlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: yellow;
+    opacity: 1;
+    animation: fadeOutHighlight 5s ease forwards;
+}
+
+.temp-highlight {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
 }
 
 .display-link {
