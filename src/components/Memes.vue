@@ -51,6 +51,7 @@ import Meme49 from "../assets/memes/null.jpg";
 import Meme50 from "../assets/memes/ProgrammerTester.jpg";
 import Meme51 from "../assets/memes/TerminalMeme.jpg";
 import Meme52 from "../assets/memes/Googling.jpg"
+import Meme53 from "../assets/memes/Covid.jpg"
 
 
 export const memeObjects = [
@@ -310,9 +311,14 @@ export const memeObjects = [
         image: Meme51
     }, //TerminalMeme.jpg
     {
-        text: "I am Good Programming 😎",
+        text: "I am a Good Programming 😎",
         transcription: "Not Sure If I Am a Good Programming Or Good at Googling",
         image: Meme52
-    } //Googling.jpg
+    }, //Googling.jpg
+    {
+        text: "Was anticipating this like everyday back in 2021",
+        transcription: "When someone mentions the possibility of college being canceled due to coronavirus. Don't do that, don't give me hope.",
+        image: Meme53
+    } //Covid.jpg
 ]
 </script>
