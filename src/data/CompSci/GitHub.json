@@ -851,7 +851,7 @@
         },
         {
             "Command": "git remote add origin <repo-http-link>",
-            "Description": "Add remote GitHub origin. It can also be the SSH link. Can be found it github descriptions.",
+            "Description": "Add remote https GitHub origin link. Can be found under \"Quick setup — if you've done this kind of thing before\".",
             "Example": "git remote add origin https://github.com/John-Smith/PacMan.git"
         },
         {
