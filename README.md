@@ -27,6 +27,88 @@ TEMPLATES ZIP FOLDER
 2. Run create_settings_file.py
 
 
+# How to add an Instruction set
+
+1. In src/data/CompSci/Instructions add your Instruction set file.
+
+2. In src/data/CompSci/Instructions go to the DisplayLinks file and add your information.
+
+3. In src/data go to SearchPages and add your information.
+```
+{
+    "id": 56,
+    "Emoji": "ADD_EMOJI",
+    "MenuName": "TITLE",
+    "Link": "/CompSci/SetupProjects/REF"
+},
+```
+
+
+
+4. In /python go to create_search_data.py and add the following function. Adjust the logic as necessary.
+
+```
+def get_<REF_NAME>():
+	with open("../src/data/CompSci/Instructions/<NAME_OF_FILE>.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "<TITLE EMOJI>"
+		Link = "/CompSci/SetupProjects/<REF>"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+```
+
+5. If it's multi-line you'd use this template.
+
+```
+def get_<REF_NAME>():
+    with open("../src/data/CompSci/Instructions/<NAME_OF_FILE>.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
+
+        Results = []
+
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
+
+            Results += info + instructions
+
+        Title = "<TITLE EMOJI>"
+        Link = "/CompSci/SetupProjects/<NAME_OF_FILE_NO_EXT>"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+```
+
+6. Call your function below with the other functions
+
+```
+<REF_NAME> = get_<REF_NAME>()
+```
+
+7. Put your variable name in the "all_data" list 
+
+```
+get<REF_NAME>,
+```
+
+8. Done
+
+
+
+
+
+
+
+
+
 
 
 ## Commands to run when you clone
