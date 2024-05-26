@@ -826,19 +826,25 @@ def get_oauth():
 		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_basic_sqlite():
-	with open("../src/data/CompSci/Instructions/SQLite3.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/SQLite3.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "How to Populate a SQLite3 Database 📊"
-		Link = "/CompSci/SetupProjects/basic-sqlite"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
 
+        Title = "How to Populate a SQLite3 Database 📊"
+        Link = "/CompSci/SetupProjects/basic-sqlite"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+    
 def get_excel():
 	with open("../src/data/CompSci/Instructions/ReadExcel.json", "r") as file:
 		content = json.load(file)
