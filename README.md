@@ -65,7 +65,7 @@ def get_<REF_NAME>():
 		return { "Title": Title, "Link": Link, "Results": Results }
 ```
 
-5. If it's multi-line you'd use this template.
+5. If it's multiset you'd use this template.
 
 ```
 def get_<REF_NAME>():
