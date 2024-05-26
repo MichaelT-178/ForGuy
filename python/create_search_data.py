@@ -783,6 +783,34 @@ def get_developermode():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_postman():
+	with open("../src/data/CompSci/Instructions/Postman.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup and Use Postman 🧑🏻‍🚀"
+		Link = "/CompSci/SetupProjects/postman"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_server():
+	with open("../src/data/CompSci/Instructions/Server.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Python Server 📡"
+		Link = "/CompSci/SetupProjects/server"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_oauth():
 	with open("../src/data/CompSci/Instructions/OAuth.json", "r") as file:
 		content = json.load(file)
@@ -1263,6 +1291,10 @@ basicsqlite = get_basic_sqlite()
 prism = get_prism()
 coredata = get_core_data()
 
+
+postman = get_postman()
+server = get_server()
+
 oauth = get_oauth()
 
 excel = get_excel()
@@ -1355,6 +1387,9 @@ all_data = [
     swiftfirebase,
     coredata, 
     developermode,
+
+    postman,
+    server,
 
     oauth,
 
