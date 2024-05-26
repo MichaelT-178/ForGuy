@@ -33,6 +33,8 @@ TEMPLATES ZIP FOLDER
 
 2. In src/data/CompSci/Instructions go to the DisplayLinks file and add your information.
 
+3. In src/data/CompSci/Instructions go the InstructionSets file and add your information.
+
 3. In src/data go to SearchPages and add your information.
 ```
 {

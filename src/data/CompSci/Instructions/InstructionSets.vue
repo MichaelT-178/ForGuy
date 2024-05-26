@@ -25,6 +25,8 @@ import SwiftFirebase from './SwiftFirebase.json';
 import DeveloperMode from './DeveloperMode.json';
 import ExecutablePython from './ExecutablePython.json';
 import CoreData from './CoreData.json';
+import Postman from './Postman.json';
+import Server from './Server.json';
 import OAuth from './OAuth.json';
 import GoogleApi from './GoogleApi.json';
 import RedditApi from './RedditApi.json';
@@ -63,6 +65,8 @@ export const AllSets = [
     DeveloperMode,
     ExecutablePython,
     CoreData,
+    Postman,
+    Server,
     OAuth,
     GoogleApi,
     RedditApi,
