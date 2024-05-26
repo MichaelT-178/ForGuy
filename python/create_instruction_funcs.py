@@ -76,6 +76,9 @@ emojis = {
 
     "developer-mode": "📱",
 
+    "postman": "🧑🏻‍🚀",
+    "server": "📡",
+
     "oauth": "🔐",
 
 
