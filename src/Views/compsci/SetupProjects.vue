@@ -118,8 +118,15 @@ const scrollToDisplayLink = (refName) => {
         });
     }
 
-    const spanElement = element.querySelector('span.display-link');
+    let spanElement;
 
+    try {
+        spanElement = element.querySelector('span.display-link');
+    } catch (error) {
+        //Do nothing. 
+        //Used to be const spanElement = element.querySelector('span.display-link');
+    }
+    
     if (spanElement) {
         spanElement.classList.add('temp-highlight');
 
