@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup and Use Postman",
+            "desc": "How to setup Postman and use it to ping endpoints.",
+            "ref": "postman"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
