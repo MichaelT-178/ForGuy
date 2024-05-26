@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup a Python Server",
+            "desc": "How to setup a Python server that interacts with an html frontend.",
+            "ref": "server"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
