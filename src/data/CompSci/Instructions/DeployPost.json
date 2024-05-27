@@ -1,22 +1,48 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
-            "desc": "",
-            "ref": "deploy-PostgreSQL"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
+                    "desc": "",
+                    "ref": "deploy-PostgreSQL"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "First do the following",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "ls",
-                "CopyCode": "ls"
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }

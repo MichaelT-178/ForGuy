@@ -34,15 +34,16 @@ import Pic30 from "../assets/UncwPics/BlueLight.jpg";
 import Pic31 from "../assets/UncwPics/IBMMarch.jpg";
 import Pic32 from "../assets/UncwPics/Dove.jpg";
 import Pic33 from "../assets/UncwPics/DurhamPond.jpg";
+import Pic34 from "../assets/UncwPics/ForestView.jpg";
 
 
 //Texas pics
-import Pic34 from "../assets/UncwPics/OfficeView.jpg";
-import Pic35 from "../assets/UncwPics/Texas.jpg";
-import Pic36 from "../assets/UncwPics/Lanterns.jpg";
-import Pic37 from "../assets/UncwPics/PlanoBuildings.jpg";
-import Pic38 from "../assets/UncwPics/PlanoPond.jpg";
-import Pic39 from "../assets/UncwPics/USAASign.jpg";
+import Pic35 from "../assets/UncwPics/OfficeView.jpg";
+import Pic36 from "../assets/UncwPics/Texas.jpg";
+import Pic37 from "../assets/UncwPics/Lanterns.jpg";
+import Pic38 from "../assets/UncwPics/PlanoBuildings.jpg";
+import Pic39 from "../assets/UncwPics/PlanoPond.jpg";
+import Pic40 from "../assets/UncwPics/USAASign.jpg";
 
 
 
@@ -83,17 +84,18 @@ export const NorthCarolinaPics = [
     { text: "Blue Light in Darkness", image: Pic30 }, //BlueLight.jpg
     { text: "Spring in Durham", image: Pic31 }, //IBMMarch.jpg
     { text: "Visitor Outside My Window", image: Pic32 }, //Dove.jpg
-    { text: "Durham Pond in Spring", image: Pic33 } //DurhamPond.jpg
+    { text: "Durham Pond in Spring", image: Pic33 }, //DurhamPond.jpg
+    { text: "Outside view from OG IBM office in Summer", image: Pic34 } //ForestView.jpg
 ]
 
 
 export const TexasPics = [
-    { text: "View from my USAA office window", image: Pic34 }, //OfficeView.jpg
-    { text: "Apartment picture Taken from USAA balcony", image: Pic35 }, //Texas.jpg
-    { text: "Lantern Store in Plano, Texas", image: Pic36 }, //Lanterns.jpg
-    { text: "Cloudy day in Texas", image: Pic37 }, //PlanoBuildings.jpg
-    { text: "Picture of Pond in Texas", image: Pic38 }, //PlanoPond.jpg
-    { text: "USAA Sign in front of the building where I worked", image: Pic39 } //USAASign.jpg
+    { text: "View from my USAA office window", image: Pic35 }, //OfficeView.jpg
+    { text: "Apartment picture Taken from USAA balcony", image: Pic36 }, //Texas.jpg
+    { text: "Lantern Store in Plano, Texas", image: Pic37 }, //Lanterns.jpg
+    { text: "Cloudy day in Texas", image: Pic38 }, //PlanoBuildings.jpg
+    { text: "Picture of Pond in Texas", image: Pic39 }, //PlanoPond.jpg
+    { text: "USAA Sign in front of the building where I worked", image: Pic40 } //USAASign.jpg
 ]
 
 </script>
