@@ -1,22 +1,48 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
-            "desc": "",
-            "ref": "deploy-spring"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+                    "desc": "",
+                    "ref": "deploy-spring"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "First do the following",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "ls",
-                "CopyCode": "ls"
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
