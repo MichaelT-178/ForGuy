@@ -487,20 +487,27 @@ def get_flask_sqlite3():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+      
 
 def get_deploy_sqlite():
-	with open("../src/data/CompSci/Instructions/DeployApp.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/DeployApp.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀"
-		Link = "/CompSci/SetupProjects/deploy-sqlite"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
+
+        Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀"
+        Link = "/CompSci/SetupProjects/deploy-sqlite"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_flask_postgresql():
 	with open("../src/data/CompSci/Instructions/FlaskPost.json", "r") as file:
@@ -517,19 +524,25 @@ def get_flask_postgresql():
 		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_deploy_postgresql():
-	with open("../src/data/CompSci/Instructions/DeployPost.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/DeployPost.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 🚀"
-		Link = "/CompSci/SetupProjects/deploy-PostgreSQL"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
-     
+            Results += info + instructions
+        
+        Title = "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services 🚀"
+        Link = "/CompSci/SetupProjects/deploy-PostgreSQL"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+  
 def get_react_sqlite():
 	with open("../src/data/CompSci/Instructions/SpringApp.json", "r") as file:
 		content = json.load(file)
@@ -543,20 +556,26 @@ def get_react_sqlite():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-
+      
 def get_deploy_spring():
-	with open("../src/data/CompSci/Instructions/DeploySpring.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/DeploySpring.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀"
-		Link = "/CompSci/SetupProjects/deploy-spring"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
+        
+        Title = "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀"
+        Link = "/CompSci/SetupProjects/deploy-spring"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
      
 def get_complex_mysql():
 	with open("../src/data/CompSci/Instructions/ComplexMySQL.json", "r") as file:
@@ -571,21 +590,29 @@ def get_complex_mysql():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-
-def get_deploy_mysql():
-	with open("../src/data/CompSci/Instructions/DeployMySQL.json", "r") as file:
-		content = json.load(file)
-
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
-
-		Title = "Deploy the React, Spring Boot and MySQL app to Amazon Web Services 🚀"
-		Link = "/CompSci/SetupProjects/deploy-mysql"
-		Results = info + instructions
-
-		return { "Title": Title, "Link": Link, "Results": Results }
      
+     
+def get_deploy_mysql():
+    with open("../src/data/CompSci/Instructions/DeployMySQL.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
+
+        Results = []
+
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
+
+            Results += info + instructions
+
+        Title = "Deploy the React, Spring Boot and MySQL app to Amazon Web Services 🚀"
+        Link = "/CompSci/SetupProjects/deploy-mysql"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+
+
 def get_intellij():
 	with open("../src/data/CompSci/Instructions/IntellijJavaFX.json", "r") as file:
 		content = json.load(file)
@@ -726,20 +753,26 @@ def get_openai_api():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-
+      
 def get_reddit_bot_aws():
-	with open("../src/data/CompSci/Instructions/RedditBotAWS.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/RedditBotAWS.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "How to Deploy a Reddit Bot on AWS 🤖"
-		Link = "/CompSci/SetupProjects/reddit-bot-aws"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
+
+        Title = "How to Deploy a Reddit Bot on AWS 🤖"
+        Link = "/CompSci/SetupProjects/reddit-bot-aws"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }  
          
 def get_swift_firebase():
 	with open("../src/data/CompSci/Instructions/SwiftFirebase.json", "r") as file:

@@ -1,22 +1,76 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "How to Deploy a Reddit Bot on AWS",
-            "desc": "Explain how to create and deploy a Reddit Bot on Amazon Web Services.",
-            "ref": "reddit-bot-aws"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "How to Deploy a Reddit Bot on AWS",
+                    "desc": "Explain how to create and deploy a Reddit Bot on Amazon Web Services.",
+                    "ref": "reddit-bot-aws"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "BEFORE YOU DO ANY OF THIS, go to the &How to Setup a Reddit API Project&[RedditApiLink] link above and complete all the instructions if you haven't done so already."
+                },
+                {
+                    "id": 2,
+                    "instruction": "After you've completed step 1, make a copy of your reddit_api_script folder and name it \"reddit_bot\" using the following command",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cp -R reddit_api_script reddit_bot",
+                        "CopyCode": "cp -R reddit_api_script reddit_bot"
+                    }
+                },
+                {
+                    "id": 3,
+                    "instruction": "Change into your directory and rename the script.py to reddit_bot.py",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd reddit_bot\n  mv script.py",
+                        "CopyCode": "cd reddit_bot\nmv script.py"
+                    }
+
+                },
+                {
+                    "id": 4,
+                    "instruction": ""
+                },
+                {
+                    "id": 5,
+                    "instruction": ""
+                },
+                {
+                    "id": 6,
+                    "instruction": ""
+                },
+                {
+                    "id": 1,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "Info": [
+                {
+                    "title": "Delete the EC2 Instance",
+                    "desc": "I'd strongly recommend deleting the AWS EC2 instance to avoid incurring charges."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
