@@ -354,10 +354,12 @@ onMounted(() => {
 
     .gh-header-two {
         width: 490px;
+        margin-left: 15px;
     }
 
     .description-two {
         width: 490px;
+        margin-left: 15px;
     }
 
     .bullet-pt {
