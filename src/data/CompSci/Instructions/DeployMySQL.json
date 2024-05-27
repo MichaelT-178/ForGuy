@@ -1,22 +1,48 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
-            "desc": "",
-            "ref": "deploy-mysql"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
+                    "desc": "",
+                    "ref": "deploy-mysql"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
