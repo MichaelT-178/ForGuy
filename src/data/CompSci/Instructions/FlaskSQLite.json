@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions, if you haven't already done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"vue-sqlite-frontend\" and will be created in your top-most directory.",
+            "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions if you haven't done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"vue-sqlite-frontend\" and will be created in your top-most directory.",
             "Code": {
                 "Name": "",
                 "Description": "",
