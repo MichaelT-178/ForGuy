@@ -26,31 +26,173 @@
                 },
                 {
                     "id": 3,
+                    "instruction": "Install the following library so you can send yourself emails later.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "pip3 install smtplib",
+                        "CopyCode": "pip3 install smtplib"
+                    }
+                },
+                {
+                    "id": 4,
                     "instruction": "Change into your directory and rename the script.py to reddit_bot.py",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd reddit_bot\n  mv script.py",
-                        "CopyCode": "cd reddit_bot\nmv script.py"
+                        "FormatCode": "cd reddit_bot\n  mv script.py reddit_bot.py",
+                        "CopyCode": "cd reddit_bot\nmv script.py reddit_bot.py"
                     }
-
-                },
-                {
-                    "id": 4,
-                    "instruction": ""
                 },
                 {
                     "id": 5,
-                    "instruction": ""
+                    "instruction": "Now we're going to setup Google app password so you can programmatically send yourself an email."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Create a Google App Password",
+                    "desc": "Explains how to create a Google App Password you can use to send yourself an email."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Go to your [Google Account](https://myaccount.google.com). Then go click on \"Security\" in the left sidebar."
+                },
+                {
+                    "id": 2,
+                    "instruction": "You can skip this tep if you already have 2-Step authentication enabled. Under \"How you sign in to Google\" click \"2-Step Verification\" and follow the instructions to enable it."
+                },
+                {
+                    "id": 3,
+                    "instruction": "After enabling 2-Step Verification, go back to the \"Security\" section of your Google Account."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Under \"How you sign in to Google\" click on \"2-Step Verification\"."
+                },
+                {
+                    "id": 5,
+                    "instruction": "Scroll to the bottom section titled \"App passwords\". Then click the arrow."
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the \"App name\" text field type \"PythonEmail\". Then press \"Create\"."
                 },
                 {
                     "id": 6,
-                    "instruction": ""
-                },
+                    "instruction": "Copy and record the \"Generated app password\" from the pop-up box. Then click \"Done\"."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Create bot and Deploy to AWS",
+                    "desc": "Create bot and deploy it to an EC2 instance on AWS."
+                }
+            ],
+            "Instructions": [
                 {
                     "id": 1,
-                    "instruction": ""
+                    "instruction": "Open your \"reddit_bot.py\" file in your reddit_bot folder."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Paste the following code in the file. Change all the credential placeholders. Note if your Google App password has yellow highlighted spaces just deleted them and replace them with regular spaces. Go [here](https://www.reddit.com/prefs/apps) to find your credentials.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "import praw\n  import smtplib\n  from email.mime.multipart import MIMEMultipart\n  from email.mime.text import MIMEText\n\n\n  # Your Reddit creedentials\n  CLIENT_ID = 'YOUR_CLIENT_ID'\n  CLIENT_SECRET = 'YOUR_CLIENT_SECRET',\n  USERNAME = 'YOUR_REDDIT_USERNAME',\n  PASSWORD = f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\n  USER_AGENT = 'script by u/YOUR_REDDIT_USERNAME',\n\n  # Your Email Credentials\n  sender_email = \"YOUR_EMAIL\"\n  sender_password = 'GOOGLE_APP_PASSWORD'\n  email_recipient = \"YOUR_EMAIL\"\n\n  # Name of Subreddit you're working with. AskReddit is good for testing\n  subreddit_name = 'NAME_OF_SUBREDDIT'\n\n\n  reddit = praw.Reddit(\n      client_id=CLIENT_ID,\n      client_secret=CLIENT_SECRET,\n      username=USERNAME,\n      password=PASSWORD,\n      user_agent=USER_AGENT\n  )\n\n\n  subreddit = reddit.subreddit(subreddit_name)\n\n  def send_email(title):\n\n      subject = f\"Someone posted in r/{subreddit_name}!\"\n\n      body = (\n\t  f'The title of the post is \"{title}\".\\n\\n\\n' + \n\t  \"This was sent from you're deployed reddit bot.\"\n      )\n\n      message = MIMEMultipart()\n      message[\"From\"] = sender_email\n      message[\"To\"] = email_recipient\n      message[\"Subject\"] = subject\n\n      message.attach(MIMEText(body, \"plain\"))\n\n      try:\n\t  server = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t  server.starttls()\n\t  server.login(sender_email, sender_password)\n\t  text = message.as_string()\n\t  server.sendmail(sender_email, email_recipient, text)\n\t  server.quit()\n\t  print(\"Email sent successfully!\")\n      except Exception as e:\n\t  print(f\"Failed to send email. Error: {e}\")\n\n  def main():\n      print(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n      for submission in subreddit.stream.submissions(skip_existing=True):\n\t  print(\"\\nSomeone made a post titled: \", end=\"\")\n\t  print(f\"\\033[94m{submission.title}\\033[0m\")\n\t  send_email(submission.title)\n\n  if __name__ == \"__main__\":\n      main()",
+                        "CopyCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\n\n\n# Your Reddit creedentials\nCLIENT_ID = 'YOUR_CLIENT_ID'\nCLIENT_SECRET = 'YOUR_CLIENT_SECRET',\nUSERNAME = 'YOUR_REDDIT_USERNAME',\nPASSWORD = f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\nUSER_AGENT = 'script by u/YOUR_REDDIT_USERNAME',\n\n# Your Email Credentials\nsender_email = \"YOUR_EMAIL\"\nsender_password = 'GOOGLE_APP_PASSWORD'\nemail_recipient = \"YOUR_EMAIL\"\n\n# Name of Subreddit you're working with. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\tusername=USERNAME,\n\tpassword=PASSWORD,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\nif __name__ == \"__main__\":\n\tmain()"
+                    }
+                },
+                {
+                    "id": 3,
+                    "instruction": "Run the reddit bot with the following command. When someone posts it will be printed to the terminal. Remember that you have to change your 2FA-Code whenever you rerun the file.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "python3 reddit_bot.py",
+                        "CopyCode": "python3 reddit_bot.py"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "After you ran it and made sure it's working, we'll deploy it to AWS."
+                },
+                {
+                    "id": 5,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
                 }
             ]
         },
