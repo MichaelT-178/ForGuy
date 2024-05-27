@@ -147,5 +147,7 @@ const filteredEntries = computed(() => {
   vertical-align: middle;
   color: teal;
   font-size: 28px;
+  cursor: pointer;
 }
+
 </style>
