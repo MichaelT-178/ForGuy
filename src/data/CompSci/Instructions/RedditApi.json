@@ -31,8 +31,8 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Redirect Link",
-                "FormatCode": "https://www.reddit.com/prefs/apps",
-                "CopyCode": "https://www.reddit.com/prefs/apps"
+                "FormatCode": "http://localhost:8080/callback",
+                "CopyCode": "http://localhost:8080/callback"
             }
         },
         {
