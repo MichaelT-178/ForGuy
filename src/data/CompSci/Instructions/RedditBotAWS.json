@@ -195,7 +195,7 @@
                 },
                 {
                     "id": 12,
-                    "instruction": "Run the reddit bot using the following command. When someone posts on the subreddit it will be printed to the terminal. It might take a while until someone posts. Check your email to make the notification is being sent.",
+                    "instruction": "Run the reddit bot using the following command. When someone posts on the subreddit it will be printed to the terminal. It might take a while until someone posts. Check your email to make the notification is being sent. Stop running the bot by pressing \"control + c\".",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -225,8 +225,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "",
-                        "CopyCode": ""
+                        "FormatCode": "rm oauth_server.py\n  rm get_refresh_token.py",
+                        "CopyCode": "rm oauth_server.py\nrm get_refresh_token.py"
                     }
                 },
                 {
@@ -235,9 +235,9 @@
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "python3 reddit_bot.py",
-                        "CopyCode": "python3 reddit_bot.py"
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
                     }
                 }
             ]
