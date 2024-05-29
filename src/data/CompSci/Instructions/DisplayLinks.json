@@ -177,7 +177,7 @@
             "links": [
                 {
                     "id": 1,
-                    "name": "How to Setup a Google API Project",
+                    "name": "How to Setup a Google/Youtube API Project",
                     "ref": "google-api",
                     "ScrollTo": "GoogleApiLink"
                 },
@@ -189,7 +189,7 @@
                 },
                 {
                     "id": 3,
-                    "name": "How to Setup a Spotify API Project",
+                    "name": "How to Setup a Spotify API Project (w/ Flask)",
                     "ref": "spotify-api",
                     "ScrollTo": "SpotifyApiLink"
                 },
