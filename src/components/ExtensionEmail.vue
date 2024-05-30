@@ -14,6 +14,9 @@ export const bodyContent = `Hi Elijah,%0A%0A` +
 `Vue - Official%0A` +
 `https://marketplace.visualstudio.com/items?itemName=Vue.volar%0A%0A` +
 
+`SQLTools%0A` +
+`https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools%0A%0A` +
+
 `SQLite Viewer%0A` +
 `https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer%0A%0A` +
 
