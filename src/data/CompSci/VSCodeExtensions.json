@@ -24,14 +24,20 @@
         {
             "Name": "Vite",
             "Author": "Anthony Fu",
-            "Description": "",
+            "Description": "Good for Vite Support",
             "Link": "https://marketplace.visualstudio.com/items?itemName=antfu.vite"
         },
         {
             "Name": "Vue - Official",
             "Author": "Vue",
-            "Description": "",
+            "Description": "Good for Vue Framework support.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=Vue.volar"
+        },
+        {
+            "Name": "SQLTools",
+            "Author": "Matheus Teixeira",
+            "Description": "This extension is super good for working with MySQL/Postgres databases.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools"
         },
         {
             "Name": "SQLite Viewer",
