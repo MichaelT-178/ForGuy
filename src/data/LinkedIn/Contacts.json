@@ -235,6 +235,16 @@
             "Image": "Amazon.jpg"
         },
         {
+            "Name": "Kevin Hostler",
+            "Company": "Microsoft",
+            "Role": "Software Engineer Manager",
+            "Location": "Seattle, Washington",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/kevinhostler/",
+            "Details": "This guy went to UNCW and now he works as a SWE manager at Microsoft. He accepted my LinkedIn connect request, so if you wanted to message him, that might be a good way to do it.",
+            "Image": "Microsoft.jpg"
+        },
+        {
             "Name": "Phoebe Roberts",
             "Company": "DataAnnotation",
             "Role": "Recruiter",
