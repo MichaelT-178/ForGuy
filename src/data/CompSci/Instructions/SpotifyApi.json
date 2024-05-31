@@ -61,8 +61,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir spotify_api_flask;\n  cd spotify_api_flask;\n  touch app.py;\n  touch config.py;\n  touch get_access_token.py;\n  routes.py;\n  mkdir templates;\n  cd templates;\n  touch index.html",
-                "CopyCode": "mkdir spotify_api_flask;\ncd spotify_api_flask;\ntouch app.py;\ntouch config.py;\ntouch get_access_token.py;\nroutes.py;\nmkdir templates;\ncd templates;\ntouch index.html"
+                "FormatCode": "mkdir spotify_api_flask;\n  cd spotify_api_flask;\n  touch app.py;\n  touch config.py;\n  touch get_access_token.py;\n  routes.py;\n  mkdir templates;\n  cd templates;\n  touch index.html\n  cd ..",
+                "CopyCode": "mkdir spotify_api_flask;\ncd spotify_api_flask;\ntouch app.py;\ntouch config.py;\ntouch get_access_token.py;\nroutes.py;\nmkdir templates;\ncd templates;\ntouch index.html\ncd .."
             }
         },
         {
@@ -71,8 +71,8 @@
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "Command",
-                "DisplayLang": "Values",
+                "Language": "fxml",
+                "DisplayLang": "Env",
                 "FormatCode": "SPOTIFY_CLIENT_ID=your_client_id_here\n  SPOTIFY_CLIENT_SECRET=your_client_secret_here\n  REDIRECT_URI=https://developer.spotify.com/documentation/web-api",
                 "CopyCode": "SPOTIFY_CLIENT_ID=your_client_id_here\nSPOTIFY_CLIENT_SECRET=your_client_secret_here\nREDIRECT_URI=https://developer.spotify.com/documentation/web-api"
             }
