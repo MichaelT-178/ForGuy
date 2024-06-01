@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Before doing anything else, go [here](https://platform.openai.com/settings/organization/billing/overview) to setup a payment method. "
+            "instruction": "Before doing anything else, go [here](https://platform.openai.com/settings/organization/billing/overview) to setup a payment method. Your API calls won't work if you don't do this."
         },
         {
             "id": 2,
