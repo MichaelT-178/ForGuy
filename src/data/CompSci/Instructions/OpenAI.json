@@ -25,7 +25,7 @@
         },
         {
             "id": 5,
-            "instruction": "I'd recommend making sure \"Auto recharge is off\" so that when you're credit balance reaches $0 your API requests will stop working, instead of you being charged extra. There should be an information card under the amount you just added."
+            "instruction": "I'd recommend making sure \"Auto recharge is off\" so that when you're credit balance reaches $0 your API requests will stop working, instead of you being charged extra. There should be an information card under the amount you just added. You can use this [link](https://platform.openai.com/usage) to see information about your usage."
         },
         {
             "id": 6,
@@ -69,8 +69,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir OpenAPI\n  cd OpenAPI\n  touch app.py\n  touch config.py\n  touch script.py\n  touch routes.py\n  touch .env\n  mkdir templates;\n  cd templates;\n  touch index.html\n  cd ..",
-                "CopyCode": "mkdir OpenAPI\ncd OpenAPI\ntouch app.py\ntouch config.py\ntouch script.py\ntouch routes.py\ntouch .env\nmkdir templates;\ncd templates;\ntouch index.html\ncd .."
+                "FormatCode": "mkdir ChatgptAPI\n  cd ChatgptAPI\n  touch app.py\n  touch config.py\n  touch script.py\n  touch routes.py\n  touch .env\n  mkdir templates;\n  cd templates;\n  touch index.html\n  cd ..",
+                "CopyCode": "mkdir ChatgptAPI\ncd ChatgptAPI\ntouch app.py\ntouch config.py\ntouch script.py\ntouch routes.py\ntouch .env\nmkdir templates;\ncd templates;\ntouch index.html\ncd .."
             }
         },
         {
@@ -124,7 +124,7 @@
         },
         {
             "id": 17,
-            "instruction": "Open \"routes.py\" and paste in the following code.",
+            "instruction": "Open \"routes.py\" and paste in the following code. You can change the \"model\" parameter in the \"response\" object to be \"gpt-4\" if you want.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -151,8 +151,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd OpenAPI\n  python3 app.py",
-                "CopyCode": "cd OpenAPI\npython3 app.py"
+                "FormatCode": "cd ChatgptAPI\n  python3 app.py",
+                "CopyCode": "cd ChatgptAPI\npython3 app.py"
             }
         },
         {
@@ -174,8 +174,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd OpenAPI\n  python3 script.py",
-                "CopyCode": "cd OpenAPI\npython3 script.py"
+                "FormatCode": "cd ChatgptAPI\n  python3 script.py",
+                "CopyCode": "cd ChatgptAPI\npython3 script.py"
             }
         }
     ]
