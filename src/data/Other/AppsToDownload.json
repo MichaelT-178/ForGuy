@@ -47,6 +47,11 @@
             "Link": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106"
         },
         {
+            "Name": "Google Maps",
+            "Description": "I feel like this is a good app to use a Walking GPS. I prefer Waze for driving though.",
+            "Link": "https://apps.apple.com/us/app/google-maps/id585027354"
+        },
+        {
             "Name": "GitHub",
             "Description": "Can be used to help with authentication and allows you to access your repositories on your phone.",
             "Link": "https://apps.apple.com/us/app/github/id1477376905"
