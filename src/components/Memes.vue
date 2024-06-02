@@ -52,6 +52,7 @@ import Meme50 from "../assets/memes/ProgrammerTester.jpg";
 import Meme51 from "../assets/memes/TerminalMeme.jpg";
 import Meme52 from "../assets/memes/Googling.jpg"
 import Meme53 from "../assets/memes/Covid.jpg"
+import Meme54 from "../assets/memes/ChangeUI.jpg"
 
 
 export const memeObjects = [
@@ -316,9 +317,14 @@ export const memeObjects = [
         image: Meme52
     }, //Googling.jpg
     {
-        text: "Was anticipating this like everyday back in 2021",
+        text: "I was praying for this like everyday back in 2021",
         transcription: "When someone mentions the possibility of college being canceled due to coronavirus. Don't do that, don't give me hope.",
         image: Meme53
-    } //Covid.jpg
+    }, //Covid.jpg
+    {
+        text: "Alarmy be like",
+        transcription: "Companies when their UI is perfect. Change it for no reason",
+        image: Meme54
+    } //ChangeUI.jpg
 ]
 </script>
