@@ -19,19 +19,8 @@
             }
         },
         {
-            "id": 1,
+            "id": 2,
             "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
-        },
-        {
-            "id": 3,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "yaml",
-                "FormatCode": "service: flask-lambda-app\n\nprovider:\n\tname: aws\n\truntime: python3.9\n\tregion: us-east-1\n\tenvironment:\n\t\tDATABASE_URL: sqlite:///mydatabase.db\n\nfunctions:\n\tapp:\n\t\thandler: wsgi_handler.handler\n\t\tevents:\n\t\t\t- http:\n\t\t\t\tpath: /\n\t\t\t\tmethod: ANY\n\t\t\t- http:\n\t\t\t\tpath: '{proxy+}'\n\t\t\t\tmethod: ANY\n\n\nplugins:\n\t- serverless-python-requirements\n\ncustom:\n\tpythonRequirements:\n\t\tdockerizePip: true",
-                "CopyCode": ""
-            }
         }
     ]
 }
