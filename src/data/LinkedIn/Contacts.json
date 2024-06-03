@@ -17,6 +17,15 @@
             "Image": "nCino.jpg"
         },
         {
+            "Name": "Dan Wuensch",
+            "Company": "nCino, Inc.",
+            "Role": "Master Staff Engineer",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/in/dan-wuensch-0a32b754/",
+            "Details": "This guy told someone on LinkedIn to DM him about a SWE job opportunity at nCino.",
+            "Image": "nCino.jpg"
+        },
+        {
             "Name": "Pianpian Xu Guthrie",
             "Company": "Amotions, Inc.",
             "Role": "Founder and CEO",
