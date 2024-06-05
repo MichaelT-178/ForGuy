@@ -14,9 +14,7 @@
                @click="copyCode"
            >{{ copyIcon }}</span>
         </div>
-        <div class="code-container">
-          <pre><code v-html="highlightedCode"></code></pre>
-        </div>
+        <pre><code v-html="highlightedCode"></code></pre>
       </div>
     </div>
   </div>
@@ -25,7 +23,7 @@
 
 <script setup>
 import { ref, computed, watchEffect } from 'vue';
-import { highlightLinkText } from '../../utils/Markdown.vue';
+import { highlightLinkText } from '../../utils/Markdown.vue'
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
 import 'prismjs/components/prism-java';
@@ -46,11 +44,12 @@ const props = defineProps({
       Language: "",
       DisplayLang: "",
       FormatCode: "",
-      CopyCode: ""
+      CopyCode :""
     }),
     required: true,
   },
 });
+
 
 const copyIcon = ref('content_copy');
 
@@ -61,7 +60,7 @@ const copyCode = () => {
       setTimeout(() => copyIcon.value = 'content_copy', 2000);
     })
     .catch(err => {
-      console.error("Failed to copy code to clipboard! ", err);
+      console.error("Failed to copy code to clipboard! ", err)
     });
 };
 
@@ -71,14 +70,17 @@ const highlightedCode = computed(() => {
   }
 
   const language = props.codeInfo.Language.toLowerCase();
-
+  
   const prismLanguage = Prism.languages[language] || Prism.languages.plain;
   return Prism.highlight(props.codeInfo.FormatCode, prismLanguage, language);
 });
 
-const getLanguageColor = computed(() => {
-  const language = props.codeInfo.DisplayLang || props.codeInfo.Language;
 
+const getLanguageColor = computed(() => {
+
+  const language = props.codeInfo.DisplayLang || props.codeInfo.Language;
+  
+  // I prefer this approach over a switch statement
   const colors = {
     python: '#3572A5',
     java: '#C6821E',
@@ -88,12 +90,13 @@ const getLanguageColor = computed(() => {
     ruby: '#701516',
     vue: '#41b883',
     css: '#563d7c',
-    react: '#61DAFB',
+    react: '#61DAFB', //#087EA4 #61DAFB
     json: '#FF9A00'
   };
 
   const colorKey = language.toLowerCase().trim();
   return colors[colorKey] || "#DFC200";
+
 });
 
 watchEffect(() => {
@@ -103,78 +106,77 @@ watchEffect(() => {
   const newBackgroundColor = props.codeInfo.Language.toLowerCase().trim() === 'swift' ? '#18171B' : '#282C34';
   document.documentElement.style.setProperty('--token-operator-background', newBackgroundColor);
 });
+
 </script>
+
 
 <style scoped>
 .container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-
+  
 .aligned-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: var(--dynamic-width);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: var(--dynamic-width);
 }
 
 .text-container, .code-block {
-  width: 100%;
+    width: 100%;
 }
-
+  
 .code-name {
-  margin-left: 4px;
-  font-size: 23px;
+    margin-left: 4px;
+    font-size: 23px;
 }
-
+  
 .description {
-  margin-top: -15px;
-  margin-left: 4px;
-  font-size: 17px;
+    margin-top: -15px;
+    margin-left: 4px;
+    font-size: 17px;
 }
-
+  
 .code-block {
-  width: var(--dynamic-width);
-  margin: 20px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: var(--background-color);
-  color: white;
-  margin-top: -5px;
-  position: relative;
+    width: var(--dynamic-width);
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: white;
+    margin-top: -5px;
 }
-
+  
 .language-name {
-  color: #D5D5D5;
-  font-size: 10px;
+    color: #D5D5D5;
+    font-size: 10px;
 }
 
 .copy-icon {
-  cursor: pointer;
-  font-size: 22px;
+    cursor: pointer;
+    font-size: 22px;
 }
 
 .copy-icon:hover {
-  filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 .icon-done {
-  color: #00FF4D;
+    color: #00FF4D;
 }
 
 .icon-done:hover {
-  color: #00FF4D;
+    color: #00FF4D;
 }
-
+  
 .copy-bar {
-  display: flex;
-  justify-content: space-between;
-  background-color: gray;
-  padding: 5px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 5px;
 }
 
 .language-name {
@@ -182,11 +184,7 @@ watchEffect(() => {
   font-size: 20px;
   margin-left: 6px;
 }
-
-.code-container {
-  overflow-x: auto;
-}
-
+  
 code {
   background-color: var(--background-color);
   border-radius: 3px;
@@ -195,24 +193,27 @@ code {
   line-height: 20px;
   white-space: pre;
   display: block;
+  overflow-x: auto;
 }
-
+  
 @media (max-width: 700px) {
-  .aligned-container {
-    width: 500px;
-  }
+    .aligned-container {
+        width: 500px;
+    }
 
-  .copy-bar {
-    justify-content: start;
-  }
+    .copy-bar {
+        justify-content: start;
+    }
 
-  .language-name {
-    flex-grow: 0;
-    margin-right: 10px;
-  }
+    .language-name {
+        flex-grow: 0;
+        margin-right: 10px;
+    }
 
-  .copy-icon {
-    order: -1;
-  }
+    .copy-icon {
+        order: -1;
+    }
 }
+  
 </style>
+
