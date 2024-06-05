@@ -5948,7 +5948,7 @@
                 "title": "How to Setup TikTok and YouTube Downloaders"
             },
             {
-                "name": "How to Install and Use TikTok Downloader (Not Working)",
+                "name": "How to Install and Use TikTok Downloader",
                 "ref": "tiktok"
             },
             {
@@ -7607,7 +7607,7 @@
         "Link": "/CompSci/SetupProjects/tiktok",
         "Results": [
             {
-                "title": "How to Install and Use TikTok Downloader (NOT WORKING)",
+                "title": "How to Install and Use TikTok Downloader",
                 "desc": "How to install TikTok Downloader and use it with my CLI tool.",
                 "ref": "tiktok"
             },
