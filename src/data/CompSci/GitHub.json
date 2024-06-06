@@ -42,7 +42,7 @@
         },
         {
             "id": 9,
-            "name": "Reset To Previous Branch",
+            "name": "Reset To Previous Commit",
             "ref": "resetBranch"
         },
         {
@@ -218,8 +218,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "# Main account\n  Host github.com-NameForThisAccount\n   HostName github.com\n   User git\n   IdentityFile ~/.ssh/id_ed25519\n   IdentitiesOnly yes",
-                "CopyCode": "# Main account\nHost github.com-NameForThisAccount\n HostName github.com\n User git\n IdentityFile ~/.ssh/id_ed25519\n IdentitiesOnly yes"
+                "FormatCode": "# Main account\n  Host github.com-NameForThisAccount\n  HostName github.com\n  User git\n  IdentityFile ~/.ssh/id_ed25519\n  IdentitiesOnly yes",
+                "CopyCode": "# Main account\nHost github.com-NameForThisAccount\nHostName github.com\nUser git\nIdentityFile ~/.ssh/id_ed25519\nIdentitiesOnly yes"
             },
             "ref": "normalTwentyThree"
         },
@@ -906,8 +906,8 @@
             "desc": "How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs."
         },
         {
-            "title": "Reset To Previous Branch",
-            "desc": "Reset your current working directory to a previous branch."
+            "title": "Reset To Previous Commit",
+            "desc": "Reset your current working directory to a previous commit."
         },
         {
             "title": "Existing Folder Commands",
