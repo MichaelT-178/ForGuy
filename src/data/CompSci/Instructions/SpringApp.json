@@ -2,21 +2,255 @@
     "Info": [
         {
             "title": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-            "desc": "",
+            "desc": "Explains how to a Spring Boot RestAPI with a React frontend. Most of this information comes from this [video](https://youtu.be/L5QXRoTtPr4?si=xZyqBTONtKYb-QeE).",
             "ref": "react-sqlite"
         }
     ],
     "Instructions": [
         {
             "id": 1,
-            "instruction": "First do the following",
+            "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions if you haven't done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"react-sqlite-frontend\" and will be created in your top-most directory.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "ls",
-                "CopyCode": "ls"
+                "FormatCode": "cp -R templates/react-project vue-sqlite-frontend",
+                "CopyCode": "cp -R templates/react-project vue-sqlite-frontend"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "First make sure you have the following programs installed. If the commands output a version, you're good.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "java --version\n  brew --version\n  mvn --version\n  ls /Applications | grep \"Visual Studio Code\"",
+                "CopyCode": "java --version\nbrew --version\nmvn --version\nls /Applications | grep \"Visual Studio Code\""
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Make you have Java 17 installed. You can download it [here](https://www.oracle.com/java/technologies/downloads/#jdk17-mac) if you don't already. Choose the right version for your OS and architecture. Run the following command to determine your architecture. Choose the DMG installer. Click on the download and then follow the prompts.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "uname -m",
+                "CopyCode": "uname -m"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Now go to your terminal and run the following command. We're going to set your Java version to 17. Note that this process is different for bash.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "nano ~/.zshrc",
+                "CopyCode": "nano ~/.zshrc"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "In your nano file paste the two following lines. ",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "FormatCode": "export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home\nexport PATH=$JAVA_HOME/bin:$PATH",
+                "CopyCode": "export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home\nexport PATH=$JAVA_HOME/bin:$PATH"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "To save the changes, press control + o. Then press return/enter. Then press control + x."
+        },
+        {
+            "id": 7,
+            "instruction": "Open a completely new terminal and run the following command. It should output Java 17.0.6 (Or 17 something).",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "java --version",
+                "CopyCode": "java --version"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "If you don't already have Visual Studio Code downloaded, go [here](https://code.visualstudio.com/download). Choose the correct version for your OS."
+        },
+        {
+            "id": 9,
+            "instruction": "If you don't already have homebrew installed, run the following commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/\n  install/HEAD/install.sh)\"\n\n  brew --version",
+                "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\nbrew --version"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "If you don't have maven installed use the following command. Then check that it was installed properly using the --version command. NOTE: This may take a minute or two.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "brew install maven\n  mvn --version",
+                "CopyCode": "brew install maven\nmvn --version"
+            }
+        },
+        {
+            "id": 11,
+            "instruction": "Most of the following steps come from this [video](https://youtu.be/L5QXRoTtPr4?si=yvs4scL-HG2y1R0Z&t=115). Seeing what's happening might be helpful."
+        },
+        {
+            "id": 12,
+            "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.<br><br>Ext 1: [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)<br>Ext 2: [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)<br>Ext 3: [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)<br>Ext 4: [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)<br>Ext 5: [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)<br><br>"
+        },
+        {
+            "id": 13,
+            "instruction": "After you have those extensions installed, do the following with VSCode open.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Instructions",
+                "FormatCode": "Steps\n   1. command + shift + p (Open command pallette)\n   2. Search and press on \"Welcome: Open Walkthrough...\"\n   3. Then search/press on \"Getting Started with Spring Boot in VS Code\"\n   4. You should be taken to a new tab after that.",
+                "CopyCode": "Steps\n1. command + shift + p (Open command pallette)\n2. Search and press on \"Welcome: Open Walkthrough...\"\n3. Then search and press on \"Getting Started with Spring Boot in VS Code\"\n4. You should be taken to a new tab after that."
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "Under \"Start with a Spring Boot project\" press on the \"Create New Project\" button. A command pallette should open. If you want to close it use the \"esc\" key."
+        },
+        {
+            "id": 15,
+            "instruction": "In the new command pallette, search and press on the following options, in the following order.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Command Pallette Values",
+                "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\n  Project Language: Java\n  Group Id: com.springbackend\n  Artifact Id: hw\n  Packaging Type: Jar\n  Java Version: 17\n  Dependendices: Spring Web and Lombok (Search seperately)\n\n  Press Enter/Return\n  Press \"Generate into this folder\"\n  Click \"Open\"\n  Say \"Yes, I trust the authors\" if prompted",
+                "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: hw\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
+            }
+        },
+        {
+            "id": 16,
+            "instruction": "Now open a new terminal and run the following command. I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files since it auto-generates packages and boiler-plate code. I just thought these commands would be convenient.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mkdir hw/src/main/java/com/springbackend/hw/controllers\n  touch hw/src/main/java/com/springbackend/hw/controllers/HwController.java",
+                "CopyCode": "mkdir hw/src/main/java/com/springbackend/hw/controllers\ntouch hw/src/main/java/com/springbackend/hw/controllers/HwController.java"
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "In your \"HW\" folder in VSCode go to src -> main -> java -> controllers. Open the \"HwController.java\" file and paste in the following code.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.springbackend.hw.controllers;\n\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.bind.annotation.GetMapping;\n\n\n@RestController\npublic class HwController {\n\n\t@GetMapping(\"/api/hw\")\n\tpublic String hwMessage() {\n\t\treturn \"Hello World\";\n\t}\n\n}",
+                "CopyCode": "package com.springbackend.hw.controllers;\n\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.bind.annotation.GetMapping;\n\n\n@RestController\npublic class HwController {\n\n\t@GetMapping(\"/api/hw\")\n\tpublic String hwMessage() {\n\t\treturn \"Hello World\";\n\t}\n\n}"
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "Now open a new terminal and run the following commands. If you don't see an explicit error message and it's running, it mean's it working. Press \"control + c\" to make it stop running.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd hw\n  mvn spring-boot:run",
+                "CopyCode": "cd hw\nmvn spring-boot:run"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "In your terminal run the following commands. You could also do change into \"hw\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "cd ~\n  cd hw\n  touch package.json\n  touch start.sh",
+                "CopyCode": "cd ~\ncd hw\ntouch package.json\ntouch start.sh"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "Open your code in VSCode, and then press \"command + p\". Search for and press on \"applications.properties\". In the file add the following code. Do NOT delete the code that's already in it.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Properties",
+                "FormatCode": "logging.level.root=OFF\n  logging.level.org.springframework.boot=ERROR\n  logging.level.org.springframework.web=ERROR\n  spring.main.banner-mode=OFF",
+                "CopyCode": "logging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF"
+            }
+        },
+        {
+            "id": 21,
+            "instruction": "Now open your \"start.sh\" file and paste in the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "sh",
+                "FormatCode": "#!/bin/sh\n  YELLOW='\\033[0;33m'\n  BLUE='\\033[0;34m'\n  NC='\\033[0m' # No Color\n\n  stop_spring_boot() {\n    echo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n    kill \"$SPRING_BOOT_PID\"\n  }\n\n  trap stop_spring_boot INT TERM\n\n  mvn --quiet spring-boot:run &\n  SPRING_BOOT_PID=$!\n\n  sleep 0.1\n\n  echo \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\n  wait \"$SPRING_BOOT_PID\"\n",
+                "CopyCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\nstop_spring_boot() {\n\techo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n\tkill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n"
+            }
+        },
+        {
+            "id": 22,
+            "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "FormatCode": "{\n    \"name\": \"spring-boot-api\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Spring Boot API project\",\n    \"main\": \"index.js\",\n    \"scripts\": {\n\t\"start\": \"./start.sh\"\n    },\n    \"author\": \"Your Name\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n   }\n}",
+                "CopyCode": "{\n\t\"name\": \"spring-boot-api\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"Spring Boot API project\",\n\t\"main\": \"index.js\",\n\t\"scripts\": {\n\t\t\"start\": \"./start.sh\"\n\t},\n\t\"author\": \"Your Name\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\t}\n}"
+            }
+        },
+        {
+            "id": 23,
+            "instruction": "Go to your terminal and run the following commands. This makes your script an executable. You'll only have to do this once.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd hw\n  chmod +x start.sh",
+                "CopyCode": "cd hw\nchmod +x start.sh"
+            }
+        },
+        {
+            "id": 24,
+            "instruction": "Run your API using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "npm run start",
+                "CopyCode": "npm run start"
+            }
+        },
+        {
+            "id": 25,
+            "instruction": "If you get an error saying port 8080 is already in use run the following. Replace \"<PID>\" with the PID from the first commands output.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "lsof -i :8080\n  kill -9 <PID>",
+                "CopyCode": "lsof -i :8080\nkill -9 <PID>"
             }
         }
+
     ]
 }
