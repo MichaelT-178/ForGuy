@@ -166,6 +166,14 @@
             "Pay": ""
         },
         {
+            "Name": "NASA",
+            "Location": "Hampton, Virginia or Huntsville, Alabama or Cape Canaveral, Florida or Pasadena, California.",
+            "LinkedIn": "https://www.linkedin.com/company/nasa/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Lenovo LASR Program",
             "Location": "Morrisville, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/lenovo/jobs/",
@@ -817,6 +825,46 @@
             "Name": "SimVentions",
             "Location": "Fredericksburg, Virginia",
             "LinkedIn": "https://www.linkedin.com/company/simventions/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Chameleon Consulting Group LLC",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/chameleon-consulting-group-llc/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Seam (YC S20)",
+            "Location": "San Francisco, California",
+            "LinkedIn": "https://www.linkedin.com/company/seamapi/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Stateful, Inc",
+            "Location": "Berkeley, California",
+            "LinkedIn": "https://www.linkedin.com/company/stateful/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Edmunds GovTech",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/edmundsgovtech/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "MNTN",
+            "Location": "Durham, North Carolina (RTP) / Remote",
+            "LinkedIn": "https://www.linkedin.com/company/wearemntn/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -1788,14 +1836,6 @@
             "Name": "True IP Solutions, LLC",
             "Location": "Hampstead, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/true-ip-solutions-llc/jobs/",
-            "Contact": "",
-            "Tips": "",
-            "Pay": ""
-        },
-        {
-            "Name": "NASA",
-            "Location": "Hampton, Virginia or Huntsville, Alabama or Cape Canaveral, Florida or Pasadena, California.",
-            "LinkedIn": "https://www.linkedin.com/company/nasa/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
