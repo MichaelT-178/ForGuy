@@ -154,16 +154,6 @@
             "Image": "Mission.jpg"
         },
         {
-            "Name": "Liz Flowers",
-            "Company": "Lenders Cooperative",
-            "Role": "Head of Client Success",
-            "Location": "Wilmington, North Carolina",
-            "Email": "eflowers@lenderscooperative.com",
-            "LinkedIn": "https://www.linkedin.com/in/liz-flowers-55076051/",
-            "Details": "The UNCW computer science department sent an email about this women recruiting in Wilmington.",
-            "Image": "Lenders.jpg"
-        },
-        {
             "Name": "Alex Rosso",
             "Company": "Lenovo",
             "Role": "Talent Acquisition Partner",
@@ -254,6 +244,25 @@
             "Image": "Microsoft.jpg"
         },
         {
+            "Name": "Kevin Kanhai",
+            "Company": "Edmunds GovTech / Motion Recruitment",
+            "Role": "Senior Manager, Talent Services",
+            "Location": "Raleigh, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/in/kevin-kanhai/",
+            "Details": "This guy contacted me on LinkedIn.",
+            "Image": "Edmunds.jpg"
+        },
+        {
+            "Name": "Liz Flowers",
+            "Company": "Lenders Cooperative",
+            "Role": "Head of Client Success",
+            "Location": "Wilmington, North Carolina",
+            "Email": "eflowers@lenderscooperative.com",
+            "LinkedIn": "https://www.linkedin.com/in/liz-flowers-55076051/",
+            "Details": "The UNCW computer science department sent an email about this women recruiting in Wilmington.",
+            "Image": "Lenders.jpg"
+        },
+        {
             "Name": "Phoebe Roberts",
             "Company": "DataAnnotation",
             "Role": "Recruiter",
@@ -262,6 +271,16 @@
             "LinkedIn": "https://www.linkedin.com/in/phoebe-roberts-74ab362b3/",
             "Details": "This women messaged me on LinkedIn about a remote Swift iOS Developer position.",
             "Image": "DataAnnotation.jpg"
+        },
+        {
+            "Name": "Jennifer Lawrence",
+            "Company": "Revature",
+            "Role": "Sourcing Specialist",
+            "Location": "Reston, Virginia",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/jennifer-lawrence-54b67b246/",
+            "Details": "This women contacted me on LinkedIn about an Entry level SWE position on LinkedIn.",
+            "Image": "Revature.jpg"
         },
         {
             "Name": "John Richardson",
