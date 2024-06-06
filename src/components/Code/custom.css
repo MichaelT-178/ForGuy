@@ -6,7 +6,8 @@ code {
 .token.operator,
 .token.purple-js,
 .token.fxml-purple,
-.token.always-purple {
+.token.always-purple,
+.token.sh-purple {
     color: #C678DD;
 }
 
@@ -18,10 +19,24 @@ code {
     color: #ABB2BF;
 }
 
+.token.property,
+.token.self-red,
+.token.red-js,
+.token.py-red,
+.token.red-js-two,
+.token.tag,
+.token.doctype-tag,
+.token.fxml-red,
+.token.sh-red,
+.token.red-highlight,
+span.token.selector {
+    color: #E06C75;
+}
+
+
 .token.number,
 .token.self-orange, 
-.token.orange-js,
-span.token.property {
+.token.orange-js {
     color: #D19A66;
 }
 
@@ -31,7 +46,8 @@ span.token.property {
 .token.teal-js,
 .token.regex-source,
 .token.regex-delimiter,
-.token.fxml-teal {
+.token.fxml-teal, 
+.token.sh-teal {
     color: #56B6C2;
 }
 
@@ -75,7 +91,9 @@ span.token.property {
 .token.function-variable.function,
 .token.always-blue,
 .token.blue-js,
-.token.always-blue-two {
+.token.always-blue-two,
+.token.fxml-blue,
+.token.sh-blue {
     color: #61AFEF;
 }
 
@@ -87,6 +105,7 @@ span.token.property {
 /* Swift nil */
 .token.nil.constant,
 .token.fxml-orange,
+.token.sh-orange,
 .token.attr-name,
 .token.name {
     color: #D19A66;
@@ -95,21 +114,11 @@ span.token.property {
 .token.string,
 .token.green-js,
 .token.fxml-green,
-.token.attr-value {
+.token.attr-value,
+.token.sh-green {
     color: #98C379;
 }
 
-.token.property,
-.token.self-red,
-.token.red-js,
-.token.py-red,
-.token.red-js-two,
-.token.tag,
-.token.doctype-tag,
-.token.fxml-red,
-span.token.selector {
-    color: #E06C75;
-}
 
 .token.json-colon {
     color: #ABB2BF;
