@@ -403,7 +403,21 @@ def get_react():
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-      
+
+def get_angular():
+	with open("../src/data/CompSci/Instructions/SetupAngular.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup an Angular Project 🔺"
+		Link = "/CompSci/SetupProjects/angular"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+    
 def get_templates():
 	with open("../src/data/CompSci/Instructions/TemplatesFolder.json", "r") as file:
 		content = json.load(file)
@@ -1303,6 +1317,7 @@ displaylinks = get_display_links()
 node = get_node()
 vue = get_vue()
 react = get_react()
+angular = get_angular()
 templates = get_templates()
 ghpages = get_gh_pages()
 viteghpages = get_vite_gh_pages()
@@ -1403,6 +1418,7 @@ all_data = [
     node,
     vue,
     react,
+    angular,
     templates,
     ghpages,
     viteghpages,

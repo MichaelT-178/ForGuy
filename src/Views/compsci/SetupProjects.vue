@@ -31,9 +31,6 @@
                 <span v-if="point.Code">
                     <CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock>
                 </span>
-                <span v-if="point.LongCode">
-                    <LongCodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></LongCodeBlock>
-                </span>
             </div>
         </div>
 
@@ -47,7 +44,6 @@ import { computed, ref, nextTick, onMounted, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { createHyperLink, highlightLinkText, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
-import LongCodeBlock from '../../components/Code/LongCodeBlock.vue';
 import AllData from '../../data/CompSci/Instructions/DisplayLinks.json';
 import { AllSets } from '../../data/CompSci/Instructions/InstructionSets.vue';
 
