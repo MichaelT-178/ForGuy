@@ -52,7 +52,7 @@
             "description": "The \"termcolor\" library. This is a Python library that allows you to color the text in your terminal output. I find it very useful to differentiate between messages and I think it looks nice."
         }
     ],
-    "Code": [
+    "LongCode": [
         {
             "Name": "List Comprehension",
             "Description": "This is a great way to create and populate a list in Python.",

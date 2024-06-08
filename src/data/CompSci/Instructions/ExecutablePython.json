@@ -14,29 +14,29 @@
         {
             "id": 2,
             "instruction": "Make a folder and python file within the folder.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd executable\n  touch execute_script.py",
+                "FormatCode": "cd executable\ntouch execute_script.py",
                 "CopyCode": "cd executable\ntouch execute_script.py"
             }
         },
         {
             "id": 3,
             "instruction": "In your \"execute_script.py\" file paste the following code.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "FormatCode": "#!/usr/bin/env python3\n  import json\n\n  def main():\n      print(\"Hello World\")\n\n  if __name__ == \"__main__\":\n      main()",
+                "FormatCode": "#!/usr/bin/env python3\nimport json\n\ndef main():\n    print(\"Hello World\")\n\nif __name__ == \"__main__\":\n    main()",
                 "CopyCode": "#!/usr/bin/env python3\nimport json\n\ndef main():\n\tprint(\"Hello World\")\n\nif __name__ == \"__main__\":\n\tmain()"
             }
         },
         {
             "id": 4,
             "instruction": "Change permissions for your script by running the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -47,7 +47,7 @@
         {
             "id": 5,
             "instruction": "Run your script.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

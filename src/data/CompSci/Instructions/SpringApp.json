@@ -14,8 +14,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cp -R templates/react-project vue-sqlite-frontend",
-                "CopyCode": "cp -R templates/react-project vue-sqlite-frontend"
+                "FormatCode": "cp -R templates/react-project react-sqlite-frontend",
+                "CopyCode": "cp -R templates/react-project react-sqlite-frontend"
             }
         },
         {
@@ -85,11 +85,11 @@
         {
             "id": 9,
             "instruction": "If you don't already have homebrew installed, run the following commands.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "FormatCode": "xcode-select --install\n\n  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/\n  install/HEAD/install.sh)\"\n\n  brew --version",
+                "Language": "Command",
+                "FormatCode": "xcode-select --install\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nbrew --version",
                 "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\nbrew --version"
             }
         },
@@ -136,68 +136,112 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Command Pallette Values",
-                "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\n  Project Language: Java\n  Group Id: com.springbackend\n  Artifact Id: hw\n  Packaging Type: Jar\n  Java Version: 17\n  Dependendices: Spring Web and Lombok (Search seperately)\n\n  Press Enter/Return\n  Press \"Generate into this folder\"\n  Click \"Open\"\n  Say \"Yes, I trust the authors\" if prompted",
-                "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: hw\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
+                "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\n  Project Language: Java\n  Group Id: com.springbackend\n  Artifact Id: demo\n  Packaging Type: Jar\n  Java Version: 17\n  Dependendices: Spring Web and Lombok (Search seperately)\n\n  Press Enter/Return\n  Press \"Generate into this folder\"\n  Click \"Open\"\n  Say \"Yes, I trust the authors\" if prompted",
+                "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
             }
         },
         {
             "id": 16,
-            "instruction": "Now open a new terminal and run the following command. I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files since it auto-generates packages and boiler-plate code. I just thought these commands would be convenient.",
+            "instruction": "Now open a new terminal and run the following command. It will rename your project to be \"spring-boot-sqlite\"",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir hw/src/main/java/com/springbackend/hw/controllers\n  touch hw/src/main/java/com/springbackend/hw/controllers/HwController.java",
-                "CopyCode": "mkdir hw/src/main/java/com/springbackend/hw/controllers\ntouch hw/src/main/java/com/springbackend/hw/controllers/HwController.java"
+                "FormatCode": "mv demo spring-boot-sqlite",
+                "CopyCode": "mv demo spring-boot-sqlite"
             }
         },
         {
             "id": 17,
-            "instruction": "In your \"HW\" folder in VSCode go to src -> main -> java -> controllers. Open the \"HwController.java\" file and paste in the following code.",
+            "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient.",
             "LongCode": {
                 "Name": "",
                 "Description": "",
-                "Language": "Java",
-                "FormatCode": "package com.springbackend.hw.controllers;\n\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.bind.annotation.GetMapping;\n\n\n@RestController\npublic class HwController {\n\n\t@GetMapping(\"/api/hw\")\n\tpublic String hwMessage() {\n\t\treturn \"Hello World\";\n\t}\n\n}",
-                "CopyCode": "package com.springbackend.hw.controllers;\n\nimport org.springframework.web.bind.annotation.RestController;\nimport org.springframework.web.bind.annotation.GetMapping;\n\n\n@RestController\npublic class HwController {\n\n\t@GetMapping(\"/api/hw\")\n\tpublic String hwMessage() {\n\t\treturn \"Hello World\";\n\t}\n\n}"
+                "Language": "Command",
+                "FormatCode": "cd spring-boot-sqlite/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repository\nmkdir service\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
+                "CopyCode": "cd spring-boot-sqlite/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repository\nmkdir service\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
             }
         },
         {
             "id": 18,
+            "instruction": "Now open your \"spring-boot-sqlite\" file in VSCode if it's not already open. Go to src -> main -> java -> com -> springbackend -> demo -> controllers and then open the \"UserController.java\" file. Paste in the following code.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @PostMapping\n    public ResponseEntity<User> createUser(@RequestBody User user) {\n\tUser createdUser = userService.createUser(user.getFirstname(), user.getLastname());\n\treturn ResponseEntity.status(201).body(createdUser);\n    }\n\n    @GetMapping(\"/{firstname}\")\n    public ResponseEntity<?> getUserByFirstname(@PathVariable String firstname) {\n\treturn userService\n\t\t.getUserByFirstname(firstname)\n\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t.orElseGet(() -> ResponseEntity.status(404).body(\"User not found\"));\n    }\n}",
+                "CopyCode": "package com.example.demo.controller;\n\nimport com.example.demo.model.User;\nimport com.example.demo.service.UserService;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity<User> createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.createUser(user.getFirstname(), user.getLastname());\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity<?> getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService\n\t\t\t\t.getUserByFirstname(firstname)\n\t\t\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t\t\t.orElseGet(() -> ResponseEntity.status(404).body(\"User not found\"));\n\t}\n}"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> models and then open the \"User.java\" file. Paste in the following code.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.demo.model;\n\nimport javax.persistence.Entity;\nimport javax.persistence.GeneratedValue;\nimport javax.persistence.GenerationType;\nimport javax.persistence.Id;\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\npublic class User {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    private String firstname;\n    private String lastname;\n}",
+                "CopyCode": "package com.example.demo.model;\n\nimport javax.persistence.Entity;\nimport javax.persistence.GeneratedValue;\nimport javax.persistence.GenerationType;\nimport javax.persistence.Id;\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\npublic class User {\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\tprivate String firstname;\n\tprivate String lastname;\n}"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> repositories and then open the \"UserRepository.java\" file. Paste in the following code.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.demo.repository;\n\nimport com.example.demo.model.User;\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport java.util.Optional;\n\npublic interface UserRepository extends JpaRepository<User, Long> {\n    Optional<User> findByFirstname(String firstname);\n}",
+                "CopyCode": "package com.example.demo.repository;\n\nimport com.example.demo.model.User;\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport java.util.Optional;\n\npublic interface UserRepository extends JpaRepository<User, Long> {\n\tOptional<User> findByFirstname(String firstname);\n}"
+            }
+        },
+        {
+            "id": 21,
+            "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> services and then open the \"UserService.java\" file. Paste in the following code.",
+            "LongCode": {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "FormatCode": "package com.example.demo.service;\n\nimport com.example.demo.model.User;\nimport com.example.demo.repository.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.List;\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n    @Autowired\n    private UserRepository userRepository;\n\n    public User createUser(String firstname, String lastname) {\n\tUser user = new User();\n\tuser.setFirstname(firstname);\n\tuser.setLastname(lastname);\n\treturn userRepository.save(user);\n    }\n\n    public Optional<User> getUserByFirstname(String firstname) {\n\treturn userRepository.findByFirstname(firstname);\n    }\n}",
+                "CopyCode": "package com.example.demo.service;\n\nimport com.example.demo.model.User;\nimport com.example.demo.repository.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.List;\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User createUser(String firstname, String lastname) {\n\t\tUser user = new User();\n\t\tuser.setFirstname(firstname);\n\t\tuser.setLastname(lastname);\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional<User> getUserByFirstname(String firstname) {\n\t\treturn userRepository.findByFirstname(firstname);\n\t}\n}"
+            }
+        },
+        {
+            "id": 22,
             "instruction": "Now open a new terminal and run the following commands. If you don't see an explicit error message and it's running, it mean's it working. Press \"control + c\" to make it stop running.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd hw\n  mvn spring-boot:run",
-                "CopyCode": "cd hw\nmvn spring-boot:run"
+                "FormatCode": "cd spring-boot-sqlite\n  mvn spring-boot:run",
+                "CopyCode": "cd spring-boot-sqlite\nmvn spring-boot:run"
             }
         },
         {
-            "id": 19,
-            "instruction": "In your terminal run the following commands. You could also do change into \"hw\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now.",
+            "id": 23,
+            "instruction": "In your terminal run the following commands. You could also do change into \"hw\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now. Also install the necessary mvn dependencies.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "",
-                "FormatCode": "cd ~\n  cd hw\n  touch package.json\n  touch start.sh",
-                "CopyCode": "cd ~\ncd hw\ntouch package.json\ntouch start.sh"
+                "FormatCode": "cd ~\n  cd spring-boot-sqlite\n  touch package.json\n  touch start.sh\n  mvn dependency:copy -Dartifact=org.xerial:sqlite-jdbc:3.39.3.0",
+                "CopyCode": "cd ~\ncd spring-boot-sqlite\ntouch package.json\ntouch start.sh\nmvn dependency:copy -Dartifact=org.xerial:sqlite-jdbc:3.39.3.0"
             }
         },
         {
-            "id": 20,
-            "instruction": "Open your code in VSCode, and then press \"command + p\". Search for and press on \"applications.properties\". In the file add the following code. Do NOT delete the code that's already in it.",
-            "Code": {
+            "id": 24,
+            "instruction": "Go back to your folder in VSCode, and then press \"command + p\". Search for and press on \"applications.properties\". Paste the following code in the file. Do NOT delete the code that's already in it.",
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Properties",
-                "FormatCode": "logging.level.root=OFF\n  logging.level.org.springframework.boot=ERROR\n  logging.level.org.springframework.web=ERROR\n  spring.main.banner-mode=OFF",
-                "CopyCode": "logging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF"
+                "FormatCode": "logging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:sqlite:app.db\nspring.datasource.driver-class-name=org.sqlite.JDBC\nspring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update",
+                "CopyCode": "logging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:sqlite:app.db\nspring.datasource.driver-class-name=org.sqlite.JDBC\nspring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update"
             }
         },
         {
-            "id": 21,
+            "id": 25,
             "instruction": "Now open your \"start.sh\" file and paste in the following code.",
             "Code": {
                 "Name": "",
@@ -208,18 +252,18 @@
             }
         },
         {
-            "id": 22,
+            "id": 26,
             "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data.",
             "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
-                "FormatCode": "{\n    \"name\": \"spring-boot-api\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Spring Boot API project\",\n    \"main\": \"index.js\",\n    \"scripts\": {\n\t\"start\": \"./start.sh\"\n    },\n    \"author\": \"Your Name\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n   }\n}",
-                "CopyCode": "{\n\t\"name\": \"spring-boot-api\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"Spring Boot API project\",\n\t\"main\": \"index.js\",\n\t\"scripts\": {\n\t\t\"start\": \"./start.sh\"\n\t},\n\t\"author\": \"Your Name\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\t}\n}"
+                "FormatCode": "{\n    \"name\": \"spring-boot-sqlite\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Spring Boot API project\",\n    \"main\": \"index.js\",\n    \"scripts\": {\n\t\"start\": \"./start.sh\"\n    },\n    \"author\": \"Your Name\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n   }\n}",
+                "CopyCode": "{\n\t\"name\": \"spring-boot-sqlite\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"Spring Boot API project\",\n\t\"main\": \"index.js\",\n\t\"scripts\": {\n\t\t\"start\": \"./start.sh\"\n\t},\n\t\"author\": \"Your Name\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\t}\n}"
             }
         },
         {
-            "id": 23,
+            "id": 27,
             "instruction": "Go to your terminal and run the following commands. This makes your script an executable. You'll only have to do this once.",
             "Code": {
                 "Name": "",
@@ -230,7 +274,7 @@
             }
         },
         {
-            "id": 24,
+            "id": 28,
             "instruction": "Run your API using the following command.",
             "Code": {
                 "Name": "",
@@ -241,7 +285,7 @@
             }
         },
         {
-            "id": 25,
+            "id": 29,
             "instruction": "If you get an error saying port 8080 is already in use run the following. Replace \"<PID>\" with the PID from the first commands output.",
             "Code": {
                 "Name": "",
@@ -251,6 +295,5 @@
                 "CopyCode": "lsof -i :8080\nkill -9 <PID>"
             }
         }
-
     ]
 }

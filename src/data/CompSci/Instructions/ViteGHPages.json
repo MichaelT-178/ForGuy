@@ -10,22 +10,22 @@
         {
             "id": 1,
             "instruction": "Ensure that the code for your app is already on GitHub and that you have a local git repository set up for your code. Change into your local folder and run the following \"git status\" command. If it doesn't output something like \"fatal: not a git repository (or any of the parent directories)\" you should be good.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd your-project-name\n  git status\n  cd ..",
+                "FormatCode": "cd your-project-name\ngit status\ncd ..",
                 "CopyCode": "cd your-project-name\ngit status\ncd .."
             }
         },
         {
             "id": 2,
             "instruction": "Change into your local Vite project repository and open it in VSCode. You can open it using the \"code .\" command if you have it installed.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd your-project-name\n  code .",
+                "FormatCode": "cd your-project-name\ncode .",
                 "CopyCode": "cd your-project-name\ncode ."
             }
         },
@@ -114,7 +114,7 @@
         {
             "id": 10,
             "instruction": "If the subtree push doesn't work for some reason try the following. ",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

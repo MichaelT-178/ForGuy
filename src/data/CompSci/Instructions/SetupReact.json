@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Make sure you have node installed by running the following command. If it's installed it should output the version.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "instruction": "Install Vite.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -32,7 +32,7 @@
         {
             "id": 3,
             "instruction": "Create a React project using Vite. Note that the template at the is \"React\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -43,7 +43,7 @@
         {
             "id": 4,
             "instruction": "Change into your project directory.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "instruction": "Install dependencies.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -65,18 +65,18 @@
         {
             "id": 6,
             "instruction": "Install Tailwind CSS. Note you can clear your terminal when you're by doing \"command + k\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "npm install -D tailwindcss postcss autoprefixer\n  npx tailwindcss init -p",
+                "FormatCode": "npm install -D tailwindcss postcss autoprefixer\nnpx tailwindcss init -p",
                 "CopyCode": "npm install -D tailwindcss postcss autoprefixer\nnpx tailwindcss init -p"
             }
         },
         {
             "id": 7,
             "instruction": "Install the React router.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "instruction": "Now open your repository in VSCode. You can use the \"code .\" command if you have it installed.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -109,7 +109,7 @@
         {
             "id": 10,
             "instruction": "Run the server locally just to make sure the project is running currently. The site should currently say \"Vite  + React\" if installed correctly. After confirming it's installed correctly, stop running the server and go back to your code. You can stop the server by doing \"control + c\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -120,67 +120,67 @@
         {
             "id": 11,
             "instruction": "Go to the \"src\" repository of your project and open the file called \"index.css\". Delete its current contents and paste the following code. Save the file when you're done (command + s).",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "CSS",
-                "FormatCode": "@tailwind base;\n  @tailwind components;\n  @tailwind utilities;",
+                "FormatCode": "@tailwind base;\n@tailwind components;\n@tailwind utilities;",
                 "CopyCode": "@tailwind base;\n@tailwind components;\n@tailwind utilities;" 
             }
         },
         {
             "id": 12,
             "instruction": "THIS IS AN OPTIONAL STEP. If the \"@tailwind\" keyword is being underlined yellow with a message saying \"Unknown word\", paste the following JSON data into your VSCode Settings file. See this [link](https://flaviocopes.com/fix-unknown-at-rule-tailwind/) for additional details. If there's no error or if you don't mind the error, you can skip this step. It should work either way it will just be underlined..",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
-                "FormatCode": "\"files.associations\": {\n      \"*.css\": \"tailwindcss\"\n  },",
+                "FormatCode": "\"files.associations\": {\n    \"*.css\": \"tailwindcss\"\n},",
                 "CopyCode": "\"files.associations\": {\n\t\"*.css\": \"tailwindcss\"\n}," 
             }
         },
         {
             "id": 13,
             "instruction": "Now remove unused assets. Press \"command + k\" to clear your terminal after you're done.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "rm src/assets/react.svg\n  rm public/vite.svg",
+                "FormatCode": "rm src/assets/react.svg\nrm public/vite.svg",
                 "CopyCode": "rm src/assets/react.svg\nrm public/vite.svg" 
             }
         },
         {
             "id": 14,
             "instruction": "Change into the src directory and make the components, styles, utils, views, and router folders. You can run \"ls\" at the end to confirm it worked.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd src\n  mkdir -p components styles utils views router\n  ls",
+                "FormatCode": "cd src\nmkdir -p components styles utils views router\nls",
                 "CopyCode": "cd src\nmkdir -p components styles utils views router\nls" 
             }
         },
         {
             "id": 15,
             "instruction": "Create the following folders in the \"styles\" directory.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd styles\n  mkdir -p components views",
+                "FormatCode": "cd styles\nmkdir -p components views",
                 "CopyCode": "cd styles\nmkdir -p components views" 
             }
         },
         {
             "id": 16,
             "instruction": "Create the following files in the components and views directory.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "touch components/RouterBtn.css\n  touch views/Home.css",
+                "FormatCode": "touch components/RouterBtn.css\ntouch views/Home.css",
                 "CopyCode": "touch components/RouterBtn.css\ntouch views/Home.css" 
             }
         },
