@@ -64,7 +64,7 @@
         {
             "id": 2,
             "instruction": "To get started, download git. I'd recommend installing git using Homebrew. Install the Homebrew package manager using the following two commands. Then check that it's installed by using the --version command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -75,7 +75,7 @@
         {
             "id": 3,
             "instruction": "Now install git via Homebrew. Note that this might take a while. Be patient.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -86,7 +86,7 @@
         {
             "id": 4,
             "instruction": "Configure Git. Replace the values in quotations with your name and email address. I'd recommend using the same email address you used to setup your Github account. I'd recommend just setting your username to \"Elijah Dembe\".",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -97,7 +97,7 @@
         {
             "id": 5,
             "instruction": "Now generate a new SSH key. Run the following command in your terminal with the same email you used in the previous step. Replace youremail@example.com with your actual email address.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -113,7 +113,7 @@
         {
             "id": 7,
             "instruction": "Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Different for multiple accounts(secondSeven).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -125,7 +125,7 @@
         {
             "id": 8,
             "instruction": "Run the following to ensure you have git installed. If it says something like \"git version 2.39.3\", you're good.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -136,7 +136,7 @@
         {
             "id": 9,
             "instruction": "9. Now we're going to create an SSH key to add to GitHub. Run the two following commands. The second command will print and copy the ssh key to your clipboard. Different for multiple accounts(secondNine).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -192,7 +192,7 @@
         {
             "id": 21,
             "instruction": "Add a nano config file by running the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -203,7 +203,7 @@
         {
             "id": 22,
             "instruction": "Now run the following command to open your nano file. This is where you'll add your personal access token information.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -214,7 +214,7 @@
         {
             "id": 23,
             "instruction": "In the file that's open in your terminal paste the following. Note change \"NameForThisAccount\" in the first line with basically any name for this new account. I'd recommend something like \"main\" or \"personal\". Different for multiple accounts(secondTwentyThree).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -230,7 +230,7 @@
         {
             "id": 25,
             "instruction": "Run the following command again to verify the changes were saved. Then press control + x to exit.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -272,7 +272,7 @@
         {
             "id": 8,
             "instruction": "Run the following command to create a local clone. Note the link should be whatever you just copied. Replace the \"git@github.com:John-Smith/PacMan.git\" with the actual link. Different for multiple accounts(secondGitHubEight)",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -284,7 +284,7 @@
         {
             "id": 9,
             "instruction": "Change into the cloned repository. Using the \"cd\" command. Note you should cd into whatever the repos name is.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -295,7 +295,7 @@
         {
             "id": 10,
             "instruction": "Add files and make your changes. You can just run the following command for this example.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -306,7 +306,7 @@
         {
             "id": 11,
             "instruction": "Add all your changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -317,7 +317,7 @@
         {
             "id": 12,
             "instruction": "Commit your changes with a message about your changes in quotations.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -328,7 +328,7 @@
         {
             "id": 13,
             "instruction": "Push your changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -354,7 +354,7 @@
         {
             "id": 7,
             "instruction": "This is basically but the same as the regular step 7, but with a changed file name. Run the following two commands (one at a  time) to add the SSH key to the ssh-agent. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step(normalSeven).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -366,7 +366,7 @@
         {
             "id": 9,
             "instruction": "This is basically but the same as the regular step 9, but with a changed file name. Run the following two commands (one at a  time) to copy the ssh key to your clipboard. The second command will print and copy the ssh key to your clipboard. Again, note the file name is different (\"id_ed25519_two\"). Scroll back up to original step(normalNine).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -378,7 +378,7 @@
         {
             "id": 23,
             "instruction": "This is basically the same as regular step 23. Change \"NameForThisAccount\" to something other than your other account's name. Also the IdentityFile has been updated. Scroll back up to original step(normalTwentyThree).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -397,7 +397,7 @@
         {
             "id": 8,
             "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. Scroll back up to original step(normalGitHubEight).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -557,7 +557,7 @@
         {
             "id": 1,
             "instruction": "Install homebrew. Homebrew is a great package manager for git and other software.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -572,7 +572,7 @@
         {
             "id": 3,
             "instruction": "Don't edit ReadMes on GitHub do it in a local repo/md file. Editing ReadMe's on git can cause your local and remote repository changes to be out of sync. If you do make changes on GitHub do a \"git pull\" before editing locally. If you already made changes locally use the following commands to pull your ReadMe changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -583,7 +583,7 @@
         {
             "id": 4,
             "instruction": "If you want to remove git from a folder/directory use the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -703,7 +703,7 @@
         {
             "id": 6,
             "instruction": "To make changes locally clone the repo. First go the green \"Code\" button, in the drop down select the \"SSH\" tab and copy the url. Then clone it using the following command. Change the SSH link in the command to be the actual forked repo link. Make sure to add the \"-NameForThisAccount\" after the github.com if you're using a Github account other than your main one.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -714,7 +714,7 @@
         {
             "id": 7,
             "instruction": "Change into the local repo using the cd command. Replace with the actual name of the repo.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -729,7 +729,7 @@
         {
             "id": 9,
             "instruction": "Run the following three commands like any other project to push your changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -742,7 +742,7 @@
         {
             "id": 1,
             "instruction": "Run \"git log\" and find the hash of the commit you want to revert back to. Copy the hash then press 'q' to exit.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -753,7 +753,7 @@
         {
             "id": 2,
             "instruction": "Run the command below with the hash you just copied to revert back to that commit.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -768,7 +768,7 @@
         {
             "id": 4,
             "instruction": "Add your changes, like usual.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -779,7 +779,7 @@
         {
             "id": 5,
             "instruction": "Commit your changes, like usual.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -790,7 +790,7 @@
         {
             "id": 6,
             "instruction": "Push your changes to main with the \"--force\" tag.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -801,7 +801,7 @@
         {
             "id": 7,
             "instruction": "If you get an error that says \"error: src refspec main does not match any\" the repo might not have a main branch. Try master instead.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
