@@ -52,7 +52,7 @@
             "description": "The \"termcolor\" library. This is a Python library that allows you to color the text in your terminal output. I find it very useful to differentiate between messages and I think it looks nice."
         }
     ],
-    "LongCode": [
+    "Code": [
         {
             "Name": "List Comprehension",
             "Description": "This is a great way to create and populate a list in Python.",
@@ -71,49 +71,49 @@
             "Name": "ForEach Loops/Arrow Functions",
             "Description": "ForEach loops act like a regular for loop. Arrow functions have concise syntax",
             "Language": "JavaScript",
-            "FormatCode": "const myFunction = () => {\n    animals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n    animals.forEach(animal => {\n        console.log(animal);\n    });\n  }\n",
+            "FormatCode": "const myFunction = () => {\n  animals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n  animals.forEach(animal => {\n      console.log(animal);\n  });\n}\n",
             "CopyCode": "const myFunction = () => {\n\tanimals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n\tanimals.forEach(animal => {\n\t\tconsole.log(animal);\n\t});\n}"
         },
         {
             "Name": "Nil-Coalescing Operator",
             "Description": "If name isn't null, set \"unwrappedValue\" to that value. If name is null set to \"Anonymous\". Appears in JavaScript, TypeScript, Swift. Note it's called \"nullish\" in JavaScript and TypeScript.",
             "Language": "Swift",
-            "FormatCode": "let name: String? = nil\n  let unwrappedName = name ?? \"Anonymous\"\n\n  let ternaryEquivalent = (name != nil) ? name : \"Anonymous\"",
+            "FormatCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\"\n\nlet ternaryEquivalent = (name != nil) ? name : \"Anonymous\"",
             "CopyCode": "let name: String? = nil\nlet unwrappedName = name ?? \"Anonymous\"\n\nlet ternaryEquivalent = (name != nil) ? name : \"Anonymous\"\n"
         },
         {
             "Name": "File Reading",
             "Description": "Python's file reading syntax is easily my favorite part of the language. So simple and useful.",
             "Language": "Python",
-            "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n      for line in file:\n          print(line)",
+            "FormatCode": "with open(\"cool.txt\", \"r\") as file:\n    for line in file:\n        print(line)",
             "CopyCode": "with open(\"cool.txt\", \"r\") as file:\n\tfor line in file:\n\t\tprint(line)"
         },
         {
             "Name": "JavaScript Object Notation",
             "Description": "JSON Objects are extremely useful for transferring data around. It's like a simplified class. YAML and XML are too jank in my opinion. You can think of a json file as a list of Python dictionaries or strings.",
             "Language": "JSON",
-            "FormatCode": "{\n     \"Car\": \"Honda\",\n     \"Color\": \"Gray\",\n     \"Miles\": 12400,\n     \"Year\": \"2015\"\n  }",
+            "FormatCode": "{\n   \"Car\": \"Honda\",\n   \"Color\": \"Gray\",\n   \"Miles\": 12400,\n   \"Year\": \"2015\"\n}",
             "CopyCode": "{\n\t\"Car\": \"Honda\",\n\t\"Color\": \"Gray\",\n\t\"Miles\": 12400,\n\t\"Year\": \"2015\"\n}"
         },
         {
             "Name": "Try/Catch Block",
             "Description": "I *LOVE* the try/catch/throw syntax in Java. It's just a vibe. I use this syntax to describe real life events in my head all the time.",
             "Language": "Java",
-            "FormatCode": "try {\n      schedule.get(i).checkConflict(theEvent);\n  } catch (ConflictException e) {\n      throw new IllegalArgumentException(\"Can't be added due to a conflict.\");\n  } ",
+            "FormatCode": "try {\n    schedule.get(i).checkConflict(theEvent);\n} catch (ConflictException e) {\n    throw new IllegalArgumentException(\"Can't be added due to a conflict.\");\n} ",
             "CopyCode": "try {\n\tschedule.get(i).checkConflict(theEvent);\n} catch (ConflictException e) {\n\tthrow new IllegalArgumentException(\"The event cannot be added due to a conflict.\");\n} "
         },
         {
             "Name": "Dictionaries and F-Strings",
             "Description": "Python dictionaries are basically the same as JSON objects but I still love them. Also, they're very fast and you can look items up in O(1) time. F-strings are great way to format strings with variables in them and add values of different data types to a string. I also really like the for-loop syntax to iterate over a dictionary/JSON object.",
             "Language": "Python",
-            "FormatCode": "peoples_college = {\n     \"Gillian\": \"UNC\",\n     \"Carleigh\": \"NCSU\",\n     \"Michael\": \"Harvard\",\n     \"Hudson\": \"UTD\",\n     \"Charlie\": \"USC\",\n     \"Mom\": \"NYU\"\n  }\n\n  for key, value in peoples_college.items():\n      print(f\"{key}: went to {value}\")\n      print(f\"Michael: went to {'Michael'}\")",
+            "FormatCode": "peoples_college = {\n   \"Gillian\": \"UNC\",\n   \"Carleigh\": \"NCSU\",\n   \"Michael\": \"Harvard\",\n   \"Hudson\": \"UTD\",\n   \"Charlie\": \"USC\",\n   \"Mom\": \"NYU\"\n}\n\nfor key, value in peoples_college.items():\n    print(f\"{key}: went to {value}\")\n    print(f\"Michael: went to {'Michael'}\")",
             "CopyCode": "peoples_college = {\n\t\"Gillian\": \"UNC\",\n\t\"Carleigh\": \"NCSU\",\n\t\"Michael\": \"Harvard\",\n\t\"Hudson\": \"UTD\",\n\t\"Charlie\": \"USC\",\n\t\"Mom\": \"NYU\"\n}\n\nfor key, value in peoples_college.items():  \n\tprint(f\"{key}: went to {value}\")\n\tprint(f\"Michael: went to {'Michael'}\")\n"
         },
         {
             "Name": "ForEach UI Loops",
             "Description": "ForEach loops are used to help build user interfaces in SwiftUI.",
             "Language": "Swift",
-            "FormatCode": "ForEach(menu) { menuItem in\n     NavigationLink(destination: menuItem.destination) {\n         Label {\n\t    Text(menuItem.text)\n\t } icon: {\n\t    Image(systemName: menuItem.picture)\n\t         .foregroundColor(shakyPaleRed)\n\t    }\n         }\n     }\n  }",
+            "FormatCode": "ForEach(menu) { menuItem in\n   NavigationLink(destination: menuItem.destination) {\n       Label {\n\t  Text(menuItem.text)\n       } icon: {\n\t  Image(systemName: menuItem.picture)\n\t       .foregroundColor(shakyPaleRed)\n\t  }\n       }\n   }\n}",
             "CopyCode": "ForEach(menu) { menuItem in\n\tNavigationLink(destination: menuItem.destination) {\n\t\tLabel {\n\t\t\tText(menuItem.text)\n\t\t} icon: {\n\t\t\tImage(systemName: menuItem.picture)\n\t\t\t\t.foregroundColor(shakyPaleRed)\n\t\t\t}\n\t\t}\n\t}\n}"
         },
         {

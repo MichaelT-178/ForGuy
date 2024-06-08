@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Make a folder and python file within the folder.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "instruction": "In your \"execute_script.py\" file paste the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -36,7 +36,7 @@
         {
             "id": 4,
             "instruction": "Change permissions for your script by running the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -47,7 +47,7 @@
         {
             "id": 5,
             "instruction": "Run your script.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
