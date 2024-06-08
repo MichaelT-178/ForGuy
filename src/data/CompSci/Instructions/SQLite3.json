@@ -20,7 +20,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "mkdir test_db\n  cd test_db\n  touch create_db.py\n  touch populate_db.py\n  touch cars.json",
+                        "FormatCode": "mkdir test_db\ncd test_db\ntouch create_db.py\ntouch populate_db.py\ntouch cars.json",
                         "CopyCode": "mkdir test_db\ncd test_db\ntouch create_db.py\ntouch populate_db.py\ntouch cars.json"
                     }
                 },
@@ -31,7 +31,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
-                        "FormatCode": "import sqlite3\n\n  conn = sqlite3.connect('Cars.db')\n\n  cursor = conn.cursor()\n\n  cursor.execute('''\n      CREATE TABLE Cars (\n          Maker VARCHAR(20),\n          Color VARCHAR(20),\n          Year INT\n      );\n  ''')\n\n  conn.commit()\n  conn.close()\n\n  print(\"\\033[92m\" + \"Cars table successfully created!\" + \"\\033[0m\")",
+                        "FormatCode": "import sqlite3\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\ncursor.execute('''\n    CREATE TABLE Cars (\n        Maker VARCHAR(20),\n        Color VARCHAR(20),\n        Year INT\n    );\n''')\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully created!\" + \"\\033[0m\")",
                         "CopyCode": "import sqlite3\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\ncursor.execute('''\n\tCREATE TABLE Cars (\n\t\tMaker VARCHAR(20),\n\t\tColor VARCHAR(20),\n\t\tYear INT\n\t);\n''')\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully created!\" + \"\\033[0m\")"
                     }
                 },
@@ -42,7 +42,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
-                        "FormatCode": "import sqlite3\n  import json\n\n  with open(\"cars.json\", 'r') as file:\n      contents = file.read()\n      data = json.loads(contents)\n\n  conn = sqlite3.connect('Cars.db')\n\n  cursor = conn.cursor()\n\n  for car in data['Cars']:\n\n      maker = car[\"Maker\"]\n      color = car[\"Color\"]\n      year = car[\"Year\"]\n\n      sql = 'INSERT INTO Cars (maker, color, year) VALUES (?, ?, ?)'\n\n      cursor.execute(sql, (maker, color, year))\n\n  conn.commit()\n  conn.close()\n\n  print(\"\\033[92m\" + \"Cars table successfully populated!\" + \"\\033[0m\")",
+                        "FormatCode": "import sqlite3\nimport json\n\nwith open(\"cars.json\", 'r') as file:\n    contents = file.read()\n    data = json.loads(contents)\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\nfor car in data['Cars']:\n\n    maker = car[\"Maker\"]\n    color = car[\"Color\"]\n    year = car[\"Year\"]\n\n    sql = 'INSERT INTO Cars (maker, color, year) VALUES (?, ?, ?)'\n\n    cursor.execute(sql, (maker, color, year))\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully populated!\" + \"\\033[0m\")",
                         "CopyCode": "import sqlite3\nimport json\n\nwith open(\"cars.json\", 'r') as file:\n\tcontents = file.read()\n\tdata = json.loads(contents)\n\nconn = sqlite3.connect('Cars.db')\n\ncursor = conn.cursor()\n\nfor car in data['Cars']:\n\n\tmaker = car[\"Maker\"]\n\tcolor = car[\"Color\"]\n\tyear = car[\"Year\"]\n\n\tsql = 'INSERT INTO Cars (maker, color, year) VALUES (?, ?, ?)'\n\n\tcursor.execute(sql, (maker, color, year))\n\nconn.commit()\nconn.close()\n\nprint(\"\\033[92m\" + \"Cars table successfully populated!\" + \"\\033[0m\")"
                     }
                 },
@@ -53,7 +53,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "JSON",
-                        "FormatCode": "{\n      \"Cars\": [\n          {\n              \"Maker\": \"Toyota\",\n              \"Color\": \"Silver\",\n              \"Year\": 2015\n          },\n          {\n              \"Maker\": \"Honda\",\n              \"Color\": \"Red\",\n              \"Year\": 2005\n          },\n          {\n              \"Maker\": \"Ford\",\n              \"Color\": \"Blue\",\n              \"Year\": 2020\n          }\n      ]\n  }",
+                        "FormatCode": "{\n    \"Cars\": [\n\t{\n\t    \"Maker\": \"Toyota\",\n\t    \"Color\": \"Silver\",\n\t    \"Year\": 2015\n\t},\n\t{\n\t    \"Maker\": \"Honda\",\n\t    \"Color\": \"Red\",\n\t    \"Year\": 2005\n\t},\n\t{\n\t    \"Maker\": \"Ford\",\n\t    \"Color\": \"Blue\",\n\t    \"Year\": 2020\n\t}\n    ]\n}",
                         "CopyCode": "{\n\t\"Cars\": [\n\t\t{\n\t\t\t\"Maker\": \"Toyota\",\n\t\t\t\"Color\": \"Silver\",\n\t\t\t\"Year\": 2015\n\t\t},\n\t\t{\n\t\t\t\"Maker\": \"Honda\",\n\t\t\t\"Color\": \"Red\",\n\t\t\t\"Year\": 2005\n\t\t},\n\t\t{\n\t\t\t\"Maker\": \"Ford\",\n\t\t\t\"Color\": \"Blue\",\n\t\t\t\"Year\": 2020\n\t\t}\n\t]\n}"
                     }
                 },
@@ -64,7 +64,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "python3 create_db.py\n  python3 populate_db.py",
+                        "FormatCode": "python3 create_db.py\npython3 populate_db.py",
                         "CopyCode": "python3 create_db.py\npython3 populate_db.py"
                     }
                 },
@@ -103,7 +103,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "JSON",
-                        "FormatCode": "\"workbench.editorAssociations\": {\n      \"*.db\": \"sqlite-viewer.option\"\n  },",
+                        "FormatCode": "\"workbench.editorAssociations\": {\n    \"*.db\": \"sqlite-viewer.option\"\n},",
                         "CopyCode": "\"workbench.editorAssociations\": {\n\t\"*.db\": \"sqlite-viewer.option\"\n},"
                     }
                 },
@@ -128,7 +128,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd test_db\n  touch query.py",
+                        "FormatCode": "cd test_db\ntouch query.py",
                         "CopyCode": "cd test_db\ntouch query.py"
                     }
                 },
@@ -139,7 +139,7 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
-                        "FormatCode": "import sqlite3\n\n  with sqlite3.connect('Cars.db') as conn:\n      cursor = conn.cursor()\n\n      sql = (\n          'SELECT DISTINCT Maker, Year ' +\n          'FROM Cars ' +\n          'WHERE Year > 2005;'\n      )     \n\n      results = cursor.execute(sql).fetchall()\n\n      for row in results:\n          print(row)",
+                        "FormatCode": "import sqlite3\n\nwith sqlite3.connect('Cars.db') as conn:\n    cursor = conn.cursor()\n\n    sql = (\n        'SELECT DISTINCT Maker, Year ' +\n        'FROM Cars ' +\n        'WHERE Year > 2005;'\n    )   \n\n    results = cursor.execute(sql).fetchall()\n\n    for row in results:\n\tprint(row)",
                         "CopyCode": "import sqlite3\n\n\nwith sqlite3.connect('Cars.db') as conn:\n\tcursor = conn.cursor()\n\n\tsql = (\n\t\t'SELECT DISTINCT Maker, Year ' +\n\t\t'FROM Cars ' +\n\t\t'WHERE Year > 2005;'\n\t)\n\n\tresults = cursor.execute(sql).fetchall()\n\n\tfor row in results:\n\t\tprint(row)"
                     }
                 },
@@ -177,7 +177,7 @@
                         "Description": "",
                         "Language": "fxml",
                         "DisplayLang": "SQL",
-                        "FormatCode": "SELECT DISTINCT Maker, Year\n  FROM Cars\n  WHERE Year > 2005;",
+                        "FormatCode": "SELECT DISTINCT Maker, Year\nFROM Cars\nWHERE Year > 2005;",
                         "CopyCode": "SELECT DISTINCT Maker, Year\nFROM Cars\nWHERE Year > 2005;"
                     }
                 },

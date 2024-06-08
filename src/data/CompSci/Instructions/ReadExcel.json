@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "First off we're going to create our project folder and files.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "instruction": "Install the following three libraries in your project.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -41,7 +41,7 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "CSV",
-                "FormatCode": "Maker,Model,Year,Color,Engine,Fuel,Mileage\n  Toyota,Camry,2021,Red,V6,Gasoline,15000\n  Honda,Civic,2019,Blue,I4,Gasoline,22000\n  Ford,Mustang,2018,Black,V8,Gasoline,27000\n  Nissan,Altima,2020,White,I4,Gasoline,12000\n  Chevrolet,Impala,2022,Grey,V6,Gasoline,5000\n  BMW,325i,2021,Maroon,I6,Gasoline,13000\n  Tesla,Model S,2022,Black,Electric,Electric,10000\n  Hyundai,Sonata,2019,Silver,I4,Gasoline,18000\n  Subaru,Outback,2018,Green,H4,Gasoline,25000\n  Audi,A4,2020,Blue,I4,Gasoline,15000",
+                "FormatCode": "Maker,Model,Year,Color,Engine,Fuel,Mileage\nToyota,Camry,2021,Red,V6,Gasoline,15000\nHonda,Civic,2019,Blue,I4,Gasoline,22000\nFord,Mustang,2018,Black,V8,Gasoline,27000\nNissan,Altima,2020,White,I4,Gasoline,12000\nChevrolet,Impala,2022,Grey,V6,Gasoline,5000\nBMW,325i,2021,Maroon,I6,Gasoline,13000\nTesla,Model S,2022,Black,Electric,Electric,10000\nHyundai,Sonata,2019,Silver,I4,Gasoline,18000\nSubaru,Outback,2018,Green,H4,Gasoline,25000\nAudi,A4,2020,Blue,I4,Gasoline,15000",
                 "CopyCode": "Maker,Model,Year,Color,Engine,Fuel,Mileage\nToyota,Camry,2021,Red,V6,Gasoline,15000\nHonda,Civic,2019,Blue,I4,Gasoline,22000\nFord,Mustang,2018,Black,V8,Gasoline,27000\nNissan,Altima,2020,White,I4,Gasoline,12000\nChevrolet,Impala,2022,Grey,V6,Gasoline,5000\nBMW,325i,2021,Maroon,I6,Gasoline,13000\nTesla,Model S,2022,Black,Electric,Electric,10000\nHyundai,Sonata,2019,Silver,I4,Gasoline,18000\nSubaru,Outback,2018,Green,H4,Gasoline,25000\nAudi,A4,2020,Blue,I4,Gasoline,15000"
             }
         },
@@ -52,7 +52,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "FormatCode": "import pandas as pd\n\n  df = pd.read_csv('data.csv')\n\n  with pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:\n      df.to_excel(writer, index=False, sheet_name='Cars')\n\n      workbook = writer.book\n      worksheet = writer.sheets['Cars']\n\n      date_format = workbook.add_format({'num_format': '0'})\n\n      worksheet.set_column('C:C', None, date_format)",
+                "FormatCode": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nwith pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:\n    df.to_excel(writer, index=False, sheet_name='Cars')\n\n    workbook = writer.book\n    worksheet = writer.sheets['Cars']\n\n    date_format = workbook.add_format({'num_format': '0'})\n\n    worksheet.set_column('C:C', None, date_format)",
                 "CopyCode": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\nwith pd.ExcelWriter('output.xlsx', engine='xlsxwriter') as writer:\n\tdf.to_excel(writer, index=False, sheet_name='Cars')\n\n\tworkbook = writer.book\n\tworksheet = writer.sheets['Cars']\n\n\tdate_format = workbook.add_format({'num_format': '0'})\n\n\tworksheet.set_column('C:C', None, date_format)"
             }
         },
@@ -82,14 +82,14 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "FormatCode": "import pandas as pd\n\n  excel_path = \"output.xlsx\"\n\n  df = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n  # Print the table\n  print(df.head())\n\n  count = 0\n\n  for mileage in df['Mileage']:\n      if mileage >= 15000:\n\t  count += 1\n\n  print(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")",
+                "FormatCode": "import pandas as pd\n\nexcel_path = \"output.xlsx\"\n\ndf = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n# Print the table\nprint(df.head())\n\ncount = 0\n\nfor mileage in df['Mileage']:\n    if mileage >= 15000:\n\tcount += 1\n\nprint(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")",
                 "CopyCode": "import pandas as pd\n\nexcel_path = \"output.xlsx\"\n\ndf = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n# Print the table\nprint(df.head())\n\ncount = 0\n\nfor mileage in df['Mileage']:\n\tif mileage >= 15000:\n\t\tcount += 1\n\nprint(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")"
             }
         },
         {
             "id": 10,
             "instruction": "Run your read_excel.py file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

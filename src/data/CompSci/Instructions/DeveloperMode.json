@@ -18,7 +18,7 @@
         {
             "id": 3,
             "instruction": "To enable \"Developer mode\" on your iphone do the following sequence.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -34,7 +34,7 @@
         {
             "id": 5,
             "instruction": "If you get the error \"Untrusted Developer, Your device management settings does not allow using an app from…\" when the app is loaded on your phone, do the following.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
