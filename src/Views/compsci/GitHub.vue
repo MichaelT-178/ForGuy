@@ -22,7 +22,7 @@
         <div v-for="point in setupGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -34,7 +34,7 @@
         <div v-for="point in createGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -46,7 +46,7 @@
         <div v-for="point in setupSecondGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -58,7 +58,7 @@
         <div v-for="point in createSecondGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
                 </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -77,7 +77,7 @@
 
         <div v-for="tip in generalTips" :key="tip.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ tip.id }}</span><span v-html="createHyperLink(tip.instruction)"></span></p>
-            <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="tip.LongCode"><CodeBlock :codeInfo="tip.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>  
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -96,7 +96,7 @@
 
         <div v-for="point in createFork" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -108,7 +108,7 @@
 
         <div v-for="point in resetBranchSteps" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
-            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+            <span v-if="point.LongCode"><CodeBlock :codeInfo="point.LongCode" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
@@ -164,7 +164,7 @@ import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/GitHub.json';
 import CmdTable from "../../components/CommandTable.vue";
 import { createHyperLink } from "../../utils/Markdown.vue";
-import CodeBlock from '../../components/Code/CodeBlock.vue';
+import CodeBlock from '../../components/Code/LongCodeBlock.vue';
 
 
 const jsonData = ref(AllData);
