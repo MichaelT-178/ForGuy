@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download it [here](https://gluonhq.com/products/javafx/).",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -113,7 +113,7 @@
         {
             "id": 25,
             "instruction": "Don't close eclipse, but open your terminal. We need to find a path. Paste the following command in your terminal and press \"tab\" to complete it. Press enter/return when done.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -124,18 +124,18 @@
         {
             "id": 26,
             "instruction": "Now change into the \"lib\" directory. Then print and copy the current path. It will automatically be copied to your clipboard.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd lib\n  pwd | tee >(pbcopy)",
+                "FormatCode": "cd lib\npwd | tee >(pbcopy)",
                 "CopyCode": "cd lib\npwd | tee >(pbcopy)"
             }
         },
         {
             "id": 27,
             "instruction": "Replace the \"path-to-your-sdk\" in the following statement with what you just copied to your clipboard using the pbcopy command. ",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Path",
@@ -158,11 +158,11 @@
         {
             "id": 31,
             "instruction": "In the \"Main.java\" file, delete it's contents and paste the following code.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "FormatCode": "package application;\n\n  import javafx.application.Application;\n\n  import javafx.fxml.FXMLLoader;\n  import javafx.scene.Parent;\n  import javafx.scene.Scene;\n  import javafx.stage.Stage;\n\n  import java.net.URL;\n\n  /**\n   * @author Elijah Dembe\n   * @date 4/25/2024\n   * @section CSC 331-002\n   * @purpose Sets up and launches the Counter application\n   */\n  public class Main extends Application {\n\n      /**\n       * Sets up the stage for the Counter app.\n       * @param stage The stage (window) of the application\n       */\n      @Override\n      public void start(Stage stage) throws Exception {\n\t  URL page = getClass().getResource(\"Counter.fxml\");\n\n\t  Parent root = FXMLLoader.load(page);\n\t  Scene scene = new Scene(root);\n\t  stage.setTitle(\"Counter\");\n\t  stage.setScene(scene);\n\t  stage.show();\n      }\n\n      /**\n       * Launches the Application\n       * @param args Unused command line arguments\n       */\n      public static void main(String[] args) {\n\t  launch(args);\n      }\n  }",
+                "FormatCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\nimport java.net.URL;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n    /**\n     * Sets up the stage for the Counter app.\n     * @param stage The stage (window) of the application\n     */\n    @Override\n    public void start(Stage stage) throws Exception {\n\tURL page = getClass().getResource(\"Counter.fxml\");\n\n\tParent root = FXMLLoader.load(page);\n\tScene scene = new Scene(root);\n\tstage.setTitle(\"Counter\");\n\tstage.setScene(scene);\n\tstage.show();\n    }\n\n    /**\n     * Launches the Application\n     * @param args Unused command line arguments\n     */\n    public static void main(String[] args) {\n\tlaunch(args);\n    }\n}",
                 "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
             }
         },
@@ -173,22 +173,22 @@
         {
             "id": 33,
             "instruction": "Paste the following fxml code into the \"Counter.fxml\" file. You would typically make the fxml file using SceneBuilder in CSC 331. You can download SceneBuilder [here](https://gluonhq.com/products/scene-builder/).",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
-                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n  <?import javafx.geometry.Insets?>\n  <?import javafx.scene.control.*?>\n  <?import javafx.scene.layout.*?>\n\n  <VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" \n\txmlns=\"http://javafx.com/javafx/8.0.171\" \n\txmlns:fx=\"http://javafx.com/fxml/1\" \n\tfx:controller=\"application.ExampleController\">\n\n    <Label fx:id=\"numberLabel\" text=\"0\" \n           style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n       <VBox.margin>\n\t  <Insets bottom=\"20\"/>\n       </VBox.margin>\n    </Button>\n  </VBox>\n",
+                "FormatCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n    <Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n    <Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n    <Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t<VBox.margin>\n\t    <Insets bottom=\"20\"/>\n\t</VBox.margin>\n    </Button>\n</VBox>",
                 "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
             }
         },
         {
             "id": 34,
             "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "FormatCode": "package application;\n\n  import javafx.fxml.FXML;\n  import javafx.scene.control.Label;\n\n  public class ExampleController {\n\n      @FXML\n      private Label numberLabel;\n\n      private int number = 0;\n\n      @FXML\n      private void handleIncrement() {\n\t  number++;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n\n      @FXML\n      private void handleDecrement() {\n\t  number--;\n\t  numberLabel.setText(String.valueOf(number));\n      }\n  }\n",
+                "FormatCode": "package application;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n    @FXML\n    private Label numberLabel;\n\n    private int number = 0;\n\n    @FXML\n    private void handleIncrement() {\n\tnumber++;\n\tnumberLabel.setText(String.valueOf(number));\n    }\n\n    @FXML\n    private void handleDecrement() {\n\tnumber--;\n\tnumberLabel.setText(String.valueOf(number));\n    }\n}\n",
                 "CopyCode": "package application;\n\nimport javafx.fxml.FXML;\nimport javafx.scene.control.Label;\n\npublic class ExampleController {\n\n\t@FXML\n\tprivate Label numberLabel;\n\n\tprivate int number = 0;\n\n\t@FXML\n\tprivate void handleIncrement() {\n\t\tnumber++;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n\n\t@FXML\n\tprivate void handleDecrement() {\n\t\tnumber--;\n\t\tnumberLabel.setText(String.valueOf(number));\n\t}\n}"
             }
 

@@ -44,12 +44,12 @@
                 {
                     "id": 9,
                     "instruction": "You'll be taken \"Edit app registration\" screen. Fill in all the fields. App name should be \"GetYoutubePlaylist\". The support email should just be your regular gmail address. Developer contact information email address should also just be your regular gmail address. You can leave the other fields blank. When you're done press \"Save and continue\" at the bottom.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
                         "DisplayLang": "Values",
-                        "FormatCode": "App name: GetYoutubePlaylist\n  User support email: your_gmail_address\n  Email addresses: your_gmail_address",
+                        "FormatCode": "App name: GetYoutubePlaylist\nUser support email: your_gmail_address\nEmail addresses: your_gmail_address",
                         "CopyCode": "App name: GetYoutubePlaylist\nUser support email: your_gmail_address\nEmail addresses: your_gmail_address"
                     }
                 },
@@ -102,7 +102,7 @@
                 {
                     "id": 3,
                     "instruction": "You should be taken to a link that looks like the following. Everything after your \"channel/\" is your channel id. Copy and record it for later use.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -124,41 +124,41 @@
                 {
                     "id": 1,
                     "instruction": "Now we'll start creating our script. First, go to your terminal and run the following command to download the necessary libraries.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install google-api-python-client\n  pip3 install google-auth\n  pip3 install google-auth-oauthlib\n  pip3 install google-auth-httplib2\n  pip3 install python-dotenv\n  pip3 install termcolor",
+                        "FormatCode": "pip3 install google-api-python-client\npip3 install google-auth\npip3 install google-auth-oauthlib\npip3 install google-auth-httplib2\npip3 install python-dotenv\npip3 install termcolor",
                         "CopyCode": "pip3 install google-api-python-client\npip3 install google-auth\npip3 install google-auth-oauthlib\npip3 install google-auth-httplib2\npip3 install python-dotenv\npip3 install termcolor"
                     }
                 },
                 {
                     "id": 2,
                     "instruction": "Make your folder and files using the following commands. If the \"mv\" command isn't working check the name of your client_secret json file in your downloads. Change the name to \"client_secret.json\" if it isn't already.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "mkdir GetYoutubePlaylist\n  mv Downloads/client_secret.json GetYoutubePlaylist\n  cd GetYoutubePlaylist\n  touch script.py\n  touch .env",
+                        "FormatCode": "mkdir GetYoutubePlaylist\nmv Downloads/client_secret.json GetYoutubePlaylist\ncd GetYoutubePlaylist\ntouch script.py\ntouch .env",
                         "CopyCode": "mkdir GetYoutubePlaylist\nmv Downloads/client_secret.json GetYoutubePlaylist\ncd GetYoutubePlaylist\ntouch script.py\ntouch .env"
                     }
                 },
                 {
                     "id": 3,
                     "instruction": "Open your folder in VSCode. In the \".env\" file paste the following code. Replace \"your_youtube_api_key\" with your actual key that you copied and recorded in step 7. Replace \"your_channel_id\" with the value you copied in step 3.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "fxml",
                         "DisplayLang": "Env",
-                        "FormatCode": "YOUTUBE_API_KEY=your_youtube_api_key\n  CHANNEL_ID=your_channel_id",
+                        "FormatCode": "YOUTUBE_API_KEY=your_youtube_api_key\nCHANNEL_ID=your_channel_id",
                         "CopyCode": "YOUTUBE_API_KEY=your_youtube_api_key\nCHANNEL_ID=your_channel_id"
                     }
                 },
                 {
                     "id": 4,
                     "instruction": "Paste the following code in the \"script.py\" file.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
@@ -169,11 +169,11 @@
                 {
                     "id": 5,
                     "instruction": "Open a new terminal and run your script.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd GetYoutubePlaylist\n  python3 script.py",
+                        "FormatCode": "cd GetYoutubePlaylist\npython3 script.py",
                         "CopyCode": "cd GetYoutubePlaylist\npython3 script.py"
                     }
                 },

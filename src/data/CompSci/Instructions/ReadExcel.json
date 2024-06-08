@@ -14,18 +14,18 @@
         {
             "id": 2,
             "instruction": "First off we're going to create our project folder and files.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir ExcelExample;\n  cd ExcelExample;\n  touch data.csv;\n  touch convert.py;\n  touch read_excel.py",
+                "FormatCode": "mkdir ExcelExample;\ncd ExcelExample;\ntouch data.csv;\ntouch convert.py;\ntouch read_excel.py",
                 "CopyCode": "mkdir ExcelExample;\ncd ExcelExample;\ntouch data.csv;\ntouch convert.py;\ntouch read_excel.py"
             }
         },
         {
             "id": 3,
             "instruction": "Install the following three libraries in your project.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -89,7 +89,7 @@
         {
             "id": 10,
             "instruction": "Run your read_excel.py file.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
