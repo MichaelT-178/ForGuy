@@ -15,8 +15,8 @@
         <h1 class="header-three">{{ text.header3 }}</h1>
         <p class="description-three">{{ text.desc3 }}</p>
 
-        <div v-for="code in codeSyntax" :key="code.Name" class="code-blocks">
-            <CodeBlock :codeInfo="code"></CodeBlock>
+        <div v-for="LongCode in codeSyntax" :key="LongCode.Name" class="code-blocks">
+            <CodeBlock :codeInfo="LongCode"></CodeBlock>
         </div>
 
         <p class="scroll-up-btn" @click="scrollToTop">{{ text.scrollToTop }}</p>
@@ -35,7 +35,7 @@ const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
 
 const csStuff = jsonData.value["CsStuff"];
-const codeSyntax = jsonData.value["Code"];
+const codeSyntax = jsonData.value["LongCode"];
 
 const scrollToTop = () => {
   window.scrollTo({

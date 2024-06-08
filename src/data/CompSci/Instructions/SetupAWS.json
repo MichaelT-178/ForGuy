@@ -38,7 +38,7 @@
         {
             "id": 8,
             "instruction": "Now open your terminal and run the following command to download the installer.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -49,7 +49,7 @@
         {
             "id": 9,
             "instruction": "Now install the package. When prompted for a password type the password you use to sign on to your computer.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -60,7 +60,7 @@
         {
             "id": 10,
             "instruction": "Confirm it's correctly installed by running the following command. This might take a second to output info.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -179,7 +179,7 @@
         {
             "id": 38,
             "instruction": "Now open your terminal and type the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -194,7 +194,7 @@
         {
             "id": 40,
             "instruction": "Run the following command to open your bash file.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -205,7 +205,7 @@
         {
             "id": 41,
             "instruction": "Paste the following line in the bash_profile \"export PATH=~/.local/bin:$PATH\". To exit do \"control + o\". Then \"return\". Then \"control + x\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -217,7 +217,7 @@
         {
             "id": 42,
             "instruction": "Run the following command",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

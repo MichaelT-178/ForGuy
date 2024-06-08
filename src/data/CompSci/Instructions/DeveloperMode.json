@@ -18,12 +18,12 @@
         {
             "id": 3,
             "instruction": "To enable \"Developer mode\" on your iphone do the following sequence.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Sequence",
-                "FormatCode": "Settings > Privacy & Security > Scroll to the bottom > Developer Mode ->\n  Toggle On",
+                "FormatCode": "Settings > Privacy & Security > Scroll to the bottom > Developer Mode ->\nToggle On",
                 "CopyCode": "Settings > Privacy & Security > Scroll to the bottom > Developer Mode -> Toggle On"
             }
         },
@@ -34,7 +34,7 @@
         {
             "id": 5,
             "instruction": "If you get the error \"Untrusted Developer, Your device management settings does not allow using an app from…\" when the app is loaded on your phone, do the following.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

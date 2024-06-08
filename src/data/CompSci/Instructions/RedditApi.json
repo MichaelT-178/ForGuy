@@ -26,7 +26,7 @@
         {
             "id": 5,
             "instruction": "In the \"redirect uri\" field paste the following link. Then select \"I'm not a robot\" and press \"create app\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -42,7 +42,7 @@
         {
             "id": 7,
             "instruction": "Now go to your terminal and run the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -53,11 +53,11 @@
         {
             "id": 8,
             "instruction": "Setup your folder for your script.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir reddit_api_script;\n  cd reddit_api_script;\n  touch script.py",
+                "FormatCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py",
                 "CopyCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py"
             }
         },
@@ -75,7 +75,7 @@
         {
             "id": 10,
             "instruction": "Run your script to test it out. Note every time you run your script you'll have to update the 2FA-code.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
