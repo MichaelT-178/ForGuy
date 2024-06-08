@@ -20,14 +20,10 @@
         },
         {
             "id": 2,
-            "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
+            "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en). Simply click the green \"Download Node.js (LTS)\" button, then follow the installation prompts once it's downloaded."
         },
         {
             "id": 3,
-            "instruction": "Simply click the green \"Download Node.js (LTS)\" button, then follow the installation prompts once it's downloaded."
-        },
-        {
-            "id": 4,
             "instruction": "You should now have Node.js and npm installed on your computer. Run the following commands in your terminal to make sure they're installed correctly. If they output a version number, you're good.",
             "Code": {
                 "Name": "",
