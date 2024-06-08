@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "First open your terminal and run the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "instruction": "Create a folder for your server.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -36,7 +36,7 @@
         {
             "id": 4,
             "instruction": "Change into your \"server\" directory.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -47,11 +47,11 @@
         {
             "id": 5,
             "instruction": "Create the following files in your \"server\" folder.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "touch server.py\n  touch database.py\n  touch models.py\n  touch handler.py",
+                "FormatCode": "touch server.py\ntouch database.py\ntouch models.py\ntouch handler.py",
                 "CopyCode": "touch server.py\ntouch database.py\ntouch models.py\ntouch handler.py"
             }
         },
@@ -102,11 +102,11 @@
         {
             "id": 10,
             "instruction": "Now we're going to create an html file to interact with our server.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd server\n  touch index.html",
+                "FormatCode": "cd server\ntouch index.html",
                 "CopyCode": "cd server\ntouch index.html"
             }
         },
@@ -124,7 +124,7 @@
         {
             "id": 12,
             "instruction": "Run your server using the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -135,7 +135,7 @@
         {
             "id": 13,
             "instruction": "Open the port in your browser. You should see webpage titled \"Item Manager\" that you can use to interact with your backend.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -151,7 +151,7 @@
         {
             "id": 15,
             "instruction": "If you rerun your server you might run into an error that ends with the following line. If you have another terminal running the server, close it. If that doesn't work, try steps 16-18.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -163,7 +163,7 @@
         {
             "id": 16,
             "instruction": "If you get that error you can it fix by running the following command. I found this solution [here](https://stackoverflow.com/a/19071568).",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -174,7 +174,7 @@
         {
             "id": 17,
             "instruction": "That command should output something like the following.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -186,7 +186,7 @@
         {
             "id": 18,
             "instruction": "The second number is the process number; stop the server by sending it a signal. Replace \"81651\" with your actual process number.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
