@@ -44,7 +44,7 @@
                 {
                     "id": 9,
                     "instruction": "You'll be taken \"Edit app registration\" screen. Fill in all the fields. App name should be \"GetYoutubePlaylist\". The support email should just be your regular gmail address. Developer contact information email address should also just be your regular gmail address. You can leave the other fields blank. When you're done press \"Save and continue\" at the bottom.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -102,7 +102,7 @@
                 {
                     "id": 3,
                     "instruction": "You should be taken to a link that looks like the following. Everything after your \"channel/\" is your channel id. Copy and record it for later use.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -124,7 +124,7 @@
                 {
                     "id": 1,
                     "instruction": "Now we'll start creating our script. First, go to your terminal and run the following command to download the necessary libraries.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -135,7 +135,7 @@
                 {
                     "id": 2,
                     "instruction": "Make your folder and files using the following commands. If the \"mv\" command isn't working check the name of your client_secret json file in your downloads. Change the name to \"client_secret.json\" if it isn't already.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -146,7 +146,7 @@
                 {
                     "id": 3,
                     "instruction": "Open your folder in VSCode. In the \".env\" file paste the following code. Replace \"your_youtube_api_key\" with your actual key that you copied and recorded in step 7. Replace \"your_channel_id\" with the value you copied in step 3.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "fxml",
@@ -169,7 +169,7 @@
                 {
                     "id": 5,
                     "instruction": "Open a new terminal and run your script.",
-                    "LongCode": {
+                    "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",

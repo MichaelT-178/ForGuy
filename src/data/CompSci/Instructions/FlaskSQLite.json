@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions if you haven't done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"vue-sqlite-frontend\" and will be created in your top-most directory.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "instruction": "Open a new terminal and create a directory for your Flask api using the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -32,7 +32,7 @@
         {
             "id": 3,
             "instruction": "Change into the directory",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -43,7 +43,7 @@
         {
             "id": 4,
             "instruction": "Install the following package to create a virtual environment.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "instruction": "Create the virtual environment folder.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "instruction": "Activate the virtual environment folder. Press \"command + k\" to clear your terminal after you're done.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -76,7 +76,7 @@
         {
             "id": 7,
             "instruction": "While you're virtual environment is still activated, install the following packages.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "instruction": "Temporarily deactivate the virtual environment once the libraries are installed.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -98,7 +98,7 @@
         {
             "id": 9,
             "instruction": "Create the following files in your folder.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -109,7 +109,7 @@
         {
             "id": 10,
             "instruction": "Paste the following code in the \"app.py\" file in your \"flask_and_sqlite\" folder.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -120,7 +120,7 @@
         {
             "id": 11,
             "instruction": "Paste the following code in the \"config.py\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -131,7 +131,7 @@
         {
             "id": 12,
             "instruction": "Paste the following code in the \"db.py\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -142,7 +142,7 @@
         {
             "id": 13,
             "instruction": "Paste the following code in \"models.py\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -153,7 +153,7 @@
         {
             "id": 14,
             "instruction": "Paste the following code in the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -164,7 +164,7 @@
         {
             "id": 15,
             "instruction": "Paste the following code in the \".env\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
@@ -176,7 +176,7 @@
         {
             "id": 16,
             "instruction": "Now open a new terminal and change into your \"vue-sqlite-frontend\" folder that you created in step 1. Install axios so you can so you can make HTTP requests to your REST Api.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -187,7 +187,7 @@
         {
             "id": 17,
             "instruction": "In the src folder create an axios instance file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -198,7 +198,7 @@
         {
             "id": 18,
             "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file in the \"src\" folder.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
@@ -209,7 +209,7 @@
         {
             "id": 19,
             "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files content and paste the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
@@ -221,7 +221,7 @@
         {
             "id": 20,
             "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -232,7 +232,7 @@
         {
             "id": 21,
             "instruction": "In your second terminal run the following commands. Open the link to see your frontend.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -247,7 +247,7 @@
         {
             "id": 23,
             "instruction": "You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 23-24.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -259,7 +259,7 @@
         {
             "id": 24,
             "instruction": "In your \"app.py\" file paste the following code. Make sure the HTTP links are the same ones being used by your computer. Try this code out and see if it works. Make sure to rerun your backend and frontend code after you make changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",

@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Go to this [link](https://filezilla-project.org/download.php?platform=osx) to download FileZilla. Make sure you download the correct version for your operating system. You can check your architecture by running the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,7 +25,7 @@
         {
             "id": 2,
             "instruction": "In the top bar where it has the input fields put the following values. Just the values not the field labels. Note these values might've changed. Press the blue \"QuickConnect\" button when you finish.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -45,7 +45,7 @@
         {
             "id": 5,
             "instruction": "Use this link to see the website after you're done. Note: Replace “mst5084” with your UNCW username and keep the \"~\" character. ",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

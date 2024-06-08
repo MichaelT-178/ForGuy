@@ -25,7 +25,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "java --version\n  brew --version\n  mvn --version\n  ls /Applications | grep \"Visual Studio Code\"",
+                "FormatCode": "java --version\nbrew --version\nmvn --version\nls /Applications | grep \"Visual Studio Code\"",
                 "CopyCode": "java --version\nbrew --version\nmvn --version\nls /Applications | grep \"Visual Studio Code\""
             }
         },
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "instruction": "In your nano file paste the two following lines. ",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -85,7 +85,7 @@
         {
             "id": 9,
             "instruction": "If you don't already have homebrew installed, run the following commands.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -100,7 +100,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "brew install maven\n  mvn --version",
+                "FormatCode": "brew install maven\nmvn --version",
                 "CopyCode": "brew install maven\nmvn --version"
             }
         },
@@ -120,7 +120,7 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Instructions",
-                "FormatCode": "Steps\n   1. command + shift + p (Open command pallette)\n   2. Search and press on \"Welcome: Open Walkthrough...\"\n   3. Then search/press on \"Getting Started with Spring Boot in VS Code\"\n   4. You should be taken to a new tab after that.",
+                "FormatCode": "Steps\n 1. command + shift + p (Open command pallette)\n 2. Search and press on \"Welcome: Open Walkthrough...\"\n 3. Then search/press on \"Getting Started with Spring Boot in VS Code\"\n 4. You should be taken to a new tab after that.",
                 "CopyCode": "Steps\n1. command + shift + p (Open command pallette)\n2. Search and press on \"Welcome: Open Walkthrough...\"\n3. Then search and press on \"Getting Started with Spring Boot in VS Code\"\n4. You should be taken to a new tab after that."
             }
         },
@@ -136,7 +136,7 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Command Pallette Values",
-                "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\n  Project Language: Java\n  Group Id: com.springbackend\n  Artifact Id: demo\n  Packaging Type: Jar\n  Java Version: 17\n  Dependendices: Spring Web and Lombok (Search seperately)\n\n  Press Enter/Return\n  Press \"Generate into this folder\"\n  Click \"Open\"\n  Say \"Yes, I trust the authors\" if prompted",
+                "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted",
                 "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
             }
         },
@@ -154,7 +154,7 @@
         {
             "id": 17,
             "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -165,7 +165,7 @@
         {
             "id": 18,
             "instruction": "Now open your \"spring-boot-sqlite\" file in VSCode if it's not already open. Go to src -> main -> java -> com -> springbackend -> demo -> controllers and then open the \"UserController.java\" file. Paste in the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
@@ -176,7 +176,7 @@
         {
             "id": 19,
             "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> models and then open the \"User.java\" file. Paste in the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
@@ -187,7 +187,7 @@
         {
             "id": 20,
             "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> repositories and then open the \"UserRepository.java\" file. Paste in the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
@@ -198,7 +198,7 @@
         {
             "id": 21,
             "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> services and then open the \"UserService.java\" file. Paste in the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
@@ -213,7 +213,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd spring-boot-sqlite\n  mvn spring-boot:run",
+                "FormatCode": "cd spring-boot-sqlite\nmvn spring-boot:run",
                 "CopyCode": "cd spring-boot-sqlite\nmvn spring-boot:run"
             }
         },
@@ -224,14 +224,14 @@
                 "Name": "",
                 "Description": "",
                 "Language": "",
-                "FormatCode": "cd ~\n  cd spring-boot-sqlite\n  touch package.json\n  touch start.sh\n  mvn dependency:copy -Dartifact=org.xerial:sqlite-jdbc:3.39.3.0",
+                "FormatCode": "cd ~\ncd spring-boot-sqlite\ntouch package.json\ntouch start.sh\nmvn dependency:copy -Dartifact=org.xerial:sqlite-jdbc:3.39.3.0",
                 "CopyCode": "cd ~\ncd spring-boot-sqlite\ntouch package.json\ntouch start.sh\nmvn dependency:copy -Dartifact=org.xerial:sqlite-jdbc:3.39.3.0"
             }
         },
         {
             "id": 24,
             "instruction": "Go back to your folder in VSCode, and then press \"command + p\". Search for and press on \"applications.properties\". Paste the following code in the file. Do NOT delete the code that's already in it.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -247,14 +247,14 @@
                 "Name": "",
                 "Description": "",
                 "Language": "sh",
-                "FormatCode": "#!/bin/sh\n  YELLOW='\\033[0;33m'\n  BLUE='\\033[0;34m'\n  NC='\\033[0m' # No Color\n\n  stop_spring_boot() {\n    echo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n    kill \"$SPRING_BOOT_PID\"\n  }\n\n  trap stop_spring_boot INT TERM\n\n  mvn --quiet spring-boot:run &\n  SPRING_BOOT_PID=$!\n\n  sleep 0.1\n\n  echo \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\n  wait \"$SPRING_BOOT_PID\"\n",
+                "FormatCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\n  NC='\\033[0m' # No Color\n\nstop_spring_boot() {\n  echo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n  kill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n",
                 "CopyCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\nstop_spring_boot() {\n\techo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n\tkill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n"
             }
         },
         {
             "id": 26,
             "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
@@ -269,7 +269,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd hw\n  chmod +x start.sh",
+                "FormatCode": "cd hw\nchmod +x start.sh",
                 "CopyCode": "cd hw\nchmod +x start.sh"
             }
         },
@@ -291,7 +291,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "lsof -i :8080\n  kill -9 <PID>",
+                "FormatCode": "lsof -i :8080\nkill -9 <PID>",
                 "CopyCode": "lsof -i :8080\nkill -9 <PID>"
             }
         }

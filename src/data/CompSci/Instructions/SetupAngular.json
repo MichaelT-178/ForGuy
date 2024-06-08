@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup an Angular Project",
+            "desc": "How to setup an Angular project that uses Vite",
+            "ref": "angular"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "Make sure you have node and npm installed by running the following commands. If it's installed it should output the version.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "node -v",
+                "CopyCode": "node -v" 
+            }
+        }
+    ]
+}
