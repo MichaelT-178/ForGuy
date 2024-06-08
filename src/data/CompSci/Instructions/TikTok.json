@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Clone my forked tiktok-downloader repository using the following command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,18 +21,18 @@
         {
             "id": 2,
             "instruction": "Change into the tiktok-downloader directory and run the following commands for setup.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd tiktok-downloader\n  mkdir downloads\n  npm i\n  cd~",
+                "FormatCode": "cd tiktok-downloader\nmkdir downloads\nnpm i\ncd~",
                 "CopyCode": "cd tiktok-downloader\nmkdir downloads\nnpm i\ncd~"
             }
         },
         {
             "id": 3,
             "instruction": "Install the \"termcolor\" package.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -43,11 +43,11 @@
         {
             "id": 4,
             "instruction": "Setup the folders for my CLI tool",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir tiktoks\n  mkdir Modern-Python-Files\n  cd Modern-Python-Files\n  touch Tiktok_Downloader.py\n",
+                "FormatCode": "mkdir tiktoks\nmkdir Modern-Python-Files\ncd Modern-Python-Files\ntouch Tiktok_Downloader.py\n",
                 "CopyCode": "mkdir tiktoks\nmkdir Modern-Python-Files\ncd Modern-Python-Files\ntouch Tiktok_Downloader.py\n"
             }
         },
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "instruction": "When you're done with the setup change back into your top-most directory.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -76,18 +76,18 @@
         {
             "id": 7,
             "instruction": "Run my CLI tool using the following commands. Have the TikTok link copied to clipboard and follow the prompts.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd Modern-Python-Files\n  python3 Tiktok_Downloader.py",
+                "FormatCode": "cd Modern-Python-Files\npython3 Tiktok_Downloader.py",
                 "CopyCode": "cd Modern-Python-Files\npython3 Tiktok_Downloader.py"
             }
         },
         {
             "id": 8,
             "instruction": "After you're done go to the \"tiktoks\" folder you created earlier to see your downloaded tiktoks.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

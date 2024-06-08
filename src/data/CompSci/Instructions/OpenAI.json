@@ -38,12 +38,12 @@
         {
             "id": 8,
             "instruction": "In the \"Create new secret key\" dialog box input the following values. Then click \"Create secret key\".",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Values",
-                "FormatCode": "Owned by: You\n  Name: My Test Key\n  Project: Default Project\n  Permissions: All",
+                "FormatCode": "Owned by: You\nName: My Test Key\nProject: Default Project\nPermissions: All",
                 "CopyCode": "Owned by: You\nName: My Test Key\nProject: Default Project\nPermissions: All"
             }
         },
@@ -54,7 +54,7 @@
         {
             "id": 10,
             "instruction": "Now open your terminal and run the following command. It will install the libraries needed in this project.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -65,11 +65,11 @@
         {
             "id": 11,
             "instruction": "Now make the folder for your code.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mkdir ChatgptAPI\n  cd ChatgptAPI\n  touch app.py\n  touch config.py\n  touch script.py\n  touch routes.py\n  touch .env\n  mkdir templates;\n  cd templates;\n  touch index.html\n  cd ..",
+                "FormatCode": "mkdir ChatgptAPI\ncd ChatgptAPI\ntouch app.py\ntouch config.py\ntouch script.py\ntouch routes.py\ntouch .env\nmkdir templates;\ncd templates;\ntouch index.html\ncd ..",
                 "CopyCode": "mkdir ChatgptAPI\ncd ChatgptAPI\ntouch app.py\ntouch config.py\ntouch script.py\ntouch routes.py\ntouch .env\nmkdir templates;\ncd templates;\ntouch index.html\ncd .."
             }
         },
@@ -80,7 +80,7 @@
         {
             "id": 13,
             "instruction": "Open \".env\" and paste in the following code. Replace \"your_openai_api_key\" with the key you recorded in step 9.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
@@ -147,18 +147,18 @@
         {
             "id": 19,
             "instruction": "To run the front-end Flask app, open your terminal and run the following commands.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ChatgptAPI\n  python3 app.py",
+                "FormatCode": "cd ChatgptAPI\npython3 app.py",
                 "CopyCode": "cd ChatgptAPI\npython3 app.py"
             }
         },
         {
             "id": 21,
             "instruction": "Open the flask app using this link (or whatever link was output in the previous command).",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -170,11 +170,11 @@
         {
             "id": 22,
             "instruction": "To run the CLI tool to interact with ChatGPT, use the following commands.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ChatgptAPI\n  python3 script.py",
+                "FormatCode": "cd ChatgptAPI\npython3 script.py",
                 "CopyCode": "cd ChatgptAPI\npython3 script.py"
             }
         }

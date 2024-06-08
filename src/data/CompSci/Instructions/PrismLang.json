@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Now you should be in your forked repository. Click the green \"Code\" button and copy the https link. Then create a local clone of your repository using the \"git clone\" command.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,11 +25,11 @@
         {
             "id": 3,
             "instruction": "Open your prism library code. In the components folder add a file named \"prism-your-language.js\". For this example lets do custom yaml highlighting.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd prism\n  touch components/prism-customyaml.js",
+                "FormatCode": "cd prism\ntouch components/prism-customyaml.js",
                 "CopyCode": "cd prism\ntouch components/prism-customyaml.js"
             }
         },
@@ -47,7 +47,7 @@
         {
             "id": 5,
             "instruction": "Paste the following code in the \"components.js\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -59,33 +59,33 @@
         {
             "id": 6,
             "instruction": "Paste the following code in the \"components.json\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
-                "FormatCode": "\"customyaml\": {\n      \"title\": \"Custom YAML\",\n      \"owner\": \"YOUR-GITHUB-USERNAME\"\n  },",
+                "FormatCode": "\"customyaml\": {\n    \"title\": \"Custom YAML\",\n    \"owner\": \"YOUR-GITHUB-USERNAME\"\n},",
                 "CopyCode": "\"customyaml\": {\n\t\"title\": \"Custom YAML\",\n\t\"owner\": \"YOUR-GITHUB-USERNAME\"\n},"
             }
         },
         {
             "id": 6,
             "instruction": "Add your changes to your forked repository.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git add .\n  git commit -m \"Added custom yaml highlighting\"\n  git push",
+                "FormatCode": "git add .\ngit commit -m \"Added custom yaml highlighting\"\ngit push",
                 "CopyCode": "git add .\ngit commit -m \"Added custom yaml highlighting\"\ngit push"
             }
         },
         {
             "id": 7,
             "instruction": "Now run the following commands to update your frontend repository. Change the name \"your-frontend-code\" to your actual folder name. Give it like 20 seconds to update. NOTE: replace the \"&lthttps-link&gt\" to be your forked repositories https link that you copied in step 2. Do NOT include the angle brackets < >.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd your-frontend-code\n  rm -rf node_modules/prismjs\n  npm install prismjs@<https-link>\n\n  Example link (Don't copy)\n  npm install prismjs@https://github.com/MichaelT-178/prism.git",
+                "FormatCode": "cd your-frontend-code\nrm -rf node_modules/prismjs\nnpm install prismjs@<https-link>\n\nExample link (Don't copy)\nnpm install prismjs@https://github.com/MichaelT-178/prism.git",
                 "CopyCode": "cd your-frontend-code\nrm -rf node_modules/prismjs\nnpm install prismjs@<https-link>"
             }
         },
@@ -104,18 +104,18 @@
         {
             "id": 9,
             "instruction": "In your main file paste the following imports.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
-                "FormatCode": "import Prism from 'prismjs';\n  import 'prismjs/components/prism-customyaml';\n  import 'prismjs/themes/prism-coy.css';\n  import './custom.css';\n",
+                "FormatCode": "import Prism from 'prismjs';\nimport 'prismjs/components/prism-customyaml';\nimport 'prismjs/themes/prism-coy.css';\nimport './custom.css';\n",
                 "CopyCode": "import Prism from 'prismjs';\nimport 'prismjs/components/prism-customyaml';\nimport 'prismjs/themes/prism-coy.css';\nimport './custom.css';\n"
             }
         },
         {
             "id": 10,
             "instruction": "Run your frontend code to see the changes.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
