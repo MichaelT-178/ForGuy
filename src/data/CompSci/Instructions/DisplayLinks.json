@@ -33,6 +33,12 @@
                 },
                 {
                     "id": 4,
+                    "name": "How to Setup an Angular Project",
+                    "ref": "angular",
+                    "ScrollTo": "AngularLink"
+                },
+                {
+                    "id": 4,
                     "name": "Create a Project Templates Folder",
                     "ref": "templates",
                     "ScrollTo": "TemplatesLink"

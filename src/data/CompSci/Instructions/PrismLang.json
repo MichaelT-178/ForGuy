@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Now you should be in your forked repository. Click the green \"Code\" button and copy the https link. Then create a local clone of your repository using the \"git clone\" command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "instruction": "Open your prism library code. In the components folder add a file named \"prism-your-language.js\". For this example lets do custom yaml highlighting.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -40,14 +40,14 @@
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
-                "FormatCode": "Prism.languages.customyaml = {\n      \"yaml-red\": {\n\t  pattern: /.*:/,\n\t  lookbehind: true,\n\t  alias: 'red',\n\t  greedy: true\n      },\n      \"yaml-gray\": {\n\t  pattern: /[:\\-]/,\n\t  lookbehind: true,\n\t  alias: 'gray',\n\t  greedy: true\n      },\n      \"yaml-green\": {\n\t  pattern: /: (?!true|false\\\b)(.*)/,\n\t  lookbehind: true,\n\t  alias: 'green',\n\t  greedy: true\n      },\n      \"yaml-orange\": {\n\t  pattern: /: (true|false)/,\n\t  lookbehind: true,\n\t  alias: 'orange',\n\t  greedy: true\n      }\n  }",
+                "FormatCode": "Prism.languages.customyaml = {\n    \"yaml-red\": {\n\tpattern: /.*:/,\n\tlookbehind: true,\n\talias: 'red',\n\tgreedy: true\n    },\n    \"yaml-gray\": {\n\tpattern: /[:\\-]/,\n\tlookbehind: true,\n\talias: 'gray',\n\tgreedy: true\n    },\n    \"yaml-green\": {\n\tpattern: /: (?!true|false\\\b)(.*)/,\n\tlookbehind: true,\n\talias: 'green',\n\tgreedy: true\n    },\n    \"yaml-orange\": {\n\tpattern: /: (true|false)/,\n\tlookbehind: true,\n\talias: 'orange',\n\tgreedy: true\n    }\n}",
                 "CopyCode": "Prism.languages.customyaml = {\n\t\"yaml-red\": {\n\t\tpattern: /.*:/,\n\t\tlookbehind: true,\n\t\talias: 'red',\n\t\tgreedy: true\n\t},\n\t\"yaml-gray\": {\n\t\tpattern: /[:\\-]/,\n\t\tlookbehind: true,\n\t\talias: 'gray',\n\t\tgreedy: true\n\t},\n\t\"yaml-green\": {\n\t\tpattern: /: (?!true|false\\\b)(.*)/,\n\t\tlookbehind: true,\n\t\talias: 'green',\n\t\tgreedy: true\n\t},\n\t\"yaml-orange\": {\n\t\tpattern: /: (true|false)/,\n\t\tlookbehind: true,\n\t\talias: 'orange',\n\t\tgreedy: true\n\t}\n}"
             }
         },
         {
             "id": 5,
             "instruction": "Paste the following code in the \"components.js\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -59,7 +59,7 @@
         {
             "id": 6,
             "instruction": "Paste the following code in the \"components.json\" file. In the code below replace \"YOUR-GITHUB-USERNAME\" with your GitHub username.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
@@ -70,7 +70,7 @@
         {
             "id": 6,
             "instruction": "Add your changes to your forked repository.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -81,7 +81,7 @@
         {
             "id": 7,
             "instruction": "Now run the following commands to update your frontend repository. Change the name \"your-frontend-code\" to your actual folder name. Give it like 20 seconds to update. NOTE: replace the \"&lthttps-link&gt\" to be your forked repositories https link that you copied in step 2. Do NOT include the angle brackets < >.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -97,14 +97,14 @@
                 "Description": "",
                 "Language": "fxml",
                 "DisplayLang": "CSS",
-                "FormatCode": ".yaml-red {\n      color: #E06C75\n  }\n\n  .yaml-gray {\n      color: #ABB2BF\n  }\n\n  .yaml-green {\n      color: #98C379;\n  }\n\n  .yaml-orange {\n      color: #D19A66;\n  }",
+                "FormatCode": ".yaml-red {\n    color: #E06C75\n}\n\n.yaml-gray {\n    color: #ABB2BF\n}\n\n.yaml-green {\n    color: #98C379;\n}\n\n.yaml-orange {\n    color: #D19A66;\n}",
                 "CopyCode": ".yaml-red {\n\tcolor: #E06C75\n}\n\n.yaml-gray {\n\tcolor: #ABB2BF\n}\n\n.yaml-green {\n\tcolor: #98C379;\n}\n\n.yaml-orange {\n\tcolor: #D19A66;\n}"
             }
         },
         {
             "id": 9,
             "instruction": "In your main file paste the following imports.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
@@ -115,7 +115,7 @@
         {
             "id": 10,
             "instruction": "Run your frontend code to see the changes.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

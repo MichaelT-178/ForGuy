@@ -2,7 +2,7 @@
     "Info": [
         {
             "title": "How to Install Node.js",
-            "desc": "How to install Node.js before setting up your project.",
+            "desc": "How to install Node.js and npm to use in your projects.",
             "ref": "node"
         }
     ],
@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Check if you already have node installed by running the following command in your terminal. It should print the version if it's installed.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,6 +21,21 @@
         {
             "id": 2,
             "instruction": "If you don't already have Node.js installed, you can download it using this [link](https://nodejs.org/en)."
+        },
+        {
+            "id": 3,
+            "instruction": "Simply click the green \"Download Node.js (LTS)\" button, then follow the installation prompts once it's downloaded."
+        },
+        {
+            "id": 4,
+            "instruction": "You should now have Node.js and npm installed on your computer. Run the following commands in your terminal to make sure they're installed correctly. If they output a version number, you're good.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "node -v\nnpm -v",
+                "CopyCode": "node -v\nnpm -v"
+            }
         }
     ]
 }
