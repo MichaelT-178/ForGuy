@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Run the following command in your terminal to determine what chip you have. If it says \"x86_64\" you have an intel chip. If it says \"arm64\" you have an Apple chip.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -41,7 +41,7 @@
         {
             "id": 7,
             "instruction": "Go to your terminal and run the following command. It it outputs something like \"Docker version 26.0.0, build 2ae903e\" you should be good.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -52,7 +52,7 @@
         {
             "id": 8,
             "instruction": "You should be good after that! You can test it further by running the following command. This command will download a test image and run it in a container.",
-            "Code": {
+            "LongCode": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

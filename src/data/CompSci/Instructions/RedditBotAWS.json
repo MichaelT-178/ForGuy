@@ -16,7 +16,7 @@
                 {
                     "id": 2,
                     "instruction": "Create a new folder and name it \"reddit_bot\" using the following command",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -27,22 +27,22 @@
                 {
                     "id": 3,
                     "instruction": "Install the following library for your project.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install smtplib\n  pip3 install python-dotenv\n  pip3 install flask\n  pip3 install requests",
+                        "FormatCode": "pip3 install smtplib\npip3 install python-dotenv\npip3 install flask\npip3 install requests",
                         "CopyCode": "pip3 install smtplib\npip3 install python-dotenv\npip3 install flask\npip3 install requests"
                     }
                 },
                 {
                     "id": 4,
                     "instruction": "Change into your directory and create the following files.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd reddit_bot\n  touch reddit_bot.py\n  touch get_refresh_token.py\n  touch oauth_server.py\n  touch .env",
+                        "FormatCode": "cd reddit_bot\ntouch reddit_bot.py\ntouch get_refresh_token.py\ntouch oauth_server.py\ntouch .env",
                         "CopyCode": "cd reddit_bot\ntouch reddit_bot.py\ntouch get_refresh_token.py\ntouch oauth_server.py\ntouch .env"
                     }
                 },
@@ -105,12 +105,12 @@
                 {
                     "id": 2,
                     "instruction": "Open your \".env\" file and paste in the following code. Change all the credential placeholders to your actual credentials. Note if your Google App password has yellow highlighted spaces just delete them and replace them with regular spaces. Go [here](https://www.reddit.com/prefs/apps) to find your credentials. The CLIENT_ID is under \"Personal Use Script\". Do not change the value of \"REFRESH_TOKEN\" yet. We'll get that value later.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "fxml",
                         "DisplayLang": "Env",
-                        "FormatCode": "CLIENT_ID=your_client_id\n  CLIENT_SECRET=your_client_secret\n  USER_AGENT=script by u/your_reddit_username\n  SENDER_EMAIL=your_gmail_address\n  SENDER_PASSWORD=your_google_app_password\n  EMAIL_RECIPIENT=your_gmail_address\n  REFRESH_TOKEN=your_refresh_token",
+                        "FormatCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token",
                         "CopyCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token"
                     }
                 },
@@ -143,22 +143,22 @@
                 {
                     "id": 6,
                     "instruction": "Now open two terminals. In the first terminal run the two following commands to start the server.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd reddit_bot\n  python3 oauth_server.py",
+                        "FormatCode": "cd reddit_bot\npython3 oauth_server.py",
                         "CopyCode": "cd reddit_bot\npython3 oauth_server.py"
                     }
                 },
                 {
                     "id": 7,
                     "instruction": "In the second server run the following commands to execute your script. A webpage will be opened.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd reddit_bot\n  python3 get_refresh_token.py",
+                        "FormatCode": "cd reddit_bot\npython3 get_refresh_token.py",
                         "CopyCode": "cd reddit_bot\npython3 get_refresh_token.py"
                     }
                 },
@@ -173,7 +173,7 @@
                 {
                     "id": 10,
                     "instruction": "Close all your open terminals. Then, open your \".env\" file and replace \"your_refresh_token\" with the value you just copied. This will allow OAuth2 to work without having to use a new 2FA code every time your run your script.",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "fxml",
@@ -196,7 +196,7 @@
                 {
                     "id": 12,
                     "instruction": "Run the reddit bot using the following command. When someone posts on the subreddit it will be printed to the terminal. It might take a while until someone posts. Check your email to make the notification is being sent. Stop running the bot by pressing \"control + c\".",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
@@ -221,18 +221,18 @@
                 {
                     "id": 1,
                     "instruction": "Delete the setup files using the following commands",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "rm oauth_server.py\n  rm get_refresh_token.py",
+                        "FormatCode": "rm oauth_server.py\nrm get_refresh_token.py",
                         "CopyCode": "rm oauth_server.py\nrm get_refresh_token.py"
                     }
                 },
                 {
                     "id": 2,
                     "instruction": "",
-                    "Code": {
+                    "LongCode": {
                         "Name": "",
                         "Description": "",
                         "Language": "",
