@@ -14,7 +14,7 @@
         {
             "id": 2,
             "instruction": "Download JavaFX. Scroll down and select the one that says \"x64\" and \"SDK\" or run the following command to determine your architecture, then decide accordingly. Also make sure you select the right OS. You can download it [here](https://gluonhq.com/products/javafx/).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -113,7 +113,7 @@
         {
             "id": 25,
             "instruction": "Don't close eclipse, but open your terminal. We need to find a path. Paste the following command in your terminal and press \"tab\" to complete it. Press enter/return when done.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -124,7 +124,7 @@
         {
             "id": 26,
             "instruction": "Now change into the \"lib\" directory. Then print and copy the current path. It will automatically be copied to your clipboard.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -135,7 +135,7 @@
         {
             "id": 27,
             "instruction": "Replace the \"path-to-your-sdk\" in the following statement with what you just copied to your clipboard using the pbcopy command. ",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Path",
@@ -158,7 +158,7 @@
         {
             "id": 31,
             "instruction": "In the \"Main.java\" file, delete it's contents and paste the following code.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
@@ -173,7 +173,7 @@
         {
             "id": 33,
             "instruction": "Paste the following fxml code into the \"Counter.fxml\" file. You would typically make the fxml file using SceneBuilder in CSC 331. You can download SceneBuilder [here](https://gluonhq.com/products/scene-builder/).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
@@ -184,7 +184,7 @@
         {
             "id": 34,
             "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",

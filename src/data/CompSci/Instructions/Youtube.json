@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Check if you have Homebrew installed. If it outputs information about the version it should be good.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "instruction": "Install Homebrew using the following command if the last one said it wasn't installed. Skip this step if it's already installed.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -32,7 +32,7 @@
         {
             "id": 3,
             "instruction": "Upgrade Homebrew to make sure everything's up to date.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -43,7 +43,7 @@
         {
             "id": 4,
             "instruction": "Start installing yt-downloader by running the following command.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "instruction": "Finish installing yt-downloader with the following command",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "instruction": "Install the \"ffmpeg\" library via Homebrew.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -76,7 +76,7 @@
         {
             "id": 7,
             "instruction": "Install \"yt-dlp\" via homebrew.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "instruction": "Ensure that \"yt-dlp\" installed correctly.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -98,7 +98,7 @@
         {
             "id": 9,
             "instruction": "Upgrade the following brew packages.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -113,7 +113,7 @@
         {
             "id": 11,
             "instruction": "Install the following 3 Python libraries. You'll need these installed for the script.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -124,7 +124,7 @@
         {
             "id": 12,
             "instruction": "Create the following directories.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -135,7 +135,7 @@
         {
             "id": 13,
             "instruction": "Change into the directory and create new python file named \"yt_downloader.py\".",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -146,7 +146,7 @@
         {
             "id": 14,
             "instruction": "Past the following code into the \"\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
@@ -161,7 +161,7 @@
         {
             "id": 16,
             "instruction": "Now in your terminal use the following command to run the \"yt_downloader.py\" file.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -176,7 +176,7 @@
         {
             "id": 18,
             "instruction": "When you're done, use the following two commands to see your downloaded video.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",

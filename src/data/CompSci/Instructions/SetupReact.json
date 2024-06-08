@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "Make sure you have node installed by running the following command. If it's installed it should output the version.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -21,7 +21,7 @@
         {
             "id": 2,
             "instruction": "Install Vite.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -32,7 +32,7 @@
         {
             "id": 3,
             "instruction": "Create a React project using Vite. Note that the template at the is \"React\".",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -43,7 +43,7 @@
         {
             "id": 4,
             "instruction": "Change into your project directory.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "instruction": "Install dependencies.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "instruction": "Install Tailwind CSS. Note you can clear your terminal when you're by doing \"command + k\".",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -76,7 +76,7 @@
         {
             "id": 7,
             "instruction": "Install the React router.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "instruction": "Now open your repository in VSCode. You can use the \"code .\" command if you have it installed.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -102,14 +102,14 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
-                "FormatCode": "/** @type {import('tailwindcss').Config} */\n  export default {\n    content: [\n      \"./index.html\",\n      \"./src/**/*.{js,jsx,ts,tsx}\",\n    ],\n    theme: {\n      extend: {\n        fontFamily: {\n          sans: ['Arial', 'sans-serif']\n        }\n      }\n    },\n    plugins: [],\n  }",
+                "FormatCode": "/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{js,jsx,ts,tsx}\",\n  ],\n  theme: {\n    extend: {\n      fontFamily: {\n        sans: ['Arial', 'sans-serif']\n      }\n    }\n  },\n  plugins: [],\n}",
                 "CopyCode": "/** @type {import('tailwindcss').Config} */\nexport default {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{js,jsx,ts,tsx}\",\n  ],\n  theme: {\n    extend: {\n      fontFamily: {\n        sans: ['Arial', 'sans-serif']\n      }\n    }\n  },\n  plugins: [],\n}" 
             }
         },
         {
             "id": 10,
             "instruction": "Run the server locally just to make sure the project is running currently. The site should currently say \"Vite  + React\" if installed correctly. After confirming it's installed correctly, stop running the server and go back to your code. You can stop the server by doing \"control + c\".",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -120,7 +120,7 @@
         {
             "id": 11,
             "instruction": "Go to the \"src\" repository of your project and open the file called \"index.css\". Delete its current contents and paste the following code. Save the file when you're done (command + s).",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
@@ -132,7 +132,7 @@
         {
             "id": 12,
             "instruction": "THIS IS AN OPTIONAL STEP. If the \"@tailwind\" keyword is being underlined yellow with a message saying \"Unknown word\", paste the following JSON data into your VSCode Settings file. See this [link](https://flaviocopes.com/fix-unknown-at-rule-tailwind/) for additional details. If there's no error or if you don't mind the error, you can skip this step. It should work either way it will just be underlined..",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
@@ -143,7 +143,7 @@
         {
             "id": 13,
             "instruction": "Now remove unused assets. Press \"command + k\" to clear your terminal after you're done.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -154,7 +154,7 @@
         {
             "id": 14,
             "instruction": "Change into the src directory and make the components, styles, utils, views, and router folders. You can run \"ls\" at the end to confirm it worked.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -165,7 +165,7 @@
         {
             "id": 15,
             "instruction": "Create the following folders in the \"styles\" directory.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -176,7 +176,7 @@
         {
             "id": 16,
             "instruction": "Create the following files in the components and views directory.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -192,7 +192,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "CSS",
-                "FormatCode": ".button {\n      display: inline-block;\n      padding: 10px 20px;\n      color: white;\n      background-color: #007bff;\n      border: none;\n      border-radius: 4px;\n      text-align: center;\n      text-decoration: none;\n      font-size: 16px;\n  }\n\n  .button:hover {\n      background-color: #0056b3;\n  }\n",
+                "FormatCode": ".button {\n    display: inline-block;\n    padding: 10px 20px;\n    color: white;\n    background-color: #007bff;\n    border: none;\n    border-radius: 4px;\n    text-align: center;\n    text-decoration: none;\n    font-size: 16px;\n}\n\n.button:hover {\n    background-color: #0056b3;\n}\n",
                 "CopyCode": ".button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n" 
             }
         },
@@ -204,7 +204,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "CSS",
-                "FormatCode": ".title {\n      color: pink;\n      font-family: Arial, sans-serif;\n  }\n",
+                "FormatCode": ".title {\n    color: pink;\n    font-family: Arial, sans-serif;\n}\n",
                 "CopyCode": ".title {\n\tcolor: pink;\n\tfont-family: Arial, sans-serif;\n}\n" 
             }
         },
@@ -215,7 +215,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ..\n  touch components/RouterBtn.jsx\n  touch views/Home.jsx\n  touch views/SecondPage.jsx\n  touch router/index.jsx",
+                "FormatCode": "cd ..\ntouch components/RouterBtn.jsx\ntouch views/Home.jsx\ntouch views/SecondPage.jsx\ntouch router/index.jsx",
                 "CopyCode": "cd ..\ntouch components/RouterBtn.jsx\ntouch views/Home.jsx\ntouch views/SecondPage.jsx\ntouch router/index.jsx" 
             }
         },
@@ -227,7 +227,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "FormatCode": "import React from 'react'\n  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\n  import HomePage from '../views/Home'\n  import SecondPage from '../views/SecondPage'\n\n  export function AppRouter() {\n    return (\n      <Router>\n        <Routes>\n          <Route path=\"/\" element={<HomePage />} />\n          <Route path=\"/second-page\" element={<SecondPage />} />\n        </Routes>\n      </Router>\n    );\n  }" ,
+                "FormatCode": "import React from 'react'\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom'\nimport HomePage from '../views/Home'\nimport SecondPage from '../views/SecondPage'\n\nexport function AppRouter() {\n  return (\n    <Router>\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" ,
                 "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router>\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}" 
             }
         },
@@ -239,7 +239,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "FormatCode": "import React from 'react'\n  import { Link } from 'react-router-dom'\n  import '../styles/components/RouterBtn.css'\n\n  function RouterBtn({ path, buttonText }) {\n    return (\n      <Link to={path} className=\"button\">\n        {buttonText}\n      </Link>\n    );\n  }\n\n  export default RouterBtn;",
+                "FormatCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    <Link to={path} className=\"button\">\n      {buttonText}\n    </Link>\n  );\n}\n\nexport default RouterBtn;",
                 "CopyCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    <Link to={path} className=\"button\">\n      {buttonText}\n    </Link>\n  );\n}\n\nexport default RouterBtn;" 
             }
         },
@@ -251,7 +251,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "FormatCode": "import React from 'react'\n  import RouterBtn from '../components/RouterBtn'\n  import '../styles/views/Home.css'\n\n  function HomePage() {\n    return (\n      <div>\n        <p className=\"title\">HOME PAGE</p>\n        <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n      </div>\n    );\n  }\n\n  export default HomePage;",
+                "FormatCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    <div>\n      <p className=\"title\">HOME PAGE</p>\n      <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n    </div>\n  );\n}\n\nexport default HomePage;",
                 "CopyCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    <div>\n      <p className=\"title\">HOME PAGE</p>\n      <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n    </div>\n  );\n}\n\nexport default HomePage;"
             }
         },
@@ -263,7 +263,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "FormatCode": "import { React, useState } from 'react'\n  import RouterBtn from '../components/RouterBtn'\n\n  function SecondPage() {\n    const [count, setCount] = useState(0);\n\n    const incrementCount = () => {\n      setCount(count + 1);\n    };\n\n    return (\n      <div>\n        <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n        <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n        <div>\n          <button onClick={incrementCount}\n          className=\"mt-2 px-4 py-2 text-white bg-gray-500\">\n            Count {count}\n          </button>\n        </div>\n      </div>\n    );\n  }\n\n  export default SecondPage;\n",
+                "FormatCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n      <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n      <div>\n        <button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500\">\n          Count {count}\n        </button>\n      </div>\n    </div>\n  );\n}\n\nexport default SecondPage;\n",
                 "CopyCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n      <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n      <div>\n        <button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700\">\n          Count {count}\n        </button>\n      </div>\n    </div>\n  );\n}\n\nexport default SecondPage;\n"
             }
         },
@@ -275,7 +275,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "FormatCode": "import { AppRouter } from './router'\n  import './App.css'\n\n  function App() {\n    return (\n      <>\n        <p class=\"text-2xl\">TEST WEBSITE</p>\n        <AppRouter />\n      </>\n    );\n  }\n\n  export default App",
+                "FormatCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    <>\n      <p class=\"text-2xl\">TEST WEBSITE</p>\n      <AppRouter />\n    </>\n  );\n}\n\nexport default App",
                 "CopyCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    <>\n      <p class=\"text-2xl\">TEST WEBSITE</p>\n      <AppRouter />\n    </>\n  );\n}\n\nexport default App" 
             }
         },
@@ -287,7 +287,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "CSS",
-                "FormatCode": "#root {\n    max-width: 1280px;\n    margin: 0 auto;\n    padding: 2rem;\n    text-align: center;\n  }",
+                "FormatCode": "#root {\n  max-width: 1280px;\n  margin: 0 auto;\n  padding: 2rem;\n  text-align: center;\n}",
                 "CopyCode": "#root {\n\tmax-width: 1280px;\n\tmargin: 0 auto;\n\tpadding: 2rem;\n\ttext-align: center;\n}"
             }
         },

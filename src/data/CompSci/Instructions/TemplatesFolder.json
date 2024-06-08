@@ -10,7 +10,7 @@
         {
             "id": 1,
             "instruction": "You can skip steps 2-4 by downloading the &templates.zip&(https://github.com/MichaelT-178/TestWebsite/blob/main/templates.zip?raw=true) folder and then running the following commands in your terminal",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -29,7 +29,7 @@
         {
             "id": 4,
             "instruction": "Create a \"templates\" folder and then move your Vue and React projects into the folder using the following commands.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
@@ -40,7 +40,7 @@
         {
             "id": 5,
             "instruction": "In the future whenever you to make a copy of one of the templates use the following command. Replace \"react-project\" with whatever project template you want to use. Also replace the path with your actual new path.",
-            "LongCode": {
+            "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
