@@ -31,7 +31,7 @@
         },
         {
             "id": 3,
-            "instruction": "Create a React project using Vite. Note that the template at the is \"React\".",
+            "instruction": "Create a React project using Vite. Note that \"react-project\" will be the name of your project and you can change it to be whatever you want.",
             "Code": {
                 "Name": "",
                 "Description": "",
