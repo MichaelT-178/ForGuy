@@ -20,7 +20,7 @@
         },
         {
             "id": 2,
-            "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\".",
+            "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\". Note that \"vue-project\" will be the name of your project and you can change it to be whatever you want.",
             "Code": {
                 "Name": "",
                 "Description": "",
