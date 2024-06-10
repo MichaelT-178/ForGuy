@@ -161,7 +161,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "FormatCode": "<template>\n    <p class=\"title\">HOME PAGE</p>\n    <LinkBtn\n\t  :path=\"'/second-page'\"\n\t  :buttonText=\"'Go to 2nd page'\">\n    </LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n   color: red;\n   font-family: Arial, sans-serif;\n}\n\n</style>",
+                "FormatCode": "<template>\n    <p class=\"title\">HOME PAGE</p>\n    <LinkBtn\n\t:path=\"'/second-page'\"\n\t:buttonText=\"'Go to 2nd page'\">\n    </LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n   color: red;\n   font-family: Arial, sans-serif;\n}\n\n</style>",
                 "CopyCode": "<template>\n\t<p class=\"title\">HOME PAGE</p>\n\t<LinkBtn\n\t\t:path=\"'/second-page'\"\n\t\t:buttonText=\"'Go to 2nd page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
             }
         },
