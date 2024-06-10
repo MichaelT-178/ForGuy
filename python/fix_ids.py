@@ -2,11 +2,12 @@ import json
 
 
 file_path = "../src/data/SearchPages.json"
+file_path = "../src/data/CompSci/Instructions/SetupAngular.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
 
-    for i, item in enumerate(data):
+    for i, item in enumerate(data["Instructions"]):
         item["id"] = i + 1
 
     
