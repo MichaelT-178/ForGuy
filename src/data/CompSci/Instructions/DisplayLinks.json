@@ -38,7 +38,7 @@
                     "ScrollTo": "AngularLink"
                 },
                 {
-                    "id": 4,
+                    "id": 5,
                     "name": "Create a Project Templates Folder",
                     "ref": "templates",
                     "ScrollTo": "TemplatesLink"
