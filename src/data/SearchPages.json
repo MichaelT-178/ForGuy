@@ -308,8 +308,14 @@
     {
         "id": 52,
         "Emoji": "💬",
-        "MenuName": "How to Setup a OpenAI API Project",
+        "MenuName": "How to Setup an OpenAI API Project",
         "Link": "/CompSci/SetupProjects/openai-api"
+    },
+    {
+        "id": 56,
+        "Emoji": "📊",
+        "MenuName": "How to Setup a LinkedIn API Project",
+        "Link": "/CompSci/SetupProjects/linkedin-api"
     },
     {
         "id": 53,
