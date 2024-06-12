@@ -769,12 +769,26 @@ def get_openai_api():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Setup a OpenAI API Project 💬"
+		Title = "How to Setup an OpenAI API Project 💬"
 		Link = "/CompSci/SetupProjects/openai-api"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-      
+
+def get_linkedin_api():
+	with open("../src/data/CompSci/Instructions/Linkedin.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a LinkedIn API Project 📊"
+		Link = "/CompSci/SetupProjects/linkedin-api"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_reddit_bot_aws():
     with open("../src/data/CompSci/Instructions/RedditBotAWS.json", "r") as file:
         content = json.load(file)
@@ -1350,6 +1364,7 @@ googleapi = get_google_api()
 redditapi = get_reddit_api()
 spotifyapi = get_spotify_api()
 openai = get_openai_api()
+linkedin = get_linkedin_api()
 redditbotaws = get_reddit_bot_aws()
 
 swiftfirebase = get_swift_firebase()
@@ -1447,9 +1462,10 @@ all_data = [
     youtube,
 
     googleapi, 
-    redditapi,
     spotifyapi,
     openai,
+    linkedin,
+    redditapi,
     redditbotaws,
 
     swiftfirebase,

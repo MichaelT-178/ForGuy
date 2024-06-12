@@ -3,7 +3,7 @@ import json
 
 file_path = "../src/data/SearchPages.json"
 file_path = "../src/data/CompSci/Instructions/SetupAngular.json"
-file_path = "../src/data/CompSci/Instructions/SpringApp.json"
+file_path = "../src/data/CompSci/Instructions/Linkedin.json"
 
 with open(file_path, 'r') as file:
     data = json.load(file)
