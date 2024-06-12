@@ -1,7 +1,7 @@
 {
     "Info": [
         {
-            "title": "How to Setup a OpenAI API Project",
+            "title": "How to Setup an OpenAI API Project",
             "desc": "Explains how to setup and use OpenAI's API in your Vue app",
             "ref": "openai-api"
         }
