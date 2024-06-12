@@ -242,13 +242,13 @@
     {
         "id": 41,
         "Emoji": "🍃",
-        "MenuName": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-        "Link": "/CompSci/SetupProjects/react-sqlite"
+        "MenuName": "How to Make a simple REST Api using React, Spring Boot and H2",
+        "Link": "/CompSci/SetupProjects/react-h2"
     },
     {
         "id": 42,
         "Emoji": "🚀",
-        "MenuName": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+        "MenuName": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-spring"
     },
     {
