@@ -1,21 +1,21 @@
 {
     "Info": [
         {
-            "title": "How to Make a simple REST Api using React, Spring Boot and SQLite",
+            "title": "How to Make a simple REST Api using React, Spring Boot and H2",
             "desc": "Explains how to a Spring Boot RestAPI with a React frontend. Most of this information comes from this [video](https://youtu.be/L5QXRoTtPr4?si=xZyqBTONtKYb-QeE).",
-            "ref": "react-sqlite"
+            "ref": "react-h2"
         }
     ],
     "Instructions": [
         {
             "id": 1,
-            "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions if you haven't done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"react-sqlite-frontend\" and will be created in your top-most directory.",
+            "instruction": "BEFORE YOU DO ANY OF THIS, go to the &Create a Project Templates Folder&[TemplatesLink] link above and complete all the instructions if you haven't done so already. After you do that, run the following command in your terminal to create new vue project. It will be named \"react-h2-frontend\" and will be created in your top-most directory.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cp -R templates/react-project react-sqlite-frontend",
-                "CopyCode": "cp -R templates/react-project react-sqlite-frontend"
+                "FormatCode": "cp -R templates/react-project react-h2-frontend",
+                "CopyCode": "cp -R templates/react-project react-h2-frontend"
             }
         },
         {
@@ -142,13 +142,13 @@
         },
         {
             "id": 16,
-            "instruction": "Now open a new terminal and run the following command. It will rename your project to be \"spring-boot-sqlite\"",
+            "instruction": "Now open a new terminal and run the following command. It will rename your project to be \"spring-boot-h2\"",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "mv demo spring-boot-sqlite",
-                "CopyCode": "mv demo spring-boot-sqlite"
+                "FormatCode": "mv demo spring-boot-h2",
+                "CopyCode": "mv demo spring-boot-h2"
             }
         },
         {
@@ -158,8 +158,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd spring-boot-sqlite/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
-                "CopyCode": "cd spring-boot-sqlite/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
+                "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
+                "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
             }
         },
         {
@@ -180,8 +180,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd spring-boot-sqlite\nmvn spring-boot:run",
-                "CopyCode": "cd spring-boot-sqlite\nmvn spring-boot:run"
+                "FormatCode": "cd spring-boot-h2\nmvn spring-boot:run",
+                "CopyCode": "cd spring-boot-h2\nmvn spring-boot:run"
             }
         },
         {
@@ -191,8 +191,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd ~\ncd spring-boot-sqlite\ntouch package.json\ntouch start.sh",
-                "CopyCode": "cd ~\ncd spring-boot-sqlite\ntouch package.json\ntouch start.sh"
+                "FormatCode": "cd ~\ncd spring-boot-h2\ntouch package.json\ntouch start.sh",
+                "CopyCode": "cd ~\ncd spring-boot-h2\ntouch package.json\ntouch start.sh"
             }
         },
         {
@@ -225,8 +225,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
-                "FormatCode": "{\n    \"name\": \"spring-boot-sqlite\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Spring Boot API project\",\n    \"main\": \"index.js\",\n    \"scripts\": {\n\t\"start\": \"./start.sh\"\n    },\n    \"author\": \"Your Name\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n\n    }\n}",
-                "CopyCode": "{\n\t\"name\": \"spring-boot-sqlite\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"Spring Boot API project\",\n\t\"main\": \"index.js\",\n\t\"scripts\": {\n\t\t\"start\": \"./start.sh\"\n\t},\n\t\"author\": \"Your Name\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\n\t}\n}"
+                "FormatCode": "{\n    \"name\": \"spring-boot-h2\",\n    \"version\": \"1.0.0\",\n    \"description\": \"Spring Boot API project\",\n    \"main\": \"index.js\",\n    \"scripts\": {\n\t\"start\": \"./start.sh\"\n    },\n    \"author\": \"Your Name\",\n    \"license\": \"ISC\",\n    \"dependencies\": {\n\n    }\n}",
+                "CopyCode": "{\n\t\"name\": \"spring-boot-h2\",\n\t\"version\": \"1.0.0\",\n\t\"description\": \"Spring Boot API project\",\n\t\"main\": \"index.js\",\n\t\"scripts\": {\n\t\t\"start\": \"./start.sh\"\n\t},\n\t\"author\": \"Your Name\",\n\t\"license\": \"ISC\",\n\t\"dependencies\": {\n\n\t}\n}"
             }
         },
         {
@@ -236,8 +236,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd spring-boot-sqlite\nchmod +x start.sh",
-                "CopyCode": "cd spring-boot-sqlite\nchmod +x start.sh"
+                "FormatCode": "cd spring-boot-h2\nchmod +x start.sh",
+                "CopyCode": "cd spring-boot-h2\nchmod +x start.sh"
             }
         },
         {
