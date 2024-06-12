@@ -105,13 +105,13 @@
                 },
                 {
                     "id": 7,
-                    "name": "How to Make a simple REST Api using React, Spring Boot and SQLite",
-                    "ref": "react-sqlite",
-                    "ScrollTo": "ReactSqliteLink"
+                    "name": "How to Make a simple REST Api using React, Spring Boot and H2",
+                    "ref": "react-h2",
+                    "ScrollTo": "ReactH2Link"
                 },
                 {
                     "id": 8,
-                    "name": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services",
+                    "name": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
                     "ref": "deploy-spring",
                     "ScrollTo": "DeploySpringLink"
                 },
