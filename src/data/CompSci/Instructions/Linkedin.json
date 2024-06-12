@@ -1,0 +1,176 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup a LinkedIn API Project",
+            "desc": "Explains how to setup a LinkedIn API project.",
+            "ref": "linkedin-api"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "This project will use the LinkedIn api to get the information of everyone who works in engineering and went to UNCW. It will print the year they graduated, places they've worked, and name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 11,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 12,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 13,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 15,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
