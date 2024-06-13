@@ -52,8 +52,8 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "JSON",
-                "FormatCode": "\"customyaml\":{\"title\": \"Custom Yaml\", \"owner\": \"YOUR-GITHUB-USERNAME\"},",
-                "CopyCode": "\"customyaml\":{\"title\": \"Custom Yaml\", \"owner\": \"YOUR-GITHUB-USERNAME\"},"
+                "FormatCode": "\"custom-yaml\":{\"title\": \"Custom Yaml\", \"owner\": \"YOUR-GITHUB-USERNAME\"},",
+                "CopyCode": "\"custom-yaml\":{\"title\": \"Custom Yaml\", \"owner\": \"YOUR-GITHUB-USERNAME\"},"
             }
         },
         {
@@ -63,8 +63,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "JSON",
-                "FormatCode": "\"customyaml\": {\n    \"title\": \"Custom YAML\",\n    \"owner\": \"YOUR-GITHUB-USERNAME\"\n},",
-                "CopyCode": "\"customyaml\": {\n\t\"title\": \"Custom YAML\",\n\t\"owner\": \"YOUR-GITHUB-USERNAME\"\n},"
+                "FormatCode": "\"custom-yaml\": {\n    \"title\": \"Custom YAML\",\n    \"owner\": \"YOUR-GITHUB-USERNAME\"\n},",
+                "CopyCode": "\"custom-yaml\": {\n\t\"title\": \"Custom YAML\",\n\t\"owner\": \"YOUR-GITHUB-USERNAME\"\n},"
             }
         },
         {
@@ -103,7 +103,7 @@
         },
         {
             "id": 9,
-            "instruction": "In your main file paste the following imports.",
+            "instruction": "In your main file paste the following imports. Note that the \"-\" character was not included in customyaml.",
             "Code": {
                 "Name": "",
                 "Description": "",

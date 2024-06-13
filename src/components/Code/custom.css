@@ -36,7 +36,8 @@ span.token.selector {
 
 .token.number,
 .token.self-orange, 
-.token.orange-js {
+.token.orange-js,
+.token.prop-orange {
     color: #D19A66;
 }
 
@@ -115,7 +116,8 @@ span.token.selector {
 .token.green-js,
 .token.fxml-green,
 .token.attr-value,
-.token.sh-green {
+.token.sh-green, 
+.token.prop-green {
     color: #98C379;
 }
 
