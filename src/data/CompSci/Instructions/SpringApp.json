@@ -300,7 +300,7 @@
                 },
                 {
                     "id": 14,
-                    "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will be automatically created that contains your database file. This allows the data in your table to be saved when you stop running your REST API.",
+                    "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will be automatically created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console.",
                     "Code": {
                         "Name": "",
                         "Description": "",
