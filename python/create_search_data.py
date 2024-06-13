@@ -556,21 +556,33 @@ def get_deploy_postgresql():
         Link = "/CompSci/SetupProjects/deploy-PostgreSQL"
         
         return { "Title": Title, "Link": Link, "Results": Results }
-  
-def get_react_sqlite():
-	with open("../src/data/CompSci/Instructions/SpringApp.json", "r") as file:
-		content = json.load(file)
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+def get_react_spring():
+    with open("../src/data/CompSci/Instructions/SpringApp.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		Title = "How to Make a simple REST Api using React, Spring Boot and H2 🍃"
-		Link = "/CompSci/SetupProjects/react-h2"
-		Results = info + instructions
+        Results = []
 
-		return { "Title": Title, "Link": Link, "Results": Results }
-      
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
+
+            Results += info + instructions
+
+        Title = "How to Make a simple REST Api using React, Spring Boot and H2 🍃"
+        Link = "/CompSci/SetupProjects/react-spring"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }      
+
+
+
+
+
+
+
 def get_deploy_spring():
     with open("../src/data/CompSci/Instructions/DeploySpring.json", "r") as file:
         content = json.load(file)
@@ -1347,7 +1359,7 @@ flasksqlite3 = get_flask_sqlite3()
 deploysqlite = get_deploy_sqlite()
 flaskpostgresql = get_flask_postgresql()
 deploypostgresql = get_deploy_postgresql()
-reactsqlite = get_react_sqlite()
+reactspring = get_react_spring()
 deployspring = get_deploy_spring()
 
 complexmysql = get_complex_mysql()
@@ -1449,7 +1461,7 @@ all_data = [
     deploysqlite,
     flaskpostgresql,
     deploypostgresql,
-    reactsqlite,
+    reactspring,
     deployspring,
     complexmysql,
     deploymysql,
