@@ -170,13 +170,13 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
-                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
+                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
+                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
                     }
                 },
                 {
                     "id": 3,
-                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data into the \"dependencies\" section. You should probably paste the data around lines 19-35 between the \"dependencies\" xml tags. Put your cursor at the very beginning of the line, then paste the data.",
+                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data into the \"dependencies\" section. You should probably paste the data around lines 19-35 between the \"dependencies\" xml tags. Put your cursor at the very beginning of the line, then paste the data to make it align with the other objects (it will work either way). @Relevant Meme@[{ 'name': 'ImageView', 'params': { 'Name': 'Pom.xml cli tool when? 👀', 'Description': 'Do you have any idea how lit it would be if you could actually do this', 'Pic': 'pom.jpg'} }].",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -228,6 +228,17 @@
                         "Language": "Java",
                         "FormatCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @PostMapping\n    public ResponseEntity<User> createUser(@RequestBody User user) {\n\tUser createdUser = userService.saveUser(user);\n\treturn ResponseEntity.status(201).body(createdUser);\n    }\n\n    @GetMapping(\"/{firstname}\")\n    public ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\treturn userService.getUserByFirstname(firstname)\n\t    .map(user -> ResponseEntity.ok().body(user))\n\t    .orElseGet(() -> ResponseEntity.status(404).body(null));\n    }\n}",
                         "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity<User> createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.saveUser(user);\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -> ResponseEntity.status(404).body(null));\n\t}\n}"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"WebConfig.java\" file. Paste in the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Java",
+                        "FormatCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.servlet.config.annotation.CorsRegistry;\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\n\n@Configuration\npublic class WebConfig {\n\n    @Bean\n    public WebMvcConfigurer corsConfigurer() {\n        return new WebMvcConfigurer() {\n\t    @Override\n\t    public void addCorsMappings(CorsRegistry registry){\n\t\tregistry.addMapping(\"/**\").allowedOrigins(\"*\");\n\t    }\n        };\n    }\n}",
+                        "CopyCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.servlet.config.annotation.CorsRegistry;\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\n\n@Configuration\npublic class WebConfig {\n\n\t@Bean\n\tpublic WebMvcConfigurer corsConfigurer() {\n\t\treturn new WebMvcConfigurer() {\n\t\t\t@Override\n\t\t\tpublic void addCorsMappings(CorsRegistry registry){\n\t\t\t\tregistry.addMapping(\"/**\").allowedOrigins(\"*\");\n\t\t\t}\n\t\t};\n\t}\n}"
                     }
                 },
                 {
@@ -362,7 +373,8 @@
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "Command",
+                        "Language": "fxml",
+                        "DisplayLang": "SQL",
                         "FormatCode": "SELECT * FROM Users",
                         "CopyCode": "SELECT * FROM Users"
                     }
@@ -383,7 +395,63 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "In the very first step you created a folder called \"react-spring-frontend\". Change into that folder.",
+                    "instruction": "In the very first step you created a folder called \"react-spring-frontend\". Change into that folder and download axios.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd react-spring-frontend\nnpm install axios",
+                        "CopyCode": "cd react-spring-frontend\nnpm install axios"
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": "In the src folder create an axios instance file.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "touch src/axiosInstance.js",
+                        "CopyCode": "touch src/axiosInstance.js"
+                    }
+                },
+                {
+                    "id": 3,
+                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "FormatCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://localhost:8080';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;",
+                        "CopyCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://localhost:8080';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "Got to src -> styles -> views and open \"Home.css\". Delete its contents and paste in the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "CSS",
+                        "FormatCode": ".input-field {\n    border: 1px solid black;\n    padding: 5px;\n    margin: 5px;\n}\n\n.submit-btn {\n    background-color: blue;\n    padding: 5px;\n    color: white;\n}\n\n.submit-btn:hover {\n    background-color: darkblue;\n}",
+                        "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}"
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "Now go to src -> views and open the \"Home.jsx\" file. Delete its contents and paste in the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Javascript",
+                        "DisplayLang": "React",
+                        "FormatCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\talert('Please Fill In All Fields');\n\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\tfirstname: firstName,\n\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t<input\n\t  id=\"fName\"\n\t  className=\"input-field\"\n\t  value={firstName}\n\t  onChange={(e) => setFirstName(e.target.value)}\n\t  placeholder=\"Enter First Name\"\n\t/>\n\t<input\n\t  id=\"lName\"\n\t  className=\"input-field\"\n\t  value={lastName}\n\t  onChange={(e) => setLastName(e.target.value)}\n\t  placeholder=\"Enter Last Name\"\n\t/>\n\t<button\n\t  id=\"createUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={createUser}\n\t>\n\t Create User\n\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t<input\n\t  id=\"searchName\"\n\t  className=\"input-field\"\n\t  value={searchFirstName}\n\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t  placeholder=\"Search by First Name\"\n\t/>\n\t<button\n\t  id=\"searchUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={searchUser}\n\t>\n\t Search\n\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t<table>\n\t  <thead>\n\t    <tr>\n\t      <th>First Name</th>\n\t      <th>Last Name</th>\n\t    </tr>\n\t  </thead>\n\t  <tbody>\n\t    {users.map((user) => (\n\t      <tr key={user.firstname}>\n\t\t<td>{user.firstname}</td>\n\t\t<td>{user.lastname}</td>\n\t      </tr>\n\t    ))}\n\t  </tbody>\n\t</table>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;",
+                        "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) => setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/>\n\t\t\t\t<input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) => setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/>\n\t\t\t\t<button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t>\n\t\t\t\t Create User\n\t\t\t\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/>\n\t\t\t\t\n\t\t\t\t<button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t>\n\t\t\t\t Search\n\t\t\t\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t\t\t\t<table>\n\t\t\t\t  <thead>\n\t\t\t\t    <tr>\n\t\t\t\t      <th>First Name</th>\n\t\t\t\t      <th>Last Name</th>\n\t\t\t\t    </tr>\n\t\t\t\t  </thead>\n\t\t\t\t  <tbody>\n\t\t\t\t    {users.map((user) => (\n\t\t\t\t      <tr key={user.firstname}>\n\t\t\t\t\t\t\t\t<td>{user.firstname}</td>\n\t\t\t\t\t\t\t\t<td>{user.lastname}</td>\n\t\t\t\t      </tr>\n\t\t\t\t    ))}\n\t\t\t\t  </tbody>\n\t\t\t\t</table>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;"
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -393,8 +461,26 @@
                     }
                 },
                 {
-                    "id": 2,
-                    "instruction": ""
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
                 }
             ]
         }
