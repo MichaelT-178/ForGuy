@@ -6,7 +6,7 @@ import Home from '../Views/Home.vue';
 //Jobs 
 import WhereToApply from '../Views/jobs/WhereToApply.vue';
 import ResumeTemplate from '../Views/jobs/ResumeTemplate.vue';
-import HowToGetAJob from '../Views/jobs/HowToGetAJob.vue'
+import HowToGetAJob from '../Views/jobs/HowToGetAJob.vue';
 import OffersReceived from '../Views/jobs/OffersReceived.vue';
 import InterviewTips from '../Views/jobs/InterviewTips.vue';
 import CareerPathAdvice from '../Views/jobs/CareerPathAdvice.vue';
@@ -46,7 +46,7 @@ import Memes from '../Views/other/memes.vue';
 import UncwPics from '../Views/other/UncwPictures.vue';
 
 //Contact
-import ContactMe from '../Views/contact.vue'
+import ContactMe from '../Views/contact.vue';
 
 //Image View to display images
 import ImageView from '../Views/ImageView.vue';
