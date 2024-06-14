@@ -182,8 +182,8 @@
                         "Description": "",
                         "Language": "html",
                         "DisplayLang": "xml",
-                        "FormatCode": "<!-- New Dependencies -->\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.h2database</groupId>\n    <artifactId>h2</artifactId>\n    <version>2.1.214</version>\n    <scope>runtime</scope>\n</dependency>",
-                        "CopyCode": "\t\t<!-- New Dependencies -->\n\t    <dependency>\n\t\t    <groupId>org.springframework.boot</groupId>\n\t\t    <artifactId>spring-boot-starter-data-jpa</artifactId>\n\t    </dependency>\n\t    <dependency>\n\t\t    <groupId>com.h2database</groupId>\n\t\t    <artifactId>h2</artifactId>\n\t\t    <version>2.1.214</version>\n\t\t    <scope>runtime</scope>\n\t    </dependency>"
+                        "FormatCode": "<!-- New Dependencies -->\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-data-jpa</artifactId>\n</dependency>\n<dependency>\n    <groupId>com.h2database</groupId>\n    <artifactId>h2</artifactId>\n    <version>2.1.214</version>\n</dependency>",
+                        "CopyCode": "\t\t<!-- New Dependencies -->\n\t    <dependency>\n\t\t    <groupId>org.springframework.boot</groupId>\n\t\t    <artifactId>spring-boot-starter-data-jpa</artifactId>\n\t    </dependency>\n\t    <dependency>\n\t\t    <groupId>com.h2database</groupId>\n\t\t    <artifactId>h2</artifactId>\n\t\t    <version>2.1.214</version>\n\t    </dependency>"
                     }
                 },
                 {
