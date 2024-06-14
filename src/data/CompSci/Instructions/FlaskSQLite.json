@@ -197,7 +197,7 @@
         },
         {
             "id": 18,
-            "instruction": "Open your Vue code and paste the following code in the \"axiosInstance.js\" file in the \"src\" folder.",
+            "instruction": "Open your \"vue-sqlite-frontend\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues.",
             "Code": {
                 "Name": "",
                 "Description": "",
