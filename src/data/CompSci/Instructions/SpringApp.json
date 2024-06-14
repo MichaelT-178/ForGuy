@@ -170,8 +170,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
-                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
+                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
+                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
                     }
                 },
                 {
@@ -231,7 +231,7 @@
                     }
                 },
                 {
-                    "id": 7,
+                    "id": 8,
                     "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"WebConfig.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
@@ -242,7 +242,18 @@
                     }
                 },
                 {
-                    "id": 8,
+                    "id": 9,
+                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Java",
+                        "FormatCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.h2.tools.Server;\n\nimport java.sql.SQLException;\n\n@Configuration\npublic class H2ServerConfiguration {\n\n    @Bean(initMethod = \"start\", destroyMethod = \"stop\")\n    public Server h2Server() throws SQLException {\n\treturn Server.createTcpServer(\"-tcp\", \"-tcpAllowOthers\", \"-tcpPort\", \"9092\");\n    }\n}",
+                        "CopyCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.h2.tools.Server;\n\nimport java.sql.SQLException;\n\n@Configuration\npublic class H2ServerConfiguration {\n\n\t@Bean(initMethod = \"start\", destroyMethod = \"stop\")\n\tpublic Server h2Server() throws SQLException {\n\t\treturn Server.createTcpServer(\"-tcp\", \"-tcpAllowOthers\", \"-tcpPort\", \"9092\");\n\t}\n}"
+                    }
+                },
+                {
+                    "id": 10,
                     "instruction": "Now press \"command + p\". Search for and press on \"application.properties\". Delete its contents and paste the following code into the file. Change the username and password to be whatever you want.",
                     "Code": {
                         "Name": "",
@@ -254,7 +265,7 @@
                     }
                 },
                 {
-                    "id": 9,
+                    "id": 11,
                     "instruction": "This step is completely optional and I do NOT recommend doing it this way. But if you don't want your data to persist between sessions change the \"spring.datasource.url\" line in the \"application.properties\" file to be the following value. This will clear your table everytime you rerun your api. If you do this remember to use \"jdbc:h2:mem:testdb\" as your JDBC URL when you login to your h2-console later on.",
                     "Code": {
                         "Name": "",
@@ -266,7 +277,7 @@
                     }
                 },
                 {
-                    "id": 10,
+                    "id": 12,
                     "instruction": "In your terminal run the following commands. You could also just change into \"spring-boot-h2\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now.",
                     "Code": {
                         "Name": "",
@@ -277,7 +288,7 @@
                     }
                 },
                 {
-                    "id": 11,
+                    "id": 13,
                     "instruction": "Now open your \"start.sh\" file and paste in the following code.",
                     "Code": {
                         "Name": "",
@@ -288,7 +299,7 @@
                     }
                 },
                 {
-                    "id": 12,
+                    "id": 14,
                     "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data.",
                     "Code": {
                         "Name": "",
@@ -299,7 +310,7 @@
                     }
                 },
                 {
-                    "id": 13,
+                    "id": 15,
                     "instruction": "Go to your terminal and run the following commands. This makes your script an executable. You'll only have to do this once.",
                     "Code": {
                         "Name": "",
@@ -310,7 +321,7 @@
                     }
                 },
                 {
-                    "id": 14,
+                    "id": 16,
                     "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will be automatically created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console.",
                     "Code": {
                         "Name": "",
@@ -321,7 +332,7 @@
                     }
                 },
                 {
-                    "id": 15,
+                    "id": 17,
                     "instruction": "If you get an error saying port 8080 is already in use run the following. Replace \"&lt;PID&gt;\" with the PID from the first commands output.",
                     "Code": {
                         "Name": "",
@@ -332,7 +343,7 @@
                     }
                 },
                 {
-                    "id": 16,
+                    "id": 18,
                     "instruction": "Now open the following link in your browser. We're going to work with the database in the h2-console.",
                     "Code": {
                         "Name": "",
@@ -344,7 +355,7 @@
                     }
                 },
                 {
-                    "id": 17,
+                    "id": 19,
                     "instruction": "Keep the link open in your browser, but go back to your folder in VSCode. Open your \"application.properties\" file and copy and record the values of \"spring.datasource.username\" and \"spring.datasource.password\". Then go back to the h2-console in your broswer and enter the following values. Then press connect.",
                     "Code": {
                         "Name": "",
@@ -356,7 +367,7 @@
                     }
                 },
                 {
-                    "id": 18,
+                    "id": 20,
                     "instruction": "Keep both the h2-console and the terminal that's running your localhost open, but open a second terminal. In the second terminal run the following command.",
                     "Code": {
                         "Name": "",
@@ -368,7 +379,7 @@
                     }
                 },
                 {
-                    "id": 19,
+                    "id": 21,
                     "instruction": "Now go back to your h2-console and run the following SQL query in the input box. Then press the \"Run\" button above it. There should be a user named \"Jimmy Page\" with id 1 in the table.",
                     "Code": {
                         "Name": "",
@@ -380,7 +391,7 @@
                     }
                 },
                 {
-                    "id": 20,
+                    "id": 22,
                     "instruction": "If it's working, you can close all of your terminals, VSCode windows, the h2-console, etc."
                 }
             ]
@@ -451,36 +462,53 @@
                 },
                 {
                     "id": 6,
-                    "instruction": "",
+                    "instruction": "Now open two terminals. In the first terminal run the following command.",
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
+                        "Language": "Command",
+                        "FormatCode": "npm run start",
+                        "CopyCode": "npm run start"
                     }
                 },
                 {
                     "id": 7,
-                    "instruction": "",
+                    "instruction": "Open the h2-console link in your browser. Sign in using the credentials from your application.properties file.",
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
+                        "Language": "Command",
+                        "DisplayLang": "Link",
+                        "FormatCode": "http://localhost:8080/h2-console",
+                        "CopyCode": "http://localhost:8080/h2-console"
                     }
                 },
                 {
                     "id": 8,
-                    "instruction": "",
+                    "instruction": "Now in your second terminal run the following command to start your development server.",
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
+                        "Language": "Command",
+                        "FormatCode": "npm run dev",
+                        "CopyCode": "npm run dev"
                     }
+                },
+                {
+                    "id": 9,
+                    "instruction": "Now open your React app in a browser. Practice adding users to your database. Run the following SQL query in your h2-console to see your users.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "fxml",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SELECT * FROM Users",
+                        "CopyCode": "SELECT * FROM Users"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "You've finished all the steps and should now have a functioning React app with a Spring Boot backend!"
                 }
             ]
         }
