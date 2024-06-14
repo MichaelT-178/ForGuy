@@ -42,7 +42,7 @@
             "Location": "Cary, North Carolina",
             "Email": "iejames@cisco.com",
             "LinkedIn": "https://www.linkedin.com/in/iesha-james-8a1883285/",
-            "Details": "This woman contacted me about a full-time SWE position in RTP.",
+            "Details": "This woman contacted me about interviewing for a full-time SWE position in RTP.",
             "Image": "Cisco.jpg"
         },
         {
@@ -271,6 +271,16 @@
             "LinkedIn": "https://www.linkedin.com/in/phoebe-roberts-74ab362b3/",
             "Details": "This women messaged me on LinkedIn about a remote Swift iOS Developer position.",
             "Image": "DataAnnotation.jpg"
+        },
+        {
+            "Name": "Neal Shulman",
+            "Company": "L and N Unique Creations",
+            "Role": "Owner",
+            "Location": "Wilmington, North Carolina",
+            "Email": "neals920@yahoo.com",
+            "LinkedIn": "https://www.linkedin.com/in/neal-shulman-471a3b2ba/",
+            "Details": "Dr. Pence sent out an email that this guy was looking for someone to work on his website, social media campaign, etc.",
+            "Image": "Unique.jpg"
         },
         {
             "Name": "Jennifer Lawrence",
