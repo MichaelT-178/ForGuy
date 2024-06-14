@@ -8,7 +8,7 @@ file_path = "../src/data/CompSci/Instructions/SpringApp.json"
 with open(file_path, 'r') as file:
     data = json.load(file)
 
-    data_set = data["MultiSet"][1]["Instructions"]
+    data_set = data["MultiSet"][2]["Instructions"]
 
     for i, item in enumerate(data_set):
         item["id"] = i + 1

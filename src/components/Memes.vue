@@ -50,9 +50,10 @@ import Meme48 from "../assets/memes/Extensions.jpg";
 import Meme49 from "../assets/memes/null.jpg";
 import Meme50 from "../assets/memes/ProgrammerTester.jpg";
 import Meme51 from "../assets/memes/TerminalMeme.jpg";
-import Meme52 from "../assets/memes/Googling.jpg"
-import Meme53 from "../assets/memes/Covid.jpg"
-import Meme54 from "../assets/memes/ChangeUI.jpg"
+import Meme52 from "../assets/memes/Googling.jpg";
+import Meme53 from "../assets/memes/Covid.jpg";
+import Meme54 from "../assets/memes/ChangeUI.jpg";
+import Meme55 from "../assets/pom.jpg";
 
 
 export const memeObjects = [
@@ -325,6 +326,11 @@ export const memeObjects = [
         text: "Alarmy be like",
         transcription: "Companies when their UI is perfect. Change it for no reason",
         image: Meme54
-    } //ChangeUI.jpg
+    }, //ChangeUI.jpg
+    {
+        text: "Do you have any idea how lit this would be",
+        transcription: "The world if you could use the command line to update pom.xml dependencies",
+        image: Meme55
+    } //pom.jpg
 ]
 </script>
