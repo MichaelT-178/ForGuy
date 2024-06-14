@@ -107,7 +107,7 @@
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "Command",
+                        "Language": "Command/HTTP Request",
                         "FormatCode": "curl -X GET https://jsonplaceholder.typicode.com/posts",
                         "CopyCode": "curl -X GET https://jsonplaceholder.typicode.com/posts"
                     }
@@ -118,9 +118,9 @@
                     "Code": {
                         "Name": "",
                         "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "curl -X POST https://jsonplaceholder.typicode.com/posts -H \"Content-Type: application/json\" -d '{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}'",
-                        "CopyCode": "curl -X POST https://jsonplaceholder.typicode.com/posts -H \"Content-Type: application/json\" -d '{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}'"
+                        "Language": "Command/HTTP Request",
+                        "FormatCode": "curl -X POST https://jsonplaceholder.typicode.com/posts \\\n-H \"Content-Type: application/json\" \\\n-d '{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}'",
+                        "CopyCode": "curl -X POST https://jsonplaceholder.typicode.com/posts \\\n-H \"Content-Type: application/json\" \\\n-d '{\"title\":\"foo\",\"body\":\"bar\",\"userId\":1}'"
                     }
                 },
                 {

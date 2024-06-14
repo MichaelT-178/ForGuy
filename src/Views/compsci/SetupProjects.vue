@@ -26,7 +26,7 @@
             <div v-for="point in set.Instructions" :key="point.id">
                 <p class="bullet-pt">
                     <span class="bullet-pt-span">{{ point.id }}</span>
-                    <span v-html="createDownloadLink(createHyperLink(createScrollToLink(point.instruction)))"></span>
+                    <span v-html="createDownloadLink(createHyperLink(createScrollToLink(createRouterLinkWithProps(point.instruction))))"></span>
                 </p>
                 <span v-if="point.Code">
                     <CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock>
@@ -42,7 +42,7 @@
 <script setup>
 import { computed, ref, nextTick, onMounted, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
-import { createHyperLink, highlightLinkText, createDownloadLink } from "../../utils/Markdown.vue";
+import { createHyperLink, highlightLinkText, createDownloadLink, createRouterLinkWithProps } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 import AllData from '../../data/CompSci/Instructions/DisplayLinks.json';
 import { AllSets } from '../../data/CompSci/Instructions/InstructionSets.vue';
