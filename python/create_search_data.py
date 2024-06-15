@@ -1020,6 +1020,16 @@ def get_github():
         createSecondGitHubRepo = content["CreateSecondGitHubRepo"]
         createSecondGitHubRepo = modify_list_with_code_separation(createSecondGitHubRepo, "Code")
 
+        csc450WorkflowPtsOne = content["CSC450WorkflowPtsOne"]
+        csc450WorkflowOne = content["CSC450WorkflowOne"]
+        csc450WorkflowPtsTwo = content["CSC450WorkflowPtsTwo"]
+        csc450WorkflowTwo = content["CSC450WorkflowTwo"]
+        csc450WorkflowPtsThree = content["CSC450WorkflowPtsThree"]
+        csc450WorkflowThree = content["CSC450WorkflowThree"]
+        csc450WorkflowPtsFour = content["CSC450WorkflowPtsFour"]
+        csc450WorkflowFour = content["CSC450WorkflowFour"]
+        csc450WorkflowPtsFive = content["CSC450WorkflowPtsFive"]
+
         amotionsWorkflowOne = content["AmotionsWorkflowOne"]
         amotionsWorkflowTwo = content["AmotionsWorkflowTwo"]
 
@@ -1047,11 +1057,16 @@ def get_github():
         Link = "/compsci/GitHub"
         Results = (text + scrollLinks + setupGithub
                   + createGitHubRepo + setupSecondGitHub
-                  + createSecondGitHubRepo + amotionsWorkflowOne
-                  + amotionsWorkflowTwo + amotionsPts + amotionsPtsTwo 
-                  + amotionsWorkflowThree + threeCommands + generalTips
-                  + gitCommands + createFork + resetBranch
-	              + existingFolderPts + existingFolder)
+                  + createSecondGitHubRepo + csc450WorkflowPtsOne 
+                  + csc450WorkflowOne + csc450WorkflowPtsTwo 
+                  + csc450WorkflowTwo + csc450WorkflowPtsThree 
+                  + csc450WorkflowThree + csc450WorkflowPtsFour 
+                  + csc450WorkflowFour + csc450WorkflowPtsFive
+                  + amotionsWorkflowOne + amotionsWorkflowTwo 
+                  + amotionsPts + amotionsPtsTwo + amotionsWorkflowThree 
+                  + threeCommands + generalTips + gitCommands 
+                  + createFork + resetBranch
+                  + existingFolderPts + existingFolder)
 
         return { "Title": Title, "Link": Link, "Results": Results }
 
