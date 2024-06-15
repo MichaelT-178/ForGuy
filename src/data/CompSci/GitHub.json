@@ -52,6 +52,11 @@
         },
         {
             "id": 11,
+            "name": "CSC 450 Workflow",
+            "ref": "CSC450Workflow"
+        },
+        {
+            "id": 12,
             "name": "My Old Amotions Workflow",
             "ref": "AmotionsWorkflow"
         }
@@ -405,6 +410,154 @@
                 "CopyCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
             },
             "ref": "secondGitHubEight"
+        }
+    ],
+    "CSC450WorkflowPtsOne": [
+        {
+            "id": 1,
+            "instruction": "Create a feature branch when you start work on a new user story or feature."
+        }
+    ],
+    "CSC450WorkflowOne": [
+        {
+            "Command": "git checkout main",
+            "Description": "Ensure you are in the main branch.",
+            "Example": "git checkout main"
+        },
+        {
+            "Command": "git pull",
+            "Description": "Fetch all changes from the remote main branch and merge them into your local copy.",
+            "Example": "git pull"
+        },
+        {
+            "Command": "git checkout -b my_feature",
+            "Description": "Create a feature branch off the main branch. Replace \"my_feature\" with a name related to the user story.",
+            "Example": "git checkout -b my_feature"
+        },
+        {
+            "Command": "git push -u origin my_feature",
+            "Description": "Share your feature branch to the remote (GitHub).",
+            "Example": "git push -u origin my_feature"
+        }
+    ],
+    "CSC450WorkflowPtsTwo": [
+        {
+            "id": 2,
+            "instruction": "Now make sure that all file changes in your working directory are either discarded or saved, committed, and pushed."
+        },
+        {
+            "id": 3,
+            "instruction": "Change into your branch, pull changes, then start writing you code."
+        }
+    ],
+    "CSC450WorkflowTwo": [
+        {
+            "Command": "git checkout my_feature",
+            "Description": "Ensure you are in your feature branch.",
+            "Example": "git checkout my_feature"
+        },
+        {
+            "Command": "git pull",
+            "Description": "Ensure that you have the latest changes from the remote. If there are any merge conflicts resolve them before continuing.",
+            "Example": "git pull"
+        }
+    ],
+    "CSC450WorkflowPtsThree": [
+        {
+            "id": 4,
+            "instruction": "Once you've written your code and gotten to a natural stopping point you'll want to push your changes."
+        },
+        {
+            "id": 5,
+            "instruction": "Before running these commands, ensure that your project builds without errors."
+        }
+    ],
+    "CSC450WorkflowThree": [
+        {
+            "Command": "git status",
+            "Description": "Ensure you're on the branch you've been working on.",
+            "Example": "git status"
+        },
+        {
+            "Command": "git add .",
+            "Description": "Stage all your working directory changes to be saved.",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"A concise description of changes\"",
+            "Description": "Create a new version of your feature branch.",
+            "Example": "git commit -m \"Added user cards\""
+        },
+        {
+            "Command": "git push",
+            "Description": "Share your new commits to the remote. You can add and commit multiple versions before pushing.",
+            "Example": "git push"
+        }
+    ],
+    "CSC450WorkflowPtsFour": [
+        {
+            "id": 6,
+            "instruction": "The following steps explain how to merge a branch into main when you're ready."
+        },
+        {
+            "id": 7,
+            "instruction": "Before doing any of this make sure the changes from your branch are committed. Running the \"git status\" command should output \"nothing to commit, working tree clean\"."
+        }
+    ],
+    "CSC450WorkflowFour": [
+        {
+            "Command": "git status",
+            "Description": "Check that you're on your branch and that all changed files have been committed.",
+            "Example": "git status"
+        },
+        {
+            "Command": "git checkout main",
+            "Description": "Switch to the main branch.",
+            "Example": "git checkout main"
+        },
+        {
+            "Command": "git pull",
+            "Description": "Ensure that your local main is up to date with the remote. Resolve any merge conflicts before continuing.",
+            "Example": "git pull"
+        },
+        {
+            "Command": "git checkout my_feature",
+            "Description": "Switch back to your my_feature branch",
+            "Example": "git checkout my_feature"
+        },
+        {
+            "Command": "git merge main",
+            "Description": "Merge the changes from the main branch into the my_feature branch. This ensures that your feature incorporates new versions of main. Resolve any merge conflicts before continuing.",
+            "Example": "git merge main"
+        },
+        {
+            "Command": "git add .",
+            "Description": "Stage all changes you have made to resolve the merge. (This step may not be necessary and will have no effect)",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"A concise description of changes\"",
+            "Description": "Create a new version of your feature branch.",
+            "Example": "git commit -m \"Added user cards\""
+        },
+        {
+            "Command": "git push",
+            "Description": "Send the merged version of your feature branch to the remote.",
+            "Example": "git push"
+        }
+    ],
+    "CSC450WorkflowPtsFive": [
+        {
+            "id": 8,
+            "instruction": "Go to the Github repository you just pushed changes to. At the top you should see a green \"Compare & pull request\" button next to \"your-branch-name\" had recent changes. Click on the button. On the new page make sure the \"compare\" drop down menu has your branch name next to it. Then in the \"Add a description\" text-box write a description of all the changes you made in your branch. Then click the \"Create pull request\" button."
+        },
+        {
+            "id": 9,
+            "instruction": "Do NOT push the green \"Pull merge request\" button. Instead, copy the link to your pull request and send it to your dev lead. Ask them to review the PR and merge it into main if it looks good."
+        },
+        {
+            "id": 10,
+            "instruction": "If your reviewer requests changes, go into your feature branch, make code changes, add, commit, and push to update."
         }
     ],
     "AmotionsWorkflowOne": [
@@ -912,6 +1065,10 @@
         {
             "title": "Existing Folder Commands",
             "desc": "How to get an existing folder onto GitHub."
+        },
+        {
+            "title": "CSC 450 Workflow",
+            "desc": "This was the standard git workflow when I was in CSC 450 with Dr. Layman. You can download the CSC 450 pdf this information comes from &here&(https://github.com/MichaelT-178/TestWebsite/blob/main/git_workflow.pdf?raw=true)."
         },
         {
             "title": "Amotions Workflow",
