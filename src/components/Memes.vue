@@ -54,6 +54,7 @@ import Meme52 from "../assets/memes/Googling.jpg";
 import Meme53 from "../assets/memes/Covid.jpg";
 import Meme54 from "../assets/memes/ChangeUI.jpg";
 import Meme55 from "../assets/pom.jpg";
+import Meme56 from "../assets/memes/JoinMeme.jpg";
 
 
 export const memeObjects = [
@@ -331,6 +332,11 @@ export const memeObjects = [
         text: "Do you have any idea how lit this would be",
         transcription: "The world if you could use the command line to update pom.xml dependencies",
         image: Meme55
-    } //pom.jpg
+    }, //pom.jpg
+    {
+        text: "This is actually pretty helpful",
+        transcription: "LEFT JOIN RIGHT JOIN INNER JOIN FULL OUTER JOIN",
+        image: Meme56
+    } //JoinMeme.jpg
 ]
 </script>
