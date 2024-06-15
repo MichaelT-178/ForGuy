@@ -25,7 +25,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- How to create a GitHub Repository Section -->
         <h2 class="gh-header-two" ref="createGHRepo">{{ text[4].title }}</h2>
@@ -37,7 +37,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- How to create a Second GitHub account Section -->
         <h2 class="gh-header-two" ref="multipleGHAccounts">{{ text[5].title }}</h2>
@@ -49,7 +49,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- How to create a Second GitHub Repository Section -->
         <h2 class="gh-header-two" ref="multipleDifferentAccount">{{ text[6].title }}</h2>
@@ -61,15 +61,15 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- Git Commands -->
         <h2 class="gh-header-two" ref="GitCommands">{{ text[7].title }}</h2>
         <p class="description-two">{{ text[7].desc }}</p>
 
-        <CmdTable tableName="" :items="gitCommands" class="cmd-table" ref="practiceTable"></CmdTable>
+        <CmdTable tableName="" :items="gitCommands" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- General Tips for Working with GitHub -->
         <h2 class="gh-header-two" ref="GeneralTips">{{ text[8].title }}</h2>
@@ -80,15 +80,15 @@
             <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>  
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- Three Main Commands -->
         <h2 class="gh-header-two" ref="ThreeCommands">{{ text[9].title }}</h2>
         <p class="description-two">{{ text[9].desc }}</p>
 
-        <CmdTable tableName="" :items="threeCommands" class="cmd-table" ref="practiceTable"></CmdTable>
+        <CmdTable tableName="" :items="threeCommands" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ForkRepo">{{ text[10].title }}</h2>
@@ -99,7 +99,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
 
         <!-- Reset To Previous Branch -->
@@ -111,7 +111,7 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
 
 
         <!-- Upload Existing Folder section -->
@@ -122,38 +122,74 @@
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table" ref="practiceTable"></CmdTable>
+        <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[18].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
+        
+        <!-- CSC 450 Workflow -->
+        <h2 class="gh-header-two" ref="CSC450Workflow">{{ text[13].title }}</h2>
+        <p class="description-two" v-html="createDownloadLink(text[13].desc)"></p>
+
+        <div v-for="point in csc450WorkflowPtsOne" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <CmdTable tableName="" :items="csc450WorkflowOne" class="cmd-table" style="margin-bottom: 30px"></CmdTable>
+
+
+        <div v-for="point in csc450WorkflowPtsTwo" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <CmdTable tableName="" :items="csc450WorkflowTwo" class="cmd-table" style="margin-bottom: 30px"></CmdTable>
+
+        <div v-for="point in csc450WorkflowPtsThree" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <CmdTable tableName="" :items="csc450WorkflowThree" class="cmd-table" style="margin-bottom: 30px"></CmdTable>
+
+        <div v-for="point in csc450WorkflowPtsFour" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <CmdTable tableName="" :items="csc450WorkflowFour" class="cmd-table" style="margin-bottom: 30px"></CmdTable>
+
+        <div v-for="point in csc450WorkflowPtsFive" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <span class="scroll-up-link" v-html="processedTipContent(text[19].scrollToLinks)"></span>
+
 
         <!-- Amotions Workflow -->
-        <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[13].title }}</h2>
-        <p class="description-two">{{ text[13].desc }}</p>
+        <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[14].title }}</h2>
+        <p class="description-two">{{ text[14].desc }}</p>
 
 
-        <CmdTable tableName="" :items="amotionsWorkflowOne" class="cmd-table" ref="practiceTable"></CmdTable>
-
-        <p class="centered-txt">{{ text[14].amotions }}</p>
-
-        <CmdTable tableName="" :items="amotionsWorkflowTwo" class="cmd-table" ref="practiceTable"></CmdTable>
+        <CmdTable tableName="" :items="amotionsWorkflowOne" class="cmd-table"></CmdTable>
 
         <p class="centered-txt">{{ text[15].amotions }}</p>
+
+        <CmdTable tableName="" :items="amotionsWorkflowTwo" class="cmd-table"></CmdTable>
+
+        <p class="centered-txt">{{ text[16].amotions }}</p>
 
         <div v-for="point in amotionsPts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">{{ text[16].amotions }}</p>
+        <p class="centered-txt">{{ text[17].amotions }}</p>
 
         <div v-for="point in amotionsPtsTwo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">{{ text[17].amotions }}</p>
+        <p class="centered-txt">{{ text[18].amotions }}</p>
 
-        <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table" ref="practiceTable"></CmdTable>
+        <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table"></CmdTable>
     
-        <p class="scroll-up-btn" @click="scrollToTop">{{ text[18].scrollToTop }}</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text[19].scrollToTop }}</p>
 
     </div>
 </template>
@@ -163,7 +199,7 @@
 import { ref, onMounted } from 'vue';
 import AllData from '../../data/CompSci/GitHub.json';
 import CmdTable from "../../components/CommandTable.vue";
-import { createHyperLink } from "../../utils/Markdown.vue";
+import { createHyperLink, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
 
@@ -191,6 +227,17 @@ const existingFolderPts = jsonData.value["ExistingFolderPts"];
 const existingFolderCmds = jsonData.value["ExistingFolder"];
 
 
+const csc450WorkflowPtsOne = jsonData.value["CSC450WorkflowPtsOne"]
+const csc450WorkflowOne = jsonData.value["CSC450WorkflowOne"]
+const csc450WorkflowPtsTwo = jsonData.value["CSC450WorkflowPtsTwo"]
+const csc450WorkflowTwo = jsonData.value["CSC450WorkflowTwo"]
+const csc450WorkflowPtsThree = jsonData.value["CSC450WorkflowPtsThree"]
+const csc450WorkflowThree = jsonData.value["CSC450WorkflowThree"]
+const csc450WorkflowPtsFour = jsonData.value["CSC450WorkflowPtsFour"]
+const csc450WorkflowFour = jsonData.value["CSC450WorkflowFour"]
+const csc450WorkflowPtsFive = jsonData.value["CSC450WorkflowPtsFive"]
+
+
 const amotionsWorkflowOne = jsonData.value["AmotionsWorkflowOne"];
 const amotionsWorkflowTwo = jsonData.value["AmotionsWorkflowTwo"];
 const amotionsWorkflowThree = jsonData.value["AmotionsWorkflowThree"];
@@ -213,6 +260,7 @@ const ThreeCommands = ref(null);
 const ForkRepo = ref(null);
 const resetBranch = ref(null);
 const ExistingCmds = ref(null);
+const CSC450Workflow = ref(null);
 const AmotionsWorkflow = ref(null);
 
 const secondSix = ref(null);
@@ -246,6 +294,7 @@ const scrollToRef = (refName) => {
         ForkRepo,
         resetBranch,
         ExistingCmds,
+        CSC450Workflow,
         AmotionsWorkflow,
         secondSix,
         secondSeven,
