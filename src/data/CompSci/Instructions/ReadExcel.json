@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does this."
+            "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does that.<br><br>I also have multiple files on my GitHub that I think would be a good reference.<br><br>Example 1: [sort_excel.py](https://github.com/MichaelT-178/Modern-Python-Files/blob/main/sort_excel.py)<br>Example 2: [analyze_excel.py](https://github.com/MichaelT-178/Modern-Python-Files/blob/main/analyze_excel.py)<br>Example 3: [read_excel.py](https://github.com/MichaelT-178/Modern-Python-Files/blob/main/read_excel.py)<br><br>"
         },
         {
             "id": 2,
