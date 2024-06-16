@@ -463,6 +463,26 @@
             "Image": "Motion.jpg"
         },
         {
+            "Name": "Michael Quigley",
+            "Company": "Red Ventures",
+            "Role": "Engineering Manager",
+            "Location": "Charlotte, North Carolina",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/quigleymichael/",
+            "Details": "This guy is an engineering manager at Red Ventures and went to UNCW.",
+            "Image": "RedVentures.jpg"
+        },
+        {
+            "Name": "Victor Hahn",
+            "Company": "Red Ventures",
+            "Role": "Engineering Manager",
+            "Location": "Charlotte, North Carolina",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/vhahnwebdev/",
+            "Details": "This guy is an engineering manager at Red Ventures and posts about open roles.",
+            "Image": "RedVentures.jpg"
+        },
+        {
             "Name": "",
             "Company": "Red Ventures",
             "Role": "",
