@@ -430,6 +430,14 @@
             "Pay": ""
         },
         {
+            "Name": "Green Arrow Labs Inc",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/green-arrow-labs/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Tata Consultancy Services",
             "Location": "Cary, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/tata-consultancy-services/jobs/",
@@ -814,6 +822,14 @@
             "Pay": ""
         },
         {
+            "Name": "National Treatment Court Resource Center",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/national-treatment-court-resource-center/jobs/",
+            "Contact": "",
+            "Tips": "The name of the position I saw is Business Applications Tech",
+            "Pay": ""
+        },
+        {
             "Name": "Tractor Zoom",
             "Location": "Remote",
             "LinkedIn": "https://www.linkedin.com/company/tractor-zoom/jobs/",
@@ -857,6 +873,166 @@
             "Name": "Stateful, Inc",
             "Location": "Berkeley, California",
             "LinkedIn": "https://www.linkedin.com/company/stateful/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "MatrixCare",
+            "Location": "Bloomington, Minnesota",
+            "LinkedIn": "https://www.linkedin.com/company/matrixcare/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Reprise",
+            "Location": "Boston, Massachusetts",
+            "LinkedIn": "https://www.linkedin.com/company/getreprise/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Robomatter",
+            "Location": "Pittsburgh, Pennsylvania",
+            "LinkedIn": "https://www.linkedin.com/company/robomatter/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Management Science Associates, Inc",
+            "Location": "Pittsburgh, Pennsylvania",
+            "LinkedIn": "https://www.linkedin.com/company/management-science-associates/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "PerkinElmer",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/perkinelmer/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Deutsche Bank",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/deutsche-bank/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Diligent Corporation",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/diligent-board-member-services/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "AvidXchange, Inc.",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "NWN Corporation",
+            "Location": "Charlotte, North Carolina and Morrisville, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/nwncarousel/jobs/",
+            "Contact": "",
+            "Tips": "Also known as NWN Carousel",
+            "Pay": ""
+        },
+        {
+            "Name": "Oppia Foundation",
+            "Location": "Mountain View, California (Remote)",
+            "LinkedIn": "https://www.linkedin.com/company/oppia-org/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Allora Consulting",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/allora-consulting/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "C&S Wholesale Grocers",
+            "Location": "Keene, New Hampshire",
+            "LinkedIn": "https://www.linkedin.com/company/c&s-wholesale-grocers/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Progressive Insurance",
+            "Location": "Remote",
+            "LinkedIn": "https://www.linkedin.com/company/progressive-insurance/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Limited Run Games",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/limited-run-games/jobs/",
+            "Contact": "",
+            "Tips": "Job title was \"Developer Support\"",
+            "Pay": ""
+        },
+        {
+            "Name": "isolved",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/isolved/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Philips",
+            "Location": "Remote",
+            "LinkedIn": "https://www.linkedin.com/company/philips/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Belcan",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/belcan-engineering/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Tayloe Gray Kristof",
+            "Location": "Wilmington, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/tayloe-gray/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Rivers Agency",
+            "Location": "Chapel Hill, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/rivers-agency/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "MercuryGate International",
+            "Location": "Cary, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/mercurygate-international/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
@@ -1055,7 +1231,7 @@
         },
         {
             "Name": "PharPoint Research, Inc.",
-            "Location": "Wilmington, North Carolina or Durham, North Carolina (RTP)",
+            "Location": "Wilmington, North Carolina and Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/pharpoint-research-inc/jobs/",
             "Contact": "",
             "Tips": "",
@@ -1071,7 +1247,7 @@
         },
         {
             "Name": "FORVIS",
-            "Location": "Wilmington, North Carolina",
+            "Location": "Charlotte, North Carolina and Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/forvis/jobs/",
             "Contact": "",
             "Tips": "",
@@ -1625,6 +1801,14 @@
             "Name": "Vantaca",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/vantaca/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Pentair",
+            "Location": "Remote",
+            "LinkedIn": "https://www.linkedin.com/company/pentair/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
