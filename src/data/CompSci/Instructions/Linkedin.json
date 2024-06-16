@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Before you do anything you'll need to create a company website on LinkedIn. You can't use the LinkedIn api without doing this first. Go to this [link](https://www.linkedin.com/company/setup/new/) to sign up. Click on the \"Company\" card and enter the following values into the fields. Setting up a LinkedIn page is completely free. It also won't notify your network because it's built on a separate set of users than those that follow your regular profile",
+            "instruction": "Before you do anything you'll need to create a company website on LinkedIn. You can't use the LinkedIn api without doing this first. Go to this [link](https://www.linkedin.com/company/setup/new/) to sign up. Click on the \"Company\" card and enter the following values into the fields. Setting up a LinkedIn page is completely free. It also won't notify your network because it's built on a separate set of users than those that follow your regular profile.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -21,7 +21,7 @@
         },
         {
             "id": 2,
-            "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script."
+            "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script. <br><br>step 1: Go to [linkedin.com](https://www.linkedin.com/feed/) on desktop.<br>step 2: Click on your profile picture in the top-right<br>step 3: In the drop down menu under \"Manage\" click on \"company: your-company name\"<br>step 4: Scroll down and click \"Settings\" in the left-hand bar.<br>step 5: Click \"Deactivate page\" in the \"Settings\" section.<br>step 6: Scroll down in the pop-up window and check the confirm deactivation box. Then press \"Deactivate\".<br><br>"
         },
         {
             "id": 3,
@@ -125,7 +125,7 @@
         },
         {
             "id": 15,
-            "instruction": "The command above will output a blue website link. Open the link in your browser. You'll be prompted to sign into LinkedIn. After you sign in you'll be taken to the api-university website. Look at the URL of the api-university website, it should end in \"?code=YOUR_AUTH_CODE\". Copy everything after the equals sign, that will be your AUTH_CODE.",
+            "instruction": "The command above will output a blue website link. Open the link in your browser. You'll be prompted to sign into LinkedIn two times. After you sign in you'll be taken to the api-university website. Look at the URL of the api-university website, it should end in \"?code=YOUR_AUTH_CODE\". Copy everything after the equals sign, that will be your AUTH_CODE.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -149,7 +149,7 @@
         },
         {
             "id": 17,
-            "instruction": "Now run the \"get_info.py\" file using the following command. This will display some of your LinkedIn's account information.",
+            "instruction": "Now run the \"get_info.py\" file using the following command. This will display some of your LinkedIns account information.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -171,7 +171,7 @@
         },
         {
             "id": 19,
-            "instruction": "I'm aware that my script doesn't really do that much. This was mainly to help you through the somewhat complicated setup for a LinkedIn api project. You can test some of the endpoints found in the \"Products\" tab if you want to make HTTP requests with other LinkedIn data."
+            "instruction": "I'm aware that my script doesn't really do that much. This was mainly to help you through the somewhat complicated setup for a LinkedIn api project. You can test some of the endpoints found in the \"Products\" tab if you want to make HTTP requests to endpoints that return other LinkedIn data."
         }
     ]
 }
