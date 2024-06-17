@@ -883,8 +883,8 @@ def get_postman():
         
         return { "Title": Title, "Link": Link, "Results": Results }
     
-def get_server():
-	with open("../src/data/CompSci/Instructions/Server.json", "r") as file:
+def get_python_server():
+	with open("../src/data/CompSci/Instructions/PythonServer.json", "r") as file:
 		content = json.load(file)
 
 		info = content["Info"]
@@ -892,7 +892,22 @@ def get_server():
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
 		Title = "How to Setup a Python Server 📡"
-		Link = "/CompSci/SetupProjects/server"
+		Link = "/CompSci/SetupProjects/python-server"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
+def get_node_server():
+	with open("../src/data/CompSci/Instructions/NodeServer.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup a Node Server ⚙️"
+		Link = "/CompSci/SetupProjects/node-server"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -1402,7 +1417,8 @@ coredata = get_core_data()
 
 
 postman = get_postman()
-server = get_server()
+pyserver = get_python_server()
+nodeserver = get_node_server()
 
 oauth = get_oauth()
 
@@ -1500,7 +1516,8 @@ all_data = [
     developermode,
 
     postman,
-    server,
+    pyserver,
+    nodeserver,
 
     oauth,
 

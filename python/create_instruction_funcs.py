@@ -77,7 +77,7 @@ emojis = {
     "developer-mode": "📱",
 
     "postman": "🧑🏻‍🚀",
-    "server": "📡",
+    "python-server": "📡",
 
     "oauth": "🔐",
 
