@@ -27,7 +27,8 @@ import DeveloperMode from './DeveloperMode.json';
 import ExecutablePython from './ExecutablePython.json';
 import CoreData from './CoreData.json';
 import Postman from './Postman.json';
-import Server from './Server.json';
+import PyServer from './PythonServer.json';
+import NodeServer from './NodeServer.json';
 import OAuth from './OAuth.json';
 import GoogleApi from './GoogleApi.json';
 import RedditApi from './RedditApi.json';
@@ -69,7 +70,8 @@ export const AllSets = [
     ExecutablePython,
     CoreData,
     Postman,
-    Server,
+    PyServer,
+    NodeServer,
     OAuth,
     GoogleApi,
     RedditApi,

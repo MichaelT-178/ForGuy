@@ -256,35 +256,41 @@
                 {
                     "id": 2,
                     "name": "How to Setup a Python Server",
-                    "ref": "server",
-                    "ScrollTo": "ServerLink"
+                    "ref": "python-server",
+                    "ScrollTo": "PythonServerLink"
                 },
                 {
                     "id": 3,
+                    "name": "How to Setup a Node Server",
+                    "ref": "node-server",
+                    "ScrollTo": "NodeServerLink"
+                },
+                {
+                    "id": 4,
                     "name": "How to Setup OAuth Authentication",
                     "ref": "oauth",
                     "ScrollTo": "OAuthLink"
                 },
                 {
-                    "id": 4,
+                    "id": 5,
                     "name": "How to Populate and Query a SQLite3 Database",
                     "ref": "basic-sqlite",
                     "ScrollTo": "BasicSqliteLink"
                 },
                 {
-                    "id": 5,
+                    "id": 6,
                     "name": "How to Use Excel with Python",
                     "ref": "excel",
                     "ScrollTo": "ExcelLink"
                 },
                 {
-                    "id": 6,
+                    "id": 7,
                     "name": "How to Add a Language to the Prism Library",
                     "ref": "prism",
                     "ScrollTo": "PrismLink"
                 },
                 {
-                    "id": 7,
+                    "id": 8,
                     "name": "How to Setup an Executable Python Script",
                     "ref": "executable-python",
                     "ScrollTo": "ExecPythonLink"
