@@ -482,7 +482,7 @@
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/elevation-church/jobs/",
             "Contact": "",
-            "Tips": "There seems to be a surprising number of tech jobs here.",
+            "Tips": "",
             "Pay": ""
         },
         {
@@ -945,6 +945,14 @@
             "Name": "AvidXchange, Inc.",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Decision Source",
+            "Location": "Nashville, Tennessee",
+            "LinkedIn": "https://www.linkedin.com/company/decision-source/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""

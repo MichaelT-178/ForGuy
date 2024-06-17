@@ -40,7 +40,7 @@
 
 
 <script setup>
-import { computed, ref, nextTick, onMounted, watch } from 'vue';
+import { computed, ref, nextTick, onMounted, onUnmounted, watch } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { createHyperLink, highlightLinkText, createDownloadLink, createRouterLinkWithProps } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
@@ -162,16 +162,18 @@ onMounted(() => {
 
     const currentLink = route.fullPath;
     const linkSection = (currentLink.includes("SetupProjects/")) ? getSectionFromLink(currentLink) : null;
+    const previousNavigationType = localStorage.getItem('navigationType');
 
-
-    if (navigationEntries.length > 0 && navigationEntries[0].type === 'reload') {
+    if (navigationEntries.length > 0 && navigationEntries[0].type === 'reload' && previousNavigationType !== 'unmounted') {
         // Page was just refreshed do nothing
+        localStorage.setItem('navigationType', 'reload');
     } else {
         // Came from a different route
         const section = linkSection ?? 'node';
 
         currentSection.value = section;
         localStorage.setItem('currentSection', section);
+        localStorage.setItem('navigationType', 'other');
 
         if (linkSection != null) {
             document.querySelectorAll('.display-link').forEach(element => {
@@ -192,6 +194,10 @@ onMounted(() => {
             });
         }
     }
+});
+
+onUnmounted(() => {
+    localStorage.setItem('navigationType', 'unmounted');
 });
 
 </script>
