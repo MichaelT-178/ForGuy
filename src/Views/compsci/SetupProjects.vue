@@ -85,21 +85,20 @@ const filteredSets = computed(() => {
     return allFilteredSets;
 });
 
-
 const toggleSection = (section) => {
     currentSection.value = section;
     localStorage.setItem('currentSection', section);
 
     router.push(`/CompSci/SetupProjects/${section}`);
 
-    document.querySelectorAll('.display-link').forEach(element => {
-        element.addEventListener('click', () => {
-            const refName = element.getAttribute('data-ref');
-            scrollToDisplayLink(refName);
-        });
-    });
-
     nextTick(() => {
+        document.querySelectorAll('.display-link').forEach(element => {
+            element.addEventListener('click', () => {
+                const refName = element.getAttribute('data-ref');
+                scrollToDisplayLink(refName);
+            });
+        });
+
         if (scrollToRef.value) {
             scrollToRef.value.scrollIntoView({ behavior: 'smooth' });
         }
