@@ -56,6 +56,26 @@
             "Image": "Corning.jpg"
         },
         {
+            "Name": "Natalie Abraham",
+            "Company": "Fidelity Investments",
+            "Role": "Senior Technical Recruiter",
+            "Location": "Durham, North Carolina",
+            "Email": "nabraham@peopleserveinc.com",
+            "LinkedIn": "https://www.linkedin.com/in/natalie-abraham-777b9a35/",
+            "Details": "This women works at a recruiting agency called \"PeopleSERVE, Inc.\" but contacted me about a job at \"Fidelity\" on linkedin, it seems like she was recruiting for positions in Durham. Her phone number is 857-355-0413. I'm like 99% sure she was talking about Fidelity Investments in RTP.",
+            "Image": "Fidelity.jpg"
+        },
+        {
+            "Name": "Alex Rosso",
+            "Company": "Lenovo",
+            "Role": "Talent Acquisition Partner",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "Email": "arosso@lenovo.com",
+            "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
+            "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
+            "Image": "lenovo.jpg"
+        },
+        {
             "Name": "Davis Bryson",
             "Company": "Ohanafy",
             "Role": "Co-Founder",
@@ -124,6 +144,16 @@
             "Image": "Garmin.jpg"
         },
         {
+            "Name": "Jamie Cooper",
+            "Company": "IDR, Inc.",
+            "Role": "Lead Recruiter",
+            "Location": "IDR, Inc.",
+            "Email": "rjamie@idr-inc.com",
+            "LinkedIn": "https://www.linkedin.com/in/jamie-cooper91/",
+            "Details": "I was also contacted by the number 770-977-2127. They were both automated, so just messaging them might get a response.",
+            "Image": "IDR.jpg"
+        },
+        {
             "Name": "Caleb Barnwell",
             "Company": "Seminaut Inc",
             "Role": "Chief Executive Officer",
@@ -152,16 +182,6 @@
             "LinkedIn": "https://www.linkedin.com/in/kevin-norton-recruiter/",
             "Details": "This guy contacted me about a SWE internship in Fall 2022.",
             "Image": "Mission.jpg"
-        },
-        {
-            "Name": "Alex Rosso",
-            "Company": "Lenovo",
-            "Role": "Talent Acquisition Partner",
-            "Location": "Morrisville, North Carolina (RTP)",
-            "Email": "arosso@lenovo.com",
-            "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
-            "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
-            "Image": "lenovo.jpg"
         },
         {
             "Name": "Andy Herrmann",
@@ -249,7 +269,7 @@
             "Role": "Senior Manager, Talent Services",
             "Location": "Raleigh, North Carolina",
             "LinkedIn": "https://www.linkedin.com/in/kevin-kanhai/",
-            "Details": "This guy contacted me on LinkedIn.",
+            "Details": "This guy contacted me on LinkedIn about a SWE opportunity.",
             "Image": "Edmunds.jpg"
         },
         {
