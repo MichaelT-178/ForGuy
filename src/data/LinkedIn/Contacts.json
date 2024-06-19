@@ -62,7 +62,7 @@
             "Location": "Durham, North Carolina",
             "Email": "nabraham@peopleserveinc.com",
             "LinkedIn": "https://www.linkedin.com/in/natalie-abraham-777b9a35/",
-            "Details": "This women works at a recruiting agency called \"PeopleSERVE, Inc.\" but contacted me about a job at \"Fidelity\" on linkedin, it seems like she was recruiting for positions in Durham. Her phone number is 857-355-0413. I'm like 99% sure she was talking about Fidelity Investments in RTP.",
+            "Details": "This women works at a recruiting agency called \"PeopleSERVE, Inc.\" but contacted me about a SWE job at Fidelity Investments on linkedin in RTP. Her phone number is 857-355-0413.",
             "Image": "Fidelity.jpg"
         },
         {
@@ -76,6 +76,16 @@
             "Image": "lenovo.jpg"
         },
         {
+            "Name": "Jane Shepard",
+            "Company": "Lenovo",
+            "Role": "Talent Acquisition Partner",
+            "Location": "Morrisville, North Carolina (RTP)",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/jane-shepard/",
+            "Details": "This women is a recruiter at Lenovo and went to UNCW",
+            "Image": "lenovo.jpg"
+        },
+        {
             "Name": "Davis Bryson",
             "Company": "Ohanafy",
             "Role": "Co-Founder",
@@ -83,6 +93,16 @@
             "Email": "davis@ohanafy.com",
             "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
             "Details": "The UNCW computer science department has sent emails about Ohanafy SWE job openings with this guys email in them.",
+            "Image": "Ohanafy.jpg"
+        },
+        {
+            "Name": "",
+            "Company": "Ohanafy",
+            "Role": "",
+            "Location": "Wilmington, North Carolina",
+            "Email": "recruiting@ohanafy.com",
+            "LinkedIn": "https://www.linkedin.com/company/ohanafy/jobs/",
+            "Details": "This is the general recruiting email for Ohanafy.",
             "Image": "Ohanafy.jpg"
         },
         {
