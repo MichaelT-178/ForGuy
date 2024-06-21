@@ -835,16 +835,16 @@ def get_swift_firebase():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
-def get_core_data():
-	with open("../src/data/CompSci/Instructions/CoreData.json", "r") as file:
+def get_swift_data():
+	with open("../src/data/CompSci/Instructions/SwiftData.json", "r") as file:
 		content = json.load(file)
 
 		info = content["Info"]
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Setup Core Data in a SwiftUI project. 🏎️"
-		Link = "/CompSci/SetupProjects/core-data"
+		Title = "How to Setup SwiftData in a SwiftUI project. 🏎️"
+		Link = "/CompSci/SetupProjects/swift-data"
 		Results = info + instructions
 
 		return { "Title": Title, "Link": Link, "Results": Results }
@@ -1413,7 +1413,7 @@ swiftfirebase = get_swift_firebase()
 developermode = get_developermode()
 basicsqlite = get_basic_sqlite()
 prism = get_prism()
-coredata = get_core_data()
+swiftdata = get_swift_data()
 
 
 postman = get_postman()
@@ -1512,7 +1512,7 @@ all_data = [
     redditbotaws,
 
     swiftfirebase,
-    coredata, 
+    swiftdata, 
     developermode,
 
     postman,
