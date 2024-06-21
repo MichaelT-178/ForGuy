@@ -1,9 +1,9 @@
 {
     "Info": [
         {
-            "title": "How to Setup Core Data in a SwiftUI project.",
-            "desc": "Explains how to setup and use core data in your Swift application.",
-            "ref": "core-data"
+            "title": "How to Setup SwiftData in a SwiftUI project.",
+            "desc": "Explains how to setup and use SwiftData in your Swift application. SwiftData is a really good alternative to regular core data in my opinion.",
+            "ref": "swift-data"
         }
     ],
     "Instructions": [
