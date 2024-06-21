@@ -237,6 +237,10 @@
         {
             "text": "This is actually pretty helpful",
             "transcription": "LEFT JOIN RIGHT JOIN INNER JOIN FULL OUTER JOIN"
+        },
+        {
+            "text": "CSC 133 Gang",
+            "transcription": "Fun with flags norway xorway xnorway andway nandway notway"
         }
     ]
 }
