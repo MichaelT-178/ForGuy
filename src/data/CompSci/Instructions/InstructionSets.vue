@@ -25,7 +25,7 @@ import PhpAndMySQL from './PhpAndMySQL.json';
 import SwiftFirebase from './SwiftFirebase.json';
 import DeveloperMode from './DeveloperMode.json';
 import ExecutablePython from './ExecutablePython.json';
-import CoreData from './CoreData.json';
+import SwiftData from './SwiftData.json';
 import Postman from './Postman.json';
 import PyServer from './PythonServer.json';
 import NodeServer from './NodeServer.json';
@@ -68,7 +68,7 @@ export const AllSets = [
     PhpAndMySQL,
     DeveloperMode,
     ExecutablePython,
-    CoreData,
+    SwiftData,
     Postman,
     PyServer,
     NodeServer,
