@@ -55,6 +55,7 @@ import Meme53 from "../assets/memes/Covid.jpg";
 import Meme54 from "../assets/memes/ChangeUI.jpg";
 import Meme55 from "../assets/pom.jpg";
 import Meme56 from "../assets/memes/JoinMeme.jpg";
+import Meme57 from "../assets/memes/Gates.jpg";
 
 
 export const memeObjects = [
@@ -337,6 +338,11 @@ export const memeObjects = [
         text: "This is actually pretty helpful",
         transcription: "LEFT JOIN RIGHT JOIN INNER JOIN FULL OUTER JOIN",
         image: Meme56
-    } //JoinMeme.jpg
+    }, //JoinMeme.jpg
+    {
+        text: "CSC 133 Gang",
+        transcription: "Fun with flags norway xorway xnorway andway nandway notway",
+        image: Meme57
+    } //Gates.jpg
 ]
 </script>
