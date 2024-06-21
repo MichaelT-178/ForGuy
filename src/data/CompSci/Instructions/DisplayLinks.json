@@ -231,9 +231,9 @@
                 },
                 {
                     "id": 2,
-                    "name": "How to Setup Core Data in a SwiftUI project.",
-                    "ref": "core-data",
-                    "ScrollTo": "CoreDataLink"
+                    "name": "How to Setup SwiftData in a SwiftUI project.",
+                    "ref": "swift-data",
+                    "ScrollTo": "SwiftDataLink"
                 },
                 {
                     "id": 3,
