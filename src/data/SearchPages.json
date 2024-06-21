@@ -332,8 +332,8 @@
     {
         "id": 56,
         "Emoji": "🏎️",
-        "MenuName": "How to Setup Core Data in a SwiftUI project.",
-        "Link": "/CompSci/SetupProjects/core-data"
+        "MenuName": "How to Setup SwiftData in a SwiftUI project.",
+        "Link": "/CompSci/SetupProjects/swift-data"
     },
     {
         "id": 57,
