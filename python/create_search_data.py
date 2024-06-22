@@ -110,6 +110,25 @@ def modify_list_with_code_separation(og_list, key_to_separate):
 
     return modified_list
 
+def replace_strs(file_path):
+    """
+    Replaces substrings in a JSON file with the new strings.
+    :param file_path: File path of file to be modified.
+    """
+    # <br> -> " "
+    #
+    old_strings = ["<br>"]
+    new_strings = [" "]
+
+    with open(file_path, 'r') as file:
+        data = file.read()
+
+    for old, new in zip(old_strings, new_strings):
+        data = data.replace(old, new)
+
+    with open(file_path, 'w') as file:
+        file.write(data)
+
 
 # Classes
 def get_classestoavoid():
@@ -1551,3 +1570,7 @@ with open("delete.json", "w", encoding='utf-8') as file:
 with open("../src/data/SearchData.json", "w", encoding='utf-8') as file:
     json.dump(real_json, file, ensure_ascii=False, indent=4)
     
+replace_strs("delete.json")
+replace_strs("../src/data/SearchData.json")
+
+print("Files created!")
