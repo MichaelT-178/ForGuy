@@ -35,6 +35,7 @@ import RedditApi from './RedditApi.json';
 import ReadExcel from './ReadExcel.json';
 import OpenAI from './OpenAI.json';
 import LinkedIn from './Linkedin.json';
+import RedditBot from './RedditBot.json';
 import RedditBotAWS from './RedditBotAWS.json';
 import ComplexMySQL from './ComplexMySQL.json';
 import DeployMySQL from './DeployMySQL.json';
@@ -78,6 +79,7 @@ export const AllSets = [
     ReadExcel,
     OpenAI,
     LinkedIn,
+    RedditBot,
     RedditBotAWS,
     ComplexMySQL,
     DeployMySQL,
