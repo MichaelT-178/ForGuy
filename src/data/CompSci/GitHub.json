@@ -47,16 +47,21 @@
         },
         {
             "id": 10,
+            "name": "Revert a Single File To Previous Commit",
+            "ref": "ResetSingleFile"
+        },
+        {
+            "id": 11,
             "name": "Add Existing Folder To GitHub",
             "ref": "ExistingCmds"
         },
         {
-            "id": 11,
+            "id": 12,
             "name": "CSC 450 Workflow",
             "ref": "CSC450Workflow"
         },
         {
-            "id": 12,
+            "id": 13,
             "name": "My Old Amotions Workflow",
             "ref": "AmotionsWorkflow"
         }
@@ -1013,6 +1018,67 @@
             "Example": "git push -u origin main"
         }
     ],
+    "RevertSingleFile": [
+        {
+            "id": 1,
+            "instruction": "Make sure you're converting back to the commit with the right changes. For instance, if you broke it in commit e2f7f8c, you'll want to convert it to an earlier commit before you made the changes to the file."
+        },
+        {
+            "id": 2,
+            "instruction": "Run \"git log\" to find your previous commits hash. The hash comes is the long string after the word \"commit\". Press 'q' to exit.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git log",
+                "CopyCode": "git log"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "Copy and record the hash of the commit you want to revert back to. You can run the following command to check the contents of the file in the command line. Replace<br> the hash and file path.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git show e2f7f8c2b6346c5b7db569c3f3a5b7f18ebde44e:src/Home.js",
+                "CopyCode": "git show e2f7f8c2b6346c5b7db569c3f3a5b7f18ebde44e:src/Home.js"
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Checkout your previous commit. Replace the hash and path.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout e2f7f8c2b6346c5b7db569c3f3a5b7f18ebde44e -- src/Home.js",
+                "CopyCode": "git checkout e2f7f8c2b6346c5b7db569c3f3a5b7f18ebde44e -- src/Home.js"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Add the previous commit. Replace the path.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add src/Home.js",
+                "CopyCode": "git add src/Home.js"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Commit your reverted file. I'd recommend adding the hash in the commit message.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git commit -m \"Reverted Home.js to commit e2f7f8c\"",
+                "CopyCode": "git commit -m \"Reverted Home.js to commit e2f7f8c\""
+            }
+        }
+    ],
     "Text": [
         {
             "title": "GitHub",
@@ -1061,6 +1127,10 @@
         {
             "title": "Reset To Previous Commit",
             "desc": "Reset your current working directory to a previous commit."
+        },
+        {
+            "title": "Revert a Single File To Previous Commit",
+            "desc": "Explains how to reset a single file to a previous commit."
         },
         {
             "title": "Existing Folder Commands",
