@@ -981,6 +981,14 @@
                 "Pay": ""
             },
             {
+                "Name": "Denodo",
+                "Location": "Boise, Idaho",
+                "LinkedIn": "https://www.linkedin.com/company/denodo-technologies/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "NWN Corporation",
                 "Location": "Charlotte, North Carolina and Morrisville, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/nwncarousel/jobs/",
@@ -1525,11 +1533,27 @@
                 "Pay": ""
             },
             {
+                "Name": "Genpact",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/genpact/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Next Level3",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/next-level3-software/jobs/",
                 "Contact": "",
                 "Tips": "It says \"Wilmington, Delaware\" in the description but it definitely meant NC.",
+                "Pay": ""
+            },
+            {
+                "Name": "Accenture",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/accenture/jobs/",
+                "Contact": "",
+                "Tips": "",
                 "Pay": ""
             },
             {
@@ -1640,6 +1664,30 @@
                 "Name": "Qualitest",
                 "Location": "Greensboro, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/qualitest/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Filter Folder",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/treevah/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "CISYS LifeSciences",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/cisys-lifesciences/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "ARCS Aviation",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/arcsaviation/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -2875,6 +2923,36 @@
                 "Image": "Corning.jpg"
             },
             {
+                "Name": "Natalie Abraham",
+                "Company": "Fidelity Investments",
+                "Role": "Senior Technical Recruiter",
+                "Location": "Durham, North Carolina",
+                "Email": "nabraham@peopleserveinc.com",
+                "LinkedIn": "https://www.linkedin.com/in/natalie-abraham-777b9a35/",
+                "Details": "This women works at a recruiting agency called \"PeopleSERVE, Inc.\" but contacted me about a SWE job at Fidelity Investments on linkedin in RTP. Her phone number is 857-355-0413.",
+                "Image": "Fidelity.jpg"
+            },
+            {
+                "Name": "Alex Rosso",
+                "Company": "Lenovo",
+                "Role": "Talent Acquisition Partner",
+                "Location": "Morrisville, North Carolina (RTP)",
+                "Email": "arosso@lenovo.com",
+                "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
+                "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
+                "Image": "lenovo.jpg"
+            },
+            {
+                "Name": "Jane Shepard",
+                "Company": "Lenovo",
+                "Role": "Talent Acquisition Partner",
+                "Location": "Morrisville, North Carolina (RTP)",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/jane-shepard/",
+                "Details": "This women is a recruiter at Lenovo and went to UNCW",
+                "Image": "lenovo.jpg"
+            },
+            {
                 "Name": "Davis Bryson",
                 "Company": "Ohanafy",
                 "Role": "Co-Founder",
@@ -2882,6 +2960,16 @@
                 "Email": "davis@ohanafy.com",
                 "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
                 "Details": "The UNCW computer science department has sent emails about Ohanafy SWE job openings with this guys email in them.",
+                "Image": "Ohanafy.jpg"
+            },
+            {
+                "Name": "",
+                "Company": "Ohanafy",
+                "Role": "",
+                "Location": "Wilmington, North Carolina",
+                "Email": "recruiting@ohanafy.com",
+                "LinkedIn": "https://www.linkedin.com/company/ohanafy/jobs/",
+                "Details": "This is the general recruiting email for Ohanafy.",
                 "Image": "Ohanafy.jpg"
             },
             {
@@ -2943,6 +3031,16 @@
                 "Image": "Garmin.jpg"
             },
             {
+                "Name": "Jamie Cooper",
+                "Company": "IDR, Inc.",
+                "Role": "Lead Recruiter",
+                "Location": "IDR, Inc.",
+                "Email": "rjamie@idr-inc.com",
+                "LinkedIn": "https://www.linkedin.com/in/jamie-cooper91/",
+                "Details": "I was also contacted by the number 770-977-2127. They were both automated, so just messaging them might get a response.",
+                "Image": "IDR.jpg"
+            },
+            {
                 "Name": "Caleb Barnwell",
                 "Company": "Seminaut Inc",
                 "Role": "Chief Executive Officer",
@@ -2971,16 +3069,6 @@
                 "LinkedIn": "https://www.linkedin.com/in/kevin-norton-recruiter/",
                 "Details": "This guy contacted me about a SWE internship in Fall 2022.",
                 "Image": "Mission.jpg"
-            },
-            {
-                "Name": "Alex Rosso",
-                "Company": "Lenovo",
-                "Role": "Talent Acquisition Partner",
-                "Location": "Morrisville, North Carolina (RTP)",
-                "Email": "arosso@lenovo.com",
-                "LinkedIn": "https://www.linkedin.com/in/alexrosso21/",
-                "Details": "This was my recruiter when I was interviewing with Lenovo for a full-time SWE position.",
-                "Image": "lenovo.jpg"
             },
             {
                 "Name": "Andy Herrmann",
@@ -3068,7 +3156,7 @@
                 "Role": "Senior Manager, Talent Services",
                 "Location": "Raleigh, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/in/kevin-kanhai/",
-                "Details": "This guy contacted me on LinkedIn.",
+                "Details": "This guy contacted me on LinkedIn about a SWE opportunity.",
                 "Image": "Edmunds.jpg"
             },
             {
@@ -4572,6 +4660,10 @@
                 "desc": "Reset your current working directory to a previous commit."
             },
             {
+                "title": "Revert a Single File To Previous Commit",
+                "desc": "Explains how to reset a single file to a previous commit."
+            },
+            {
                 "title": "Existing Folder Commands",
                 "desc": "How to get an existing folder onto GitHub."
             },
@@ -4634,6 +4726,10 @@
             {
                 "name": "Reset To Previous Commit",
                 "ref": "resetBranch"
+            },
+            {
+                "name": "Revert a Single File To Previous Commit",
+                "ref": "ResetSingleFile"
             },
             {
                 "name": "Add Existing Folder To GitHub",
@@ -6656,9 +6752,9 @@
                 "ScrollTo": "SwiftFirebaseLink"
             },
             {
-                "name": "How to Setup Core Data in a SwiftUI project.",
-                "ref": "core-data",
-                "ScrollTo": "CoreDataLink"
+                "name": "How to Setup SwiftData in a SwiftUI project.",
+                "ref": "swift-data",
+                "ScrollTo": "SwiftDataLink"
             },
             {
                 "name": "How to Run an iOS app in Developer Mode",
@@ -8244,7 +8340,7 @@
                 "instruction": "Most of the following steps come from this video. Seeing what's happening might be helpful."
             },
             {
-                "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.<br><br>Ext 1: Extension Pack for Java<br>Ext 2: Spring Initializr Java Support<br>Ext 3: Spring Boot Dashboard<br>Ext 4: Spring Boot Tools<br>Ext 5: Spring Boot Extension Pack<br><br>"
+                "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.  Ext 1: Extension Pack for Java Ext 2: Spring Initializr Java Support Ext 3: Spring Boot Dashboard Ext 4: Spring Boot Tools Ext 5: Spring Boot Extension Pack  "
             },
             {
                 "instruction": "After you have those extensions installed, do the following with VSCode open."
@@ -9750,7 +9846,7 @@
                 "CopyCode": "Name: Choose a unique company name\nIndustry: Software Development\nOrganization Size: 0-1 employees\nOrganization type: Self-employed\n\nVerify that you're an authorized representative\n\nPress the blue \"Create Page\" button"
             },
             {
-                "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script. <br><br>step 1: Go to linkedin.com on desktop.<br>step 2: Click on your profile picture in the top-right<br>step 3: In the drop down menu under \"Manage\" click on \"company: your-company name\"<br>step 4: Scroll down and click \"Settings\" in the left-hand bar.<br>step 5: Click \"Deactivate page\" in the \"Settings\" section.<br>step 6: Scroll down in the pop-up window and check the confirm deactivation box. Then press \"Deactivate\".<br><br>"
+                "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script.   step 1: Go to linkedin.com on desktop. step 2: Click on your profile picture in the top-right step 3: In the drop down menu under \"Manage\" click on \"company: your-company name\" step 4: Scroll down and click \"Settings\" in the left-hand bar. step 5: Click \"Deactivate page\" in the \"Settings\" section. step 6: Scroll down in the pop-up window and check the confirm deactivation box. Then press \"Deactivate\".  "
             },
             {
                 "instruction": "After you've completed step 2, click on this link to start creating your app."
@@ -10163,13 +10259,13 @@
         ]
     },
     {
-        "Title": "How to Setup Core Data in a SwiftUI project. 🏎️",
-        "Link": "/CompSci/SetupProjects/core-data",
+        "Title": "How to Setup SwiftData in a SwiftUI project. 🏎️",
+        "Link": "/CompSci/SetupProjects/swift-data",
         "Results": [
             {
-                "title": "How to Setup Core Data in a SwiftUI project.",
-                "desc": "Explains how to setup and use core data in your Swift application.",
-                "ref": "core-data"
+                "title": "How to Setup SwiftData in a SwiftUI project.",
+                "desc": "Explains how to setup and use SwiftData in your Swift application. SwiftData is a really good alternative to regular core data in my opinion.",
+                "ref": "swift-data"
             },
             {
                 "instruction": ""
@@ -10497,11 +10593,135 @@
         "Results": [
             {
                 "title": "How to Setup a Node Server",
-                "desc": "How to setup a Node server that interacts with an html frontend.",
+                "desc": "How to setup a Node server that interacts with an html frontend. Node.js is a good framework to know and is popular at IBM.",
                 "ref": "node-server"
             },
             {
-                "instruction": ""
+                "instruction": "Make sure you have npm and node installed. If one of these doesn't return the version see the &How to Setup Node.js&[NodeLink] instruction page to set it up."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "node -v\nnpm -v"
+            },
+            {
+                "instruction": "Create a node_server folder and initialize a node project. It will output the data of the package.json file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir node_server\ncd node_server\nnpm init -y"
+            },
+            {
+                "instruction": "Install the node dependencies."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "npm install express sqlite3 sequelize portfinder"
+            },
+            {
+                "instruction": "Create a server.js file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "touch server.js"
+            },
+            {
+                "instruction": "Open your \"node_server\" folder in VSCode and paste the following code into the \"server.js\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "DisplayLang": "Node.js",
+                "CopyCode": "const express = require('express');\nconst bodyParser = require('body-parser');\nconst { Sequelize, DataTypes } = require('sequelize');\nconst path = require('path');\nconst portfinder = require('portfinder');\n\nconst app = express();\nconst BASE_PORT = 3000;\n\n// Middleware\napp.use(bodyParser.json());\n\n// Database setup\nconst sequelize = new Sequelize({\n  dialect: 'sqlite',\n  storage: path.join(__dirname, 'items.db'),\n});\n\nconst Item = sequelize.define('Item', {\n  name: {\n    type: DataTypes.STRING,\n    allowNull: false,\n  }\n}, {\n  timestamps: false\n});\n\n// Initialize the database\nasync function initDb() {\n  await sequelize.sync();\n  console.log(\"Database initialized\");\n}\n\n// Serve the index.html file at the root URL\napp.get('/', (req, res) => {\n  res.sendFile(path.join(__dirname, 'public', 'index.html'));\n});\n\n// Routes\napp.get('/items', async (req, res) => {\n  const items = await Item.findAll();\n  res.json(items);\n});\n\napp.post('/add-item', async (req, res) => {\n  const { name } = req.body;\n  const newItem = await Item.create({ name });\n  res.json({ message: \"Item added successfully\", id: newItem.id });\n});\n\n// Start the server\nportfinder.basePort = BASE_PORT;\n\nportfinder.getPortPromise()\n  .then((PORT) => {\n    app.listen(PORT, async () => {\n      await initDb();\n      console.log(`\\nServing at port \\x1b[94mhttp://localhost:${PORT}/\\x1b[0m`);\n    });\n  })\n  .catch((err) => {\n    console.error(err);\n  });\n"
+            },
+            {
+                "instruction": "Open a new terminal, change back into your folder and run the server."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd node_server\nnode server.js"
+            },
+            {
+                "instruction": "Keep your server running, but open a new terminal. Run the following commands to make POST and GET requests to your server."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Command/HTTP Request",
+                "CopyCode": "curl -X POST http://localhost:3000/add-item \\\n-H \"Content-Type: application/json\" \\\n-d '{\"name\": \"Shirt\"}'\n\ncurl -X POST http://localhost:3000/add-item \\\n-H \"Content-Type: application/json\" \\\n-d '{\"name\": \"Pants\"}'\n\ncurl http://localhost:3000/items"
+            },
+            {
+                "instruction": "You can create an index.html file to create frontend for your server."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd node_server\nmkdir public\ntouch public/index.html"
+            },
+            {
+                "instruction": "Now open the \"index.html\" file in the \"public\" folder. Paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "HTML",
+                "CopyCode": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Item Manager</title>\n</head>\n<body>\n\t<h1>Item Manager</h1>\n\n\t<h2>Add New Item</h2>\n\t<form id=\"addItemForm\">\n\t\t<label for=\"itemName\">Item Name:</label>\n\t\t<input type=\"text\" id=\"itemName\" name=\"itemName\" required>\n\t\t<button type=\"submit\">Add Item</button>\n\t</form>\n\n\t<h2>All Items</h2>\n\t<button onclick=\"getAllItems()\">Fetch Items</button>\n\t<ul id=\"itemsList\"></ul>\n\n\t<script>\n\tdocument.getElementById(\"addItemForm\").onsubmit = async (event) => {\n\t\tevent.preventDefault();\n\t\tconst itemName = document.getElementById('itemName').value;\n\n\t\tconst response = await fetch('/add-item', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json',\n\t\t\t},\n\t\t\tbody: JSON.stringify({ name: itemName }),\n\t\t});\n\n\t\tconst result = await response.json();\n\t\talert(result.message);\n\t\tdocument.getElementById('addItemForm').reset();\n\t\tgetAllItems();\n\t};\n\n\tasync function getAllItems() {\n\t\tconst response = await fetch('/items');\n\t\tconst items = await response.json();\n\t\tconst itemsList = document.getElementById('itemsList');\n\t\titemsList.innerHTML = '';\n\n\t\titems.forEach(item => {\n\t\t\tconst listItem = document.createElement('li');\n\t\t\tlistItem.textContent = `${item.name} (ID: ${item.id})`;\n\t\t\titemsList.appendChild(listItem);\n\t\t});\n\t}\n\t</script>\n</body>\n</html>"
+            },
+            {
+                "instruction": "Now rerun your server."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "node server.js"
+            },
+            {
+                "instruction": "Open the localhost link in a browser. You should now see your html frontend."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Link",
+                "CopyCode": "http://localhost:3000/"
+            },
+            {
+                "instruction": "You can add items to your database using the frontend. Refresh the \".db\" file to see changes."
+            },
+            {
+                "instruction": "If you want to query the database do step 14 - 17."
+            },
+            {
+                "instruction": "Open your \"items.db\" file and press \"command + shift + p\" to open the command palette. Type \"SQLite: New Query\" in the search bar and click on it."
+            },
+            {
+                "instruction": "In the --SQLite file. Paste the following SQL query."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "fxml",
+                "DisplayLang": "SQL",
+                "CopyCode": "SELECT * FROM items;"
+            },
+            {
+                "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"items.db\" file in the results."
+            },
+            {
+                "instruction": "You should now see the result table of your query."
             }
         ]
     },
@@ -10681,7 +10901,7 @@
                 "ref": "excel"
             },
             {
-                "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does that.<br><br>I also have multiple files on my GitHub that I think would be a good reference.<br><br>Example 1: sort_excel.py<br>Example 2: analyze_excel.py<br>Example 3: read_excel.py<br><br>"
+                "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does that.  I also have multiple files on my GitHub that I think would be a good reference.  Example 1: sort_excel.py Example 2: analyze_excel.py Example 3: read_excel.py  "
             },
             {
                 "instruction": "First off we're going to create our project folder and files."
@@ -12233,6 +12453,10 @@
             {
                 "text": "This is actually pretty helpful",
                 "transcription": "LEFT JOIN RIGHT JOIN INNER JOIN FULL OUTER JOIN"
+            },
+            {
+                "text": "CSC 133 Gang",
+                "transcription": "Fun with flags norway xorway xnorway andway nandway notway"
             }
         ]
     },
