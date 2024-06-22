@@ -820,6 +820,26 @@ def get_linkedin_api():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_reddit_bot():
+    with open("../src/data/CompSci/Instructions/RedditBot.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
+
+        Results = []
+
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
+
+            Results += info + instructions
+
+        Title = "How to Create a Reddit Bot 🤖"
+        Link = "/CompSci/SetupProjects/reddit-bot"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_reddit_bot_aws():
     with open("../src/data/CompSci/Instructions/RedditBotAWS.json", "r") as file:
         content = json.load(file)
@@ -835,7 +855,7 @@ def get_reddit_bot_aws():
 
             Results += info + instructions
 
-        Title = "How to Deploy a Reddit Bot on AWS 🤖"
+        Title = "How to Deploy a Reddit Bot on AWS 🚀"
         Link = "/CompSci/SetupProjects/reddit-bot-aws"
         
         return { "Title": Title, "Link": Link, "Results": Results }  
@@ -1426,6 +1446,7 @@ redditapi = get_reddit_api()
 spotifyapi = get_spotify_api()
 openai = get_openai_api()
 linkedin = get_linkedin_api()
+redditbot = get_reddit_bot()
 redditbotaws = get_reddit_bot_aws()
 
 swiftfirebase = get_swift_firebase()
@@ -1524,10 +1545,10 @@ all_data = [
     youtube,
 
     googleapi, 
+    redditapi,
     spotifyapi,
     openai,
     linkedin,
-    redditapi,
     redditbotaws,
 
     swiftfirebase,
