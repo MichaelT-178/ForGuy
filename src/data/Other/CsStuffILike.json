@@ -122,6 +122,13 @@
             "Language": "Markdown",
             "FormatCode": "[Uncw Link](https://uncw.edu/)",
             "CopyCode": "[Uncw Link](https://uncw.edu/)"
+        },
+        {
+            "Name": "String Formatting",
+            "Description": "Formats a string into left-aligned columns in python. The formatted string in this example is what's being returned from the function. They're great for displaying data. Can also be right/center-aligned.",
+            "Language": "Python",
+            "FormatCode": "def format_line(p1, p2, p3, p4):\n    return \"{:<25}{:<20}{:<20}{:<15}\".format(p1, p2, p3, p4)\n\naccounts = [\n    {\n\t\"bank\": \"Bank of America\",\n\t\"account_number\": 8748978914,\n\t\"account_holder\": \"Matthew\",\n\t\"balance\": 359.67\n    },\n    {\n\t\"bank\": \"USAA\",\n\t\"account_number\": 6124567421,\n\t\"account_holder\": \"Alex\",\n\t\"balance\": 50871.23\n    },\n    {\n\t\"bank\": \"Ally Financial\",\n\t\"account_number\": 1348932019,\n\t\"account_holder\": \"Charlotte\",\n\t\"balance\": 2081.24\n    }\n]\n\nprint(format_line(\"Bank\", \"Acct Number\", \"Acct Holder\", \"Balance\"))\n\nfor acct in accounts:\n    print(format_line(acct[\"bank\"], acct[\"account_number\"], acct[\"account_holder\"], acct[\"balance\"]))",
+            "CopyCode": "def format_line(p1, p2, p3, p4):\n\treturn \"{:<25}{:<20}{:<20}{:<15}\".format(p1, p2, p3, p4)\n\naccounts = [\n\t{\n\t\t\"bank\": \"Bank of America\",\n\t\t\"account_number\": 8748978914,\n\t\t\"account_holder\": \"Matthew\",\n\t\t\"balance\": 359.67\n\t},\n\t{\n\t\t\"bank\": \"USAA\",\n\t\t\"account_number\": 6124567421,\n\t\t\"account_holder\": \"Alex\",\n\t\t\"balance\": 50871.23\n\t},\n\t{\n\t\t\"bank\": \"Ally Financial\",\n\t\t\"account_number\": 1348932019,\n\t\t\"account_holder\": \"Charlotte\",\n\t\t\"balance\": 2081.24\n\t}\n]\n\nprint(format_line(\"Bank\", \"Acct Number\", \"Acct Holder\", \"Balance\"))\n\nfor acct in accounts:\n\tprint(format_line(acct[\"bank\"], acct[\"account_number\"], acct[\"account_holder\"], acct[\"balance\"]))"
         }
     ]
 }
