@@ -225,7 +225,12 @@
                 "id": 1,
                 "Shortcut": "shift + control + down arrow",
                 "Action": "Multi-line editing"
-            } 
+            },
+            {
+                "id": 2,
+                "Shortcut": "command + a, control + i",
+                "Action": "Format code"
+            }
         ]
     },
     "Slack": {
