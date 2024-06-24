@@ -185,7 +185,7 @@ export const memeObjects = [
         image: Meme25 
     }, //ComfortLevels.jpg
     { 
-        text: "It's lowkey not that bad.",
+        text: "Microsoft Teams ftw",
         transcription: "Some Famous Severs Amazon Google Microsoft Zoom app",
         image: Meme26 
     }, //SomeFamousServers.jpg
@@ -235,7 +235,7 @@ export const memeObjects = [
         image: Meme35 
     }, //DataStructureTeachers.jpg
     { 
-        text: "Your crush thinks your a 2 (r.i.p).",
+        text: "Your crush thinks you're a 2 (r.i.p).",
         transcription: "Your crush knows binary. She thinks you're a 10. She thinks you're a 10.",
         image: Meme36 
     }, //CrushKnowsBinary.jpg
