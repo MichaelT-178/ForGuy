@@ -20,7 +20,7 @@
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import SearchData from "../data/SearchData.json";
-import SearchCard from "../components/SearchCard.vue";
+import SearchCard from "../components/SearchResultCard.vue";
 import ShrugPhoto from '../assets/Shrug.png';
   
 const route = useRoute();
