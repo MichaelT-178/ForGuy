@@ -32,7 +32,7 @@ const props = defineProps({
 <style scoped>
 
 .search-card {
-    padding: 0px 0px 10px 30px; /* Top, right, bottom, left */
+    padding: 0px 30px 10px 30px; /* Top, right, bottom, left */
     border: 1px solid #727272;
     border-radius: 5px;
     width: 600px;
@@ -49,7 +49,7 @@ const props = defineProps({
 }
 
 .search-card:hover .title span {
-    color: darkblue; /* line changes the text color */
+    color: darkblue;
 }
 
 .no-style-link {
@@ -62,7 +62,7 @@ const props = defineProps({
     border-bottom: 1px solid #ccc;
     padding-bottom: 1px;
     display: inline-block;
-    padding-right: 110px;
+    width: 100%;
 }
 
 .search-card .result {
@@ -85,10 +85,6 @@ const props = defineProps({
 @media (max-width: 700px) {
     .search-card {
         width: 425px;
-    }
-
-    .title span {
-        padding-right: 48px;
     }
 }
 
