@@ -708,7 +708,7 @@ def get_php():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Setup a PHP and MySQL Project for UNCW. 🐘"
+		Title = "How to Setup a PHP and MySQL Project for UNCW 🐘"
 		Link = "/CompSci/SetupProjects/php"
 		Results = info + instructions
 
@@ -882,7 +882,7 @@ def get_swift_data():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to Setup SwiftData in a SwiftUI project. 🏎️"
+		Title = "How to Setup SwiftData in a SwiftUI project 🏎️"
 		Link = "/CompSci/SetupProjects/swift-data"
 		Results = info + instructions
 
