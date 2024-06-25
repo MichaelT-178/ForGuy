@@ -147,13 +147,13 @@
                 },
                 {
                     "id": 3,
-                    "name": "How to Setup Cisco Secure Client and a VPN.",
+                    "name": "How to Setup Cisco Secure Client and a VPN",
                     "ref": "cisco",
                     "ScrollTo": "CiscoLink"
                 },
                 {
                     "id": 4,
-                    "name": "How to Setup a PHP and MySQL Project for UNCW.",
+                    "name": "How to Setup a PHP and MySQL Project for UNCW",
                     "ref": "php",
                     "ScrollTo": "PhpLink"
                 }
@@ -237,7 +237,7 @@
                 },
                 {
                     "id": 2,
-                    "name": "How to Setup SwiftData in a SwiftUI project.",
+                    "name": "How to Setup SwiftData in a SwiftUI project",
                     "ref": "swift-data",
                     "ScrollTo": "SwiftDataLink"
                 },
