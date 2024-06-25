@@ -230,6 +230,26 @@
                 "id": 2,
                 "Shortcut": "command + a, control + i",
                 "Action": "Format code"
+            },
+            {
+                "id": 3,
+                "Shortcut": "command + n",
+                "Action": "Create new file"
+            },
+            {
+                "id": 4,
+                "Shortcut": "command + r",
+                "Action": "Build and run your project"
+            },
+            {
+                "id": 5,
+                "Shortcut": "shift + control + down arrow",
+                "Action": "Multiline editing in Xcode"
+            },
+            {
+                "id": 6,
+                "Shortcut": "",
+                "Action": ""
             }
         ]
     },
