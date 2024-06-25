@@ -185,7 +185,7 @@ export const memeObjects = [
         image: Meme25 
     }, //ComfortLevels.jpg
     { 
-        text: "Microsoft Teams ftw",
+        text: "Cisco Webex ftw",
         transcription: "Some Famous Severs Amazon Google Microsoft Zoom app",
         image: Meme26 
     }, //SomeFamousServers.jpg

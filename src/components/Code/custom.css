@@ -162,3 +162,43 @@ span.token.selector {
 .swift-string {
     color: #FC7467;
 }
+
+.cust-swift-light-purple {
+    color: #DEC1FF;
+}
+
+.cust-swift-comment {
+    color: #7CB554;
+}
+
+.cust-swift-pink {
+    color: #FC6BAA;
+}
+
+.cust-swift-string {
+    color: #FC7467;
+}
+
+.cust-swift-purple {
+    color: #C08AFF
+}
+
+.cust-swift-light-blue {
+    color: #5DD8FF
+}
+
+.cust-swift-blue {
+    color: #42B8E0
+}
+
+.cust-swift-green {
+    color: #72BFAE
+}
+
+.cust-swift-light-green {
+    color: #A4FBE6
+}
+
+.cust-swift-dark-yellow {
+    color: #D0BC56
+}
