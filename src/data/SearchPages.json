@@ -272,7 +272,7 @@
     {
         "id": 46,
         "Emoji": "🐘",
-        "MenuName": "How to Setup a PHP and MySQL Project for UNCW.",
+        "MenuName": "How to Setup a PHP and MySQL Project for UNCW",
         "Link": "/CompSci/SetupProjects/php"
     },
     {
@@ -338,7 +338,7 @@
     {
         "id": 57,
         "Emoji": "🏎️",
-        "MenuName": "How to Setup SwiftData in a SwiftUI project.",
+        "MenuName": "How to Setup SwiftData in a SwiftUI project",
         "Link": "/CompSci/SetupProjects/swift-data"
     },
     {

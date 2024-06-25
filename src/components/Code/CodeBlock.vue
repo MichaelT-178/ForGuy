@@ -5,7 +5,7 @@
         <h2 v-if="codeInfo.Name" class="code-name">{{ codeInfo.Name }}</h2>
         <p v-if="codeInfo.Description" class="description" v-html="highlightLinkText(codeInfo.Description)"></p>
       </div>
-      <div class="code-block">
+      <div class="code-block" :style="{ backgroundColor: codeBlockBackgroundColor }">
         <div class="copy-bar">
           <span class="language-name">{{ codeInfo.DisplayLang || codeInfo.Language }}</span>
           <span class="material-icons copy-icon" 
@@ -20,7 +20,6 @@
   </div>
 </template>
 
-
 <script setup>
 import { ref, computed, watchEffect } from 'vue';
 import { highlightLinkText } from '../../utils/Markdown.vue'
@@ -32,6 +31,7 @@ import 'prismjs/components/prism-swift';
 import 'prismjs/components/prism-fxml';
 import 'prismjs/components/prism-json';
 import 'prismjs/components/prism-sh';
+import 'prismjs/components/prism-customswift';
 import 'prismjs/components/prism-customproperties';
 import 'prismjs/themes/prism-coy.css';
 import './custom.css';
@@ -50,7 +50,6 @@ const props = defineProps({
     required: true,
   },
 });
-
 
 const copyIcon = ref('content_copy');
 
@@ -76,12 +75,9 @@ const highlightedCode = computed(() => {
   return Prism.highlight(props.codeInfo.FormatCode, prismLanguage, language);
 });
 
-
 const getLanguageColor = computed(() => {
-
   const language = props.codeInfo.DisplayLang || props.codeInfo.Language;
   
-  // I prefer this approach over a switch statement
   const colors = {
     python: '#3572A5',
     java: '#C6821E',
@@ -92,25 +88,23 @@ const getLanguageColor = computed(() => {
     ruby: '#701516',
     vue: '#41b883',
     css: '#563d7c',
-    react: '#61DAFB', //#087EA4 #61DAFB
+    react: '#61DAFB',
     json: '#FF9A00'
   };
 
   const colorKey = language.toLowerCase().trim();
   return colors[colorKey] || "#DFC200";
+});
 
+const codeBlockBackgroundColor = computed(() => {
+  return /customswift|swift/.test(props.codeInfo.Language.toLowerCase().trim()) ? '#18171B' : '#282C34';
 });
 
 watchEffect(() => {
   document.documentElement.style.setProperty('--dynamic-width', props.codeInfo.Name === '' ? '640px' : '700px');
-  document.documentElement.style.setProperty('--background-color', props.codeInfo.Language.toLowerCase().trim() === 'swift' ? '#18171B' : '#282C34');
-
-  const newBackgroundColor = props.codeInfo.Language.toLowerCase().trim() === 'swift' ? '#18171B' : '#282C34';
-  document.documentElement.style.setProperty('--token-operator-background', newBackgroundColor);
 });
 
 </script>
-
 
 <style scoped>
 .container {
@@ -118,7 +112,7 @@ watchEffect(() => {
     justify-content: center;
     width: 100%;
 }
-  
+
 .aligned-container {
     display: flex;
     flex-direction: column;
@@ -129,28 +123,28 @@ watchEffect(() => {
 .text-container, .code-block {
     width: 100%;
 }
-  
+
 .code-name {
     margin-left: 4px;
     font-size: 23px;
 }
-  
+
 .description {
     margin-top: -15px;
     margin-left: 4px;
     font-size: 17px;
 }
-  
+
 .code-block {
     width: var(--dynamic-width);
     margin: 20px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: var(--background-color);
+    background-color: #282C34;
     color: white;
     margin-top: -5px;
 }
-  
+
 .language-name {
     color: #D5D5D5;
     font-size: 10px;
@@ -172,7 +166,7 @@ watchEffect(() => {
 .icon-done:hover {
     color: #00FF4D;
 }
-  
+
 .copy-bar {
     position: sticky;
     display: flex;
@@ -186,9 +180,9 @@ watchEffect(() => {
   font-size: 20px;
   margin-left: 6px;
 }
-  
+
 code {
-  background-color: var(--background-color);
+  background-color: inherit;
   border-radius: 3px;
   font-size: 14px;
   margin-left: 16px;
@@ -198,7 +192,7 @@ code {
   overflow-x: auto;
   padding-right: 16px;
 }
-  
+
 @media (max-width: 700px) {
     .aligned-container {
         width: 500px;
@@ -217,6 +211,4 @@ code {
         order: -1;
     }
 }
-  
 </style>
-
