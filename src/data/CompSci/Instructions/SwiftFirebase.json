@@ -13,9 +13,10 @@
             "Code": {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
+                "Language": "swiftcustom",
+                "DisplayLang": "Swift",
+                "FormatCode": "hello",
+                "CopyCode": "hello"
             }
         }
     ]

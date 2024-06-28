@@ -163,7 +163,8 @@ span.token.selector {
     color: #FC7467;
 }
 
-.cust-swift-light-purple {
+.cust-swift-light-purple,
+.cust-swift-light-purple-other {
     color: #DEC1FF;
 }
 
