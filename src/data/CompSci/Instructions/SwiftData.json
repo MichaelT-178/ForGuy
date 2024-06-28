@@ -137,36 +137,15 @@
         },
         {
             "id": 19,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Swift",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "instruction": "Use \"command + r\" to build your app."
         },
         {
             "id": 20,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Swift",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "instruction": "Use the blue \"+\" button in the top right to add destinations."
         },
         {
             "id": 21,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Swift",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "instruction": "You can exit out of your app and refresh to demonstrate that it's working."
         }
     ]
 }
