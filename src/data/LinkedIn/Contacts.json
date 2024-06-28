@@ -284,6 +284,16 @@
             "Image": "Microsoft.jpg"
         },
         {
+            "Name": "Paul Dakessian",
+            "Company": "Microsoft",
+            "Role": "Principal Software Engineering Manager",
+            "Location": "Seattle, Washington",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/pauldakessian/",
+            "Details": "This guy works as a SWE manager at Microsoft. He accepted my LinkedIn connect request, so if you wanted to message him, that might be a good way to do it.",
+            "Image": "Microsoft.jpg"
+        },
+        {
             "Name": "Kevin Kanhai",
             "Company": "Edmunds GovTech / Motion Recruitment",
             "Role": "Senior Manager, Talent Services",
