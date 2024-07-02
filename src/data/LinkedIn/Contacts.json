@@ -164,6 +164,26 @@
             "Image": "Garmin.jpg"
         },
         {
+            "Name": "Glenn Hasteadt",
+            "Company": "County of Onslow",
+            "Role": "IT Director",
+            "Location": "Jacksonville, North Carolina",
+            "Email": "Glenn_Hasteadt@onslowcountync.gov",
+            "LinkedIn": "https://www.linkedin.com/in/ghasteadt/",
+            "Details": "The UNCW computer science department sent out an email about jobs at this place.",
+            "Image": "Onslow.jpg"
+        },
+        {
+            "Name": "Sharyne Miller",
+            "Company": "UNC Wilmington",
+            "Role": "Associate Vice Chancellor of Technology and CIO",
+            "Location": "Wilmington, North Carolina",
+            "Email": "millersa@uncw.edu",
+            "LinkedIn": "https://www.linkedin.com/in/sharyne-miller-4a8b1579/",
+            "Details": "This women sends out job opportunity emails to the UNCW comp sci mailing list.",
+            "Image": "UNCW.jpg"
+        },
+        {
             "Name": "Jamie Cooper",
             "Company": "IDR, Inc.",
             "Role": "Lead Recruiter",
