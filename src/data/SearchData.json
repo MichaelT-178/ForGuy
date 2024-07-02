@@ -1453,6 +1453,30 @@
                 "Pay": ""
             },
             {
+                "Name": "eMunah, the Water Crisis Platform",
+                "Location": "Wilmington, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/emunah-the-water-crisis-platform/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "CACI International Inc",
+                "Location": "High Point, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/caci-international-inc/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "U.S. Department of Veterans Affairs",
+                "Location": "Remote",
+                "LinkedIn": "https://www.linkedin.com/company/department-of-veterans-affairs/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Systems Planning and Analysis, Inc",
                 "Location": "Washington DC-Baltimore Area",
                 "LinkedIn": "https://www.linkedin.com/company/systems-planning-and-analysis-inc/jobs/",
@@ -1601,6 +1625,14 @@
                 "Location": "Raleigh, North Carolina (RTP) and Hallandale Beach, Florida",
                 "LinkedIn": "https://www.linkedin.com/company/randstad-digital-americas/jobs/",
                 "Contact": "patrick.groetzinger@randstadusa.com (Patrick Groetzinger)",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "DigiFlight, Inc.",
+                "Location": "Fuquay-Varina, North Carolina and Columbia, Maryland",
+                "LinkedIn": "https://www.linkedin.com/company/digiflight-inc-/jobs/",
+                "Contact": "",
                 "Tips": "",
                 "Pay": ""
             },
@@ -3151,6 +3183,16 @@
                 "Image": "Microsoft.jpg"
             },
             {
+                "Name": "Paul Dakessian",
+                "Company": "Microsoft",
+                "Role": "Principal Software Engineering Manager",
+                "Location": "Seattle, Washington",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/pauldakessian/",
+                "Details": "This guy works as a SWE manager at Microsoft. He accepted my LinkedIn connect request, so if you wanted to message him, that might be a good way to do it.",
+                "Image": "Microsoft.jpg"
+            },
+            {
                 "Name": "Kevin Kanhai",
                 "Company": "Edmunds GovTech / Motion Recruitment",
                 "Role": "Senior Manager, Talent Services",
@@ -3198,6 +3240,16 @@
                 "LinkedIn": "https://www.linkedin.com/in/jennifer-lawrence-54b67b246/",
                 "Details": "This women contacted me on LinkedIn about an Entry level SWE position on LinkedIn.",
                 "Image": "Revature.jpg"
+            },
+            {
+                "Name": "Ravi Chauhan",
+                "Company": "State of Minnesota",
+                "Role": "Sr Technical Recruiter",
+                "Location": "Durham, North Carolina",
+                "Email": "sraj@sgfcontractors.com",
+                "LinkedIn": "https://www.linkedin.com/in/ravi-chauhan-62bb67188/",
+                "Details": "This recruiter contacted me on LinkedIn about this position, which is supposedly in Durham, NC. His number is 408-762-6686.",
+                "Image": "Minnesota.jpg"
             },
             {
                 "Name": "John Richardson",
@@ -6679,12 +6731,12 @@
                 "ScrollTo": "EclipseLink"
             },
             {
-                "name": "How to Setup Cisco Secure Client and a VPN.",
+                "name": "How to Setup Cisco Secure Client and a VPN",
                 "ref": "cisco",
                 "ScrollTo": "CiscoLink"
             },
             {
-                "name": "How to Setup a PHP and MySQL Project for UNCW.",
+                "name": "How to Setup a PHP and MySQL Project for UNCW",
                 "ref": "php",
                 "ScrollTo": "PhpLink"
             },
@@ -6716,6 +6768,11 @@
                 "ScrollTo": "GoogleApiLink"
             },
             {
+                "name": "How to Setup a Reddit API Project",
+                "ref": "reddit-api",
+                "ScrollTo": "RedditApiLink"
+            },
+            {
                 "name": "How to Setup a Spotify API Project (w/ Flask)",
                 "ref": "spotify-api",
                 "ScrollTo": "SpotifyApiLink"
@@ -6731,9 +6788,9 @@
                 "ScrollTo": "LinkedInLink"
             },
             {
-                "name": "How to Setup a Reddit API Project",
-                "ref": "reddit-api",
-                "ScrollTo": "RedditApiLink"
+                "name": "How to Create a Reddit Bot",
+                "ref": "reddit-bot",
+                "ScrollTo": "RedditBotLink"
             },
             {
                 "name": "How to Deploy a Reddit Bot on AWS",
@@ -6752,7 +6809,7 @@
                 "ScrollTo": "SwiftFirebaseLink"
             },
             {
-                "name": "How to Setup SwiftData in a SwiftUI project.",
+                "name": "How to Setup SwiftData in a SwiftUI project",
                 "ref": "swift-data",
                 "ScrollTo": "SwiftDataLink"
             },
@@ -9054,11 +9111,11 @@
         ]
     },
     {
-        "Title": "How to Setup a PHP and MySQL Project for UNCW. 🐘",
+        "Title": "How to Setup a PHP and MySQL Project for UNCW 🐘",
         "Link": "/CompSci/SetupProjects/php",
         "Results": [
             {
-                "title": "How to Setup a PHP and MySQL Project for UNCW.",
+                "title": "How to Setup a PHP and MySQL Project for UNCW",
                 "desc": "How to Setup a PHP and MySQL Project for UNCW for CSC 455/355 using FileZilla and phpMyAdmin.",
                 "ref": "php"
             },
@@ -9488,6 +9545,78 @@
             },
             {
                 "instruction": "You can now modify the script to do what you want. You can programmatically change the titles of your YouTube videos, make playlists, etc. This was just to help get you started."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup a Reddit API Project 📖",
+        "Link": "/CompSci/SetupProjects/reddit-api",
+        "Results": [
+            {
+                "title": "How to Setup a Reddit API Project",
+                "desc": "Explains how to setup a a project that utilizes the Reddit API.",
+                "ref": "reddit-api"
+            },
+            {
+                "instruction": "Before you start make sure you have a normal reddit account. If you don't have one, sign up."
+            },
+            {
+                "instruction": "Go here to start registering your free app. Note that while the UI is old it's still the correct page."
+            },
+            {
+                "instruction": "Click the grey \"are you a developer? create an app...\" button on the left-hand side."
+            },
+            {
+                "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. "
+            },
+            {
+                "instruction": "In the \"redirect uri\" field paste the following link. Then select \"I'm not a robot\" and press \"create app\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Redirect Link",
+                "CopyCode": "http://localhost:8080/callback"
+            },
+            {
+                "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\"."
+            },
+            {
+                "instruction": "Now go to your terminal and run the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install praw"
+            },
+            {
+                "instruction": "Setup your folder for your script."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py"
+            },
+            {
+                "instruction": "Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials. Note that you don't have to include the \":{2FA-Code}\" part in your password if you don't use two-factor authentication. The 2FA-code should be the 6 digit code from your authenticator app. Go here to find your credentials. Your \"CLIENT_ID\" is under \"personal use script\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import praw\n\nreddit = praw.Reddit(\n\tclient_id='YOUR_CLIENT_ID',\n\tclient_secret='YOUR_CLIENT_SECRET',\n\tusername='YOUR_REDDIT_USERNAME',\n\tpassword=f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\n\tuser_agent='script by u/YOUR_REDDIT_USERNAME',\n)\n\nprint(f'Authenticated as: {reddit.user.me()}\\n')\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n\tprint(submission.title)"
+            },
+            {
+                "instruction": "Run your script to test it out. Note every time you run your script you'll have to update the 2FA-code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 script.py"
             }
         ]
     },
@@ -9973,249 +10102,61 @@
         ]
     },
     {
-        "Title": "How to Setup a Reddit API Project 📖",
-        "Link": "/CompSci/SetupProjects/reddit-api",
-        "Results": [
-            {
-                "title": "How to Setup a Reddit API Project",
-                "desc": "Explains how to setup a a project that utilizes the Reddit API.",
-                "ref": "reddit-api"
-            },
-            {
-                "instruction": "Before you start make sure you have a normal reddit account. If you don't have one, sign up."
-            },
-            {
-                "instruction": "Go here to start registering your free app. Note that while the UI is old it's still the correct page."
-            },
-            {
-                "instruction": "Click the grey \"are you a developer? create an app...\" button on the left-hand side."
-            },
-            {
-                "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. "
-            },
-            {
-                "instruction": "In the \"redirect uri\" field paste the following link. Then select \"I'm not a robot\" and press \"create app\"."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "DisplayLang": "Redirect Link",
-                "CopyCode": "http://localhost:8080/callback"
-            },
-            {
-                "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\"."
-            },
-            {
-                "instruction": "Now go to your terminal and run the following command."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "pip3 install praw"
-            },
-            {
-                "instruction": "Setup your folder for your script."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "mkdir reddit_api_script;\ncd reddit_api_script;\ntouch script.py"
-            },
-            {
-                "instruction": "Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials. Note that you don't have to include the \":{2FA-Code}\" part in your password if you don't use two-factor authentication. The 2FA-code should be the 6 digit code from your authenticator app. Go here to find your credentials. Your \"CLIENT_ID\" is under \"personal use script\"."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Python",
-                "CopyCode": "import praw\n\nreddit = praw.Reddit(\n\tclient_id='YOUR_CLIENT_ID',\n\tclient_secret='YOUR_CLIENT_SECRET',\n\tusername='YOUR_REDDIT_USERNAME',\n\tpassword=f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\n\tuser_agent='script by u/YOUR_REDDIT_USERNAME',\n)\n\nprint(f'Authenticated as: {reddit.user.me()}\\n')\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n\tprint(submission.title)"
-            },
-            {
-                "instruction": "Run your script to test it out. Note every time you run your script you'll have to update the 2FA-code."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "python3 script.py"
-            }
-        ]
-    },
-    {
-        "Title": "How to Deploy a Reddit Bot on AWS 🤖",
+        "Title": "How to Deploy a Reddit Bot on AWS 🚀",
         "Link": "/CompSci/SetupProjects/reddit-bot-aws",
         "Results": [
             {
                 "title": "How to Deploy a Reddit Bot on AWS",
-                "desc": "Explain how to create and deploy a Reddit Bot on Amazon Web Services.",
+                "desc": "Explains how to deploy a Reddit Bot on Amazon Web Services.",
                 "ref": "reddit-bot-aws"
             },
             {
-                "instruction": "BEFORE YOU DO ANY OF THIS, go to the &How to Setup a Reddit API Project&[RedditApiLink] link above and complete all the instructions if you haven't done so already."
+                "instruction": "BEFORE YOU DO ANY OF THIS, go to the &How to Create a Reddit Bot&[RedditBotLink] link above and complete all the instructions if you haven't done so already."
             },
             {
-                "instruction": "Create a new folder and name it \"reddit_bot\" using the following command"
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "mkdir reddit_bot"
-            },
-            {
-                "instruction": "Install the following library for your project."
+                "instruction": "Delete the setup files in your folder using the following commands."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "pip3 install smtplib\npip3 install python-dotenv\npip3 install flask\npip3 install requests"
+                "CopyCode": "cd reddit_bot\nrm oauth_server.py\nrm get_refresh_token.py"
             },
             {
-                "instruction": "Change into your directory and create the following files."
+                "title": "Manage the Bots Secrets and Dockerize the file.",
+                "desc": "Explains how to use AWS Secrets Manager and dockerize the reddit bot python file."
             },
             {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "cd reddit_bot\ntouch reddit_bot.py\ntouch get_refresh_token.py\ntouch oauth_server.py\ntouch .env"
-            },
-            {
-                "instruction": "Now we're going to setup Google app password so you can programmatically send yourself an email."
-            },
-            {
-                "title": "Create a Google App Password",
-                "desc": "Explains how to create a Google App Password you can use to send yourself an email."
-            },
-            {
-                "instruction": "Go to your Google Account. Then go click on \"Security\" in the left sidebar."
-            },
-            {
-                "instruction": "You can skip this tep if you already have 2-Step authentication enabled. Under \"How you sign in to Google\" click \"2-Step Verification\" and follow the instructions to enable it."
-            },
-            {
-                "instruction": "After enabling 2-Step Verification, go back to the \"Security\" section of your Google Account."
-            },
-            {
-                "instruction": "Under \"How you sign in to Google\" click on \"2-Step Verification\"."
-            },
-            {
-                "instruction": "Scroll to the bottom section titled \"App passwords\". Then click the arrow."
-            },
-            {
-                "instruction": "In the \"App name\" text field type \"PythonEmail\". Then press \"Create\"."
-            },
-            {
-                "instruction": "Copy and record the \"Generated app password\" from the pop-up box. Then click \"Done\"."
-            },
-            {
-                "title": "Create and Locally Test the Reddit Bot",
-                "desc": "How to create a Reddit bot that emails you every time someone posts in a subreddit."
-            },
-            {
-                "instruction": "Open your reddit_bot folder in an IDE."
-            },
-            {
-                "instruction": "Open your \".env\" file and paste in the following code. Change all the credential placeholders to your actual credentials. Note if your Google App password has yellow highlighted spaces just delete them and replace them with regular spaces. Go here to find your credentials. The CLIENT_ID is under \"Personal Use Script\". Do not change the value of \"REFRESH_TOKEN\" yet. We'll get that value later."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "fxml",
-                "DisplayLang": "Env",
-                "CopyCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token"
-            },
-            {
-                "instruction": "Again, make sure to fill in all your credentials in the \".env\" file before moving forward. They'll be necessary in the following steps."
-            },
-            {
-                "instruction": "Open your \"oauth_server.py\" file and paste in the following code."
+                "instruction": ""
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "from flask import Flask, request\n\napp = Flask(__name__)\n\n@app.route('/callback')\ndef callback():\n\tcode = request.args.get('code')\n\tif code:\n\t\treturn f\"Authorization code: {code}\"\n\telse:\n\t\treturn \"Authorization code not found!\"\n\nif __name__ == '__main__':\n\tapp.run(port=8080)"
+                "CopyCode": "import boto3\nimport json\nfrom botocore.exceptions import ClientError\n\ndef get_secret():\n\n\tsecret_name = \"my-key\"\n\tregion_name = \"us-east-1\"\n\n\tsession = boto3.session.Session()\n\n\tclient = session.client(\n\t\tservice_name='secretsmanager',\n\t\tregion_name=region_name\n\t)\n\n\ttry:\n\t\tget_secret_value_response = client.get_secret_value(\n\t\t\tSecretId=secret_name\n\t\t)\n\texcept ClientError as e:\n\t\traise e\n\n\tsecret = get_secret_value_response['SecretString']\n\n\tsecret_dict = json.loads(secret)\n\n\tkeys = [\n\t\t'CLIENT_ID',\n\t\t'CLIENT_SECRET',\n\t\t'USER_AGENT',\n\t\t'SENDER_EMAIL',\n\t\t'SENDER_PASSWORD',\n\t\t'EMAIL_RECIPIENT',\n\t\t'REFRESH_TOKEN'\n\t]\n\n\tsecret_values = {key: secret_dict.get(key) for key in keys}\n\n\treturn secret_values"
             },
             {
-                "instruction": "Open your \"get_refresh_token.py\" file and paste in the following code."
+                "instruction": ""
             },
             {
-                "Name": "",
-                "Description": "",
-                "Language": "Python",
-                "CopyCode": "import os\nimport requests\nimport webbrowser\nfrom urllib.parse import urlencode\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREDIRECT_URI = 'http://localhost:8080/callback'\nDURATION = 'permanent'\nSCOPE = 'identity read'\n\ncreds = {\n\t'client_id': CLIENT_ID,\n\t'response_type': 'code',\n\t'state': 'random_string',\n\t'redirect_uri': REDIRECT_URI,\n\t'duration': DURATION,\n\t'scope': SCOPE\n}\n\nauth_url = f\"https://www.reddit.com/api/v1/authorize?{urlencode(creds)}\"\n\nprint(f\"Go to the following URL to authorize your bot: {auth_url}\")\nwebbrowser.open(auth_url)\n\nauth_code = input(\"Enter the authorization code: \")\n\nauth = requests.auth.HTTPBasicAuth(CLIENT_ID, CLIENT_SECRET)\n\ndata = {\n\t'grant_type': 'authorization_code',\n\t'code': auth_code,\n\t'redirect_uri': REDIRECT_URI\n}\n\nheaders = {'User-Agent': 'MyBot/0.0.1'}\n\nres = requests.post('https://www.reddit.com/api/v1/access_token',\n\t\t\t\t\t auth=auth, data=data, headers=headers)\n\nresponse_json = res.json()\nrefresh_token = response_json['refresh_token']\nprint(f\"\\033[94mYour refresh token is\\033[0m: {refresh_token}\")"
+                "title": "Deploy the Bot on an EC2 instance",
+                "desc": "Explains how to deploy the bot on an EC2 instance."
             },
             {
-                "instruction": "Now open two terminals. In the first terminal run the two following commands to start the server."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "cd reddit_bot\npython3 oauth_server.py"
-            },
-            {
-                "instruction": "In the second server run the following commands to execute your script. A webpage will be opened."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "cd reddit_bot\npython3 get_refresh_token.py"
-            },
-            {
-                "instruction": "Press the orange \"Allow\" button on the webpage. Then copy and record the authorization code."
-            },
-            {
-                "instruction": "Go back to your second terminal and paste in the authorization code where it's asking for input. The refresh token will then be printed. COPY AND RECORD IT. Do not use the authorization token in the next step."
-            },
-            {
-                "instruction": "Close all your open terminals. Then, open your \".env\" file and replace \"your_refresh_token\" with the value you just copied. This will allow OAuth2 to work without having to use a new 2FA code every time your run your script."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "fxml",
-                "DisplayLang": "Env",
-                "CopyCode": "REFRESH_TOKEN=your_refresh_token"
-            },
-            {
-                "instruction": "Paste the following code in the \"reddit_bot.py\" file. Make sure to change the value of the \"subreddit_name\" variable."
+                "instruction": ""
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# Your Reddit credentials\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREFRESH_TOKEN = os.getenv('REFRESH_TOKEN')\nUSER_AGENT = os.getenv('USER_AGENT')\n\n# Your Email Credentials\nsender_email = os.getenv('SENDER_EMAIL')\nsender_password = os.getenv('SENDER_PASSWORD')\nemail_recipient = os.getenv('EMAIL_RECIPIENT')\n\n# Name of Subreddit you're working with. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of subreddit_name variable\\033[0m')\n\n\tmain()"
+                "CopyCode": "import praw\nimport smtplib\nimport boto3\nimport json\nfrom botocore.exceptions import ClientError\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ndef get_secret():\n\n\tsecret_name = \"my-key\"\n\tregion_name = \"us-east-1\"\n\n\tsession = boto3.session.Session()\n\n\tclient = session.client(\n\t\tservice_name='secretsmanager',\n\t\tregion_name=region_name\n\t)\n\n\ttry:\n\t\tget_secret_value_response = client.get_secret_value(\n\t\t\tSecretId=secret_name\n\t\t)\n\texcept ClientError as e:\n\t\traise e\n\n\tsecret = get_secret_value_response['SecretString']\n\n\tsecret_dict = json.loads(secret)\n\n\tkeys = [\n\t\t'CLIENT_ID',\n\t\t'CLIENT_SECRET',\n\t\t'USER_AGENT',\n\t\t'SENDER_EMAIL',\n\t\t'SENDER_PASSWORD',\n\t\t'EMAIL_RECIPIENT',\n\t\t'REFRESH_TOKEN'\n\t]\n\n\tsecret_values = {key: secret_dict.get(key) for key in keys}\n\n\treturn secret_values\n\n\nsecrets = get_secret()\n\n# Your Reddit credentials\nCLIENT_ID = secrets['CLIENT_ID']\nCLIENT_SECRET = secrets['CLIENT_SECRET']\nREFRESH_TOKEN = secrets['REFRESH_TOKEN']\nUSER_AGENT = secrets['USER_AGENT']\n\n# Your Email Credentials\nsender_email = secrets['SENDER_EMAIL']\nsender_password = secrets['SENDER_PASSWORD']\nemail_recipient = secrets['EMAIL_RECIPIENT']\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of \"subreddit_name\" variable in script.\\033[0m')\n\t\texit(0)\n\n\tmain()\n"
             },
             {
-                "instruction": "Run the reddit bot using the following command. When someone posts on the subreddit it will be printed to the terminal. It might take a while until someone posts. Check your email to make the notification is being sent. Stop running the bot by pressing \"control + c\"."
+                "instruction": ""
             },
             {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "python3 reddit_bot.py"
-            },
-            {
-                "instruction": "After you've ran it and made sure it's working, we'll deploy it to AWS."
-            },
-            {
-                "title": "Deploy your Bot to Amazon Web Services",
-                "desc": "Explains how to deploy the bot on AWS using the BLANK service"
-            },
-            {
-                "instruction": "Delete the setup files using the following commands"
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "rm oauth_server.py\nrm get_refresh_token.py"
+                "title": "Delete all AWS Instances",
+                "desc": "Delete and terminate the AWS Instances you setup to avoid incurring costs."
             },
             {
                 "instruction": ""
@@ -10225,13 +10166,6 @@
                 "Description": "",
                 "Language": "",
                 "CopyCode": ""
-            },
-            {
-                "title": "Delete the EC2 Instance",
-                "desc": "I'd strongly recommend deleting the AWS EC2 instance to avoid incurring charges."
-            },
-            {
-                "instruction": ""
             },
             {
                 "instruction": ""
@@ -10253,28 +10187,132 @@
             {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "CopyCode": ""
+                "Language": "swiftcustom",
+                "DisplayLang": "Swift",
+                "CopyCode": "hello"
             }
         ]
     },
     {
-        "Title": "How to Setup SwiftData in a SwiftUI project. 🏎️",
+        "Title": "How to Setup SwiftData in a SwiftUI project 🏎️",
         "Link": "/CompSci/SetupProjects/swift-data",
         "Results": [
             {
-                "title": "How to Setup SwiftData in a SwiftUI project.",
+                "title": "How to Setup SwiftData in a SwiftUI project",
                 "desc": "Explains how to setup and use SwiftData in your Swift application. SwiftData is a really good alternative to regular core data in my opinion.",
                 "ref": "swift-data"
             },
             {
-                "instruction": ""
+                "instruction": "Open Xcode. Note basically all of these instructions come from this playlist."
+            },
+            {
+                "instruction": "Press the \"Create New Project...\" button."
+            },
+            {
+                "instruction": "Make sure \"App\" is selected, then press the blue \"Next\" button."
+            },
+            {
+                "instruction": "In the \"Choose options for your new project:\" pop-up box enter the following values. Then press the blue \"Next\" button."
             },
             {
                 "Name": "",
                 "Description": "",
-                "Language": "",
-                "CopyCode": ""
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "CopyCode": "Product Name: SwiftDataDemo\nTeam: None\nOrganization Identifier: I dont have one\nBundle Identifier: I-dont-have-one.ProductName\nInterface: SwiftUI\nLanguage: Swift\nStorage: None\n\nLeave \"Include Tests\" unchecked\n"
+            },
+            {
+                "instruction": "Finder will open. Press the blue \"Create\" button in the bottom right if you're in the folder where you want to save your project."
+            },
+            {
+                "instruction": "Wait for it to open in XCode. Then press \"command + n\" this will open a new pop-up window."
+            },
+            {
+                "instruction": "In the \"Choose a template for your new file:\" pop-up box click on \"Swift File\". Then click the blue \"Next\" button."
+            },
+            {
+                "instruction": "In the new pop up box in the \"Save As:\" filed enter the name \"Destination\". Then press the blue \"Create\" button."
+            },
+            {
+                "instruction": "You should now have a new file named \"Destination\"."
+            },
+            {
+                "instruction": "Now open your \"Destination.swift\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  Destination.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport Foundation\nimport SwiftData\n\n@Model\nclass Destination {\n    var name: String\n    var details: String\n    var date: Date\n    var priority: Int\n    @Relationship(deleteRule: .cascade) var sights = [Sight]()\n\n    init(name: String = \"\", details: String = \"\", date: Date = .now, priority: Int = 2) {\n        self.name = name\n        self.details = details\n        self.date = date\n        self.priority = priority\n    }\n}"
+            },
+            {
+                "instruction": "Open the \"SwiftDataDemoApp.swift\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  SwiftDataDemoApp.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/23/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\n@main\nstruct SwiftDataDemoApp: App {\n    var body: some Scene {\n        WindowGroup {\n            ContentView()\n        }\n        .modelContainer(for: Destination.self)\n    }\n}"
+            },
+            {
+                "instruction": "Open the \"ContentView.swift\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  ContentView.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/23/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\nstruct ContentView: View {\n    @Environment(\\.modelContext) var modelContext\n\n    @State private var path = [Destination]()\n    @State private var sortOrder = SortDescriptor(\\Destination.name)\n    @State private var searchText = \"\"\n\n    var body: some View {\n        NavigationStack(path: $path) {\n            DestinationListingView(sort: sortOrder, searchString: searchText)\n                .navigationTitle(\"iTour\")\n                .navigationDestination(for: Destination.self, destination: EditDestinationView.init)\n                .searchable(text: $searchText)\n                .toolbar {\n                    Button(\"Add Destination\", systemImage: \"plus\", action: addDestination)\n\n                    Menu(\"Sort\", systemImage: \"arrow.up.arrow.down\") {\n                        Picker(\"Sort\", selection: $sortOrder) {\n                            Text(\"Name\")\n                                .tag(SortDescriptor(\\Destination.name))\n\n                            Text(\"Priority\")\n                                .tag(SortDescriptor(\\Destination.priority, order: .reverse))\n\n                            Text(\"Date\")\n                                .tag(SortDescriptor(\\Destination.date))\n                        }\n                        .pickerStyle(.inline)\n                    }\n                }\n        }\n    }\n\n    func addDestination() {\n        let destination = Destination()\n        modelContext.insert(destination)\n        path = [destination]\n    }\n\n}\n\n#Preview {\n    ContentView()\n}"
+            },
+            {
+                "instruction": "Press \"command + n\". Select \"SwiftUI View\" and press \"Next\". Save as \"EditDestinationView\" and press \"Create\"."
+            },
+            {
+                "instruction": "Open the \"EditDestinationView\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  EditDestinationView.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\nstruct EditDestinationView: View {\n    @Bindable var destination: Destination\n    @State private var newSightName = \"\"\n\n    var body: some View {\n        Form {\n            TextField(\"Name\", text: $destination.name)\n            TextField(\"Details\", text: $destination.details, axis: .vertical)\n            DatePicker(\"Date\", selection: $destination.date)\n\n            Section(\"Priority\") {\n                Picker(\"Priority\", selection: $destination.priority) {\n                    Text(\"Meh\").tag(1)\n                    Text(\"Maybe\").tag(2)\n                    Text(\"Must\").tag(3)\n                }\n                .pickerStyle(.segmented)\n            }\n\n            Section(\"Sights\") {\n                ForEach(destination.sights) { sight in\n                    Text(sight.name)\n                }\n\n                HStack {\n                    TextField(\"Add a new sight in \\(destination.name)\", text: $newSightName)\n\n                    Button(\"Add\", action: addSight)\n                }\n            }\n        }\n        .navigationTitle(\"Edit Destination\")\n        .navigationBarTitleDisplayMode(.inline)\n    }\n\n    func addSight() {\n        guard newSightName.isEmpty == false else { return }\n\n        withAnimation {\n            let sight = Sight(name: newSightName)\n            destination.sights.append(sight)\n            newSightName = \"\"\n        }\n    }\n}\n\n#Preview {\n    do {\n        let config = ModelConfiguration(isStoredInMemoryOnly: true)\n        let container = try ModelContainer(for: Destination.self, configurations: config)\n\n        let example = Destination(name: \"Example Destination\", details: \"Example details go here and will automatically expand vertically as they are edited\")\n\n        return EditDestinationView(destination: example)\n            .modelContainer(container)\n    } catch {\n        fatalError(\"Failed to create model container.\")\n    }\n}"
+            },
+            {
+                "instruction": "Press \"command + n\". Select \"SwiftUI View\" and press \"Next\". Save as \"DestinationListingView\" and press \"Create\"."
+            },
+            {
+                "instruction": "Open the \"DestinationListingView\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  DestinationListingView.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\nstruct DestinationListingView: View {\n    @Environment(\\.modelContext) var modelContext\n    @Query(sort: [SortDescriptor(\\Destination.priority, order: .reverse), SortDescriptor(\\Destination.name)]) var destinations: [Destination]\n\n    var body: some View {\n        List {\n            ForEach(destinations) { destination in\n                NavigationLink(value: destination) {\n                    VStack(alignment: .leading) {\n                        Text(destination.name)\n                            .font(.headline)\n\n                        Text(destination.date.formatted(date: .long, time: .shortened))\n                    }\n                }\n            }\n            .onDelete(perform: deleteDestinations)\n        }\n    }\n\n    init(sort: SortDescriptor<Destination>, searchString: String) {\n        _destinations = Query(filter: #Predicate {\n            if searchString.isEmpty {\n                return true\n            } else {\n                return $0.name.localizedStandardContains(searchString)\n            }\n        }, sort: [sort])\n    }\n\n    func deleteDestinations(_ indexSet: IndexSet) {\n        for index in indexSet {\n            let destination = destinations[index]\n            modelContext.delete(destination)\n        }\n    }\n}\n\n#Preview {\n    DestinationListingView(sort: SortDescriptor(\\Destination.name), searchString: \"\")\n}"
+            },
+            {
+                "instruction": "Press \"command + n\". Select \"Swift File\" and press \"Next\". Save as \"Sight\" and press \"Create\"."
+            },
+            {
+                "instruction": "Open the \"Sight\" file and paste in the following code. Destination will have a one-to-many relationship with sight."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "customswift",
+                "DisplayLang": "Swift",
+                "CopyCode": "//\n//  Sight.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport Foundation\nimport SwiftData\n\n@Model\nclass Sight {\n    var name: String\n\n        init(name: String) {\n        self.name = name\n    }\n}"
+            },
+            {
+                "instruction": "Use \"command + r\" to build your app."
+            },
+            {
+                "instruction": "Use the blue \"+\" button in the top right to add destinations."
+            },
+            {
+                "instruction": "You can exit out of your app and refresh to demonstrate that it's working."
             }
         ]
     },
@@ -11318,6 +11356,26 @@
                 "Action": "Multi-line editing"
             },
             {
+                "Shortcut": "command + a, control + i",
+                "Action": "Format code"
+            },
+            {
+                "Shortcut": "command + n",
+                "Action": "Create new file"
+            },
+            {
+                "Shortcut": "command + r",
+                "Action": "Build and run your project"
+            },
+            {
+                "Shortcut": "shift + control + down arrow",
+                "Action": "Multiline editing in Xcode"
+            },
+            {
+                "Shortcut": "",
+                "Action": ""
+            },
+            {
                 "Title": "Xcode Shortcuts"
             },
             {
@@ -11640,7 +11698,7 @@
             },
             {
                 "Name": "Microsoft Teams",
-                "Description": "This is the GPS app I use. It's extremely useful when driving. It can help you find optimal routes, calculates new routes if you make a wrong turn, and has settings that allow you to avoid freeways, toll roads, etc. It also shows you things like where cops are, crashes, hazards, etc. Overall a super helpful app and I'd definitely recommend it.",
+                "Description": "My CSC 450 used this app to communicate during the class in a similar way to Slack.",
                 "Link": "https://apps.apple.com/us/app/microsoft-teams/id1113153706"
             },
             {
@@ -11787,6 +11845,12 @@
                 "Description": "This is the syntax to hyperlink text in a markdown file.",
                 "Language": "Markdown",
                 "CopyCode": "Uncw Link"
+            },
+            {
+                "Name": "String Formatting",
+                "Description": "Formats a string into left-aligned columns in python. The formatted string in this example is what's being returned from the function. They're great for displaying data. Can also be right/center-aligned.",
+                "Language": "Python",
+                "CopyCode": "def format_line(p1, p2, p3, p4):\n\treturn \"{:<25}{:<20}{:<20}{:<15}\".format(p1, p2, p3, p4)\n\naccounts = [\n\t{\n\t\t\"bank\": \"Bank of America\",\n\t\t\"account_number\": 8748978914,\n\t\t\"account_holder\": \"Matthew\",\n\t\t\"balance\": 359.67\n\t},\n\t{\n\t\t\"bank\": \"USAA\",\n\t\t\"account_number\": 6124567421,\n\t\t\"account_holder\": \"Alex\",\n\t\t\"balance\": 50871.23\n\t},\n\t{\n\t\t\"bank\": \"Ally Financial\",\n\t\t\"account_number\": 1348932019,\n\t\t\"account_holder\": \"Charlotte\",\n\t\t\"balance\": 2081.24\n\t}\n]\n\nprint(format_line(\"Bank\", \"Acct Number\", \"Acct Holder\", \"Balance\"))\n\nfor acct in accounts:\n\tprint(format_line(acct[\"bank\"], acct[\"account_number\"], acct[\"account_holder\"], acct[\"balance\"]))"
             }
         ]
     },
@@ -12323,7 +12387,7 @@
                 "transcription": "My bed when I have to wake up for class We're hitting comfort levels that shouldn't even be possible"
             },
             {
-                "text": "It's lowkey not that bad.",
+                "text": "Cisco Webex ftw",
                 "transcription": "Some Famous Severs Amazon Google Microsoft Zoom app"
             },
             {
@@ -12363,7 +12427,7 @@
                 "transcription": "algorithms and data structures professors watching someone loop through a list instead of creating a custom recursive binary heap object to store 7 integers."
             },
             {
-                "text": "Your crush thinks your a 2 (r.i.p).",
+                "text": "Your crush thinks you're a 2 (r.i.p).",
                 "transcription": "Your crush knows binary. She thinks you're a 10. She thinks you're a 10."
             },
             {
