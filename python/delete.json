@@ -37,7 +37,7 @@
                 "LinkedIn": "https://www.linkedin.com/company/usaa/jobs/",
                 "Handshake": "https://uncw.joinhandshake.com/stu/employers/18568#jobs",
                 "Contact": "",
-                "Tips": "The official name of this SWE position is \"IT Intern\". Set up notifications via handshake for USAA if you're interested. I think the San Antonio summer application comes out in early-mid September. The Plano one comes out in early-mid October. Apply as soon as the application comes out and I think your chances of getting the job will be pretty high. I could help you through the interview process, and if you did your internship in Plano I could help you with housing. You could also set job alerts using this link -> Here. Go to the bottom section of the page titled \"Join our talent community\" and enter your information to subscribe to their job alert mailing list. Also the return offer rate for full-time positions at USAA is VERY high (~85%) so keep that in mind through the process. This is a very fun, easy, low-stress internship with lots of great learning and networking opportunities. You'll meet a lot of other college kids in the same boat as you, which I think is good.",
+                "Tips": "The official name of this SWE position is \"IT Intern\". Set up notifications via handshake for USAA if you're interested. I think the San Antonio summer application comes out in early-mid September. The Plano one comes out in early-mid October. Apply as soon as the application comes out and I think your chances of getting the job will be pretty high. I could help you through the interview process, and if you did your internship in Plano I could help you with housing. You could also set job alerts using this link -&gt; Here. Go to the bottom section of the page titled \"Join our talent community\" and enter your information to subscribe to their job alert mailing list. Also the return offer rate for full-time positions at USAA is VERY high (~85%) so keep that in mind through the process. This is a very fun, easy, low-stress internship with lots of great learning and networking opportunities. You'll meet a lot of other college kids in the same boat as you, which I think is good.",
                 "Pay": "$25.75 per hour"
             },
             {
@@ -1733,6 +1733,30 @@
                 "Pay": ""
             },
             {
+                "Name": "County of Onslow",
+                "Location": "Jacksonville, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/county-of-onslow/jobs/",
+                "Contact": "",
+                "Tips": "UNCW comp sci department sent out an email about jobs here.",
+                "Pay": ""
+            },
+            {
+                "Name": "Onslow County Schools",
+                "Location": "Jacksonville, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/onslow-county-schools/jobs/",
+                "Contact": "",
+                "Tips": "IT Technician job",
+                "Pay": ""
+            },
+            {
+                "Name": "Jfg Business Technology",
+                "Location": "Jacksonville, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/jfg-inc/jobs/",
+                "Contact": "",
+                "Tips": "Network Technician job",
+                "Pay": ""
+            },
+            {
                 "Name": "Tech Nest",
                 "Location": "Madison, Wisconsin",
                 "LinkedIn": "https://www.linkedin.com/company/technestllc/",
@@ -2854,13 +2878,13 @@
                 "Tip": "Tip 1",
                 "Name": "Setup Job Alerts",
                 "Explanation": "Job alerts are used to notify you about new job openings. ",
-                "Instructions": "Open the LinkedIn app, Search for a company you'd like to work for (Ex. nCino), Go to the jobs tab -> https://www.linkedin.com/company/ncino-inc-/Jobs/, Press the \"Create job alert\" button., In the job title field type \"Software Engineer\", For job location type \"Wilmington, North Carolina\", When you're done click the blue job alert button."
+                "Instructions": "Open the LinkedIn app, Search for a company you'd like to work for (Ex. nCino), Go to the jobs tab -&gt; https://www.linkedin.com/company/ncino-inc-/Jobs/, Press the \"Create job alert\" button., In the job title field type \"Software Engineer\", For job location type \"Wilmington, North Carolina\", When you're done click the blue job alert button."
             },
             {
                 "Tip": "Tip 2",
                 "Name": "Set Viewing Options",
                 "Explanation": "This will determine what people see when you view their profile. I'd recommend private mode.",
-                "Instructions": "Go to this link -> https://www.linkedin.com/mypreferences/d/profile-viewing-options, Select \"Private mode\" (or whatever mode you want people to see when you view their profile), Click the back button once done."
+                "Instructions": "Go to this link -&gt; https://www.linkedin.com/mypreferences/d/profile-viewing-options, Select \"Private mode\" (or whatever mode you want people to see when you view their profile), Click the back button once done."
             },
             {
                 "Tip": "Tip 3",
@@ -2871,7 +2895,7 @@
                 "Tip": "Tip 4",
                 "Name": "Setup Notification Settings",
                 "Explanation": "",
-                "Instructions": "Go to this LinkedIn page -> https://www.linkedin.com/mypreferences/d/categories/notifications. To set up your notification settings, I'd recommend having all notifications on for job alerts."
+                "Instructions": "Go to this LinkedIn page -&gt; https://www.linkedin.com/mypreferences/d/categories/notifications. To set up your notification settings, I'd recommend having all notifications on for job alerts."
             },
             {
                 "Tip": "Tip 5",
@@ -3061,6 +3085,26 @@
                 "LinkedIn": "https://www.linkedin.com/in/brandon-bernal-291882234/",
                 "Details": "The UNCW computer science department sent an email about this guy recruiting for SWE positions in Cary, NC.",
                 "Image": "Garmin.jpg"
+            },
+            {
+                "Name": "Glenn Hasteadt",
+                "Company": "County of Onslow",
+                "Role": "IT Director",
+                "Location": "Jacksonville, North Carolina",
+                "Email": "Glenn_Hasteadt@onslowcountync.gov",
+                "LinkedIn": "https://www.linkedin.com/in/ghasteadt/",
+                "Details": "The UNCW computer science department sent out an email about jobs at this place.",
+                "Image": "Onslow.jpg"
+            },
+            {
+                "Name": "Sharyne Miller",
+                "Company": "UNC Wilmington",
+                "Role": "Associate Vice Chancellor of Technology and CIO",
+                "Location": "Wilmington, North Carolina",
+                "Email": "millersa@uncw.edu",
+                "LinkedIn": "https://www.linkedin.com/in/sharyne-miller-4a8b1579/",
+                "Details": "This women sends out job opportunity emails to the UNCW comp sci mailing list.",
+                "Image": "UNCW.jpg"
             },
             {
                 "Name": "Jamie Cooper",
@@ -4865,7 +4909,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "cd ~/.ssh\ncat id_ed25519.pub | tee >(pbcopy)"
+                "CopyCode": "cd ~/.ssh\ncat id_ed25519.pub | tee &gt;(pbcopy)"
             },
             {
                 "instruction": "Your SSH key should now be copied to your keyboard. Now go back to your Github account at github.com."
@@ -4889,7 +4933,7 @@
                 "instruction": "Click \"Add SSH key\" at the bottom. It should then take you back to the old page with a light blue bar that says \"You have successfully added the key 'Elijah's Key'\"."
             },
             {
-                "instruction": "Now generate a person access token by going to this GitHub link. To get this page manually you would go to the GitHub main page -> side bar -> settings -> (Scroll down left-hand side) Developer settings -> Personal access tokens."
+                "instruction": "Now generate a person access token by going to this GitHub link. To get this page manually you would go to the GitHub main page -&gt; side bar -&gt; settings -&gt; (Scroll down left-hand side) Developer settings -&gt; Personal access tokens."
             },
             {
                 "instruction": "Click the gray \"Generate new token\" drop-down button. In the drop-down menu select \"Generate new token (classic)\"."
@@ -5045,7 +5089,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "cd ~/.ssh\ncat id_ed25519_two.pub | tee >(pbcopy)"
+                "CopyCode": "cd ~/.ssh\ncat id_ed25519_two.pub | tee &gt;(pbcopy)"
             },
             {
                 "instruction": "This is basically the same as regular step 23. Change \"NameForThisAccount\" to something other than your other account's name. Also the IdentityFile has been updated. Scroll back up to original step.",
@@ -5207,7 +5251,7 @@
                 "Example": "git checkout dev"
             },
             {
-                "Command": "git checkout -b <branchName>",
+                "Command": "git checkout -b &lt;branchName&gt;",
                 "Description": "Create a new branch",
                 "Example": "git checkout -b create-assessment"
             },
@@ -5242,7 +5286,7 @@
                 "Example": "git status"
             },
             {
-                "Command": "git push origin <branchName>",
+                "Command": "git push origin &lt;branchName&gt;",
                 "Description": "Push branch to the GitHub origin",
                 "Example": "git push origin create-assessment"
             },
@@ -5250,7 +5294,7 @@
                 "instruction": "Go to GitHub, go to the Amotions repo, click \"branches\", and click \"create a pull request\" on the branch."
             },
             {
-                "instruction": "Select \"dev\" for the base branch in the top left corner, write a comment about your pull request, then click the green \"Create pull request\" button. If you click the \"Create pull request\" button before you select the \"dev\" base branch, just follow the steps in this page to refactor -> Link."
+                "instruction": "Select \"dev\" for the base branch in the top left corner, write a comment about your pull request, then click the green \"Create pull request\" button. If you click the \"Create pull request\" button before you select the \"dev\" base branch, just follow the steps in this page to refactor -&gt; Link."
             },
             {
                 "instruction": "On GitHub a bot will generate a netlify bot will generate a preview link, next to the text that says Deploy Preview. Wait like 5 minutes for all changes to be made, then click on the link to see changes."
@@ -5280,7 +5324,7 @@
                 "instruction": "Delete your branch"
             },
             {
-                "Command": "git push origin --delete <remote-branch-name>",
+                "Command": "git push origin --delete &lt;remote-branch-name&gt;",
                 "Description": "Delete remote branch",
                 "Example": "git push origin --delete create-assessment"
             },
@@ -5290,12 +5334,12 @@
                 "Example": "git checkout main"
             },
             {
-                "Command": "git branch -d <local-branch-name>",
+                "Command": "git branch -d &lt;local-branch-name&gt;",
                 "Description": "Delete local branch",
                 "Example": "git branch -d create-assessment"
             },
             {
-                "Command": "git branch -D <local-branch-name>",
+                "Command": "git branch -D &lt;local-branch-name&gt;",
                 "Description": "Confirm deletion of local branch. Note the capital 'D'.",
                 "Example": "git branch -D create-assessment"
             },
@@ -5380,22 +5424,22 @@
                 "Example": "git status"
             },
             {
-                "Command": "git checkout -b <branch-name>",
+                "Command": "git checkout -b &lt;branch-name&gt;",
                 "Description": "Create a new branch and switch to it immediately",
                 "Example": "git checkout -b create-review-page"
             },
             {
-                "Command": "git branch <branch-name>",
+                "Command": "git branch &lt;branch-name&gt;",
                 "Description": "create a new branch without switching to it",
                 "Example": "git branch create-review-page"
             },
             {
-                "Command": "git push -u origin <branch-name>",
+                "Command": "git push -u origin &lt;branch-name&gt;",
                 "Description": "Push the new branch to the remote repository",
                 "Example": "git push -u origin create-review-page"
             },
             {
-                "Command": "git push --set-upstream origin <branch-name>",
+                "Command": "git push --set-upstream origin &lt;branch-name&gt;",
                 "Description": "Pushes the local branch's commits to a remote branch on the origin. Do once when pushing a new branch.",
                 "Example": "git push --set-upstream origin create-assessment"
             },
@@ -5559,7 +5603,7 @@
                 "Example": "git branch -M main"
             },
             {
-                "Command": "git remote add origin <repo-http-link>",
+                "Command": "git remote add origin &lt;repo-http-link&gt;",
                 "Description": "Add remote https GitHub origin link. Can be found under \"Quick setup — if you've done this kind of thing before\".",
                 "Example": "git remote add origin https://github.com/John-Smith/PacMan.git"
             },
@@ -5957,13 +6001,13 @@
                 "text": "\"variable.other.object.property.cs\","
             },
             {
-                "text": "//Changes The \"<\" character in List<string> to red."
+                "text": "//Changes The \"&lt;\" character in List&lt;string&gt; to red."
             },
             {
                 "text": "\"punctuation.definition.typeparameters.begin.cs\","
             },
             {
-                "text": "//Changes The \">\" character in List<string> to red."
+                "text": "//Changes The \"&gt;\" character in List&lt;string&gt; to red."
             },
             {
                 "text": "\"punctuation.definition.typeparameters.end.cs\""
@@ -6143,7 +6187,7 @@
                 "text": "\"keyword.operator.comparison.cs\","
             },
             {
-                "text": "//Makes => in C# purple"
+                "text": "//Makes =&gt; in C# purple"
             },
             {
                 "text": "\"keyword.operator.arrow.cs\","
@@ -6167,7 +6211,7 @@
                 "text": "\"keyword.operator.conditional.colon.cs\","
             },
             {
-                "text": "//Makes > in C# purple"
+                "text": "//Makes &gt; in C# purple"
             },
             {
                 "text": "\"keyword.operator.relational.cs\""
@@ -7079,7 +7123,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "CopyCode": "<template>\n\t<router-link :to=\"path\" class=\"button\">\n\t\t{{ buttonText }}\n\t</router-link>\n</template>\n\n\n<script setup>\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n</script>\n\n\n<style scoped>\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n</style>"
+                "CopyCode": "&lt;template&gt;\n\t&lt;router-link :to=\"path\" class=\"button\"&gt;\n\t\t{{ buttonText }}\n\t&lt;/router-link&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\n\nconst props = defineProps({\n\tpath: {\n\t\ttype: String,\n\t\trequired: true\n\t},\n\tbuttonText: {\n\t\ttype: String,\n\t\trequired: true\n\t}\n});\n\n&lt;/script&gt;\n\n\n&lt;style scoped&gt;\n\n.button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}\n\n&lt;/style&gt;"
             },
             {
                 "instruction": "Paste the following code in the \"Home.vue\" file in the \"views\" folder in your \"src\" directory."
@@ -7089,7 +7133,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "CopyCode": "<template>\n\t<p class=\"title\">HOME PAGE</p>\n\t<LinkBtn\n\t\t:path=\"'/second-page'\"\n\t\t:buttonText=\"'Go to 2nd page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
+                "CopyCode": "&lt;template&gt;\n\t&lt;p class=\"title\"&gt;HOME PAGE&lt;/p&gt;\n\t&lt;LinkBtn\n\t\t:path=\"'/second-page'\"\n\t\t:buttonText=\"'Go to 2nd page'\"&gt;\n\t&lt;/LinkBtn&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\nimport LinkBtn from '../components/RouterBtn.vue';\n&lt;/script&gt;\n\n\n&lt;style scoped&gt;\n\n.title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}\n\n&lt;/style&gt;"
             },
             {
                 "instruction": "Paste the following code in the \"SecondPage.vue\" file in the same \"views\" folder."
@@ -7099,7 +7143,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "CopyCode": "<template>\n\t<p class=\"title\">Second Page</p>\n\t<LinkBtn\n\t\t:path=\"'/'\"\n\t\t:buttonText=\"'Go to Home page'\">\n\t</LinkBtn>\n</template>\n\n\n<script setup>\nimport LinkBtn from '../components/RouterBtn.vue';\n</script>\n\n\n<style scoped>\n\n.title {\n\tcolor: purple;\n\tfont-family: Arial, sans-serif;\n}\n\n</style>"
+                "CopyCode": "&lt;template&gt;\n\t&lt;p class=\"title\"&gt;Second Page&lt;/p&gt;\n\t&lt;LinkBtn\n\t\t:path=\"'/'\"\n\t\t:buttonText=\"'Go to Home page'\"&gt;\n\t&lt;/LinkBtn&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\nimport LinkBtn from '../components/RouterBtn.vue';\n&lt;/script&gt;\n\n\n&lt;style scoped&gt;\n\n.title {\n\tcolor: purple;\n\tfont-family: Arial, sans-serif;\n}\n\n&lt;/style&gt;"
             },
             {
                 "instruction": "Go to the \"App.vue\" file in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file."
@@ -7109,7 +7153,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "CopyCode": "<template>\n\t<p class=\"test-header\">TEST WEBSITE</p>\n\t<router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.test-header {\n\tfont-size: 25px;\n}\n\n</style>"
+                "CopyCode": "&lt;template&gt;\n\t&lt;p class=\"test-header\"&gt;TEST WEBSITE&lt;/p&gt;\n\t&lt;router-view /&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\n\n&lt;/script&gt;\n\n\n&lt;style scoped&gt;\n.test-header {\n\tfont-size: 25px;\n}\n\n&lt;/style&gt;"
             },
             {
                 "instruction": "After you're done, save your code and run it using \"npm run dev\". I think this should be a good start to your project. Obviously you can delete and modify the files. The example files were just to show you how to set the project up."
@@ -7313,7 +7357,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router>\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}"
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    &lt;Router&gt;\n      &lt;Routes&gt;\n        &lt;Route path=\"/\" element={&lt;HomePage /&gt;} /&gt;\n        &lt;Route path=\"/second-page\" element={&lt;SecondPage /&gt;} /&gt;\n      &lt;/Routes&gt;\n    &lt;/Router&gt;\n  );\n}"
             },
             {
                 "instruction": "In the src/components directory open the \"RouterBtn.jsx\" file and paste the following code."
@@ -7323,7 +7367,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    <Link to={path} className=\"button\">\n      {buttonText}\n    </Link>\n  );\n}\n\nexport default RouterBtn;"
+                "CopyCode": "import React from 'react'\nimport { Link } from 'react-router-dom'\nimport '../styles/components/RouterBtn.css'\n\nfunction RouterBtn({ path, buttonText }) {\n  return (\n    &lt;Link to={path} className=\"button\"&gt;\n      {buttonText}\n    &lt;/Link&gt;\n  );\n}\n\nexport default RouterBtn;"
             },
             {
                 "instruction": "In the src/views directory open the \"Home.jsx\" file and paste the following code."
@@ -7333,7 +7377,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    <div>\n      <p className=\"title\">HOME PAGE</p>\n      <RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" />\n    </div>\n  );\n}\n\nexport default HomePage;"
+                "CopyCode": "import React from 'react'\nimport RouterBtn from '../components/RouterBtn'\nimport '../styles/views/Home.css'\n\nfunction HomePage() {\n  return (\n    &lt;div&gt;\n      &lt;p className=\"title\"&gt;HOME PAGE&lt;/p&gt;\n      &lt;RouterBtn path=\"/second-page\" buttonText=\"Go to 2nd page\" /&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default HomePage;"
             },
             {
                 "instruction": "In the src/views directory open the \"SecondPage.jsx\" file and paste the following code. This incorporates tailwind.css and state variables."
@@ -7343,7 +7387,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () => {\n    setCount(count + 1);\n  };\n\n  return (\n    <div>\n      <p className=\"text-purple-500 font-sans\">SECOND PAGE</p>\n      <RouterBtn path=\"/\" buttonText=\"Go to Home Page\" />\n      <div>\n        <button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700\">\n          Count {count}\n        </button>\n      </div>\n    </div>\n  );\n}\n\nexport default SecondPage;\n"
+                "CopyCode": "import { React, useState } from 'react'\nimport RouterBtn from '../components/RouterBtn'\n\nfunction SecondPage() {\n  const [count, setCount] = useState(0);\n\n  const incrementCount = () =&gt; {\n    setCount(count + 1);\n  };\n\n  return (\n    &lt;div&gt;\n      &lt;p className=\"text-purple-500 font-sans\"&gt;SECOND PAGE&lt;/p&gt;\n      &lt;RouterBtn path=\"/\" buttonText=\"Go to Home Page\" /&gt;\n      &lt;div&gt;\n        &lt;button onClick={incrementCount}\n        className=\"mt-2 px-4 py-2 text-white bg-gray-500 hover:bg-gray-700\"&gt;\n          Count {count}\n        &lt;/button&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default SecondPage;\n"
             },
             {
                 "instruction": "Now in \"App.jsx\" in the top-most directory of src, delete the contents of the file, and paste the following."
@@ -7353,7 +7397,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    <>\n      <p class=\"text-2xl\">TEST WEBSITE</p>\n      <AppRouter />\n    </>\n  );\n}\n\nexport default App"
+                "CopyCode": "import { AppRouter } from './router'\nimport './App.css'\n\nfunction App() {\n  return (\n    &lt;&gt;\n      &lt;p class=\"text-2xl\"&gt;TEST WEBSITE&lt;/p&gt;\n      &lt;AppRouter /&gt;\n    &lt;/&gt;\n  );\n}\n\nexport default App"
             },
             {
                 "instruction": "In the top-most directory of the src file, open \"App.css\". Remove the contents of the file and paste the following code."
@@ -7432,7 +7476,7 @@
                 "CopyCode": "cd my-angular-project/src/app\nmkdir -p views components utils assets models\nng generate component components/RouterBtn\nng generate component views/Home\nng generate component views/SecondPage"
             },
             {
-                "instruction": "Open your code folder in VSCode. Go to \"app.routes.ts\" in src -> app. Delete it's contents and paste in the following code."
+                "instruction": "Open your code folder in VSCode. Go to \"app.routes.ts\" in src -&gt; app. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7442,7 +7486,7 @@
                 "CopyCode": "import { Routes } from '@angular/router'\nimport { HomeComponent } from './views/home/home.component';\nimport { SecondPageComponent } from './views/second-page/second-page.component';\n\nexport const routes: Routes = [\n\t{ path: '', component: HomeComponent },\n\t{ path: 'second-page', component: SecondPageComponent },\n];"
             },
             {
-                "instruction": "Now go to \"router-btn.component.ts\" in src -> app -> components -> router-btn folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"router-btn.component.ts\" in src -&gt; app -&gt; components -&gt; router-btn folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7459,7 +7503,7 @@
                 "Description": "",
                 "Language": "html",
                 "DisplayLang": "Angular",
-                "CopyCode": "<a [routerLink]=\"path\" class=\"button\">\n\t{{ buttonText }}\n</a>"
+                "CopyCode": "&lt;a [routerLink]=\"path\" class=\"button\"&gt;\n\t{{ buttonText }}\n&lt;/a&gt;"
             },
             {
                 "instruction": "In the same directory paste the following code into the \"router-btn.component.css\" file."
@@ -7471,7 +7515,7 @@
                 "CopyCode": ".button {\n\tdisplay: inline-block;\n\tpadding: 10px 20px;\n\tcolor: white;\n\tbackground-color: #007bff;\n\tborder: none;\n\tborder-radius: 4px;\n\ttext-align: center;\n\ttext-decoration: none;\n\tfont-size: 16px;\n}\n\n.button:hover {\n\tbackground-color: #0056b3;\n}"
             },
             {
-                "instruction": "Now go to \"home.component.ts\" in src -> app -> views -> home folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"home.component.ts\" in src -&gt; app -&gt; views -&gt; home folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7481,17 +7525,17 @@
                 "CopyCode": "import { Component } from '@angular/core';\nimport { RouterBtnComponent } from '../../components/router-btn/router-btn.component';\n\n@Component({\n\tselector: 'app-home',\n\tstandalone: true,\n\timports: [RouterBtnComponent],\n\ttemplateUrl: './home.component.html',\n\tstyleUrl: './home.component.css'\n})\nexport class HomeComponent {\n\n}"
             },
             {
-                "instruction": "Now go to \"home.component.html\" in src -> app -> views -> home folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"home.component.html\" in src -&gt; app -&gt; views -&gt; home folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "html",
                 "DisplayLang": "Angular",
-                "CopyCode": "<p class=\"title\">HOME PAGE</p>\n<app-router-btn [path]=\"'/second-page'\" [buttonText]=\"'Go to 2nd page'\"></app-router-btn>"
+                "CopyCode": "&lt;p class=\"title\"&gt;HOME PAGE&lt;/p&gt;\n&lt;app-router-btn [path]=\"'/second-page'\" [buttonText]=\"'Go to 2nd page'\"&gt;&lt;/app-router-btn&gt;"
             },
             {
-                "instruction": "Now go to \"home.component.css\" in src -> app -> views -> home folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"home.component.css\" in src -&gt; app -&gt; views -&gt; home folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7500,7 +7544,7 @@
                 "CopyCode": ".title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}"
             },
             {
-                "instruction": "Now go to \"second-page.component.ts\" in src -> app -> views -> second-page folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"second-page.component.ts\" in src -&gt; app -&gt; views -&gt; second-page folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7510,17 +7554,17 @@
                 "CopyCode": "import { Component } from '@angular/core';\nimport { RouterBtnComponent } from '../../components/router-btn/router-btn.component';\n\n@Component({\n\tselector: 'app-second-page',\n\tstandalone: true,\n\timports: [RouterBtnComponent],\n\ttemplateUrl: './second-page.component.html',\n\tstyleUrls: ['./second-page.component.css']\n})\nexport class SecondPageComponent {\n\n}"
             },
             {
-                "instruction": "Now go to \"second-page.component.html\" in src -> app -> views -> second-page folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"second-page.component.html\" in src -&gt; app -&gt; views -&gt; second-page folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "html",
                 "DisplayLang": "Angular",
-                "CopyCode": "<p class=\"title\">Second Page</p>\n<app-router-btn [path]=\"'/'\" [buttonText]=\"'Go to Home page'\"></app-router-btn>"
+                "CopyCode": "&lt;p class=\"title\"&gt;Second Page&lt;/p&gt;\n&lt;app-router-btn [path]=\"'/'\" [buttonText]=\"'Go to Home page'\"&gt;&lt;/app-router-btn&gt;"
             },
             {
-                "instruction": "Now go to \"second-page.component.css\" in src -> app -> views -> second-page folder. Delete it's contents and paste in the following code."
+                "instruction": "Now go to \"second-page.component.css\" in src -&gt; app -&gt; views -&gt; second-page folder. Delete it's contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -7529,17 +7573,17 @@
                 "CopyCode": ".title {\n\tcolor: red;\n\tfont-family: Arial, sans-serif;\n}"
             },
             {
-                "instruction": "In src -> app open the \"app.component.html\" file. Delete its contents and paste in the following code."
+                "instruction": "In src -&gt; app open the \"app.component.html\" file. Delete its contents and paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "html",
                 "DisplayLang": "Angular",
-                "CopyCode": "<p class=\"test-header\">TEST WEBSITE</p>\n<router-outlet></router-outlet>"
+                "CopyCode": "&lt;p class=\"test-header\"&gt;TEST WEBSITE&lt;/p&gt;\n&lt;router-outlet&gt;&lt;/router-outlet&gt;"
             },
             {
-                "instruction": "In src -> app open the \"app.component.css\" file and paste in the following code."
+                "instruction": "In src -&gt; app open the \"app.component.css\" file and paste in the following code."
             },
             {
                 "Name": "",
@@ -7718,7 +7762,7 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    <Router basename=\"/name-of-github-repo\">\n      <Routes>\n        <Route path=\"/\" element={<HomePage />} />\n        <Route path=\"/second-page\" element={<SecondPage />} />\n      </Routes>\n    </Router>\n  );\n}"
+                "CopyCode": "import React from 'react';\nimport { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\nimport HomePage from '../views/Home';\nimport SecondPage from '../views/SecondPage';\n\nexport function AppRouter() {\n  return (\n    &lt;Router basename=\"/name-of-github-repo\"&gt;\n      &lt;Routes&gt;\n        &lt;Route path=\"/\" element={&lt;HomePage /&gt;} /&gt;\n        &lt;Route path=\"/second-page\" element={&lt;SecondPage /&gt;} /&gt;\n      &lt;/Routes&gt;\n    &lt;/Router&gt;\n  );\n}"
             },
             {
                 "instruction": "Run the following commands in your terminal. Make sure you're still in your local repository using \"pwd\"."
@@ -8115,7 +8159,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "from db import db\n\nclass User(db.Model):\n\tid = db.Column(db.Integer, primary_key=True)\n\tfirstname = db.Column(db.String(80), nullable=False)\n\tlastname = db.Column(db.String(120), unique=True, nullable=False)\n\n\tdef __repr__(self):\n\t\treturn f'<User {self.username}>'"
+                "CopyCode": "from db import db\n\nclass User(db.Model):\n\tid = db.Column(db.Integer, primary_key=True)\n\tfirstname = db.Column(db.String(80), nullable=False)\n\tlastname = db.Column(db.String(120), unique=True, nullable=False)\n\n\tdef __repr__(self):\n\t\treturn f'&lt;User {self.username}&gt;'"
             },
             {
                 "instruction": "Paste the following code in the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be."
@@ -8124,7 +8168,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "from flask import Blueprint, request, jsonify\nfrom models import User\nfrom db import db\n\nroutes_blueprint = Blueprint('routes', __name__)\n\n@routes_blueprint.route('/users', methods=['POST'])\ndef create_user():\n\tfirstname = request.json['firstname']\n\tlastname = request.json['lastname']\n\tuser = User(firstname=firstname, lastname=lastname)\n\tdb.session.add(user)\n\tdb.session.commit()\n\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 201\n\n\n@routes_blueprint.route('/users/<firstname>', methods=['GET'])\ndef get_user_by_name(firstname):\n\tuser = User.query.filter_by(firstname=firstname).first()\n\tif user:\n\t\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 200\n\telse:\n\t\treturn jsonify({'error': 'User not found'}), 404\n"
+                "CopyCode": "from flask import Blueprint, request, jsonify\nfrom models import User\nfrom db import db\n\nroutes_blueprint = Blueprint('routes', __name__)\n\n@routes_blueprint.route('/users', methods=['POST'])\ndef create_user():\n\tfirstname = request.json['firstname']\n\tlastname = request.json['lastname']\n\tuser = User(firstname=firstname, lastname=lastname)\n\tdb.session.add(user)\n\tdb.session.commit()\n\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 201\n\n\n@routes_blueprint.route('/users/&lt;firstname&gt;', methods=['GET'])\ndef get_user_by_name(firstname):\n\tuser = User.query.filter_by(firstname=firstname).first()\n\tif user:\n\t\treturn jsonify({'firstname': user.firstname, 'lastname': user.lastname}), 200\n\telse:\n\t\treturn jsonify({'error': 'User not found'}), 404\n"
             },
             {
                 "instruction": "Paste the following code in the \".env\" file."
@@ -8164,14 +8208,14 @@
                 "CopyCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://127.0.0.1:5000';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;"
             },
             {
-                "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files content and paste the following code."
+                "instruction": "Now go to src -&gt; views and open \"Home.vue\". Delete the files content and paste the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
                 "DisplayLang": "Vue",
-                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tif (!firstName.value || !lastName.value) {\n\t\t\talert(\"Please Fill In All Fields\");\n\t\t\treturn;\n\t\t}\n\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\talert(`User '${firstName.value}' already in database!`);\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\n</script>"
+                "CopyCode": "&lt;template&gt;\n\t&lt;div&gt;\n\t  &lt;input v-model=\"firstName\" placeholder=\"Enter First Name\"&gt;\n\t  &lt;input v-model=\"lastName\" placeholder=\"Enter Last Name\"&gt;\n\t  &lt;button @click=\"createUser\"&gt;Create User&lt;/button&gt;\n\n\t  &lt;!-- Search section --&gt;\n\t  &lt;div&gt;\n\t    &lt;input v-model=\"searchFirstName\" placeholder=\"Search by First Name\"&gt;\n\t    &lt;button @click=\"searchUser\"&gt;Search&lt;/button&gt;\n\t  &lt;/div&gt;\n\n\t  &lt;!-- Display results in a table --&gt;\n\t  &lt;table v-if=\"users.length\"&gt;\n\t    &lt;thead&gt;\n\t      &lt;tr&gt;\n\t        &lt;th&gt;First Name&lt;/th&gt;\n\t        &lt;th&gt;Last Name&lt;/th&gt;\n\t      &lt;/tr&gt;\n\t    &lt;/thead&gt;\n\t    &lt;tbody&gt;\n\t      &lt;tr v-for=\"user in users\" :key=\"user.firstname\"&gt;\n\t        &lt;td&gt;{{ user.firstname }}&lt;/td&gt;\n\t        &lt;td&gt;{{ user.lastname }}&lt;/td&gt;\n\t      &lt;/tr&gt;\n\t    &lt;/tbody&gt;\n\t  &lt;/table&gt;\n\n\t&lt;/div&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () =&gt; {\n\ttry {\n\t\tif (!firstName.value || !lastName.value) {\n\t\t\talert(\"Please Fill In All Fields\");\n\t\t\treturn;\n\t\t}\n\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\talert(`User '${firstName.value}' already in database!`);\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () =&gt; {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\n&lt;/script&gt;"
             },
             {
                 "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands."
@@ -8397,7 +8441,7 @@
                 "instruction": "Most of the following steps come from this video. Seeing what's happening might be helpful."
             },
             {
-                "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.  Ext 1: Extension Pack for Java Ext 2: Spring Initializr Java Support Ext 3: Spring Boot Dashboard Ext 4: Spring Boot Tools Ext 5: Spring Boot Extension Pack  "
+                "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.&lt;br&gt;&lt;br&gt;Ext 1: Extension Pack for Java&lt;br&gt;Ext 2: Spring Initializr Java Support&lt;br&gt;Ext 3: Spring Boot Dashboard&lt;br&gt;Ext 4: Spring Boot Tools&lt;br&gt;Ext 5: Spring Boot Extension Pack&lt;br&gt;&lt;br&gt;"
             },
             {
                 "instruction": "After you have those extensions installed, do the following with VSCode open."
@@ -8452,10 +8496,10 @@
                 "Description": "",
                 "Language": "html",
                 "DisplayLang": "xml",
-                "CopyCode": "\t\t<!-- New Dependencies -->\n\t    <dependency>\n\t\t    <groupId>org.springframework.boot</groupId>\n\t\t    <artifactId>spring-boot-starter-data-jpa</artifactId>\n\t    </dependency>\n\t    <dependency>\n\t\t    <groupId>com.h2database</groupId>\n\t\t    <artifactId>h2</artifactId>\n\t\t    <version>2.1.214</version>\n\t    </dependency>"
+                "CopyCode": "\t\t&lt;!-- New Dependencies --&gt;\n\t    &lt;dependency&gt;\n\t\t    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n\t\t    &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;\n\t    &lt;/dependency&gt;\n\t    &lt;dependency&gt;\n\t\t    &lt;groupId&gt;com.h2database&lt;/groupId&gt;\n\t\t    &lt;artifactId&gt;h2&lt;/artifactId&gt;\n\t\t    &lt;version&gt;2.1.214&lt;/version&gt;\n\t    &lt;/dependency&gt;"
             },
             {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> models and then open the \"User.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; models and then open the \"User.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8464,34 +8508,34 @@
                 "CopyCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.Entity;\nimport jakarta.persistence.GeneratedValue;\nimport jakarta.persistence.GenerationType;\nimport jakarta.persistence.Id;\nimport jakarta.persistence.Table;\n\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\")\npublic class User {\n\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\tprivate String firstname;\n\tprivate String lastname;\n}"
             },
             {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> repositories and then open the \"UserRepository.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; repositories and then open the \"UserRepository.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.repositories;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\nimport com.springbackend.demo.models.User;\n\n@Repository\npublic interface UserRepository extends JpaRepository<User, Long> {\n\tUser findByFirstname(String firstname);\n}"
+                "CopyCode": "package com.springbackend.demo.repositories;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\nimport com.springbackend.demo.models.User;\n\n@Repository\npublic interface UserRepository extends JpaRepository&lt;User, Long&gt; {\n\tUser findByFirstname(String firstname);\n}"
             },
             {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> services and then open the \"UserService.java\" file. Paste in the following code."
-            },
-            {
-                "Name": "",
-                "Description": "",
-                "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional<User> getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
-            },
-            {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> controllers and then open the \"UserController.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; services and then open the \"UserService.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity<User> createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.saveUser(user);\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -> ResponseEntity.status(404).body(null));\n\t}\n}"
+                "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional&lt;User&gt; getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
             },
             {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"WebConfig.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; controllers and then open the \"UserController.java\" file. Paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Java",
+                "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity&lt;User&gt; createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.saveUser(user);\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity&lt;User&gt; getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -&gt; ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -&gt; ResponseEntity.status(404).body(null));\n\t}\n}"
+            },
+            {
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; config and then open the \"WebConfig.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8500,7 +8544,7 @@
                 "CopyCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.servlet.config.annotation.CorsRegistry;\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\n\n@Configuration\npublic class WebConfig {\n\n\t@Bean\n\tpublic WebMvcConfigurer corsConfigurer() {\n\t\treturn new WebMvcConfigurer() {\n\t\t\t@Override\n\t\t\tpublic void addCorsMappings(CorsRegistry registry){\n\t\t\t\tregistry.addMapping(\"/**\").allowedOrigins(\"*\");\n\t\t\t}\n\t\t};\n\t}\n}"
             },
             {
-                "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8580,7 +8624,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "lsof -i :8080\nkill -9 <PID>"
+                "CopyCode": "lsof -i :8080\nkill -9 &lt;PID&gt;"
             },
             {
                 "instruction": "Now open the following link in your browser. We're going to work with the database in the h2-console."
@@ -8657,7 +8701,7 @@
                 "CopyCode": "import axios from 'axios';\n\naxios.defaults.baseURL = 'http://localhost:8080';\naxios.defaults.headers.common['Content-Type'] = 'application/json';\n\nexport default axios;"
             },
             {
-                "instruction": "Got to src -> styles -> views and open \"Home.css\". Delete its contents and paste in the following code."
+                "instruction": "Got to src -&gt; styles -&gt; views and open \"Home.css\". Delete its contents and paste in the following code."
             },
             {
                 "Name": "",
@@ -8666,14 +8710,14 @@
                 "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}"
             },
             {
-                "instruction": "Now go to src -> views and open the \"Home.jsx\" file. Delete its contents and paste in the following code."
+                "instruction": "Now go to src -&gt; views and open the \"Home.jsx\" file. Delete its contents and paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) => setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/>\n\t\t\t\t<input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) => setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/>\n\t\t\t\t<button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t>\n\t\t\t\t Create User\n\t\t\t\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/>\n\t\t\t\t\n\t\t\t\t<button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t>\n\t\t\t\t Search\n\t\t\t\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t\t\t\t<table>\n\t\t\t\t  <thead>\n\t\t\t\t    <tr>\n\t\t\t\t      <th>First Name</th>\n\t\t\t\t      <th>Last Name</th>\n\t\t\t\t    </tr>\n\t\t\t\t  </thead>\n\t\t\t\t  <tbody>\n\t\t\t\t    {users.map((user) => (\n\t\t\t\t      <tr key={user.firstname}>\n\t\t\t\t\t\t\t\t<td>{user.firstname}</td>\n\t\t\t\t\t\t\t\t<td>{user.lastname}</td>\n\t\t\t\t      </tr>\n\t\t\t\t    ))}\n\t\t\t\t  </tbody>\n\t\t\t\t</table>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;"
+                "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () =&gt; {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () =&gt; {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () =&gt; {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    &lt;div&gt;\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) =&gt; setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) =&gt; setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t&gt;\n\t\t\t\t Create User\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Search section */}\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) =&gt; setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t&gt;\n\t\t\t\t Search\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Display results in a table */}\n      {users.length &gt; 0 && (\n\t\t\t\t&lt;table&gt;\n\t\t\t\t  &lt;thead&gt;\n\t\t\t\t    &lt;tr&gt;\n\t\t\t\t      &lt;th&gt;First Name&lt;/th&gt;\n\t\t\t\t      &lt;th&gt;Last Name&lt;/th&gt;\n\t\t\t\t    &lt;/tr&gt;\n\t\t\t\t  &lt;/thead&gt;\n\t\t\t\t  &lt;tbody&gt;\n\t\t\t\t    {users.map((user) =&gt; (\n\t\t\t\t      &lt;tr key={user.firstname}&gt;\n\t\t\t\t\t\t\t\t&lt;td&gt;{user.firstname}&lt;/td&gt;\n\t\t\t\t\t\t\t\t&lt;td&gt;{user.lastname}&lt;/td&gt;\n\t\t\t\t      &lt;/tr&gt;\n\t\t\t\t    ))}\n\t\t\t\t  &lt;/tbody&gt;\n\t\t\t\t&lt;/table&gt;\n      )}\n    &lt;/div&gt;\n  );\n};\n\nexport default HomePage;"
             },
             {
                 "instruction": "Now open two terminals. In the first terminal run the following command."
@@ -8829,7 +8873,7 @@
                 "instruction": "When you download the JavaFX SDK, note where it is downloaded and what version it is. You'll need this information later."
             },
             {
-                "instruction": "Open Intellij IDEA and in the top-most Apple bar select File -> New -> Project."
+                "instruction": "Open Intellij IDEA and in the top-most Apple bar select File -&gt; New -&gt; Project."
             },
             {
                 "instruction": "In the pop-up window on the left-hand side under the \"Generators\" header select \"JavaFX\"."
@@ -8847,16 +8891,16 @@
                 "instruction": "You should now have a JavaFX project created and be in the text editor view."
             },
             {
-                "instruction": "In the \"src\" file go to main -> java -> com.example.counter. Delete the HelloApplication and HelloController java files in the folder. You can delete them by right-clicking the files and pressing \"Delete\" in the menu. Leave the checked boxes as they are and click \"Ok\" when the pop-up window appears. Click \"Delete Anyway\" if the \"Usages Detected\" pop-up window appears."
+                "instruction": "In the \"src\" file go to main -&gt; java -&gt; com.example.counter. Delete the HelloApplication and HelloController java files in the folder. You can delete them by right-clicking the files and pressing \"Delete\" in the menu. Leave the checked boxes as they are and click \"Ok\" when the pop-up window appears. Click \"Delete Anyway\" if the \"Usages Detected\" pop-up window appears."
             },
             {
-                "instruction": "Now select the src -> main -> java -> com.example.counter folder. Right click and select new -> JavaFX Application. Name it \"Main\" then click ok. Then do new -> Java Class and call it \"ExampleController\" then press enter/return to create it."
+                "instruction": "Now select the src -&gt; main -&gt; java -&gt; com.example.counter folder. Right click and select new -&gt; JavaFX Application. Name it \"Main\" then click ok. Then do new -&gt; Java Class and call it \"ExampleController\" then press enter/return to create it."
             },
             {
-                "instruction": "Now in the src -> main -> resources -> com.example.counter folder, right click on the hello-view.fxml code. Click \"Delete\" in the menu bar. Click \"Ok\" in a confirmation window pops up. Don't uncheck anything."
+                "instruction": "Now in the src -&gt; main -&gt; resources -&gt; com.example.counter folder, right click on the hello-view.fxml code. Click \"Delete\" in the menu bar. Click \"Ok\" in a confirmation window pops up. Don't uncheck anything."
             },
             {
-                "instruction": "Now in right-click the com.example.counter folder and do New -> FXML File. In the input field type \"Counter\" and press return/enter."
+                "instruction": "Now in right-click the com.example.counter folder and do New -&gt; FXML File. In the input field type \"Counter\" and press return/enter."
             },
             {
                 "instruction": "In the \"Counter.fxml\" file paste the following code."
@@ -8865,10 +8909,10 @@
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
-                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+                "CopyCode": "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;?import javafx.geometry.Insets?&gt;\n&lt;?import javafx.scene.control.*?&gt;\n&lt;?import javafx.scene.layout.*?&gt;\n\n&lt;VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.counter.ExampleController\" fx:id=\"UniqueId\"&gt;\n\t&lt;Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/&gt;\n\t&lt;Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/&gt;\n\t&lt;Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\"&gt;\n\t\t&lt;VBox.margin&gt;\n\t\t\t&lt;Insets bottom=\"20\"/&gt;\n\t\t&lt;/VBox.margin&gt;\n\t&lt;/Button&gt;\n&lt;/VBox&gt;"
             },
             {
-                "instruction": "Now go back to src -> main -> java -> com.example.counter. In the \"Main.java\" file paste the following code."
+                "instruction": "Now go back to src -&gt; main -&gt; java -&gt; com.example.counter. In the \"Main.java\" file paste the following code."
             },
             {
                 "Name": "",
@@ -8904,7 +8948,7 @@
                 "instruction": "Under the + sign you should now see \"JavaFX-22\". Right-click it, then press \"Add to Modules\" in the menu. Click \"Ok\" in the pop-up window. Then click \"Apply\" in the bottom right. Then click \"OK\"."
             },
             {
-                "instruction": "Now right click the src -> main -> java folder and do New -> File. Type \"module-info.java\" in the input field then press return/enter. The file should appear in your \"java\" folder."
+                "instruction": "Now right click the src -&gt; main -&gt; java folder and do New -&gt; File. Type \"module-info.java\" in the input field then press return/enter. The file should appear in your \"java\" folder."
             },
             {
                 "instruction": "Paste the following code In the \"module-info.java\" file."
@@ -8916,7 +8960,7 @@
                 "CopyCode": "module Counter {\n\trequires javafx.fxml;\n\trequires javafx.controls;\n\n\topens com.example.counter;\n}"
             },
             {
-                "instruction": "Now go back to your Main.java file in the src -> main -> java -> com.example.counter folder. Click the green arrow button at the top-right to run your application. After you do that you should be able to run the app but select any folder and pressing the run button in the future."
+                "instruction": "Now go back to your Main.java file in the src -&gt; main -&gt; java -&gt; com.example.counter folder. Click the green arrow button at the top-right to run your application. After you do that you should be able to run the app but select any folder and pressing the run button in the future."
             }
         ]
     },
@@ -8945,7 +8989,7 @@
                 "instruction": "When you download the JavaFX SDK note where it is downloaded and what version it is. You'll need this information later. "
             },
             {
-                "instruction": "Go back to eclipse and in the top-most Apple bar thing click the following. File -> New -> Other."
+                "instruction": "Go back to eclipse and in the top-most Apple bar thing click the following. File -&gt; New -&gt; Other."
             },
             {
                 "instruction": "A pop-up window should appear titled \"Select a wizard\"."
@@ -8963,7 +9007,7 @@
                 "instruction": "In the left-hand menu make sure there’s a folder tilted \"Counter\". Go to the src folder of the project and delete the file called \"module-info.java\"."
             },
             {
-                "instruction": "Now in the left-hand menu, right-click on your project and select Build Path -> Configure Build Path. A window should pop-up titled \"Properties for Counter\"."
+                "instruction": "Now in the left-hand menu, right-click on your project and select Build Path -&gt; Configure Build Path. A window should pop-up titled \"Properties for Counter\"."
             },
             {
                 "instruction": "In the main view, select the \"Libraries\" tab. In the tab under \"ModulePath\" you should see something named \"JavaFX SDK\"."
@@ -8975,13 +9019,13 @@
                 "instruction": "Now select \"ClassPath\" under \"ModulePath\" and then on the right-hand side click \"Add Library...\"."
             },
             {
-                "instruction": "In the \"Add Library\" pop-up select \"JavaFX SDK\" -> Next -> Finish. It should now appear under \"ClassPath\"."
+                "instruction": "In the \"Add Library\" pop-up select \"JavaFX SDK\" -&gt; Next -&gt; Finish. It should now appear under \"ClassPath\"."
             },
             {
                 "instruction": "Select \"ClassPath\" and click \"Add Library\" again."
             },
             {
-                "instruction": "In the \"Add Library\" pop-up select \"User Library\" -> Next. Then Select \"User Libraries\" on the right-hand side. Then in the pop-up on the right-hand click \"New\". In the \"User Library Name\" input field type \"JavaFX\" then click \"Ok\"."
+                "instruction": "In the \"Add Library\" pop-up select \"User Library\" -&gt; Next. Then Select \"User Libraries\" on the right-hand side. Then in the pop-up on the right-hand click \"New\". In the \"User Library Name\" input field type \"JavaFX\" then click \"Ok\"."
             },
             {
                 "instruction": "Select \"JavaFX\" and click \"Add External JARs\" on the right-hand side. Go to where your javafx-sdk-22.0.1 (or whatever version you downloaded) folder is. Click on it and go to the \"lib\" folder. Select all files ending in \".jar\" and then click open. When you're done click \"Apply and Close\". NOTE: Hold down the command key to select multiple files."
@@ -8990,7 +9034,7 @@
                 "instruction": "Then click \"Finish\" and \"Apply and Close\"."
             },
             {
-                "instruction": "You should be at your eclipse workspace again. Click on your project on the left-hand side and select Build Path -> Configure Build Path like we did earlier."
+                "instruction": "You should be at your eclipse workspace again. Click on your project on the left-hand side and select Build Path -&gt; Configure Build Path like we did earlier."
             },
             {
                 "instruction": "Now JavaFX should appear under \"ClassPath\". Click \"Apply\" and then \"Apply and Close\"."
@@ -9023,7 +9067,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "cd lib\npwd | tee >(pbcopy)"
+                "CopyCode": "cd lib\npwd | tee &gt;(pbcopy)"
             },
             {
                 "instruction": "Replace the \"path-to-your-sdk\" in the following statement with what you just copied to your clipboard using the pbcopy command. "
@@ -9053,7 +9097,7 @@
                 "CopyCode": "package application;\n\nimport javafx.application.Application;\n\nimport javafx.fxml.FXMLLoader;\nimport javafx.scene.Parent;\nimport javafx.scene.Scene;\nimport javafx.stage.Stage;\n\n/**\n * @author Elijah Dembe\n * @date 4/25/2024\n * @section CSC 331-002\n * @purpose Sets up and launches the Counter application\n */\npublic class Main extends Application {\n\n\t/**\n\t * Sets up the stage for the Counter app.\n\t * @param stage The stage (window) of the application\n\t */\n\t@Override\n\tpublic void start(Stage stage) throws Exception {\n\t\tParent root = FXMLLoader.load(getClass().getResource(\"Counter.fxml\"));\n\n\t\tScene scene = new Scene(root);\n\t\tstage.setTitle(\"Counter\");\n\t\tstage.setScene(scene);\n\t\tstage.show();\n\t}\n\n\t/**\n\t * Launches the Application\n\t * @param args Unused command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n}"
             },
             {
-                "instruction": "In the \"application\" folder create a new fxml file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"Counter.fxml\". Then click \"Finish\" when done."
+                "instruction": "In the \"application\" folder create a new fxml file. Select and right-click the \"application\" folder. Click New -&gt; File. In the \"File name:\" input field of the dialog box, type \"Counter.fxml\". Then click \"Finish\" when done."
             },
             {
                 "instruction": "Paste the following fxml code into the \"Counter.fxml\" file. You would typically make the fxml file using SceneBuilder in CSC 331. You can download SceneBuilder here."
@@ -9062,10 +9106,10 @@
                 "Name": "",
                 "Description": "",
                 "Language": "fxml",
-                "CopyCode": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?import javafx.geometry.Insets?>\n<?import javafx.scene.control.*?>\n<?import javafx.scene.layout.*?>\n\n<VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\">\n\t<Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/>\n\t<Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/>\n\t<Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\">\n\t\t<VBox.margin>\n\t\t\t<Insets bottom=\"20\"/>\n\t\t</VBox.margin>\n\t</Button>\n</VBox>"
+                "CopyCode": "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n&lt;?import javafx.geometry.Insets?&gt;\n&lt;?import javafx.scene.control.*?&gt;\n&lt;?import javafx.scene.layout.*?&gt;\n\n&lt;VBox alignment=\"CENTER\" spacing=\"20.0\" prefWidth=\"300\" prefHeight=\"200\" xmlns=\"http://javafx.com/javafx/8.0.171\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"application.ExampleController\" fx:id=\"UniqueId\"&gt;\n\t&lt;Label fx:id=\"numberLabel\" text=\"0\" style=\"-fx-font-size: 9em; -fx-text-fill: blue;\"/&gt;\n\t&lt;Button text=\"Increment\" onAction=\"#handleIncrement\" prefWidth=\"125\"/&gt;\n\t&lt;Button text=\"Decrement\" onAction=\"#handleDecrement\" prefWidth=\"125\"&gt;\n\t\t&lt;VBox.margin&gt;\n\t\t\t&lt;Insets bottom=\"20\"/&gt;\n\t\t&lt;/VBox.margin&gt;\n\t&lt;/Button&gt;\n&lt;/VBox&gt;"
             },
             {
-                "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -> File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file."
+                "instruction": "In the \"application\" folder create a new Java file. Select and right-click the \"application\" folder. Click New -&gt; File. In the \"File name:\" input field of the dialog box, type \"ExampleController.java\". Then click \"Finish\" when done. Paste the following code into the Java file."
             },
             {
                 "Name": "",
@@ -9211,7 +9255,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\nimport re\n#This command worked to install bs4 -> sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -> str:\n\n\t# Get a response from the website\n\tresponse = requests.get(app_link)\n\n\tif response.status_code == 200:\n\t\t# Use regex to find link in giant HTML response.\n\t\twebsite_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', response.text)\n\n\t\tif website_link_info:\n\t\t\twebsite_link = str(website_link_info.group(0))\n\t\t\treturn website_link.replace('\"canonical\":\"', '').replace('\",\"pageId', '').replace(r'/', '/').strip()\n\t\telse:\n\t\t\tprint(c(\"Website link not found in the HTML.\", 'red'))\n\t\t\treturn None\n\telse:\n\t\tprint(c(f\"Failed to fetch the website link. Status code: {response.status_code}\", 'red'))\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\nprint(c(\"Later when prompted to \\\"Paste the URL\\\" paste the website link.\", 'cyan'))\n\nlink = input(\"Enter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_linklink #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node cli/index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"Rename the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
+                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\nimport re\n#This command worked to install bs4 -&gt; sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -&gt; str:\n\n\t# Get a response from the website\n\tresponse = requests.get(app_link)\n\n\tif response.status_code == 200:\n\t\t# Use regex to find link in giant HTML response.\n\t\twebsite_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', response.text)\n\n\t\tif website_link_info:\n\t\t\twebsite_link = str(website_link_info.group(0))\n\t\t\treturn website_link.replace('\"canonical\":\"', '').replace('\",\"pageId', '').replace(r'/', '/').strip()\n\t\telse:\n\t\t\tprint(c(\"Website link not found in the HTML.\", 'red'))\n\t\t\treturn None\n\telse:\n\t\tprint(c(f\"Failed to fetch the website link. Status code: {response.status_code}\", 'red'))\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\nprint(c(\"Later when prompted to \\\"Paste the URL\\\" paste the website link.\", 'cyan'))\n\nlink = input(\"Enter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_linklink #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node cli/index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"Rename the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
             },
             {
                 "instruction": "When you're done with the setup change back into your top-most directory."
@@ -9372,7 +9416,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "\"\"\"\nThis program is a command line interface tool for the\n\"yt-dlp\" library. It allows you to download entire\nyoutube videos, download specific intervals of the\nvideo and rename the mp4 file you're downloading.\n\"\"\"\n\nimport os; os.system('clear')\nimport subprocess\nfrom pytube import YouTube\nfrom termcolor import colored as c\nimport inquirer\n\nsave_dir = \"Videos\"\n\nCURRENT_DOWNLOAD_PATH = f\"../{save_dir}/\"\n\nif os.path.exists(CURRENT_DOWNLOAD_PATH):\n\tos.system(f\"open -a Finder '{CURRENT_DOWNLOAD_PATH}'\")\n\tprint(f\"{c('CURRENT DOWNLOAD PATH', 'magenta')}: {os.path.abspath(CURRENT_DOWNLOAD_PATH)}/\")\n\tprint(\"Finder has been opened to current download path. See updates in real time.\")\nelse:\n\tprint(c(f\"\nPath does not exist: \\\"{CURRENT_DOWNLOAD_PATH}\\\"\", 'red'))\n\tprint(\"Go and fix path\n\")\n\texit(0)\n\ndef time_to_seconds(time) -> int:\n\t\"\"\" Converts int seconds to formatted time. \"\"\"\n\tt = [int(x) for x in time.split(\":\")]\n\treturn t[1] + (t[0] * 60) if (len(t) == 2) else t[2] + (t[1] * 60) + (t[0] * 3600)\n\ndef seconds_to_time(seconds) -> str:\n\t\"\"\" Converts seconds to minutes \"\"\"\n\tif seconds < 60:\n\t\treturn f\"0:{seconds:02}\"\n\telif seconds < 3600:\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{minutes}:{seconds:02}\"\n\telse:\n\t\thours = seconds // 3600\n\t\tseconds %= 3600\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{hours}:{minutes:02}:{seconds:02}\"\n\ndef get_choice(the_message):\n\tgreen_yes = c(\"Yes\", 'green')\n\tred_no = c('No', 'red')\n\n\tprint()\n\tquestions = [\n\t\tinquirer.List('choice',\n\t\t\t\t\tmessage=the_message,\n\t\t\t\t\tchoices=[green_yes, red_no]\n\t\t\t\t\t),\n\t]\n\n\tanswers = inquirer.prompt(questions)\n\treturn answers\n\nurl = input(f\"\nEnter {c('youtube link', 'red')} : \")\n\nvideo_len = YouTube(url).length\n\nprint(f\"Video length is {c(seconds_to_time(video_len), 'cyan')}\")\n\nmessage = f\"Do you want to download a {c('specific time interval', 'blue')} (y/n) ? \"\nis_time_interval = get_choice(message)\n\n#'\\x1b[32mYes\\x1b[0m' the color made the string weird\nif \"Yes\" in is_time_interval['choice']:\n\tprint(\"\nThe format has to be (00:00:00) or (00:00). Ex: 3:12:11 or 8:07 or 21:32\")\n\n\tstart_time = input(\"\nEnter a start time: \").strip()\n\n\twhile time_to_seconds(start_time) > video_len:\n\t\tprint(\"\nInvalid start time\")\n\t\tstart_time = input(\"Enter a start time: \").strip()\n\n\tend_time = input(\"Enter an end time: \").strip()\n\n\twhile time_to_seconds(start_time) > video_len:\n\n\t\tprint(\"\nInvalid end time\")\n\n\t\tend_time = input(\"Enter an end time: \").strip()\n\n\tdownload_length = seconds_to_time(time_to_seconds(end_time) - time_to_seconds(start_time))\n\n\tprint(f\"\nLength of download will be -> {c(download_length, 'blue')}\n\")\n\n\tnew_name = \"\"\n\n\trename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\n\tdo_rename = get_choice(rename_message)\n\n\tif \"Yes\" in do_rename['choice']:\n\t\tname = input(\"\nNew name of file (without extension): \")\n\t\tnew_name = f'-o \"{name}.%(ext)s\"'\n\t\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\n\tprint()\n\tdownload_with_time = get_choice(\"Ready to download? \")\n\n\tif \"Yes\" in download_with_time['choice']:\n\n\t\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\t\tprint()\n\t\tos.system(f'yt-dlp {new_name.strip()} \"{url.strip()}\" --download-sections \"*{start_time}-{end_time}\"')\n\t\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_video_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_video = get_choice(convert_video_message)\n\tif \"Yes\" in convert_video['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n\n\texit(0)\n\n\nnew_name = \"\"\n\nprint()\nrename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\nrename_vid = get_choice(rename_message)\n\nif \"Yes\" in rename_vid['choice']:\n\n\tname = input(\"\nNew name of file (without extension): \")\n\tnew_name = f'-o \"{name.strip()}.%(ext)s\"'\n\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\nprint()\ndownload_vid = get_choice(\"Ready to download? \")\n\nif \"Yes\" in download_vid['choice']:\n\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\tprint()\n\n\t#--no-mtime sets the date created to now\n\tos.system(f'yt-dlp --no-mtime {new_name} \"{url.strip()}\"')\n\n\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t# Run the shell command and capture its output\n\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\n\t# Convert the byte string to a regular string\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_vid_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_vid = get_choice(convert_vid_message)\n\n\tif \"Yes\" in convert_vid['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n"
+                "CopyCode": "\"\"\"\nThis program is a command line interface tool for the\n\"yt-dlp\" library. It allows you to download entire\nyoutube videos, download specific intervals of the\nvideo and rename the mp4 file you're downloading.\n\"\"\"\n\nimport os; os.system('clear')\nimport subprocess\nfrom pytube import YouTube\nfrom termcolor import colored as c\nimport inquirer\n\nsave_dir = \"Videos\"\n\nCURRENT_DOWNLOAD_PATH = f\"../{save_dir}/\"\n\nif os.path.exists(CURRENT_DOWNLOAD_PATH):\n\tos.system(f\"open -a Finder '{CURRENT_DOWNLOAD_PATH}'\")\n\tprint(f\"{c('CURRENT DOWNLOAD PATH', 'magenta')}: {os.path.abspath(CURRENT_DOWNLOAD_PATH)}/\")\n\tprint(\"Finder has been opened to current download path. See updates in real time.\")\nelse:\n\tprint(c(f\"\nPath does not exist: \\\"{CURRENT_DOWNLOAD_PATH}\\\"\", 'red'))\n\tprint(\"Go and fix path\n\")\n\texit(0)\n\ndef time_to_seconds(time) -&gt; int:\n\t\"\"\" Converts int seconds to formatted time. \"\"\"\n\tt = [int(x) for x in time.split(\":\")]\n\treturn t[1] + (t[0] * 60) if (len(t) == 2) else t[2] + (t[1] * 60) + (t[0] * 3600)\n\ndef seconds_to_time(seconds) -&gt; str:\n\t\"\"\" Converts seconds to minutes \"\"\"\n\tif seconds &lt; 60:\n\t\treturn f\"0:{seconds:02}\"\n\telif seconds &lt; 3600:\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{minutes}:{seconds:02}\"\n\telse:\n\t\thours = seconds // 3600\n\t\tseconds %= 3600\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{hours}:{minutes:02}:{seconds:02}\"\n\ndef get_choice(the_message):\n\tgreen_yes = c(\"Yes\", 'green')\n\tred_no = c('No', 'red')\n\n\tprint()\n\tquestions = [\n\t\tinquirer.List('choice',\n\t\t\t\t\tmessage=the_message,\n\t\t\t\t\tchoices=[green_yes, red_no]\n\t\t\t\t\t),\n\t]\n\n\tanswers = inquirer.prompt(questions)\n\treturn answers\n\nurl = input(f\"\nEnter {c('youtube link', 'red')} : \")\n\nvideo_len = YouTube(url).length\n\nprint(f\"Video length is {c(seconds_to_time(video_len), 'cyan')}\")\n\nmessage = f\"Do you want to download a {c('specific time interval', 'blue')} (y/n) ? \"\nis_time_interval = get_choice(message)\n\n#'\\x1b[32mYes\\x1b[0m' the color made the string weird\nif \"Yes\" in is_time_interval['choice']:\n\tprint(\"\nThe format has to be (00:00:00) or (00:00). Ex: 3:12:11 or 8:07 or 21:32\")\n\n\tstart_time = input(\"\nEnter a start time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\t\tprint(\"\nInvalid start time\")\n\t\tstart_time = input(\"Enter a start time: \").strip()\n\n\tend_time = input(\"Enter an end time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\n\t\tprint(\"\nInvalid end time\")\n\n\t\tend_time = input(\"Enter an end time: \").strip()\n\n\tdownload_length = seconds_to_time(time_to_seconds(end_time) - time_to_seconds(start_time))\n\n\tprint(f\"\nLength of download will be -&gt; {c(download_length, 'blue')}\n\")\n\n\tnew_name = \"\"\n\n\trename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\n\tdo_rename = get_choice(rename_message)\n\n\tif \"Yes\" in do_rename['choice']:\n\t\tname = input(\"\nNew name of file (without extension): \")\n\t\tnew_name = f'-o \"{name}.%(ext)s\"'\n\t\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\n\tprint()\n\tdownload_with_time = get_choice(\"Ready to download? \")\n\n\tif \"Yes\" in download_with_time['choice']:\n\n\t\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\t\tprint()\n\t\tos.system(f'yt-dlp {new_name.strip()} \"{url.strip()}\" --download-sections \"*{start_time}-{end_time}\"')\n\t\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_video_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_video = get_choice(convert_video_message)\n\tif \"Yes\" in convert_video['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n\n\texit(0)\n\n\nnew_name = \"\"\n\nprint()\nrename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\nrename_vid = get_choice(rename_message)\n\nif \"Yes\" in rename_vid['choice']:\n\n\tname = input(\"\nNew name of file (without extension): \")\n\tnew_name = f'-o \"{name.strip()}.%(ext)s\"'\n\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\nprint()\ndownload_vid = get_choice(\"Ready to download? \")\n\nif \"Yes\" in download_vid['choice']:\n\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\tprint()\n\n\t#--no-mtime sets the date created to now\n\tos.system(f'yt-dlp --no-mtime {new_name} \"{url.strip()}\"')\n\n\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t# Run the shell command and capture its output\n\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\n\t# Convert the byte string to a regular string\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_vid_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_vid = get_choice(convert_vid_message)\n\n\tif \"Yes\" in convert_vid['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n"
             },
             {
                 "instruction": "Now copy to Youtube and copy the link of the video you want to download. Keep your terminal open."
@@ -9523,7 +9567,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import os\nimport json\nimport webbrowser\nimport googleapiclient.discovery\nimport google_auth_oauthlib.flow\nimport google.auth.transport.requests\nimport google.oauth2.credentials\nfrom googleapiclient.discovery import build\nfrom termcolor import colored as c\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nCLIENT_SECRETS_FILE = \"client_secret.json\"\n\nSCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']\n\ndef get_authenticated_service():\n\tcredentials = None\n\n\tif os.path.exists('token.json'):\n\t\twith open('token.json', 'r') as token:\n\t\t\tcredentials = google.oauth2.credentials.Credentials.from_authorized_user_file('token.json', SCOPES)\n\n\tif not credentials or not credentials.valid:\n\t\tif credentials and credentials.expired and credentials.refresh_token:\n\t\t\tcredentials.refresh(google.auth.transport.requests.Request())\n\t\telse:\n\t\t\tflow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS_FILE, SCOPES)\n\t\t\tcredentials = flow.run_local_server(port=0)\n\n\t\twith open('token.json', 'w') as token:\n\t\t\ttoken.write(credentials.to_json())\n\n\treturn build('youtube', 'v3', credentials=credentials)\n\n\nyoutube = get_authenticated_service()\n\ndef get_playlist_videos(playlist_id):\n\tvideos = []\n\tnext_page_token = None\n\n\twhile True:\n\t\trequest = youtube.playlistItems().list(\n\t\t\tpart=\"snippet\",\n\t\t\tplaylistId=playlist_id,\n\t\t\tmaxResults=50,\n\t\t\tpageToken=next_page_token\n\t\t)\n\n\t\tresponse = request.execute()\n\n\t\tfor item in response['items']:\n\t\t\tvideo_id = item['snippet']['resourceId']['videoId']\n\t\t\tvideo_title = item['snippet']['title']\n\n\t\t\tvideo_info = {\n\t\t\t\t'video_id': video_id,\n\t\t\t\t'video_title': video_title\n\t\t\t}\n\n\t\t\tvideos.append(video_info)\n\n\t\tnext_page_token = response.get('nextPageToken')\n\n\t\tif not next_page_token:\n\t\t\tbreak\n\n\treturn videos\n\n\ndef save_playlist_to_account(videos, new_playlist_title):\n\n\tcreate_playlist_request = youtube.playlists().insert(\n\t\tpart=\"snippet,status\",\n\t\tbody={\n\t\t\t\"snippet\": {\n\t\t\t\t\"title\": new_playlist_title,\n\t\t\t\t\"description\": \"Playlist created using YouTube API\",\n\t\t\t\t\"tags\": [\"sample playlist\", \"API call\"],\n\t\t\t\t\"defaultLanguage\": \"en\"\n\t\t\t},\n\t\t\t\"status\": {\n\t\t\t\t\"privacyStatus\": \"private\"\n\t\t\t}\n\t\t}\n\t)\n\n\tcreate_playlist_response = create_playlist_request.execute()\n\tplaylist_id = create_playlist_response['id']\n\n\tcount = 0\n\n\tfor video in videos:\n\t\tif count < 5:\n\t\t\tyoutube.playlistItems().insert(\n\t\t\t\tpart=\"snippet\",\n\t\t\t\tbody={\n\t\t\t\t\t\"snippet\": {\n\t\t\t\t\t\t\"playlistId\": playlist_id,\n\t\t\t\t\t\t\"resourceId\": {\n\t\t\t\t\t\t\t\"kind\": \"youtube#video\",\n\t\t\t\t\t\t\t\"videoId\": video['video_id']\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t).execute()\n\t\tcount += 1\n\n\tprint(c(f\"Playlist '{new_playlist_title}' created and videos added.\", 'green'))\n\n\treturn playlist_id\n\n\ndef delete_playlist_from_account(playlist_id):\n\tyoutube.playlists().delete(id=playlist_id).execute()\n\tprint(c(f\"Playlist with id: '{playlist_id}' successfully deleted.\", 'red'))\n\nplaylist_link = \"https://www.youtube.com/playlist?list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU\"\nplaylist_id = playlist_link.split\"playlist?list=\"\n\nvideos = get_playlist_videos(playlist_id)\n\nfor video in videos:\n\tprint(f\"Video ID: {video['video_id']}, Video Title: {video['video_title']}\")\n\nprint(c('\\nCreating \\\"Top 5 Songs\\\" playlist...\\n', 'blue'))\n\nnew_playlist_id = save_playlist_to_account(videos, \"Top 5 Songs\")\n\nprint(f\"\\nGo here -> {c('https://www.youtube.com/feed/playlists', 'cyan')} to see your \\\"Top 5 Songs\\\" playlist.\\n\")\n\nopen_link = input(\"Do you want to open the link? (y/n): \")\n\nif open_link.lower().strip() in ['yes', 'y']:\n\twebbrowser.open('https://www.youtube.com/feed/playlists')\n\ndelete_playlist = input(f\"\\nDo you want to {c('delete', 'red')} the \\\"Top 5 Songs\\\" playlist from your channel? (y/n): \")\n\nif delete_playlist.lower().strip() in ['yes', 'y']:\n\tdelete_playlist_from_account(new_playlist_id)\n\tprint(c('Playlist successfully deleted!', 'green'))\nelse:\n\tprint(c('Playlist was NOT deleted correctly!', 'red'))\n"
+                "CopyCode": "import os\nimport json\nimport webbrowser\nimport googleapiclient.discovery\nimport google_auth_oauthlib.flow\nimport google.auth.transport.requests\nimport google.oauth2.credentials\nfrom googleapiclient.discovery import build\nfrom termcolor import colored as c\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\nCLIENT_SECRETS_FILE = \"client_secret.json\"\n\nSCOPES = ['https://www.googleapis.com/auth/youtube.force-ssl']\n\ndef get_authenticated_service():\n\tcredentials = None\n\n\tif os.path.exists('token.json'):\n\t\twith open('token.json', 'r') as token:\n\t\t\tcredentials = google.oauth2.credentials.Credentials.from_authorized_user_file('token.json', SCOPES)\n\n\tif not credentials or not credentials.valid:\n\t\tif credentials and credentials.expired and credentials.refresh_token:\n\t\t\tcredentials.refresh(google.auth.transport.requests.Request())\n\t\telse:\n\t\t\tflow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS_FILE, SCOPES)\n\t\t\tcredentials = flow.run_local_server(port=0)\n\n\t\twith open('token.json', 'w') as token:\n\t\t\ttoken.write(credentials.to_json())\n\n\treturn build('youtube', 'v3', credentials=credentials)\n\n\nyoutube = get_authenticated_service()\n\ndef get_playlist_videos(playlist_id):\n\tvideos = []\n\tnext_page_token = None\n\n\twhile True:\n\t\trequest = youtube.playlistItems().list(\n\t\t\tpart=\"snippet\",\n\t\t\tplaylistId=playlist_id,\n\t\t\tmaxResults=50,\n\t\t\tpageToken=next_page_token\n\t\t)\n\n\t\tresponse = request.execute()\n\n\t\tfor item in response['items']:\n\t\t\tvideo_id = item['snippet']['resourceId']['videoId']\n\t\t\tvideo_title = item['snippet']['title']\n\n\t\t\tvideo_info = {\n\t\t\t\t'video_id': video_id,\n\t\t\t\t'video_title': video_title\n\t\t\t}\n\n\t\t\tvideos.append(video_info)\n\n\t\tnext_page_token = response.get('nextPageToken')\n\n\t\tif not next_page_token:\n\t\t\tbreak\n\n\treturn videos\n\n\ndef save_playlist_to_account(videos, new_playlist_title):\n\n\tcreate_playlist_request = youtube.playlists().insert(\n\t\tpart=\"snippet,status\",\n\t\tbody={\n\t\t\t\"snippet\": {\n\t\t\t\t\"title\": new_playlist_title,\n\t\t\t\t\"description\": \"Playlist created using YouTube API\",\n\t\t\t\t\"tags\": [\"sample playlist\", \"API call\"],\n\t\t\t\t\"defaultLanguage\": \"en\"\n\t\t\t},\n\t\t\t\"status\": {\n\t\t\t\t\"privacyStatus\": \"private\"\n\t\t\t}\n\t\t}\n\t)\n\n\tcreate_playlist_response = create_playlist_request.execute()\n\tplaylist_id = create_playlist_response['id']\n\n\tcount = 0\n\n\tfor video in videos:\n\t\tif count &lt; 5:\n\t\t\tyoutube.playlistItems().insert(\n\t\t\t\tpart=\"snippet\",\n\t\t\t\tbody={\n\t\t\t\t\t\"snippet\": {\n\t\t\t\t\t\t\"playlistId\": playlist_id,\n\t\t\t\t\t\t\"resourceId\": {\n\t\t\t\t\t\t\t\"kind\": \"youtube#video\",\n\t\t\t\t\t\t\t\"videoId\": video['video_id']\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t).execute()\n\t\tcount += 1\n\n\tprint(c(f\"Playlist '{new_playlist_title}' created and videos added.\", 'green'))\n\n\treturn playlist_id\n\n\ndef delete_playlist_from_account(playlist_id):\n\tyoutube.playlists().delete(id=playlist_id).execute()\n\tprint(c(f\"Playlist with id: '{playlist_id}' successfully deleted.\", 'red'))\n\nplaylist_link = \"https://www.youtube.com/playlist?list=PLDIoUOhQQPlXr63I_vwF9GD8sAKh77dWU\"\nplaylist_id = playlist_link.split\"playlist?list=\"\n\nvideos = get_playlist_videos(playlist_id)\n\nfor video in videos:\n\tprint(f\"Video ID: {video['video_id']}, Video Title: {video['video_title']}\")\n\nprint(c('\\nCreating \\\"Top 5 Songs\\\" playlist...\\n', 'blue'))\n\nnew_playlist_id = save_playlist_to_account(videos, \"Top 5 Songs\")\n\nprint(f\"\\nGo here -&gt; {c('https://www.youtube.com/feed/playlists', 'cyan')} to see your \\\"Top 5 Songs\\\" playlist.\\n\")\n\nopen_link = input(\"Do you want to open the link? (y/n): \")\n\nif open_link.lower().strip() in ['yes', 'y']:\n\twebbrowser.open('https://www.youtube.com/feed/playlists')\n\ndelete_playlist = input(f\"\\nDo you want to {c('delete', 'red')} the \\\"Top 5 Songs\\\" playlist from your channel? (y/n): \")\n\nif delete_playlist.lower().strip() in ['yes', 'y']:\n\tdelete_playlist_from_account(new_playlist_id)\n\tprint(c('Playlist successfully deleted!', 'green'))\nelse:\n\tprint(c('Playlist was NOT deleted correctly!', 'red'))\n"
             },
             {
                 "instruction": "Open a new terminal and run your script."
@@ -9728,7 +9772,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "HTML",
-                "CopyCode": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Search Album</title>\n</head>\n<body>\n    <h1>Search for an Album</h1>\n    <form id=\"searchForm\">\n        <input type=\"text\" name=\"album_title\"\n\t\t       placeholder=\"Enter album title\" required>\n        <button type=\"submit\">Search</button>\n    </form>\n    <h3 id=\"albumTitle\"></h3>\n    <div id=\"results\"></div>\n\n    <script>\n    document.addEventListener('DOMContentLoaded', () => {\n        var form = document.getElementById('searchForm');\n\n        form.addEventListener('submit', (e) => {\n            e.preventDefault();\n\n            var formData = new FormData(form);\n\n            var xhr = new XMLHttpRequest();\n            xhr.open('POST', '/search', true);\n\n            xhr.onload = () => {\n                if (xhr.status >= 200 && xhr.status < 300) {\n                    var data = JSON.parse(xhr.responseText);\n                    var albumTitle = data.album_name;\n\n                    document.getElementById('albumTitle').innerHTML = `Showing results for: \"${albumTitle}\"`;\n\n                    var results = '<ul>';\n\n                    data.tracks.forEach(track => {\n                        results += '<li>' + track + '</li>';\n                    });\n\n                    results += '</ul>';\n                    document.getElementById('results').innerHTML = results;\n                } else {\n                    document.getElementById('albumTitle').innerHTML = '';\n                    document.getElementById('results').innerHTML = '<p style=\"color: red;\">No albums found matching that title.</p>';\n                }\n            };\n\n            xhr.onerror = () => {\n                document.getElementById('albumTitle').innerHTML = '';\n                document.getElementById('results').innerHTML = '<p style=\"color: red;\">Error occurred during the search.</p>';\n            };\n\n            xhr.send(formData);\n        });\n    });\n    </script>\n</body>\n</html>"
+                "CopyCode": "&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;head&gt;\n    &lt;title&gt;Search Album&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n    &lt;h1&gt;Search for an Album&lt;/h1&gt;\n    &lt;form id=\"searchForm\"&gt;\n        &lt;input type=\"text\" name=\"album_title\"\n\t\t       placeholder=\"Enter album title\" required&gt;\n        &lt;button type=\"submit\"&gt;Search&lt;/button&gt;\n    &lt;/form&gt;\n    &lt;h3 id=\"albumTitle\"&gt;&lt;/h3&gt;\n    &lt;div id=\"results\"&gt;&lt;/div&gt;\n\n    &lt;script&gt;\n    document.addEventListener('DOMContentLoaded', () =&gt; {\n        var form = document.getElementById('searchForm');\n\n        form.addEventListener('submit', (e) =&gt; {\n            e.preventDefault();\n\n            var formData = new FormData(form);\n\n            var xhr = new XMLHttpRequest();\n            xhr.open('POST', '/search', true);\n\n            xhr.onload = () =&gt; {\n                if (xhr.status &gt;= 200 && xhr.status &lt; 300) {\n                    var data = JSON.parse(xhr.responseText);\n                    var albumTitle = data.album_name;\n\n                    document.getElementById('albumTitle').innerHTML = `Showing results for: \"${albumTitle}\"`;\n\n                    var results = '&lt;ul&gt;';\n\n                    data.tracks.forEach(track =&gt; {\n                        results += '&lt;li&gt;' + track + '&lt;/li&gt;';\n                    });\n\n                    results += '&lt;/ul&gt;';\n                    document.getElementById('results').innerHTML = results;\n                } else {\n                    document.getElementById('albumTitle').innerHTML = '';\n                    document.getElementById('results').innerHTML = '&lt;p style=\"color: red;\"&gt;No albums found matching that title.&lt;/p&gt;';\n                }\n            };\n\n            xhr.onerror = () =&gt; {\n                document.getElementById('albumTitle').innerHTML = '';\n                document.getElementById('results').innerHTML = '&lt;p style=\"color: red;\"&gt;Error occurred during the search.&lt;/p&gt;';\n            };\n\n            xhr.send(formData);\n        });\n    });\n    &lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
             },
             {
                 "instruction": "Run your app using the following command."
@@ -9923,7 +9967,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "HTML",
-                "CopyCode": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>OpenAI Text Generator</title>\n</head>\n<body>\n\t<h1>OpenAI Text Generator</h1>\n\t<input type=\"text\" id=\"prompt\" placeholder=\"Enter your prompt here\">\n\t<button onclick=\"generateText()\">Generate</button>\n\t<div class=\"response\" id=\"response\"></div>\n\n\t<script>\n\tasync function generateText() {\n\t\tconst prompt = document.getElementById('prompt').value;\n\t\tconst responseDiv = document.getElementById('response');\n\n\t\tconst response = await fetch('/generate', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json'\n\t\t\t},\n\t\t\tbody: JSON.stringify({ prompt: prompt })\n\t\t});\n\n\t\tconst data = await response.json();\n\n\t\tif (response.ok) {\n\t\t\tresponseDiv.innerText = data.response;\n\t\t} else {\n\t\t\tresponseDiv.innerText = 'Error: ' + data.error;\n\t\t}\n\t}\n\t</script>\n</body>\n<style>\n\nbody {\n\tfont-family: Arial, sans-serif;\n\tmargin: 50px;\n\ttext-align: center;\n}\n\ninput[type=\"text\"] {\n\twidth: 300px;\n\tpadding: 10px;\n\tmargin-bottom: 20px;\n}\n\nbutton {\n\tpadding: 10px 20px;\n\tbackground-color: #007BFF;\n\tcolor: white;\n\tborder: none;\n\tcursor: pointer;\n}\n\nbutton:hover {\n\tbackground-color: #0056b3;\n}\n\n.response {\n\tmargin-top: 20px;\n\tfont-weight: bold;\n}\n\n</style>\n</html>"
+                "CopyCode": "&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n\t&lt;meta charset=\"UTF-8\"&gt;\n\t&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;\n\t&lt;title&gt;OpenAI Text Generator&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\t&lt;h1&gt;OpenAI Text Generator&lt;/h1&gt;\n\t&lt;input type=\"text\" id=\"prompt\" placeholder=\"Enter your prompt here\"&gt;\n\t&lt;button onclick=\"generateText()\"&gt;Generate&lt;/button&gt;\n\t&lt;div class=\"response\" id=\"response\"&gt;&lt;/div&gt;\n\n\t&lt;script&gt;\n\tasync function generateText() {\n\t\tconst prompt = document.getElementById('prompt').value;\n\t\tconst responseDiv = document.getElementById('response');\n\n\t\tconst response = await fetch('/generate', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json'\n\t\t\t},\n\t\t\tbody: JSON.stringify({ prompt: prompt })\n\t\t});\n\n\t\tconst data = await response.json();\n\n\t\tif (response.ok) {\n\t\t\tresponseDiv.innerText = data.response;\n\t\t} else {\n\t\t\tresponseDiv.innerText = 'Error: ' + data.error;\n\t\t}\n\t}\n\t&lt;/script&gt;\n&lt;/body&gt;\n&lt;style&gt;\n\nbody {\n\tfont-family: Arial, sans-serif;\n\tmargin: 50px;\n\ttext-align: center;\n}\n\ninput[type=\"text\"] {\n\twidth: 300px;\n\tpadding: 10px;\n\tmargin-bottom: 20px;\n}\n\nbutton {\n\tpadding: 10px 20px;\n\tbackground-color: #007BFF;\n\tcolor: white;\n\tborder: none;\n\tcursor: pointer;\n}\n\nbutton:hover {\n\tbackground-color: #0056b3;\n}\n\n.response {\n\tmargin-top: 20px;\n\tfont-weight: bold;\n}\n\n&lt;/style&gt;\n&lt;/html&gt;"
             },
             {
                 "instruction": "To run the front-end Flask app, open your terminal and run the following commands."
@@ -9975,7 +10019,7 @@
                 "CopyCode": "Name: Choose a unique company name\nIndustry: Software Development\nOrganization Size: 0-1 employees\nOrganization type: Self-employed\n\nVerify that you're an authorized representative\n\nPress the blue \"Create Page\" button"
             },
             {
-                "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script.   step 1: Go to linkedin.com on desktop. step 2: Click on your profile picture in the top-right step 3: In the drop down menu under \"Manage\" click on \"company: your-company name\" step 4: Scroll down and click \"Settings\" in the left-hand bar. step 5: Click \"Deactivate page\" in the \"Settings\" section. step 6: Scroll down in the pop-up window and check the confirm deactivation box. Then press \"Deactivate\".  "
+                "instruction": "If you want to deactivate the company page after you're done writing your python script, do the following. Don't do this until after you're completely done with using your api script. &lt;br&gt;&lt;br&gt;step 1: Go to linkedin.com on desktop.&lt;br&gt;step 2: Click on your profile picture in the top-right&lt;br&gt;step 3: In the drop down menu under \"Manage\" click on \"company: your-company name\"&lt;br&gt;step 4: Scroll down and click \"Settings\" in the left-hand bar.&lt;br&gt;step 5: Click \"Deactivate page\" in the \"Settings\" section.&lt;br&gt;step 6: Scroll down in the pop-up window and check the confirm deactivation box. Then press \"Deactivate\".&lt;br&gt;&lt;br&gt;"
             },
             {
                 "instruction": "After you've completed step 2, click on this link to start creating your app."
@@ -10123,8 +10167,24 @@
                 "CopyCode": "cd reddit_bot\nrm oauth_server.py\nrm get_refresh_token.py"
             },
             {
-                "title": "Manage the Bots Secrets and Dockerize the file.",
-                "desc": "Explains how to use AWS Secrets Manager and dockerize the reddit bot python file."
+                "instruction": "After you've done that, you should be ready to start the process of deploying your bot to Amazon Web Services."
+            },
+            {
+                "title": "AWS Services We'll Use",
+                "desc": "These are AWS services we'll use and explanations of what they do."
+            },
+            {
+                "instruction": "&lt;u&gt;&lt;b&gt;EC2&lt;/b&gt;&lt;/u&gt; - This stands for \"Elastic Cloud Compute\". This service allows you to create a virtual computer in the cloud. We're basically renting a terminal for free and running a python script on it."
+            },
+            {
+                "instruction": "&lt;u&gt;&lt;b&gt;Secrets Manager&lt;/b&gt;&lt;/u&gt; - This is the service we'll use to securely store the secrets for our project. We'll have to make changes to our script before we deploy it to incorporate this service."
+            },
+            {
+                "instruction": "&lt;u&gt;&lt;b&gt;IAM&lt;/b&gt;&lt;/u&gt; - This service will be used to help connect to the EC2 host on a local terminal. You probably already completed all the necessary steps for this service when you set up your AWS account."
+            },
+            {
+                "title": "Store Secrets in AWS Secrets Manager",
+                "desc": "Explains how to use AWS Secrets Manager to store secrets for your project."
             },
             {
                 "instruction": ""
@@ -10133,14 +10193,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import boto3\nimport json\nfrom botocore.exceptions import ClientError\n\ndef get_secret():\n\n\tsecret_name = \"my-key\"\n\tregion_name = \"us-east-1\"\n\n\tsession = boto3.session.Session()\n\n\tclient = session.client(\n\t\tservice_name='secretsmanager',\n\t\tregion_name=region_name\n\t)\n\n\ttry:\n\t\tget_secret_value_response = client.get_secret_value(\n\t\t\tSecretId=secret_name\n\t\t)\n\texcept ClientError as e:\n\t\traise e\n\n\tsecret = get_secret_value_response['SecretString']\n\n\tsecret_dict = json.loads(secret)\n\n\tkeys = [\n\t\t'CLIENT_ID',\n\t\t'CLIENT_SECRET',\n\t\t'USER_AGENT',\n\t\t'SENDER_EMAIL',\n\t\t'SENDER_PASSWORD',\n\t\t'EMAIL_RECIPIENT',\n\t\t'REFRESH_TOKEN'\n\t]\n\n\tsecret_values = {key: secret_dict.get(key) for key in keys}\n\n\treturn secret_values"
-            },
-            {
-                "instruction": ""
-            },
-            {
-                "title": "Deploy the Bot on an EC2 instance",
-                "desc": "Explains how to deploy the bot on an EC2 instance."
+                "CopyCode": ""
             },
             {
                 "instruction": ""
@@ -10149,10 +10202,705 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import praw\nimport smtplib\nimport boto3\nimport json\nfrom botocore.exceptions import ClientError\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ndef get_secret():\n\n\tsecret_name = \"my-key\"\n\tregion_name = \"us-east-1\"\n\n\tsession = boto3.session.Session()\n\n\tclient = session.client(\n\t\tservice_name='secretsmanager',\n\t\tregion_name=region_name\n\t)\n\n\ttry:\n\t\tget_secret_value_response = client.get_secret_value(\n\t\t\tSecretId=secret_name\n\t\t)\n\texcept ClientError as e:\n\t\traise e\n\n\tsecret = get_secret_value_response['SecretString']\n\n\tsecret_dict = json.loads(secret)\n\n\tkeys = [\n\t\t'CLIENT_ID',\n\t\t'CLIENT_SECRET',\n\t\t'USER_AGENT',\n\t\t'SENDER_EMAIL',\n\t\t'SENDER_PASSWORD',\n\t\t'EMAIL_RECIPIENT',\n\t\t'REFRESH_TOKEN'\n\t]\n\n\tsecret_values = {key: secret_dict.get(key) for key in keys}\n\n\treturn secret_values\n\n\nsecrets = get_secret()\n\n# Your Reddit credentials\nCLIENT_ID = secrets['CLIENT_ID']\nCLIENT_SECRET = secrets['CLIENT_SECRET']\nREFRESH_TOKEN = secrets['REFRESH_TOKEN']\nUSER_AGENT = secrets['USER_AGENT']\n\n# Your Email Credentials\nsender_email = secrets['SENDER_EMAIL']\nsender_password = secrets['SENDER_PASSWORD']\nemail_recipient = secrets['EMAIL_RECIPIENT']\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of \"subreddit_name\" variable in script.\\033[0m')\n\t\texit(0)\n\n\tmain()\n"
+                "CopyCode": ""
             },
             {
                 "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "title": "Create an EC2 instance",
+                "desc": "Explains how to create an EC2 instance in the AWS console."
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import praw\nimport smtplib\nimport boto3\nimport json\nimport os\nfrom termcolor import colored as c\nfrom botocore.exceptions import ClientError, NoCredentialsError\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ndef get_secret():\n\n\tsecret_name = \"my-key\"\n\tregion_name = \"us-east-1\"\n\n\taws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')\n\taws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')\n\n\tsession = boto3.Session(\n\t\taws_access_key_id=aws_access_key_id,\n\t\taws_secret_access_key=aws_secret_access_key,\n\t\tregion_name=region_name\n\t)\n\n\tclient = session.client(\n\t\tservice_name='secretsmanager',\n\t\tregion_name=region_name\n\t)\n\n\ttry:\n\t\tget_secret_value_response = client.get_secret_value(\n\t\t\tSecretId=secret_name\n\t\t)\n\texcept ClientError as e:\n\t\traise e\n\n\tsecret = get_secret_value_response['SecretString']\n\n\tsecret_dict = json.loads(secret)\n\n\tkeys = [\n\t\t'CLIENT_ID',\n\t\t'CLIENT_SECRET',\n\t\t'USER_AGENT',\n\t\t'SENDER_EMAIL',\n\t\t'SENDER_PASSWORD',\n\t\t'EMAIL_RECIPIENT',\n\t\t'REFRESH_TOKEN'\n\t]\n\n\tsecret_values = {key: secret_dict.get(key) for key in keys}\n\n\treturn secret_values\n\ndef error_message(msg):\n\tprint(c(msg, 'red'))\n\n\tif \"AWS_ACCESS_KEY_ID\" in msg:\n\t\tprint(c('export ', 'magenta'), end='')\n\t\tprint(c('AWS_ACCESS_KEY_ID=your_access_key_id', 'blue'))\n\n\tif \"AWS_SECRET_ACCESS_KEY\" in msg:\n\t\tprint(c('export ', 'magenta'), end='')\n\t\tprint(c('AWS_SECRET_ACCESS_KEY=your_secret_access_key', 'blue'))\n\n\texit(0)\n\n\n# Get Secret\ntry:\n\tsecrets = get_secret()\nexcept NoCredentialsError:\n\terror_message('Set your \"AWS_ACCESS_KEY_ID\" and \"AWS_SECRET_ACCESS_KEY\" environment variables')\nexcept ClientError:\n\terror_message('Set your \"AWS_SECRET_ACCESS_KEY\" environment variable')\nexcept TypeError:\n\terror_message('Set your \"AWS_ACCESS_KEY_ID\" environment variable')\n\n# Your Reddit credentials\nCLIENT_ID = secrets['CLIENT_ID']\nCLIENT_SECRET = secrets['CLIENT_SECRET']\nREFRESH_TOKEN = secrets['REFRESH_TOKEN']\nUSER_AGENT = secrets['USER_AGENT']\n\n# Your Email Credentials\nsender_email = secrets['SENDER_EMAIL']\nsender_password = secrets['SENDER_PASSWORD']\nemail_recipient = secrets['EMAIL_RECIPIENT']\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of \"subreddit_name\" variable in script.\\033[0m')\n\t\texit(0)\n\n\tmain()\n"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "title": "Deploy the Bot on the EC2 instance",
+                "desc": "Explains how to deploy the bot using the EC2 host terminal."
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
             },
             {
                 "title": "Delete all AWS Instances",
@@ -10169,6 +10917,231 @@
             },
             {
                 "instruction": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": ""
             }
         ]
     },
@@ -10290,7 +11263,7 @@
                 "Description": "",
                 "Language": "customswift",
                 "DisplayLang": "Swift",
-                "CopyCode": "//\n//  DestinationListingView.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\nstruct DestinationListingView: View {\n    @Environment(\\.modelContext) var modelContext\n    @Query(sort: [SortDescriptor(\\Destination.priority, order: .reverse), SortDescriptor(\\Destination.name)]) var destinations: [Destination]\n\n    var body: some View {\n        List {\n            ForEach(destinations) { destination in\n                NavigationLink(value: destination) {\n                    VStack(alignment: .leading) {\n                        Text(destination.name)\n                            .font(.headline)\n\n                        Text(destination.date.formatted(date: .long, time: .shortened))\n                    }\n                }\n            }\n            .onDelete(perform: deleteDestinations)\n        }\n    }\n\n    init(sort: SortDescriptor<Destination>, searchString: String) {\n        _destinations = Query(filter: #Predicate {\n            if searchString.isEmpty {\n                return true\n            } else {\n                return $0.name.localizedStandardContains(searchString)\n            }\n        }, sort: [sort])\n    }\n\n    func deleteDestinations(_ indexSet: IndexSet) {\n        for index in indexSet {\n            let destination = destinations[index]\n            modelContext.delete(destination)\n        }\n    }\n}\n\n#Preview {\n    DestinationListingView(sort: SortDescriptor(\\Destination.name), searchString: \"\")\n}"
+                "CopyCode": "//\n//  DestinationListingView.swift\n//  SwiftDataDemo\n//\n//  Created by Michael Totaro on 6/24/24.\n//\n\nimport SwiftUI\nimport SwiftData\n\nstruct DestinationListingView: View {\n    @Environment(\\.modelContext) var modelContext\n    @Query(sort: [SortDescriptor(\\Destination.priority, order: .reverse), SortDescriptor(\\Destination.name)]) var destinations: [Destination]\n\n    var body: some View {\n        List {\n            ForEach(destinations) { destination in\n                NavigationLink(value: destination) {\n                    VStack(alignment: .leading) {\n                        Text(destination.name)\n                            .font(.headline)\n\n                        Text(destination.date.formatted(date: .long, time: .shortened))\n                    }\n                }\n            }\n            .onDelete(perform: deleteDestinations)\n        }\n    }\n\n    init(sort: SortDescriptor&lt;Destination&gt;, searchString: String) {\n        _destinations = Query(filter: #Predicate {\n            if searchString.isEmpty {\n                return true\n            } else {\n                return $0.name.localizedStandardContains(searchString)\n            }\n        }, sort: [sort])\n    }\n\n    func deleteDestinations(_ indexSet: IndexSet) {\n        for index in indexSet {\n            let destination = destinations[index]\n            modelContext.delete(destination)\n        }\n    }\n}\n\n#Preview {\n    DestinationListingView(sort: SortDescriptor(\\Destination.name), searchString: \"\")\n}"
             },
             {
                 "instruction": "Press \"command + n\". Select \"Swift File\" and press \"Next\". Save as \"Sight\" and press \"Create\"."
@@ -10339,7 +11312,7 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Sequence",
-                "CopyCode": "Settings > Privacy & Security > Scroll to the bottom > Developer Mode -> Toggle On"
+                "CopyCode": "Settings &gt; Privacy & Security &gt; Scroll to the bottom &gt; Developer Mode -&gt; Toggle On"
             },
             {
                 "instruction": "Your login keychain password is (usually) the same password you use to logon to your mac. It's (probably) not your apple iD."
@@ -10352,7 +11325,7 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Sequence",
-                "CopyCode": "Settings > General > Device Management > select the profile to trust"
+                "CopyCode": "Settings &gt; General &gt; Device Management &gt; select the profile to trust"
             },
             {
                 "instruction": "After you trust the developer, you should be good to go."
@@ -10561,7 +11534,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "HTML",
-                "CopyCode": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Item Manager</title>\n</head>\n<body>\n\t<h1>Item Manager</h1>\n\n\t<h2>Add New Item</h2>\n\t<form id=\"addItemForm\">\n\t\t<label for=\"itemName\">Item Name:</label>\n\t\t<input type=\"text\" id=\"itemName\" name=\"itemName\" required>\n\t\t<button type=\"submit\">Add Item</button>\n\t</form>\n\n\t<h2>All Items</h2>\n\t<button onclick=\"getAllItems()\">Fetch Items</button>\n\t<ul id=\"itemsList\"></ul>\n\n\t<script>\n\tdocument.getElementById(\"addItemForm\").onsubmit = async (event) => {\n\t\tevent.preventDefault();\n\t\tconst itemName = document.getElementById('itemName').value;\n\n\t\tconst response = await fetch('/add-item', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json',\n\t\t\t},\n\t\t\tbody: JSON.stringify({ name: itemName }),\n\t\t});\n\n\t\tconst result = await response.json();\n\t\talert(result.message);\n\t\tdocument.getElementById('addItemForm').reset();\n\t\tgetAllItems();\n\t};\n\n\tasync function getAllItems() {\n\t\tconst response = await fetch('/items');\n\t\tconst items = await response.json();\n\t\tconst itemsList = document.getElementById('itemsList');\n\t\titemsList.innerHTML = '';\n\n\t\titems.forEach(item => {\n\t\t\tconst listItem = document.createElement('li');\n\t\t\tlistItem.textContent = `${item.name} (ID: ${item.id})`;\n\t\t\titemsList.appendChild(listItem);\n\t\t});\n\t}\n\t</script>\n</body>\n</html>"
+                "CopyCode": "&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n\t&lt;meta charset=\"UTF-8\"&gt;\n\t&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;\n\t&lt;title&gt;Item Manager&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\t&lt;h1&gt;Item Manager&lt;/h1&gt;\n\n\t&lt;h2&gt;Add New Item&lt;/h2&gt;\n\t&lt;form id=\"addItemForm\"&gt;\n\t\t&lt;label for=\"itemName\"&gt;Item Name:&lt;/label&gt;\n\t\t&lt;input type=\"text\" id=\"itemName\" name=\"itemName\" required&gt;\n\t\t&lt;button type=\"submit\"&gt;Add Item&lt;/button&gt;\n\t&lt;/form&gt;\n\n\t&lt;h2&gt;All Items&lt;/h2&gt;\n\t&lt;button onclick=\"getAllItems()\"&gt;Fetch Items&lt;/button&gt;\n\t&lt;ul id=\"itemsList\"&gt;&lt;/ul&gt;\n\n\t&lt;script&gt;\n\tdocument.getElementById(\"addItemForm\").onsubmit = async (event) =&gt; {\n\t\tevent.preventDefault();\n\t\tconst itemName = document.getElementById('itemName').value;\n\n\t\tconst response = await fetch('/add-item', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json',\n\t\t\t},\n\t\t\tbody: JSON.stringify({ name: itemName }),\n\t\t});\n\n\t\tconst result = await response.json();\n\t\talert(result.message);\n\t\tdocument.getElementById('addItemForm').reset();\n\t\tgetAllItems();\n\t};\n\n\tasync function getAllItems() {\n\t\tconst response = await fetch('/items');\n\t\tconst items = await response.json();\n\t\tconst itemsList = document.getElementById('itemsList');\n\t\titemsList.innerHTML = '';\n\n\t\titems.forEach(item =&gt; {\n\t\t\tconst listItem = document.createElement('li');\n\t\t\tlistItem.textContent = `${item.name} (ID: ${item.id})`;\n\t\t\titemsList.appendChild(listItem);\n\t\t});\n\t}\n\t&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
             },
             {
                 "instruction": "Run your server using the following command."
@@ -10678,7 +11651,7 @@
                 "Description": "",
                 "Language": "JavaScript",
                 "DisplayLang": "Node.js",
-                "CopyCode": "const express = require('express');\nconst bodyParser = require('body-parser');\nconst { Sequelize, DataTypes } = require('sequelize');\nconst path = require('path');\nconst portfinder = require('portfinder');\n\nconst app = express();\nconst BASE_PORT = 3000;\n\n// Middleware\napp.use(bodyParser.json());\n\n// Database setup\nconst sequelize = new Sequelize({\n  dialect: 'sqlite',\n  storage: path.join(__dirname, 'items.db'),\n});\n\nconst Item = sequelize.define('Item', {\n  name: {\n    type: DataTypes.STRING,\n    allowNull: false,\n  }\n}, {\n  timestamps: false\n});\n\n// Initialize the database\nasync function initDb() {\n  await sequelize.sync();\n  console.log(\"Database initialized\");\n}\n\n// Serve the index.html file at the root URL\napp.get('/', (req, res) => {\n  res.sendFile(path.join(__dirname, 'public', 'index.html'));\n});\n\n// Routes\napp.get('/items', async (req, res) => {\n  const items = await Item.findAll();\n  res.json(items);\n});\n\napp.post('/add-item', async (req, res) => {\n  const { name } = req.body;\n  const newItem = await Item.create({ name });\n  res.json({ message: \"Item added successfully\", id: newItem.id });\n});\n\n// Start the server\nportfinder.basePort = BASE_PORT;\n\nportfinder.getPortPromise()\n  .then((PORT) => {\n    app.listen(PORT, async () => {\n      await initDb();\n      console.log(`\\nServing at port \\x1b[94mhttp://localhost:${PORT}/\\x1b[0m`);\n    });\n  })\n  .catch((err) => {\n    console.error(err);\n  });\n"
+                "CopyCode": "const express = require('express');\nconst bodyParser = require('body-parser');\nconst { Sequelize, DataTypes } = require('sequelize');\nconst path = require('path');\nconst portfinder = require('portfinder');\n\nconst app = express();\nconst BASE_PORT = 3000;\n\n// Middleware\napp.use(bodyParser.json());\n\n// Database setup\nconst sequelize = new Sequelize({\n  dialect: 'sqlite',\n  storage: path.join(__dirname, 'items.db'),\n});\n\nconst Item = sequelize.define('Item', {\n  name: {\n    type: DataTypes.STRING,\n    allowNull: false,\n  }\n}, {\n  timestamps: false\n});\n\n// Initialize the database\nasync function initDb() {\n  await sequelize.sync();\n  console.log(\"Database initialized\");\n}\n\n// Serve the index.html file at the root URL\napp.get('/', (req, res) =&gt; {\n  res.sendFile(path.join(__dirname, 'public', 'index.html'));\n});\n\n// Routes\napp.get('/items', async (req, res) =&gt; {\n  const items = await Item.findAll();\n  res.json(items);\n});\n\napp.post('/add-item', async (req, res) =&gt; {\n  const { name } = req.body;\n  const newItem = await Item.create({ name });\n  res.json({ message: \"Item added successfully\", id: newItem.id });\n});\n\n// Start the server\nportfinder.basePort = BASE_PORT;\n\nportfinder.getPortPromise()\n  .then((PORT) =&gt; {\n    app.listen(PORT, async () =&gt; {\n      await initDb();\n      console.log(`\\nServing at port \\x1b[94mhttp://localhost:${PORT}/\\x1b[0m`);\n    });\n  })\n  .catch((err) =&gt; {\n    console.error(err);\n  });\n"
             },
             {
                 "instruction": "Open a new terminal, change back into your folder and run the server."
@@ -10715,7 +11688,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "HTML",
-                "CopyCode": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>Item Manager</title>\n</head>\n<body>\n\t<h1>Item Manager</h1>\n\n\t<h2>Add New Item</h2>\n\t<form id=\"addItemForm\">\n\t\t<label for=\"itemName\">Item Name:</label>\n\t\t<input type=\"text\" id=\"itemName\" name=\"itemName\" required>\n\t\t<button type=\"submit\">Add Item</button>\n\t</form>\n\n\t<h2>All Items</h2>\n\t<button onclick=\"getAllItems()\">Fetch Items</button>\n\t<ul id=\"itemsList\"></ul>\n\n\t<script>\n\tdocument.getElementById(\"addItemForm\").onsubmit = async (event) => {\n\t\tevent.preventDefault();\n\t\tconst itemName = document.getElementById('itemName').value;\n\n\t\tconst response = await fetch('/add-item', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json',\n\t\t\t},\n\t\t\tbody: JSON.stringify({ name: itemName }),\n\t\t});\n\n\t\tconst result = await response.json();\n\t\talert(result.message);\n\t\tdocument.getElementById('addItemForm').reset();\n\t\tgetAllItems();\n\t};\n\n\tasync function getAllItems() {\n\t\tconst response = await fetch('/items');\n\t\tconst items = await response.json();\n\t\tconst itemsList = document.getElementById('itemsList');\n\t\titemsList.innerHTML = '';\n\n\t\titems.forEach(item => {\n\t\t\tconst listItem = document.createElement('li');\n\t\t\tlistItem.textContent = `${item.name} (ID: ${item.id})`;\n\t\t\titemsList.appendChild(listItem);\n\t\t});\n\t}\n\t</script>\n</body>\n</html>"
+                "CopyCode": "&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n\t&lt;meta charset=\"UTF-8\"&gt;\n\t&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;\n\t&lt;title&gt;Item Manager&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\t&lt;h1&gt;Item Manager&lt;/h1&gt;\n\n\t&lt;h2&gt;Add New Item&lt;/h2&gt;\n\t&lt;form id=\"addItemForm\"&gt;\n\t\t&lt;label for=\"itemName\"&gt;Item Name:&lt;/label&gt;\n\t\t&lt;input type=\"text\" id=\"itemName\" name=\"itemName\" required&gt;\n\t\t&lt;button type=\"submit\"&gt;Add Item&lt;/button&gt;\n\t&lt;/form&gt;\n\n\t&lt;h2&gt;All Items&lt;/h2&gt;\n\t&lt;button onclick=\"getAllItems()\"&gt;Fetch Items&lt;/button&gt;\n\t&lt;ul id=\"itemsList\"&gt;&lt;/ul&gt;\n\n\t&lt;script&gt;\n\tdocument.getElementById(\"addItemForm\").onsubmit = async (event) =&gt; {\n\t\tevent.preventDefault();\n\t\tconst itemName = document.getElementById('itemName').value;\n\n\t\tconst response = await fetch('/add-item', {\n\t\t\tmethod: 'POST',\n\t\t\theaders: {\n\t\t\t\t'Content-Type': 'application/json',\n\t\t\t},\n\t\t\tbody: JSON.stringify({ name: itemName }),\n\t\t});\n\n\t\tconst result = await response.json();\n\t\talert(result.message);\n\t\tdocument.getElementById('addItemForm').reset();\n\t\tgetAllItems();\n\t};\n\n\tasync function getAllItems() {\n\t\tconst response = await fetch('/items');\n\t\tconst items = await response.json();\n\t\tconst itemsList = document.getElementById('itemsList');\n\t\titemsList.innerHTML = '';\n\n\t\titems.forEach(item =&gt; {\n\t\t\tconst listItem = document.createElement('li');\n\t\t\tlistItem.textContent = `${item.name} (ID: ${item.id})`;\n\t\t\titemsList.appendChild(listItem);\n\t\t});\n\t}\n\t&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
             },
             {
                 "instruction": "Now rerun your server."
@@ -10893,7 +11866,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import sqlite3\n\n\nwith sqlite3.connect('Cars.db') as conn:\n\tcursor = conn.cursor()\n\n\tsql = (\n\t\t'SELECT DISTINCT Maker, Year ' +\n\t\t'FROM Cars ' +\n\t\t'WHERE Year > 2005;'\n\t)\n\n\tresults = cursor.execute(sql).fetchall()\n\n\tfor row in results:\n\t\tprint(row)"
+                "CopyCode": "import sqlite3\n\n\nwith sqlite3.connect('Cars.db') as conn:\n\tcursor = conn.cursor()\n\n\tsql = (\n\t\t'SELECT DISTINCT Maker, Year ' +\n\t\t'FROM Cars ' +\n\t\t'WHERE Year &gt; 2005;'\n\t)\n\n\tresults = cursor.execute(sql).fetchall()\n\n\tfor row in results:\n\t\tprint(row)"
             },
             {
                 "instruction": "Run your \"query.py\" file to see the results of your SQL statement."
@@ -10919,7 +11892,7 @@
                 "Description": "",
                 "Language": "fxml",
                 "DisplayLang": "SQL",
-                "CopyCode": "SELECT DISTINCT Maker, Year\nFROM Cars\nWHERE Year > 2005;"
+                "CopyCode": "SELECT DISTINCT Maker, Year\nFROM Cars\nWHERE Year &gt; 2005;"
             },
             {
                 "instruction": "Run the SQL query by right-clicking in the --SQLite file and pressing \"Run query\". Choose the \"Cars.db\" file in the results."
@@ -10939,7 +11912,7 @@
                 "ref": "excel"
             },
             {
-                "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does that.  I also have multiple files on my GitHub that I think would be a good reference.  Example 1: sort_excel.py Example 2: analyze_excel.py Example 3: read_excel.py  "
+                "instruction": "Python can be very helpful with reading and writing to Excel files and automating processes. The steps below explain how to create a basic program that does that.&lt;br&gt;&lt;br&gt;I also have multiple files on my GitHub that I think would be a good reference.&lt;br&gt;&lt;br&gt;Example 1: sort_excel.py&lt;br&gt;Example 2: analyze_excel.py&lt;br&gt;Example 3: read_excel.py&lt;br&gt;&lt;br&gt;"
             },
             {
                 "instruction": "First off we're going to create our project folder and files."
@@ -11000,7 +11973,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "import pandas as pd\n\nexcel_path = \"output.xlsx\"\n\ndf = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n# Print the table\nprint(df.head())\n\ncount = 0\n\nfor mileage in df['Mileage']:\n\tif mileage >= 15000:\n\t\tcount += 1\n\nprint(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")"
+                "CopyCode": "import pandas as pd\n\nexcel_path = \"output.xlsx\"\n\ndf = pd.read_excel(excel_path, engine=\"openpyxl\")\n\n# Print the table\nprint(df.head())\n\ncount = 0\n\nfor mileage in df['Mileage']:\n\tif mileage &gt;= 15000:\n\t\tcount += 1\n\nprint(f\"\\n{count} cars have a mileage of 15,000 miles or more.\\n\")"
             },
             {
                 "instruction": "Run your read_excel.py file."
@@ -11032,7 +12005,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "git clone <https-link>"
+                "CopyCode": "git clone &lt;https-link&gt;"
             },
             {
                 "instruction": "Open your prism library code. In the components folder add a file named \"prism-your-language.js\". For this example lets do custom yaml highlighting."
@@ -11081,13 +12054,13 @@
                 "CopyCode": "git add .\ngit commit -m \"Added custom yaml highlighting\"\ngit push"
             },
             {
-                "instruction": "Now run the following commands to update your frontend repository. Change the name \"your-frontend-code\" to your actual folder name. Give it like 20 seconds to update. NOTE: replace the \"&lthttps-link&gt\" to be your forked repositories https link that you copied in step 2. Do NOT include the angle brackets < >."
+                "instruction": "Now run the following commands to update your frontend repository. Change the name \"your-frontend-code\" to your actual folder name. Give it like 20 seconds to update. NOTE: replace the \"&lthttps-link&gt\" to be your forked repositories https link that you copied in step 2. Do NOT include the angle brackets &lt; &gt;."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "cd your-frontend-code\nrm -rf node_modules/prismjs\nnpm install prismjs@<https-link>"
+                "CopyCode": "cd your-frontend-code\nrm -rf node_modules/prismjs\nnpm install prismjs@&lt;https-link&gt;"
             },
             {
                 "instruction": "Add CSS styling for your language in a file called \"custom.css\". The css file should be on the same path where you're going to import the language."
@@ -11522,13 +12495,13 @@
             },
             {
                 "Name": "Properly Formatted Java file",
-                "Description": "This is a properly formatted Java file. Note the use of whitespace, particularly around the equal signs, if-else statements and for-loop blocks. Also note the comments and variable naming conventions and casing. Learn more here -> https://google.github.io/styleguide/javaguide.html.",
+                "Description": "This is a properly formatted Java file. Note the use of whitespace, particularly around the equal signs, if-else statements and for-loop blocks. Also note the comments and variable naming conventions and casing. Learn more here -&gt; https://google.github.io/styleguide/javaguide.html.",
                 "Language": "Java",
-                "CopyCode": "/**\n * This class implements an array-based list for a maximum of 20 boats\n *\n * @author Michael Totaro\n */\n  public class BoatList {\n\n\t/** Capacity of the list containing names of Boats */\n\tpublic static final int MAX_BOATS = 20;\n\n\t/**\n\t * Creates an array-based list of boats, adds some boats, removes a boat,\n\t * queries if a boat exists in the list, and prints the list.\n\t *\n\t * @param args command line arguments (not used)\n\t */\n\tpublic static void main(String[] args) {\n\t\tString[] boats = new String[MAX_BOATS];\n\n\t\tint numberOfBoats = 0;\n\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Natalie\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Wendell\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Lori\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Steve\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Kevin\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\n\t\tint index = findBoat(boats, \"Rosa\");\n\n\t\tif (index == -1) {\n\t\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Rosa\");\n\t\t} else {\n\t\t\tSystem.out.println(boats[index] + \" is located at index \" +\n\t\t\t\t\t\t\t   index + \" in the boats list.\");\n\t\t}\n\n\t\tnumberOfBoats = removeBoat(boats, numberOfBoats, \"Wendell\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\t}\n\n\t/**\n\t * Adds a boat to the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numberOfBoats the current number of boats in the list\n\t * @param boat the boat to add to the list\n\t * @return the new number of boats on the list\n\t * @throws IllegalArgumentException (with message \"No room in list\") if list is full\n\t */\n\tpublic static int addBoat(String[] list, int numberOfBoats, String boat) {\n\n\t\tif (numberOfBoats >= list.length) {\n\t\t\tthrow new IllegalArgumentException(\"No room in list\");\n\t\t}\n\n\t\tlist[numberOfBoats++] = boat;\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Prints the list with each element on a separate line.\n\t *\n\t * @param boats the array of boat names\n\t */\n\tpublic static void printList(String[] boats) {\n\t\tfor (String boatName : boats) {\n\t\t\tSystem.out.println(boatName);\n\t\t}\n\t}\n\n\t/**\n\t * Removes a boat from the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numOfBoats the current number of boats in the list\n\t * @param boat the boat to remove from the list\n\t * @return the new number of boat on the list\n\t */\n\tpublic static int removeBoat(String[] list, int numberOfBoats, String boat) {\n\t\tboolean found = false;\n\n\t\tfor (int i = 0; i < numberOfBoats; i++) {\n\t\t\tif (found) {\n\t\t\t\tlist[i - 1] = list[i];\n\t\t\t}\n\n\t\t\tif (list[i].equals(boat)) {\n\t\t\t\tfound = true;\n\t\t\t\tnumberOfBoats--;\n\t\t\t}\n\t\t}\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Determines if the given boat is in the list.\n\t *\n\t * @param list the array of boat names\n\t * @param boat the boat to find in the list\n\t * @return the index of the list element containing boat\n\t *         or -1 if boat does not exist in the list\n\t */\n\tpublic static int findBoat(String[] list, String boat) {\n\t\tfor (int i = 0; i < list.length; i++) {\n\t\t\tif (list[i] == boat) {\n\t\t\t\treturn i;\n\t\t\t}\n\t\t}\n\n\t\treturn -1;\n\t}\n}"
+                "CopyCode": "/**\n * This class implements an array-based list for a maximum of 20 boats\n *\n * @author Michael Totaro\n */\n  public class BoatList {\n\n\t/** Capacity of the list containing names of Boats */\n\tpublic static final int MAX_BOATS = 20;\n\n\t/**\n\t * Creates an array-based list of boats, adds some boats, removes a boat,\n\t * queries if a boat exists in the list, and prints the list.\n\t *\n\t * @param args command line arguments (not used)\n\t */\n\tpublic static void main(String[] args) {\n\t\tString[] boats = new String[MAX_BOATS];\n\n\t\tint numberOfBoats = 0;\n\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Natalie\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Wendell\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Lori\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Steve\");\n\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Kevin\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\n\t\tint index = findBoat(boats, \"Rosa\");\n\n\t\tif (index == -1) {\n\t\t\tnumberOfBoats = addBoat(boats, numberOfBoats, \"Rosa\");\n\t\t} else {\n\t\t\tSystem.out.println(boats[index] + \" is located at index \" +\n\t\t\t\t\t\t\t   index + \" in the boats list.\");\n\t\t}\n\n\t\tnumberOfBoats = removeBoat(boats, numberOfBoats, \"Wendell\");\n\n\t\tSystem.out.println(\"\\nBoat List:\");\n\t\tprintList(boats);\n\t}\n\n\t/**\n\t * Adds a boat to the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numberOfBoats the current number of boats in the list\n\t * @param boat the boat to add to the list\n\t * @return the new number of boats on the list\n\t * @throws IllegalArgumentException (with message \"No room in list\") if list is full\n\t */\n\tpublic static int addBoat(String[] list, int numberOfBoats, String boat) {\n\n\t\tif (numberOfBoats &gt;= list.length) {\n\t\t\tthrow new IllegalArgumentException(\"No room in list\");\n\t\t}\n\n\t\tlist[numberOfBoats++] = boat;\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Prints the list with each element on a separate line.\n\t *\n\t * @param boats the array of boat names\n\t */\n\tpublic static void printList(String[] boats) {\n\t\tfor (String boatName : boats) {\n\t\t\tSystem.out.println(boatName);\n\t\t}\n\t}\n\n\t/**\n\t * Removes a boat from the list.\n\t *\n\t * @param list the array of boat names\n\t * @param numOfBoats the current number of boats in the list\n\t * @param boat the boat to remove from the list\n\t * @return the new number of boat on the list\n\t */\n\tpublic static int removeBoat(String[] list, int numberOfBoats, String boat) {\n\t\tboolean found = false;\n\n\t\tfor (int i = 0; i &lt; numberOfBoats; i++) {\n\t\t\tif (found) {\n\t\t\t\tlist[i - 1] = list[i];\n\t\t\t}\n\n\t\t\tif (list[i].equals(boat)) {\n\t\t\t\tfound = true;\n\t\t\t\tnumberOfBoats--;\n\t\t\t}\n\t\t}\n\n\t\treturn numberOfBoats;\n\t}\n\n\t/**\n\t * Determines if the given boat is in the list.\n\t *\n\t * @param list the array of boat names\n\t * @param boat the boat to find in the list\n\t * @return the index of the list element containing boat\n\t *         or -1 if boat does not exist in the list\n\t */\n\tpublic static int findBoat(String[] list, String boat) {\n\t\tfor (int i = 0; i &lt; list.length; i++) {\n\t\t\tif (list[i] == boat) {\n\t\t\t\treturn i;\n\t\t\t}\n\t\t}\n\n\t\treturn -1;\n\t}\n}"
             },
             {
                 "Name": "Properly Formatted Python file",
-                "Description": "This is a properly formatted Python file. Note the use of whitespace around the if-else and for-loop blocks. Also note the comments. Learn more here -> https://peps.python.org/pep-0008/.",
+                "Description": "This is a properly formatted Python file. Note the use of whitespace around the if-else and for-loop blocks. Also note the comments. Learn more here -&gt; https://peps.python.org/pep-0008/.",
                 "Language": "Python",
                 "CopyCode": "# Name: Michael Totaro\n# Date: 10/24/2022\n# Purpose: Create and demonstrate CarList class (Not a real assignment).\n# collaborators/resources: None other than Dr. Pence\n\nclass Car:\n\t\"\"\" This class is a basic car object. \"\"\"\n\tdef __init__(self, car_id, company, year, color, miles):\n\t\t\"\"\"\n\t\tInitializer for a Car object.\n\t\t:param id: Id of the car\n\t\t:param company: Maker of the car\n\t\t:param year: Year car was made\n\t\t:param color: Color of the car\n\t\t:param miles: Miles driven by the car\n\t\t\"\"\"\n\t\tself.id = car_id\n\t\tself.company = company\n\t\tself.year = year\n\t\tself.color = color\n\t\tself.miles = miles\n\n\tdef __str__(self):\n\t\t\"\"\"\n\t\tCreates a string representation of a car object.\n\t\t:return: string representation of a car object.\n\t\t\"\"\"\n\t\tcar_str = (f\"\\nCar {self.id}\\n\"\n\t\t\t\t   f\"Company: {self.company}\\n\"\n\t\t\t\t   f\"Year: {self.year}\\n\"\n\t\t\t\t   f\"Color: {self.color}\\n\"\n\t\t\t\t   f\"Miles: {self.miles}\")\n\n\t\treturn car_str + \"\\n\"\n\n\nclass CarList:\n\t\"\"\"\n\tThis class is data structure of car objects.\n\tYou can add, remove, and print the list.\n\t\"\"\"\n\tdef __init__(self):\n\t\t\"\"\"\n\t\tInitializes an empty car list\n\t\t\"\"\"\n\t\tself.car_list = []\n\n\tdef add_car(self, new_car):\n\t\t\"\"\"\n\t\tAdds a car to the car list if conditions are met.\n\t\t:param new_car: Car object to be added to the list\n\t\t:return: True if the car was added successfully else false.\n\t\t:raises ValueError: If parameter is not an instance of a car object\n\t\t\"\"\"\n\n\t\tif not isinstance(new_car, Car):\n\t\t\traise ValueError(\"Parameter must be an instance of a car object.\")\n\n\t\tfor car in self.car_list:\n\t\t\tif car.id == new_car.id:\n\t\t\t\tprint(f\"A car in the list already has the id '{new_car.id}'!\")\n\t\t\t\treturn False\n\n\t\tself.car_list.append(new_car)\n\n\t\treturn True\n\n\tdef remove_car_by_id(self, car_id):\n\t\t\"\"\"\n\t\tRemoves car in the list by id.\n\t\t:param car_id: The id of the car to be removed.\n\t\t:raises ValueError: If parameter is not an int.\n\t\t\"\"\"\n\n\t\tif not isinstance(car_id, int):\n\t\t\traise ValueError(\"car_id must be an integer.\")\n\n\t\tfor car in self.car_list:\n\t\t\tif car.id == car_id:\n\t\t\t\tself.car_list.remove(car)\n\t\t\t\tprint(f\"Car {car_id} removed successfully!\")\n\t\t\t\treturn\n\n\t\tprint(f\"No car with the id {car_id} was found!\")\n\n\tdef __str__(self):\n\t\t\"\"\"\n\t\tCreates a string representation of a CarList object.\n\t\t:return: The cars in the list as a string\n\t\t\"\"\"\n\t\treturn \"\\n\" + \" \".join([str(car) for car in self.car_list])\n\n\tdef __len__(self):\n\t\t\"\"\"\n\t\tGet the length of the car_list\n\t\t:return: The length of the car list\n\t\t\"\"\"\n\t\treturn len(self.car_list)\n\n\ndef main():\n\t\"\"\"\n\tThe driver code to test the CarList class.\n\t\"\"\"\n\tcar_list = CarList()\n\n\tcar_list.add_car(Car(1, \"Honda\", 2012, \"gray\", 12430))\n\tcar_list.add_car(Car(2, \"Toyota\", 2005, \"black\", 25430))\n\tcar_list.add_car(Car(3, \"Ford\", 1999, \"red\", 19430))\n\n\ttry:\n\t\tcar_list.add_car(\"This is a string object\")\n\texcept ValueError as e:\n\t\tprint(e)\n\n\tcar_list.add_car(Car(1, \"Used id\", 1999, \"red\", 19430))\n\n\tprint(f\"Length of list before you remove a car {len(car_list)}\")\n\n\tcar_list.remove_car_by_id(1)\n\n\tprint(f\"Length of list after you remove a car {len(car_list)}\")\n\n\tcar_list.remove_car_by_id(100000)\n\n\tprint(car_list)\n\nmain()"
             },
@@ -11802,7 +12775,7 @@
                 "Name": "ForEach Loops/Arrow Functions",
                 "Description": "ForEach loops act like a regular for loop. Arrow functions have concise syntax",
                 "Language": "JavaScript",
-                "CopyCode": "const myFunction = () => {\n\tanimals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n\tanimals.forEach(animal => {\n\t\tconsole.log(animal);\n\t});\n}"
+                "CopyCode": "const myFunction = () =&gt; {\n\tanimals = [\"Dog\", \"Cat\", \"Fish\", \"Deer\"];\n\tanimals.forEach(animal =&gt; {\n\t\tconsole.log(animal);\n\t});\n}"
             },
             {
                 "Name": "Nil-Coalescing Operator",
@@ -11850,7 +12823,7 @@
                 "Name": "String Formatting",
                 "Description": "Formats a string into left-aligned columns in python. The formatted string in this example is what's being returned from the function. They're great for displaying data. Can also be right/center-aligned.",
                 "Language": "Python",
-                "CopyCode": "def format_line(p1, p2, p3, p4):\n\treturn \"{:<25}{:<20}{:<20}{:<15}\".format(p1, p2, p3, p4)\n\naccounts = [\n\t{\n\t\t\"bank\": \"Bank of America\",\n\t\t\"account_number\": 8748978914,\n\t\t\"account_holder\": \"Matthew\",\n\t\t\"balance\": 359.67\n\t},\n\t{\n\t\t\"bank\": \"USAA\",\n\t\t\"account_number\": 6124567421,\n\t\t\"account_holder\": \"Alex\",\n\t\t\"balance\": 50871.23\n\t},\n\t{\n\t\t\"bank\": \"Ally Financial\",\n\t\t\"account_number\": 1348932019,\n\t\t\"account_holder\": \"Charlotte\",\n\t\t\"balance\": 2081.24\n\t}\n]\n\nprint(format_line(\"Bank\", \"Acct Number\", \"Acct Holder\", \"Balance\"))\n\nfor acct in accounts:\n\tprint(format_line(acct[\"bank\"], acct[\"account_number\"], acct[\"account_holder\"], acct[\"balance\"]))"
+                "CopyCode": "def format_line(p1, p2, p3, p4):\n\treturn \"{:&lt;25}{:&lt;20}{:&lt;20}{:&lt;15}\".format(p1, p2, p3, p4)\n\naccounts = [\n\t{\n\t\t\"bank\": \"Bank of America\",\n\t\t\"account_number\": 8748978914,\n\t\t\"account_holder\": \"Matthew\",\n\t\t\"balance\": 359.67\n\t},\n\t{\n\t\t\"bank\": \"USAA\",\n\t\t\"account_number\": 6124567421,\n\t\t\"account_holder\": \"Alex\",\n\t\t\"balance\": 50871.23\n\t},\n\t{\n\t\t\"bank\": \"Ally Financial\",\n\t\t\"account_number\": 1348932019,\n\t\t\"account_holder\": \"Charlotte\",\n\t\t\"balance\": 2081.24\n\t}\n]\n\nprint(format_line(\"Bank\", \"Acct Number\", \"Acct Holder\", \"Balance\"))\n\nfor acct in accounts:\n\tprint(format_line(acct[\"bank\"], acct[\"account_number\"], acct[\"account_holder\"], acct[\"balance\"]))"
             }
         ]
     },
@@ -11920,7 +12893,7 @@
                 "Example": "ls"
             },
             {
-                "Command": "<Program> --version",
+                "Command": "&lt;Program&gt; --version",
                 "Description": "Typing \"--version\" after the name of your program can help you see if it's installed and what version it is",
                 "Example": "Python3 --version"
             },
@@ -12245,7 +13218,7 @@
                 "Action": "Gets math and other special characters by first opening emoji keyboard menu, then in the upper right hand corner click on the little keyboard icon"
             },
             {
-                "Shortcut": "control + right click google doc table Table Properties -> Color -> Table Border -> Select White ",
+                "Shortcut": "control + right click google doc table Table Properties -&gt; Color -&gt; Table Border -&gt; Select White ",
                 "Action": "Make the columns of a google doc table invisible. This will be helpful for the CSC 385 final paper."
             },
             {
@@ -12416,7 +13389,7 @@
             },
             {
                 "text": "This needs to be a real language",
-                "transcription": "As a way to encourage the younger generation to try out programming most of the key words in C# have been permanently renamed. This should increase the amount of younger game developers coming the next few years. default public float rizz; private bool IsSus() try if(rizz > vibe) return true; else return false; catch(Exception e) Debug.LogError(e.Message); throw; gen z highkey period rizz; lowkey fax IsSus() fuck_around vibe_check(rizz ratios vibe) its_giving no_cap; big_yikes its_giving cap; find_out(Tea t) Shoutout.SpillTea(t.Yap); yeet; Fear the phantom (horror game) @Phantom_TheGame"
+                "transcription": "As a way to encourage the younger generation to try out programming most of the key words in C# have been permanently renamed. This should increase the amount of younger game developers coming the next few years. default public float rizz; private bool IsSus() try if(rizz &gt; vibe) return true; else return false; catch(Exception e) Debug.LogError(e.Message); throw; gen z highkey period rizz; lowkey fax IsSus() fuck_around vibe_check(rizz ratios vibe) its_giving no_cap; big_yikes its_giving cap; find_out(Tea t) Shoutout.SpillTea(t.Yap); yeet; Fear the phantom (horror game) @Phantom_TheGame"
             },
             {
                 "text": "3 spooky 5 me",
