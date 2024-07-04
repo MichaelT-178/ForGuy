@@ -27,7 +27,12 @@ const route = useRoute();
 const searchQuery = ref(route.params.SearchQuery || '');
 const searchResults = ref([]);
 const totalCount = ref(0);
-  
+
+function escapedSearchQuery(query) {
+    return query
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+}
 
 function highlightString(text, searchQuery) {
     const searchLength = searchQuery.length;
@@ -103,12 +108,14 @@ function searchJson(data, searchQuery) {
 }
 
 onMounted(() => {
-    searchResults.value = searchJson(SearchData, searchQuery.value);
+    const escapedQuery = escapedSearchQuery(searchQuery.value);
+    searchResults.value = searchJson(SearchData, escapedQuery);
 });
 
 watch(() => route.params.SearchQuery, (newSearchQuery) => {
     searchQuery.value = newSearchQuery;
-    searchResults.value = searchJson(SearchData, searchQuery.value);
+    const escapedQuery = escapedSearchQuery(searchQuery.value);
+    searchResults.value = searchJson(SearchData, escapedQuery);
 });
 
 </script>
