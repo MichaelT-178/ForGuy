@@ -28,6 +28,7 @@ const searchQuery = ref(route.params.SearchQuery || '');
 const searchResults = ref([]);
 const totalCount = ref(0);
 
+// Replaces html < and > with &lt; and &gt; to be searchable
 function escapedSearchQuery(query) {
     return query
         .replace(/</g, '&lt;')
