@@ -23,14 +23,40 @@
                         "FormatCode": "cd reddit_bot\nrm oauth_server.py\nrm get_refresh_token.py",
                         "CopyCode": "cd reddit_bot\nrm oauth_server.py\nrm get_refresh_token.py"
                     }
+                },
+                {
+                    "id": 3,
+                    "instruction": "After you've done that, you should be ready to start the process of deploying your bot to Amazon Web Services."
                 }
             ]
         },
         {
             "Info": [
                 {
-                    "title": "Manage the Bots Secrets and Dockerize the file.",
-                    "desc": "Explains how to use AWS Secrets Manager and dockerize the reddit bot python file."
+                    "title": "AWS Services We'll Use",
+                    "desc": "These are AWS services we'll use and explanations of what they do."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "<u><b>EC2</b></u> - This stands for \"Elastic Cloud Compute\". This service allows you to create a virtual computer in the cloud. We're basically renting a terminal for free and running a python script on it."
+                },
+                {
+                    "id": 2,
+                    "instruction": "<u><b>Secrets Manager</b></u> - This is the service we'll use to securely store the secrets for our project. We'll have to make changes to our script before we deploy it to incorporate this service."
+                },
+                {
+                    "id": 3,
+                    "instruction": "<u><b>IAM</b></u> - This service will be used to help connect to the EC2 host on a local terminal. You probably already completed all the necessary steps for this service when you set up your AWS account."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Store Secrets in AWS Secrets Manager",
+                    "desc": "Explains how to use AWS Secrets Manager to store secrets for your project."
                 }
             ],
             "Instructions": [
@@ -55,14 +81,278 @@
                         "FormatCode": "",
                         "CopyCode": ""
                     }
+                },
+                {
+                    "id": 3,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 20,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 21,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
                 }
             ]
         },
         {
             "Info": [
                 {
-                    "title": "Deploy the Bot on an EC2 instance",
-                    "desc": "Explains how to deploy the bot on an EC2 instance."
+                    "title": "Create an EC2 instance",
+                    "desc": "Explains how to create an EC2 instance in the AWS console."
                 }
             ],
             "Instructions": [
@@ -80,6 +370,581 @@
                 {
                     "id": 2,
                     "instruction": ""
+                },
+                {
+                    "id": 3,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 20,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 21,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 27,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Deploy the Bot on the EC2 instance",
+                    "desc": "Explains how to deploy the bot using the EC2 host terminal."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                },
+                {
+                    "id": 3,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 20,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 21,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 27,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
                 }
             ]
         },
@@ -105,6 +970,281 @@
                 {
                     "id": 2,
                     "instruction": ""
+                },
+                {
+                    "id": 3,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 20,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 21,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 27,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
                 }
             ]
         }
