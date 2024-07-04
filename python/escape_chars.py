@@ -24,7 +24,7 @@ class HtmlCharCollector:
                 for element in obj:
                     find_and_collect_escaped_html(element)
             elif isinstance(obj, str):
-                escaped_chars = re.findall(r'&[a-zA-Z]+;', obj)
+                escaped_chars = re.findall(r'&[a-zA-Z]+;|&#\d+;|&#x[0-9A-Fa-f]+;', obj)
                 for char in escaped_chars:
                     escaped_chars_set.add(char)
 
@@ -38,7 +38,7 @@ class HtmlCharCollector:
     def show_results(cls, file_path):
         escaped_chars_list = cls.collect_escaped_html_chars(file_path)
 
-        if cls.lists_have_same_elements(escaped_chars_list, ['&lt;', '&gt;']):
+        if not cls.lists_have_same_elements(escaped_chars_list, ['&lt;', '&gt;']):
             print(c("THERE'S A NEW HTML CHARACTER ADD IT TO ", 'red'))
             print("It used to be ['&lt;', '&gt;']")
             print(f"Now it's {escaped_chars_list}\n")
@@ -47,3 +47,5 @@ class HtmlCharCollector:
             unescaped_chars_list = [html.unescape(char) for char in escaped_chars_list]
             print(unescaped_chars_list)
             print("\nGo to \"SearchResults.vue\" and add the new character in the \"escapedSearchQuery\" function.\n")
+            print("Or go to replace_strs in create_search_data and add it to the list\n")
+            
