@@ -1,5 +1,7 @@
+import html
 import json
 from remove_markdown import RemoveMarkdown 
+from escape_chars import HtmlCharCollector
 
 """
 This file creates the src/data/SearchData.json page.
@@ -8,6 +10,29 @@ This file creates the src/data/SearchData.json page.
 
 def format_json(data):
     return json.dumps(data, indent=4)
+
+def escape_html_in_json(file_path):
+    """
+    Escapes all html is a json file 
+    """
+
+    with open(file_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    def escape_html_in_strings(obj):
+        if isinstance(obj, dict):
+            return {key: escape_html_in_strings(value) for key, value in obj.items()}
+        elif isinstance(obj, list):
+            return [escape_html_in_strings(element) for element in obj]
+        elif isinstance(obj, str):
+            return html.escape(obj)
+        else:
+            return obj
+
+    escaped_data = escape_html_in_strings(data)
+
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(escaped_data, file, ensure_ascii=False, indent=4)
 
 def transform_json(json_obj):
     """
@@ -117,8 +142,8 @@ def replace_strs(file_path):
     """
     # <br> -> " "
     #
-    old_strings = ["<br>"]
-    new_strings = [" "]
+    old_strings = ["<br>", "&#x27;", "&amp;", '&quot;']
+    new_strings = [" ", "'", "&", '\\"']
 
     with open(file_path, 'r') as file:
         data = file.read()
@@ -1591,7 +1616,13 @@ with open("delete.json", "w", encoding='utf-8') as file:
 with open("../src/data/SearchData.json", "w", encoding='utf-8') as file:
     json.dump(real_json, file, ensure_ascii=False, indent=4)
     
+escape_html_in_json("delete.json")
+escape_html_in_json("../src/data/SearchData.json")
+
 replace_strs("delete.json")
 replace_strs("../src/data/SearchData.json")
+
+# Shows unaccounted for escaped html chars 
+HtmlCharCollector.show_results("../src/data/SearchData.json")
 
 print("Files created!")
