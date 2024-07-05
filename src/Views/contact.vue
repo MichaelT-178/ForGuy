@@ -179,6 +179,11 @@ h1 {
 .intro-text {
   margin-top: -15px;
   margin-bottom: 16px;
+  font-size: 19px;
+}
+
+.form-label {
+  font-size: 17px;
 }
 
 #name, #email, #message {

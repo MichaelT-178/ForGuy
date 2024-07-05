@@ -976,6 +976,20 @@ def get_node_server():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_emailjs():
+	with open("../src/data/CompSci/Instructions/EmailJS.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Setup Email.js in a Project 📬"
+		Link = "/CompSci/SetupProjects/emailjs"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
 def get_oauth():
 	with open("../src/data/CompSci/Instructions/OAuth.json", "r") as file:
 		content = json.load(file)
@@ -1485,6 +1499,8 @@ postman = get_postman()
 pyserver = get_python_server()
 nodeserver = get_node_server()
 
+emailjs = get_emailjs()
+
 oauth = get_oauth()
 
 excel = get_excel()
@@ -1583,6 +1599,7 @@ all_data = [
     postman,
     pyserver,
     nodeserver,
+    emailjs,
 
     oauth,
 
