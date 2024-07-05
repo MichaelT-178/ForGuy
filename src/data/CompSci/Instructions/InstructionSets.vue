@@ -29,6 +29,7 @@ import SwiftData from './SwiftData.json';
 import Postman from './Postman.json';
 import PyServer from './PythonServer.json';
 import NodeServer from './NodeServer.json';
+import EmailJS from './EmailJS.json';
 import OAuth from './OAuth.json';
 import GoogleApi from './GoogleApi.json';
 import RedditApi from './RedditApi.json';
@@ -73,6 +74,7 @@ export const AllSets = [
     Postman,
     PyServer,
     NodeServer,
+    EmailJS,
     OAuth,
     GoogleApi,
     RedditApi,

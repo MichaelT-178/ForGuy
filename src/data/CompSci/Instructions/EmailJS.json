@@ -1,0 +1,22 @@
+{
+    "Info": [
+        {
+            "title": "How to Setup Email.js in a Project",
+            "desc": "Explains how to send emails using JavaScript.",
+            "ref": "emailjs"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}
