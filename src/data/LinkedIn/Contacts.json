@@ -76,6 +76,16 @@
             "Image": "Infosys.jpg"
         },
         {
+            "Name": "Jasmine Gomes",
+            "Company": "Lowe's Companies, Inc.",
+            "Role": "Recruiter",
+            "Location": "Charlotte/Mooresville, North Carolina",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/jasmine-gomes-00398021a/",
+            "Details": "This women messaged me on LinkedIn about Software Engineering roles in Charlotte and Mooresville. Note that it's MoorEsville not MorrIsville which is in RTP.",
+            "Image": "Lowes.jpg"
+        },
+        {
             "Name": "Alex Rosso",
             "Company": "Lenovo",
             "Role": "Talent Acquisition Partner",
