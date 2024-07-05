@@ -273,30 +273,36 @@
                 },
                 {
                     "id": 4,
+                    "name": "How to Setup Email.js in a Project",
+                    "ref": "emailjs",
+                    "ScrollTo": "EmailJSLink"
+                },
+                {
+                    "id": 5,
                     "name": "How to Setup OAuth Authentication",
                     "ref": "oauth",
                     "ScrollTo": "OAuthLink"
                 },
                 {
-                    "id": 5,
+                    "id": 6,
                     "name": "How to Populate and Query a SQLite3 Database",
                     "ref": "basic-sqlite",
                     "ScrollTo": "BasicSqliteLink"
                 },
                 {
-                    "id": 6,
+                    "id": 7,
                     "name": "How to Use Excel with Python",
                     "ref": "excel",
                     "ScrollTo": "ExcelLink"
                 },
                 {
-                    "id": 7,
+                    "id": 8,
                     "name": "How to Add a Language to the Prism Library",
                     "ref": "prism",
                     "ScrollTo": "PrismLink"
                 },
                 {
-                    "id": 8,
+                    "id": 9,
                     "name": "How to Setup an Executable Python Script",
                     "ref": "executable-python",
                     "ScrollTo": "ExecPythonLink"
