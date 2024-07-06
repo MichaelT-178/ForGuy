@@ -1,22 +1,152 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "How to Setup Email.js in a Project",
-            "desc": "Explains how to send emails using JavaScript.",
-            "ref": "emailjs"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "How to Setup Email.js in a Project",
+                    "desc": "Explains how to send emails using JavaScript.",
+                    "ref": "emailjs"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Basically all these instructions come from this [video](https://youtu.be/x7Ewtay0Q78?si=14CwbqmtI6mC8BuA)."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Go to [emailjs.com](https://www.emailjs.com/) and press the orange \"Create Free Account\" button."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Enter your information in the fields, then press \"Sign Up\"."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Then sign in and confirm your email when prompted. Go to your email and click the confirmation link within it."
+                },
+                {
+                    "id": 5,
+                    "instruction": "After you've done that you should be on the main \"Email Services\" page."
+                },
+                {
+                    "id": 6,
+                    "instruction": "On the \"Email Services\" page, click the \"Add New Service\" button."
+                },
+                {
+                    "id": 7,
+                    "instruction": "Under \"Personal Services\" select the email service you want to use to send emails on the behalf on EmailJS. For example if you want to send the emails from your Gmail account, select \"Gmail\" in the options."
+                },
+                {
+                    "id": 8,
+                    "instruction": "For this example we'll use Gmail. Click on the \"Gmail\" option and then we'll fill in the following values in the \"Config Service\" pop-up."
+                },
+                {
+                    "id": 9,
+                    "instruction": "In the \"Name\" field put \"Test-Email-Service\". The \"Service ID\" field should already be filled out. If it isn't, click the key icon on the right."
+                },
+                {
+                    "id": 10,
+                    "instruction": "Click \"Connect Account\". Choose the Gmail account you want to use. Click \"Continue\" when prompted to \"Sign in to EmailJS\". Click \"Continue\" again after that. Your Gmail account should be connected after that."
+                },
+                {
+                    "id": 11,
+                    "instruction": "Make sure the \"Send test email to verify configuration\" box is selected, then press \"Create Service\". You should've received a test confirmation email in your Gmail account."
+                },
+                {
+                    "id": 12,
+                    "instruction": "After you do that, click \"Email Templates\" in the left-hand bar."
+                },
+                {
+                    "id": 13,
+                    "instruction": "Click the \"Create New Template\" button."
+                },
+                {
+                    "id": 14,
+                    "instruction": "There's a ton of customization you can do here, but we'll it keep simple for this example."
+                },
+                {
+                    "id": 15,
+                    "instruction": "In the \"My Default Template\" page.<br><br>Subject: \"Message sent from EmailJS\".<br><br>Then press Edit Content -> Code Editor -> Delete the code in the field -> Paste the code below into the field.<br><br>Replace \"TYPE_YOUR_NAME_HERE\" with your actual name. After you're done, scroll to the bottom and click the \"Apply Changes\" button. Don't just press the 'X' at the top.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "HTML",
+                        "FormatCode": "<p>Hello TYPE_YOUR_NAME_HERE,</p>\n<p>You got a new message from Example Website</p>\n<p style=\"padding: 12px;\n\t  border-left: 4px solid #d0d0d0;\n\t  font-style: italic;\n\t  font-size: 18px;\">{{message}}</p>\n<p>Regards,<br>{{ from_name }}</p>\n<p style=\"margin-top: -5px;\">Email: {{ from_email }}</p>",
+                        "CopyCode": "<p>Hello TYPE_YOUR_NAME_HERE,</p>\n<p>You got a new message from Example Website</p>\n<p style=\"padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic; font-size: 18px;\">{{message}}</p>\n<p>Regards,<br>{{ from_name }}</p>\n<p style=\"margin-top: -5px;\">Email: {{ from_email }}</p>"
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "On the right-hand side you should see a section with multiple fields. Enter the following values in to the fields.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Values",
+                        "FormatCode": "To Email: Use same Gmail Address that you're sending the email from.\nFrom Name: Your full name\nFrom Email: Make sure \"Use Default Email Address\" is selected\nReply To: {{reply_to}}\n\n*Leave other fields blank*\n",
+                        "CopyCode": "To Email: Use same Gmail Address that you're sending the email from.\nFrom Name: Your full name\nFrom Email: Make sure \"Use Default Email Address\" is selected\nReply To: {{reply_to}}\n\n*Leave other fields blank*\n"
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "Now, stay in \"My Default Template\" but click on the \"Settings\" tab on the right. Copy and record the value in the \"Template ID\" field."
+                },
+                {
+                    "id": 18,
+                    "instruction": "Click the \"Save\" button in the top-right when you're done."
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
