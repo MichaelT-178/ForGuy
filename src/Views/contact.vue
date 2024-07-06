@@ -73,7 +73,7 @@ const submitForm = () => {
   };
 
   const serviceID = 'service_feq974e';
-  const templateID = 'template_bgbff6h';
+  const templateID = 'template_cowiwh7';
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {
