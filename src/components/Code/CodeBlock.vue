@@ -89,6 +89,7 @@ const getLanguageColor = computed(() => {
     ruby: '#701516',
     vue: '#41b883',
     css: '#563d7c',
+    html: '#E34C26',
     react: '#61DAFB',
     json: '#FF9A00'
   };
