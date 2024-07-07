@@ -36,7 +36,7 @@ const description = info[0].description;
 
 function downloadResumeDocx() {
   //Can't use local path for security reasons 
-  const docxUrl = 'https://michaelt-178.github.io/TestWebsite/Practice.docx';
+  const docxUrl = '/download/Practice.docx';
   const link = document.createElement('a');
   link.href = docxUrl;
   document.body.appendChild(link);
