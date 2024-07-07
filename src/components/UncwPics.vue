@@ -17,6 +17,8 @@ import Pic15 from "../assets/UncwPics/OrangeSkyOne.jpg";
 import Pic16 from "../assets/UncwPics/Theater.jpg";
 import Pic17 from "../assets/UncwPics/StudyRoom.jpg";
 import Pic18 from "../assets/UncwPics/AugustSunset.jpg";
+import Vid1 from "/CongdonBalcony.mp4";
+
 
 //North Carolina pics
 import Pic19 from "../assets/UncwPics/MooresvilleSunset.jpg";
@@ -37,7 +39,7 @@ import Pic33 from "../assets/UncwPics/DurhamPond.jpg";
 import Pic34 from "../assets/UncwPics/ForestView.jpg";
 import Pic35 from "../assets/UncwPics/PinkHouse.jpg";
 import Pic36 from "../assets/UncwPics/PinkJulySunset.jpg";
-
+import Vid2 from "/Rainbow.mp4";
 
 //Texas pics
 import Pic37 from "../assets/UncwPics/OfficeView.jpg";
@@ -46,7 +48,7 @@ import Pic39 from "../assets/UncwPics/Lanterns.jpg";
 import Pic40 from "../assets/UncwPics/PlanoBuildings.jpg";
 import Pic41 from "../assets/UncwPics/PlanoPond.jpg";
 import Pic42 from "../assets/UncwPics/USAASign.jpg";
-
+import Vid3 from "/PlanoBalcony.mp4";
 
 
 export const uncwPics = [
@@ -67,7 +69,8 @@ export const uncwPics = [
     { text: "Beautiful Orange Sky", image: Pic15 }, //OrangeSkyOne.jpg
     { text: "Theater Balcony in the Cultural Arts Building", image: Pic16 }, //Theater.jpg
     { text: "Sunny Terrapin Study Room", image: Pic17 }, //StudyRoom.jpg
-    { text: "Sunset in late August 2023", image: Pic18 } //AugustSunset.jpg
+    { text: "Sunset in late August 2023", image: Pic18 }, //AugustSunset.jpg
+    { text: "View from Congdon Hall Balcony in Early May", video: Vid1 } //CongdonBalcony.mp4
 ]
 
 
@@ -89,7 +92,8 @@ export const NorthCarolinaPics = [
     { text: "Durham Pond in Spring", image: Pic33 }, //DurhamPond.jpg
     { text: "Outside view from OG IBM office in Summer", image: Pic34 }, //ForestView.jpg
     { text: "Pink House in Durham Neighborhood", image: Pic35 }, //PinkHouse.jpg
-    { text: "July 4th Sunset", image: Pic36 } //PinkJulySunset.jpg
+    { text: "July 4th Sunset", image: Pic36 }, //PinkJulySunset.jpg
+    { text: "Giant rainbow after July thunderstorm in Durham", video: Vid2 } //Rainbow.mp4
 ]
 
 
@@ -99,7 +103,8 @@ export const TexasPics = [
     { text: "Lantern Store in Plano, Texas", image: Pic39 }, //Lanterns.jpg
     { text: "Cloudy day in Texas", image: Pic40 }, //PlanoBuildings.jpg
     { text: "Picture of Pond in Texas", image: Pic41 }, //PlanoPond.jpg
-    { text: "USAA Sign in front of the building where I worked", image: Pic42 } //USAASign.jpg
+    { text: "USAA Sign in front of the building where I worked", image: Pic42 }, //USAASign.jpg
+    { text: "View from USAA balcony in Plano, Texas", video: Vid3 } //PlanoBalcony.mp4
 ]
 
 </script>
