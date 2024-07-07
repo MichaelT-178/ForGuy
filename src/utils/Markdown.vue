@@ -83,9 +83,11 @@ window.navigateToVuePath = (toPropString) => {
   
 };
 
-//&DownloadLink&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
+//&DownloadLink&(/download/practice.docx)
 export const createDownloadLink = (text) => {
-  const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
+  // const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
+
+  const markdownLinkPattern = /\&([^\]]+)\&\((\/download[^\s]+)\)/g;
   
   const style = document.createElement('style');
   document.head.appendChild(style);
