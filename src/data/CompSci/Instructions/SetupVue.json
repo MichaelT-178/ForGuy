@@ -20,6 +20,17 @@
         },
         {
             "id": 2,
+            "instruction": "Note: You can skip this step if you want to setup your project manually. Go to Create a &Project Templates Folder&[TemplatesLink] and complete the instructions. It will give you a folder you can use to download this Vue project structure. After you're done, copy that folder structure using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cp -R templates/vue-project /path/to/destination/projects-new-name",
+                "CopyCode": "cp -R templates/vue-project /path/to/destination/projects-new-name"
+            }
+        },
+        {
+            "id": 3,
             "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\". Note that \"vue-project\" will be the name of your project and you can change it to be whatever you want.",
             "Code": {
                 "Name": "",
@@ -30,7 +41,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "instruction": "Change into your project directory.",
             "Code": {
                 "Name": "",
@@ -41,7 +52,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "instruction": "Change into your project directory.",
             "Code": {
                 "Name": "",
@@ -52,7 +63,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "instruction": "Run the application to make sure everything's working. The page should say Vite + Vue. Press control + c to stop running locally.",
             "Code": {
                 "Name": "",
@@ -63,7 +74,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 7,
             "instruction": "Install vue-router while in your new project directory",
             "Code": {
                 "Name": "",
@@ -74,7 +85,7 @@
             }
         },
         {
-            "id": 7,
+            "id": 8,
             "instruction": "Change into the src directory.",
             "Code": {
                 "Name": "",
@@ -85,7 +96,7 @@
             }
         },
         {
-            "id": 8,
+            "id": 9,
             "instruction": "Create the \"views\", \"router\", and \"utils\" directories in the src folder.",
             "Code": {
                 "Name": "",
@@ -96,7 +107,7 @@
             }
         },
         {
-            "id": 9,
+            "id": 10,
             "instruction": "Delete unused assets and components.",
             "Code": {
                 "Name": "",
@@ -107,7 +118,7 @@
             }
         },
         {
-            "id": 10,
+            "id": 11,
             "instruction": "Create the following files in your project.",
             "Code": {
                 "Name": "",
@@ -118,7 +129,7 @@
             }
         },
         {
-            "id": 11,
+            "id": 12,
             "instruction": "In the \"router\" folder, paste the following code in the \"index.js\" file. Note that \"Home\" and \"SecondPage\" are just variable names. You could write something like \"import home-page from '../views/Home.vue'\" and have it still work. Save the file when you're finished (command + s).",
             "Code": {
                 "Name": "",
@@ -130,7 +141,7 @@
             }
         },
         {
-            "id": 12,
+            "id": 13,
             "instruction": "Now open the \"main.js\" file in the top-most directory of the src folder. Delete the contents of the file and paste in the following code.",
             "Code": {
                 "Name": "",
@@ -142,7 +153,7 @@
             }
         },
         {
-            "id": 13,
+            "id": 14,
             "instruction": "Paste the following code into the \"RouterBtn.vue\" file in your \"components\" folder in your \"src\" directory.",
             "Code": {
                 "Name": "",
@@ -154,7 +165,7 @@
             }
         },
         {
-            "id": 14,
+            "id": 15,
             "instruction": "Paste the following code in the \"Home.vue\" file in the \"views\" folder in your \"src\" directory.",
             "Code": {
                 "Name": "",
@@ -166,7 +177,7 @@
             }
         },
         {
-            "id": 15,
+            "id": 16,
             "instruction": "Paste the following code in the \"SecondPage.vue\" file in the same \"views\" folder.",
             "Code": {
                 "Name": "",
@@ -178,7 +189,7 @@
             }
         },
         {
-            "id": 16,
+            "id": 17,
             "instruction": "Go to the \"App.vue\" file in the src directory, then delete all the code in it. Copy and paste the following Vue Code in the file.",
             "Code": {
                 "Name": "",
@@ -190,7 +201,7 @@
             }
         },
         {
-            "id": 17,
+            "id": 18,
             "instruction": "After you're done, save your code and run it using \"npm run dev\". I think this should be a good start to your project. Obviously you can delete and modify the files. The example files were just to show you how to set the project up.",
             "Code": {
                 "Name": "",
