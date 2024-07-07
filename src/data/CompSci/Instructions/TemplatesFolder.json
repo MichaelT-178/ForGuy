@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "You can skip steps 2-4 by downloading the &templates.zip&(https://github.com/MichaelT-178/TestWebsite/blob/main/templates.zip?raw=true) folder and then running the following commands in your terminal",
+            "instruction": "You can skip steps 2-4 by downloading the &templates.zip&(/download/templates.zip) folder and then running the following commands in your terminal",
             "Code": {
                 "Name": "",
                 "Description": "",
