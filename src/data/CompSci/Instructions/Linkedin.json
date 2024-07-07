@@ -29,7 +29,7 @@
         },
         {
             "id": 4,
-            "instruction": "Click the blue \"Create app\" button and you'll be taken to a new page. In the \"Create an app\" form enter the following values. For the App logo you can use any picture but I'd recommend using the UNCW logo. You can download it &here&(https://github.com/MichaelT-178/TestWebsite/blob/main/UNCW.jpg).",
+            "instruction": "Click the blue \"Create app\" button and you'll be taken to a new page. In the \"Create an app\" form enter the following values. For the App logo you can use any picture but I'd recommend using the UNCW logo. You can download it &here&(/download/UNCW.jpg).",
             "Code": {
                 "Name": "",
                 "Description": "",
