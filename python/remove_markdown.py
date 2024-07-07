@@ -17,8 +17,11 @@ class RemoveMarkdown:
         # @NSA and DoD@[{ 'name': 'ImageView', 'params': { 'Name': 'NSA Pic', 'Description': 'UNCW is designated as a National Center of Academic Excellence in Cyber Defense Education (CAE-CDE) by the National Security Agency and Department of Homeland Security. Link -> www.uncw.edu/ccde. (I took this picture in Congdon Hall)', 'Pic': 'NSA.png'} }]
         self.routerlink_props = r'@([^@]+)@\[\s*({.*?})\s*\]'
 
-        # &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
-        self.download_link = r'\&([^\]]+)\&\((https?:\/\/[^\s]+)\)'
+        # # &here&(https://michaelt-178.github.io/TestWebsite/Practice.docx)
+        # self.download_link = r'\&([^\]]+)\&\((https?:\/\/[^\s]+)\)'
+
+        # &here&() /\&([^\]]+)\&\((\/download[^\s]+)\)/g;
+        self.download_link = r'/\&([^\]]+)\&\((\/download[^\s]+)\)/g;'
 
         # Scroll down(codeBlockRef), Different for multiple accounts(secondGitHubEight), etc.
         self.scroll_link = r'(Different for multiple accounts|Scroll back up to original step|Scroll back to links|Scroll down)\((.*?)\)'
