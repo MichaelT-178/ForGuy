@@ -126,16 +126,6 @@
             "Image": "Ohanafy.jpg"
         },
         {
-            "Name": "Pirelli Pandac",
-            "Company": "Gilero",
-            "Role": "Recruiting Team Lead",
-            "Location": "Durham, North Carolina",
-            "Email": "ppandac@tripleco.com",
-            "LinkedIn": "https://www.linkedin.com/in/pirelli-pandac-4a69a219b/",
-            "Details": "This guy contacted me on LinkedIn about a Devops Engineer position at Gilero in Durham, North Carolina.",
-            "Image": "Gilero.jpg"
-        },
-        {
             "Name": "",
             "Company": "Ohanafy",
             "Role": "",
@@ -174,6 +164,16 @@
             "LinkedIn": "https://www.linkedin.com/in/gi-iyer-0b3a9415/",
             "Details": "Gi Iyer contacted me on Handshake about jobs at Union County Public Schools and a UCPS Career fair at Weddington High School.",
             "Image": "UCPS.jpg"
+        },
+        {
+            "Name": "Pirelli Pandac",
+            "Company": "Gilero",
+            "Role": "Recruiting Team Lead",
+            "Location": "Durham, North Carolina",
+            "Email": "ppandac@tripleco.com",
+            "LinkedIn": "https://www.linkedin.com/in/pirelli-pandac-4a69a219b/",
+            "Details": "This guy contacted me on LinkedIn about a Devops Engineer position at Gilero in Durham, North Carolina.",
+            "Image": "Gilero.jpg"
         },
         {
             "Company": "UNC Wilmington",
