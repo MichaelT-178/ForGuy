@@ -56,6 +56,7 @@ import Meme54 from "../assets/memes/ChangeUI.jpg";
 import Meme55 from "../assets/pom.jpg";
 import Meme56 from "../assets/memes/JoinMeme.jpg";
 import Meme57 from "../assets/memes/Gates.jpg";
+import Meme58 from "../assets/memes/TheRona.jpg";
 
 
 export const memeObjects = [
@@ -343,6 +344,12 @@ export const memeObjects = [
         text: "CSC 133 Gang",
         transcription: "Fun with flags norway xorway xnorway andway nandway notway",
         image: Meme57
-    } //Gates.jpg
+    }, //Gates.jpg
+    {
+        text: "Random 2020 throwback meme for good measure",
+        transcription: "I'm pretty sure i pretty sure I had coronavirus in December 2019 cause like i had a real bad cold but they said wasn't the flu so idk",
+        image: Meme58
+    } //TheRona.jpg
 ]
+
 </script>
