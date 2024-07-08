@@ -82,7 +82,17 @@
             "Location": "Charlotte/Mooresville, North Carolina",
             "Email": "",
             "LinkedIn": "https://www.linkedin.com/in/jasmine-gomes-00398021a/",
-            "Details": "This women messaged me on LinkedIn about Software Engineering roles in Charlotte and Mooresville. Note that it's MoorEsville not MorrIsville which is in RTP.",
+            "Details": "This women messaged me on LinkedIn about Software Engineering roles in Charlotte and Mooresville. Note that it's MoorEsville, not MorrIsville which is in RTP.",
+            "Image": "Lowes.jpg"
+        },
+        {
+            "Name": "Lauren F.",
+            "Company": "Lowe's Companies, Inc.",
+            "Role": "Recruiter",
+            "Location": "Charlotte/Mooresville, North Carolina",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/lauren-f-9017a32a/",
+            "Details": "Jasmine Gomes told me she would send my resume to this lady.",
             "Image": "Lowes.jpg"
         },
         {
@@ -114,6 +124,16 @@
             "LinkedIn": "https://www.linkedin.com/in/davisbryson/",
             "Details": "The UNCW computer science department has sent emails about Ohanafy SWE job openings with this guys email in them.",
             "Image": "Ohanafy.jpg"
+        },
+        {
+            "Name": "Pirelli Pandac",
+            "Company": "Triple Crown",
+            "Role": "Recruiting Team Lead",
+            "Location": "Durham, North Carolina",
+            "Email": "ppandac@tripleco.com",
+            "LinkedIn": "https://www.linkedin.com/in/pirelli-pandac-4a69a219b/",
+            "Details": "This guy contacted me on LinkedIn about a Devops Engineer position in Durham, North Carolina.",
+            "Image": "TripleCrown.jpg"
         },
         {
             "Name": "",
