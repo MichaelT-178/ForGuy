@@ -893,7 +893,7 @@ def get_swift_firebase():
 		instructions = content["Instructions"]
 		instructions = modify_list_with_code_separation(instructions, "Code")
 
-		Title = "How to create an iOS app with Swift and Firebase 🍎"
+		Title = "How to create an iOS app with Swift and Firebase 🐦"
 		Link = "/CompSci/SetupProjects/swift-firebase"
 		Results = info + instructions
 
@@ -995,6 +995,20 @@ def get_emailjs():
         Link = "/CompSci/SetupProjects/emailjs"
         
         return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_pyicloud():
+	with open("../src/data/CompSci/Instructions/PyiCloud.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Interact with iCloud using Python 🍎"
+		Link = "/CompSci/SetupProjects/pyicloud"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_oauth():
 	with open("../src/data/CompSci/Instructions/OAuth.json", "r") as file:
@@ -1507,6 +1521,8 @@ nodeserver = get_node_server()
 
 emailjs = get_emailjs()
 
+pyicloud = get_pyicloud()
+
 oauth = get_oauth()
 
 excel = get_excel()
@@ -1606,7 +1622,7 @@ all_data = [
     pyserver,
     nodeserver,
     emailjs,
-
+    pyicloud,
     oauth,
 
     basicsqlite,
