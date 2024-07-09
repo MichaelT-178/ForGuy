@@ -1,5 +1,5 @@
 import json 
-
+from termcolor import colored as c
 
 # file_path = "../src/data/SearchPages.json"
 # file_path = "../src/data/CompSci/Instructions/SwiftData.json"
@@ -7,7 +7,8 @@ import json
 # file_path = "../src/data/CompSci/Instructions/SpringApp.json"
 # file_path = "../src/data/CompSci/Instructions/NodeServer.json"
 
-file_path = "../src/data/CompSci/Instructions/EmailJS.json"
+# file_path = "../src/data/CompSci/Instructions/EmailJS.json"
+file_path = "../src/data/CompSci/Instructions/PyiCloud.json"
 
 
 with open(file_path, 'r') as file:
@@ -19,21 +20,21 @@ with open(file_path, 'r') as file:
 
 
     # For One set Instructions 
-    # data_set = data["Instructions"]
+    data_set = data["Instructions"]
     
-    # for i, item in enumerate(data_set):
-    #     item["id"] = i + 1
+    for i, item in enumerate(data_set):
+        item["id"] = i + 1
     
     
     # For MultiSet Instructions
-    data_set = data["MultiSet"][0]["Instructions"]
+    # data_set = data["MultiSet"][0]["Instructions"]
 
-    for i, item in enumerate(data_set):
-        item["id"] = i + 1
+    # for i, item in enumerate(data_set):
+    #     item["id"] = i + 1
 
 
 
 
 with open(file_path, 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
-    print("Updated Successfully!")
+    print(c("Updated Successfully!", "green"))
