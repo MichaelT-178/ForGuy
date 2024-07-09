@@ -331,7 +331,7 @@
     },
     {
         "id": 56,
-        "Emoji": "🍎",
+        "Emoji": "🐦",
         "MenuName": "How to create an iOS app with Swift and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
@@ -373,84 +373,90 @@
     },
     {
         "id": 63,
+        "Emoji": "🍎",
+        "MenuName": "How to Interact with iCloud using Python",
+        "Link": "/CompSci/SetupProjects/pyicloud"
+    },
+    {
+        "id": 64,
         "Emoji": "🔐",
         "MenuName": "How to Setup OAuth Authentication",
         "Link": "/CompSci/SetupProjects/oauth"
     },
     {
-        "id": 64,
+        "id": 65,
         "Emoji": "📊",
         "MenuName": "How to Populate a SQLite3 Database",
         "Link": "/CompSci/SetupProjects/basic-sqlite"
     },
     {
-        "id": 65,
+        "id": 66,
         "Emoji": "📈",
         "MenuName": "How to Use Excel with Python",
         "Link": "/CompSci/SetupProjects/excel"
     },
     {
-        "id": 66,
+        "id": 67,
         "Emoji": "🌈",
         "MenuName": "How to Add a Language to the Prism Library",
         "Link": "/CompSci/SetupProjects/prism"
     },
     {
-        "id": 67,
+        "id": 68,
         "Emoji": "🐍",
         "MenuName": "How to Setup an Executable Python Script",
         "Link": "/CompSci/SetupProjects/executable-python"
     },
     {
-        "id": 68,
+        "id": 69,
         "Emoji": "🖥️",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 69,
+        "id": 70,
         "Emoji": "🧘🏻",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 70,
+        "id": 71,
         "Emoji": "📲",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 71,
+        "id": 72,
         "Emoji": "❤️",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 72,
+        "id": 73,
         "Emoji": "⌨️",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 73,
+        "id": 74,
         "Emoji": "⚡️",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 74,
+        "id": 75,
         "Emoji": "😂",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 75,
+        "id": 76,
         "Emoji": "📸",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"
     },
     {
-        "id": 76,
+        "id": 77,
         "Emoji": "✉️",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"

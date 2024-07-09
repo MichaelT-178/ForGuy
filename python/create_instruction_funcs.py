@@ -70,7 +70,7 @@ emojis = {
 
 
 
-    "swift-firebase": "🍎",
+    "swift-firebase": "🐦",
 
     "swift-data": "🏎️",
 
