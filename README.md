@@ -98,7 +98,7 @@ def get_<REF_NAME>():
 7. Put your variable name in the "all_data" list 
 
 ```
-get<REF_NAME>,
+<REF_NAME>,
 ```
 
 8. Done
