@@ -33,7 +33,7 @@
         },
         {
             "id": 7,
-            "instruction": "Here are the CSC 455 instructions on how to setup a VPN. Note that this is a &download link&(/Practice.docx)."
+            "instruction": "Here are the CSC 455 instructions on how to setup a VPN. Note that this is a &download link&(/download/Practice.docx)."
         }
     ]
 }
