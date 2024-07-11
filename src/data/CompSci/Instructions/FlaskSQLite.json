@@ -108,7 +108,7 @@
         },
         {
             "id": 10,
-            "instruction": "Paste the following code in the \"app.py\" file in your \"flask_and_sqlite\" folder.",
+            "instruction": "Now open your \"flask_and_sqlite\" folder in VSCode. Then paste the following code into the \"app.py\" file.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -119,7 +119,7 @@
         },
         {
             "id": 11,
-            "instruction": "Paste the following code in the \"config.py\" file.",
+            "instruction": "Paste the following code into the \"config.py\" file.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -130,7 +130,7 @@
         },
         {
             "id": 12,
-            "instruction": "Paste the following code in the \"db.py\" file.",
+            "instruction": "Paste the following code into the \"db.py\" file.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -141,7 +141,7 @@
         },
         {
             "id": 13,
-            "instruction": "Paste the following code in \"models.py\" file.",
+            "instruction": "Paste the following code into \"models.py\" file.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -152,7 +152,7 @@
         },
         {
             "id": 14,
-            "instruction": "Paste the following code in the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be.",
+            "instruction": "Paste the following code into the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -220,7 +220,7 @@
         },
         {
             "id": 20,
-            "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands.",
+            "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands. Do NOT close this terminal.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -242,11 +242,23 @@
         },
         {
             "id": 22,
-            "instruction": "In your flask_and_sqlite repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input values in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
+            "instruction": "Open the link that was output from the \"npm run dev\" command in your browser. It might be the following link.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "DisplayLang": "Local Host Link",
+                "FormatCode": "http://localhost:5173/",
+                "CopyCode": "http://localhost:5173/"
+            }
         },
         {
             "id": 23,
-            "instruction": "If you want to use your terminal to interact with your rest api run, open a new terminal and run the following commands. Note your rest api should still be running in a different terminal for these to work.",
+            "instruction": "In your flask_and_sqlite repository there should now be a folder called \"instance\". In this folder you should see a file named \"mydatabase.db\". When you click on the db file you should see your \"user\" table. Click the refresh button to see your updates as you input values via the frontend. The refresh button should be above your \"Tables\" on the left hand-side. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
+        },
+        {
+            "id": 24,
+            "instruction": "If you want to use your terminal to interact with your rest api open a new terminal and run the following commands. Note your rest api should still be running in a different terminal in order for these to work.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -257,8 +269,8 @@
             }
         },
         {
-            "id": 24,
-            "instruction": "You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 24-25.",
+            "id": 25,
+            "instruction": "READ THIS CAREFULLY TO SEE IF YOU ACTUALLY NEED TO DO THESE STEPS. You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 24-25.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -269,7 +281,7 @@
             }
         },
         {
-            "id": 25,
+            "id": 26,
             "instruction": "In your \"app.py\" file paste the following code. Make sure the HTTP links are the same ones being used by your computer. Try this code out and see if it works. Make sure to rerun your backend and frontend code after you make changes.",
             "Code": {
                 "Name": "",
