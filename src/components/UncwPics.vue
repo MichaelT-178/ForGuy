@@ -32,25 +32,26 @@ import Pic26 from "../assets/UncwPics/DurhamSidewalkSunset.jpg";
 import Pic27 from "../assets/UncwPics/FireyClouds.jpg";
 import Pic28 from "../assets/UncwPics/RollingClouds.jpg";
 import Pic29 from "../assets/UncwPics/IBMOfficeView.jpg";
-import Pic30 from "../assets/UncwPics/TrainTracks.jpg";
-import Pic31 from "../assets/UncwPics/BlueLight.jpg";
-import Pic32 from "../assets/UncwPics/IBMMarch.jpg";
-import Pic33 from "../assets/UncwPics/NewHampshire.jpg";
-import Pic34 from "../assets/UncwPics/Dove.jpg";
-import Pic35 from "../assets/UncwPics/DurhamPond.jpg";
-import Pic36 from "../assets/UncwPics/ForestView.jpg";
-import Pic37 from "../assets/UncwPics/PinkHouse.jpg";
-import Pic38 from "../assets/UncwPics/DurhamEvening.jpg";
-import Pic39 from "../assets/UncwPics/PinkJulySunset.jpg";
+import Pic30 from "../assets/UncwPics/MagicScience.jpg";
+import Pic31 from "../assets/UncwPics/TrainTracks.jpg";
+import Pic32 from "../assets/UncwPics/BlueLight.jpg";
+import Pic33 from "../assets/UncwPics/IBMMarch.jpg";
+import Pic34 from "../assets/UncwPics/NewHampshire.jpg";
+import Pic35 from "../assets/UncwPics/Dove.jpg";
+import Pic36 from "../assets/UncwPics/DurhamPond.jpg";
+import Pic37 from "../assets/UncwPics/ForestView.jpg";
+import Pic38 from "../assets/UncwPics/PinkHouse.jpg";
+import Pic39 from "../assets/UncwPics/DurhamEvening.jpg";
+import Pic40 from "../assets/UncwPics/PinkJulySunset.jpg";
 import Vid2 from "/Rainbow.mp4";
 
 //Texas pics
-import Pic40 from "../assets/UncwPics/OfficeView.jpg";
-import Pic41 from "../assets/UncwPics/Texas.jpg";
-import Pic42 from "../assets/UncwPics/Lanterns.jpg";
-import Pic43 from "../assets/UncwPics/PlanoBuildings.jpg";
-import Pic44 from "../assets/UncwPics/PlanoPond.jpg";
-import Pic45 from "../assets/UncwPics/USAASign.jpg";
+import Pic41 from "../assets/UncwPics/OfficeView.jpg";
+import Pic42 from "../assets/UncwPics/Texas.jpg";
+import Pic43 from "../assets/UncwPics/Lanterns.jpg";
+import Pic44 from "../assets/UncwPics/PlanoBuildings.jpg";
+import Pic45 from "../assets/UncwPics/PlanoPond.jpg";
+import Pic46 from "../assets/UncwPics/USAASign.jpg";
 import Vid3 from "/PlanoBalcony.mp4";
 
 
@@ -89,27 +90,28 @@ export const NorthCarolinaPics = [
     { text: "Firey Clouds in Durham", image: Pic27 }, //FireyClouds.jpg
     { text: "Rolling Clouds in Late February", image: Pic28 }, //RollingClouds.jpg
     { text: "View from my IBM Office", image: Pic29 }, //IBMOfficeView.jpg
-    { text: "NCSU Train Tracks in mid-April", image: Pic30 }, //TrainTracks.jpg
-    { text: "Blue Light in Darkness", image: Pic31 }, //BlueLight.jpg
-    { text: "Spring in Durham", image: Pic32 }, //IBMMarch.jpg
-    { text: "Random 2016 New Hampshire pic for Good measure", image: Pic33 }, //NewHampshire.jpg
-    { text: "Visitor Outside My Window", image: Pic34 }, //Dove.jpg
-    { text: "Durham Pond in Spring", image: Pic35 }, //DurhamPond.jpg
-    { text: "Outside view from OG IBM office in Summer", image: Pic36 }, //ForestView.jpg
-    { text: "Pink House in Durham Neighborhood", image: Pic37 }, //PinkHouse.jpg
-    { text: "Warm summer evening in Durham", image: Pic38 }, //DurhamEvening.jpg
-    { text: "July 4th Sunset", image: Pic39 }, //PinkJulySunset.jpg
+    { text: "Science, it's like magic, but real", image: Pic30 }, //MagicScience.jpg
+    { text: "NCSU Train Tracks in mid-April", image: Pic31 }, //TrainTracks.jpg
+    { text: "Blue Light in Darkness", image: Pic32 }, //BlueLight.jpg
+    { text: "Spring in Durham", image: Pic33 }, //IBMMarch.jpg
+    { text: "Random 2016 New Hampshire pic for Good measure", image: Pic34 }, //NewHampshire.jpg
+    { text: "Visitor Outside My Window", image: Pic35 }, //Dove.jpg
+    { text: "Durham Pond in Spring", image: Pic36 }, //DurhamPond.jpg
+    { text: "Outside view from OG IBM office in Summer", image: Pic37 }, //ForestView.jpg
+    { text: "Pink House in Durham Neighborhood", image: Pic38 }, //PinkHouse.jpg
+    { text: "Warm summer evening in Durham", image: Pic39 }, //DurhamEvening.jpg
+    { text: "July 4th Sunset", image: Pic40 }, //PinkJulySunset.jpg
     { text: "Giant rainbow after July thunderstorm in Durham", video: Vid2 } //Rainbow.mp4
 ]
 
 
 export const TexasPics = [
-    { text: "View from my USAA office window", image: Pic40 }, //OfficeView.jpg
-    { text: "Apartment picture Taken from USAA balcony", image: Pic41 }, //Texas.jpg
-    { text: "Lantern Store in Plano, Texas", image: Pic42 }, //Lanterns.jpg
-    { text: "Cloudy day in Texas", image: Pic43 }, //PlanoBuildings.jpg
-    { text: "Picture of Pond in Texas", image: Pic44 }, //PlanoPond.jpg
-    { text: "USAA Sign in front of the building where I worked", image: Pic45 }, //USAASign.jpg
+    { text: "View from my USAA office window", image: Pic41 }, //OfficeView.jpg
+    { text: "Apartment picture Taken from USAA balcony", image: Pic42 }, //Texas.jpg
+    { text: "Lantern Store in Plano, Texas", image: Pic43 }, //Lanterns.jpg
+    { text: "Cloudy day in Texas", image: Pic44 }, //PlanoBuildings.jpg
+    { text: "Picture of Pond in Texas", image: Pic45 }, //PlanoPond.jpg
+    { text: "USAA Sign in front of the building where I worked", image: Pic46 }, //USAASign.jpg
     { text: "View from USAA balcony in Plano, Texas", video: Vid3 } //PlanoBalcony.mp4
 ]
 

@@ -22,7 +22,7 @@
                 },
                 {
                     "id": 2,
-                    "instruction": "First make sure you have the following programs installed. If the commands output a version, you're good.",
+                    "instruction": "First, make sure you have all the following programs installed by running the following commands. If the commands output a version, you're good.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -33,7 +33,7 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "Make you have Java 17 installed. You can download it [here](https://www.oracle.com/java/technologies/downloads/#jdk17-mac) if you don't already. Choose the right version for your OS and architecture. Run the following command to determine your architecture. Choose the DMG installer. Click on the download and then follow the prompts.",
+                    "instruction": "Make sure the \"java --version\" command outputs version 17-something. You can download it [here](https://www.oracle.com/java/technologies/downloads/#jdk17-mac) if you don't already installed. Make sure to choose the right version for your OS and architecture. Run the following command to determine your architecture. When you're back on the site, choose the DMG installer. Then click on the download button and then follow the prompts.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": 5,
-                    "instruction": "In your nano file paste the two following lines. ",
+                    "instruction": "In your nano file paste the two following lines. You shouldn't have to modify them.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -82,7 +82,7 @@
                 },
                 {
                     "id": 8,
-                    "instruction": "If you don't already have Visual Studio Code downloaded, go [here](https://code.visualstudio.com/download). Choose the correct version for your OS."
+                    "instruction": "If you don't already have Visual Studio Code downloaded, install it by going to this [link](https://code.visualstudio.com/download). Make sure to choose the correct version for your OS."
                 },
                 {
                     "id": 9,
@@ -97,7 +97,7 @@
                 },
                 {
                     "id": 10,
-                    "instruction": "If you don't have maven installed use the following command. Then check that it was installed properly using the --version command. NOTE: This may take a minute or two.",
+                    "instruction": "If you don't have maven installed, run the following command. Then check that it was installed properly using the \"mvn --version\" command. NOTE: This may take a minute or two.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -108,15 +108,15 @@
                 },
                 {
                     "id": 11,
-                    "instruction": "Most of the following steps come from this [video](https://youtu.be/L5QXRoTtPr4?si=yvs4scL-HG2y1R0Z&t=115). Seeing what's happening might be helpful."
+                    "instruction": "Most of the following steps come from this [video](https://youtu.be/L5QXRoTtPr4?si=yvs4scL-HG2y1R0Z&t=115). You might find visually seeing what's happening to be helpful."
                 },
                 {
                     "id": 12,
-                    "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.<br><br>Ext 1: [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)<br>Ext 2: [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)<br>Ext 3: [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)<br>Ext 4: [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)<br>Ext 5: [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)<br><br>"
+                    "instruction": "First install the necessary VSCode extensions using the following links. Press the green \"Install\" button, then when it takes you to VSCode press the blue \"Install\" button.<br><br>Ext 1: [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)<br>Ext 2: [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)<br>Ext 3: [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)<br>Ext 4: [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)<br>Ext 5: [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)<br><br>"
                 },
                 {
                     "id": 13,
-                    "instruction": "After you have those extensions installed, do the following with VSCode open.",
+                    "instruction": "After you've installed those extensions, do the following steps in VSCode.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -128,7 +128,7 @@
                 },
                 {
                     "id": 14,
-                    "instruction": "Under \"Start with a Spring Boot project\" press on the \"Create New Project\" button. A command pallette should open. If you want to close it use the \"esc\" key."
+                    "instruction": "Under \"Start with a Spring Boot project\" press on the blue \"Create New Project\" button. A command pallette should then open. If you need to close it later use the \"esc\" key."
                 },
                 {
                     "id": 15,
@@ -138,8 +138,8 @@
                         "Description": "",
                         "Language": "Command",
                         "DisplayLang": "Command Pallette Values",
-                        "FormatCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted",
-                        "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
+                        "FormatCode": "Spring Boot Version: 3.3.1 (Or First Option/Does NOT include \"Snapshot\")\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search separately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nPress \"Open\" in the VSCode pop-up\nSay \"Yes, I trust the authors\" if prompted",
+                        "CopyCode": "Spring Boot Version: 3.3.1 (Or First Option/Does NOT include \"Snapshot\")\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search separately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nPress \"Open\" in the VSCode pop-up\nSay \"Yes, I trust the authors\" if prompted"
                     }
                 }
             ]
@@ -148,7 +148,7 @@
             "Info": [
                 {
                     "title": "Create the REST API for this project",
-                    "desc": "Explains how to write the code for the rest API and then run it."
+                    "desc": "Explains how to write the code for the Rest API and then run it."
                 }
             ],
             "Instructions": [
@@ -165,18 +165,18 @@
                 },
                 {
                     "id": 2,
-                    "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient.",
+                    "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient and I've included the necessary code below.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java",
-                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
+                        "FormatCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java\n\ncd ~/spring-boot-h2",
+                        "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java\n\ncd ~/spring-boot-h2"
                     }
                 },
                 {
                     "id": 3,
-                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data into the \"dependencies\" section. You should probably paste the data around lines 19-35 between the \"dependencies\" xml tags. Put your cursor at the very beginning of the line, then paste the data to make it align with the other objects (it will work either way). @Relevant Meme@[{ 'name': 'ImageView', 'params': { 'Name': 'Pom.xml cli tool when? 👀', 'Description': 'Do you have any idea how lit it would be if you could actually do this', 'Pic': 'pom.jpg'} }].",
+                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data in between the &lt;dependencies&gt; tags. Paste the data at the end of the \"dependencies\" tag section, which should be around line 47. Make sure to paste it above the &lt;/dependencies&gt; tag. Put your cursor at the very beginning of the line, then paste the data to make it align with the other objects (it will still work if the alignment is off). @Relevant Meme@[{ 'name': 'ImageView', 'params': { 'Name': 'Pom.xml CLI tool when? 👀', 'Description': 'Do you have any idea how lit it would be if you could actually do this', 'Pic': 'pom.jpg'} }].",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -188,18 +188,18 @@
                 },
                 {
                     "id": 4,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> models and then open the \"User.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> models and then open the \"User.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Java",
-                        "FormatCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.Entity;\nimport jakarta.persistence.GeneratedValue;\nimport jakarta.persistence.GenerationType;\nimport jakarta.persistence.Id;\nimport jakarta.persistence.Table;\n\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\")\npublic class User {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    private String firstname;\n    private String lastname;\n}",
-                        "CopyCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.Entity;\nimport jakarta.persistence.GeneratedValue;\nimport jakarta.persistence.GenerationType;\nimport jakarta.persistence.Id;\nimport jakarta.persistence.Table;\n\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\")\npublic class User {\n\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\tprivate String firstname;\n\tprivate String lastname;\n}"
+                        "FormatCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.*;\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\", uniqueConstraints = {@UniqueConstraint(columnNames = \"firstname\")})\npublic class User {\n\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n\n    @Column(nullable = false, unique = true)\n    private String firstname;\n\n    @Column(nullable = false)\n    private String lastname;\n}",
+                        "CopyCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.*;\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\", uniqueConstraints = {@UniqueConstraint(columnNames = \"firstname\")})\npublic class User {\n\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\n\t@Column(nullable = false, unique = true)\n\tprivate String firstname;\n\n\t@Column(nullable = false)\n\tprivate String lastname;\n}"
                     }
                 },
                 {
                     "id": 5,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> repositories and then open the \"UserRepository.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> repositories and then open the \"UserRepository.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -210,29 +210,29 @@
                 },
                 {
                     "id": 6,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> services and then open the \"UserService.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> services and then open the \"UserService.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Java",
-                        "FormatCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n    @Autowired\n    private UserRepository userRepository;\n\n    public User saveUser(User user) {\n\treturn userRepository.save(user);\n    }\n\n    public Optional<User> getUserByFirstname(String firstname) {\n\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n    }\n}",
-                        "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional<User> getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
+                        "FormatCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n    @Autowired\n    private UserRepository userRepository;\n\n    public User saveUser(User user) {\n\tif (userRepository.findByFirstname(user.getFirstname()) != null) {\n\t    throw new IllegalArgumentException(\"User with the name \" + user.getFirstname() + \" already exists\");\n\t}\n\n\treturn userRepository.save(user);\n    }\n\n    public Optional<User> getUserByFirstname(String firstname) {\n\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n    }\n}",
+                        "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\tif (userRepository.findByFirstname(user.getFirstname()) != null) {\n\t\t\tthrow new IllegalArgumentException(\"User with the name \" + user.getFirstname() + \" already exists\");\n\t\t}\n\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional<User> getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
                     }
                 },
                 {
                     "id": 7,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> controllers and then open the \"UserController.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> controllers and then open the \"UserController.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Java",
-                        "FormatCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @PostMapping\n    public ResponseEntity<User> createUser(@RequestBody User user) {\n\tUser createdUser = userService.saveUser(user);\n\treturn ResponseEntity.status(201).body(createdUser);\n    }\n\n    @GetMapping(\"/{firstname}\")\n    public ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\treturn userService.getUserByFirstname(firstname)\n\t    .map(user -> ResponseEntity.ok().body(user))\n\t    .orElseGet(() -> ResponseEntity.status(404).body(null));\n    }\n}",
-                        "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity<User> createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.saveUser(user);\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -> ResponseEntity.status(404).body(null));\n\t}\n}"
+                        "FormatCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n    @Autowired\n    private UserService userService;\n\n    @PostMapping\n    public ResponseEntity<?> createUser(@RequestBody User user) {\n\ttry {\n\t    User createdUser = userService.saveUser(user);\n\t    return ResponseEntity.status(201).body(createdUser);\n\t} catch (IllegalArgumentException e) {\n\t    return ResponseEntity.status(400).body(e.getMessage());\n\t}\n    }\n\n    @GetMapping(\"/{firstname}\")\n    public ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\treturn userService.getUserByFirstname(firstname)\n\t    .map(user -> ResponseEntity.ok().body(user))\n\t    .orElseGet(() -> ResponseEntity.status(404).body(null));\n    }\n}",
+                        "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity<?> createUser(@RequestBody User user) {\n\t\ttry {\n\t\t\tUser createdUser = userService.saveUser(user);\n\t\t\treturn ResponseEntity.status(201).body(createdUser);\n\t\t} catch (IllegalArgumentException e) {\n\t\t\treturn ResponseEntity.status(400).body(e.getMessage());\n\t\t}\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity<User> getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -> ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -> ResponseEntity.status(404).body(null));\n\t}\n}"
                     }
                 },
                 {
                     "id": 8,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"WebConfig.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> config and then open the \"WebConfig.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -243,7 +243,7 @@
                 },
                 {
                     "id": 9,
-                    "instruction": "Go to src -> main -> java -> com -> springbackend -> demo -> config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code.",
+                    "instruction": "Go to src -> main -> java/com/springbackend/demo -> config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -254,19 +254,19 @@
                 },
                 {
                     "id": 10,
-                    "instruction": "Now press \"command + p\". Search for and press on \"application.properties\". Delete its contents and paste the following code into the file. Change the username and password to be whatever you want.",
+                    "instruction": "Now press \"command + p\". Search for and press on \"application.properties\". Delete its contents and paste the following code into the file. Change the spring.datasource username and password to be whatever you want. If you can't find the file it can be found in src -> main -> resources.<br><br>Replace \"YOUR_USERNAME_HERE\" with the username you want to use.<br>Replace \"YOUR_PASSWORD_HERE\" with the password you want to use.<br><br>I'd recommend keeping them simple.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "customproperties",
                         "DisplayLang": "Properties",
-                        "FormatCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=sa\nspring.datasource.password=password\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n",
-                        "CopyCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=sa\nspring.datasource.password=password\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n"
+                        "FormatCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=YOUR_USERNAME_HERE\nspring.datasource.password=YOUR_PASSWORD_HERE\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n",
+                        "CopyCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=YOUR_USERNAME_HERE\nspring.datasource.password=YOUR_PASSWORD_HERE\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n"
                     }
                 },
                 {
                     "id": 11,
-                    "instruction": "This step is completely optional and I do NOT recommend doing it this way. But if you don't want your data to persist between sessions change the \"spring.datasource.url\" line in the \"application.properties\" file to be the following value. This will clear your table everytime you rerun your api. If you do this remember to use \"jdbc:h2:mem:testdb\" as your JDBC URL when you login to your h2-console later on.",
+                    "instruction": "This step is completely optional and I do NOT recommend doing it this way. But if you don't want your data to persist between sessions change the \"spring.datasource.url\" line in the \"application.properties\" file to be the following value. This will clear your table everytime you rerun your api. If you choose to do this, remember to use \"jdbc:h2:mem:testdb\" as your JDBC URL when you login to your h2-console later on.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -278,7 +278,7 @@
                 },
                 {
                     "id": 12,
-                    "instruction": "In your terminal run the following commands. You could also just change into \"spring-boot-h2\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now.",
+                    "instruction": "In your terminal run the following commands. You could also change into \"spring-boot-h2\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -289,18 +289,19 @@
                 },
                 {
                     "id": 13,
-                    "instruction": "Now open your \"start.sh\" file and paste in the following code.",
+                    "instruction": "Now open your \"start.sh\" file in the top-most directory of your \"spring-boot-h2\" folder and paste in the following code.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "sh",
+                        "DisplayLang": "Shell Script",
                         "FormatCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\nstop_spring_boot() {\n  echo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n  kill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n",
                         "CopyCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\nstop_spring_boot() {\n\techo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n\tkill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n"
                     }
                 },
                 {
                     "id": 14,
-                    "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data.",
+                    "instruction": "Now open the \"package.json\" file in the top-most directory. Paste in the following data. Change the value of the \"author\" attribute to be your name.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -322,7 +323,7 @@
                 },
                 {
                     "id": 16,
-                    "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will be automatically created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console.",
+                    "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will automatically be created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note: you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -356,7 +357,7 @@
                 },
                 {
                     "id": 19,
-                    "instruction": "Keep the link open in your browser, but go back to your folder in VSCode. Open your \"application.properties\" file and copy and record the values of \"spring.datasource.username\" and \"spring.datasource.password\". Then go back to the h2-console in your broswer and enter the following values. Then press connect.",
+                    "instruction": "Keep the link open in your browser, but go back to your folder in VSCode. Go to src -> main -> resources and open your \"application.properties\" file. Copy and record the values of \"spring.datasource.username\" and \"spring.datasource.password\". Then go back to the h2-console in your browser and enter the following values into the fields. Then press the \"connect\" button.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -380,7 +381,7 @@
                 },
                 {
                     "id": 21,
-                    "instruction": "Now go back to your h2-console and run the following SQL query in the input box. Then press the \"Run\" button above it. There should be a user named \"Jimmy Page\" with id 1 in the table.",
+                    "instruction": "Now go back to your h2-console and run the following SQL query in the input box titled \"SQL statement:\". Then press the \"Run\" button above it. There should now be a user named \"Jimmy Page\" with an id of 1 in the table.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -392,7 +393,7 @@
                 },
                 {
                     "id": 22,
-                    "instruction": "If it's working, you can close all of your terminals, VSCode windows, the h2-console, etc."
+                    "instruction": "If it's working, you can close all of your terminals, h2-console, VSCode windows, etc."
                 }
             ]
         },
@@ -428,7 +429,7 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues.",
+                    "instruction": "Now open your \"react-spring-frontend\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Note that having a baseURL with an incorrect localhost link can lead to CORS issues. Keep this in mind for the future if you're not using port 8080 for your Rest API. If you've followed all the steps so far you shouldn't have to worry about CORS issues. The port was set to 8080 in the Shell Script.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -444,8 +445,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "CSS",
-                        "FormatCode": ".input-field {\n    border: 1px solid black;\n    padding: 5px;\n    margin: 5px;\n}\n\n.submit-btn {\n    background-color: blue;\n    padding: 5px;\n    color: white;\n}\n\n.submit-btn:hover {\n    background-color: darkblue;\n}",
-                        "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}"
+                        "FormatCode": ".input-field {\n    border: 1px solid black;\n    padding: 5px;\n    margin: 5px;\n}\n\n.submit-btn {\n    background-color: blue;\n    padding: 5px;\n    color: white;\n}\n\n.submit-btn:hover {\n    background-color: darkblue;\n}\n\n.table-container {\n    display: flex;\n    justify-content: center;\n    margin-top: 20px;\n}\n\ntable {\n    border-collapse: collapse;\n    width: 50%;\n}\n\nth, td {\n    border: 1px solid black;\n    padding: 8px;\n    text-align: left;\n}\n\nth {\n    background-color: #f2f2f2;\n}\n",
+                        "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}\n\n.table-container {\n\tdisplay: flex;\n\tjustify-content: center;\n\tmargin-top: 20px;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 50%;\n}\n\nth, td {\n\tborder: 1px solid black;\n\tpadding: 8px;\n\ttext-align: left;\n}\n\nth {\n\tbackground-color: #f2f2f2;\n}\n"
                     }
                 },
                 {
@@ -456,24 +457,24 @@
                         "Description": "",
                         "Language": "Javascript",
                         "DisplayLang": "React",
-                        "FormatCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\talert('Please Fill In All Fields');\n\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\tfirstname: firstName,\n\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t<input\n\t  id=\"fName\"\n\t  className=\"input-field\"\n\t  value={firstName}\n\t  onChange={(e) => setFirstName(e.target.value)}\n\t  placeholder=\"Enter First Name\"\n\t/>\n\t<input\n\t  id=\"lName\"\n\t  className=\"input-field\"\n\t  value={lastName}\n\t  onChange={(e) => setLastName(e.target.value)}\n\t  placeholder=\"Enter Last Name\"\n\t/>\n\t<button\n\t  id=\"createUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={createUser}\n\t>\n\t Create User\n\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t<input\n\t  id=\"searchName\"\n\t  className=\"input-field\"\n\t  value={searchFirstName}\n\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t  placeholder=\"Search by First Name\"\n\t/>\n\t<button\n\t  id=\"searchUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={searchUser}\n\t>\n\t Search\n\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t<table>\n\t  <thead>\n\t    <tr>\n\t      <th>First Name</th>\n\t      <th>Last Name</th>\n\t    </tr>\n\t  </thead>\n\t  <tbody>\n\t    {users.map((user) => (\n\t      <tr key={user.firstname}>\n\t\t<td>{user.firstname}</td>\n\t\t<td>{user.lastname}</td>\n\t      </tr>\n\t    ))}\n\t  </tbody>\n\t</table>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;",
-                        "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) => setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/>\n\t\t\t\t<input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) => setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/>\n\t\t\t\t<button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t>\n\t\t\t\t Create User\n\t\t\t\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/>\n\t\t\t\t\n\t\t\t\t<button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t>\n\t\t\t\t Search\n\t\t\t\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t\t\t\t<table>\n\t\t\t\t  <thead>\n\t\t\t\t    <tr>\n\t\t\t\t      <th>First Name</th>\n\t\t\t\t      <th>Last Name</th>\n\t\t\t\t    </tr>\n\t\t\t\t  </thead>\n\t\t\t\t  <tbody>\n\t\t\t\t    {users.map((user) => (\n\t\t\t\t      <tr key={user.firstname}>\n\t\t\t\t\t\t\t\t<td>{user.firstname}</td>\n\t\t\t\t\t\t\t\t<td>{user.lastname}</td>\n\t\t\t\t      </tr>\n\t\t\t\t    ))}\n\t\t\t\t  </tbody>\n\t\t\t\t</table>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;"
+                        "FormatCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\talert('Please Fill In All Fields');\n\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\tfirstname: firstName,\n\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t<input\n\t  id=\"fName\"\n\t  className=\"input-field\"\n\t  value={firstName}\n\t  onChange={(e) => setFirstName(e.target.value)}\n\t  placeholder=\"Enter First Name\"\n\t/>\n\t<input\n\t  id=\"lName\"\n\t  className=\"input-field\"\n\t  value={lastName}\n\t  onChange={(e) => setLastName(e.target.value)}\n\t  placeholder=\"Enter Last Name\"\n\t/>\n\t<button\n\t  id=\"createUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={createUser}\n\t>\n\t Create User\n\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t<input\n\t  id=\"searchName\"\n\t  className=\"input-field\"\n\t  value={searchFirstName}\n\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t  placeholder=\"Search by First Name\"\n\t/>\n\t<button\n\t  id=\"searchUserBtn\"\n\t  className=\"submit-btn\"\n\t  onClick={searchUser}\n\t>\n\t Search\n\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t<div className=\"table-container\">\n\t  <table>\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      {users.map((user) => (\n\t        <tr key={user.firstname}>\n\t\t  <td>{user.firstname}</td>\n\t\t  <td>{user.lastname}</td>\n\t        </tr>\n\t      ))}\n\t    </tbody>\n\t  </table>\n\t</div>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;",
+                        "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () => {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () => {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () => {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    <div>\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) => setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/>\n\t\t\t\t<input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) => setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/>\n\t\t\t\t<button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t>\n\t\t\t\t Create User\n\t\t\t\t</button>\n      </div>\n\n      {/* Search section */}\n      <div>\n\t\t\t\t<input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) => setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/>\n\t\t\t\t\n\t\t\t\t<button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t>\n\t\t\t\t Search\n\t\t\t\t</button>\n      </div>\n\n      {/* Display results in a table */}\n      {users.length > 0 && (\n\t\t\t\t<div className=\"table-container\">\n\t\t\t\t  <table>\n\t\t\t\t    <thead>\n\t\t\t\t      <tr>\n\t\t\t\t        <th>First Name</th>\n\t\t\t\t        <th>Last Name</th>\n\t\t\t\t      </tr>\n\t\t\t\t    </thead>\n\t\t\t\t    <tbody>\n\t\t\t\t      {users.map((user) => (\n\t\t\t\t        <tr key={user.firstname}>\n\t\t\t\t\t\t\t\t  <td>{user.firstname}</td>\n\t\t\t\t\t\t\t\t  <td>{user.lastname}</td>\n\t\t\t\t        </tr>\n\t\t\t\t      ))}\n\t\t\t\t    </tbody>\n\t\t\t\t  </table>\n\t\t\t\t</div>\n      )}\n    </div>\n  );\n};\n\nexport default HomePage;"
                     }
                 },
                 {
                     "id": 6,
-                    "instruction": "Now open two terminals. In the first terminal run the following command.",
+                    "instruction": "Now open two new terminals. In the first terminal run the following commands to start your Rest API. Do not close this terminal.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "npm run start",
-                        "CopyCode": "npm run start"
+                        "FormatCode": "cd spring-boot-h2\nnpm run start",
+                        "CopyCode": "cd spring-boot-h2\nnpm run start"
                     }
                 },
                 {
                     "id": 7,
-                    "instruction": "Open the h2-console link in your browser. Sign in using the credentials from your application.properties file.",
+                    "instruction": "Open the h2-console link in your browser. Sign in using the credentials from your \"application.properties\" file. This file can found in your \"spring-boot-h2\" folder in src -> main -> resources. The credentials are the values of the \"spring.datasource.username\" and \"spring.datasource.password\" attributes. Press the \"Connect\" button when you're done.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -490,13 +491,25 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "npm run dev",
-                        "CopyCode": "npm run dev"
+                        "FormatCode": "cd react-spring-frontend\nnpm run dev",
+                        "CopyCode": "cd react-spring-frontend\nnpm run dev"
                     }
                 },
                 {
                     "id": 9,
-                    "instruction": "Now open your React app in a browser. Practice adding users to your database. Run the following SQL query in your h2-console to see your users.",
+                    "instruction": "Now open the link that was output from the \"npm run dev\" command in your broswer. It might be the following link.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Link",
+                        "FormatCode": "http://localhost:5173/",
+                        "CopyCode": "http://localhost:5173/"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "Practice adding users to your database using your React frontend. Run the following SQL query in your h2-console to see the users you're adding.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -507,7 +520,7 @@
                     }
                 },
                 {
-                    "id": 10,
+                    "id": 11,
                     "instruction": "You've finished all the steps and should now have a functioning React app with a Spring Boot backend!"
                 }
             ]
