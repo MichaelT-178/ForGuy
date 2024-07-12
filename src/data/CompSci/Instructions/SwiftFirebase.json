@@ -1,23 +1,60 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "How to create an iOS app with Swift and Firebase",
-            "desc": "This explains how to create an iOS written in SwiftUI with a Firebase backend.",
-            "ref": "swift-firebase"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "How to create an iOS app with Swift and Firebase",
+                    "desc": "This explains how to create an iOS written in SwiftUI with a Firebase backend.",
+                    "ref": "swift-firebase"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "swiftcustom",
+                        "DisplayLang": "Swift",
+                        "FormatCode": "hello",
+                        "CopyCode": "hello"
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "swiftcustom",
-                "DisplayLang": "Swift",
-                "FormatCode": "hello",
-                "CopyCode": "hello"
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
