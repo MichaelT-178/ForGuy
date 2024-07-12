@@ -884,20 +884,28 @@ def get_reddit_bot_aws():
         Link = "/CompSci/SetupProjects/reddit-bot-aws"
         
         return { "Title": Title, "Link": Link, "Results": Results }  
-         
+
+
 def get_swift_firebase():
-	with open("../src/data/CompSci/Instructions/SwiftFirebase.json", "r") as file:
-		content = json.load(file)
+    with open("../src/data/CompSci/Instructions/SwiftFirebase.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "How to create an iOS app with Swift and Firebase 🐦"
-		Link = "/CompSci/SetupProjects/swift-firebase"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
+
+        Title = "How to create an iOS app with Swift and Firebase 🐦"
+        Link = "/CompSci/SetupProjects/swift-firebase"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+
 
 def get_swift_data():
 	with open("../src/data/CompSci/Instructions/SwiftData.json", "r") as file:
