@@ -533,6 +533,16 @@
             "Image": "Brooksource.jpg"
         },
         {
+            "Name": "Mikey Barker",
+            "Company": "Eliassen Group",
+            "Role": "IT Recruiter",
+            "Location": "Charlotte, North Carolina",
+            "Email": "704-666-3645",
+            "LinkedIn": "https://www.linkedin.com/in/mikey-barker-8738b2245/",
+            "Details": "This guy called me regarding a SWE role in Charlotte.",
+            "Image": "Eliassen.jpg"
+        },
+        {
             "Name": "Tushar Maity",
             "Company": "Ascendion",
             "Role": "Talent Development Expert",
