@@ -43,15 +43,21 @@ import Pic37 from "../assets/UncwPics/ForestView.jpg";
 import Pic38 from "../assets/UncwPics/PinkHouse.jpg";
 import Pic39 from "../assets/UncwPics/DurhamEvening.jpg";
 import Pic40 from "../assets/UncwPics/PinkJulySunset.jpg";
+import Pic41 from "../assets/UncwPics/DurhamFountain.jpg";
+import Pic42 from "../assets/UncwPics/DukeChapel.jpg";
+import Pic43 from "../assets/UncwPics/FlentropOrgan.jpg";
+import Pic44 from "../assets/UncwPics/DukeStainedGlass.jpg";
+import Pic45 from "../assets/UncwPics/DukeHP.jpg";
+import Pic46 from "../assets/UncwPics/DukeGarden.jpg";
 import Vid2 from "/Rainbow.mp4";
 
 //Texas pics
-import Pic41 from "../assets/UncwPics/OfficeView.jpg";
-import Pic42 from "../assets/UncwPics/Texas.jpg";
-import Pic43 from "../assets/UncwPics/Lanterns.jpg";
-import Pic44 from "../assets/UncwPics/PlanoBuildings.jpg";
-import Pic45 from "../assets/UncwPics/PlanoPond.jpg";
-import Pic46 from "../assets/UncwPics/USAASign.jpg";
+import Pic47 from "../assets/UncwPics/OfficeView.jpg";
+import Pic48 from "../assets/UncwPics/Texas.jpg";
+import Pic49 from "../assets/UncwPics/Lanterns.jpg";
+import Pic50 from "../assets/UncwPics/PlanoBuildings.jpg";
+import Pic51 from "../assets/UncwPics/PlanoPond.jpg";
+import Pic52 from "../assets/UncwPics/USAASign.jpg";
 import Vid3 from "/PlanoBalcony.mp4";
 
 
@@ -101,17 +107,23 @@ export const NorthCarolinaPics = [
     { text: "Pink House in Durham Neighborhood", image: Pic38 }, //PinkHouse.jpg
     { text: "Warm summer evening in Durham", image: Pic39 }, //DurhamEvening.jpg
     { text: "July 4th Sunset", image: Pic40 }, //PinkJulySunset.jpg
+    { text: "Fountain in Durham", image: Pic41 }, //DurhamFountain.jpg
+    { text: "Duke University's Beautiful Chapel", image: Pic42 }, //DukeChapel.jpg
+    { text: "Flentrop Pipe Organ in the Chapel", image: Pic43 }, //FlentropOrgan.jpg
+    { text: "Stained Glass windows in the Chapel", image: Pic44 }, //DukeStainedGlass.jpg
+    { text: "Corridor in Duke's Chapel. Look's straight out of Harry Potter.", image: Pic45 }, //DukeHP.jpg
+    { text: "Sarah P. Duke Gardens", image: Pic46 }, //DukeGarden.jpg
     { text: "Giant rainbow after July thunderstorm in Durham", video: Vid2 } //Rainbow.mp4
 ]
 
 
 export const TexasPics = [
-    { text: "View from my USAA office window", image: Pic41 }, //OfficeView.jpg
-    { text: "Apartment picture Taken from USAA balcony", image: Pic42 }, //Texas.jpg
-    { text: "Lantern Store in Plano, Texas", image: Pic43 }, //Lanterns.jpg
-    { text: "Cloudy day in Texas", image: Pic44 }, //PlanoBuildings.jpg
-    { text: "Picture of Pond in Texas", image: Pic45 }, //PlanoPond.jpg
-    { text: "USAA Sign in front of the building where I worked", image: Pic46 }, //USAASign.jpg
+    { text: "View from my USAA office window", image: Pic47 }, //OfficeView.jpg
+    { text: "Apartment picture Taken from USAA balcony", image: Pic48 }, //Texas.jpg
+    { text: "Lantern Store in Plano, Texas", image: Pic49 }, //Lanterns.jpg
+    { text: "Cloudy day in Texas", image: Pic50 }, //PlanoBuildings.jpg
+    { text: "Picture of Pond in Texas", image: Pic51 }, //PlanoPond.jpg
+    { text: "USAA Sign in front of the building where I worked", image: Pic52 }, //USAASign.jpg
     { text: "View from USAA balcony in Plano, Texas", video: Vid3 } //PlanoBalcony.mp4
 ]
 
