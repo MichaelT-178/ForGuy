@@ -57,7 +57,7 @@ import Meme55 from "../assets/pom.jpg";
 import Meme56 from "../assets/memes/JoinMeme.jpg";
 import Meme57 from "../assets/memes/Gates.jpg";
 import Meme58 from "../assets/memes/TheRona.jpg";
-
+import Meme59 from "../assets/memes/FindInternship.jpg";
 
 export const memeObjects = [
     { 
@@ -349,6 +349,11 @@ export const memeObjects = [
         text: "Random 2020 throwback meme for good measure",
         transcription: "I'm pretty sure i pretty sure I had coronavirus in December 2019 cause like i had a real bad cold but they said wasn't the flu so idk",
         image: Meme58
+    }, //TheRona.jpg
+    {
+        text: "Job Searching in 2024 be like",
+        transcription: "I want to do an internship do you have experience? I want to gain experience in the internship anyway here's your rejection",
+        image: Meme59
     } //TheRona.jpg
 ]
 
