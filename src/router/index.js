@@ -54,6 +54,10 @@ import ImageView from '../Views/ImageView.vue';
 //Search Results view for when return in pressed when the SearchBar is open
 import SearchResults from '../Views/SearchResults.vue';
 
+//other/inaccessible
+import RickRoll from '../Views/other/inaccessible/RickRoll.vue';
+
+
 
 //The routes 
 const routes = [
@@ -194,6 +198,14 @@ const routes = [
     {
         path: '/Other/UncwPics',
         component: UncwPics
+    },
+    {
+        path: '/ContactMe',
+        component: ContactMe
+    },
+    {
+        path: '/rr',
+        component: RickRoll
     },
     {
         path: '/ContactMe',
