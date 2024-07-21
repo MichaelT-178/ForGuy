@@ -76,6 +76,14 @@
             "Pay": ""
         },
         {
+            "Name": "Ally",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "UNCW TAC Student Worker Technician",
             "Location": "Wilmington, North Carolina (UNCW Campus)",
             "Handshake": "https://uncw.joinhandshake.com/stu/employers/287948",
@@ -537,14 +545,6 @@
             "Name": "EMS LINQ, Inc.",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/linq-inc/jobs/",
-            "Contact": "",
-            "Tips": "",
-            "Pay": ""
-        },
-        {
-            "Name": "Ally",
-            "Location": "Charlotte, North Carolina",
-            "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
