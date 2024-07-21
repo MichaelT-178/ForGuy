@@ -56,7 +56,7 @@ import SearchResults from '../Views/SearchResults.vue';
 
 //other/inaccessible
 import RickRoll from '../Views/other/inaccessible/RickRoll.vue';
-
+import FormatCode from '../Views/other/inaccessible/FormatCode.vue';
 
 
 //The routes 
@@ -204,8 +204,12 @@ const routes = [
         component: ContactMe
     },
     {
-        path: '/rr',
+        path: '/WhatIsThis',
         component: RickRoll
+    },
+    {
+        path: '/FormatCode',
+        component: FormatCode
     },
     {
         path: '/ContactMe',
