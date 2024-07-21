@@ -82,10 +82,21 @@
                 },
                 {
                     "id": 8,
-                    "instruction": "If you don't already have Visual Studio Code downloaded, install it by going to this [link](https://code.visualstudio.com/download). Make sure to choose the correct version for your OS."
+                    "instruction": "After you have Java 17 installed, delete the archive that contains the installation files.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "rm -rf Downloads/jdk-17_macos-aarch64_bin.tar.gz",
+                        "CopyCode": "rm -rf Downloads/jdk-17_macos-aarch64_bin.tar.gz"
+                    }
                 },
                 {
                     "id": 9,
+                    "instruction": "If you don't already have Visual Studio Code downloaded, install it by going to this [link](https://code.visualstudio.com/download). Make sure to choose the correct version for your OS."
+                },
+                {
+                    "id": 10,
                     "instruction": "If you don't already have homebrew installed, run the following commands.",
                     "Code": {
                         "Name": "",
@@ -96,7 +107,7 @@
                     }
                 },
                 {
-                    "id": 10,
+                    "id": 11,
                     "instruction": "If you don't have maven installed, run the following command. Then check that it was installed properly using the \"mvn --version\" command. NOTE: This may take a minute or two.",
                     "Code": {
                         "Name": "",
@@ -107,15 +118,15 @@
                     }
                 },
                 {
-                    "id": 11,
+                    "id": 12,
                     "instruction": "Most of the following steps come from this [video](https://youtu.be/L5QXRoTtPr4?si=yvs4scL-HG2y1R0Z&t=115). You might find visually seeing what's happening to be helpful."
                 },
                 {
-                    "id": 12,
+                    "id": 13,
                     "instruction": "First install the necessary VSCode extensions using the following links. Press the green \"Install\" button, then when it takes you to VSCode press the blue \"Install\" button.<br><br>Ext 1: [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)<br>Ext 2: [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)<br>Ext 3: [Spring Boot Dashboard](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-boot-dashboard)<br>Ext 4: [Spring Boot Tools](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-spring-boot)<br>Ext 5: [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)<br><br>"
                 },
                 {
-                    "id": 13,
+                    "id": 14,
                     "instruction": "After you've installed those extensions, do the following steps in VSCode.",
                     "Code": {
                         "Name": "",
@@ -127,11 +138,11 @@
                     }
                 },
                 {
-                    "id": 14,
+                    "id": 15,
                     "instruction": "Under \"Start with a Spring Boot project\" press on the blue \"Create New Project\" button. A command pallette should then open. If you need to close it later use the \"esc\" key."
                 },
                 {
-                    "id": 15,
+                    "id": 16,
                     "instruction": "In the new command pallette, search and press on the following options, in the following order.",
                     "Code": {
                         "Name": "",
