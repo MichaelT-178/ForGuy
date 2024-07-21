@@ -134,3 +134,15 @@ npm install vite --save-dev
 ```
 npm run dev
 ```
+
+
+
+**Other links**
+
+```
+http://localhost:5173/WhatIsThis
+```
+
+```
+http://localhost:5173/FormatCode
+```
