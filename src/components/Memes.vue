@@ -58,6 +58,7 @@ import Meme56 from "../assets/memes/JoinMeme.jpg";
 import Meme57 from "../assets/memes/Gates.jpg";
 import Meme58 from "../assets/memes/TheRona.jpg";
 import Meme59 from "../assets/memes/FindInternship.jpg";
+import Meme60 from "../assets/memes/ChatGpt.jpg";
 
 export const memeObjects = [
     { 
@@ -354,7 +355,12 @@ export const memeObjects = [
         text: "Job Searching in 2024 be like",
         transcription: "I want to do an internship do you have experience? I want to gain experience in the internship anyway here's your rejection",
         image: Meme59
-    } //TheRona.jpg
+    }, //TheRona.jpg
+    {
+        text: "Relatable",
+        transcription: "Fourth graders using CHAT-GPT to do their \"List 5 uses of water\" homework",
+        image: Meme60
+    }, //ChatGpt.jpg
 ]
 
 </script>
