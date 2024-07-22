@@ -27,6 +27,7 @@ import DeveloperMode from './DeveloperMode.json';
 import ExecutablePython from './ExecutablePython.json';
 import SwiftData from './SwiftData.json';
 import Postman from './Postman.json';
+import FlashDrive from './FlashDrive.json';
 import PyServer from './PythonServer.json';
 import NodeServer from './NodeServer.json';
 import EmailJS from './EmailJS.json';
@@ -73,6 +74,7 @@ export const AllSets = [
     ExecutablePython,
     SwiftData,
     Postman,
+    FlashDrive,
     PyServer,
     NodeServer,
     EmailJS,

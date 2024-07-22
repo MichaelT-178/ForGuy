@@ -1,22 +1,48 @@
 {
-    "Info": [
+    "MultiSet": [
         {
-            "title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
-            "desc": "",
-            "ref": "flask-PostgreSQL"
-        }
-    ],
-    "Instructions": [
+            "Info": [
+                {
+                    "title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                    "desc": "Explains the process of setting up a Vue frontend with a Flask Rest API backend.",
+                    "ref": "flask-PostgreSQL"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
         {
-            "id": 1,
-            "instruction": "First do the following",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "ls",
-                "CopyCode": "ls"
-            }
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
         }
     ]
 }
