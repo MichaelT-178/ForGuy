@@ -51,7 +51,7 @@ const codeInfo = ref({
 
 const codeInfoText = ref('');
 
-const firstOptions = ['Python', 'Java', 'Swift', 'HTML', 'Javascript', 'CSS'];
+const firstOptions = ['Python', 'Java', 'Swift', 'HTML', 'Javascript', 'JSON', 'CSS'];
 const secondOptions = ['FormatCode', 'CopyCode'];
 
 const isSubmitDisabled = computed(() => {
@@ -100,17 +100,29 @@ const swiftSelected = (code, format) => {
 };
 
 const getFormattedString = (str) => {
-    return str.replace(/\\n/g, '\\\\n')
-              .replace(/(?<!\\)\n/g, '\\n')
-              .replace(/"/g, '\\"')
-              .replace(/\t/g, '    ')
+  if (str.includes("\\'")) {
+    alert("Code cannot contain an escaped single quote -> \\'. Modify your code.");
+    throw new Error("STOP PROGRAM: Single quote found.");
+  }
+  
+  return str.replace(/\\n/g, '\\\\n')
+            .replace(/(?<!\\)\n/g, '\\n')
+            .replace(/\\\"/g, '\\\\\\"')
+            .replace(/(?<!\\)"/g, '\\"')
+            .replace(/\t/g, '    ')
 };
 
 const getCopyString = (str) => {
-    return str.replace(/\\n/g, '\\\\n')
-              .replace(/(?<!\\)\n/g, '\\n')
-              .replace(/"/g, '\\"')
-              .replace(/\t/g, '\\t');
+  if (str.includes("\\'")) {
+    alert("Code cannot contain an escaped single quote -> \\'. Modify your code.");
+    throw new Error("STOP PROGRAM: Single quote found.");
+  }
+  
+  return str.replace(/\\n/g, '\\\\n')
+            .replace(/(?<!\\)\n/g, '\\n')
+            .replace(/\\\"/g, '\\\\\\"')
+            .replace(/(?<!\\)"/g, '\\"')
+            .replace(/\t/g, '\\t');
 };
 
 const copyToClipboard = (text) => {
