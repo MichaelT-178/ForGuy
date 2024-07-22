@@ -573,19 +573,27 @@ def get_deploy_sqlite():
         
         return { "Title": Title, "Link": Link, "Results": Results }
 
+
 def get_flask_postgresql():
-	with open("../src/data/CompSci/Instructions/FlaskPost.json", "r") as file:
-		content = json.load(file)
+     with open("../src/data/CompSci/Instructions/FlaskPost.json", "r") as file:
+        content = json.load(file)
+		
+        multi_set = content["MultiSet"]
 
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
+        Results = []
 
-		Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🧰"
-		Link = "/CompSci/SetupProjects/flask-PostgreSQL"
-		Results = info + instructions
+        for obj in multi_set:
+            info = obj["Info"]
+            instructions = obj["Instructions"]
+            instructions = modify_list_with_code_separation(instructions, "Code")
 
-		return { "Title": Title, "Link": Link, "Results": Results }
+            Results += info + instructions
+
+        Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🧰"
+        Link = "/CompSci/SetupProjects/flask-PostgreSQL"
+        
+        return { "Title": Title, "Link": Link, "Results": Results }
+
 
 def get_deploy_postgresql():
     with open("../src/data/CompSci/Instructions/DeployPost.json", "r") as file:
@@ -960,7 +968,22 @@ def get_postman():
         Link = "/CompSci/SetupProjects/postman"
         
         return { "Title": Title, "Link": Link, "Results": Results }
-    
+
+def get_flash_drive():
+	with open("../src/data/CompSci/Instructions/FlashDrive.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Interact with a Flash Drive Using Python 💾",
+		Link = "/CompSci/SetupProjects/flash-drive"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
 def get_python_server():
 	with open("../src/data/CompSci/Instructions/PythonServer.json", "r") as file:
 		content = json.load(file)
@@ -1530,6 +1553,7 @@ swiftdata = get_swift_data()
 
 
 postman = get_postman()
+flashdrive = get_flash_drive()
 pyserver = get_python_server()
 nodeserver = get_node_server()
 
@@ -1633,6 +1657,7 @@ all_data = [
     developermode,
 
     postman,
+    flashdrive,
     pyserver,
     nodeserver,
     emailjs,
