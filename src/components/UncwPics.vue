@@ -50,7 +50,7 @@ import Pic43 from "../assets/UncwPics/FlentropOrgan.jpg";
 import Pic44 from "../assets/UncwPics/DukeStainedGlass.jpg";
 import Pic45 from "../assets/UncwPics/DukeHP.jpg";
 import Pic46 from "../assets/UncwPics/DukeGarden.jpg";
-import Pic47 from "../assets/UncwPics/jpg";
+import Pic47 from "../assets/UncwPics/BaseballField.jpg";
 import Vid3 from "/Rainbow.mp4";
 
 //Texas pics
