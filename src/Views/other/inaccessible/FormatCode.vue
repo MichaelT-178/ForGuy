@@ -72,32 +72,18 @@ watch(formatSelection, (newVal) => {
 
 const handleSubmit = () => {
     if (!isSubmitDisabled.value) {
-
-        if (langSelection.value === 'Swift') {
-            swiftSelected(inputText.value, formatSelection.value);
-        } else {
-            languagesSelected(inputText.value, formatSelection.value);
-        }
+      languagesSelected(inputText.value, formatSelection.value);
     }
 };
 
 const languagesSelected = (code, format) => {
-    if (format == 'FormatCode') {
-        copyToClipboard(getFormattedString(code));
-    } else {
-        copyToClipboard(getCopyString(code));
-    }
+  if (format == 'FormatCode') {
+    copyToClipboard(getFormattedString(code));
+  } else {
+    copyToClipboard(getCopyString(code));
+  }
 };
 
-const swiftSelected = (code, format) => {
-    console.log("Swift");
-    if (format == 'FormatCode') {
-        // Format code for Swift
-    } else {
-        // Copy code for Swift
-    }
-    copyToClipboard();
-};
 
 const getFormattedString = (str) => {
   if (str.includes("\\'")) {
@@ -111,6 +97,7 @@ const getFormattedString = (str) => {
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '    ')
 };
+
 
 const getCopyString = (str) => {
   if (str.includes("\\'")) {
