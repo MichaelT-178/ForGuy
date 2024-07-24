@@ -194,6 +194,16 @@
             "Image": "Pearson.jpg"
         },
         {
+            "Name": "Adam Twitchell",
+            "Company": "GreenLyte Group",
+            "Role": "Connector",
+            "Location": "San Francisco, California (Remote)",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/adam-twitchell-62a496128/",
+            "Details": "This connector DM'd me on Linkedin about a remote startup position in SF, California. He said he works under an NDA so he can't say the name of the company, but that it is a paid full-time SWE position. \"GreenLyte Group\" is the name of the IT Recruiting firm, not the actual company. He said the position involved building backend Rest APIs.",
+            "Image": "GreenLyte.jpg"
+        },
+        {
             "Name": "Brandon Bernal",
             "Company": "Garmin",
             "Role": "Technical Recruiter",
