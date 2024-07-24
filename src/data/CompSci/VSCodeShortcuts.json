@@ -243,13 +243,8 @@
             },
             {
                 "id": 5,
-                "Shortcut": "shift + control + down arrow",
-                "Action": "Multiline editing in Xcode"
-            },
-            {
-                "id": 6,
-                "Shortcut": "",
-                "Action": ""
+                "Shortcut": "command + d",
+                "Action": "Copy the line you're on below it."
             }
         ]
     },
