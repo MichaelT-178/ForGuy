@@ -835,6 +835,11 @@
             "Command": "git reset",
             "Description": "Unstage all changes (undo git add .)",
             "Example": "git reset"
+        },
+        {
+            "Command": "git restore .",
+            "Description": "Reverts all unstaged changes in the working directory.",
+            "Example": "git restore ."
         }
     ],
     "CreateFork": [
