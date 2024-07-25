@@ -4,7 +4,9 @@
         <p>{{ text.desc }}</p>
         
         <div class="meme-container" v-for="(meme, index) in memeObjects" :key="index">
-            <div class="meme-text">{{ index + 1 }}. {{ meme.text }}</div>
+            <div class="meme-text">{{ index + 1 }}. 
+                <span v-html="createHyperLink(meme.text)"></span>
+            </div>
             <div class="image-container">
                 <img :src="meme.image" alt="Meme Picture">
                 <span class="hidden-text">{{ meme.transcription }}</span>
@@ -18,6 +20,7 @@
 import { ref } from 'vue';
 import { memeObjects } from "../../components/Memes.vue"
 import AllData from "../../data/Other/Memes.json";
+import { createHyperLink } from "../../utils/Markdown.vue";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
