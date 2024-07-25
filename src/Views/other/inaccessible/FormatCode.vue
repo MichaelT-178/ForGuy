@@ -98,6 +98,7 @@ const getFormattedString = (str) => {
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '    ')
+            .replace(/\\\(/g, '\\\\(');
 };
 
 
@@ -111,12 +112,15 @@ const getCopyString = (str) => {
             .replace(/(?<!\\)\n/g, '\\n')
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
-            .replace(/\t/g, '\\t');
+            .replace(/\t/g, '\\t')
+            .replace(/\\\(/g, '\\\\(');
 };
 
 const getBothStrings = (str) => {
-  return `"FormatCode": "${getFormattedString(str)}",\n"CopyCode": "${getCopyString(str)}"`
-}
+    const formattedString = getFormattedString(str);
+    const copyString = getCopyString(str);
+    return `"FormatCode": "${formattedString}",\n"CopyCode": "${copyString}"`;
+};
 
 const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text).then(() => {
