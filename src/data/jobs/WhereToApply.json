@@ -446,6 +446,14 @@
             "Pay": ""
         },
         {
+            "Name": "Prometheus Group",
+            "Location": "Raleigh, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/prometheusgroup/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Lockheed Martin",
             "Location": "Greensboro, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/lockheed-martin/jobs/",
@@ -506,6 +514,22 @@
             "Location": "St. Louis, Missouri",
             "LinkedIn": "https://www.linkedin.com/company/veteransunited/jobs/",
             "Contact": "Sara Gibson (Sara.Gibson@veteransunited.com)",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Deloitte",
+            "Location": "Raleigh, North Carolina (RTP) or Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/deloitte/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Riverbed Technology",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/riverbed-technology/jobs/",
+            "Contact": "",
             "Tips": "",
             "Pay": ""
         },
@@ -1257,6 +1281,14 @@
             "Name": "Apperture Solutions",
             "Location": "Durham, North Carolina (RTP)",
             "LinkedIn": "https://www.linkedin.com/company/apperture-solutions/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Kyndryl",
+            "Location": "Durham, North Carolina (RTP)",
+            "LinkedIn": "https://www.linkedin.com/company/kyndryl/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""

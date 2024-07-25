@@ -52,7 +52,7 @@ const codeInfo = ref({
 const codeInfoText = ref('');
 
 const firstOptions = ['Python', 'Java', 'Swift', 'HTML', 'Javascript', 'JSON', 'CSS'];
-const secondOptions = ['FormatCode', 'CopyCode'];
+const secondOptions = ['FormatCode', 'CopyCode', 'Both'];
 
 const isSubmitDisabled = computed(() => {
     return !inputText.value || !langSelection.value || !formatSelection.value;
@@ -79,8 +79,10 @@ const handleSubmit = () => {
 const languagesSelected = (code, format) => {
   if (format == 'FormatCode') {
     copyToClipboard(getFormattedString(code));
-  } else {
+  } else if (format == 'CopyCode') {
     copyToClipboard(getCopyString(code));
+  } else {
+    copyToClipboard(getBothStrings(code));
   }
 };
 
@@ -111,6 +113,10 @@ const getCopyString = (str) => {
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '\\t');
 };
+
+const getBothStrings = (str) => {
+  return `"FormatCode": "${getFormattedString(str)}",\n"CopyCode": "${getCopyString(str)}`
+}
 
 const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text).then(() => {
