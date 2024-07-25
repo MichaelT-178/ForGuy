@@ -115,7 +115,7 @@ const getCopyString = (str) => {
 };
 
 const getBothStrings = (str) => {
-  return `"FormatCode": "${getFormattedString(str)}",\n"CopyCode": "${getCopyString(str)}`
+  return `"FormatCode": "${getFormattedString(str)}",\n"CopyCode": "${getCopyString(str)}"`
 }
 
 const copyToClipboard = (text) => {
