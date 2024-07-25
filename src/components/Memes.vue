@@ -59,6 +59,10 @@ import Meme57 from "../assets/memes/Gates.jpg";
 import Meme58 from "../assets/memes/TheRona.jpg";
 import Meme59 from "../assets/memes/FindInternship.jpg";
 import Meme60 from "../assets/memes/ChatGpt.jpg";
+import Meme61 from "../assets/memes/MichaelJordan.jpg";
+import Meme62 from "../assets/memes/JackieChan.jpg";
+import Meme63 from "../assets/memes/DonaldDuck.jpg";
+import Meme64 from "../assets/memes/Sweating.jpg";
 
 export const memeObjects = [
     { 
