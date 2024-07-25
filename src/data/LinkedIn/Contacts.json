@@ -543,6 +543,16 @@
             "Image": "Brooksource.jpg"
         },
         {
+            "Name": "Lauren Hamilton",
+            "Company": "Brooksource",
+            "Role": "Senior Technical Recruiter",
+            "Location": "Charlotte, North Carolina",
+            "Email": "",
+            "LinkedIn": "https://www.linkedin.com/in/lauren-hamilton-2022/",
+            "Details": "This women DM'd me on Linkedin about a remote Application Developer position at a \"Leading Healthcare Enterprise\". She also expressed interest in my GoLang and React experience.",
+            "Image": "Brooksource.jpg"
+        },
+        {
             "Name": "Mikey Barker",
             "Company": "Eliassen Group",
             "Role": "IT Recruiter",
