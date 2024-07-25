@@ -199,7 +199,7 @@ export const memeObjects = [
     }, //SomeFamousServers.jpg
     { 
         text: "Average computer science graduate reaction",
-        transcription: "Watching the homeless man pull of a knife Watching the homeless man pull out your same degree",
+        transcription: "Watching the homeless man pull of a knife Watching the homeless man pull out your same degree Ronaldo",
         image: Meme27 
     }, //RonaldoMeme.jpg
     { 
