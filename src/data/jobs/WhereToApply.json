@@ -158,6 +158,30 @@
             "Pay": ""
         },
         {
+            "Name": "TIAA",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/tiaa/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "AvidXchange, Inc.",
+            "Location": "Charlotte, North Carolina",
+            "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
+            "Name": "Regions Bank",
+            "Location": "Charlotte, North Carolina and Atlanta, Georgia",
+            "LinkedIn": "https://www.linkedin.com/company/regions-financial-corporation/jobs/",
+            "Contact": "",
+            "Tips": "",
+            "Pay": ""
+        },
+        {
             "Name": "Corning Incorporated",
             "Location": "Wilmington, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/corning-incorporated/jobs/",
@@ -985,14 +1009,6 @@
             "Name": "Diligent Corporation",
             "Location": "Charlotte, North Carolina",
             "LinkedIn": "https://www.linkedin.com/company/diligent-board-member-services/jobs/",
-            "Contact": "",
-            "Tips": "",
-            "Pay": ""
-        },
-        {
-            "Name": "AvidXchange, Inc.",
-            "Location": "Charlotte, North Carolina",
-            "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
             "Contact": "",
             "Tips": "",
             "Pay": ""
