@@ -245,6 +245,16 @@
                 "id": 5,
                 "Shortcut": "command + d",
                 "Action": "Copy the line you're on below it."
+            },
+            {
+                "id": 6,
+                "Shortcut": "option + command + left arrow",
+                "Action": "Hover your cursor next to the opening bracket of a code block, then do the above to collapsed it."
+            },
+            {
+                "id": 7,
+                "Shortcut": "option + command + right arrow",
+                "Action": "Hover your cursor next to the opening bracket of a collapsed code block, then do the above to expand it."
             }
         ]
     },
