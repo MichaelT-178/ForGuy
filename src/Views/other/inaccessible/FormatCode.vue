@@ -92,13 +92,13 @@ const getFormattedString = (str) => {
     alert("Code cannot contain an escaped single quote -> \\'. Modify your code.");
     throw new Error("STOP PROGRAM: Single quote found.");
   }
-  
+
   return str.replace(/\\n/g, '\\\\n')
             .replace(/(?<!\\)\n/g, '\\n')
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '    ')
-            .replace(/\\\(/g, '\\\\(');
+            .replace(/\\\./g, '\\\\.');
 };
 
 
@@ -107,14 +107,15 @@ const getCopyString = (str) => {
     alert("Code cannot contain an escaped single quote -> \\'. Modify your code.");
     throw new Error("STOP PROGRAM: Single quote found.");
   }
-  
+
   return str.replace(/\\n/g, '\\\\n')
             .replace(/(?<!\\)\n/g, '\\n')
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '\\t')
-            .replace(/\\\(/g, '\\\\(');
+            .replace(/\\\./g, '\\\\.');
 };
+
 
 const getBothStrings = (str) => {
     const formattedString = getFormattedString(str);
