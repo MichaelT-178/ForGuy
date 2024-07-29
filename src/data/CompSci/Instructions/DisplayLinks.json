@@ -87,7 +87,7 @@
                 },
                 {
                     "id": 4,
-                    "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                    "name": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere",
                     "ref": "deploy-sqlite",
                     "ScrollTo": "DeploySqliteLink"
                 },
@@ -111,7 +111,7 @@
                 },
                 {
                     "id": 8,
-                    "name": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
+                    "name": "Deploy the React, Spring Boot and H2 app to Heroku",
                     "ref": "deploy-spring",
                     "ScrollTo": "DeploySpringLink"
                 },
