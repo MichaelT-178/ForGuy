@@ -817,16 +817,6 @@
             "Example": "git stash"
         },
         {
-            "Command": "git stash list",
-            "Description": "List all stashed changes",
-            "Example": "git stash list"
-        },
-        {
-            "Command": "git stash apply",
-            "Description": "Apply all stashed changes",
-            "Example": "git stash apply"
-        },
-        {
             "Command": "git diff",
             "Description": "Show differences between commits, branches, files, etc.",
             "Example": "git diff"
@@ -840,7 +830,43 @@
             "Command": "git restore .",
             "Description": "Reverts all unstaged changes in the working directory.",
             "Example": "git restore ."
+        },
+        {
+            "Command": "git stash list",
+            "Description": "List all stashed changes",
+            "Example": "git stash list"
+        },
+        {
+            "Command": "git stash list --date=local",
+            "Description": "List all stashes with dates",
+            "Example": "git stash list --date=local"
+        },
+        {
+            "Command": "git stash apply",
+            "Description": "Apply all stashed changes",
+            "Example": "git stash apply"
+        },
+        {
+            "Command": "git stash apply stash@{index}",
+            "Description": "Apply a stash by index ",
+            "Example": "git stash apply stash@{1}"
+        },
+        {
+            "Command": "git stash show -p stash@{index}",
+            "Description": "Show changes from a certain stash",
+            "Example": "git stash show -p stash@{1}"
+        },
+        {
+            "Command": "git stash drop stash@{index}",
+            "Description": "Delete a stash by index",
+            "Example": "git stash drop stash@{1}"
+        },
+        {
+            "Command": "git reset --hard HEAD",
+            "Description": "Undo stash apply if you didn't make any other changes.",
+            "Example": "git reset --hard HEAD"
         }
+
     ],
     "CreateFork": [
         {
