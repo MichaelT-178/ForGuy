@@ -211,8 +211,8 @@
     },
     {
         "id": 36,
-        "Emoji": "🚀",
-        "MenuName": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+        "Emoji": "🐍",
+        "MenuName": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere",
         "Link": "/CompSci/SetupProjects/deploy-sqlite"
     },
     {
@@ -247,8 +247,8 @@
     },
     {
         "id": 42,
-        "Emoji": "🚀",
-        "MenuName": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
+        "Emoji": "🦸🏻‍♂️",
+        "MenuName": "Deploy the React, Spring Boot and H2 app to Heroku",
         "Link": "/CompSci/SetupProjects/deploy-spring"
     },
     {
