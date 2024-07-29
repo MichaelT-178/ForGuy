@@ -568,7 +568,7 @@ def get_deploy_sqlite():
 
             Results += info + instructions
 
-        Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀"
+        Title = "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere 🐍"
         Link = "/CompSci/SetupProjects/deploy-sqlite"
         
         return { "Title": Title, "Link": Link, "Results": Results }
@@ -638,9 +638,6 @@ def get_react_spring():
 
 
 
-
-
-
 def get_deploy_spring():
     with open("../src/data/CompSci/Instructions/DeploySpring.json", "r") as file:
         content = json.load(file)
@@ -656,7 +653,7 @@ def get_deploy_spring():
 
             Results += info + instructions
         
-        Title = "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀"
+        Title = "Deploy the React, Spring Boot and H2 app to Heroku 🦸🏻‍♂️"
         Link = "/CompSci/SetupProjects/deploy-spring"
         
         return { "Title": Title, "Link": Link, "Results": Results }
