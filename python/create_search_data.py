@@ -554,7 +554,7 @@ def get_flask_sqlite3():
       
 
 def get_deploy_sqlite():
-    with open("../src/data/CompSci/Instructions/DeployApp.json", "r") as file:
+    with open("../src/data/CompSci/Instructions/DeploySqlite.json", "r") as file:
         content = json.load(file)
 		
         multi_set = content["MultiSet"]
