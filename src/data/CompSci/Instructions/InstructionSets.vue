@@ -12,7 +12,7 @@ import SQLite3 from './SQLite3.json';
 import SetupAWS from './SetupAWS.json';
 import SetupDocker from './docker.json'
 import FlaskSQLite from './FlaskSQLite.json';
-import DeploySQLite from './DeployApp.json';
+import DeploySQLite from './DeploySqlite.json';
 import FlaskPost from './FlaskPost.json';
 import DeployPost from './DeployPost.json';
 import SpringApp from './SpringApp.json';
