@@ -17,7 +17,7 @@
             },
             {
                 "Header": "Download or View Source Code",
-                "Body": "You can view the source code in this GitHub Repository. This web application is written in Vue.js and is currently being hosted on GitHub pages. In case something happens to this website, you can also download the source code by clicking here."
+                "Body": "You can view the source code in this GitHub Repository. This web application is written in Vue.js and is currently being hosted on GitHub pages. In case something happens to this website, you can also download the source code by clicking &here&(/download/Practice.docx)."
             }
         ]
     },
@@ -99,6 +99,22 @@
                 "Pay": ""
             },
             {
+                "Name": "Ally",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Truist",
+                "Location": "Charlotte, North Carolina and Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/truistfinancialcorporation/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "UNCW TAC Student Worker Technician",
                 "Location": "Wilmington, North Carolina (UNCW Campus)",
                 "Handshake": "https://uncw.joinhandshake.com/stu/employers/287948",
@@ -162,6 +178,30 @@
                 "LinkedIn": "https://www.linkedin.com/company/bank-of-america/jobs/",
                 "Contact": "bofajobas@bofa.com",
                 "Tips": "I think the name of the SWE internship is \"Global Technology Analyst\" or \"Technology Analyst\". You can send your resume, job title and requisition to the email above.",
+                "Pay": ""
+            },
+            {
+                "Name": "TIAA",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/tiaa/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "AvidXchange, Inc.",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Regions Bank",
+                "Location": "Charlotte, North Carolina and Atlanta, Georgia",
+                "LinkedIn": "https://www.linkedin.com/company/regions-financial-corporation/jobs/",
+                "Contact": "",
+                "Tips": "",
                 "Pay": ""
             },
             {
@@ -256,6 +296,14 @@
                 "Name": "TriTech Software Systems",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/tritech-software-systems/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Wells Fargo",
+                "Location": "Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/wellsfargo/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -405,6 +453,14 @@
                 "Pay": ""
             },
             {
+                "Name": "JPMorgan Chase & Co.",
+                "Location": "New York City, New York and Charlotte, North Carolina, etc.",
+                "LinkedIn": "https://www.linkedin.com/company/jpmorganchase/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Liquidnet",
                 "Location": "New York City, New York",
                 "LinkedIn": "https://www.linkedin.com/company/liquidnet/jobs/",
@@ -434,6 +490,14 @@
                 "LinkedIn": "https://www.linkedin.com/company/netapp/jobs/",
                 "Contact": "",
                 "Tips": "The title of the job was \"AI intern\".",
+                "Pay": ""
+            },
+            {
+                "Name": "Prometheus Group",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/prometheusgroup/jobs/",
+                "Contact": "",
+                "Tips": "",
                 "Pay": ""
             },
             {
@@ -501,6 +565,22 @@
                 "Pay": ""
             },
             {
+                "Name": "Deloitte",
+                "Location": "Raleigh, North Carolina (RTP) or Charlotte, North Carolina",
+                "LinkedIn": "https://www.linkedin.com/company/deloitte/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Riverbed Technology",
+                "Location": "Durham, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/riverbed-technology/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
                 "Name": "Elevation Church",
                 "Location": "Charlotte, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/elevation-church/jobs/",
@@ -560,14 +640,6 @@
                 "Name": "EMS LINQ, Inc.",
                 "Location": "Wilmington, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/linq-inc/jobs/",
-                "Contact": "",
-                "Tips": "",
-                "Pay": ""
-            },
-            {
-                "Name": "Ally",
-                "Location": "Charlotte, North Carolina",
-                "LinkedIn": "https://www.linkedin.com/company/ally/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -773,14 +845,6 @@
                 "Pay": ""
             },
             {
-                "Name": "Young Scientist Academy",
-                "Location": "Wilmington, North Carolina",
-                "LinkedIn": "https://www.linkedin.com/company/young-scientist-academy/jobs/",
-                "Contact": "",
-                "Tips": "",
-                "Pay": ""
-            },
-            {
                 "Name": "PCI Energy Solutions",
                 "Location": "Raleigh, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/pci-energy-solutions/jobs/",
@@ -960,14 +1024,6 @@
                 "Name": "Diligent Corporation",
                 "Location": "Charlotte, North Carolina",
                 "LinkedIn": "https://www.linkedin.com/company/diligent-board-member-services/jobs/",
-                "Contact": "",
-                "Tips": "",
-                "Pay": ""
-            },
-            {
-                "Name": "AvidXchange, Inc.",
-                "Location": "Charlotte, North Carolina",
-                "LinkedIn": "https://www.linkedin.com/company/avidxchange-inc-/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -1256,6 +1312,14 @@
                 "Name": "Apperture Solutions",
                 "Location": "Durham, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/company/apperture-solutions/jobs/",
+                "Contact": "",
+                "Tips": "",
+                "Pay": ""
+            },
+            {
+                "Name": "Kyndryl",
+                "Location": "Durham, North Carolina (RTP)",
+                "LinkedIn": "https://www.linkedin.com/company/kyndryl/jobs/",
                 "Contact": "",
                 "Tips": "",
                 "Pay": ""
@@ -2962,7 +3026,7 @@
                 "Name": "Iesha James",
                 "Company": "Cisco",
                 "Role": "Talent Advisor",
-                "Location": "Cary, North Carolina",
+                "Location": "Cary, North Carolina (RTP)",
                 "Email": "iejames@cisco.com",
                 "LinkedIn": "https://www.linkedin.com/in/iesha-james-8a1883285/",
                 "Details": "This woman contacted me about interviewing for a full-time SWE position in RTP.",
@@ -2982,11 +3046,41 @@
                 "Name": "Natalie Abraham",
                 "Company": "Fidelity Investments",
                 "Role": "Senior Technical Recruiter",
-                "Location": "Durham, North Carolina",
+                "Location": "Durham, North Carolina (RTP)",
                 "Email": "nabraham@peopleserveinc.com",
                 "LinkedIn": "https://www.linkedin.com/in/natalie-abraham-777b9a35/",
                 "Details": "This women works at a recruiting agency called \"PeopleSERVE, Inc.\" but contacted me about a SWE job at Fidelity Investments on linkedin in RTP. Her phone number is 857-355-0413.",
                 "Image": "Fidelity.jpg"
+            },
+            {
+                "Name": "Nathiraa E.",
+                "Company": "Infosys",
+                "Role": "Associate - Talent Acquisition",
+                "Location": "Raleigh, North Carolina (RTP)",
+                "Email": "nathiraa.2124013@infosys.com",
+                "LinkedIn": "https://www.linkedin.com/in/nathiraa-e-a52347298/",
+                "Details": "This women messaged me on LinkedIn, she was recruiting in Raleigh, North Carolina and Richardson, Texas. Her phone number is 469-672-3321.",
+                "Image": "Infosys.jpg"
+            },
+            {
+                "Name": "Jasmine Gomes",
+                "Company": "Lowe's Companies, Inc.",
+                "Role": "Recruiter",
+                "Location": "Charlotte/Mooresville, North Carolina (RTP)",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/jasmine-gomes-00398021a/",
+                "Details": "This women messaged me on LinkedIn about Software Engineering roles in Charlotte and Mooresville. Note that it's MoorEsville, not MorrIsville which is in RTP.",
+                "Image": "Lowes.jpg"
+            },
+            {
+                "Name": "Lauren F.",
+                "Company": "Lowe's Companies, Inc.",
+                "Role": "Recruiter",
+                "Location": "Charlotte/Mooresville, North Carolina (RTP)",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/lauren-f-9017a32a/",
+                "Details": "Jasmine Gomes told me she would send my resume to this lady. You can DM her directly on LinkedIn without connecting with her.",
+                "Image": "Lowes.jpg"
             },
             {
                 "Name": "Alex Rosso",
@@ -3059,6 +3153,16 @@
                 "Image": "UCPS.jpg"
             },
             {
+                "Name": "Pirelli Pandac",
+                "Company": "Gilero",
+                "Role": "Recruiting Team Lead",
+                "Location": "Durham, North Carolina (RTP)",
+                "Email": "ppandac@tripleco.com",
+                "LinkedIn": "https://www.linkedin.com/in/pirelli-pandac-4a69a219b/",
+                "Details": "This guy contacted me on LinkedIn about a Devops Engineer position at Gilero in Durham, North Carolina.",
+                "Image": "Gilero.jpg"
+            },
+            {
                 "Company": "UNC Wilmington",
                 "Role": "Tac Hiring",
                 "Location": "Wilmington, North Carolina",
@@ -3070,17 +3174,27 @@
                 "Name": "Clarisse Cortez",
                 "Company": "Pearson",
                 "Role": "Recruitment and Onboarding Administrator",
-                "Location": "Durham, North Carolina",
+                "Location": "Durham, North Carolina (RTP)",
                 "Email": "clarisse.cortez@pearson.com",
                 "LinkedIn": "https://www.linkedin.com/in/clarisse-cortez-6712161b7/",
                 "Details": "This was the recruiter that contacted me about my Pearson SWE internship interview.",
                 "Image": "Pearson.jpg"
             },
             {
+                "Name": "Adam Twitchell",
+                "Company": "GreenLyte Group",
+                "Role": "Connector",
+                "Location": "San Francisco, California (Remote)",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/adam-twitchell-62a496128/",
+                "Details": "This connector DM'd me on Linkedin about a remote startup position in SF, California. He said he works under an NDA so he can't say the name of the company, but that it is a paid full-time SWE position. \"GreenLyte Group\" is the name of the IT Recruiting firm, not the actual company. He said the position involved building backend Rest APIs.",
+                "Image": "GreenLyte.jpg"
+            },
+            {
                 "Name": "Brandon Bernal",
                 "Company": "Garmin",
                 "Role": "Technical Recruiter",
-                "Location": "Cary, North Carolina",
+                "Location": "Cary, North Carolina (RTP)",
                 "Email": "Brandon.Bernal@garmin.com",
                 "LinkedIn": "https://www.linkedin.com/in/brandon-bernal-291882234/",
                 "Details": "The UNCW computer science department sent an email about this guy recruiting for SWE positions in Cary, NC.",
@@ -3200,7 +3314,7 @@
                 "Name": "Multiple People",
                 "Company": "IBM",
                 "Role": "Various Roles",
-                "Location": "Durham, North Carolina",
+                "Location": "Durham, North Carolina (RTP)",
                 "Email": "",
                 "LinkedIn": "HMU if interested",
                 "Details": "I know various connections at IBM, hmu if interested.",
@@ -3240,7 +3354,7 @@
                 "Name": "Kevin Kanhai",
                 "Company": "Edmunds GovTech / Motion Recruitment",
                 "Role": "Senior Manager, Talent Services",
-                "Location": "Raleigh, North Carolina",
+                "Location": "Raleigh, North Carolina (RTP)",
                 "LinkedIn": "https://www.linkedin.com/in/kevin-kanhai/",
                 "Details": "This guy contacted me on LinkedIn about a SWE opportunity.",
                 "Image": "Edmunds.jpg"
@@ -3289,7 +3403,7 @@
                 "Name": "Ravi Chauhan",
                 "Company": "State of Minnesota",
                 "Role": "Sr Technical Recruiter",
-                "Location": "Durham, North Carolina",
+                "Location": "Durham, North Carolina (RTP)",
                 "Email": "sraj@sgfcontractors.com",
                 "LinkedIn": "https://www.linkedin.com/in/ravi-chauhan-62bb67188/",
                 "Details": "This recruiter contacted me on LinkedIn about this position, which is supposedly in Durham, NC. His number is 408-762-6686.",
@@ -3379,7 +3493,7 @@
                 "Name": "Patrick Groetzinger",
                 "Company": "Randstad Digital Americas",
                 "Role": "Account Manager Perm",
-                "Location": "Raleigh, North Carolina",
+                "Location": "Raleigh, North Carolina (RTP)",
                 "Email": "patrick.groetzinger@randstadusa.com",
                 "LinkedIn": "https://www.linkedin.com/in/pg-randstadusa/",
                 "Details": "This guy messaged me on LinkedIn about a full-time Applications Engineer position in Raleigh, NC.",
@@ -3389,7 +3503,7 @@
                 "Name": "Sydney Underwood",
                 "Company": "R.E. Mason",
                 "Role": "Corporate Recruiter",
-                "Location": "Durham, North Carolina",
+                "Location": "Durham, North Carolina (RTP)",
                 "Email": "sydney.underwood@remasonco.com",
                 "LinkedIn": "https://www.linkedin.com/in/sydneyunderwood44/",
                 "Details": "This women briefly contacted me about a SWE job at R.E. Mason in RTP.",
@@ -3414,6 +3528,26 @@
                 "LinkedIn": "https://www.linkedin.com/in/ryan-hinterleiter-9a5b31195/",
                 "Details": "I'm aware the email is a phone number. This guy contacted me via LinkedIn/phone about a contract SWE job at Ally Financial, but it seemed like it would start at Brooksource. I unfortunately never got his email.",
                 "Image": "Brooksource.jpg"
+            },
+            {
+                "Name": "Lauren Hamilton",
+                "Company": "Brooksource",
+                "Role": "Senior Technical Recruiter",
+                "Location": "Charlotte, North Carolina",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/lauren-hamilton-2022/",
+                "Details": "This women DM'd me on Linkedin about a remote Application Developer position at a \"Leading Healthcare Enterprise\". She also expressed interest in my GoLang and React experience.",
+                "Image": "Brooksource.jpg"
+            },
+            {
+                "Name": "Mikey Barker",
+                "Company": "Eliassen Group",
+                "Role": "IT Recruiter",
+                "Location": "Charlotte, North Carolina",
+                "Email": "704-666-3645",
+                "LinkedIn": "https://www.linkedin.com/in/mikey-barker-8738b2245/",
+                "Details": "This guy called me regarding a SWE role in Charlotte.",
+                "Image": "Eliassen.jpg"
             },
             {
                 "Name": "Tushar Maity",
@@ -3466,6 +3600,16 @@
                 "Image": "Motion.jpg"
             },
             {
+                "Name": "Jill McGovern",
+                "Company": "Vanguard",
+                "Role": "Talent Acquisition Consultant",
+                "Location": "Charlotte, North Carolina/Multiple Locations",
+                "Email": "",
+                "LinkedIn": "https://www.linkedin.com/in/jill-mcgovern-2866544/",
+                "Details": "This woman made a post on LinkedIn saying that she'd start recruiting for full-time positions on August 1st.",
+                "Image": "Vanguard.jpg"
+            },
+            {
                 "Name": "Michael Quigley",
                 "Company": "Red Ventures",
                 "Role": "Engineering Manager",
@@ -3508,7 +3652,7 @@
             {
                 "Name": "",
                 "Company": "Ramona Optics",
-                "Role": "Durham, North Carolina",
+                "Role": "Durham, North Carolina (RTP)",
                 "Location": "",
                 "Email": "",
                 "LinkedIn": "https://www.ramonaoptics.com/contact/",
@@ -4765,7 +4909,7 @@
             },
             {
                 "title": "CSC 450 Workflow",
-                "desc": "This was the standard git workflow when I was in CSC 450 with Dr. Layman. You can download the CSC 450 pdf this information comes from here."
+                "desc": "This was the standard git workflow when I was in CSC 450 with Dr. Layman. You can download the CSC 450 pdf this information comes from &here&(/download/git_workflow.pdf)."
             },
             {
                 "title": "Amotions Workflow",
@@ -5449,16 +5593,6 @@
                 "Example": "git stash"
             },
             {
-                "Command": "git stash list",
-                "Description": "List all stashed changes",
-                "Example": "git stash list"
-            },
-            {
-                "Command": "git stash apply",
-                "Description": "Apply all stashed changes",
-                "Example": "git stash apply"
-            },
-            {
                 "Command": "git diff",
                 "Description": "Show differences between commits, branches, files, etc.",
                 "Example": "git diff"
@@ -5467,6 +5601,46 @@
                 "Command": "git reset",
                 "Description": "Unstage all changes (undo git add .)",
                 "Example": "git reset"
+            },
+            {
+                "Command": "git restore .",
+                "Description": "Reverts all unstaged changes in the working directory.",
+                "Example": "git restore ."
+            },
+            {
+                "Command": "git stash list",
+                "Description": "List all stashed changes",
+                "Example": "git stash list"
+            },
+            {
+                "Command": "git stash list --date=local",
+                "Description": "List all stashes with dates",
+                "Example": "git stash list --date=local"
+            },
+            {
+                "Command": "git stash apply",
+                "Description": "Apply all stashed changes",
+                "Example": "git stash apply"
+            },
+            {
+                "Command": "git stash apply stash@{index}",
+                "Description": "Apply a stash by index ",
+                "Example": "git stash apply stash@{1}"
+            },
+            {
+                "Command": "git stash show -p stash@{index}",
+                "Description": "Show changes from a certain stash",
+                "Example": "git stash show -p stash@{1}"
+            },
+            {
+                "Command": "git stash drop stash@{index}",
+                "Description": "Delete a stash by index",
+                "Example": "git stash drop stash@{1}"
+            },
+            {
+                "Command": "git reset --hard HEAD",
+                "Description": "Undo stash apply if you didn't make any other changes.",
+                "Example": "git reset --hard HEAD"
             },
             {
                 "instruction": "Go to the Github repository you want to fork. "
@@ -6724,7 +6898,7 @@
                 "ScrollTo": "FlaskSqliteLink"
             },
             {
-                "name": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                "name": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere",
                 "ref": "deploy-sqlite",
                 "ScrollTo": "DeploySqliteLink"
             },
@@ -6744,7 +6918,7 @@
                 "ScrollTo": "ReactH2Link"
             },
             {
-                "name": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
+                "name": "Deploy the React, Spring Boot and H2 app to Heroku",
                 "ref": "deploy-spring",
                 "ScrollTo": "DeploySpringLink"
             },
@@ -6874,6 +7048,11 @@
                 "ScrollTo": "PostmanLink"
             },
             {
+                "name": "Interact with a Flash Drive Using Python",
+                "ref": "flash-drive",
+                "ScrollTo": "FlashDriveLink"
+            },
+            {
                 "name": "How to Setup a Python Server",
                 "ref": "python-server",
                 "ScrollTo": "PythonServerLink"
@@ -6882,6 +7061,16 @@
                 "name": "How to Setup a Node Server",
                 "ref": "node-server",
                 "ScrollTo": "NodeServerLink"
+            },
+            {
+                "name": "How to Setup Email.js in a Project",
+                "ref": "emailjs",
+                "ScrollTo": "EmailJSLink"
+            },
+            {
+                "name": "How to Interact with iCloud using Python",
+                "ref": "pyicloud",
+                "ScrollTo": "PyiCloudLink"
             },
             {
                 "name": "How to Setup OAuth Authentication",
@@ -7013,6 +7202,15 @@
                 "Description": "",
                 "Language": "Command",
                 "CopyCode": "npm install -g create-vite"
+            },
+            {
+                "instruction": "Note: You can skip this step if you want to setup your project manually. Go to Create a &Project Templates Folder&[TemplatesLink] and complete the instructions. It will give you a folder you can use to download this Vue project structure. After you're done, copy that folder structure using the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cp -R templates/vue-project /path/to/destination/projects-new-name"
             },
             {
                 "instruction": "Create a new Vue.js project. If you're prompted to install packages type \"y\". Note that \"vue-project\" will be the name of your project and you can change it to be whatever you want."
@@ -7192,6 +7390,15 @@
                 "Description": "",
                 "Language": "Command",
                 "CopyCode": "npm install -g create-vite"
+            },
+            {
+                "instruction": "Note: You can skip this step if you want to setup your project manually. Go to Create a &Project Templates Folder&[TemplatesLink] and complete the instructions. It will give you a folder you can use to download this Vue project structure. After you're done, copy that folder structure using the following command."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cp -R templates/vue-project /path/to/destination/projects-new-name"
             },
             {
                 "instruction": "Create a React project using Vite. Note that \"react-project\" will be the name of your project and you can change it to be whatever you want."
@@ -7631,7 +7838,7 @@
                 "ref": "templates"
             },
             {
-                "instruction": "You can skip steps 2-4 by downloading the templates.zip folder and then running the following commands in your terminal"
+                "instruction": "You can skip steps 2-4 by downloading the &templates.zip&(/download/templates.zip) folder and then running the following commands in your terminal"
             },
             {
                 "Name": "",
@@ -7774,13 +7981,13 @@
                 "CopyCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
             },
             {
-                "instruction": "Now go to your Github repository, You should see that a new branch named \"gh-pages\" has been added."
+                "instruction": "Now go to your Github repository, You should see that a new branch named \"gh-pages\" has been added. Now can click on the \"main\" drop-down button right above the code to see your branches."
             },
             {
-                "instruction": "Click on the \"Settings\" tab on the right-hand side of the top-bar. It has a gear icon next to it."
+                "instruction": "Click on the \"Settings\" tab in the top-bar near the right-hand side. It has a gear icon next to it."
             },
             {
-                "instruction": "Now under \"Code and automation\" on the left-hand side click on \"Pages\" and wait while it deploys to Github pages. You should eventually see a link there where you can access your site. You should be done now. The following steps are to make changes to your deployed site."
+                "instruction": "Now in the \"Code and automation\" section on the left-hand side click on \"Pages\" and wait while it deploys to Github pages. You should eventually see a link there where you can access your site. You should be done now. The following steps are to make changes to your deployed site."
             },
             {
                 "instruction": "To update the site while working on the main branch run the following commands. These will update both the main branch and gh-pages branch. You could make a python script that uses the \"os\" library to automate this process."
@@ -7799,6 +8006,55 @@
                 "Description": "",
                 "Language": "Command",
                 "CopyCode": "git push origin `git subtree --split prefix dist main`:gh-pages --force "
+            },
+            {
+                "instruction": "I've included an automation script below you can use to update your Github pages website."
+            },
+            {
+                "title": "Automate Vite Github Pages Update",
+                "desc": "Explains how to automate uploading changes to Github pages using Python."
+            },
+            {
+                "instruction": "Run the following commands in your terminal."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install termcolor\ncd your-project-name\ntouch update_github_pages.py"
+            },
+            {
+                "instruction": "Open the update_github_pages.py file in VSCode and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import os\nimport subprocess\nfrom termcolor import colored as c\n\nprocess = subprocess.run('git status', shell=True, capture_output=True, text=True)\n\noutput = process.stdout\n\nbranch = repr(output).split\"\\\\n\".replace(\"'On branch \", \"\").strip()\n\nprint('On branch ', end=\"\")\n\nif branch == 'main':\n\tprint(c(branch, 'green'))\nelse:\n\tprint(c(branch, 'red'))\n\tprint('Move changes to the main branch, then switch to the main branch.')\n\tprint('git stash')\n\tprint('git checkout main')\n\tprint('git pull origin main')\n\tprint(f'git merge {branch}')\n\tprint('git stash apply')\n\tprint('git push origin main')\n\texit(0)\n\ncommit_msg = input(\"Enter your commit message: \")\n\nos.system('git add .')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git push origin main')\nos.system('npm run build')\nos.system('git add dist -f')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git subtree push --prefix dist origin gh-pages')\n"
+            },
+            {
+                "instruction": "Upload the file to github pages. You should only have to do this once."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd your-project-name\ngit add .\ngit commit -m \"Added automation script\"\ngit push"
+            },
+            {
+                "instruction": "Make changes to your websites code."
+            },
+            {
+                "instruction": "Upload the changes to your website by running your Python script."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "python3 update_github_pages.py"
+            },
+            {
+                "instruction": "Wait like two minutes for the changes to appear on the website."
             }
         ]
     },
@@ -8126,7 +8382,7 @@
                 "CopyCode": "touch app.py\ntouch config.py\ntouch db.py\ntouch models.py\ntouch routes.py\ntouch .env"
             },
             {
-                "instruction": "Paste the following code in the \"app.py\" file in your \"flask_and_sqlite\" folder."
+                "instruction": "Now open your \"flask_and_sqlite\" folder in VSCode. Then paste the following code into the \"app.py\" file."
             },
             {
                 "Name": "",
@@ -8135,7 +8391,7 @@
                 "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
             },
             {
-                "instruction": "Paste the following code in the \"config.py\" file."
+                "instruction": "Paste the following code into the \"config.py\" file."
             },
             {
                 "Name": "",
@@ -8144,7 +8400,7 @@
                 "CopyCode": "import os\n\nbasedir = os.path.abspath(os.path.dirname(__file__))\n\nclass Config:\n\tSQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \\\n\t  'sqlite:///' + os.path.join(basedir, 'app.db')\n\tSQLALCHEMY_TRACK_MODIFICATIONS = False\n"
             },
             {
-                "instruction": "Paste the following code in the \"db.py\" file."
+                "instruction": "Paste the following code into the \"db.py\" file."
             },
             {
                 "Name": "",
@@ -8153,7 +8409,7 @@
                 "CopyCode": "from flask_sqlalchemy import SQLAlchemy\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\ndb = SQLAlchemy()\n\ndef init_db(app):\n\tdb.init_app(app)\n\n\twith app.app_context():\n\t\tdb.create_all()\n"
             },
             {
-                "instruction": "Paste the following code in \"models.py\" file."
+                "instruction": "Paste the following code into \"models.py\" file."
             },
             {
                 "Name": "",
@@ -8162,7 +8418,7 @@
                 "CopyCode": "from db import db\n\nclass User(db.Model):\n\tid = db.Column(db.Integer, primary_key=True)\n\tfirstname = db.Column(db.String(80), nullable=False)\n\tlastname = db.Column(db.String(120), unique=True, nullable=False)\n\n\tdef __repr__(self):\n\t\treturn f'&lt;User {self.username}&gt;'"
             },
             {
-                "instruction": "Paste the following code in the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be."
+                "instruction": "Paste the following code into the \"routes.py\" file. This file is where all the endpoints you'll call in the frontend will be."
             },
             {
                 "Name": "",
@@ -8218,7 +8474,7 @@
                 "CopyCode": "&lt;template&gt;\n\t&lt;div&gt;\n\t  &lt;input v-model=\"firstName\" placeholder=\"Enter First Name\"&gt;\n\t  &lt;input v-model=\"lastName\" placeholder=\"Enter Last Name\"&gt;\n\t  &lt;button @click=\"createUser\"&gt;Create User&lt;/button&gt;\n\n\t  &lt;!-- Search section --&gt;\n\t  &lt;div&gt;\n\t    &lt;input v-model=\"searchFirstName\" placeholder=\"Search by First Name\"&gt;\n\t    &lt;button @click=\"searchUser\"&gt;Search&lt;/button&gt;\n\t  &lt;/div&gt;\n\n\t  &lt;!-- Display results in a table --&gt;\n\t  &lt;table v-if=\"users.length\"&gt;\n\t    &lt;thead&gt;\n\t      &lt;tr&gt;\n\t        &lt;th&gt;First Name&lt;/th&gt;\n\t        &lt;th&gt;Last Name&lt;/th&gt;\n\t      &lt;/tr&gt;\n\t    &lt;/thead&gt;\n\t    &lt;tbody&gt;\n\t      &lt;tr v-for=\"user in users\" :key=\"user.firstname\"&gt;\n\t        &lt;td&gt;{{ user.firstname }}&lt;/td&gt;\n\t        &lt;td&gt;{{ user.lastname }}&lt;/td&gt;\n\t      &lt;/tr&gt;\n\t    &lt;/tbody&gt;\n\t  &lt;/table&gt;\n\n\t&lt;/div&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () =&gt; {\n\ttry {\n\t\tif (!firstName.value || !lastName.value) {\n\t\t\talert(\"Please Fill In All Fields\");\n\t\t\treturn;\n\t\t}\n\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\talert(`User '${firstName.value}' already in database!`);\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () =&gt; {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\n&lt;/script&gt;"
             },
             {
-                "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands."
+                "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands. Do NOT close this terminal."
             },
             {
                 "Name": "",
@@ -8236,10 +8492,20 @@
                 "CopyCode": "cd vue-sqlite-frontend\nnpm run dev"
             },
             {
-                "instruction": "In your flask_and_sqlite repository there should now be a folder called \"instance\". In the folder you should see a file named \"mydatabase.db\". Click on the db file and you should see your \"user\" table. Click the refresh button to see your updates as you input values in the UI. The refresh button should be above your \"Tables\" on the left handside. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the SQLite Viewer extension by Florian Klampfer."
+                "instruction": "Open the link that was output from the \"npm run dev\" command in your browser. It might be the following link."
             },
             {
-                "instruction": "If you want to use your terminal to interact with your rest api run, open a new terminal and run the following commands. Note your rest api should still be running in a different terminal for these to work."
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "DisplayLang": "Local Host Link",
+                "CopyCode": "http://localhost:5173/"
+            },
+            {
+                "instruction": "In your flask_and_sqlite repository there should now be a folder called \"instance\". In this folder you should see a file named \"mydatabase.db\". When you click on the db file you should see your \"user\" table. Click the refresh button to see your updates as you input values via the frontend. The refresh button should be above your \"Tables\" on the left hand-side. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the SQLite Viewer extension by Florian Klampfer."
+            },
+            {
+                "instruction": "If you want to use your terminal to interact with your rest api open a new terminal and run the following commands. Note your rest api should still be running in a different terminal in order for these to work."
             },
             {
                 "Name": "",
@@ -8249,7 +8515,7 @@
                 "CopyCode": "curl -X POST http://127.0.0.1:5000/users \\\n-H \"Content-Type: application/json\" \\\n-d '{ \"firstname\": \"Hayden\", \"lastname\": \"Christensen\" }'\n\ncurl -X GET http://127.0.0.1:5000/users/Hayden"
             },
             {
-                "instruction": "You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 24-25."
+                "instruction": "READ THIS CAREFULLY TO SEE IF YOU ACTUALLY NEED TO DO THESE STEPS. You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 24-25."
             },
             {
                 "Name": "",
@@ -8270,11 +8536,11 @@
         ]
     },
     {
-        "Title": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀",
+        "Title": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere 🐍",
         "Link": "/CompSci/SetupProjects/deploy-sqlite",
         "Results": [
             {
-                "title": "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services",
+                "title": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere",
                 "desc": "Deploy the app you created in instruction set 9 to Amazon Web Services.",
                 "ref": "deploy-sqlite"
             },
@@ -8302,17 +8568,30 @@
         "Results": [
             {
                 "title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
-                "desc": "",
+                "desc": "Explains the process of setting up a Vue frontend with a Flask Rest API backend.",
                 "ref": "flask-PostgreSQL"
             },
             {
-                "instruction": "First do the following"
+                "instruction": ""
             },
             {
                 "Name": "",
                 "Description": "",
-                "Language": "Command",
-                "CopyCode": "ls"
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "title": "",
+                "desc": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "instruction": ""
             }
         ]
     },
@@ -8368,7 +8647,7 @@
                 "CopyCode": "cp -R templates/react-project react-spring-frontend"
             },
             {
-                "instruction": "First make sure you have the following programs installed. If the commands output a version, you're good."
+                "instruction": "First, make sure you have all the following programs installed by running the following commands. If the commands output a version, you're good."
             },
             {
                 "Name": "",
@@ -8377,7 +8656,7 @@
                 "CopyCode": "java --version\nbrew --version\nmvn --version\nls /Applications | grep \"Visual Studio Code\""
             },
             {
-                "instruction": "Make you have Java 17 installed. You can download it here if you don't already. Choose the right version for your OS and architecture. Run the following command to determine your architecture. Choose the DMG installer. Click on the download and then follow the prompts."
+                "instruction": "Make sure the \"java --version\" command outputs version 17-something. You can download it here if you don't already installed. Make sure to choose the right version for your OS and architecture. Run the following command to determine your architecture. When you're back on the site, choose the DMG installer. Then click on the download button and then follow the prompts."
             },
             {
                 "Name": "",
@@ -8395,7 +8674,7 @@
                 "CopyCode": "nano ~/.zshrc"
             },
             {
-                "instruction": "In your nano file paste the two following lines. "
+                "instruction": "In your nano file paste the two following lines. You shouldn't have to modify them."
             },
             {
                 "Name": "",
@@ -8417,7 +8696,16 @@
                 "CopyCode": "java --version"
             },
             {
-                "instruction": "If you don't already have Visual Studio Code downloaded, go here. Choose the correct version for your OS."
+                "instruction": "After you have Java 17 installed, delete the archive that contains the installation files."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "rm -rf Downloads/jdk-17_macos-aarch64_bin.tar.gz"
+            },
+            {
+                "instruction": "If you don't already have Visual Studio Code downloaded, install it by going to this link. Make sure to choose the correct version for your OS."
             },
             {
                 "instruction": "If you don't already have homebrew installed, run the following commands."
@@ -8429,7 +8717,7 @@
                 "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\nbrew --version"
             },
             {
-                "instruction": "If you don't have maven installed use the following command. Then check that it was installed properly using the --version command. NOTE: This may take a minute or two."
+                "instruction": "If you don't have maven installed, run the following command. Then check that it was installed properly using the \"mvn --version\" command. NOTE: This may take a minute or two."
             },
             {
                 "Name": "",
@@ -8438,13 +8726,13 @@
                 "CopyCode": "brew install maven\nmvn --version"
             },
             {
-                "instruction": "Most of the following steps come from this video. Seeing what's happening might be helpful."
+                "instruction": "Most of the following steps come from this video. You might find visually seeing what's happening to be helpful."
             },
             {
-                "instruction": "First install the necessary VSCode extensions using the following links. Press the green button, then when it takes you to VSCode press the blue button.&lt;br&gt;&lt;br&gt;Ext 1: Extension Pack for Java&lt;br&gt;Ext 2: Spring Initializr Java Support&lt;br&gt;Ext 3: Spring Boot Dashboard&lt;br&gt;Ext 4: Spring Boot Tools&lt;br&gt;Ext 5: Spring Boot Extension Pack&lt;br&gt;&lt;br&gt;"
+                "instruction": "First install the necessary VSCode extensions using the following links. Press the green \"Install\" button, then when it takes you to VSCode press the blue \"Install\" button.&lt;br&gt;&lt;br&gt;Ext 1: Extension Pack for Java&lt;br&gt;Ext 2: Spring Initializr Java Support&lt;br&gt;Ext 3: Spring Boot Dashboard&lt;br&gt;Ext 4: Spring Boot Tools&lt;br&gt;Ext 5: Spring Boot Extension Pack&lt;br&gt;&lt;br&gt;"
             },
             {
-                "instruction": "After you have those extensions installed, do the following with VSCode open."
+                "instruction": "After you've installed those extensions, do the following steps in VSCode."
             },
             {
                 "Name": "",
@@ -8454,7 +8742,7 @@
                 "CopyCode": "Steps\n1. command + shift + p (Open command pallette)\n2. Search and press on \"Welcome: Open Walkthrough...\"\n3. Then search and press on \"Getting Started with Spring Boot in VS Code\"\n4. You should be taken to a new tab after that."
             },
             {
-                "instruction": "Under \"Start with a Spring Boot project\" press on the \"Create New Project\" button. A command pallette should open. If you want to close it use the \"esc\" key."
+                "instruction": "Under \"Start with a Spring Boot project\" press on the blue \"Create New Project\" button. A command pallette should then open. If you need to close it later use the \"esc\" key."
             },
             {
                 "instruction": "In the new command pallette, search and press on the following options, in the following order."
@@ -8464,11 +8752,11 @@
                 "Description": "",
                 "Language": "Command",
                 "DisplayLang": "Command Pallette Values",
-                "CopyCode": "Spring Boot Version: 3.3.0 (Or First Option)\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search seperately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nClick \"Open\"\nSay \"Yes, I trust the authors\" if prompted"
+                "CopyCode": "Spring Boot Version: 3.3.1 (Or First Option/Does NOT include \"Snapshot\")\nProject Language: Java\nGroup Id: com.springbackend\nArtifact Id: demo\nPackaging Type: Jar\nJava Version: 17\nDependendices: Spring Web and Lombok (Search separately)\n\nPress Enter/Return\nPress \"Generate into this folder\"\nPress \"Open\" in the VSCode pop-up\nSay \"Yes, I trust the authors\" if prompted"
             },
             {
                 "title": "Create the REST API for this project",
-                "desc": "Explains how to write the code for the rest API and then run it."
+                "desc": "Explains how to write the code for the Rest API and then run it."
             },
             {
                 "instruction": "Now open a new terminal and run the following command. It will rename your project to be \"spring-boot-h2\""
@@ -8480,16 +8768,16 @@
                 "CopyCode": "mv demo spring-boot-h2"
             },
             {
-                "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient."
+                "instruction": "Run the following commands to crate new folders/files in your project. Instead of using the \"touch\" commands, I'd recommend just right clicking on folders in VSCode and press \"New file\" for Java files. It will auto-generate packages and boiler-plate code for the file. I just included the \"touch\" commands because I thought they'd be convenient and I've included the necessary code below."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java"
+                "CopyCode": "cd spring-boot-h2/src/main/java/com/springbackend/demo\n\nmkdir config\nmkdir controllers\nmkdir models\nmkdir repositories\nmkdir services\n\ntouch config/WebConfig.java\ntouch config/H2ServerConfiguration.java\ntouch controllers/UserController.java\ntouch models/User.java\ntouch repositories/UserRepository.java\ntouch services/UserService.java\n\ncd ~/spring-boot-h2"
             },
             {
-                "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data into the \"dependencies\" section. You should probably paste the data around lines 19-35 between the \"dependencies\" xml tags. Put your cursor at the very beginning of the line, then paste the data to make it align with the other objects (it will work either way). Relevant Meme."
+                "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Then open \"pom.xml\" and paste the following data in between the &lt;dependencies&gt; tags. Paste the data at the end of the \"dependencies\" tag section, which should be around line 47. Make sure to paste it above the &lt;/dependencies&gt; tag. Put your cursor at the very beginning of the line, then paste the data to make it align with the other objects (it will still work if the alignment is off). Relevant Meme."
             },
             {
                 "Name": "",
@@ -8499,16 +8787,16 @@
                 "CopyCode": "\t\t&lt;!-- New Dependencies --&gt;\n\t    &lt;dependency&gt;\n\t\t    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n\t\t    &lt;artifactId&gt;spring-boot-starter-data-jpa&lt;/artifactId&gt;\n\t    &lt;/dependency&gt;\n\t    &lt;dependency&gt;\n\t\t    &lt;groupId&gt;com.h2database&lt;/groupId&gt;\n\t\t    &lt;artifactId&gt;h2&lt;/artifactId&gt;\n\t\t    &lt;version&gt;2.1.214&lt;/version&gt;\n\t    &lt;/dependency&gt;"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; models and then open the \"User.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; models and then open the \"User.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.Entity;\nimport jakarta.persistence.GeneratedValue;\nimport jakarta.persistence.GenerationType;\nimport jakarta.persistence.Id;\nimport jakarta.persistence.Table;\n\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\")\npublic class User {\n\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\tprivate String firstname;\n\tprivate String lastname;\n}"
+                "CopyCode": "package com.springbackend.demo.models;\n\nimport jakarta.persistence.*;\nimport lombok.Getter;\nimport lombok.Setter;\n\n@Entity\n@Getter\n@Setter\n@Table(name = \"users\", uniqueConstraints = {@UniqueConstraint(columnNames = \"firstname\")})\npublic class User {\n\n\t@Id\n\t@GeneratedValue(strategy = GenerationType.IDENTITY)\n\tprivate Long id;\n\n\t@Column(nullable = false, unique = true)\n\tprivate String firstname;\n\n\t@Column(nullable = false)\n\tprivate String lastname;\n}"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; repositories and then open the \"UserRepository.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; repositories and then open the \"UserRepository.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8517,25 +8805,25 @@
                 "CopyCode": "package com.springbackend.demo.repositories;\n\nimport org.springframework.data.jpa.repository.JpaRepository;\nimport org.springframework.stereotype.Repository;\nimport com.springbackend.demo.models.User;\n\n@Repository\npublic interface UserRepository extends JpaRepository&lt;User, Long&gt; {\n\tUser findByFirstname(String firstname);\n}"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; services and then open the \"UserService.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; services and then open the \"UserService.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional&lt;User&gt; getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
+                "CopyCode": "package com.springbackend.demo.services;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.repositories.UserRepository;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.stereotype.Service;\n\nimport java.util.Optional;\n\n@Service\npublic class UserService {\n\n\t@Autowired\n\tprivate UserRepository userRepository;\n\n\tpublic User saveUser(User user) {\n\t\tif (userRepository.findByFirstname(user.getFirstname()) != null) {\n\t\t\tthrow new IllegalArgumentException(\"User with the name \" + user.getFirstname() + \" already exists\");\n\t\t}\n\n\t\treturn userRepository.save(user);\n\t}\n\n\tpublic Optional&lt;User&gt; getUserByFirstname(String firstname) {\n\t\treturn Optional.ofNullable(userRepository.findByFirstname(firstname));\n\t}\n}"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; controllers and then open the \"UserController.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; controllers and then open the \"UserController.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Java",
-                "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity&lt;User&gt; createUser(@RequestBody User user) {\n\t\tUser createdUser = userService.saveUser(user);\n\t\treturn ResponseEntity.status(201).body(createdUser);\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity&lt;User&gt; getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -&gt; ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -&gt; ResponseEntity.status(404).body(null));\n\t}\n}"
+                "CopyCode": "package com.springbackend.demo.controllers;\n\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.*;\n\nimport com.springbackend.demo.models.User;\nimport com.springbackend.demo.services.UserService;\n\n@RestController\n@RequestMapping(\"/users\")\npublic class UserController {\n\n\t@Autowired\n\tprivate UserService userService;\n\n\t@PostMapping\n\tpublic ResponseEntity&lt;?&gt; createUser(@RequestBody User user) {\n\t\ttry {\n\t\t\tUser createdUser = userService.saveUser(user);\n\t\t\treturn ResponseEntity.status(201).body(createdUser);\n\t\t} catch (IllegalArgumentException e) {\n\t\t\treturn ResponseEntity.status(400).body(e.getMessage());\n\t\t}\n\t}\n\n\t@GetMapping(\"/{firstname}\")\n\tpublic ResponseEntity&lt;User&gt; getUserByFirstname(@PathVariable String firstname) {\n\t\treturn userService.getUserByFirstname(firstname)\n\t\t\t.map(user -&gt; ResponseEntity.ok().body(user))\n\t\t\t.orElseGet(() -&gt; ResponseEntity.status(404).body(null));\n\t}\n}"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; config and then open the \"WebConfig.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; config and then open the \"WebConfig.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8544,7 +8832,7 @@
                 "CopyCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.web.servlet.config.annotation.CorsRegistry;\nimport org.springframework.web.servlet.config.annotation.WebMvcConfigurer;\n\n@Configuration\npublic class WebConfig {\n\n\t@Bean\n\tpublic WebMvcConfigurer corsConfigurer() {\n\t\treturn new WebMvcConfigurer() {\n\t\t\t@Override\n\t\t\tpublic void addCorsMappings(CorsRegistry registry){\n\t\t\t\tregistry.addMapping(\"/**\").allowedOrigins(\"*\");\n\t\t\t}\n\t\t};\n\t}\n}"
             },
             {
-                "instruction": "Go to src -&gt; main -&gt; java -&gt; com -&gt; springbackend -&gt; demo -&gt; config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code."
+                "instruction": "Go to src -&gt; main -&gt; java/com/springbackend/demo -&gt; config and then open the \"H2ServerConfiguration.java\" file. Paste in the following code."
             },
             {
                 "Name": "",
@@ -8553,17 +8841,17 @@
                 "CopyCode": "package com.springbackend.demo.config;\n\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.h2.tools.Server;\n\nimport java.sql.SQLException;\n\n@Configuration\npublic class H2ServerConfiguration {\n\n\t@Bean(initMethod = \"start\", destroyMethod = \"stop\")\n\tpublic Server h2Server() throws SQLException {\n\t\treturn Server.createTcpServer(\"-tcp\", \"-tcpAllowOthers\", \"-tcpPort\", \"9092\");\n\t}\n}"
             },
             {
-                "instruction": "Now press \"command + p\". Search for and press on \"application.properties\". Delete its contents and paste the following code into the file. Change the username and password to be whatever you want."
+                "instruction": "Now press \"command + p\". Search for and press on \"application.properties\". Delete its contents and paste the following code into the file. Change the spring.datasource username and password to be whatever you want. If you can't find the file it can be found in src -&gt; main -&gt; resources.&lt;br&gt;&lt;br&gt;Replace \"YOUR_USERNAME_HERE\" with the username you want to use.&lt;br&gt;Replace \"YOUR_PASSWORD_HERE\" with the password you want to use.&lt;br&gt;&lt;br&gt;I'd recommend keeping them simple."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "customproperties",
                 "DisplayLang": "Properties",
-                "CopyCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=sa\nspring.datasource.password=password\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n"
+                "CopyCode": "spring.application.name=demo\nlogging.level.root=OFF\nlogging.level.org.springframework.boot=ERROR\nlogging.level.org.springframework.web=ERROR\nspring.main.banner-mode=OFF\nspring.datasource.url=jdbc:h2:file:./data/demo_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE\nspring.datasource.driverClassName=org.h2.Driver\nspring.datasource.username=YOUR_USERNAME_HERE\nspring.datasource.password=YOUR_PASSWORD_HERE\nspring.jpa.database-platform=org.hibernate.dialect.H2Dialect\nspring.h2.console.enabled=true\nspring.jpa.show-sql=true\nspring.jpa.hibernate.ddl-auto=update\n"
             },
             {
-                "instruction": "This step is completely optional and I do NOT recommend doing it this way. But if you don't want your data to persist between sessions change the \"spring.datasource.url\" line in the \"application.properties\" file to be the following value. This will clear your table everytime you rerun your api. If you do this remember to use \"jdbc:h2:mem:testdb\" as your JDBC URL when you login to your h2-console later on."
+                "instruction": "This step is completely optional and I do NOT recommend doing it this way. But if you don't want your data to persist between sessions change the \"spring.datasource.url\" line in the \"application.properties\" file to be the following value. This will clear your table everytime you rerun your api. If you choose to do this, remember to use \"jdbc:h2:mem:testdb\" as your JDBC URL when you login to your h2-console later on."
             },
             {
                 "Name": "",
@@ -8573,7 +8861,7 @@
                 "CopyCode": "spring.datasource.url=jdbc:h2:mem:testdb"
             },
             {
-                "instruction": "In your terminal run the following commands. You could also just change into \"spring-boot-h2\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now."
+                "instruction": "In your terminal run the following commands. You could also change into \"spring-boot-h2\" then run \"npm init\" and fill in the prompts to create \"package.json\", but we'll keep it more simple for now."
             },
             {
                 "Name": "",
@@ -8582,16 +8870,17 @@
                 "CopyCode": "cd ~\ncd spring-boot-h2\ntouch package.json\ntouch start.sh"
             },
             {
-                "instruction": "Now open your \"start.sh\" file and paste in the following code."
+                "instruction": "Now open your \"start.sh\" file in the top-most directory of your \"spring-boot-h2\" folder and paste in the following code."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "sh",
+                "DisplayLang": "Shell Script",
                 "CopyCode": "#!/bin/sh\nYELLOW='\\033[0;33m'\nBLUE='\\033[0;34m'\nNC='\\033[0m' # No Color\n\nstop_spring_boot() {\n\techo \"\\n\\n${YELLOW}Spring Boot application finished successfully!${NC}\"\n\tkill \"$SPRING_BOOT_PID\"\n}\n\ntrap stop_spring_boot INT TERM\n\nmvn --quiet spring-boot:run &\nSPRING_BOOT_PID=$!\n\nsleep 0.1\n\necho \"* Running on ${BLUE}http://localhost:8080${NC}\\n\"\n\nwait \"$SPRING_BOOT_PID\"\n"
             },
             {
-                "instruction": "start.sh. Now open the \"package.json\" file in the top-most directory. Paste in the following data."
+                "instruction": "Now open the \"package.json\" file in the top-most directory. Paste in the following data. Change the value of the \"author\" attribute to be your name."
             },
             {
                 "Name": "",
@@ -8609,7 +8898,7 @@
                 "CopyCode": "cd spring-boot-h2\nchmod +x start.sh"
             },
             {
-                "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will be automatically created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console."
+                "instruction": "Run your API using the following command. Note that in your project directory a new folder named \"data\" will automatically be created that contains your database file. This allows the data in your table to be saved when you stop running your REST API. Note: you won't be able to view your \"demo_db.mv.db\" file in VSCode, you'll have to use the h2-console."
             },
             {
                 "Name": "",
@@ -8637,7 +8926,7 @@
                 "CopyCode": "http://localhost:8080/h2-console"
             },
             {
-                "instruction": "Keep the link open in your browser, but go back to your folder in VSCode. Open your \"application.properties\" file and copy and record the values of \"spring.datasource.username\" and \"spring.datasource.password\". Then go back to the h2-console in your broswer and enter the following values. Then press connect."
+                "instruction": "Keep the link open in your browser, but go back to your folder in VSCode. Go to src -&gt; main -&gt; resources and open your \"application.properties\" file. Copy and record the values of \"spring.datasource.username\" and \"spring.datasource.password\". Then go back to the h2-console in your browser and enter the following values into the fields. Then press the \"connect\" button."
             },
             {
                 "Name": "",
@@ -8657,7 +8946,7 @@
                 "CopyCode": "curl -X POST http://localhost:8080/users \\\n-H \"Content-Type: application/json\" \\\n-d '{\"firstname\": \"Jimmy\", \"lastname\": \"Page\"}'"
             },
             {
-                "instruction": "Now go back to your h2-console and run the following SQL query in the input box. Then press the \"Run\" button above it. There should be a user named \"Jimmy Page\" with id 1 in the table."
+                "instruction": "Now go back to your h2-console and run the following SQL query in the input box titled \"SQL statement:\". Then press the \"Run\" button above it. There should now be a user named \"Jimmy Page\" with an id of 1 in the table."
             },
             {
                 "Name": "",
@@ -8667,7 +8956,7 @@
                 "CopyCode": "SELECT * FROM Users"
             },
             {
-                "instruction": "If it's working, you can close all of your terminals, VSCode windows, the h2-console, etc."
+                "instruction": "If it's working, you can close all of your terminals, h2-console, VSCode windows, etc."
             },
             {
                 "title": "Setup React Frontend for this Project",
@@ -8692,7 +8981,7 @@
                 "CopyCode": "touch src/axiosInstance.js"
             },
             {
-                "instruction": "Now open your \"spring-boot-h2\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues."
+                "instruction": "Now open your \"react-spring-frontend\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Note that having a baseURL with an incorrect localhost link can lead to CORS issues. Keep this in mind for the future if you're not using port 8080 for your Rest API. If you've followed all the steps so far you shouldn't have to worry about CORS issues. The port was set to 8080 in the Shell Script."
             },
             {
                 "Name": "",
@@ -8707,7 +8996,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "CSS",
-                "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}"
+                "CopyCode": ".input-field {\n\tborder: 1px solid black;\n\tpadding: 5px;\n\tmargin: 5px;\n}\n\n.submit-btn {\n\tbackground-color: blue;\n\tpadding: 5px;\n\tcolor: white;\n}\n\n.submit-btn:hover {\n\tbackground-color: darkblue;\n}\n\n.table-container {\n\tdisplay: flex;\n\tjustify-content: center;\n\tmargin-top: 20px;\n}\n\ntable {\n\tborder-collapse: collapse;\n\twidth: 50%;\n}\n\nth, td {\n\tborder: 1px solid black;\n\tpadding: 8px;\n\ttext-align: left;\n}\n\nth {\n\tbackground-color: #f2f2f2;\n}\n"
             },
             {
                 "instruction": "Now go to src -&gt; views and open the \"Home.jsx\" file. Delete its contents and paste in the following code."
@@ -8717,19 +9006,19 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "React",
-                "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () =&gt; {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () =&gt; {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () =&gt; {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    &lt;div&gt;\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) =&gt; setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) =&gt; setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t&gt;\n\t\t\t\t Create User\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Search section */}\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) =&gt; setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t&gt;\n\t\t\t\t Search\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Display results in a table */}\n      {users.length &gt; 0 && (\n\t\t\t\t&lt;table&gt;\n\t\t\t\t  &lt;thead&gt;\n\t\t\t\t    &lt;tr&gt;\n\t\t\t\t      &lt;th&gt;First Name&lt;/th&gt;\n\t\t\t\t      &lt;th&gt;Last Name&lt;/th&gt;\n\t\t\t\t    &lt;/tr&gt;\n\t\t\t\t  &lt;/thead&gt;\n\t\t\t\t  &lt;tbody&gt;\n\t\t\t\t    {users.map((user) =&gt; (\n\t\t\t\t      &lt;tr key={user.firstname}&gt;\n\t\t\t\t\t\t\t\t&lt;td&gt;{user.firstname}&lt;/td&gt;\n\t\t\t\t\t\t\t\t&lt;td&gt;{user.lastname}&lt;/td&gt;\n\t\t\t\t      &lt;/tr&gt;\n\t\t\t\t    ))}\n\t\t\t\t  &lt;/tbody&gt;\n\t\t\t\t&lt;/table&gt;\n      )}\n    &lt;/div&gt;\n  );\n};\n\nexport default HomePage;"
+                "CopyCode": "import React, { useState } from 'react';\nimport axios from '../axiosInstance.js';\nimport '../styles/views/Home.css';\n\nconst HomePage = () =&gt; {\n  const [firstName, setFirstName] = useState('');\n  const [lastName, setLastName] = useState('');\n  const [searchFirstName, setSearchFirstName] = useState('');\n  const [users, setUsers] = useState([]);\n\n  const createUser = async () =&gt; {\n    try {\n      if (!firstName || !lastName) {\n\t\t\t\talert('Please Fill In All Fields');\n\t\t\t\treturn;\n      }\n\n      const response = await axios.post('/users', {\n\t\t\t\tfirstname: firstName,\n\t\t\t\tlastname: lastName\n      });\n\n      alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n      alert(`User '${firstName}' already in database!`);\n      console.error('There was an error!', error);\n    }\n  };\n\n  const searchUser = async () =&gt; {\n    try {\n      const response = await axios.get(`/users/${searchFirstName}`);\n      setUsers([response.data]);\n    } catch (error) {\n      alert(`Couldn't find user: '${searchFirstName}'`);\n      console.error('There was an error!', error);\n      setUsers([]);\n    }\n  };\n\n  return (\n    &lt;div&gt;\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"fName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={firstName}\n\t\t\t\t  onChange={(e) =&gt; setFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"lName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={lastName}\n\t\t\t\t  onChange={(e) =&gt; setLastName(e.target.value)}\n\t\t\t\t  placeholder=\"Enter Last Name\"\n\t\t\t\t/&gt;\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"createUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={createUser}\n\t\t\t\t&gt;\n\t\t\t\t Create User\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Search section */}\n      &lt;div&gt;\n\t\t\t\t&lt;input\n\t\t\t\t  id=\"searchName\"\n\t\t\t\t  className=\"input-field\"\n\t\t\t\t  value={searchFirstName}\n\t\t\t\t  onChange={(e) =&gt; setSearchFirstName(e.target.value)}\n\t\t\t\t  placeholder=\"Search by First Name\"\n\t\t\t\t/&gt;\n\t\t\t\t\n\t\t\t\t&lt;button\n\t\t\t\t  id=\"searchUserBtn\"\n\t\t\t\t  className=\"submit-btn\"\n\t\t\t\t  onClick={searchUser}\n\t\t\t\t&gt;\n\t\t\t\t Search\n\t\t\t\t&lt;/button&gt;\n      &lt;/div&gt;\n\n      {/* Display results in a table */}\n      {users.length &gt; 0 && (\n\t\t\t\t&lt;div className=\"table-container\"&gt;\n\t\t\t\t  &lt;table&gt;\n\t\t\t\t    &lt;thead&gt;\n\t\t\t\t      &lt;tr&gt;\n\t\t\t\t        &lt;th&gt;First Name&lt;/th&gt;\n\t\t\t\t        &lt;th&gt;Last Name&lt;/th&gt;\n\t\t\t\t      &lt;/tr&gt;\n\t\t\t\t    &lt;/thead&gt;\n\t\t\t\t    &lt;tbody&gt;\n\t\t\t\t      {users.map((user) =&gt; (\n\t\t\t\t        &lt;tr key={user.firstname}&gt;\n\t\t\t\t\t\t\t\t  &lt;td&gt;{user.firstname}&lt;/td&gt;\n\t\t\t\t\t\t\t\t  &lt;td&gt;{user.lastname}&lt;/td&gt;\n\t\t\t\t        &lt;/tr&gt;\n\t\t\t\t      ))}\n\t\t\t\t    &lt;/tbody&gt;\n\t\t\t\t  &lt;/table&gt;\n\t\t\t\t&lt;/div&gt;\n      )}\n    &lt;/div&gt;\n  );\n};\n\nexport default HomePage;"
             },
             {
-                "instruction": "Now open two terminals. In the first terminal run the following command."
+                "instruction": "Now open two new terminals. In the first terminal run the following commands to start your Rest API. Do not close this terminal."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "npm run start"
+                "CopyCode": "cd spring-boot-h2\nnpm run start"
             },
             {
-                "instruction": "Open the h2-console link in your browser. Sign in using the credentials from your application.properties file."
+                "instruction": "Open the h2-console link in your browser. Sign in using the credentials from your \"application.properties\" file. This file can found in your \"spring-boot-h2\" folder in src -&gt; main -&gt; resources. The credentials are the values of the \"spring.datasource.username\" and \"spring.datasource.password\" attributes. Press the \"Connect\" button when you're done."
             },
             {
                 "Name": "",
@@ -8745,10 +9034,20 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "CopyCode": "npm run dev"
+                "CopyCode": "cd react-spring-frontend\nnpm run dev"
             },
             {
-                "instruction": "Now open your React app in a browser. Practice adding users to your database. Run the following SQL query in your h2-console to see your users."
+                "instruction": "Now open the link that was output from the \"npm run dev\" command in your broswer. It might be the following link."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Link",
+                "CopyCode": "http://localhost:5173/"
+            },
+            {
+                "instruction": "Practice adding users to your database using your React frontend. Run the following SQL query in your h2-console to see the users you're adding."
             },
             {
                 "Name": "",
@@ -8763,11 +9062,11 @@
         ]
     },
     {
-        "Title": "Deploy the React, Spring Boot and SQLite app to Amazon Web Services 🚀",
+        "Title": "Deploy the React, Spring Boot and H2 app to Heroku 🦸🏻‍♂️",
         "Link": "/CompSci/SetupProjects/deploy-spring",
         "Results": [
             {
-                "title": "Deploy the React, Spring Boot and H2 app to Amazon Web Services",
+                "title": "Deploy the React, Spring Boot and H2 app to Heroku",
                 "desc": "",
                 "ref": "deploy-spring"
             },
@@ -9150,7 +9449,7 @@
                 "instruction": "Here's a good UNCW link on how to setup a VPN. Here."
             },
             {
-                "instruction": "Here are the CSC 455 instructions on how to setup a VPN. Note that this is a download link."
+                "instruction": "Here are the CSC 455 instructions on how to setup a VPN. Note that this is a &download link&(/download/Practice.docx)."
             }
         ]
     },
@@ -9255,7 +9554,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\nimport re\n#This command worked to install bs4 -&gt; sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -&gt; str:\n\n\t# Get a response from the website\n\tresponse = requests.get(app_link)\n\n\tif response.status_code == 200:\n\t\t# Use regex to find link in giant HTML response.\n\t\twebsite_link_info = re.search(r'\"canonical\":\"https:.+\",\"pageId\"', response.text)\n\n\t\tif website_link_info:\n\t\t\twebsite_link = str(website_link_info.group(0))\n\t\t\treturn website_link.replace('\"canonical\":\"', '').replace('\",\"pageId', '').replace(r'/', '/').strip()\n\t\telse:\n\t\t\tprint(c(\"Website link not found in the HTML.\", 'red'))\n\t\t\treturn None\n\telse:\n\t\tprint(c(f\"Failed to fetch the website link. Status code: {response.status_code}\", 'red'))\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\nprint(c(\"Later when prompted to \\\"Paste the URL\\\" paste the website link.\", 'cyan'))\n\nlink = input(\"Enter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_linklink #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node cli/index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"Rename the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
+                "CopyCode": "\"\"\"\n\nThis is a command line interface tool to make using\nthe tiktok-downloader from the link below easier and\nmore efficient.\n\nhttps://github.com/n0l3r/tiktok-downloader\n\ntiktok-downloader and tiktoks should be on your main\npath for this to work. Ex: /Users/username/tiktoks\n\n\"\"\"\n\nimport os\nimport subprocess\nfrom termcolor import colored as c\nimport requests\n#This command worked to install bs4 -&gt; sudo python3 -m pip install bs4\n\ndef get_website_link(app_link: str) -&gt; str:\n\ttry:\n\t\tresponse = requests.get(app_link, allow_redirects=True)\n\t\twebsite_link = response.url\n\t\treturn website_link\n\texcept requests.RequestException as e:\n\t\tprint(f\"An error occurred: {e}\")\n\t\treturn None\n\ndef write_to_clipboard(output: str):\n\tprocess = subprocess.Popen('pbcopy', env={'LANG': 'en_US.UTF-8'}, stdin=subprocess.PIPE)\n\tprocess.communicate(output.encode('utf-8'))\n\nprint(c(\"Remember that you can NOT download slideshows\", 'red'))\nprint(c(\"The website link will be fetched using the app link and copied to the clipboard.\", 'blue'))\n\nlink = input(\"\\nEnter TikTok app link: \")\n\nif link.strip():\n\twebsite_link = get_website_linklink #remove last \" char\n\n\twrite_to_clipboard(website_link)\n\tprint(c(\"Website link copied to clipboard\", 'green'), end=\"\")\n\tprint(f\": {website_link}\")\n\t#webbrowser.open(link.strip())\n\nos.chdir(\"../tiktok-downloader\")\nos.system('npm i')\nos.system('node cli/index')\n\n#Get most recently downloaded video name\nos.chdir(\"../tiktok-downloader/downloads\")\nget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\nname_of_file = get_file_name.decode('utf-8').strip()\n\n# Name is currently just a giant string of integers. Ex: 7215600292283403566.mp4\nnew_name = input(\"\\nName the file (w/o extension): \")\n\nnew_name = new_name if new_name.strip() else name_of_file[:-4] #get rid of .mp4 extension\n\n# Rename file\nos.system(f\"mv {name_of_file} \\\"{new_name}\\\".mp4\")\n\n# Move the file\nos.chdir(\"../..\")\nos.system(f\"mv ./tiktok-downloader/downloads/\\\"{new_name}\\\".mp4 ./tiktoks/\")\n\n# Open finder to ensure it was downloaded correctly.\nos.system(f\"open -a Finder ./tiktoks/\")\n"
             },
             {
                 "instruction": "When you're done with the setup change back into your top-most directory."
@@ -9267,7 +9566,7 @@
                 "CopyCode": "cd ~"
             },
             {
-                "instruction": "Run my CLI tool using the following commands. Have the TikTok link copied to clipboard and follow the prompts."
+                "instruction": "Run my CLI tool using the following commands. Have the TikTok app or website link copied to clipboard and follow the prompts."
             },
             {
                 "Name": "",
@@ -9276,16 +9575,10 @@
                 "CopyCode": "cd Modern-Python-Files\npython3 Tiktok_Downloader.py"
             },
             {
-                "instruction": "After you're done go to the \"tiktoks\" folder you created earlier to see your downloaded tiktoks."
+                "instruction": "You should now see your downloaded video in your \"tiktoks\" folder."
             },
             {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "CopyCode": "open tiktoks"
-            },
-            {
-                "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" the endpoint might have expired. Go to the original repo here and copy the value for API_URL. Then go to your local cloned tiktok-downloader repo's \"index.js\" file and see if the API_URL is up to date. If not paste the new one as the new value for API_URL in your local repository."
+                "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" the endpoint might have expired. Go to the original repo here and copy the value for API_URL. Then go to your local cloned tiktok-downloader repo's \"index.js\" file and see if the API_URL is up to date. If not, paste the new one as the new value for API_URL in your local repository."
             }
         ]
     },
@@ -9410,13 +9703,13 @@
                 "CopyCode": "cd YouTubeDownloader\ntouch yt_downloader.py"
             },
             {
-                "instruction": "Past the following code into the \"\" file."
+                "instruction": "Past the following code into the \"yt_downloader.py\" file."
             },
             {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "CopyCode": "\"\"\"\nThis program is a command line interface tool for the\n\"yt-dlp\" library. It allows you to download entire\nyoutube videos, download specific intervals of the\nvideo and rename the mp4 file you're downloading.\n\"\"\"\n\nimport os; os.system('clear')\nimport subprocess\nfrom pytube import YouTube\nfrom termcolor import colored as c\nimport inquirer\n\nsave_dir = \"Videos\"\n\nCURRENT_DOWNLOAD_PATH = f\"../{save_dir}/\"\n\nif os.path.exists(CURRENT_DOWNLOAD_PATH):\n\tos.system(f\"open -a Finder '{CURRENT_DOWNLOAD_PATH}'\")\n\tprint(f\"{c('CURRENT DOWNLOAD PATH', 'magenta')}: {os.path.abspath(CURRENT_DOWNLOAD_PATH)}/\")\n\tprint(\"Finder has been opened to current download path. See updates in real time.\")\nelse:\n\tprint(c(f\"\nPath does not exist: \\\"{CURRENT_DOWNLOAD_PATH}\\\"\", 'red'))\n\tprint(\"Go and fix path\n\")\n\texit(0)\n\ndef time_to_seconds(time) -&gt; int:\n\t\"\"\" Converts int seconds to formatted time. \"\"\"\n\tt = [int(x) for x in time.split(\":\")]\n\treturn t[1] + (t[0] * 60) if (len(t) == 2) else t[2] + (t[1] * 60) + (t[0] * 3600)\n\ndef seconds_to_time(seconds) -&gt; str:\n\t\"\"\" Converts seconds to minutes \"\"\"\n\tif seconds &lt; 60:\n\t\treturn f\"0:{seconds:02}\"\n\telif seconds &lt; 3600:\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{minutes}:{seconds:02}\"\n\telse:\n\t\thours = seconds // 3600\n\t\tseconds %= 3600\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{hours}:{minutes:02}:{seconds:02}\"\n\ndef get_choice(the_message):\n\tgreen_yes = c(\"Yes\", 'green')\n\tred_no = c('No', 'red')\n\n\tprint()\n\tquestions = [\n\t\tinquirer.List('choice',\n\t\t\t\t\tmessage=the_message,\n\t\t\t\t\tchoices=[green_yes, red_no]\n\t\t\t\t\t),\n\t]\n\n\tanswers = inquirer.prompt(questions)\n\treturn answers\n\nurl = input(f\"\nEnter {c('youtube link', 'red')} : \")\n\nvideo_len = YouTube(url).length\n\nprint(f\"Video length is {c(seconds_to_time(video_len), 'cyan')}\")\n\nmessage = f\"Do you want to download a {c('specific time interval', 'blue')} (y/n) ? \"\nis_time_interval = get_choice(message)\n\n#'\\x1b[32mYes\\x1b[0m' the color made the string weird\nif \"Yes\" in is_time_interval['choice']:\n\tprint(\"\nThe format has to be (00:00:00) or (00:00). Ex: 3:12:11 or 8:07 or 21:32\")\n\n\tstart_time = input(\"\nEnter a start time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\t\tprint(\"\nInvalid start time\")\n\t\tstart_time = input(\"Enter a start time: \").strip()\n\n\tend_time = input(\"Enter an end time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\n\t\tprint(\"\nInvalid end time\")\n\n\t\tend_time = input(\"Enter an end time: \").strip()\n\n\tdownload_length = seconds_to_time(time_to_seconds(end_time) - time_to_seconds(start_time))\n\n\tprint(f\"\nLength of download will be -&gt; {c(download_length, 'blue')}\n\")\n\n\tnew_name = \"\"\n\n\trename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\n\tdo_rename = get_choice(rename_message)\n\n\tif \"Yes\" in do_rename['choice']:\n\t\tname = input(\"\nNew name of file (without extension): \")\n\t\tnew_name = f'-o \"{name}.%(ext)s\"'\n\t\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\n\tprint()\n\tdownload_with_time = get_choice(\"Ready to download? \")\n\n\tif \"Yes\" in download_with_time['choice']:\n\n\t\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\t\tprint()\n\t\tos.system(f'yt-dlp {new_name.strip()} \"{url.strip()}\" --download-sections \"*{start_time}-{end_time}\"')\n\t\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_video_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_video = get_choice(convert_video_message)\n\tif \"Yes\" in convert_video['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n\n\texit(0)\n\n\nnew_name = \"\"\n\nprint()\nrename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\nrename_vid = get_choice(rename_message)\n\nif \"Yes\" in rename_vid['choice']:\n\n\tname = input(\"\nNew name of file (without extension): \")\n\tnew_name = f'-o \"{name.strip()}.%(ext)s\"'\n\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\nprint()\ndownload_vid = get_choice(\"Ready to download? \")\n\nif \"Yes\" in download_vid['choice']:\n\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\tprint()\n\n\t#--no-mtime sets the date created to now\n\tos.system(f'yt-dlp --no-mtime {new_name} \"{url.strip()}\"')\n\n\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t# Run the shell command and capture its output\n\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\n\t# Convert the byte string to a regular string\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_vid_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_vid = get_choice(convert_vid_message)\n\n\tif \"Yes\" in convert_vid['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n"
+                "CopyCode": "\"\"\"\nThis program is a command line interface tool for the\n\"yt-dlp\" library. It allows you to download entire\nyoutube videos, download specific intervals of the\nvideo and rename the mp4 file you're downloading.\n\"\"\"\n\nimport os; os.system('clear')\nimport subprocess\nfrom pytube import YouTube\nfrom termcolor import colored as c\nimport inquirer\n\nsave_dir = \"Videos\"\n\nCURRENT_DOWNLOAD_PATH = f\"../{save_dir}/\"\n\nif os.path.exists(CURRENT_DOWNLOAD_PATH):\n\tos.system(f\"open -a Finder '{CURRENT_DOWNLOAD_PATH}'\")\n\tprint(f\"{c('CURRENT DOWNLOAD PATH', 'magenta')}: {os.path.abspath(CURRENT_DOWNLOAD_PATH)}/\")\n\tprint(\"Finder has been opened to current download path. See updates in real time.\")\nelse:\n\tprint(c(f\"\\nPath does not exist: \\\"{CURRENT_DOWNLOAD_PATH}\\\"\", 'red'))\n\tprint(f\"Go and create \\\"{CURRENT_DOWNLOAD_PATH}\\\" folder\\n\")\n\texit(0)\n\ndef time_to_seconds(time) -&gt; int:\n\t\"\"\" Converts int seconds to formatted time. \"\"\"\n\tt = [int(x) for x in time.split(\":\")]\n\treturn t[1] + (t[0] * 60) if (len(t) == 2) else t[2] + (t[1] * 60) + (t[0] * 3600)\n\ndef seconds_to_time(seconds) -&gt; str:\n\t\"\"\" Converts seconds to minutes \"\"\"\n\tif seconds &lt; 60:\n\t\treturn f\"0:{seconds:02}\"\n\telif seconds &lt; 3600:\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{minutes}:{seconds:02}\"\n\telse:\n\t\thours = seconds // 3600\n\t\tseconds %= 3600\n\t\tminutes = seconds // 60\n\t\tseconds %= 60\n\t\treturn f\"{hours}:{minutes:02}:{seconds:02}\"\n\ndef get_choice(the_message):\n\tgreen_yes = c(\"Yes\", 'green')\n\tred_no = c('No', 'red')\n\n\tprint()\n\tquestions = [\n\t\tinquirer.List('choice',\n\t\t\t\t\tmessage=the_message,\n\t\t\t\t\tchoices=[green_yes, red_no]\n\t\t\t\t\t),\n\t]\n\n\tanswers = inquirer.prompt(questions)\n\treturn answers\n\nurl = input(f\"\\nEnter {c('youtube link', 'red')} : \")\n\nvideo_len = YouTube(url).length\n\nprint(f\"Video length is {c(seconds_to_time(video_len), 'cyan')}\")\n\nmessage = f\"Do you want to download a {c('specific time interval', 'blue')} (y/n) ? \"\nis_time_interval = get_choice(message)\n\n#'\\x1b[32mYes\\x1b[0m' the color made the string weird\nif \"Yes\" in is_time_interval['choice']:\n\tprint(\"\\nThe format has to be (00:00:00) or (00:00). Ex: 3:12:11 or 8:07 or 21:32\")\n\n\tstart_time = input(\"\\nEnter a start time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\t\tprint(\"\\nInvalid start time\")\n\t\tstart_time = input(\"Enter a start time: \").strip()\n\n\tend_time = input(\"Enter an end time: \").strip()\n\n\twhile time_to_seconds(start_time) &gt; video_len:\n\t\tprint(\"\\nInvalid end time\")\n\t\tend_time = input(\"Enter an end time: \").strip()\n\n\tdownload_length = seconds_to_time(time_to_seconds(end_time) - time_to_seconds(start_time))\n\n\tprint(f\"\\nLength of download will be -&gt; {c(download_length, 'blue')}\\n\")\n\n\tnew_name = \"\"\n\n\trename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\n\tdo_rename = get_choice(rename_message)\n\n\tif \"Yes\" in do_rename['choice']:\n\t\tname = input(\"\\nNew name of file (without extension): \")\n\t\tnew_name = f'-o \"{name}.%(ext)s\"'\n\t\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\n\tprint()\n\tdownload_with_time = get_choice(\"Ready to download? \")\n\n\tif \"Yes\" in download_with_time['choice']:\n\n\t\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\t\tprint()\n\t\tos.system(f'yt-dlp {new_name.strip()} \"{url.strip()}\" --download-sections \"*{start_time}-{end_time}\"')\n\t\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\t\tname_of_file = get_file_name.decode('utf-8').strip()\n\n\t\tif \".mp4\" in name_of_file:\n\t\t\tos.system(f\"mv {name_of_file} {name_of_file.replace('mp4', 'webm')}\")\n\n\t\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_video_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_video = get_choice(convert_video_message)\n\n\tif \"Yes\" in convert_video['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n\n\texit(0)\n\n\nnew_name = \"\"\n\nprint()\nrename_message = f\"Do you want to rename the file? {c('(y/n)', 'red')} \"\nrename_vid = get_choice(rename_message)\n\nif \"Yes\" in rename_vid['choice']:\n\tname = input(\"\\nNew name of file (without extension): \")\n\tnew_name = f'-o \"{name.strip()}.%(ext)s\"'\n\tprint(f\"File's new name is {c(name, 'blue')}{c('.webm', 'blue')}\")\n\nprint()\ndownload_vid = get_choice(\"Ready to download? \")\n\nif \"Yes\" in download_vid['choice']:\n\tos.chdir(CURRENT_DOWNLOAD_PATH)\n\n\tprint()\n\n\t#--no-mtime sets the date created to now\n\tos.system(f'yt-dlp --no-mtime {new_name} \"{url.strip()}\"')\n\n\tprint(c(\"VIDEO SUCCESSFULLY DOWNLOADED\", 'green'))\n\n\t# Run the shell command and capture its output\n\tget_file_name = subprocess.check_output(\"ls -t | head -n 1\", shell=True)\n\n\t# Convert the byte string to a regular string\n\tname_of_file = get_file_name.decode('utf-8').strip()\n\n\tif \".mp4\" in name_of_file:\n\t\tos.system(f\"mv {name_of_file} {name_of_file.replace('mp4', 'webm')}\")\n\n\tname_of_file_wo_extension = name_of_file.rsplit'.', 1\n\n\tprint()\n\tconvert_vid_message = f\"Do you want to convert the video to {c('mp4', 'blue')}? \"\n\tconvert_vid = get_choice(convert_vid_message)\n\n\tif \"Yes\" in convert_vid['choice']:\n\t\tos.system(f\"ffmpeg -i \\\"{name_of_file_wo_extension}\\\".webm \\\"{name_of_file_wo_extension}\\\".mp4\")\n\t\tos.remove(f\"{name_of_file_wo_extension}.webm\")\n\t\tprint(c(\"Successfully deleted the webm file and converted to mp4\", 'green'))\n\n\tprint(c(\"Done\", 'green'))\n"
             },
             {
                 "instruction": "Now copy to Youtube and copy the link of the video you want to download. Keep your terminal open."
@@ -10025,7 +10318,7 @@
                 "instruction": "After you've completed step 2, click on this link to start creating your app."
             },
             {
-                "instruction": "Click the blue \"Create app\" button and you'll be taken to a new page. In the \"Create an app\" form enter the following values. For the App logo you can use any picture but I'd recommend using the UNCW logo. You can download it here."
+                "instruction": "Click the blue \"Create app\" button and you'll be taken to a new page. In the \"Create an app\" form enter the following values. For the App logo you can use any picture but I'd recommend using the UNCW logo. You can download it &here&(/download/UNCW.jpg)."
             },
             {
                 "Name": "",
@@ -11146,7 +11439,7 @@
         ]
     },
     {
-        "Title": "How to create an iOS app with Swift and Firebase 🍎",
+        "Title": "How to create an iOS app with Swift and Firebase 🐦",
         "Link": "/CompSci/SetupProjects/swift-firebase",
         "Results": [
             {
@@ -11162,7 +11455,20 @@
                 "Description": "",
                 "Language": "swiftcustom",
                 "DisplayLang": "Swift",
-                "CopyCode": "hello"
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "title": "",
+                "desc": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "instruction": ""
             }
         ]
     },
@@ -11431,6 +11737,85 @@
             },
             {
                 "instruction": "Using the terminal is a great way to test api links."
+            }
+        ]
+    },
+    {
+        "Title": [
+            "Interact with a Flash Drive Using Python 💾"
+        ],
+        "Link": "/CompSci/SetupProjects/flash-drive",
+        "Results": [
+            {
+                "title": "Interact with a Flash Drive Using Python",
+                "desc": "Explains how to perform operations on a Flash Drive using Python.",
+                "ref": "flash-drive"
+            },
+            {
+                "instruction": "If you don't already have a flash drive/USB-C to USB-A adapter cord, I'd recommend purchasing the following. &lt;br&gt;&lt;br&gt;&lt;u&gt;Flash Drive&lt;/u&gt;: Amazon Link&lt;br&gt;&lt;br&gt;&lt;u&gt;Adapter Cord&lt;/u&gt;: Amazon Link&lt;/br&gt;&lt;br&gt;"
+            },
+            {
+                "instruction": "Find the name of your flash_drive by running the following commands. In the output of the \"ls\" command you should see a volume named something like \"USBMST1\". Copy and record the name"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd /Volumes\nls"
+            },
+            {
+                "instruction": "Move back to your root directory using the following command "
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd ~"
+            },
+            {
+                "instruction": "Now run the following command. In the output look for the name of the flask drive that you copied in step 1. Then copy and record the value under the \"IDENTIFIER\" categrory in the same row as your Flask drive name. It should look something like \"disk8s1\"."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "diskutil list"
+            },
+            {
+                "instruction": "Press \"command + k\" to clear your terminal output. Then create the following folder and files."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install termcolor\nmkdir FlashDrive\ncd FlashDrive\ntouch flash_drive.py\ntouch data.json"
+            },
+            {
+                "instruction": "Open your FlashDrive directory in VSCode. Then open the \"data.json\" file. In the file paste in the following JSON. Then make the \"Name\" attributes value, the name you copied in step 1. Note it shouldn't be the path, just the name. Then make the value of \"Identifier\" attribute the identifier you copied in step 3."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "CopyCode": "{\n    \"Name\": \"\",\n    \"Identifier\": \"\"\n}"
+            },
+            {
+                "instruction": "Now open the \"flash_drive.py\" file and paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "CopyCode": "import json\nimport os\nimport shutil\nimport subprocess\nimport time\nfrom termcolor import colored as c\n\nclass FlashDrive:\n    \"\"\" \n    Class to perform various flash drive operations\n\n    Methods \n    open_flash_drive_in_finder: Opens flash drive path in Finder \n    add_file_to_flash_drive: Adds a file/folder to the flash drive\n    delete_file_on_flash_drive: Deletes file from flash drive\n    unmount_drive: Unmounts drive from computer \n    remount_drive: Remounts drive from computer \n    eject_drive: ejects drive from computer \n    get_all_files: Gets all the files from the flash drive as a list.\n    explain_unmount_and_eject: Explains the difference between unmounting and ejecting a Flash Drive.\n    \n    Example code at the bottom of this file.\n    \"\"\"\n\n    def __init__(self, flash_drive_name: str, flash_drive_identifier: str):\n        \"\"\"\n        Initializes the flash drives path and identifier \n        :param flash_drive_name: Name of the flash drive ex: USBMST1\n        :param flash_drive_identifier: Identifies the flash drive to eject it. Ex: /dev/disk4\n        \"\"\"\n        self.flash_drive_path = f\"/Volumes/{flash_drive_name}\"\n\n        # Flash drive identifier. Find this path using the command: diskutil list\n        self.flash_drive_identifier = flash_drive_identifier\n\n\n    def open_flash_drive_in_finder(self):\n        \"\"\"\n        Opens flash drive directory in Finder. If error \n        occurs because flash drive can't be found print the \n        error in red.\n        \"\"\"\n        command = [\"open\", self.flash_drive_path]\n        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)\n\n        if result.returncode != 0:\n            print(c(result.stderr.strip(), 'red'))\n        else:\n            print(c(\"Flash Drive's Content is being displayed in Finder!\\n\", 'blue'))\n\n\n    def add_file_to_flash_drive(self) -&gt; None:\n        \"\"\"\n        Adds a file/folder to the flash drive.\n        \"\"\"\n\n        while True:\n            file_path = input(\"Please enter the path of the file/folder you want to add (or 'q' to quit): \")\n\n            if file_path.lower().strip() == 'q':\n                print(c(\"Operation cancelled.\", \"red\"))\n                time.sleep(1)\n                os.system('clear')\n                print_menu()\n                return\n\n            if os.path.isfile(file_path) or os.path.isdir(file_path):\n                print(c(\"File/folder path is valid.\", \"green\"))\n\n                confirm = input(f\"Are you sure you want to add \\\"{file_path}\\\" to your flash drive? (yes/y): \")\n\n                if confirm.lower().strip() in [\"yes\", \"y\"]:\n                    break\n                else:\n                    print(f\"The file/folder will {c('NOT', 'red')} be added to your flash drive. Please enter a new path.\")\n            else:\n                print(c(\"Invalid file/folder path. Please try again.\", \"red\"))\n\n        file_name = os.path.basename(file_path)\n        destination_path = os.path.join(self.flash_drive_path, file_name)\n\n        try:\n            if os.path.isfile(file_path):\n                shutil.copy(file_path, destination_path)\n            elif os.path.isdir(file_path):\n                shutil.copytree(file_path, destination_path)\n\n            print(c(f'The file/folder: \"{file_name}\" was successfully added to the flash drive. Destination: \"{destination_path}\"', \"green\"))\n            self.open_flash_drive_in_finder()\n        except Exception as e:\n            print(c(f'An error occurred while trying to add the file/folder to the flash drive: {str(e)}', 'red'))\n\n\n    def delete_file_on_flash_drive(self) -&gt; None:\n        \"\"\"\n        Deletes a file or folder from the flash drive.\n        \"\"\"\n\n        while True:\n            self.open_flash_drive_in_finder()\n\n            all_files = self._get_files_recursive(self.flash_drive_path)\n            \n            if not all_files:\n                print(c(\"\\nThere are currently no files or folders on your Flash Drive.\", \"red\"))\n                return\n\n            file_path = input(\"Please enter the path of the file/folder you want to delete (or 'q' to quit): \")\n\n            if file_path.lower().strip() == 'q':\n                print(c(\"Operation cancelled.\", \"red\"))\n                time.sleep(1)\n                os.system('clear')\n                print_menu()\n                return\n\n            file_name = os.path.basename(file_path)\n            destination_file = os.path.join(self.flash_drive_path, file_name)\n\n            if os.path.exists(destination_file):\n                confirm = input(f\"Are you sure you want to delete \\\"{file_path}\\\" from your flash drive? (yes/y): \")\n\n                if confirm.lower().strip() in [\"yes\", \"y\"]:\n                    try:\n                        if os.path.isdir(destination_file):\n                            shutil.rmtree(destination_file)\n                        else:\n                            os.remove(destination_file)\n                        print(c(f'The file/folder: \"{file_path}\" was successfully removed from the flash drive!', 'green'))\n                    except Exception as e:\n                        print(f'Error occurred while trying to remove the file/folder from the flash drive: {str(e)}')\n                else:\n                    print(f'The file/folder: \"{file_path}\" will {c(\"NOT\", \"red\")} be deleted. Please enter a new path.')\n\n            else:\n                print(c(f\"Can't delete the file/folder: \\\"{file_path}\\\". Does not exist on flash drive.\", 'red'))\n\n\n    def unmount_drive(self) -&gt; None:\n        \"\"\"\n        Unmounts the flash drive from the computer without full on \n        ejecting it. \n        \"\"\"\n\n        try:\n            command = ['diskutil', 'unmountDisk', self.flash_drive_identifier]\n            result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)\n            \n            if result.stderr.strip():\n                print(c(result.stderr.strip(), 'red'))\n            else:\n                print(c(f\"Flash drive at '{self.flash_drive_identifier}' has been successfully unmounted!\\n\", 'green'))\n\n        except Exception as e:\n            print(c(f'Error occurred while unmounting the flash drive: {str(e)}', 'red'))\n\n    def remount_drive(self):\n        \"\"\"\n        Remounts the flash drive. Prints an error\n        if process can't be completed.\n        \"\"\"\n\n        try:\n            command = ['diskutil', 'mountDisk', self.flash_drive_identifier]\n            result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)\n            \n            if result.stderr.strip():\n                print(c(result.stderr.strip(), 'red'))\n                print(c(\"Make sure you've physically removed your flash drive after the last ejection.\\n\", 'red'))\n                exit(0)\n            else:\n                print(c(f\"Flash drive at '{self.flash_drive_identifier}' has been successfully remounted!\\n\", 'green'))\n        except Exception as e:\n            print(c(f'Error occurred while remounting the flash drive: {str(e)}', 'red'))\n\n    def eject_drive(self) -&gt; None:\n        \"\"\"\n        Ejects the flash drive from the computer.\n        \"\"\"\n\n        try:\n            command = ['diskutil', 'eject', self.flash_drive_identifier]\n            result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)\n            \n            if result.stderr.strip():\n                print(c(result.stderr.strip(), 'red'))\n                print(c(\"Make sure to connect and mount your Flash Drive.\\n\", \"red\"))\n                exit(0)\n            else:\n                print(c(f\"Flash drive at '{self.flash_drive_identifier}' has been successfully ejected!\", 'green'))\n                print(c(\"Physically remove the flash drive from your computer to eject it completely.\\n\", 'blue'))\n                exit(0)\n\n        except Exception as e:\n            print(c(f'Error occurred while ejecting the flash drive: {str(e)}', 'red'))\n            exit(0)\n\n    def get_all_files(self) -&gt; [str]:\n        \"\"\"\n        Gets all files from the drive and returns them as a string list. Doesn't include \n        hidden files.\n        \"\"\"\n        try:\n            if not os.path.exists(self.flash_drive_path):\n                print(c(\"The specified flash drive path does not exist.\\n\", \"red\"))\n                exit(0)\n\n            all_files = self._get_files_recursive(self.flash_drive_path)\n\n            if all_files:\n                print(\"\\nThese are all the Files on your Flash Drive:\")\n                for file in all_files:\n                    print(file)\n            else:\n                print(c(\"\\nThere are currently no files on your Flash Drive.\", \"red\"))\n                \n        except Exception as e:\n            print(f'Error occurred while getting files from the flash drive: {str(e)}')\n\n\n    def _get_files_recursive(self, path, level=0):\n        \"\"\"\n        Helper function to recursively get files and folders.\n        \"\"\"\n        items = []\n        try:\n            for entry in os.listdir(path):\n                if not entry.startswith('.'):\n                    full_path = os.path.join(path, entry)\n                    indent = '    ' * level\n\n                    if os.path.isdir(full_path):\n                        items.append(f\"{indent}{entry}\")\n                        items.extend(self._get_files_recursive(full_path, level + 1))\n                    else:\n                        items.append(f\"{indent}- {entry}\")\n\n        except Exception as e:\n            print(f'Error occurred while accessing the path {path}: {str(e)}')\n\n        return items\n    \n    def copy_file_to_new_location(self, old_file_name, new_path):\n        \"\"\"\n        Copys a file from the flash drive to a new location\n        :param old_file_name: The name of the file on the flash to be copied.\n        :param new_path: The new path the file will be copied to.\n        \"\"\"\n        fd_file_path = f\"{self.flash_drive_path}/{old_file_name}\"\n        os.system(f\"cp {fd_file_path} {new_path}\")\n\n    def explain_unmount_and_eject(self):\n        print(\"\\nDefinitions\")\n        print(f\"{c('Unmount', 'blue')}: Temporarily disconnect the Flash Drive logically, but not physically. Do this if you plan to reconnect Flash Drive without physically removing it first.\")\n        print(f\"{c('Eject', 'blue')}: Logically and Physically remove the Flash Drive\\n\") \n        \n        understood = input(\"Understood? (y/yes): \")\n\n        if understood.lower().strip() in [\"yes\", \"y\"]:\n            print(c(\"Great!\", \"green\"))\n            time.sleep(1)\n            os.system('clear')\n            print_menu()\n            return\n\ndef print_menu():\n    print(\"Flash Drive Options\")\n    print(\"1. Open flash drive contents in Finder \")\n    print(\"2. Add files/folders to your flash drive\")\n    print(\"3. Delete files from your flash drive\")\n    print(\"4. Unmount your flash drive\")\n    print(\"5. Remount your flash drive\")\n    print(\"6. Eject flash drive from your computer \")\n    print(\"7. Displays all the files from your flash drive\")\n    print(\"8. Explains unmounting vs ejecting a Flash Drive\\n\")\n\n\ndef choose_option(flash_drive, choice: int):\n    match choice:\n        case 1:\n            flash_drive.open_flash_drive_in_finder()\n        case 2:\n            flash_drive.add_file_to_flash_drive()\n        case 3:\n            flash_drive.delete_file_on_flash_drive()\n        case 4:\n            flash_drive.unmount_drive()\n        case 5:\n            flash_drive.remount_drive()\n        case 6:\n            flash_drive.eject_drive()\n        case 7:\n            flash_drive.get_all_files()\n        case 8:\n            flash_drive.explain_unmount_and_eject()\n        case _:\n            print(c(\"Invalid number\", \"red\"))\n\n\ndef get_flash_drive():\n\n    with open(\"data.json\", \"r\") as file:\n        content = json.load(file)\n        \n    name = content['Name']\n    identifier = content[\"Identifier\"]\n\n    return FlashDrive(name, identifier)\n\n\ndef prompt_user(flash_drive):\n    while True:\n        user_input = input(\"Choose an option 1-8 (or 'q' to quit): \")\n        \n        if user_input.lower() == 'q':\n            print(c(\"Program quite successfully\", \"green\"))\n            flash_drive.eject_drive()\n            break\n        \n        try:\n            user_number = int(user_input)\n            if 1 &lt;= user_number &lt;= 8:\n                choose_option(flash_drive, user_number)\n            else:\n                print(c(\"Invalid input. Please enter an integer between 1 and 8.\", \"red\"))\n        except ValueError:\n            print(c(\"Invalid input. Please enter an integer between 1 and 8.\", \"red\"))\n\n\ndef main():\n\n    flash_drive = get_flash_drive()\n\n    print_menu()\n    prompt_user(flash_drive)\n\nmain()"
+            },
+            {
+                "instruction": "Open and terminal and run the following commands to interact with your flash drive."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd FlashDrive\npython3 flash_drive.py"
             }
         ]
     },
@@ -11733,6 +12118,319 @@
             },
             {
                 "instruction": "You should now see the result table of your query."
+            }
+        ]
+    },
+    {
+        "Title": "How to Setup Email.js in a Project 📬",
+        "Link": "/CompSci/SetupProjects/emailjs",
+        "Results": [
+            {
+                "title": "How to Setup Email.js in a Project",
+                "desc": "Explains how to send emails using JavaScript.",
+                "ref": "emailjs"
+            },
+            {
+                "instruction": "Basically all these instructions come from this video."
+            },
+            {
+                "instruction": "Go to emailjs.com and press the orange \"Create Free Account\" button."
+            },
+            {
+                "instruction": "Enter your information in the fields, then press \"Sign Up\"."
+            },
+            {
+                "instruction": "Then sign in and confirm your email when prompted. Go to your email and click the confirmation link within it."
+            },
+            {
+                "instruction": "After you've done that you should be on the main \"Email Services\" page."
+            },
+            {
+                "instruction": "On the \"Email Services\" page, click the \"Add New Service\" button."
+            },
+            {
+                "instruction": "Under \"Personal Services\" select the email service you want to use to send emails on the behalf on EmailJS. For example if you want to send the emails from your Gmail account, select \"Gmail\" in the options."
+            },
+            {
+                "instruction": "For this example we'll use Gmail. Click on the \"Gmail\" option and then we'll fill in the following values in the \"Config Service\" pop-up."
+            },
+            {
+                "instruction": "In the \"Name\" field put \"Test-Email-Service\". The \"Service ID\" field should already be filled out. If it isn't, click the key icon on the right."
+            },
+            {
+                "instruction": "Copy and record the \"Service ID\". You'll need it later on."
+            },
+            {
+                "instruction": "Click \"Connect Account\". Choose the Gmail account you want to use. Click \"Continue\" when prompted to \"Sign in to EmailJS\". Click \"Continue\" again after that. Your Gmail account should be connected after that."
+            },
+            {
+                "instruction": "Make sure the \"Send test email to verify configuration\" box is selected, then press \"Create Service\". You should've received a test confirmation email in your Gmail account."
+            },
+            {
+                "instruction": "After you do that, click \"Email Templates\" in the left-hand bar."
+            },
+            {
+                "instruction": "Click the \"Create New Template\" button."
+            },
+            {
+                "instruction": "There's a ton of customization you can do here, but we'll it keep simple for this example."
+            },
+            {
+                "instruction": "In the \"My Default Template\" page.&lt;br&gt;&lt;br&gt;Subject: \"Message sent from EmailJS\".&lt;br&gt;&lt;br&gt;Then press Edit Content -&gt; Code Editor -&gt; Delete the code in the field -&gt; Paste the code below into the field.&lt;br&gt;&lt;br&gt;Replace \"TYPE_YOUR_NAME_HERE\" with your actual name. After you're done, scroll to the bottom and click the \"Apply Changes\" button. Don't just press the 'X' at the top."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "HTML",
+                "CopyCode": "&lt;p&gt;Hello TYPE_YOUR_NAME_HERE,&lt;/p&gt;\n&lt;p&gt;You got a new message from Example Website&lt;/p&gt;\n&lt;p style=\"padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic; font-size: 18px;\"&gt;{{message}}&lt;/p&gt;\n&lt;p&gt;Regards,&lt;br&gt;{{ from_name }}&lt;/p&gt;\n&lt;p style=\"margin-top: -5px;\"&gt;Email: {{ from_email }}&lt;/p&gt;"
+            },
+            {
+                "instruction": "On the right-hand side you should see a section with multiple fields. Enter the following values in to the fields."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "CopyCode": "To Email: Use same Gmail Address that you're sending the email from.\nFrom Name: Your full name\nFrom Email: Make sure \"Use Default Email Address\" is selected\nReply To: {{reply_to}}\n\n*Leave other fields blank*\n"
+            },
+            {
+                "instruction": "Now, stay in \"My Default Template\" but click on the \"Settings\" tab on the right. Copy and record the value in the \"Template ID\" field."
+            },
+            {
+                "instruction": "Click the \"Save\" button in the top-right when you're done."
+            },
+            {
+                "instruction": "Now click on \"Account\" in the left-hand bar."
+            },
+            {
+                "instruction": "In the \"API keys\" section in the \"General\" tab, copy the value in the public \"Public Key\" field. Copy and record this for later use."
+            },
+            {
+                "instruction": "You should now have everything you need to setup EmailJS in your project."
+            },
+            {
+                "title": "How to Use Emailjs with Vanilla Javascript",
+                "desc": "Explains how to setup your Emailjs service in vanilla Html/JavaScript code."
+            },
+            {
+                "instruction": "Open your terminal and run the following commands."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "mkdir emailjs-example\ncd emailjs-example\ntouch index.html"
+            },
+            {
+                "instruction": "If you don't already have it installed, download the VSCode Live Server extension."
+            },
+            {
+                "instruction": "Now open your \"emailjs-example\" folder in VSCode. Paste the following code into the \"index.html\" file."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "HTML",
+                "CopyCode": "&lt;!DOCTYPE html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n  &lt;meta charset=\"UTF-8\"&gt;\n  &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;\n  &lt;title&gt;Contact Form&lt;/title&gt;\n  &lt;script src=\"https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js\"&gt;&lt;/script&gt;\n  &lt;script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"&gt;&lt;/script&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;div id=\"app\"&gt;\n    &lt;h2 id=\"title\"&gt;Contact Form&lt;/h2&gt;\n\n    &lt;div&gt;\n      &lt;label for=\"name\" id=\"nameLabel\"&gt;Name:&lt;/label&gt;\n      &lt;input type=\"text\" id=\"name\" name=\"name_12345\" placeholder=\"\" autocomplete=\"false\"/&gt;\n    &lt;/div&gt;\n\n    &lt;div&gt;\n      &lt;label for=\"email\" id=\"emailLabel\"&gt;Email:&lt;/label&gt;\n      &lt;input type=\"email\" id=\"email\" name=\"email_6789112\" placeholder=\"\" autocomplete=\"false\"/&gt;\n    &lt;/div&gt;\n\n    &lt;div&gt;\n      &lt;label for=\"message\" id=\"messageLabel\"&gt;Message:&lt;/label&gt;\n      &lt;textarea id=\"message\" name=\"message_9071908\" placeholder=\"\" autocomplete=\"false\"&gt;&lt;/textarea&gt;\n    &lt;/div&gt;\n\n    &lt;button type=\"submit\" id=\"submitBtn\"&gt;Submit&lt;/button&gt;\n  &lt;/div&gt;\n\n  &lt;script&gt;\n    document.addEventListener('DOMContentLoaded', function () {\n\n        // EmailJS initialization\n        emailjs.init('YOUR_PUBLIC_KEY');\n\n        // Submit button event listener\n        document.getElementById('submitBtn').addEventListener('click', function () {\n        const userName = document.getElementById('name').value.trim();\n        const userEmail = document.getElementById('email').value.trim();\n        const userMessage = document.getElementById('message').value.trim();\n\n        if (!userName || !userEmail || !userMessage) return;\n\n        document.getElementById('submitBtn').innerText = 'Sending...';\n\n        const templateParams = {\n            from_name: userName,\n            from_email: userEmail,\n            message: userMessage,\n        };\n\n        const serviceID = 'YOUR_SERVICE_ID';\n        const templateID = 'YOUR_TEMPLATE_ID';\n\n        emailjs.send(serviceID, templateID, templateParams)\n            .then(response =&gt; {\n                Swal.fire('Sent!', 'Your message has been sent successfully!', 'success');\n                    document.getElementById('name').value = '';\n                    document.getElementById('email').value = '';\n                    document.getElementById('message').value = '';\n                })\n                .catch(err =&gt; {\n                    Swal.fire('Error!', 'Something went wrong when sending your message! See console.', 'error');\n                    console.error('Failed to send email:', err);\n                })\n                .finally(() =&gt; {\n                    document.getElementById('submitBtn').innerText = 'Submit';\n                });\n            });\n        });\n  &lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;"
+            },
+            {
+                "instruction": "In the code you just pasted into the \"index.html\" file, you'll need to replace some of the values. Do the following&lt;br&gt;&lt;br&gt;Replace \"YOUR_SERVICE_ID\" with the value you copied in step 10. It should look like \"service_ubqeik9\".&lt;/br&gt;&lt;br&gt;Replace \"YOUR_TEMPLATE_ID\" with the value you copied in step 18. It should look like \"template_ubqeik9\".&lt;/br&gt;&lt;br&gt;Replace \"YOUR_PUBLIC_KEY\" with the value you copied in step 21.&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;"
+            },
+            {
+                "instruction": "Now press \"Go Live\" at the bottom of VSCode to run live server."
+            },
+            {
+                "instruction": "In the Contact Form fields enter the following values. Then press the \"Submit\" button. Note that the email is just an example and is not being used to send the email. Your email.js service is what's sending the email."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "CopyCode": "Name: James Smith\nEmail: jamessmith@example.com\nMessage: This was sent from Emailjs Vanilla html/js example website."
+            },
+            {
+                "instruction": "After you get the confirmation pop-up, go to your email and check that the email was actually sent."
+            },
+            {
+                "instruction": "If all these steps worked, then you Emailjs service should be setup correctly."
+            },
+            {
+                "title": "How to Use Emailjs with a Javascript Framework",
+                "desc": "Explains how to setup Emailjs in your Vue code."
+            },
+            {
+                "instruction": "Before you do any of this &Go to Setup Vue Project&[VueLink] and complete the instructions. Name your project \"emailjs-example\". Run the following command when you're done."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cp -R templates/vue-project /path/to/destination/emailjs-example"
+            },
+            {
+                "instruction": "Run the following commands to install the necessary libraries via command line"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd emailjs-example\nnpm install @emailjs/browser\nnpm install sweetalert2"
+            },
+            {
+                "instruction": "Now open your \"emailjs-example\" folder in VSCode. Go to src -&gt; views. Open \"Home.vue\" and delete its contents. Then paste in the following code."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "HTML",
+                "DisplayLang": "Vue",
+                "CopyCode": "&lt;template&gt;\n    &lt;div id=\"app\"&gt;\n      &lt;h2 id=\"title\"&gt;Contact Form&lt;/h2&gt;\n\n      &lt;div&gt;\n        &lt;label for=\"name\" id=\"nameLabel\"&gt;Name:&lt;/label&gt;\n        &lt;input v-model=\"userName\" type=\"text\" id=\"name\" name=\"name_12345\" placeholder=\"\" autocomplete=\"off\" /&gt;\n      &lt;/div&gt;\n\n      &lt;div&gt;\n        &lt;label for=\"email\" id=\"emailLabel\"&gt;Email:&lt;/label&gt;\n        &lt;input v-model=\"userEmail\" type=\"email\" id=\"email\" name=\"email_6789112\" placeholder=\"\" autocomplete=\"off\" /&gt;\n      &lt;/div&gt;\n\n      &lt;div&gt;\n        &lt;label for=\"message\" id=\"messageLabel\"&gt;Message:&lt;/label&gt;\n        &lt;textarea v-model=\"userMessage\" id=\"message\" name=\"message_9071908\" placeholder=\"\" autocomplete=\"off\"&gt;&lt;/textarea&gt;\n      &lt;/div&gt;\n\n      &lt;button type=\"submit\" @click=\"sendEmail\" :disabled=\"isSending\"&gt;{{ buttonText }}&lt;/button&gt;\n    &lt;/div&gt;\n&lt;/template&gt;\n\n\n&lt;script setup&gt;\nimport { ref } from 'vue';\nimport emailjs from '@emailjs/browser';\nimport Swal from 'sweetalert2';\n\nconst userName = ref('');\nconst userEmail = ref('');\nconst userMessage = ref('');\nconst isSending = ref(false);\nconst buttonText = ref('Submit');\n\n// Initialize EmailJS\nemailjs.init('YOUR_PUBLIC_KEY');\n\n// Send email function\nconst sendEmail = () =&gt; {\nif (!userName.value.trim() || !userEmail.value.trim() || !userMessage.value.trim()) return;\n\nbuttonText.value = 'Sending...';\nisSending.value = true;\n\nconst templateParams = {\n    from_name: userName.value,\n    from_email: userEmail.value,\n    message: userMessage.value,\n};\n\nconst serviceID = 'YOUR_SERVICE_ID';\nconst templateID = 'YOUR_TEMPLATE_ID';\n\nemailjs.send(serviceID, templateID, templateParams)\n\t.then(response =&gt; {\n\t\tSwal.fire('Sent!', 'Your message has been sent successfully!', 'success');\n\t\t\tuserName.value = '';\n\t\t\tuserEmail.value = '';\n\t\t\tuserMessage.value = '';\n\t\t})\n\t.catch(err =&gt; {\n\t\tSwal.fire('Error!', 'Something went wrong when sending your message! See console.', 'error');\n\t\t\tconsole.error('Failed to send email:', err);\n\t\t})\n\t.finally(() =&gt; {\n\t\tbuttonText.value = 'Submit';\n\t\tisSending.value = false;\n\t});\n};\n\n&lt;/script&gt;"
+            },
+            {
+                "instruction": "In the code you just pasted into the \"Home.vue\" file, you'll need to replace some of the values. Do the following&lt;br&gt;&lt;br&gt;Replace \"YOUR_SERVICE_ID\" with the value you copied in step 10. It should look like \"service_ubqeik9\".&lt;/br&gt;&lt;br&gt;Replace \"YOUR_TEMPLATE_ID\" with the value you copied in step 18. It should look like \"template_ubqeik9\".&lt;/br&gt;&lt;br&gt;Replace \"YOUR_PUBLIC_KEY\" with the value you copied in step 21.&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;"
+            },
+            {
+                "instruction": "This is optional, but go to the src folder and open \"App.vue\". Delete the paragraph tag to get rid of the large \"TEST WEBSITE\" header."
+            },
+            {
+                "instruction": "Run your code using the following commands. Open the link in the output"
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "cd emailjs-example\nnpm run dev"
+            },
+            {
+                "instruction": "In the Contact Form fields enter the following values. Then press the \"Submit\" button. Note that the email is just an example and is not being used to send the email. Your email.js service is what's sending the email."
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "CopyCode": "Name: John Doe\nEmail: johndoe@example.com\nMessage: This was sent from Emailjs Vue example website."
+            },
+            {
+                "instruction": "After you get the confirmation pop-up, go to your email and check that the email was actually sent."
+            },
+            {
+                "instruction": "If all these steps worked, then you Emailjs service should be setup correctly."
+            }
+        ]
+    },
+    {
+        "Title": "How to Interact with iCloud using Python 🍎",
+        "Link": "/CompSci/SetupProjects/pyicloud",
+        "Results": [
+            {
+                "title": "How to Interact with iCloud using Python",
+                "desc": "Explains how to use the PyiCloud library to interact with iCloud.",
+                "ref": "pyicloud"
+            },
+            {
+                "instruction": "PyiCloud is a module which allows you to interact with iCloud services using Python. It works by using an iCloud API Wrapper and the requests library to access iPhone and Calendar data. It's open source and you can find the repository here."
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "CopyCode": "pip3 install pyicloud\npip3 install --upgrade pip"
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
+            },
+            {
+                "instruction": ""
+            },
+            {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "CopyCode": ""
             }
         ]
     },
@@ -12341,12 +13039,16 @@
                 "Action": "Build and run your project"
             },
             {
-                "Shortcut": "shift + control + down arrow",
-                "Action": "Multiline editing in Xcode"
+                "Shortcut": "command + d",
+                "Action": "Copy the line you're on below it."
             },
             {
-                "Shortcut": "",
-                "Action": ""
+                "Shortcut": "option + command + left arrow",
+                "Action": "Hover your cursor next to the opening bracket of a code block, then do the above to collapsed it."
+            },
+            {
+                "Shortcut": "option + command + right arrow",
+                "Action": "Hover your cursor next to the opening bracket of a collapsed code block, then do the above to expand it."
             },
             {
                 "Title": "Xcode Shortcuts"
@@ -12509,7 +13211,7 @@
                 "Name": "Install Homebrew on MacOS",
                 "Description": "Run these two commands in your terminal to install homebrew. The first will install XCode Command Line Tools, the second will install homebrew.",
                 "Language": "Command",
-                "CopyCode": ""
+                "CopyCode": "xcode-select --install\n\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/\nHEAD/install.sh)\""
             },
             {
                 "Name": "Python",
@@ -12531,7 +13233,7 @@
             },
             {
                 "underlined": "Just get started",
-                "tip": "No matter what I'm working on, it always seems like the hardest part of it is getting started. I find that I sometimes procrastinate when I find a task daunting or think it will be challenging. It's never as bad it seems once you get started and get into the flow of things. Just try your best to start working on what you find difficult and it's usually not nearly as hard as you think it will be."
+                "tip": "No matter what I'm working on, it always seems like the hardest part of it is getting started. I find that I sometimes procrastinate when I find a task daunting or think it will be challenging. It's never as bad it seems once you get started and get into the flow of things. Just try your best to start working on what you find difficult and it's usually not nearly as hard as you think it will be. Relevant Mark Goatberg clip."
             },
             {
                 "underlined": "The 5 second rule",
@@ -12683,6 +13385,11 @@
                 "Name": "AllTrails",
                 "Description": "This is a search tool to find hiking trails in your area. You can find trails and leave reviews.",
                 "Link": "https://apps.apple.com/us/app/alltrails-hike-bike-run/id405075943"
+            },
+            {
+                "Name": "PayByPhone Parking",
+                "Description": "If you ever go somewhere that has paid parking, this is a really good app to have. It seems to be the most widely used app for paid parking.",
+                "Link": "https://apps.apple.com/us/app/paybyphone-parking/id448474183"
             },
             {
                 "Name": "GrubHub",
@@ -13364,6 +14071,10 @@
                 "transcription": "Some Famous Severs Amazon Google Microsoft Zoom app"
             },
             {
+                "text": "Average computer science graduate reaction",
+                "transcription": "Watching the homeless man pull of a knife Watching the homeless man pull out your same degree Ronaldo"
+            },
+            {
                 "text": "*Dies of suffocation*",
                 "transcription": "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning"
             },
@@ -13494,6 +14205,18 @@
             {
                 "text": "CSC 133 Gang",
                 "transcription": "Fun with flags norway xorway xnorway andway nandway notway"
+            },
+            {
+                "text": "Random 2020 throwback meme for good measure",
+                "transcription": "I'm pretty sure i pretty sure I had coronavirus in December 2019 cause like i had a real bad cold but they said wasn't the flu so idk"
+            },
+            {
+                "text": "Job Searching in 2024 be like",
+                "transcription": "I want to do an internship do you have experience? I want to gain experience in the internship anyway here's your rejection"
+            },
+            {
+                "text": "Relatable",
+                "transcription": "Fourth graders using CHAT-GPT to do their \"List 5 uses of water\" homework"
             }
         ]
     },
@@ -13555,6 +14278,9 @@
                 "text": "Beautiful Orange Sky"
             },
             {
+                "text": "View from my old Terrapin Hall Dorm in August"
+            },
+            {
                 "text": "Theater Balcony in the Cultural Arts Building"
             },
             {
@@ -13562,6 +14288,12 @@
             },
             {
                 "text": "Sunset in late August 2023"
+            },
+            {
+                "text": "View from Congdon Hall Balcony in Early May"
+            },
+            {
+                "text": "Wilmington Sunset in Early September 2023"
             },
             {
                 "text": "I think this was taken in Mooresville. Photo creds to my dad"
@@ -13594,6 +14326,9 @@
                 "text": "View from my IBM Office"
             },
             {
+                "text": "Science, it's like magic, but real"
+            },
+            {
                 "text": "NCSU Train Tracks in mid-April"
             },
             {
@@ -13603,13 +14338,49 @@
                 "text": "Spring in Durham"
             },
             {
+                "text": "Random New Hampshire pic from 2016 for Good measure"
+            },
+            {
                 "text": "Visitor Outside My Window"
             },
             {
                 "text": "Durham Pond in Spring"
             },
             {
-                "text": "Outside view from OG IBM office in Summer"
+                "text": "Outside view from my OG IBM office"
+            },
+            {
+                "text": "Pink House in Durham Neighborhood"
+            },
+            {
+                "text": "Warm summer evening in Durham"
+            },
+            {
+                "text": "July 4th Sunset"
+            },
+            {
+                "text": "Fountain in Durham"
+            },
+            {
+                "text": "Duke University's Beautiful Chapel"
+            },
+            {
+                "text": "Flentrop Pipe Organ in the Chapel"
+            },
+            {
+                "text": "Stained Glass Windows in the Chapel"
+            },
+            {
+                "text": "Corridor in Duke's Chapel. Look's straight out of Harry Potter."
+            },
+            {
+                "text": "Sarah P. Duke Gardens"
+            },
+            {
+                "text": "Baseball Field near Duke"
+            },
+            {
+                "text": "Giant rainbow after July thunderstorm in Durham"
             },
             {
                 "text": "View from my USAA office window"
@@ -13624,10 +14395,13 @@
                 "text": "Cloudy day in Texas"
             },
             {
-                "text": "Picture of Pond in Texas"
+                "text": "Pond in Plano Shopping Center"
             },
             {
                 "text": "USAA Sign in front of the building where I worked"
+            },
+            {
+                "text": "View from USAA balcony in Plano, Texas"
             }
         ]
     },

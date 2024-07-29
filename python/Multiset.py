@@ -19,7 +19,7 @@ def get_multi_set_example():
 
             Results += info + instructions
 
-        Title = "Deploy the Vue, Flask and SQLite3 app to Amazon Web Services 🚀"
+        Title = "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere 🐍"
         Link = "/CompSci/SetupProjects/deploy-sqlite"
         
         return { "Title": Title, "Link": Link, "Results": Results }
