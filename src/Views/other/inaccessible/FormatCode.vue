@@ -98,7 +98,8 @@ const getFormattedString = (str) => {
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '    ')
-            .replace(/\\\./g, '\\\\.');
+            .replace(/\\\./g, '\\\\.')
+            .replace(/\\\(/g, '\\\\(');
 };
 
 
@@ -113,7 +114,8 @@ const getCopyString = (str) => {
             .replace(/\\\"/g, '\\\\\\"')
             .replace(/(?<!\\)"/g, '\\"')
             .replace(/\t/g, '\\t')
-            .replace(/\\\./g, '\\\\.');
+            .replace(/\\\./g, '\\\\.')
+            .replace(/\\\(/g, '\\\\(');
 };
 
 
