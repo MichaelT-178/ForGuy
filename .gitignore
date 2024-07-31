@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 src/unused/
+
+/src/data/LinkedIn/Contacts.json
+
