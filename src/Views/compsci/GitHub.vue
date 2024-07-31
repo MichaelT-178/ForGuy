@@ -224,8 +224,22 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <p class="scroll-up-btn" @click="scrollToTop">{{ text[20].scrollToTop }}</p>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
 
+        <!-- Your Section Name  -->
+        <h2 class="gh-header-two" ref="RemoveFile">{{ text[23].title }}</h2>
+        <p class="description-two">{{ text[23].desc }}</p>
+
+        <div v-for="point in removeFileFromGitHistory" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
+
+        
+        <!-- Scroll Up To Top Button -->
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text[20].scrollToTop }}</p>
+    
     </div>
 </template>
 
@@ -283,6 +297,7 @@ const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
 
 const pullChangesFromMain = jsonData.value["PullChangesFromMain"];
 const resolveMergeConflicts = jsonData.value["ResolveMergeConflicts"];
+const removeFileFromGitHistory = jsonData.value["RemoveFileFromGitHistory"];
 
 const text = jsonData.value["Text"];
 
@@ -304,6 +319,7 @@ const CSC450Workflow = ref(null);
 const AmotionsWorkflow = ref(null);
 const MergeMain = ref(null);
 const MergeConflicts = ref(null);
+const RemoveFile = ref(null);
 
 const secondSix = ref(null);
 const secondSeven = ref(null);
@@ -341,6 +357,7 @@ const scrollToRef = (refName) => {
         AmotionsWorkflow,
         MergeMain,
         MergeConflicts,
+        RemoveFile,
         secondSix,
         secondSeven,
         secondNine,
@@ -365,6 +382,8 @@ const scrollToRef = (refName) => {
             top: offsetPosition,
             behavior: 'smooth'
         });
+
+        history.replaceState(null, null, `#${refName}`);
     } else {
         console.warn("No target element found for refName:", refName);
     }
@@ -378,12 +397,12 @@ const scrollToTop = () => {
 };
 
 const createRefContent = (refVal) => {
-    return `<span><span href="#" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</span></span>`;
+    return `<span><a href="#${refVal.ref}" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</a></span>`;
 }
 
 const processedTipContent = (tip) => {
     return tip.replace(/(Different for multiple accounts|Scroll back up to original step|Scroll back to links)\((.*?)\)/g, (match, phrase, refName) => {
-        return `<span href="#" class="scroll-down" data-ref-name="${refName}">${phrase}</span>`;
+        return `<a href="#${refName}" class="scroll-down" data-ref-name="${refName}">${phrase}</a>`;
     });
 }
 
@@ -396,7 +415,6 @@ onMounted(() => {
         });
     });
 });
-
 
 </script>
 
