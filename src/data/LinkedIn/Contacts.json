@@ -66,6 +66,16 @@
             "Image": "Fidelity.jpg"
         },
         {
+            "Name": "Annette Lee",
+            "Company": "Wells Fargo",
+            "Role": "Recruiter",
+            "Location": "Charlotte, North Carolina",
+            "Email": "Annette.Lee@wellsfargo.com",
+            "LinkedIn": "https://www.linkedin.com/in/annette-lee-32ab5a1b/",
+            "Details": "This women contacted me about a SWE job at Wells Fargo. I think she was recruiting at multiple locations.",
+            "Image": "WellsFargo.jpg"
+        },
+        {
             "Name": "Nathiraa E.",
             "Company": "Infosys",
             "Role": "Associate - Talent Acquisition",
