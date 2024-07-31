@@ -124,9 +124,6 @@
         </div>
 
 
-
-
-
         <!-- Upload Existing Folder section -->
         <h2 class="gh-header-two" ref="ExistingCmds">{{ text[13].title }}</h2>
         <p class="description-two">{{ text[13].desc }}</p>
@@ -201,7 +198,32 @@
         <p class="centered-txt">{{ text[19].amotions }}</p>
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table"></CmdTable>
-    
+        
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+
+        <!-- Pull Changes From Main  -->
+        <h2 class="gh-header-two" ref="MergeMain">{{ text[21].title }}</h2>
+        <p class="description-two">{{ text[21].desc }}</p>
+
+
+        <div v-for="point in pullChangesFromMain" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
+
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+
+        <!-- Resolve Merge Conflicts  -->
+        <h2 class="gh-header-two" ref="MergeConflicts">{{ text[22].title }}</h2>
+        <p class="description-two">{{ text[22].desc }}</p>
+
+        <div v-for="point in resolveMergeConflicts" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+                </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+            <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+        </div>
+
         <p class="scroll-up-btn" @click="scrollToTop">{{ text[20].scrollToTop }}</p>
 
     </div>
@@ -259,6 +281,9 @@ const amotionsWorkflowThree = jsonData.value["AmotionsWorkflowThree"];
 const amotionsPts = jsonData.value["AmotionsPts"];
 const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
 
+const pullChangesFromMain = jsonData.value["PullChangesFromMain"];
+const resolveMergeConflicts = jsonData.value["ResolveMergeConflicts"];
+
 const text = jsonData.value["Text"];
 
 
@@ -277,6 +302,8 @@ const ResetSingleFile = ref(null);
 const ExistingCmds = ref(null);
 const CSC450Workflow = ref(null);
 const AmotionsWorkflow = ref(null);
+const MergeMain = ref(null);
+const MergeConflicts = ref(null);
 
 const secondSix = ref(null);
 const secondSeven = ref(null);
@@ -312,6 +339,8 @@ const scrollToRef = (refName) => {
         ExistingCmds,
         CSC450Workflow,
         AmotionsWorkflow,
+        MergeMain,
+        MergeConflicts,
         secondSix,
         secondSeven,
         secondNine,

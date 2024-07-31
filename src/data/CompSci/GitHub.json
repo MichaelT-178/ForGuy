@@ -64,6 +64,16 @@
             "id": 13,
             "name": "My Old Amotions Workflow",
             "ref": "AmotionsWorkflow"
+        },
+        {
+            "id": 14,
+            "name": "How to Merge Changes from Main into Your Branch",
+            "ref": "MergeMain"
+        },
+        {
+            "id": 15,
+            "name": "How to Resolve Merge Conflicts",
+            "ref": "MergeConflicts"
         }
     ],
     "SetupGitHub": [
@@ -1110,6 +1120,106 @@
             }
         }
     ],
+    "PullChangesFromMain": [
+        {
+            "id": 1,
+            "instruction": "Change into your branch. Replace \"your-branch-name\" with your actual branch name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout your-branch-name",
+                "CopyCode": "git checkout your-branch-name"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Merge changes from main into current branch",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git merge main",
+                "CopyCode": "git merge main"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "You should now see all changes from main in your current branch. Review the files to determine what changes you want to keep."
+        },
+        {
+            "id": 4,
+            "instruction": "See the paths of all the files you changed in your current branch that varies from main.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git diff --name-only main",
+                "CopyCode": "git diff --name-only main"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "See the changes for a specific file. Change the path to your actual path",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git diff path/to/your/specific-file",
+                "CopyCode": "git diff path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Run this command to keep the current version of a file in the branch you're on. Replace the path with your actual path. For example, if you're on a branch called \"update-code\" and you run this command, all changes from your \"update-code\" branch will be kept NOT the changes from the main branch.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout --ours path/to/your/specific-file",
+                "CopyCode": "git checkout --ours path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Run this command to keep all incoming changes from main for a specific file. Replace the path with your actual path. For example if you're on a branch called update-code and you run this command all changes from main will be kept.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout --theirs path/to/your/specific-file",
+                "CopyCode": "git checkout --theirs path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "Once you've resolved conflicts in your file run the following command to stage your change. Note that if you kept the changes from your current branch there might be a red exclamation mark next to your file name in VSCode. If that's the case you only need to stage your file, but you don't need to commit or push it. Replace the path with your actual path.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add path/to/your/specific-file",
+                "CopyCode": "git add path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "In VScode, once you no longer have any files under Merge Changes and that all of your files are under \"Staged Changes\", then commit and push your changes to your remote branch. Replace your-branch-name with your actual branch name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name.",
+                "CopyCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name"
+            }
+        }
+    ],
+    "ResolveMergeConflicts": [
+        {
+            "id": 1,
+            "instruction": "This is your first instruction."
+        }
+    ],
     "Text": [
         {
             "title": "GitHub",
@@ -1190,6 +1300,14 @@
         {
             "scrollToTop": "Scroll To Top",
             "scrollToLinks": "Scroll back to links(scrollLinksRef)"
+        },
+        {
+            "title": "How to Merge Changes from Main into Your Branch",
+            "desc": "Explains how to merge changes from main into your current branch and handle merge conflicts."
+        },
+        {
+            "title": "How to Resolve Merge Conflicts",
+            "desc": "Useful commands for resolving merge conflicts and an explanation of how to handle them."
         }
     ]
 }
