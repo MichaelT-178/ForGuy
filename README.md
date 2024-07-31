@@ -26,7 +26,6 @@ TEMPLATES ZIP FOLDER
 1. Go to python/real_settings.txt and paste your updated json data.
 2. Run create_settings_file.py
 
-
 # How to add an Instruction set
 
 1. In src/data/CompSci/Instructions add your Instruction set file.
@@ -35,7 +34,7 @@ TEMPLATES ZIP FOLDER
 
 3. In src/data/CompSci/Instructions go the InstructionSets file and add your information.
 
-3. In src/data go to SearchPages and add your information.
+4. In src/data go to SearchPages and add your information.
 ```
 {
     "id": 56,
@@ -45,9 +44,7 @@ TEMPLATES ZIP FOLDER
 },
 ```
 
-
-
-4. In /python go to create_search_data.py and add the following function. Adjust the logic as necessary.
+5. In /python go to create_search_data.py and add the following function. Adjust the logic as necessary.
 
 ```
 def get_<REF_NAME>():
@@ -65,7 +62,7 @@ def get_<REF_NAME>():
 		return { "Title": Title, "Link": Link, "Results": Results }
 ```
 
-5. If it's multiset you'd use this template.
+6. If it's multiset you'd use this template.
 
 ```
 def get_<REF_NAME>():
@@ -89,13 +86,13 @@ def get_<REF_NAME>():
         return { "Title": Title, "Link": Link, "Results": Results }
 ```
 
-6. Call your function below with the other functions
+7. Call your function below with the other functions
 
 ```
 <REF_NAME> = get_<REF_NAME>()
 ```
 
-7. Put your variable name in the "all_data" list 
+8. Put your variable name in the "all_data" list 
 
 ```
 <REF_NAME>,
@@ -121,7 +118,14 @@ def get_<REF_NAME>():
 "YourSectionName": [
     {
         "id": 1,
-        "instruction": "This is your first instruction."
+        "instruction": "",
+        "Code": {
+            "Name": "",
+            "Description": "",
+            "Language": "Command",
+            "FormatCode": "",
+            "CopyCode": ""
+        }
     },
 ],
 
@@ -159,13 +163,13 @@ const NewSectionRefName = ref(null);
 NewSectionRefName,
 ```
 
-8. Now scroll up to the "template" section. Right above the last &lt;p&gt; tag with the class "scroll-up-btn" paste the following code. Replace the YOUR_INDEX variables with the value you copied in step 4. Replace YOUR_SECTION_NAME with the name of your variable from step 5.
+8. Now scroll up to the "template" section. Right above the last &lt;p&gt; tag with the class "scroll-up-btn" paste the following code. Replace NEW_SECTION_REF with the value of the "ref" attribute from step 1. Replace the YOUR_INDEX variables with the value you copied in step 4. Replace YOUR_SECTION_NAME with the name of your variable from step 5.
 
 ```
 <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
 
 <!-- Your Section Name  -->
-<h2 class="gh-header-two" ref="NewSectionRefName">{{ text[YOUR_INDEX].title }}</h2>
+<h2 class="gh-header-two" ref="NEW_SECTION_REF">{{ text[YOUR_INDEX].title }}</h2>
 <p class="description-two">{{ text[YOUR_INDEX].desc }}</p>
 
 <div v-for="point in YOUR_SECTION_NAME" :key="point.id">
