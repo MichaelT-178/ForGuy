@@ -104,6 +104,92 @@ def get_<REF_NAME>():
 8. Done
 
 
+# How to add a Section to Github.vue
+
+1. Go to GitHub.json. In the "ScrollLinks" attribute list add your section name and ref.
+
+```
+{
+    "id": 15,
+    "name": "This is My New Section",
+    "ref": "NewSectionRefName"
+},
+```
+
+2. Scroll Down and paste the following code above the "Text" attribute. This is where you'll put your instructions.
+
+"YourSectionName": [
+    {
+        "id": 1,
+        "instruction": "This is your first instruction."
+    },
+],
+
+3. Now scroll down to the "Text" attribute. Under the last item in the list add the following JSON object. Your "Title" attribute should probably be the same as your "name" attribute in step 1 or at least similar.
+
+```
+{
+    "title": "This is My New Section",
+    "desc": "Describe what the instructions do."
+}
+```
+
+4. Find the index of the new item in the list by running the following commands. Copy and record the index that's output.
+
+```
+cd top-bar
+python3 python/find_index.py
+```
+
+5. Now go to GitHub.vue, above \"const text\" paste the following code. Replace YourSectionName with the value from step 2.
+
+```
+const yourSectionName = jsonData.value["YourSectionName"];
+```
+
+6. Now below "const AmotionsWorkflow" variable (or latest instruction variable) and paste the following code. Replace NewSectionRefName with the value of the "ref" attribute from step 1.
+
+```
+const NewSectionRefName = ref(null);
+```
+
+7. Now in the "const refs" array paste the name of the variable from step 6 below the "AmotionsWorkflow," variable or whatever the latest added section was.
+
+```
+NewSectionRefName,
+```
+
+8. Now scroll up to the "template" section. Right above the last &lt;p&gt; tag with the class "scroll-up-btn" paste the following code. Replace the YOUR_INDEX variables with the value you copied in step 4. Replace YOUR_SECTION_NAME with the name of your variable from step 5.
+
+```
+<span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+
+<!-- Your Section Name  -->
+<h2 class="gh-header-two" ref="NewSectionRefName">{{ text[YOUR_INDEX].title }}</h2>
+<p class="description-two">{{ text[YOUR_INDEX].desc }}</p>
+
+<div v-for="point in YOUR_SECTION_NAME" :key="point.id">
+    <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
+        </span><span v-html="createHyperLink(processedTipContent(point.instruction))" v-bind="point.ref ? { ref : point.ref } : {}"></span></p>
+    <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
+</div>
+```
+
+9. Run your site, open it, then go to the Github page. Make sure your scroll link is working as expected.
+
+```
+cd top-bar
+npm run dev
+
+* Look up "Github" and test your scroll link *
+```
+
+10. Fill in your instructions in GitHub.json
+
+
+
+
+
 
 
 
