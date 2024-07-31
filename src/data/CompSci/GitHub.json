@@ -1228,68 +1228,109 @@
     "RemoveFileFromGitHistory": [
         {
             "id": 1,
-            "instruction": "This is your first instruction.",
+            "instruction": "Before doing any of this make sure that all your changes in ALL your branches have been saved in a remote repository. I'd STRONGLY recommend NOT proceeding if you still have uncommitted changes/branches in your local repository.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "pip3 install git-filter-repo\npip3 install --upgrade pip",
+                "CopyCode": "pip3 install git-filter-repo\npip3 install --upgrade pip"
+            }
+        },
+        {
+            "id": 1,
+            "instruction": "Install this python library to help with the process. Source code [here](https://github.com/newren/git-filter-repo) if you're interested. Then (optionally) upgrade pip. Note that this third-party add-on is recommended by the official git.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 install git-filter-repo\npip3 install --upgrade pip",
+                "CopyCode": "pip3 install git-filter-repo\npip3 install --upgrade pip"
             }
         },
         {
             "id": 2,
-            "instruction": "This is your first instruction.",
+            "instruction": "Open the folder that contains the file you want to remove in VSCode. Open the file and copy it's contents. Then paste it's contents in a code.txt file. Create the file by running the following command. We'll use this to store your previous code if you don't want to delete its data. This step is optional.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "touch code.txt",
+                "CopyCode": "touch code.txt"
             }
         },
         {
             "id": 3,
-            "instruction": "This is your first instruction.",
+            "instruction": "Change into the folder that contains the file you want to remove. Replace the path with your actual path.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "cd /path/to/your/folder",
+                "CopyCode": "cd /path/to/your/folder"
             }
         },
         {
             "id": 4,
-            "instruction": "This is your first instruction.",
+            "instruction": "Run the filter command to completely remove the file from your git history. MAKE SURE YOU ACTUALLY WANT TO DO THIS. Replace the path/to/your/file with your actual path. Don't remove --path before it though.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "git filter-repo --path path/to/your/file --invert-paths",
+                "CopyCode": "git filter-repo --path path/to/your/file --invert-paths"
             }
         },
         {
             "id": 5,
-            "instruction": "This is your first instruction.",
+            "instruction": "Force-Push the rewritten history to your remote repository using the following two commands.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "git push origin --force --all\ngit push origin --force --tags",
+                "CopyCode": "git push origin --force --all\ngit push origin --force --tags"
             }
         },
         {
             "id": 6,
-            "instruction": "This is your first instruction.",
+            "instruction": "Steps 6-9 are optional. If you want to keep the files old contents in your local folder, but don't want to commit them to your local repository, do the following.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "cd cd /path/to/your/folder\ntouch .gitignore",
+                "CopyCode": "cd cd /path/to/your/folder\ntouch .gitignore"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Open your code in VSCode then create a new file in the path where you want to keep it. Then open the \"code.txt\" file you created earlier and copy and it's contents into the new file. After doing that I'd recommend deleting the contents from the \"code.txt\" file. Make sure Copy and record the path of the new file."
+        },
+        {
+            "id": 8,
+            "instruction": "Now open your .gitignore file and paste the path of the new file that you don't want to push to your remote repository. It should be grayed out in VSCode if your path is right. Use cd and pwd commands to find your file. Your path should start at the root of your folder don't include the /Users/username/name-of-folder/ part at the beginning."
+        },
+        {
+            "id": 9,
+            "instruction": "After that push your new .gitignore file to your remote repository.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .\ngit commit -m \"Added .gitignore and got rid of file\"\ngit push",
+                "CopyCode": "git add .\ngit commit -m \"Added .gitignore and got rid of file\"\ngit push"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "Remove your local \"code.txt\" file if you want.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rm code.txt",
+                "CopyCode": "rm code.txt"
             }
         }
     ],
