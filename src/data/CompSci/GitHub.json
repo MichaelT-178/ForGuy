@@ -74,6 +74,11 @@
             "id": 15,
             "name": "How to Resolve Merge Conflicts",
             "ref": "MergeConflicts"
+        },
+        {
+            "id": 16,
+            "name": "Remove a File from Git History",
+            "ref": "RemoveFile"
         }
     ],
     "SetupGitHub": [
@@ -1220,6 +1225,74 @@
             "instruction": "This is your first instruction."
         }
     ],
+    "RemoveFileFromGitHistory": [
+        {
+            "id": 1,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "This is your first instruction.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ],
     "Text": [
         {
             "title": "GitHub",
@@ -1308,6 +1381,10 @@
         {
             "title": "How to Resolve Merge Conflicts",
             "desc": "Useful commands for resolving merge conflicts and an explanation of how to handle them."
+        },
+        {
+            "title": "Remove a File from Git History",
+            "desc": "Explains how to completely remove a file from your git history."
         }
     ]
 }
