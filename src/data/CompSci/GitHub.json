@@ -1280,13 +1280,13 @@
         },
         {
             "id": 7,
-            "instruction": "Run git log and look for the name of the file. It shouldn't appear anywhere.",
+            "instruction": "Run git log and look for the name of the file. It shouldn't appear anywhere. Replace your_filename with the actual name of your file in the command. The command shouldn't output anything.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git log --name-only",
-                "CopyCode": "git log --name-only"
+                "FormatCode": "git log --name-only --pretty=format: | grep -w 'your_filename'",
+                "CopyCode": "git log --name-only --pretty=format: | grep -w 'your_filename'"
             }
         }
     ],
