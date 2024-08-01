@@ -1288,6 +1288,32 @@
                 "FormatCode": "git log --name-only --pretty=format: | grep -w 'your_filename'",
                 "CopyCode": "git log --name-only --pretty=format: | grep -w 'your_filename'"
             }
+        },
+        {
+            "id": 8,
+            "instruction": "Now back to your git repository. Press the green \"Code\" button. Copy and record the green HTTPS link."
+        },
+        {
+            "id": 9,
+            "instruction": "Run the following commands to re-add the origin in your folder. Replace HTTPS-LINK with the actual link.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd your-folder\ngit remote add origin HTTPS-LINK",
+                "CopyCode": "cd your-folder\ngit remote add origin HTTPS-LINK"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "Set the remote main branch as upstream so you don't have to specify main every time you push.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .\ngit commit -m \"Made changes\"\ngit push -u origin main",
+                "CopyCode": "git add .\ngit commit -m \"Made changes\"\ngit push -u origin main"
+            }
         }
     ],
     "Text": [
