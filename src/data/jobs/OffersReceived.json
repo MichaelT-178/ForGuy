@@ -7,7 +7,7 @@
             "desc2": "These are the Internship Offers I have received.",
             "header3": "Full-Time Offers",
             "desc3": "These are the full-time Offers I have received.",
-            "header4": "Companies Where I interviewed",
+            "header4": "Companies Where I Interviewed",
             "desc4": "These are the companies where I got an interview, but not an offer for various reasons."
         }
     ],
@@ -74,14 +74,14 @@
             "Job Title": "IT Intern",
             "Contact": "mallory.norris@hrblock.com",
             "Location": "Kansas City, Missouri",
-            "Description": "I stopped the interview process once I got an offer from USAA. This is a summer SWE internship in Kansas City. I think they provide housing, if that's a factor in your decision."
+            "Description": "I stopped the interview process once I got an offer from USAA. It was a SWE internship in Kansas City, Missouri. I think they were going to provide housing, if that's a factor in your decision."
         },
         {
             "Name": "nCino, Inc.",
             "Job Title": "Spring Software Engineering Internship",
             "Contact": "ren.yonker@ncino.com",
             "Location": "Wilmington, North Carolina",
-            "Description": "I stopped the interview process once I got an offer from USAA. Also it was full-time during the spring semester so I didn't accept it." 
+            "Description": "I stopped the interview process once I got an offer from USAA. It was also a full-time job during the spring semester, which is another reason I didn't accept it." 
         },
         {
             "Name": "Lenovo",
