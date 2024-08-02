@@ -332,7 +332,7 @@
     {
         "id": 56,
         "Emoji": "🐦",
-        "MenuName": "How to create an iOS app with Swift and Firebase",
+        "MenuName": "How to Setup an iOS app with SwiftUI and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
     {
