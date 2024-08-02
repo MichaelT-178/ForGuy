@@ -3,7 +3,7 @@
         {
             "Info": [
                 {
-                    "title": "How to create an iOS app with Swift and Firebase",
+                    "title": "How to Setup an iOS app with SwiftUI and Firebase",
                     "desc": "This explains how to create an iOS written in SwiftUI with a Firebase backend.",
                     "ref": "swift-firebase"
                 }

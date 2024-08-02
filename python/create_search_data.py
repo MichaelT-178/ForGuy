@@ -912,7 +912,7 @@ def get_swift_firebase():
 
             Results += info + instructions
 
-        Title = "How to create an iOS app with Swift and Firebase 🐦"
+        Title = "How to Setup an iOS app with SwiftUI and Firebase 🐦"
         Link = "/CompSci/SetupProjects/swift-firebase"
         
         return { "Title": Title, "Link": Link, "Results": Results }

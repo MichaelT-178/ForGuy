@@ -231,7 +231,7 @@
             "links": [
                 {
                     "id": 1,
-                    "name": "How to create an IOS app with Swift and Firebase",
+                    "name": "How to Setup an iOS app with SwiftUI and Firebase",
                     "ref": "swift-firebase",
                     "ScrollTo": "SwiftFirebaseLink"
                 },
