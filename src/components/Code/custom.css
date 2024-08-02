@@ -7,7 +7,8 @@ code {
 .token.purple-js,
 .token.fxml-purple,
 .token.always-purple,
-.token.sh-purple {
+.token.sh-purple,
+.token.sql-purple {
     color: #C678DD;
 }
 
@@ -117,7 +118,8 @@ span.token.selector {
 .token.fxml-green,
 .token.attr-value,
 .token.sh-green, 
-.token.prop-green {
+.token.prop-green,
+.token.sql-green {
     color: #98C379;
 }
 
