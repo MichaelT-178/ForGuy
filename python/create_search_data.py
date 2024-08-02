@@ -630,7 +630,7 @@ def get_react_spring():
 
             Results += info + instructions
 
-        Title = "How to Make a simple REST Api using React, Spring Boot and H2 🍃"
+        Title = "How to Make a Simple REST Api using React, Spring Boot and H2 🍃"
         Link = "/CompSci/SetupProjects/react-spring"
         
         return { "Title": Title, "Link": Link, "Results": Results }      
