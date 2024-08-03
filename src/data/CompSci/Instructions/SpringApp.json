@@ -707,6 +707,18 @@
                 },
                 {
                     "id": 11,
+                    "instruction": "Use the following command to delete a user from your table. You can change the WHERE condition to delete by lastname and id as well.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "DELETE FROM Users WHERE firstname = 'Jimmy';",
+                        "CopyCode": "DELETE FROM Users WHERE firstname = 'Jimmy';"
+                    }
+                },
+                {
+                    "id": 12,
                     "instruction": "You've finished all the steps and should now have a functioning React app with a Spring Boot backend!"
                 }
             ]
