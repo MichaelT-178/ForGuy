@@ -384,7 +384,7 @@
                 },
                 {
                     "id": 21,
-                    "instruction": "Now open the following link in your browser. We're going to query the database in the h2-console. It might take a second to load.",
+                    "instruction": "Now open the following link in your browser. We're going to query the database in the h2-console. Give it a second to load and try refreshing the page if it says \"This site can't be reached\".",
                     "Code": {
                         "Name": "",
                         "Description": "",
