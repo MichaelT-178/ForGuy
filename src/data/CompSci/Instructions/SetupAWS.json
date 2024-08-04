@@ -9,7 +9,7 @@
     "Instructions": [
         {
             "id": 1,
-            "instruction": "Set up a free tier Amazon Web Services account using this [link](https://aws.amazon.com/free/?gclid=CjwKCAjw3NyxBhBmEiwAyofDYYFQZej0RiT-m46TmesiuBYNA9U1c6Zi1zmORjE_YcZEmIzXp0LkdxoCdZ0QAvD_BwE&trk=7541ebd3-552d-4f98-9357-b542436aa66c&sc_channel=ps&ef_id=CjwKCAjw3NyxBhBmEiwAyofDYYFQZej0RiT-m46TmesiuBYNA9U1c6Zi1zmORjE_YcZEmIzXp0LkdxoCdZ0QAvD_BwE:G:s&s_kwcid=AL!4422!3!651751058790!e!!g!!aws%20free%20account!19852662149!145019243897&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). Follow the prompts, it's pretty straight forward. When you get to the \"Sign in\" screen choose \"Root User\"."
+            "instruction": "Set up a free tier Amazon Web Services account using this [link](https://aws.amazon.com/free/?gclid=CjwKCAjw3NyxBhBmEiwAyofDYYFQZej0RiT-m46TmesiuBYNA9U1c6Zi1zmORjE_YcZEmIzXp0LkdxoCdZ0QAvD_BwE&trk=7541ebd3-552d-4f98-9357-b542436aa66c&sc_channel=ps&ef_id=CjwKCAjw3NyxBhBmEiwAyofDYYFQZej0RiT-m46TmesiuBYNA9U1c6Zi1zmORjE_YcZEmIzXp0LkdxoCdZ0QAvD_BwE:G:s&s_kwcid=AL!4422!3!651751058790!e!!g!!aws%20free%20account!19852662149!145019243897&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all). Follow the prompts, it's pretty straight forward. When you get to the \"Sign in\" screen choose \"Root User\". Note that a $1 charge will temporarily be placed on your card to prove that it's valid."
         },
         {
             "id": 2,
@@ -17,7 +17,7 @@
         },
         {
             "id": 3,
-            "instruction": "Now click your name in the top-right corner. In the drop down menu click \"Account\". You should be taken to a page that says \"Complete sign-up\". If you don’t think you're on the right page try clicking [here](https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#)."
+            "instruction": "Now click your name in the top-right corner. In the drop down menu click \"Account\". You should be taken to a page that says \"Complete sign-up\". If you don't think you're on the right page try clicking [here](https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#)."
         },
         {
             "id": 4,
