@@ -248,7 +248,7 @@ onUnmounted(() => {
     inset: 0;
     background-color: yellow;
     opacity: 1;
-    animation: fadeOutHighlight 5.5s ease forwards;
+    animation: fadeOutHighlight 6s ease forwards;
 }
 
 .temp-highlight {
