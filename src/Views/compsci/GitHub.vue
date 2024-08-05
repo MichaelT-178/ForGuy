@@ -251,58 +251,41 @@ import CmdTable from "../../components/CommandTable.vue";
 import { createHyperLink, createDownloadLink } from "../../utils/Markdown.vue";
 import CodeBlock from '../../components/Code/CodeBlock.vue';
 
-
 const jsonData = ref(AllData);
 
-
 const scrollLinks = jsonData.value["ScrollLinks"];
-
-
 const setupGitHub = jsonData.value["SetupGitHub"];
 const createGitHubRepo = jsonData.value["CreateGitHubRepo"];
-
 const setupSecondGitHub = jsonData.value["SetupSecondGitHub"];
 const createSecondGitHubRepo = jsonData.value["CreateSecondGitHubRepo"];
-
-const gitCommands = jsonData.value["GitCommands"]; 
+const gitCommands = jsonData.value["GitCommands"];
 const generalTips = jsonData.value["GeneralTips"];
-
 const threeCommands = jsonData.value["ThreeCommands"];
-
 const createFork = jsonData.value["CreateFork"];
 const resetBranchSteps = jsonData.value["ResetBranch"];
 const resetSingleFile = jsonData.value["RevertSingleFile"];
-
 const existingFolderPts = jsonData.value["ExistingFolderPts"];
 const existingFolderCmds = jsonData.value["ExistingFolder"];
-
-
-const csc450WorkflowPtsOne = jsonData.value["CSC450WorkflowPtsOne"]
-const csc450WorkflowOne = jsonData.value["CSC450WorkflowOne"]
-const csc450WorkflowPtsTwo = jsonData.value["CSC450WorkflowPtsTwo"]
-const csc450WorkflowTwo = jsonData.value["CSC450WorkflowTwo"]
-const csc450WorkflowPtsThree = jsonData.value["CSC450WorkflowPtsThree"]
-const csc450WorkflowThree = jsonData.value["CSC450WorkflowThree"]
-const csc450WorkflowPtsFour = jsonData.value["CSC450WorkflowPtsFour"]
-const csc450WorkflowFour = jsonData.value["CSC450WorkflowFour"]
-const csc450WorkflowPtsFive = jsonData.value["CSC450WorkflowPtsFive"]
-
-
+const csc450WorkflowPtsOne = jsonData.value["CSC450WorkflowPtsOne"];
+const csc450WorkflowOne = jsonData.value["CSC450WorkflowOne"];
+const csc450WorkflowPtsTwo = jsonData.value["CSC450WorkflowPtsTwo"];
+const csc450WorkflowTwo = jsonData.value["CSC450WorkflowTwo"];
+const csc450WorkflowPtsThree = jsonData.value["CSC450WorkflowPtsThree"];
+const csc450WorkflowThree = jsonData.value["CSC450WorkflowThree"];
+const csc450WorkflowPtsFour = jsonData.value["CSC450WorkflowPtsFour"];
+const csc450WorkflowFour = jsonData.value["CSC450WorkflowFour"];
+const csc450WorkflowPtsFive = jsonData.value["CSC450WorkflowPtsFive"];
 const amotionsWorkflowOne = jsonData.value["AmotionsWorkflowOne"];
 const amotionsWorkflowTwo = jsonData.value["AmotionsWorkflowTwo"];
 const amotionsWorkflowThree = jsonData.value["AmotionsWorkflowThree"];
-
 const amotionsPts = jsonData.value["AmotionsPts"];
 const amotionsPtsTwo = jsonData.value["AmotionsPtsTwo"];
-
 const pullChangesFromMain = jsonData.value["PullChangesFromMain"];
 const resolveMergeConflicts = jsonData.value["ResolveMergeConflicts"];
 const removeFileFromGitHistory = jsonData.value["RemoveFileFromGitHistory"];
-
 const text = jsonData.value["Text"];
 
-
-//Add refs here. Actual ref name from json file.
+// Add refs here. Actual ref name from json file.
 const scrollLinksRef = ref(null);
 const createGHAccount = ref(null);
 const createGHRepo = ref(null);
@@ -320,14 +303,12 @@ const AmotionsWorkflow = ref(null);
 const MergeMain = ref(null);
 const MergeConflicts = ref(null);
 const RemoveFile = ref(null);
-
 const secondSix = ref(null);
 const secondSeven = ref(null);
 const secondNine = ref(null);
 const secondTwentyThree = ref(null);
 const secondGitHubSeven = ref(null);
 const secondGitHubEight = ref(null);
-
 const normalSix = ref(null);
 const normalSeven = ref(null);
 const normalNine = ref(null);
@@ -335,10 +316,8 @@ const normalTwentyThree = ref(null);
 const normalGitHubSeven = ref(null);
 const normalGitHubEight = ref(null);
 
-
 const scrollToRef = (refName) => {
-
-    const offset = 75;
+    const offset = 20;
 
     const refs = {
         scrollLinksRef,
@@ -387,24 +366,24 @@ const scrollToRef = (refName) => {
     } else {
         console.warn("No target element found for refName:", refName);
     }
-}
+};
 
 const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 };
 
 const createRefContent = (refVal) => {
     return `<span><a href="#${refVal.ref}" class="scroll-down" data-ref-name="${refVal.ref}">${refVal.name}</a></span>`;
-}
+};
 
 const processedTipContent = (tip) => {
     return tip.replace(/(Different for multiple accounts|Scroll back up to original step|Scroll back to links)\((.*?)\)/g, (match, phrase, refName) => {
         return `<a href="#${refName}" class="scroll-down" data-ref-name="${refName}">${phrase}</a>`;
     });
-}
+};
 
 onMounted(() => {
     document.querySelectorAll('.scroll-down').forEach(element => {
@@ -414,8 +393,19 @@ onMounted(() => {
             scrollToRef(refName);
         });
     });
-});
 
+    const handleHashChange = () => {
+        const hash = window.location.hash.substring(1);
+
+        if (hash) {
+            scrollToRef(hash);
+        }
+    };
+
+    handleHashChange();
+
+    window.addEventListener('hashchange', handleHashChange);
+});
 </script>
 
 
