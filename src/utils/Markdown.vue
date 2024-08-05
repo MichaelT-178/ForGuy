@@ -83,12 +83,13 @@ window.navigateToVuePath = (toPropString) => {
   
 };
 
+
 //&DownloadLink&(/download/practice.docx)
 export const createDownloadLink = (text) => {
   // const markdownLinkPattern = /\&([^\]]+)\&\((https?:\/\/[^\s]+)\)/g;
 
-  const markdownLinkPattern = /\&([^\]]+)\&\((\/download[^\s]+)\)/g;
-  
+  const markdownLinkPattern = /\&([^\&]+)\&\((\/download[^\s]+)\)/g;
+
   const style = document.createElement('style');
   document.head.appendChild(style);
 
@@ -109,6 +110,13 @@ export const createDownloadLink = (text) => {
       left: 50%;
       transform: translateX(-50%);
     }
+    .custom-link {
+      color: #007AFF;
+      text-decoration: none;
+    }
+    .custom-link:hover {
+      color: blue;
+    }
     .custom-link:hover + .custom-tooltip {
       visibility: visible;
       opacity: 1;
@@ -117,11 +125,7 @@ export const createDownloadLink = (text) => {
 
   return text.replace(markdownLinkPattern, (match, label, downloadLink) => 
     `<div style="position: relative; display: inline-block;">
-        <a href="${downloadLink}" download
-          class="custom-link"
-          style="color: #007AFF; text-decoration: none;"
-          onmouseover="this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.opacity=1;"
-          onmouseout="this.nextElementSibling.style.visibility='hidden'; this.nextElementSibling.style.opacity=0;">
+        <a href="${downloadLink}" download class="custom-link">
           ${label}
         </a>
         <div class="custom-tooltip">
