@@ -2,7 +2,7 @@
     <div class="container">
         <div v-if="showEmailCopied" class="email-copied-message">Email Copied!</div>
         <h1 class="contact-header">{{ text.page }}</h1>
-        <p class="description">{{ text.desc }}</p>
+        <p class="description" v-html="createDownloadLink(text.desc)"></p>
         <div class="contacts-container">
             <div v-for="contact in contacts" :key="contact.Company" class="contact-section">
                 <ContactCard :contact="contact" @emailCopied="emailCopied"></ContactCard>
@@ -16,7 +16,9 @@
 <script setup>
 import { ref } from 'vue';
 import AllData from "../../data/LinkedIn/Contacts.json";
-import ContactCard from "../../components/ContactCard.vue"
+import ContactCard from "../../components/ContactCard.vue";
+import { createDownloadLink } from "../../utils/Markdown.vue"
+
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
