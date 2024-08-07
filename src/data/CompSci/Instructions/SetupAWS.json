@@ -82,7 +82,7 @@
         },
         {
             "id": 14,
-            "instruction": "Fill out the fields. I'd suggest you use your phones for your MFA Device. Just name it something like \"ElijahsPhone\". Note that no spaces are allowed in the name."
+            "instruction": "Fill out the fields. I'd suggest you use your phones for your MFA Device. Just name it something like \"JohnsPhone\" (your name phone). Note that no spaces are allowed in the name."
         },
         {
             "id": 15,
@@ -90,7 +90,7 @@
         },
         {
             "id": 16,
-            "instruction": "In your duo mobile app make the account name something like \"Elijah's AWS\"."
+            "instruction": "In your duo mobile app make the account name something like \"John's AWS\"."
         },
         {
             "id": 17,
@@ -142,7 +142,7 @@
         },
         {
             "id": 29,
-            "instruction": "Enter the Device name. Something Like \"ElijahsPhoneTwo\". It can't be the same you used earlier. It has to be one word. Make sure \"Authenticator app\" is selected then press \"Next\"."
+            "instruction": "Enter the Device name. Something Like \"JohnsPhoneTwo\" (your name phone two). It can't be the same you used earlier. It has to be one word. Make sure \"Authenticator app\" is selected then press \"Next\"."
         },
         {
             "id": 30,
@@ -150,7 +150,7 @@
         },
         {
             "id": 31,
-            "instruction": "In your duo mobile app make the account name something like \"Elijah's AWS\"."
+            "instruction": "In your duo mobile app make the account name something like \"John's AWS\" (your name AWS)."
         },
         {
             "id": 32,
@@ -166,7 +166,7 @@
         },
         {
             "id": 35,
-            "instruction": "In the \"Description tag value\" field type \"elijah_iam_user_cli_access\". Then click \"Create access key\"."
+            "instruction": "In the \"Description tag value\" field type \"your_first_name_iam_user_cli_access\". Then click \"Create access key\"."
         },
         {
             "id": 36,

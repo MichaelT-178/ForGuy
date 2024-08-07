@@ -1,5 +1,5 @@
 <script>
-export const bodyContent = `Hi Elijah,%0A%0A` +
+export const bodyContent = `Hello ,%0A%0A` +
 `These are all the VSCode extension download links from my website.%0A%0A` +
 
 `Live Server%0A` +

@@ -5,11 +5,11 @@
             "description": "This is the resume template I use. The current information is inaccurate and needs to be updated."
         },
         {
-            "Name": "Elijah Dembe",
+            "Name": "John Doe",
             "Location": "Charlotte, North Carolina",
-            "Email": "ebd5095@uncw.edu",
+            "Email": "jpd9054@gmail.com",
             "Phone": "704-999-999",
-            "LinkedIn": "https://www.linkedin.com/in/elijah-dembe/"
+            "LinkedIn": "https://www.linkedin.com/in/john-doe-081m812aa/"
         },
         {
             "Section": "Education",
@@ -37,14 +37,14 @@
         {
             "Section": "School Projects",
             "Title": "Summer Camp Manager Java, JavaFx, FXML",
-            "Repo": "Repository: https://github.com/elijahdembe-uncw/CampKidManager.git",
+            "Repo": "Repository: https://github.com/johndoe-uncw/CampKidManager.git",
             "Description": "A UNCW programming project that allows the user to manage and update the information of campers at an imaginary summer camp called \"Seahawk Fitness\"."
         },
         {
 
             "Section": "Personal Projects",
             "Portfolio": "Portfolio Javascript, HTML, CSS",
-            "Repo": "Repository: https://github.com/elijahdembe-uncw/PortfolioWebsite.git",
+            "Repo": "Repository: https://github.com/johnedoe-uncw/PortfolioWebsite.git",
             "Description": "This is a personal portfolio website I made to let people know more about me. It was written in vanilla javascript and contains my contact information."
         },
         {
