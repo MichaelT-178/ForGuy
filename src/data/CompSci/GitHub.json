@@ -1291,21 +1291,21 @@
         },
         {
             "id": 8,
-            "instruction": "Now back to your git repository. Press the green \"Code\" button. Copy and record the green HTTPS link."
+            "instruction": "Now back to your git repository. Press the green \"Code\" button. Copy and record the HTTPS link."
         },
         {
             "id": 9,
-            "instruction": "Make changes to your git repo."
+            "instruction": "Make your changes in your project."
         },
         {
             "id": 10,
-            "instruction": "To add, commit, and push your changes the first time after running the git filter-repo command, run the following commands in your terminal.",
+            "instruction": "To add, commit, and push your changes the first time after running the git filter-repo command, run the following commands in your terminal. Replace \"HTTPS-LINK\" in the second command with the link you copied in step 8.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd your-folder\ngit remote add origin HTTPS-LINk\ngit config pull.rebase false\ngit pull origin main\ngit add .\ngit commit -m \"Made changes\"\ngit push -f origin main\ngit push --set-upstream origin main",
-                "CopyCode": "cd your-folder\ngit remote add origin HTTPS-LINk\ngit config pull.rebase false\ngit pull origin main\ngit add .\ngit commit -m \"Made changes\"\ngit push -f origin main\ngit push --set-upstream origin main"
+                "FormatCode": "cd your-folder\ngit remote add origin HTTPS-LINK\ngit config pull.rebase false\ngit pull origin main\ngit add .\ngit commit -m \"Made changes\"\ngit push -f origin main\ngit push --set-upstream origin main",
+                "CopyCode": "cd your-folder\ngit remote add origin HTTPS-LINK\ngit config pull.rebase false\ngit pull origin main\ngit add .\ngit commit -m \"Made changes\"\ngit push -f origin main\ngit push --set-upstream origin main"
             }
         },
         {
