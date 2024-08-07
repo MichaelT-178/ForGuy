@@ -1310,6 +1310,17 @@
         },
         {
             "id": 11,
+            "instruction": "If you get a \"fatal: The remote end hung up unexpectedly\" at the end of your git push message, try the following.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git config http.postBuffer 524288000\ngit add .\ngit commit -m \"Made Changes\"\ngit push --set-upstream origin main",
+                "CopyCode": "git config http.postBuffer 524288000\ngit add .\ngit commit -m \"Made Changes\"\ngit push --set-upstream origin main"
+            }
+        },
+        {
+            "id": 12,
             "instruction": "After you run the commands in step 10, you should be able to add, commit, and push changes using the standard three commands for future changes.",
             "Code": {
                 "Name": "",
@@ -1320,7 +1331,7 @@
             }
         },
         {
-            "id": 12,
+            "id": 13,
             "instruction": "If you run into errors, contact me/use ChatGPT."
         }
     ],
