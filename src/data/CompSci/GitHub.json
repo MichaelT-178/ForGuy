@@ -1217,6 +1217,17 @@
                 "FormatCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name.",
                 "CopyCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name"
             }
+        },
+        {
+            "id": 10,
+            "instruction": "To see what files in your branch differ from main run the following commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout your-branch-name\ngit diff --name-only main...HEAD",
+                "CopyCode": "git checkout your-branch-name\ngit diff --name-only main...HEAD"
+            }
         }
     ],
     "ResolveMergeConflicts": [
@@ -1243,6 +1254,17 @@
         },
         {
             "id": 3,
+            "instruction": "Before you do the following process, I'd recommend making a copy of your repository just in-case something goes wrong.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cp -r your-folder your-folder-two",
+                "CopyCode": "cp -r your-folder your-folder-two"
+            }
+        },
+        {
+            "id": 4,
             "instruction": "Before deleting the branch from your git history you'll want to remove it from your local and remote repository. First remove it from your main branch.",
             "Code": {
                 "Name": "",
@@ -1253,7 +1275,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "instruction": "Go through your local branches and delete the file from all of them. Make pull requests as necessary.",
             "Code": {
                 "Name": "",
@@ -1264,11 +1286,11 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "instruction": "I'd strongly recommend going to your Github account and checking all your remote branches to ensure it's been deleted from all of them. Make pull requests as necessary."
         },
         {
-            "id": 6,
+            "id": 7,
             "instruction": "After the file has been completely removed from your local and remote repository, you should delete it from your git history. Replace the path/to/your/file with your actual path.",
             "Code": {
                 "Name": "",
@@ -1279,7 +1301,7 @@
             }
         },
         {
-            "id": 7,
+            "id": 8,
             "instruction": "Run git log and look for the name of the file. It shouldn't appear anywhere. Replace your_filename with the actual name of your file in the command. The command shouldn't output anything.",
             "Code": {
                 "Name": "",
@@ -1290,15 +1312,15 @@
             }
         },
         {
-            "id": 8,
+            "id": 9,
             "instruction": "Now back to your git repository. Press the green \"Code\" button. Copy and record the HTTPS link."
         },
         {
-            "id": 9,
+            "id": 10,
             "instruction": "Make changes to your project before pushing."
         },
         {
-            "id": 10,
+            "id": 11,
             "instruction": "To add, commit, and push your changes the first time after running the git filter-repo command, run the following commands in your terminal. Replace \"HTTPS-LINK\" in the second command with the link you copied in step 8.",
             "Code": {
                 "Name": "",
@@ -1309,7 +1331,7 @@
             }
         },
         {
-            "id": 11,
+            "id": 12,
             "instruction": "If you get a \"fatal: The remote end hung up unexpectedly\" at the end of your git push message, try the following.",
             "Code": {
                 "Name": "",
@@ -1320,7 +1342,7 @@
             }
         },
         {
-            "id": 12,
+            "id": 13,
             "instruction": "After you run the commands in step 10, you should be able to add, commit, and push changes using the standard three commands for future changes.",
             "Code": {
                 "Name": "",
@@ -1331,8 +1353,19 @@
             }
         },
         {
-            "id": 13,
+            "id": 14,
             "instruction": "If you run into errors, contact me/use ChatGPT."
+        },
+        {
+            "id": 15,
+            "instruction": "If you made a copy of your folder earlier and nothing went wrong when you ran the command, you can delete the copied folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rm -rf your-folder-two",
+                "CopyCode": "rm -rf your-folder-two"
+            }
         }
     ],
     "Text": [
