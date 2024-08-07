@@ -110,7 +110,7 @@
         },
         {
             "id": 4,
-            "instruction": "Configure Git. Replace the values in quotations with your name and email address. I'd recommend using the same email address you used to setup your Github account. I'd recommend just setting your username to \"Elijah Dembe\".",
+            "instruction": "Configure Git. Replace the values in quotations with your name and email address. I'd recommend using the same email address you used to setup your Github account. I'd recommend just setting your username to \"John Doe\" (Your name).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -188,7 +188,7 @@
         },
         {
             "id": 14,
-            "instruction": "Click the green \"New SSH key\" button. Create a title for the key, it doesn't have to be anything special. You could just call it \"Elijah's key\"."
+            "instruction": "Click the green \"New SSH key\" button. Create a title for the key, it doesn't have to be anything special. You could just call it \"John's key\" (your name key)."
         },
         {
             "id": 15,
@@ -196,7 +196,7 @@
         },
         {
             "id": 16,
-            "instruction": "Click \"Add SSH key\" at the bottom. It should then take you back to the old page with a light blue bar that says \"You have successfully added the key 'Elijah's Key'\"."
+            "instruction": "Click \"Add SSH key\" at the bottom. It should then take you back to the old page with a light blue bar that says \"You have successfully added the key 'John's Key'\"."
         },
         {
             "id": 17,
@@ -208,7 +208,7 @@
         },
         {
             "id": 19,
-            "instruction": "You'll be taken to a new page with multiple fields titled \"New personal access token (classic)\". In the \"Note\" field just type something like \"Elijah's Personal Access Token\". Then select 90 days for the expiration. Then check ALL the boxes below. Then select the green \"Generate token\" button at the bottom once you're done."
+            "instruction": "You'll be taken to a new page with multiple fields titled \"New personal access token (classic)\". In the \"Note\" field just type something like \"John's Personal Access Token\". Then select 90 days for the expiration. Then check ALL the boxes below. Then select the green \"Generate token\" button at the bottom once you're done."
         },
         {
             "id": 20,
@@ -373,7 +373,7 @@
     "SetupSecondGitHub": [
         {
             "id": 6,
-            "instruction": "After you enter the command from step 5 you'll be asked the following question, \"Enter file in which to save the key (/Users/elijahdembe/.ssh/id_ed25519):\". Write the name of the file where you want to save the new SSH key without an extension.  For this example lets call it \"id_ed25519_two\", then press return/enter. Scroll back up to original step(normalSix).",
+            "instruction": "After you enter the command from step 5 you'll be asked the following question, \"Enter file in which to save the key (/Users/johndoe/.ssh/id_ed25519):\". Write the name of the file where you want to save the new SSH key without an extension.  For this example lets call it \"id_ed25519_two\", then press return/enter. Scroll back up to original step(normalSix).",
             "ref": "secondSix"
         },
         {

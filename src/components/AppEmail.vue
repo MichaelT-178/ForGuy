@@ -1,5 +1,5 @@
 <script>
-export const bodyContent = `Hi Elijah,%0A%0A` +
+export const bodyContent = `Hello,%0A%0A` +
 `These are all the app links from my website. Enjoy.%0A%0A` +
 
 `Genius Scan%0A` +
