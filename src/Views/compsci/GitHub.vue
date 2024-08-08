@@ -133,9 +133,20 @@
         </div>
 
         <CmdTable tableName="" :items="existingFolderCmds" class="cmd-table"></CmdTable>
+        
+        <p></p>
+
+        <div v-for="point in existingFolderPtsTwo" :key="point.id">
+            <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
+        </div>
+
+        <CmdTable tableName="" :items="existingFolderCmdsTwo" class="cmd-table"></CmdTable>
 
         <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
         
+
+
+
         <!-- CSC 450 Workflow -->
         <h2 class="gh-header-two" ref="CSC450Workflow">{{ text[14].title }}</h2>
         <p class="description-two" v-html="createDownloadLink(text[14].desc)"></p>
@@ -266,6 +277,8 @@ const resetBranchSteps = jsonData.value["ResetBranch"];
 const resetSingleFile = jsonData.value["RevertSingleFile"];
 const existingFolderPts = jsonData.value["ExistingFolderPts"];
 const existingFolderCmds = jsonData.value["ExistingFolder"];
+const existingFolderPtsTwo = jsonData.value["ExistingFolderPtsTwo"];
+const existingFolderCmdsTwo = jsonData.value["ExistingFolderTwo"];
 const csc450WorkflowPtsOne = jsonData.value["CSC450WorkflowPtsOne"];
 const csc450WorkflowOne = jsonData.value["CSC450WorkflowOne"];
 const csc450WorkflowPtsTwo = jsonData.value["CSC450WorkflowPtsTwo"];
