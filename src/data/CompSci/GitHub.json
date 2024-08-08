@@ -1064,6 +1064,38 @@
             "Example": "git push -u origin main"
         }
     ],
+    "ExistingFolderPtsTwo": [
+        {
+            "id": 5,
+            "instruction": "If the repository you're adding as a remote origin already has changes like a readme.md file, run the following commands to add the changes."
+        },
+        {
+            "id": 6,
+            "instruction": "Run these commands after you've ran the \"git remote add origin https://github.com/John-Smith/PacMan.git\" command."
+        }
+    ],
+    "ExistingFolderTwo": [
+        {
+            "Command": "git pull origin main --no-rebase --allow-unrelated-histories",
+            "Description": "Pull current changes from the repository. Fix any merge conflicts in your text editor.",
+            "Example": "git pull origin main --no-rebase --allow-unrelated-histories"
+        },
+        {
+            "Command": "git add .",
+            "Description": "Add changes after you fix merge conflicts.",
+            "Example": "git add ."
+        },
+        {
+            "Command": "git commit -m \"Fixed merge conflicts\"",
+            "Description": "Commit fixed conflicts.",
+            "Example": "git commit -m \"Fixed merge conflicts\""
+        },
+        {
+            "Command": "git push -u origin main",
+            "Description": "Push changes to the main branch.",
+            "Example": "git push -u origin main"
+        }
+    ],
     "RevertSingleFile": [
         {
             "id": 1,
