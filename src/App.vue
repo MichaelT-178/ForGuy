@@ -1,8 +1,6 @@
 <template>
-  <div class="app">
     <component :is="isMobile ? MenuBarTwo : Menu" />
     <router-view />
-  </div>
 </template>
 
 

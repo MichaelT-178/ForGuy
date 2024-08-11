@@ -7,9 +7,16 @@
             <div class="meme-text">{{ index + 1 }}. 
                 <span v-html="createHyperLink(meme.text)"></span>
             </div>
-            <div class="image-container">
+            <div v-if="meme.image" class="image-container">
                 <img :src="meme.image" alt="Meme Picture">
                 <span class="hidden-text">{{ meme.transcription }}</span>
+            </div>
+            <div v-else-if="meme.video" class="horizontal-video-container">
+                <video class="centered-video" controls>
+                    <source :src="meme.video" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <span class="hidden-video-text">{{ meme.transcription }}</span>
             </div>
         </div>
     </div>
@@ -59,7 +66,7 @@ const text = jsonData.value["Text"][0];
     height: 100%;
     top: 200px;
     left: 0;
-    z-index: -1;
+    z-index: -1; /* Set to 1 if you want text to highlight when searched */
     pointer-events: none;
     color: transparent;
     background: transparent;
@@ -77,4 +84,31 @@ p {
     margin-top: -15px;
     font-size: 20px;
 }
+
+.horizontal-video-container {
+    position: relative;
+    width: 400px;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 8px;
+    display: block;
+}
+
+.centered-video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden-video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1; /* Set to 1 if you want text to highlight when searched */
+    color: transparent;
+    background: transparent;
+}
+
 </style>

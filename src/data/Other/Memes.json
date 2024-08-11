@@ -23,12 +23,20 @@
             "transcription": "U get $200 Million but u can't use Google Books for 3 Days Would u do it?? google.com Google news maps books perspectives fligh sign in"
         },
         { 
+            "text": "Don't do that, Don't give me hope",
+            "transcription": "When someone suggests Hurricane Fred finna cancel school Don't do that. Don't give me hope."
+        },
+        { 
             "text": "Extremely true",
             "transcription": "8 hours writing a personal project in assembly at 1am 1 hour of writing javascript at 2pm for my job that pays me"
         },
         { 
             "text": "CSC 231 professors: *heavy breathing*",
             "transcription": "The Dutch government was forced to release the source code of their DigiD digital authentication iOS app. It is written in C#. Ahh I see the problem is that there are too many if statements. Here's a solution implementing binary search in O(log n). Jeroen Frijters @JeroenFrijters 1d github.com/MinBZK/woo-bes... tyrannoSaurav @TyrannoSaurav Replying to @JeroenFrijters"
+        },
+        { 
+            "text": "I feel like this sometimes",
+            "transcription": "Born to be a viking in 732 ad Forced to live in 2024"
         },
         { 
             "text": "Testing ain't it bro 😭",
@@ -45,6 +53,10 @@
         { 
             "text": "\"FileNotFoundException\"",
             "transcription": "Backenders doing frontend menu 1 - Reports 2 - Charts 3 - Exit Select: [_] Frontenders doing backend internal server error 500"
+        },
+        {
+            "text": "*Because there was a hurricane",
+            "transcription": "winter break is extended bc the school exploded."
         },
         { 
             "text": "Goated feeling",
@@ -77,10 +89,6 @@
         { 
             "text": "The sheer...verbosity of it all 😳🤯",
             "transcription": "Python Hello World Java Public Static void Hello World"
-        },
-        { 
-            "text": "Don't do that, Don't give me hope",
-            "transcription": "When someone suggests Hurricane Fred finna cancel school Don't do that. Don't give me hope."
         },
         { 
             "text": "CSC 351 gang",
