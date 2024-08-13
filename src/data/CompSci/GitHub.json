@@ -1252,13 +1252,13 @@
         },
         {
             "id": 10,
-            "instruction": "If you don't have a remote branch and all your files are under \"staged changes\" run the following commands to pull them into your current branch.",
+            "instruction": "If you don't have a remote branch and all your files are under \"staged changes\" just run the following command to pull them into your current branch.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git add .\ngit commit -m \"Pulled from main\"",
-                "CopyCode": "git add .\ngit commit -m \"Pulled from main\""
+                "FormatCode": "git commit -m \"Pulled from main\"",
+                "CopyCode": "git commit -m \"Pulled from main\""
             }
         },
         {
