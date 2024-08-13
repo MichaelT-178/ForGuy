@@ -1252,6 +1252,17 @@
         },
         {
             "id": 10,
+            "instruction": "If you don't have a remote branch and all your files are under \"staged changes\" run the following commands to pull them into your current branch.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add .\ngit commit -m \"Pulled from main\"",
+                "CopyCode": "git add .\ngit commit -m \"Pulled from main\""
+            }
+        },
+        {
+            "id": 11,
             "instruction": "To see what files in your branch differ from main run the following commands.",
             "Code": {
                 "Name": "",
