@@ -8,7 +8,7 @@
         <!-- Search bar -->
         <input type="text" 
                v-model="searchQuery" 
-               placeholder="Search by name or term..."
+               placeholder="Search by page name or key term..."
                :class="{'rounded-top': searchQuery, 'rounded-all': !searchQuery }"
                @keydown.enter="handleEnterPress"
         >

@@ -196,8 +196,8 @@
                 "Description": "",
                 "Language": "Javascript",
                 "DisplayLang": "Vue",
-                "FormatCode": "<template>\n    <p class=\"test-header\">TEST WEBSITE</p>\n    <router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.test-header {\n   font-size: 25px;\n}\n\n</style>",
-                "CopyCode": "<template>\n\t<p class=\"test-header\">TEST WEBSITE</p>\n\t<router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style scoped>\n.test-header {\n\tfont-size: 25px;\n}\n\n</style>"
+                "FormatCode": "<template>\n    <p class=\"test-header\">TEST WEBSITE</p>\n    <router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style>\n* {\n   padding: 0;\n   margin: 0;\n   box-sizing: border-box;\n}\n\n.test-header {\n   font-size: 25px;\n}\n\n</style>",
+                "CopyCode": "<template>\n\t<p class=\"test-header\">TEST WEBSITE</p>\n\t<router-view />\n</template>\n\n\n<script setup>\n\n</script>\n\n\n<style>\n* {\n\tpadding: 0;\n\tmargin: 0;\n\tbox-sizing: border-box;\n}\n\n.test-header {\n\tfont-size: 25px;\n}\n\n</style>"
             }
         },
         {
