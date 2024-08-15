@@ -23,8 +23,8 @@ export const bodyContent = `Hello,%0A%0A` +
 `Waze%0A` +
 `https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106%0A%0A` +
 
-`LiveSafe%0A` +
-`https://apps.apple.com/us/app/livesafe/id653666211%0A%0A` +
+`SafeZone%0A` +
+`https://apps.apple.com/us/app/safezone/id533054756%0A%0A` +
 
 `Google Maps%0A` +
 `https://apps.apple.com/us/app/google-maps/id585027354%0A%0A` +

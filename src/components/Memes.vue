@@ -17,6 +17,7 @@ import Meme14 from "../assets/memes/CompSciMuscles.jpg";
 import Meme15 from "../assets/memes/InfiniteWhileLoop.jpg";
 import Meme16 from "../assets/memes/Database.jpg";
 import Meme17 from "../assets/memes/CommentOutCode.jpg";
+import Video2 from '/Npesta.mp4';
 import Meme18 from "../assets/memes/BruteForceAttack.jpg";
 import Meme19 from "../assets/memes/PullStackDeveloper.jpg";
 import Meme20 from "../assets/memes/HelloWorld.jpg";
@@ -159,6 +160,11 @@ export const memeObjects = [
         transcription: "comments to describe the program comments to temporarily remove part of code",
         image: Meme17 
     }, //CommentOutCode.jpg
+    { 
+        text: "\"UNCWAlert: Campus Operations Affected by Expected Tropical Weather Conditions.\"",
+        transcription: "Oh my god oh my YES YES YES YES YES oh oh oh my god. Npesta screaming yes.",
+        video: Video2
+    }, //Npesta.mp4
     { 
         text: "I feel like some companies actually do this.",
         transcription: "Hey! what's going on? Sick bastard! // brute-force attack protection if isPasswordCorrect && isFirstLoginAttempt { Error(\"Wrong login or password\") } ",

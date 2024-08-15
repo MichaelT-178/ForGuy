@@ -50,6 +50,12 @@ const emit = defineEmits(['emailCopied'])
 const emailCopied = () => {
   const email = props.contact.Email;
 
+  // If email is a link.
+  if (email.includes("https")) {
+    window.open(email, '_blank');
+    return;
+  }
+
   navigator.clipboard.writeText(email)
     .then(() => {
       emit('emailCopied');
