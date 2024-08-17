@@ -75,7 +75,7 @@
             "transcription": "database.sql database.xlsx database.txt"
         },
         { 
-            "text": "Command + / goes so hard",
+            "text": "Highlight + command + / goes so hard",
             "transcription": "comments to describe the program comments to temporarily remove part of code"
         },
         {
@@ -205,6 +205,10 @@
         {
             "text": "\"Freethinkers\" when Youtube Algorithm",
             "transcription": "Dudes be like \"I don't watch TV, I'm not gonna let the mainstream media tell me how to think\". My brother in christ you let recommendation_watchnext.serve() determine your whole personality."
+        },
+        {
+            "text": "print(\"yeet\")",
+            "transcription": "powerful and advanced debugging tools print(\"test\")"
         },
         {
             "text": "The NSA application process be like",
