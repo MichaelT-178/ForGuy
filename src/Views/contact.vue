@@ -67,9 +67,11 @@ const submitForm = () => {
   buttonText.value = text[4].sending; //sending ...
 
   const templateParams = {
+    subject: "New message from CS Website",
+    website: "CS Website",
     from_name: userName.value,
-    from_email: userEmail.value,
-    message: userMessage.value,
+    from_email: `Email: ${userEmail.value}`,
+    message: userMessage.value
   };
 
   const serviceID = 'service_feq974e';

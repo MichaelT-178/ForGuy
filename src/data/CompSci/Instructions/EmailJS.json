@@ -39,7 +39,7 @@
                 },
                 {
                     "id": 8,
-                    "instruction": "For this example we'll use Gmail. Click on the \"Gmail\" option and then we'll fill in the following values in the \"Config Service\" pop-up."
+                    "instruction": "For this example we'll use Gmail. Click on the \"Gmail\" option."
                 },
                 {
                     "id": 9,
@@ -55,7 +55,7 @@
                 },
                 {
                     "id": 12,
-                    "instruction": "Make sure the \"Send test email to verify configuration\" box is selected, then press \"Create Service\". You should've received a test confirmation email in your Gmail account."
+                    "instruction": "Make sure the \"Send test email to verify configuration\" box is selected, then press \"Create Service\". You should receive a test confirmation email in your Gmail account."
                 },
                 {
                     "id": 13,
