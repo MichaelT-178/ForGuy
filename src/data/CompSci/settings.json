@@ -2,7 +2,7 @@
     "Text": [
         {
             "page": "My Visual Studio Code Settings",
-            "desc": "This is my settings file for VSCode. Contains mostly keyword coloring. Read comments for details.",
+            "desc": "This is my settings file for VSCode. Contains mostly keyword coloring. Read the comments for more details.",
             "header": "Settings.json",
             "downloadBtn": "Download JSON",
             "copyBtn": "Copy JSON"

@@ -16,11 +16,22 @@
     //My Default python path for vs code
     "python.defaultInterpreterPath": "~/.pyenv/versions/3.10.6/bin/python",
 
-    //Work bench color theme
-    "workbench.colorTheme": "Atom One Dark",
-
     //Sets Tab Size to 4 spaces
     "editor.tabSize": 4,
+
+    // Set Tab indentation size to 2 for Vue, JavaScript, JSX, and Typescript
+    "[vue]": {
+        "editor.tabSize": 2,
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+    },
 
     //Disables Run | Debug text
     "editor.codeLens": false,
@@ -56,12 +67,16 @@
         "compounds": []
     },
 
+    // Set to false to show .git folder
+    "files.exclude": {
+        "**/.git": false,
+    },
 
     /**
         How to change a color
      1. hover over the keyword whose color you want changed
      2. Press command + shift + p on mac
-     3. Seach and click "Developer: Inspect Editor Tokens and Scopes"
+     3. Search and click "Developer: Inspect Editor Tokens and Scopes"
      4. In the box that opens next to "textmate scopes" copy the first line
         and paste it under the scope keyword that's above the color you want
         to change the keyword too. If it doesn't work try the other lines.
@@ -69,7 +84,6 @@
         then press enter
     */
   "editor.tokenColorCustomizations": {
-
 
     "[Atom One Dark]": {
         "textMateRules": [
@@ -124,7 +138,10 @@
                     "entity.name.variable.field.cs",
 
                     /** Makes const variables in Javascript gray */
-                    "variable.other.constant.js"
+                    "variable.other.constant.js",
+
+                    /** In Vue.js make . in car.Brand object gray */
+                    "punctuation.accessor.js"
                 ],
                 "settings": {
                     "foreground": "#ABB2BF" //Gray
@@ -166,7 +183,7 @@
                 }
             },
 
-            //Changes certain functions from library such as testbed.devices[devivces] to pink.
+            //Changes certain functions from library such as testbed.devices[devices] to pink.
             // {
             //     "scope": [
             //         /** Changes certain functions from library pink in python */
@@ -308,6 +325,46 @@
 
 "workbench.editorAssociations": {
     "*.db": "sqlite-viewer.option"
+},
+
+"workbench.colorTheme": "Atom One Dark",
+
+"files.associations": {
+    "*.css": "tailwindcss"
+},
+
+"yaml.schemas": {
+    "Kubernetes": "*.yaml"
+},
+"git.autofetch": true,
+"cSpell.userWords": [
+    "autofetch",
+    "axios",
+    "donot",
+    "emailjs",
+    "Intellij",
+    "javadoc",
+    "jsonify",
+    "pyenv",
+    "pyfile",
+    "tailwindcss",
+    "typeparameters",
+    "vite"
+],
+"diffEditor.ignoreTrimWhitespace": false,
+"explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
 }
 
 }

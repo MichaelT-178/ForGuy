@@ -25,6 +25,20 @@ export const settings =
 '    //Sets Tab Size to 4 spaces\n' + 
 '    "editor.tabSize": 4,\n' + 
 '\n' + 
+'    // Set Tab indentation size to 2 for Vue, JavaScript, JSX, and Typescript\n' + 
+'    "[vue]": {\n' + 
+'        "editor.tabSize": 2,\n' + 
+'    },\n' + 
+'    "[javascript]": {\n' + 
+'        "editor.tabSize": 2,\n' + 
+'    },\n' + 
+'    "[javascriptreact]": {\n' + 
+'        "editor.tabSize": 2,\n' + 
+'    },\n' + 
+'    "[typescriptreact]": {\n' + 
+'        "editor.tabSize": 2,\n' + 
+'    },\n' + 
+'\n' + 
 '    //Disables Run | Debug text\n' + 
 '    "editor.codeLens": false,\n' + 
 '\n' + 
@@ -331,13 +345,33 @@ export const settings =
 '"git.autofetch": true,\n' + 
 '"cSpell.userWords": [\n' + 
 '    "autofetch",\n' + 
+'    "axios",\n' + 
 '    "donot",\n' + 
+'    "emailjs",\n' + 
+'    "Intellij",\n' + 
 '    "javadoc",\n' + 
+'    "jsonify",\n' + 
 '    "pyenv",\n' + 
+'    "pyfile",\n' + 
 '    "tailwindcss",\n' + 
-'    "typeparameters"\n' + 
+'    "typeparameters",\n' + 
+'    "vite"\n' + 
 '],\n' + 
-'"diffEditor.ignoreTrimWhitespace": false\n' + 
+'"diffEditor.ignoreTrimWhitespace": false,\n' + 
+'"explorer.fileNesting.patterns": {\n' + 
+'    "*.ts": "${capture}.js",\n' + 
+'    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",\n' + 
+'    "*.jsx": "${capture}.js",\n' + 
+'    "*.tsx": "${capture}.ts",\n' + 
+'    "tsconfig.json": "tsconfig.*.json",\n' + 
+'    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",\n' + 
+'    "*.sqlite": "${capture}.${extname}-*",\n' + 
+'    "*.db": "${capture}.${extname}-*",\n' + 
+'    "*.sqlite3": "${capture}.${extname}-*",\n' + 
+'    "*.db3": "${capture}.${extname}-*",\n' + 
+'    "*.sdb": "${capture}.${extname}-*",\n' + 
+'    "*.s3db": "${capture}.${extname}-*"\n' + 
+'}\n' + 
 '\n' + 
 '}\n' +
 ''
