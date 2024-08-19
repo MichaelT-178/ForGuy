@@ -23,6 +23,7 @@ import Meme19 from "../assets/memes/PullStackDeveloper.jpg";
 import Meme20 from "../assets/memes/HelloWorld.jpg";
 import Meme21 from "../assets/memes/StatusCodes.jpg";
 import Meme22 from "../assets/memes/PythonSpeed.jpg";
+import Video3 from "/Programmer.mp4";
 import Meme23 from "../assets/memes/RTPEmployers.jpg";
 import Meme24 from "../assets/memes/ArtOfWar.jpg";
 import Meme25 from "../assets/memes/GravityFallsSpMarine.jpg";
@@ -64,11 +65,12 @@ import Meme60 from "../assets/memes/Gates.jpg";
 import Meme61 from "../assets/memes/TheRona.jpg";
 import Meme62 from "../assets/memes/FindInternship.jpg";
 import Meme63 from "../assets/memes/ChatGpt.jpg";
-import Meme64 from "../assets/memes/MichaelJordan.jpg";
-import Meme65 from "../assets/memes/JackieChan.jpg";
-import Meme66 from "../assets/memes/DonaldDuck.jpg";
-import Meme67 from "../assets/memes/Sweating.jpg";
-import Meme68 from "../assets/memes/CoolSuitGuy.jpg";
+import Meme64 from "../assets/memes/Documentation.jpg";
+import Meme65 from "../assets/memes/MichaelJordan.jpg";
+import Meme66 from "../assets/memes/JackieChan.jpg";
+import Meme67 from "../assets/memes/DonaldDuck.jpg";
+import Meme68 from "../assets/memes/Sweating.jpg";
+import Meme69 from "../assets/memes/CoolSuitGuy.jpg";
 
 export const memeObjects = [
     { 
@@ -191,6 +193,11 @@ export const memeObjects = [
         transcription: "C++ devs when their thousand line code is .4 seconds faster than a 10 line python code I am speed",
         image: Meme22 
     }, //PythonSpeed.jpg
+    { 
+        text: "When your \"Hello World\" program runs.",
+        transcription: "Lets be clear I'm literally the smartest programmer that has ever lived ok. Terry Davis",
+        video: Video3
+    }, //Programmer.mp4
     { 
         text: "Fidelity Investments be like",
         transcription: "Unc, Duke, and Ncsu students RTP employers Uncw RTP employers",
@@ -396,6 +403,11 @@ export const memeObjects = [
         transcription: "Fourth graders using CHAT-GPT to do their \"List 5 uses of water\" homework",
         image: Meme63
     }, //ChatGpt.jpg
+    {
+        text: "Code repositories at work be like",
+        transcription: "In terms of documentation we have no documentation",
+        image: Meme64
+    }, //Documentation.jpg
 ]
 
 </script>

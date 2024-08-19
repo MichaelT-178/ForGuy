@@ -90,7 +90,18 @@
         },
         {
             "id": 9,
-            "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" the endpoint might have expired. Go to the original repo [here](https://github.com/n0l3r/tiktok-downloader/blob/main/cli/index.js#L139) and copy the value for API_URL. Then go to your local cloned tiktok-downloader repo's \"index.js\" file and see if the API_URL is up to date. If not, paste the new one as the new value for API_URL in your local repository."
+            "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" simply try rerunning the program.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "python3 Tiktok_Downloader.py",
+                "CopyCode": "python3 Tiktok_Downloader.py"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "If you're still getting the error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" the endpoint might have expired. Go to the original repo [here](https://github.com/n0l3r/tiktok-downloader/blob/main/cli/index.js#L139) and copy the value for API_URL. Then go to your local cloned tiktok-downloader repo's \"index.js\" file and see if the API_URL is up to date. If not, paste the new one as the new value for API_URL in your local repository."
         }
     ]
 }

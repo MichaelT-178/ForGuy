@@ -94,7 +94,7 @@
                 },
                 {
                     "id": 18,
-                    "instruction": "Now, stay in \"My Default Template\" but click on the \"Settings\" tab on the right. Copy and record the value in the \"Template ID\" field."
+                    "instruction": "Now, stay in \"My Default Template\" but click on the \"Settings\" tab on the right. Copy and record the value in the \"Template ID\" field. You can also name your template by replacing the value in the \"Name\" field and then pressing the purple \"Save\" button in the top-right."
                 },
                 {
                     "id": 19,
@@ -110,6 +110,14 @@
                 },
                 {
                     "id": 22,
+                    "instruction": "In the left-hand bar click \"Personal Settings\" at the bottom."
+                },
+                {
+                    "id": 23,
+                    "instruction": "Click the \"Security\" tab next to profile. After that follow the steps to setup Multi-Factor Authentication."
+                },
+                {
+                    "id": 24,
                     "instruction": "You should now have everything you need to setup EmailJS in your project."
                 }
             ]
@@ -139,7 +147,7 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "Now open your \"emailjs-example\" folder in VSCode. Paste the following code into the \"index.html\" file.",
+                    "instruction": "Now open your \"emailjs-example\" folder in VSCode. Paste the following code into the \"index.html\" file. Note that you can find the configuration parameters for Swal.fire in the [Sweetalert2 documentation](https://sweetalert2.github.io/#configuration). Note that some of these parameters require you to remove the style tag \"scoped\" attribute to work. Explanation on why [here](https://github.com/sweetalert2/ngx-sweetalert2/issues/153#issuecomment-598780253)",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -210,7 +218,7 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "Now open your \"emailjs-example\" folder in VSCode. Go to src -> views. Open \"Home.vue\" and delete its contents. Then paste in the following code.",
+                    "instruction": "Now open your \"emailjs-example\" folder in VSCode. Go to src -> views. Open \"Home.vue\" and delete its contents. Then paste in the following code. Note that you can find the configuration parameters for Swal.fire in the [Sweetalert2 documentation](https://sweetalert2.github.io/#configuration). Note that some of these parameters require you to remove the style tag \"scoped\" attribute to work. Explanation on why [here](https://github.com/sweetalert2/ngx-sweetalert2/issues/153#issuecomment-598780253)",
                     "Code": {
                         "Name": "",
                         "Description": "",
