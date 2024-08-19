@@ -1246,7 +1246,7 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name.",
+                "FormatCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name",
                 "CopyCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name"
             }
         },
