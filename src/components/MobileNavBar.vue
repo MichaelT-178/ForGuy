@@ -23,7 +23,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import SearchBar from './SearchBarTwo.vue';
+import SearchBar from './MobileSearchBar.vue';
 import SideBar from './SideBar.vue';
 
 const isSearchBarOpen = ref(false);

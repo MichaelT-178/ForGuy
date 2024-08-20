@@ -1,13 +1,13 @@
 <template>
-    <component :is="isMobile ? MenuBarTwo : Menu" />
+    <component :is="isMobile ? MobileNavBar : NavBar" />
     <router-view />
 </template>
 
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import Menu from './components/MenuBar.vue';
-import MenuBarTwo from './components/MenuBarTwo.vue';
+import NavBar from './components/NavBar.vue';
+import MobileNavBar from './components/MobileNavBar.vue';
 
 const isMobile = ref(window.innerWidth <= 700);
 
