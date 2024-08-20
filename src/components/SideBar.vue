@@ -24,7 +24,7 @@
 
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { menuItems } from './MenuItems.vue';
 import { useRouter } from 'vue-router';
 
@@ -48,6 +48,20 @@ const navigateTo = (link) => {
   router.push(link);
   closeMenu();
 };
+
+const handleKeydown = (event) => {
+  if (event.key === 'Escape') {
+    closeMenu();
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleKeydown);
+});
 
 </script>
 

@@ -10,9 +10,7 @@
 
     <SideBar v-if="isMenuOpen" @close-menu="isMenuOpen = false"/>
 
-    <div v-if="isSearchBarOpen" class="search-bar-wrapper">
-      <SearchBar @close-search="closeSearchBar"></SearchBar>
-    </div>
+    <SearchBar v-if="isSearchBarOpen" @close-search="closeSearchBar"></SearchBar>
 
     <span class="material-icons search-icon" v-if="!isMenuOpen && !isSearchBarOpen" @click="toggleSearchBar">
       search
@@ -78,23 +76,13 @@ const closeSearchBar = () => {
 
 .top-menu {
   background-color: teal;
-  padding: 10px 20px;
+  padding: 10px 0px;
   min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 15;
-}
-
-.search-bar-wrapper {
-  position: fixed;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100vw - 40px);
-  margin-top: -30px;
-  z-index: 20;
 }
 
 .material-icons {
@@ -111,11 +99,13 @@ const closeSearchBar = () => {
 .menu-icon {
   margin-left: 3px;
   margin-top: -9px;
+  padding-left: 20px;
 }
 
 .search-icon {
   margin-right: 3px;
   margin-top: -9px;
+  padding-right: 20px;
 }
 
 </style>
