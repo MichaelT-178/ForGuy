@@ -430,6 +430,17 @@
                 "CopyCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
             },
             "ref": "secondGitHubEight"
+        },
+        {
+            "id": 9,
+            "instruction": "If you're having trouble finding the name, run the following command. The name should be next to \"Host\". It should probably be like github.com-NAME",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "nano ~/.ssh/config",
+                "CopyCode": "nano ~/.ssh/config"
+            }
         }
     ],
     "CSC450WorkflowPtsOne": [
