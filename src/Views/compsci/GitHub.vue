@@ -322,12 +322,14 @@ const secondNine = ref(null);
 const secondTwentyThree = ref(null);
 const secondGitHubSeven = ref(null);
 const secondGitHubEight = ref(null);
+const secondGitHubNine = ref(null);
 const normalSix = ref(null);
 const normalSeven = ref(null);
 const normalNine = ref(null);
 const normalTwentyThree = ref(null);
 const normalGitHubSeven = ref(null);
 const normalGitHubEight = ref(null);
+const normalGitHubNine = ref(null);
 
 const scrollToRef = (refName) => {
     const offset = 20;
@@ -356,12 +358,14 @@ const scrollToRef = (refName) => {
         secondTwentyThree,
         secondGitHubSeven,
         secondGitHubEight,
+        secondGitHubNine,
         normalSix,
         normalSeven,
         normalNine,
         normalTwentyThree,
         normalGitHubSeven,
-        normalGitHubEight
+        normalGitHubEight,
+        normalGitHubNine
     };
 
     const targetElement = refs[refName]?.value;

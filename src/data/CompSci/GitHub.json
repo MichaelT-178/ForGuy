@@ -308,14 +308,15 @@
         },
         {
             "id": 9,
-            "instruction": "Change into the cloned repository. Using the \"cd\" command. Note you should cd into whatever the repos name is.",
+            "instruction": "Change into the cloned repository. Using the \"cd\" command. Note you should cd into whatever the repos name is. Different for multiple accounts(secondGitHubNine)",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
                 "FormatCode": "cd PacMan",
                 "CopyCode": "cd PacMan"
-            }
+            },
+             "ref": "normalGitHubNine"
         },
         {
             "id": 10,
@@ -421,7 +422,7 @@
         },
         {
             "id": 8,
-            "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. It should look something like \"Host github.com-NameForThisAccount\". Use the nano command to open the file and \"control + x\" to close it. YOU SHOULD USE THE SSH LINK. Scroll back up to original step(normalGitHubEight).",
+            "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. It should look something like \"Host github.com-NameForThisAccount\". Use the nano command to open the file and \"control + x\" to close it. YOU SHOULD USE THE SSH LINK NOT HTTPS. Scroll back up to original step(normalGitHubEight).",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -430,6 +431,18 @@
                 "CopyCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *\n\ngit clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
             },
             "ref": "secondGitHubEight"
+        },
+        {
+            "id": 9,
+            "instruction": "Change into the repository and then set the user email to the email of your second github account. Your commits will probably be linked to your main account if you don't do this. Scroll back up to original step(normalGitHubNine). <br><br>If you can't find you're email go to [github.com](https://github.com/). Click on your profile picture in the top-left then click \"Settings\" in the menu. Then on the left-hand side look for \"Emails\". Click on it and you should see your accounts email address.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"",
+                "CopyCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\""
+            },
+            "ref": "secondGitHubNine"
         }
     ],
     "CSC450WorkflowPtsOne": [
