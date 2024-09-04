@@ -421,26 +421,15 @@
         },
         {
             "id": 8,
-            "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. Scroll back up to original step(normalGitHubEight).",
+            "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. It should look something like \"Host github.com-NameForThisAccount\". Use the nano command to open the file and \"control + x\" to close it. YOU SHOULD USE THE SSH LINK. Scroll back up to original step(normalGitHubEight).",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git",
-                "CopyCode": "git clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
+                "FormatCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *\n\ngit clone git@github.com-NameForThisAccount:John-Smith/PacMan.git",
+                "CopyCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *\n\ngit clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
             },
             "ref": "secondGitHubEight"
-        },
-        {
-            "id": 9,
-            "instruction": "If you're having trouble finding the name, run the following command. The name should be next to \"Host\". It should probably be like github.com-NAME",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "nano ~/.ssh/config",
-                "CopyCode": "nano ~/.ssh/config"
-            }
         }
     ],
     "CSC450WorkflowPtsOne": [
