@@ -434,13 +434,13 @@
         },
         {
             "id": 9,
-            "instruction": "Change into the repository and then set the user email to the email of your second github account. Your commits will probably be linked to your main account if you don't do this. Scroll back up to original step(normalGitHubNine). <br><br>If you can't find you're email go to [github.com](https://github.com/). Click on your profile picture in the top-left then click \"Settings\" in the menu. Then on the left-hand side look for \"Emails\". Click on it and you should see your accounts email address.",
+            "instruction": "Change into the repository and then set the user email to the email of your second github account. Also set the username to the username of your second account.Your commits will probably be linked to your main account if you don't do this. Scroll back up to original step(normalGitHubNine). <br><br>If you can't find you're email go to [github.com](https://github.com/). Click on your profile picture in the top-left then click \"Settings\" in the menu. Then on the left-hand side look for \"Emails\". Click on it and you should see your accounts email address.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"",
-                "CopyCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\""
+                "FormatCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\"",
+                "CopyCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\""
             },
             "ref": "secondGitHubNine"
         }
