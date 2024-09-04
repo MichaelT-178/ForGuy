@@ -233,7 +233,13 @@ npm run dev
 http://localhost:5173/WhatIsThis
 ```
 
-
 ```
 http://localhost:5173/FormatCode
 ```
+
+## Topics Covered 
+ - AWS 
+ - Rest APIs 
+ - Git
+ - Flask, Spring Boot
+ - Other CS Topics
