@@ -129,6 +129,11 @@
                 "Action": "Open command search pallette"
             },
             {
+                "id": 25,
+                "Shortcut": "command + p",
+                "Action": "Open command search pallette"
+            },
+            {
                 "id": 26,
                 "Shortcut": "command + right arrow",
                 "Action": "Move a cursor (or multiple cursors) to the end of their line"
