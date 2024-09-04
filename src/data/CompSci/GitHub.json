@@ -422,25 +422,25 @@
         },
         {
             "id": 8,
-            "instruction": "Run the following command to create a local clone. Note you have to add the \"-NameForThisAccount\" after the  git@github.com part. It won't do this for you automatically. Change the \"NameForThisAccount\" to whatever you named your new account in the nano file. It should look something like \"Host github.com-NameForThisAccount\". Use the nano command to open the file and \"control + x\" to close it. YOU SHOULD USE THE SSH LINK NOT HTTPS. Scroll back up to original step(normalGitHubEight).",
+            "instruction": "Open your ~/.ssh/config file using the following command. Copy and record the \"-NameForThisAccount\". It should look something like \"Host github.com-NameForThisAccount\" in the file. You'll need it for step 9. Scroll back up to original step(normalGitHubEight).",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *\n\ngit clone git@github.com-NameForThisAccount:John-Smith/PacMan.git",
-                "CopyCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *\n\ngit clone git@github.com-NameForThisAccount:John-Smith/PacMan.git"
+                "FormatCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *",
+                "CopyCode": "nano ~/.ssh/config\n\n* \"control + x\" to exit *"
             },
             "ref": "secondGitHubEight"
         },
         {
             "id": 9,
-            "instruction": "Change into the repository and then set the user email to the email of your second github account. Also set the username to the username of your second account.Your commits will probably be linked to your main account if you don't do this. Scroll back up to original step(normalGitHubNine). <br><br>If you can't find you're email go to [github.com](https://github.com/). Click on your profile picture in the top-left then click \"Settings\" in the menu. Then on the left-hand side look for \"Emails\". Click on it and you should see your accounts email address.",
+            "instruction": "Change into the repository and then set the user email to the email of your second github account. Also set the username to the username of your second account.Your commits will probably be linked to your main account if you don't do this.<br><br>If you can't find you're email go to [github.com](https://github.com/). Click on your profile picture in the top-left then click \"Settings\" in the menu. Then on the left-hand side look for \"Emails\". Click on it and you should see your accounts email address.<br><br>Note that when you add the remote origin it should use the SSH link from GitHub, not the HTTPS link. You should also add \"-NameForThisAccount\" after the \"github.com\" part of the link. Make sure to configure your email and username before adding the remote origin. I showed this in the commands below. <br><br> When you're done you can Scroll back up to original step(normalGitHubNine).",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\"",
-                "CopyCode": "cd PacMan\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\""
+                "FormatCode": "mkdir PacMan\ncd PacMan\n\ngit init\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\"\n\ngit add .\ngit commit -m \"Initial Commit\"\ngit branch -M main\ngit remote add origin git@github.com-NameForThisAccount:John-Smith/PacMan.git\ngit push -u origin main",
+                "CopyCode": "mkdir PacMan\ncd PacMan\n\ngit init\ngit config user.email \"your-second-accounts-email\"\ngit config user.name \"your-second-accounts-username\"\n\ngit add .\ngit commit -m \"Initial Commit\"\ngit branch -M main\ngit remote add origin git@github.com-NameForThisAccount:John-Smith/PacMan.git\ngit push -u origin main"
             },
             "ref": "secondGitHubNine"
         }
