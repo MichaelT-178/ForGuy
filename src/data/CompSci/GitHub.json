@@ -1382,7 +1382,7 @@
         },
         {
             "id": 10,
-            "instruction": "To add a remote origin and push your rewritten history to GitHub, run the following commands in your terminal. Replace \"HTTPS-LINK\" in the second command with the link you copied in step 8.",
+            "instruction": "To add a remote origin and push your rewritten history to GitHub, run the following commands in your terminal. Replace \"HTTPS-LINK\" in the second command with the link you copied in step 9.",
             "Code": {
                 "Name": "",
                 "Description": "",
