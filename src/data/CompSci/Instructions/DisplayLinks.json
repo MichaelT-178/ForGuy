@@ -93,7 +93,7 @@
                 },
                 {
                     "id": 5,
-                    "name": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                    "name": "How to Make a Complex Rest API using Vue, Flask and PostgreSQL",
                     "ref": "flask-PostgreSQL",
                     "ScrollTo": "FlaskPostLink"
                 },

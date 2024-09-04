@@ -3,7 +3,7 @@
         {
             "Info": [
                 {
-                    "title": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+                    "title": "How to Make a Complex Rest API using Vue, Flask and PostgreSQL",
                     "desc": "Explains the process of setting up a Vue frontend with a Flask Rest API backend.",
                     "ref": "flask-PostgreSQL"
                 }
@@ -11,22 +11,15 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
-                    }
+                    "instruction": "We'll build a full-stack web application step-by-step using Vue, Python, Flask, and Postgres."
                 },
                 {
                     "id": 2,
-                    "instruction": ""
+                    "instruction": "A full video demo of this app can be found on my YouTube channel [here](https://youtu.be/6Qz0yUrn_J0?si=fDoMIQJorSYHasS7)."
                 },
                 {
                     "id": 3,
-                    "instruction": ""
+                    "instruction": "Let's get started!"
                 }
             ]
         },
@@ -776,8 +769,8 @@
                         "Description": "",
                         "Language": "Command",
                         "DisplayLang": "Values",
-                        "FormatCode": "Repository name: Notes-Rest-Api\nDescription: Notes-Rest-Api for CSC 450.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *\n",
-                        "CopyCode": "Repository name: Notes-Rest-Api\nDescription: Notes-Rest-Api for CSC 450.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *\n"
+                        "FormatCode": "Repository name: Notes-Rest-Api\nDescription: Notes-Rest-Api using Flask and Postgres.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *\n",
+                        "CopyCode": "Repository name: Notes-Rest-Api\nDescription: Notes-Rest-Api using Flask and Postgres.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *\n"
                     }
                 },
                 {
@@ -799,8 +792,8 @@
                         "Description": "",
                         "Language": "Command",
                         "DisplayLang": "Values",
-                        "FormatCode": "Repository name: Notes-Frontend\nDescription: CSC 450 notes app frontend.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *",
-                        "CopyCode": "Repository name: Notes-Frontend\nDescription: CSC 450 notes app frontend.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *"
+                        "FormatCode": "Repository name: Notes-Frontend\nDescription: Notes app frontend that uses vue.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *",
+                        "CopyCode": "Repository name: Notes-Frontend\nDescription: Notes app frontend that uses vue.\n\n* Do NOT check \\\"Add a README file\\\" *\n\n* Press the green \\\"Create repository\\\" button *"
                     }
                 },
                 {

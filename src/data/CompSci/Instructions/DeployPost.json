@@ -4,21 +4,30 @@
             "Info": [
                 {
                     "title": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
-                    "desc": "",
+                    "desc": "Explains how to deploy the Notes app using various AWS services.",
                     "ref": "deploy-PostgreSQL"
                 }
             ],
             "Instructions": [
-                {
+				{
                     "id": 1,
-                    "instruction": "",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
-                    }
+                    "instruction": "Before doing any of this make sure you've completed the &How to Setup an Amazon Web Services Account&[AWSLink] instruction set."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Before doing any of this make sure you've completed the &How to Setup an Amazon Web Services Account&[AWSLink] instruction set."
+                },
+				{
+                    "id": 3,
+                    "instruction": "You'll also need to complete the &How to Make a Complex Rest API using Vue, Flask and PostgreSQL&[FlaskPostLink] instruction set."
+                },
+				{
+                    "id": 4,
+                    "instruction": "After you've completed those two instruction sets, you'll be ready to start this one."
+                },
+				{
+                    "id": 5,
+                    "instruction": "Let's get started!"
                 }
             ]
         },

@@ -733,7 +733,7 @@ def get_flask_postgresql():
 			instructions = modify_list_with_code_separation(instructions, "Table")
 			Results += info + instructions
 
-		Title = "How to Make a Complex REST Api using Vue, Flask and PostgreSQL 🧰"
+		Title = "How to Make a Complex Rest API using Vue, Flask and PostgreSQL 🧰"
 		Link = "/CompSci/SetupProjects/flask-PostgreSQL"
 		
 		ensure_string(Title)

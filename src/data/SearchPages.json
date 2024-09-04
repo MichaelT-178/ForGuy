@@ -218,7 +218,7 @@
     {
         "id": 37,
         "Emoji": "🧰",
-        "MenuName": "How to Make a Complex REST Api using Vue, Flask and PostgreSQL",
+        "MenuName": "How to Make a Complex Rest API using Vue, Flask and PostgreSQL",
         "Link": "/CompSci/SetupProjects/flask-PostgreSQL"
     },
     {
