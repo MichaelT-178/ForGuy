@@ -212,10 +212,6 @@ const routes = [
         component: FormatCode
     },
     {
-        path: '/ContactMe',
-        component: ContactMe
-    },
-    {
         path: '/image-view/:Name/:Description/:Pic',
         name: 'ImageView',
         component: ImageView,
@@ -234,4 +230,4 @@ const router = createRouter({
     routes
 });
 
-export default router
+export default router;

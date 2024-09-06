@@ -86,8 +86,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages",
-                        "CopyCode": "pwd\nnpm run build\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
+                        "FormatCode": "pwd\nnpm run build\ncp dist/index.html dist/404.html\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages",
+                        "CopyCode": "pwd\nnpm run build\ncp dist/index.html dist/404.html\ngit add dist -f\ngit commit -m \"Adding dist\"\ngit subtree push --prefix dist origin gh-pages"
                     }
                 },
                 {
@@ -109,8 +109,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages",
-                        "CopyCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages"
+                        "FormatCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ncp dist/index.html dist/404.html\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages",
+                        "CopyCode": "git add .\ngit commit -m \"Message\"\ngit push origin main\nnpm run build\ncp dist/index.html dist/404.html\ngit add dist -f\ngit commit -m \"Message\"\ngit subtree push --prefix dist origin gh-pages"
                     }
                 },
                 {
@@ -126,6 +126,10 @@
                 },
                 {
                     "id": 11,
+                    "instruction": "If you're getting errors on your deployed site make sure you're not using anchor tags for router links."
+                },
+                {
+                    "id": 12,
                     "instruction": "I've included an automation script in the section below you can use to update your Github pages website."
                 }
             ]
@@ -156,8 +160,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
-                        "FormatCode": "import os\nimport subprocess\nfrom termcolor import colored as c\n\nprocess = subprocess.run('git status', shell=True, capture_output=True, text=True)\n\noutput = process.stdout\n\nbranch = repr(output).split(\"\\\\n\")[0].replace(\"'On branch \", \"\").strip()\n\nprint('On branch ', end=\"\")\n\nif branch == 'main':\n    print(c(branch, 'green'))\nelse:\n    print(c(branch, 'red'))\n    print('Move changes to the main branch, then switch to the main branch.')\n    print('git stash')\n    print('git checkout main')\n    print('git pull origin main')\n    print(f'git merge {branch}')\n    print('git stash apply')\n    print('git push origin main')\n    exit(0)\n\ncommit_msg = input(\"Enter your commit message: \")\n\nos.system('git add .')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git push origin main')\nos.system('npm run build')\nos.system('git add dist -f')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git subtree push --prefix dist origin gh-pages')",
-                        "CopyCode": "import os\nimport subprocess\nfrom termcolor import colored as c\n\nprocess = subprocess.run('git status', shell=True, capture_output=True, text=True)\n\noutput = process.stdout\n\nbranch = repr(output).split(\"\\\\n\")[0].replace(\"'On branch \", \"\").strip()\n\nprint('On branch ', end=\"\")\n\nif branch == 'main':\n\tprint(c(branch, 'green'))\nelse:\n\tprint(c(branch, 'red'))\n\tprint('Move changes to the main branch, then switch to the main branch.')\n\tprint('git stash')\n\tprint('git checkout main')\n\tprint('git pull origin main')\n\tprint(f'git merge {branch}')\n\tprint('git stash apply')\n\tprint('git push origin main')\n\texit(0)\n\ncommit_msg = input(\"Enter your commit message: \")\n\nos.system('git add .')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git push origin main')\nos.system('npm run build')\nos.system('git add dist -f')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git subtree push --prefix dist origin gh-pages')\n"
+                        "FormatCode": "import os\nimport subprocess\nfrom termcolor import colored as c\n\nprocess = subprocess.run('git status', shell=True, capture_output=True, text=True)\n\noutput = process.stdout\n\nbranch = repr(output).split(\"\\\\n\")[0].replace(\"'On branch \", \"\").strip()\n\nprint('On branch ', end=\"\")\n\nif branch == 'main':\n    print(c(branch, 'green'))\nelse:\n    print(c(branch, 'red'))\n    print('Move changes to the main branch, then switch to the main branch.')\n    print('git stash')\n    print('git checkout main')\n    print('git pull origin main')\n    print(f'git merge {branch}')\n    print('git stash apply')\n    print('git push origin main')\n    exit(0)\n\ncommit_msg = input(\"Enter your commit message: \")\n\nos.system('git add .')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git push origin main')\nos.system('npm run build')\nos.system('cp dist/index.html dist/404.html')\nos.system('git add dist -f')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git subtree push --prefix dist origin gh-pages')",
+                        "CopyCode": "import os\nimport subprocess\nfrom termcolor import colored as c\n\nprocess = subprocess.run('git status', shell=True, capture_output=True, text=True)\n\noutput = process.stdout\n\nbranch = repr(output).split(\"\\\\n\")[0].replace(\"'On branch \", \"\").strip()\n\nprint('On branch ', end=\"\")\n\nif branch == 'main':\n\tprint(c(branch, 'green'))\nelse:\n\tprint(c(branch, 'red'))\n\tprint('Move changes to the main branch, then switch to the main branch.')\n\tprint('git stash')\n\tprint('git checkout main')\n\tprint('git pull origin main')\n\tprint(f'git merge {branch}')\n\tprint('git stash apply')\n\tprint('git push origin main')\n\texit(0)\n\ncommit_msg = input(\"Enter your commit message: \")\n\nos.system('git add .')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git push origin main')\nos.system('npm run build')\nos.system('cp dist/index.html dist/404.html')\nos.system('git add dist -f')\nos.system(f'git commit -m \"{commit_msg}\"')\nos.system('git subtree push --prefix dist origin gh-pages')\n"
                     }
                 },
                 {

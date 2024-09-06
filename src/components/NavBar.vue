@@ -28,10 +28,14 @@
               >
                 <ul>
                   <li v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex" class="sub-menu-item">
-                    <a :href="subMenuItem.link" class="sub-menu-link">
+                    <router-link 
+                      :to="subMenuItem.link" 
+                      class="sub-menu-link"
+                      @click="hideSubMenu" 
+                    >
                       <span class="material-symbols-outlined">{{ subMenuItem.icon }}</span>
                       <span>{{ subMenuItem.text }}</span>
-                    </a>
+                    </router-link>
                   </li>
                 </ul>
               </div>
