@@ -31,6 +31,8 @@ import FlashDrive from './FlashDrive.json';
 import PyServer from './PythonServer.json';
 import NodeServer from './NodeServer.json';
 import EmailJS from './EmailJS.json';
+import PaymentStripe from './Payments.json';
+import CronJob from './CronJob.json';
 import PyiCloud from './PyiCloud.json';
 import OAuth from './OAuth.json';
 import GoogleApi from './GoogleApi.json';
@@ -78,6 +80,8 @@ export const AllSets = [
     PyServer,
     NodeServer,
     EmailJS,
+    PaymentStripe,
+    CronJob,
     PyiCloud,
     OAuth,
     GoogleApi,

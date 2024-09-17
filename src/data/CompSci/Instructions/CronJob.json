@@ -1,0 +1,256 @@
+{
+    "Info": [
+        {
+            "title": "How to Create a Cron Job on macOS",
+            "desc": "Explains how to create a Cron Job on macOS",
+            "ref": "cronjob"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "A cron job is a scheduled task or command that runs automatically at specified intervals or times on Unix-based systems (like Linux or macOS)"
+        },
+        {
+            "id": 2,
+            "instruction": "I see cron jobs used sometimes at work, which is why I included this section. It would be a good skill to know and would be helpful if you wanted to schedule a task."
+        },
+        {
+            "id": 3,
+            "instruction": "Before we start, let's learn about the syntax."
+        },
+        {
+            "id": 4,
+            "instruction": "Cron jobs are scheduled with five time-related fields, followed by the command you want to execute. The basic syntax looks like this.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Cron Job",
+                "FormatCode": "* * * * * /path/to/command",
+                "CopyCode": "* * * * * /path/to/command"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Each of the five * represents a different time unit. Leave as * for all days, months, etc.<br><br>• 1st is <u>minutes</u><br>• 2nd is <u>hours</u><br>• 3rd is <u>day of the month</u><br>• 4th is <u>the month</u><br>• 5th is <u>day of week</u>",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Cron Job",
+                "FormatCode": "┌───────────── minute (0 - 59)\n│ ┌───────────── hour (0 - 23)\n│ │ ┌───────────── day of the month (1 - 31)\n│ │ │ ┌───────────── month (1 - 12)\n│ │ │ │ ┌───────────── day of the week (0 - 7) (0 or 7 = Sunday)\n* * * * * command to be executed\n",
+                "CopyCode": "┌───────────── minute (0 - 59)\n│ ┌───────────── hour (0 - 23)\n│ │ ┌───────────── day of the month (1 - 31)\n│ │ │ ┌───────────── month (1 - 12)\n│ │ │ │ ┌───────────── day of the week (0 - 7) (0 or 7 = Sunday)\n* * * * * command to be executed\n"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "This example Cron Job would un a command every day at 2:30 AM.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Cron Job",
+                "FormatCode": "30 2 * * * /path/to/command",
+                "CopyCode": "30 2 * * * /path/to/command"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Now we'll start creating our cron job. We'll start by making our python script."
+        },
+        {
+            "id": 8,
+            "instruction": "First, we'll make an app password so we can programmatically send emails using our Gmail account."
+        },
+        {
+            "id": 9,
+            "instruction": "Go to your [Google Account](https://myaccount.google.com). Then go click on \"Security\" in the left sidebar."
+        },
+        {
+            "id": 10,
+            "instruction": "You can skip this step if you already have 2-Step authentication enabled. Under \"How you sign in to Google\" click \"2-Step Verification\" and follow the instructions to enable it."
+        },
+        {
+            "id": 11,
+            "instruction": "After enabling 2-Step Verification, go back to the \"Security\" section of your Google Account."
+        },
+        {
+            "id": 12,
+            "instruction": "Under \"How you sign in to Google\" click on \"2-Step Verification\"."
+        },
+        {
+            "id": 13,
+            "instruction": "Scroll to the very bottom section titled \"App passwords\". Then click the arrow."
+        },
+        {
+            "id": 14,
+            "instruction": "In the \"App name\" text field type \"CronJobEmail\". Then press \"Create\"."
+        },
+        {
+            "id": 15,
+            "instruction": "Copy and record the \"Generated app password\" from the pop-up box. Then click \"Done\"."
+        },
+        {
+            "id": 16,
+            "instruction": "Now go to your terminal and run the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "touch email_cron_job.py",
+                "CopyCode": "touch email_cron_job.py"
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "Open \"email_cron_job.py\" in VSCode. Paste in the following code. Replace sender_email, sender_password, and receiver_email with your actual credentials. Make sure your sender email is a gmail address.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "import smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\n\n\n# CHANGE THESE \nsender_email = \"your_email@gmail.com\"\nsender_password = \"YOUR_APP_PASSWORD_FROM_STEP_15\"\nreceiver_email = \"recipient_email@example.com\"\n\n\nmsg = MIMEMultipart()\nmsg['From'] = sender_email\nmsg['To'] = receiver_email\nmsg['Subject'] = \"Cron Job Email\"\n\n\nbody = \"This email was sent using a cron job. It should be sent everyday at 7:30 pm.\"\nmsg.attach(MIMEText(body, 'plain'))\n\n\ntry:\n    server = smtplib.SMTP('smtp.gmail.com', 587)\n    server.starttls() \n    server.login(sender_email, sender_password)\n    server.sendmail(sender_email, receiver_email, msg.as_string())\n    server.quit()\n    print(\"Email sent successfully!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n",
+                "CopyCode": "import smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\n\n\n# CHANGE THESE \nsender_email = \"your_email@gmail.com\"\nsender_password = \"YOUR_APP_PASSWORD_FROM_STEP_15\"\nreceiver_email = \"recipient_email@example.com\"\n\n\nmsg = MIMEMultipart()\nmsg['From'] = sender_email\nmsg['To'] = receiver_email\nmsg['Subject'] = \"Cron Job Email\"\n\n\nbody = \"This email was sent using a cron job. It should be sent everyday at 7:30 pm.\"\nmsg.attach(MIMEText(body, 'plain'))\n\n\ntry:\n    server = smtplib.SMTP('smtp.gmail.com', 587)\n    server.starttls() \n    server.login(sender_email, sender_password)\n    server.sendmail(sender_email, receiver_email, msg.as_string())\n    server.quit()\n    print(\"Email sent successfully!\")\nexcept Exception as e:\n    print(f\"Error: {e}\")\n"
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "Run your program to make sure it works before making it part of a cron job",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "python3 email_cron_job.py",
+                "CopyCode": "python3 email_cron_job.py"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "Crontab is a file where cron jobs are defined. You can edit the file by running the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "crontab -e",
+                "CopyCode": "crontab -e"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "Paste the following line into the file. <br><br>• Use hover, control + x to decrease the numbers. <br>• Use hover, control + a to increase the numbers.<br>• Save and exit by doing \"shift + :\", then type \"wq!\", then press return. <br>• When prompted press the \"Allow\" button<br><br>It will run our script everyday at 7:30 pm. The 19 is military time for 7 pm.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "",
+                "FormatCode": "30 19 * * * python3 email_cron_job.py",
+                "CopyCode": "30 19 * * * python3 email_cron_job.py"
+            }
+        },
+        {
+            "id": 21,
+            "instruction": "After you press the \"allow\" button you should be able to save and exit by just typing \"wq\"."
+        },
+        {
+            "id": 22,
+            "instruction": "You can list all your Cron Job's by running the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "crontab -l",
+                "CopyCode": "crontab -l"
+            }
+        },
+        {
+            "id": 23,
+            "instruction": "To save without existing the crontab file you can just do shift + :, type w, press return."
+        },
+        {
+            "id": 24,
+            "instruction": "To delete your cron job open the file again.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "crontab -e",
+                "CopyCode": "crontab -e"
+            }
+        },
+        {
+            "id": 25,
+            "instruction": "Hover over the line you want to delete, press \"dd\" and then save the file by doing shift + :, type wq, press return."
+        },
+        {
+            "id": 26,
+            "instruction": "Confirm your Cron Job was deleted by using the following command. It should no longer appear in the output.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "crontab -l",
+                "CopyCode": "crontab -l"
+            }
+        },
+        {
+            "id": 26,
+            "instruction": "Congratulations! You should have successfully created and deleted a Cron job."
+        },
+        {
+            "id": 27,
+            "instruction": "To delete your app password, go to your [Google Account](https://myaccount.google.com). Then go click on \"Security\" in the left sidebar."
+        },
+        {
+            "id": 28,
+            "instruction": "Scroll down to the \"How you sign in to Google\" section. Click on \"2-Step Verification\"."
+        },
+        {
+            "id": 29,
+            "instruction": "Scroll down to the very bottom \"App passwords\" section. Click on the arrow to the right."
+        },
+        {
+            "id": 30,
+            "instruction": "Click the trash icon next to your \"CronJobEmail\" app password."
+        },
+        {
+            "id": 31,
+            "instruction": "Confirm the change on your phone. After that you should have successfully deleted your app password!"
+        },
+        {
+            "id": 32,
+            "instruction": "If your terminal says \"You have mail.\" run the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mail",
+                "CopyCode": "mail"
+            }
+        },
+        {
+            "id": 33,
+            "instruction": "Press 1 to see the email message."
+        },
+        {
+            "id": 34,
+            "instruction": "To delete the message type \"d 1\" then press 'q' to quit.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "d 1\nq",
+                "CopyCode": "d 1\nq"
+            }
+        },
+        {
+            "id": 35,
+            "instruction": "Type the following command to make sure you have no mail. If it says you have no mail it means you've successfully deleted the email notification.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "mail",
+                "CopyCode": "mail"
+            }
+        }
+    ]
+}

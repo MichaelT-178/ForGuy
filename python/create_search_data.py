@@ -8,7 +8,6 @@ from termcolor import colored as c
 This file creates the src/data/SearchData.json page.
 """
 
-
 def format_json(data):
 	return json.dumps(data, indent=4)
 
@@ -1282,6 +1281,37 @@ def get_emailjs():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+
+def get_stripe_payment():
+	with open("../src/data/CompSci/Instructions/Payments.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Setup Payments in an App using Stripe 💰"
+		Link = "/CompSci/SetupProjects/payments"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
+def get_cron_job():
+	with open("../src/data/CompSci/Instructions/CronJob.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Create a Cron Job on macOS ⏰"
+		Link = "/CompSci/SetupProjects/cronjob"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
 def get_pyicloud():
 	with open("../src/data/CompSci/Instructions/PyiCloud.json", "r") as file:
 		content = json.load(file)
@@ -1924,6 +1954,10 @@ nodeserver = get_node_server()
 
 emailjs = get_emailjs()
 
+stripepayment = get_stripe_payment()
+
+cronjob = get_cron_job()
+
 pyicloud = get_pyicloud()
 
 oauth = get_oauth()
@@ -2026,6 +2060,8 @@ all_data = [
 	pyserver,
 	nodeserver,
 	emailjs,
+	stripepayment,
+	cronjob,
 	pyicloud,
 	oauth,
 

@@ -23,6 +23,9 @@ export const bodyContent = `Hello ,%0A%0A` +
 `SQLite%0A` +
 `https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite%0A%0A` +
 
+`Thunder Client%0A` +
+`https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client%0A%0A` +
+
 `Docker%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker%0A%0A` +
 

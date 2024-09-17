@@ -52,6 +52,12 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite"
         },
         {
+            "Name": "Thunder Client",
+            "Author": "Thunder Client (Ranga Vadhineni)",
+            "Description": "Basically Postman as a VSCode extension. It's a lightweight Rest API Client Extension you can use to ping endpoints. Download it, then press the lightning bolt symbol on the left-hand side of VSCode. Press the hamburger menu next to the \"filter activity\" input field. Press \"import cURL\". Type \"cURL\" in the input field and then you should be ready to go.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client"
+        },
+        {
             "Name": "Docker",
             "Author": "Microsoft",
             "Description": "Makes it easy to create, manage, and debug containerized applications.",

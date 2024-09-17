@@ -29,7 +29,7 @@
             <source :src="meme.video" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-           </div>
+          </div>
 
           <span class="hidden-text">{{ meme.transcription }}</span>
         </div>
@@ -128,7 +128,6 @@ p {
   position: relative;
   width: 400px;
   width: 100%;
-  border: 2px solid black;
   margin-top: 8px;
   display: block;
 }
@@ -137,6 +136,7 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+  border: 2px solid black;
 }
 
 .hidden-video-text {
