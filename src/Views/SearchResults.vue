@@ -24,7 +24,7 @@ import SearchCard from "../components/SearchResultCard.vue";
 import ShrugPhoto from '../assets/Shrug.png';
   
 const route = useRoute();
-const searchQuery = ref(route.params.SearchQuery || '');
+const searchQuery = ref(route.query.search_query || '');
 const searchResults = ref([]);
 const totalCount = ref(0);
 
@@ -113,7 +113,7 @@ onMounted(() => {
     searchResults.value = searchJson(SearchData, escapedQuery);
 });
 
-watch(() => route.params.SearchQuery, (newSearchQuery) => {
+watch(() => route.query.search_query, (newSearchQuery) => {
     searchQuery.value = newSearchQuery;
     const escapedQuery = escapedSearchQuery(searchQuery.value);
     searchResults.value = searchJson(SearchData, escapedQuery);

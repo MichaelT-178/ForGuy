@@ -9,10 +9,10 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import NavBar from './components/NavBar.vue';
 import MobileNavBar from './components/MobileNavBar.vue';
 
-const isMobile = ref(window.innerWidth <= 700);
+const isMobile = ref(window.innerWidth <= 715);
 
 const updateWindowSize = () => {
-  isMobile.value = window.innerWidth <= 700;
+  isMobile.value = window.innerWidth <= 715;
 };
 
 onMounted(() => {

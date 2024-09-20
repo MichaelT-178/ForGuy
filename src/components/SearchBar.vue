@@ -60,7 +60,7 @@ const updateIsHovering = (event) => {
 document.addEventListener('mousemove', updateIsHovering);
 
 const goToResultsPage = () => {
-  router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
+  router.push({ name: 'SearchResults', query: { search_query: searchQuery.value } });
 };
 
 const goToResultsPageAndClose = () => {

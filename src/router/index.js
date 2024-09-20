@@ -218,10 +218,10 @@ const routes = [
         props: true
     },
     {
-        path: '/SearchResults/:SearchQuery',
+        path: '/results',
         name: 'SearchResults',
         component: SearchResults,
-        props: true
+        props: (route) => ({ searchQuery: route.query.search_query })
     }
 ]
 

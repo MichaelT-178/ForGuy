@@ -186,18 +186,51 @@
         },
         {
             "id": 17,
-            "instruction": "In the src folder create an axios instance file.",
+            "instruction": "Now install the following packages for vitest.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "touch src/axiosInstance.js",
-                "CopyCode": "touch src/axiosInstance.js"
+                "FormatCode": "npm install vitest --save-dev\nnpm install @vitest/ui --save-dev\nnpm install @vue/test-utils axios-mock-adapter\nnpm install @vitejs/plugin-vue --save-dev\nnpm install jsdom --save-dev\nnpm install flush-promises --save-dev\nnpm install open-cli --save-dev",
+                "CopyCode": "npm install vitest --save-dev\nnpm install @vitest/ui --save-dev\nnpm install @vue/test-utils axios-mock-adapter\nnpm install @vitejs/plugin-vue --save-dev\nnpm install jsdom --save-dev\nnpm install flush-promises --save-dev\nnpm install open-cli --save-dev"
             }
         },
         {
             "id": 18,
-            "instruction": "Open your \"vue-sqlite-frontend\" folder in VSCode. Paste the following code into the \"axiosInstance.js\" file in the \"src\" folder. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues.",
+            "instruction": "In the src folder create an axios instance file. Also make a folder for tests and the testing file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "touch src/axiosInstance.js\nmkdir src/tests\ntouch src/tests/Home.test.js\ntouch vitest.config.js",
+                "CopyCode": "touch src/axiosInstance.js\nmkdir src/tests\ntouch src/tests/Home.test.js\ntouch vitest.config.js"
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "Open your \"vue-sqlite-frontend\" folder in VSCode. In the top-most directory open the \"vitest.config.js\" config file and paste in the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "FormatCode": "import { defineConfig } from 'vite';\nimport vue from '@vitejs/plugin-vue';\n\nexport default defineConfig({\n  plugins: [vue()],\n  test: {\n    environment: 'jsdom',\n  },\n});",
+                "CopyCode": "import { defineConfig } from 'vite';\nimport vue from '@vitejs/plugin-vue';\n\nexport default defineConfig({\n  plugins: [vue()],\n  test: {\n    environment: 'jsdom',\n  },\n});"
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "Go to \"package.json\" in the top-most directory and paste the following line in the scripts array under the \"preview\" attribute.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JSON",
+                "FormatCode": "\"test\": \"vitest\",\n\"test:ui\": \"vitest --ui --watch & open-cli http://localhost:51204/__vitest__/\"",
+                "CopyCode": "\"test\": \"vitest\",\n\"test:ui\": \"vitest --ui --watch & open-cli http://localhost:51204/__vitest__/\""
+            }
+        },
+        {
+            "id": 21,
+            "instruction": "In the src directory open the \"axiosInstance.js\" file and paste in the following code. Make sure the baseURL is the correct localhost link. If it's wrong it could lead to CORS issues.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -207,19 +240,52 @@
             }
         },
         {
-            "id": 19,
+            "id": 22,
             "instruction": "Now go to src -> views and open \"Home.vue\". Delete the files content and paste the following code.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "JavaScript",
                 "DisplayLang": "Vue",
-                "FormatCode": "<template>\n    <div>\n      <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n      <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n      <button @click=\"createUser\">Create User</button>\n\n      <div>\n        <input v-model=\"searchFName\" placeholder=\"Search First Name\">\n        <button @click=\"searchUser\">Search</button>\n      </div>\n\n      <table v-if=\"users.length\">\n        <thead>\n          <tr>\n\t    <th>First Name</th>\n\t    <th>Last Name</th>\n\t  </tr>\n\t</thead>\n\t<tbody>\n\t  <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t    <td>{{ user.firstname }}</td>\n\t    <td>{{ user.lastname }}</td>\n\t  </tr>\n\t</tbody>\n      </table>\n\n    <div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n    try {\n\tif (!firstName.value || !lastName.value) {\n\t    alert(\"Please Fill In All Fields\");\n\t    return;\n\t}\n\n\tconst response = await axios.post('/users', {\n\t    firstname: firstName.value,\n\t    lastname: lastName.value\n\t});\n\n\talert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n\talert(`User '${firstName.value}' already in database!`);\n\tconsole.error('There was an error!', error);\n    }\n}\n\nconst searchUser = async () => {\n    try {\n\tconst response = await axios.get(`/users/${searchFName.value}`);\n\tusers.value = [response.data];\n    } catch (error) {\n\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\tconsole.error('There was an error!', error);\n\tusers.value = [];\n    }\n}\n\n</script>",
-                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tif (!firstName.value || !lastName.value) {\n\t\t\talert(\"Please Fill In All Fields\");\n\t\t\treturn;\n\t\t}\n\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\talert(`User '${firstName.value}' already in database!`);\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\n</script>"
+                "FormatCode": "<template>\n    <div>\n      <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n      <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n      <button @click=\"createUser\" data-test=\"create-button\">Create User</button>\n\n      <!-- Search section -->\n      <div>\n        <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n        <button @click=\"searchUser\" data-test=\"search-button\">Search</button>\n      </div>\n\n      <!-- Display results in a table -->\n      <table v-if=\"users.length\">\n        <thead>\n          <tr>\n            <th>First Name</th>\n            <th>Last Name</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr v-for=\"user in users\" :key=\"user.firstname\">\n            <td>{{ user.firstname }}</td>\n            <td>{{ user.lastname }}</td>\n          </tr>\n        </tbody>\n      </table>\n\n    </div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n    try {\n        if (!firstName.value || !lastName.value) {\n            alert(\"Please Fill In All Fields\");\n            return;\n        }\n\n        const response = await axios.post('/users', {\n            firstname: firstName.value,\n            lastname: lastName.value\n        });\n\n        alert(`User Created: ${response.data.firstname}`);\n    } catch (error) {\n        alert(`User '${firstName.value}' already in database!`);\n        console.error('There was an error!', error);\n    }\n}\n\nconst searchUser = async () => {\n    try {\n        const response = await axios.get(`/users/${searchFirstName.value}`);\n        users.value = [response.data];\n    } catch (error) {\n        alert(`Couldn't find user: '${searchFirstName.value}'`);\n        console.error('There was an error!', error);\n        users.value = [];\n    }\n}\n\n</script>",
+                "CopyCode": "<template>\n\t<div>\n\t  <input v-model=\"firstName\" placeholder=\"Enter First Name\">\n\t  <input v-model=\"lastName\" placeholder=\"Enter Last Name\">\n\t  <button @click=\"createUser\" data-test=\"create-button\">Create User</button>\n\n\t  <!-- Search section -->\n\t  <div>\n\t    <input v-model=\"searchFirstName\" placeholder=\"Search by First Name\">\n\t    <button @click=\"searchUser\" data-test=\"search-button\">Search</button>\n\t  </div>\n\n\t  <!-- Display results in a table -->\n\t  <table v-if=\"users.length\">\n\t    <thead>\n\t      <tr>\n\t        <th>First Name</th>\n\t        <th>Last Name</th>\n\t      </tr>\n\t    </thead>\n\t    <tbody>\n\t      <tr v-for=\"user in users\" :key=\"user.firstname\">\n\t        <td>{{ user.firstname }}</td>\n\t        <td>{{ user.lastname }}</td>\n\t      </tr>\n\t    </tbody>\n\t  </table>\n\n\t</div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport axios from '../axiosInstance.js';\n\nconst firstName = ref('');\nconst lastName = ref('');\nconst searchFirstName = ref('');\nconst users = ref([]);\n\nconst createUser = async () => {\n\ttry {\n\t\tif (!firstName.value || !lastName.value) {\n\t\t\talert(\"Please Fill In All Fields\");\n\t\t\treturn;\n\t\t}\n\n\t\tconst response = await axios.post('/users', {\n\t\t\tfirstname: firstName.value,\n\t\t\tlastname: lastName.value\n\t\t});\n\n\t\talert(`User Created: ${response.data.firstname}`);\n\t} catch (error) {\n\t\talert(`User '${firstName.value}' already in database!`);\n\t\tconsole.error('There was an error!', error);\n\t}\n}\n\nconst searchUser = async () => {\n\ttry {\n\t\tconst response = await axios.get(`/users/${searchFirstName.value}`);\n\t\tusers.value = [response.data];\n\t} catch (error) {\n\t\talert(`Couldn't find user: '${searchFirstName.value}'`);\n\t\tconsole.error('There was an error!', error);\n\t\tusers.value = [];\n\t}\n}\n\n</script>"
             }
         },
         {
-            "id": 20,
+            "id": 23,
+            "instruction": "Go src -> tests. Open the \"Home.test.js\" file and paste in the following code.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "JavaScript",
+                "FormatCode": "import { mount } from '@vue/test-utils';\nimport { beforeEach, describe, it, expect, beforeAll, afterEach, vi } from 'vitest';\nimport Home from '../views/Home.vue';\nimport axios from '../axiosInstance.js';\nimport flushPromises from 'flush-promises';\n\nvi.mock('../axiosInstance.js');\n\nbeforeAll(() => {\n  global.alert = vi.fn();\n});\n\nafterEach(() => {\n  vi.restoreAllMocks();\n});\n\ndescribe('Home', () => {\n  let wrapper;\n\n  beforeEach(() => {\n    wrapper = mount(Home);\n  });\n\n  it('should alert when fields are empty on create', async () => {\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    expect(global.alert).toHaveBeenCalledWith(\"Please Fill In All Fields\");\n  });\n\n  it('should create a user and alert on success', async () => {\n    await wrapper.find('input[placeholder=\"Enter First Name\"]').setValue('John');\n    await wrapper.find('input[placeholder=\"Enter Last Name\"]').setValue('Doe');\n\n    axios.post.mockResolvedValueOnce({ data: { firstname: 'John' } });\n\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"User Created: John\");\n  });\n\n  it('should alert on user creation error', async () => {\n    await wrapper.find('input[placeholder=\"Enter First Name\"]').setValue('John');\n    await wrapper.find('input[placeholder=\"Enter Last Name\"]').setValue('Doe');\n\n    axios.post.mockRejectedValueOnce(new Error('User exists'));\n\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"User 'John' already in database!\");\n  });\n\n  it('should search for a user and update the list', async () => {\n    await wrapper.find('input[placeholder=\"Search by First Name\"]').setValue('John');\n\n    axios.get.mockResolvedValueOnce({ data: { firstname: 'John', lastname: 'Doe' } });\n\n    const searchButton = wrapper.find('[data-test=\"search-button\"]');\n    expect(searchButton.exists()).toBe(true);\n\n    await searchButton.trigger('click');\n    await flushPromises();\n    expect(wrapper.vm.users).toEqual([{ firstname: 'John', lastname: 'Doe' }]);\n  });\n\n  it('should alert when user not found', async () => {\n    await wrapper.find('input[placeholder=\"Search by First Name\"]').setValue('Nonexistent');\n\n    axios.get.mockRejectedValueOnce(new Error('User not found'));\n\n    const searchButton = wrapper.find('[data-test=\"search-button\"]');\n    expect(searchButton.exists()).toBe(true);\n\n    await searchButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"Couldn't find user: 'Nonexistent'\");\n    expect(wrapper.vm.users).toEqual([]);\n  });\n});\n",
+                "CopyCode": "import { mount } from '@vue/test-utils';\nimport { beforeEach, describe, it, expect, beforeAll, afterEach, vi } from 'vitest';\nimport Home from '../views/Home.vue';\nimport axios from '../axiosInstance.js';\nimport flushPromises from 'flush-promises';\n\nvi.mock('../axiosInstance.js');\n\nbeforeAll(() => {\n  global.alert = vi.fn();\n});\n\nafterEach(() => {\n  vi.restoreAllMocks();\n});\n\ndescribe('Home', () => {\n  let wrapper;\n\n  beforeEach(() => {\n    wrapper = mount(Home);\n  });\n\n  it('should alert when fields are empty on create', async () => {\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    expect(global.alert).toHaveBeenCalledWith(\"Please Fill In All Fields\");\n  });\n\n  it('should create a user and alert on success', async () => {\n    await wrapper.find('input[placeholder=\"Enter First Name\"]').setValue('John');\n    await wrapper.find('input[placeholder=\"Enter Last Name\"]').setValue('Doe');\n\n    axios.post.mockResolvedValueOnce({ data: { firstname: 'John' } });\n\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"User Created: John\");\n  });\n\n  it('should alert on user creation error', async () => {\n    await wrapper.find('input[placeholder=\"Enter First Name\"]').setValue('John');\n    await wrapper.find('input[placeholder=\"Enter Last Name\"]').setValue('Doe');\n\n    axios.post.mockRejectedValueOnce(new Error('User exists'));\n\n    const createButton = wrapper.find('[data-test=\"create-button\"]');\n    await createButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"User 'John' already in database!\");\n  });\n\n  it('should search for a user and update the list', async () => {\n    await wrapper.find('input[placeholder=\"Search by First Name\"]').setValue('John');\n\n    axios.get.mockResolvedValueOnce({ data: { firstname: 'John', lastname: 'Doe' } });\n\n    const searchButton = wrapper.find('[data-test=\"search-button\"]');\n    expect(searchButton.exists()).toBe(true);\n\n    await searchButton.trigger('click');\n    await flushPromises();\n    expect(wrapper.vm.users).toEqual([{ firstname: 'John', lastname: 'Doe' }]);\n  });\n\n  it('should alert when user not found', async () => {\n    await wrapper.find('input[placeholder=\"Search by First Name\"]').setValue('Nonexistent');\n\n    axios.get.mockRejectedValueOnce(new Error('User not found'));\n\n    const searchButton = wrapper.find('[data-test=\"search-button\"]');\n    expect(searchButton.exists()).toBe(true);\n\n    await searchButton.trigger('click');\n    await flushPromises();\n    expect(global.alert).toHaveBeenCalledWith(\"Couldn't find user: 'Nonexistent'\");\n    expect(wrapper.vm.users).toEqual([]);\n  });\n});\n"
+            }
+        },
+        {
+            "id": 24,
+            "instruction": "Now open a new terminal and run your tests using the following commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd vue-sqlite-frontend\nnpm run test",
+                "CopyCode": "cd vue-sqlite-frontend\nnpm run test"
+            }
+        },
+        {
+            "id": 25,
+            "instruction": "Now open the vitest test results in your browser using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "npm run test:ui",
+                "CopyCode": "npm run test:ui"
+            }
+        },
+        {
+            "id": 26,
             "instruction": "Now close all your current terminals and open TWO new different terminals. In the first one, run your Flask api using the following commands. Do NOT close this terminal.",
             "Code": {
                 "Name": "",
@@ -230,7 +296,7 @@
             }
         },
         {
-            "id": 21,
+            "id": 27,
             "instruction": "In your second terminal run the following commands. Open the link to see your frontend.",
             "Code": {
                 "Name": "",
@@ -241,7 +307,7 @@
             }
         },
         {
-            "id": 22,
+            "id": 28,
             "instruction": "Open the link that was output from the \"npm run dev\" command in your browser. It might be the following link.",
             "Code": {
                 "Name": "",
@@ -253,11 +319,11 @@
             }
         },
         {
-            "id": 23,
+            "id": 29,
             "instruction": "In your flask_and_sqlite repository there should now be a folder called \"instance\". In this folder you should see a file named \"mydatabase.db\". When you click on the db file you should see your \"user\" table. Click the refresh button to see your updates as you input values via the frontend. The refresh button should be above your \"Tables\" on the left hand-side. It should look like a circle with an arrow at the end. If you can't see your database when you click on the db file, install the [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) extension by Florian Klampfer."
         },
         {
-            "id": 24,
+            "id": 30,
             "instruction": "If you want to use your terminal to interact with your rest api open a new terminal and run the following commands. Note your rest api should still be running in a different terminal in order for these to work.",
             "Code": {
                 "Name": "",
@@ -269,7 +335,7 @@
             }
         },
         {
-            "id": 25,
+            "id": 31,
             "instruction": "READ THIS CAREFULLY TO SEE IF YOU ACTUALLY NEED TO DO THESE STEPS. You should be done now unless you're seeing the following error in your console when you try to add or search a user. If you aren't getting this error you can ignore steps 24-25.",
             "Code": {
                 "Name": "",
@@ -281,7 +347,7 @@
             }
         },
         {
-            "id": 26,
+            "id": 32,
             "instruction": "In your \"app.py\" file paste the following code. Make sure the HTTP links are the same ones being used by your computer. Try this code out and see if it works. Make sure to rerun your backend and frontend code after you make changes.",
             "Code": {
                 "Name": "",

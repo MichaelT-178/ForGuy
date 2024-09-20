@@ -90,7 +90,7 @@ export const uncwPics = [
 
 export const NorthCarolinaPics = [
     { text: "I think this was taken in Mooresville. Photo creds to my dad", image: Pic20 }, //MooresvilleSunset.jpg
-    { text: "Rainbow in Weddington in July", image: Pic21 }, //WeddingtonRainbow.jpg
+    { text: "Weddington rainbow in July", image: Pic21 }, //WeddingtonRainbow.jpg
     { text: "The BoardWalk in Charlotte. Late August", image: Pic22 }, //CharlotteBoardwalkView.jpg
     { text: "Sunrise in Durham. (This looked way more pink and orange irl. Taken in early March)", image: Pic23 }, //SunriseInDurham.jpg
     { text: "Pink Skys in March (Durham)", image: Pic24 }, //PinkSkyMarchDurham.jpg
@@ -103,7 +103,7 @@ export const NorthCarolinaPics = [
     { text: "NCSU Train Tracks in mid-April", image: Pic31 }, //TrainTracks.jpg
     { text: "Blue Light in Darkness", image: Pic32 }, //BlueLight.jpg
     { text: "Spring in Durham", image: Pic33 }, //IBMMarch.jpg
-    { text: "Random New Hampshire pic from 2016 for Good measure", image: Pic34 }, //NewHampshire.jpg
+    { text: "Random New Hampshire pic from 2016 for good measure", image: Pic34 }, //NewHampshire.jpg
     { text: "Visitor Outside My Window", image: Pic35 }, //Dove.jpg
     { text: "Durham Pond in Spring", image: Pic36 }, //DurhamPond.jpg
     { text: "Outside view from my OG IBM office", image: Pic37 }, //ForestView.jpg

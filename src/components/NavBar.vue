@@ -34,7 +34,7 @@
                       @click="hideSubMenu" 
                     >
                       <span class="material-symbols-outlined">{{ subMenuItem.icon }}</span>
-                      <span>{{ subMenuItem.text }}</span>
+                      <span class="sub-menu-text">{{ subMenuItem.text }}</span>
                     </router-link>
                   </li>
                 </ul>
@@ -143,6 +143,7 @@ onUnmounted(() => {
   /* padding: 10px 15px; top right bottom left*/
   padding: 2.5px 11px 10px 14px;
   transition: background-color 0.3s ease;
+  font-size: 18px;
 }
 
 .menu-item:hover {

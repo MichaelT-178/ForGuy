@@ -50,7 +50,7 @@ const router = useRouter();
 
 const goToResultsPage = () => {
   emit('close-search');
-  router.push({ name: 'SearchResults', params: { SearchQuery: searchQuery.value } });
+  router.push({ name: 'SearchResults', query: { search_query: searchQuery.value } });
 };
 
 const handleEnterPress = (event) => {
