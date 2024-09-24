@@ -39,6 +39,7 @@ TEMPLATES ZIP FOLDER
 {
     "id": 56,
     "Emoji": "ADD_EMOJI",
+    "EmojiDescription": "DESCRIBE YOUR EMOJI AND OTHER HELPER SEARCH TERMS",
     "MenuName": "TITLE",
     "Link": "/CompSci/SetupProjects/REF"
 },

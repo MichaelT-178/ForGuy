@@ -1,0 +1,386 @@
+{
+    "Info": [
+        {
+            "title": "How to Create a Simple Ruby on Rails App",
+            "desc": "Explains how to create a simple Ruby on Rails frontend and Rest Api",
+            "ref": "ruby-on-rails"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "A lot of this information comes from this [video](https://youtu.be/2DvrRadXwWY?si=zxWyo6DvhYWBTdZf)."
+        },
+        {
+            "id": 2,
+            "instruction": "Ruby is our programming language, Rails is the framework, and Sqlite3 will be our database."
+        },
+        {
+            "id": 3,
+            "instruction": "Before we start make sure you have homebrew installed. If the first command doesn't output a version, run the second command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "brew --version\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"",
+                "CopyCode": "brew --version\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+            }
+        },
+        {
+            "id": 4,
+            "instruction": "Install rbenv on your computer. For this example use Homebrew to install it.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "brew install rbenv",
+                "CopyCode": "brew install rbenv"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "Run this command to initialize rbenv in your ~/.zshrc file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "echo 'if which rbenv > /dev/null; then eval \"$(rbenv init -)\"; fi' >> ~/.zshrc",
+                "CopyCode": "echo 'if which rbenv > /dev/null; then eval \"$(rbenv init -)\"; fi' >> ~/.zshrc"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Reload the zsh configuration to apply your changes using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "source ~/.zshrc",
+                "CopyCode": "source ~/.zshrc"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Close your terminal. Then open a new one and run the following command to ensure rbenv is installed right. If the commands output has rbenv in it somewhere, you should be good",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "brew search rbenv",
+                "CopyCode": "brew search rbenv"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "Now install Ruby 3.2.2 using rbenv. This will probably take roughly 5 minutes. I'd recommend setting a timer.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rbenv install 3.2.2",
+                "CopyCode": "rbenv install 3.2.2"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "Set the global rbenv to use Ruby 3.2.2 using the following command.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rbenv global 3.2.2",
+                "CopyCode": "rbenv global 3.2.2"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "Now close your terminal and open a new one. In the terminal run the following command. The output should say \"ruby 3.2.2\" at the beginning.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "ruby -v",
+                "CopyCode": "ruby -v"
+            }
+        },
+        {
+            "id": 11,
+            "instruction": "Now install rails. This will probably take roughly 2-5 minutes. I've included the V (verbose) flag so you can see the progress of the download and the API calls that are being made.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "gem install -V rails",
+                "CopyCode": "gem install -V rails"
+            }
+        },
+        {
+            "id": 12,
+            "instruction": "After you've done that close your terminal and open a new one. Run the following command to ensure rails was installed correctly.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rails -v",
+                "CopyCode": "rails -v"
+            }
+        },
+        {
+            "id": 13,
+            "instruction": "The sqlite3 database engine should come preinstalled on mac. However I'd still recommend downloading it via Homebrew to update the version.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "brew install sqlite",
+                "CopyCode": "brew install sqlite"
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "Now ensure you have all your programs installed properly. These commands should all output a version.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "ruby -v\nrails -v\nsqlite3 --version",
+                "CopyCode": "ruby -v\nrails -v\nsqlite3 --version"
+            }
+        },
+        {
+            "id": 15,
+            "instruction": "After you've successfully downloaded all those three programs, we can start working on our project."
+        },
+        {
+            "id": 16,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 19,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 20,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 21,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 22,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 23,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 24,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 25,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 26,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 27,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 28,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 29,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 30,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 31,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 32,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 33,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 34,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 34,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        },
+        {
+            "id": 35,
+            "instruction": "",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "",
+                "CopyCode": ""
+            }
+        }
+    ]
+}

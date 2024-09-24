@@ -58,6 +58,12 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client"
         },
         {
+            "Name": "JSON Crack",
+            "Author": "Aykut Saraç",
+            "Description": "Seamlessly visualize your JSON data instantly into graphs. To use it right open a JSON file press the orange button in the top-right corner. To zoom in place both your fingers in the middle of your touchpad then swipe to the left and right sides of the touchpad.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode"
+        },
+        {
             "Name": "Docker",
             "Author": "Microsoft",
             "Description": "Makes it easy to create, manage, and debug containerized applications.",

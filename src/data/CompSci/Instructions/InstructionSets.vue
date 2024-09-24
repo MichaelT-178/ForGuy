@@ -17,6 +17,10 @@ import FlaskPost from './FlaskPost.json';
 import DeployPost from './DeployPost.json';
 import SpringApp from './SpringApp.json';
 import DeploySpring from './DeploySpring.json';
+import ComplexMySQL from './ComplexMySQL.json';
+import DeployMySQL from './DeployMySQL.json';
+import GraphQL from './GraphQL.json';
+import RubyOnRails from './RubyOnRails.json';
 import TikTok from './TikTok.json';
 import YouTube from './Youtube.json';
 import PrismLang from './PrismLang.json';
@@ -32,6 +36,7 @@ import PyServer from './PythonServer.json';
 import NodeServer from './NodeServer.json';
 import EmailJS from './EmailJS.json';
 import PaymentStripe from './Payments.json';
+import NodeServerAWS from './DeployNodeServer.json';
 import CronJob from './CronJob.json';
 import PyiCloud from './PyiCloud.json';
 import OAuth from './OAuth.json';
@@ -42,8 +47,6 @@ import OpenAI from './OpenAI.json';
 import LinkedIn from './Linkedin.json';
 import RedditBot from './RedditBot.json';
 import RedditBotAWS from './RedditBotAWS.json';
-import ComplexMySQL from './ComplexMySQL.json';
-import DeployMySQL from './DeployMySQL.json';
 import SpotifyApi from './SpotifyApi.json';
 
 
@@ -67,6 +70,10 @@ export const AllSets = [
     SpringApp,
     SwiftFirebase,
     DeploySpring,
+    ComplexMySQL,
+    DeployMySQL,
+    GraphQL,
+    RubyOnRails,
     TikTok,
     YouTube,
     PrismLang,
@@ -81,6 +88,7 @@ export const AllSets = [
     NodeServer,
     EmailJS,
     PaymentStripe,
+    NodeServerAWS,
     CronJob,
     PyiCloud,
     OAuth,
@@ -91,8 +99,6 @@ export const AllSets = [
     LinkedIn,
     RedditBot,
     RedditBotAWS,
-    ComplexMySQL,
-    DeployMySQL,
     SpotifyApi
 ]
 

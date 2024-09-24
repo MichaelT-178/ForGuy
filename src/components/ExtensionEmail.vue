@@ -26,6 +26,9 @@ export const bodyContent = `Hello ,%0A%0A` +
 `Thunder Client%0A` +
 `https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client%0A%0A` +
 
+`JSON Crack%0A` +
+`https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode%0A%0A` +
+
 `Docker%0A` +
 `https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker%0A%0A` +
 

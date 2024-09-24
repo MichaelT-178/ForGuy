@@ -834,8 +834,7 @@ def get_complex_mysql():
 		ensure_list(Results, Title)
 
 		return { "Title": Title, "Link": Link, "Results": Results }
-	 
-	 
+	
 def get_deploy_mysql():
 	with open("../src/data/CompSci/Instructions/DeployMySQL.json", "r") as file:
 		content = json.load(file)
@@ -860,6 +859,34 @@ def get_deploy_mysql():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_graphql():
+	with open("../src/data/CompSci/Instructions/GraphQL.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "How to Build a GraphQL API 🔄"
+		Link = "/CompSci/SetupProjects/graphql"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+def get_ruby_on_rails():
+	with open("../src/data/CompSci/Instructions/RubyOnRails.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+		instructions = modify_list_with_code_separation(instructions, "Table")
+
+		Title = "How to Make a Simple Ruby on Rails App 💎"
+		Link = "/CompSci/SetupProjects/ruby-on-rails"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_intellij():
 	with open("../src/data/CompSci/Instructions/IntellijJavaFX.json", "r") as file:
@@ -1296,6 +1323,19 @@ def get_stripe_payment():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
+def get_node_server_aws():
+	with open("../src/data/CompSci/Instructions/DeployNodeServer.json", "r") as file:
+		content = json.load(file)
+
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+
+		Title = "Deploy a Node Server on AWS 🚀"
+		Link = "CompSci/SetupProjects/node-server-aws"
+		Results = info + instructions
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_cron_job():
 	with open("../src/data/CompSci/Instructions/CronJob.json", "r") as file:
@@ -1924,6 +1964,8 @@ deployspring = get_deploy_spring()
 
 complexmysql = get_complex_mysql()
 deploymysql = get_deploy_mysql()
+graphql = get_graphql()
+rubyonrails = get_ruby_on_rails()
 
 intellij = get_intellij()
 eclipse = get_eclipse()
@@ -1955,6 +1997,7 @@ nodeserver = get_node_server()
 emailjs = get_emailjs()
 
 stripepayment = get_stripe_payment()
+nodeserveraws = get_node_server_aws()
 
 cronjob = get_cron_job()
 
@@ -2036,6 +2079,8 @@ all_data = [
 	deployspring,
 	complexmysql,
 	deploymysql,
+	graphql,
+	rubyonrails,
 
 	intellij,
 	eclipse,
@@ -2061,6 +2106,7 @@ all_data = [
 	nodeserver,
 	emailjs,
 	stripepayment,
+	nodeserveraws,
 	cronjob,
 	pyicloud,
 	oauth,

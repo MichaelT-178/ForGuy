@@ -10,7 +10,7 @@
     ],
     "DisplayLinks": {
         "FrameworkProjects": {
-            "title": "Display Links", 
+            "title": "Display Links",
             "desc": "Use these links to display different instruction sets.",
             "links": [
                 {
@@ -46,7 +46,7 @@
             ]
         },
         "Pages": {
-            "title": "Deploy Projects to GitHub Pages", 
+            "title": "Deploy Projects to GitHub Pages",
             "desc": "These explain how to deploy Vanilla or Vite project to GitHub pages.",
             "links": [
                 {
@@ -126,11 +126,23 @@
                     "name": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
                     "ref": "deploy-mysql",
                     "ScrollTo": "DeployMySqlLink"
+                },
+                {
+                    "id": 11,
+                    "name": "How to Build a GraphQL API",
+                    "ref": "graphql",
+                    "ScrollTo": "GraphQLLink"
+                },
+                {
+                    "id": 12,
+                    "name": "How to Make a Simple Ruby on Rails App",
+                    "ref": "ruby-on-rails",
+                    "ScrollTo": "RubyOnRailsLink"
                 }
-            ] 
+            ]
         },
         "UNCW": {
-            "title": "How to Setup UNCW School Projects", 
+            "title": "How to Setup UNCW School Projects",
             "desc": "These explain how to setup a JavaFX Project, Cisco Secure Client, and a PHP project.",
             "links": [
                 {
@@ -157,10 +169,10 @@
                     "ref": "php",
                     "ScrollTo": "PhpLink"
                 }
-            ] 
+            ]
         },
         "Downloaders": {
-            "title": "How to Setup TikTok and YouTube Downloaders", 
+            "title": "How to Setup TikTok and YouTube Downloaders",
             "desc": "These explain how to setup and use TikTok and Youtube CLI tools.",
             "links": [
                 {
@@ -175,10 +187,10 @@
                     "ref": "youtube",
                     "ScrollTo": "YoutubeLink"
                 }
-            ] 
+            ]
         },
         "API": {
-            "title": "How to Setup Projects that Utilize API's", 
+            "title": "How to Setup Projects that Utilize API's",
             "desc": "These explain how to setup project that utilize APIs.",
             "links": [
                 {
@@ -223,10 +235,10 @@
                     "ref": "reddit-bot-aws",
                     "ScrollTo": "RedditBotAWSLink"
                 }
-            ] 
+            ]
         },
         "IOS": {
-            "title": "How to Setup an iOS App", 
+            "title": "How to Setup an iOS App",
             "desc": "These explain how to setup an iOS app with Firebase and run it in developer mode.",
             "links": [
                 {
@@ -247,10 +259,10 @@
                     "ref": "developer-mode",
                     "ScrollTo": "DeveloperModeLink"
                 }
-            ] 
+            ]
         },
         "Other": {
-            "title": "How to Setup Miscellaneous Projects", 
+            "title": "How to Setup Miscellaneous Projects",
             "desc": "These explain how to setup miscellaneous projects.",
             "links": [
                 {
@@ -291,47 +303,53 @@
                 },
                 {
                     "id": 7,
+                    "name": "Deploy a Node Server on AWS",
+                    "ref": "node-server-aws",
+                    "ScrollTo": "NodeServerAWSLink"
+                },
+                {
+                    "id": 8,
                     "name": "How to Create a Cron Job on macOS",
                     "ref": "cronjob",
                     "ScrollTo": "CronJobLink"
                 },
                 {
-                    "id": 8,
+                    "id": 9,
                     "name": "How to Interact with iCloud using Python",
                     "ref": "pyicloud",
                     "ScrollTo": "PyiCloudLink"
                 },
                 {
-                    "id": 9,
+                    "id": 10,
                     "name": "How to Setup OAuth Authentication",
                     "ref": "oauth",
                     "ScrollTo": "OAuthLink"
                 },
                 {
-                    "id": 10,
+                    "id": 11,
                     "name": "How to Populate and Query a SQLite3 Database",
                     "ref": "basic-sqlite",
                     "ScrollTo": "BasicSqliteLink"
                 },
                 {
-                    "id": 11,
+                    "id": 12,
                     "name": "How to Use Excel with Python",
                     "ref": "excel",
                     "ScrollTo": "ExcelLink"
                 },
                 {
-                    "id": 12,
+                    "id": 13,
                     "name": "How to Add a Language to the Prism Library",
                     "ref": "prism",
                     "ScrollTo": "PrismLink"
                 },
                 {
-                    "id": 13,
+                    "id": 14,
                     "name": "How to Setup an Executable Python Script",
                     "ref": "executable-python",
                     "ScrollTo": "ExecPythonLink"
                 }
-            ] 
+            ]
         }
     }
 }

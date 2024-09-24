@@ -113,36 +113,41 @@
         },
         {
             "id": 22,
+            "Shortcut": "command + option + c",
+            "Action": "Open the developer console of a website"
+        },
+        {
+            "id": 23,
             "Shortcut": "command + .",
             "Action": "Create a superscript in google doc"
         },
         {
-            "id": 23,
+            "id": 24,
             "Shortcut": "command + ,",
             "Action": "Create a subscript in google doc"
         },
         {
-            "id": 24,
+            "id": 25,
             "Shortcut": "command + n",
             "Action": "Create a new terminal/command prompt"
         },
         {
-            "id": 25,
+            "id": 26,
             "Shortcut": "command + t",
             "Action": "Create new window in terminal"
         },
         {
-            "id": 26,
+            "id": 27,
             "Shortcut": "command + a",
             "Action": "Select all files in a directory in Finder"
         },
         {
-            "id": 27,
+            "id": 28,
             "Shortcut": "Control + k ",
             "Action": "Press to start and save crop of a screenshot on mac"
         },
         {
-            "id": 28,
+            "id": 29,
             "Shortcut": "highlight, command + b",
             "Action": "Bold/unbold text in TextEdit on mac"
         }

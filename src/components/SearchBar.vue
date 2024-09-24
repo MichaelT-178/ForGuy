@@ -106,12 +106,15 @@ watch(searchQuery, (newValue) => {
   }
 });
 
-
 const filterResults = () => {
   if (searchQuery.value) {
+    const searchQueryLower = searchQuery.value.toLowerCase();
+    
     filteredResults.value = SearchPages.filter((item) =>
-      item.MenuName.toLowerCase().includes(searchQuery.value.toLowerCase())
-    ).slice(0, 11);  // Only 11 results show at a time.
+      item.MenuName.toLowerCase().includes(searchQueryLower) ||
+      item.EmojiDescription.toLowerCase().includes(searchQueryLower) ||
+      searchQueryLower.includes(item.Emoji)
+    ).slice(0, 11);
   } else {
     filteredResults.value = [];
   }

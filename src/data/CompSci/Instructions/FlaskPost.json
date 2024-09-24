@@ -170,8 +170,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install flask\npip3 install pytest",
-                        "CopyCode": "pip3 install flask\npip3 install pytest"
+                        "FormatCode": "pip3 install flask\npip3 install pytest\npip3 install pytest-html",
+                        "CopyCode": "pip3 install flask\npip3 install pytest\npip3 install pytest-html"
                     }
                 },
                 {
@@ -1003,8 +1003,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv\npip3 install marshmallow\npip3 install marshmallow-sqlalchemy\npip3 install psycopg2\npip3 install psycopg2-binary\npip3 install werkzeug\npip3 install pytest \npip3 install pytest-flask\npip3 install pytest-order\n",
-                        "CopyCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv\npip3 install marshmallow\npip3 install marshmallow-sqlalchemy\npip3 install psycopg2\npip3 install psycopg2-binary\npip3 install werkzeug\npip3 install pytest \npip3 install pytest-flask\npip3 install pytest-order\n"
+                        "FormatCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv\npip3 install marshmallow\npip3 install marshmallow-sqlalchemy\npip3 install psycopg2\npip3 install psycopg2-binary\npip3 install werkzeug\npip3 install pytest \npip3 install pytest-flask\npip3 install pytest-order\npip3 install pytest-html\n",
+                        "CopyCode": "pip3 install Flask\npip3 install Flask-SQLAlchemy\npip3 install Flask-CORS\npip3 install python-dotenv\npip3 install marshmallow\npip3 install marshmallow-sqlalchemy\npip3 install psycopg2\npip3 install psycopg2-binary\npip3 install werkzeug\npip3 install pytest \npip3 install pytest-flask\npip3 install pytest-order\npip3 install pytest-html\n"
                     }
                 },
                 {
@@ -1264,6 +1264,28 @@
                 },
                 {
                     "id": 6,
+                    "instruction": "You can generate a UI html file for your test results by using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "python3 -m pytest --html=report.html tests/",
+                        "CopyCode": "python3 -m pytest --html=report.html tests/"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "Open the html report in a browser using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "open report.html",
+                        "CopyCode": "open report.html"
+                    }
+                },
+                {
+                    "id": 8,
                     "instruction": "Push your changes to Github.",
                     "Code": {
                         "Name": "",
@@ -1823,8 +1845,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom",
-                        "CopyCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom"
+                        "FormatCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom\nnpm install --save-dev jest-html-reporter",
+                        "CopyCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom\nnpm install --save-dev jest-html-reporter"
                     }
                 },
                 {
@@ -1845,8 +1867,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Javascript",
-                        "FormatCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n};",
-                        "CopyCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n};"
+                        "FormatCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n reporters: [\n  \"default\", \n  [\"jest-html-reporter\", {\n    pageTitle: \"Test Report\",\n    outputPath: \"test-report.html\",\n    includeFailureMsg: true,\n    }]\n  ]\n};\n",
+                        "CopyCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n reporters: [\n  \"default\", \n  [\"jest-html-reporter\", {\n    pageTitle: \"Test Report\",\n    outputPath: \"test-report.html\",\n    includeFailureMsg: true,\n    }]\n  ]\n};\n"
                     }
                 },
                 {
@@ -1895,6 +1917,17 @@
                 },
                 {
                     "id": 9,
+                    "instruction": "Open your test-report.html file using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "open test-report.html",
+                        "CopyCode": "open test-report.html"
+                    }
+                },
+                {
+                    "id": 10,
                     "instruction": "You now should be done setting up the project. We'll deploy it to Amazon Web Services in the &Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services&[DeployPostLink] instruction set."
                 }
             ]

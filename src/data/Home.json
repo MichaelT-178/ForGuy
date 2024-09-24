@@ -10,7 +10,7 @@
         },
         {
             "Header": "Explanation of Search Functionality",
-            "Body": "You can search for a page by typing it's name in the search bar. The results shown are pages that's name matches the search query. If you want to search for a term within a page, type the term in the search bar and then click return/enter. You'll be taken to a page showing views which contain the search term. You can't be hovering over the search bar when you press enter/return to avoid a menu accidentally expanding. Just move your cursor to the side when you start typing. This isn't an issue when the sidebar is displayed."
+            "Body": "You can search for a page by typing it's name, emoji, or description of emoji in the search bar. The results shown are pages whose names or emojis match the search query. If you want to search for a term within a page, type the term in the search bar and then click return/enter. You'll be taken to a page showing views which contain the search term. You can't be hovering over the search bar when you press enter/return to avoid a menu accidentally expanding. Just move your cursor to the side when you start typing. This isn't an issue when the sidebar is displayed."
         },
         {
             "Header": "Download or View Source Code",
