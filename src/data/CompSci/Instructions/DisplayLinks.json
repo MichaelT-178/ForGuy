@@ -129,12 +129,6 @@
                 },
                 {
                     "id": 11,
-                    "name": "How to Build a GraphQL API",
-                    "ref": "graphql",
-                    "ScrollTo": "GraphQLLink"
-                },
-                {
-                    "id": 12,
                     "name": "How to Make a Simple Ruby on Rails App",
                     "ref": "ruby-on-rails",
                     "ScrollTo": "RubyOnRailsLink"

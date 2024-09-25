@@ -19,7 +19,6 @@ import SpringApp from './SpringApp.json';
 import DeploySpring from './DeploySpring.json';
 import ComplexMySQL from './ComplexMySQL.json';
 import DeployMySQL from './DeployMySQL.json';
-import GraphQL from './GraphQL.json';
 import RubyOnRails from './RubyOnRails.json';
 import TikTok from './TikTok.json';
 import YouTube from './Youtube.json';
@@ -72,7 +71,6 @@ export const AllSets = [
     DeploySpring,
     ComplexMySQL,
     DeployMySQL,
-    GraphQL,
     RubyOnRails,
     TikTok,
     YouTube,

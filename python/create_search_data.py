@@ -859,20 +859,6 @@ def get_deploy_mysql():
 
 		return { "Title": Title, "Link": Link, "Results": Results }
 
-def get_graphql():
-	with open("../src/data/CompSci/Instructions/GraphQL.json", "r") as file:
-		content = json.load(file)
-
-		info = content["Info"]
-		instructions = content["Instructions"]
-		instructions = modify_list_with_code_separation(instructions, "Code")
-
-		Title = "How to Build a GraphQL API 🔄"
-		Link = "/CompSci/SetupProjects/graphql"
-		Results = info + instructions
-
-		return { "Title": Title, "Link": Link, "Results": Results }
-
 def get_ruby_on_rails():
 	with open("../src/data/CompSci/Instructions/RubyOnRails.json", "r") as file:
 		content = json.load(file)
@@ -1964,7 +1950,6 @@ deployspring = get_deploy_spring()
 
 complexmysql = get_complex_mysql()
 deploymysql = get_deploy_mysql()
-graphql = get_graphql()
 rubyonrails = get_ruby_on_rails()
 
 intellij = get_intellij()
@@ -2079,7 +2064,6 @@ all_data = [
 	deployspring,
 	complexmysql,
 	deploymysql,
-	graphql,
 	rubyonrails,
 
 	intellij,

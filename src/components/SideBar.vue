@@ -1,7 +1,7 @@
 <template>
   <div class="menu-overlay">
     <div class="header">
-      <span class="views-text">Views</span>
+      <span class="views-text">Pages</span>
       <span class="material-icons close-icon" @click="closeMenu">close</span>
     </div>
     <div v-for="(menuItem, index) in menuItems" :key="index" class="menu-item">
