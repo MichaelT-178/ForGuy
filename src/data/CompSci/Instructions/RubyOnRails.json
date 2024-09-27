@@ -153,24 +153,17 @@
         },
         {
             "id": 16,
-            "instruction": "",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
-            }
+            "instruction": "I've always liked the school website \"Canvas\" UI and I saw it was originally built in Ruby on Rails. So for nostalgia purposes I'll be recreating the dashboard in these instructions."
         },
         {
             "id": 17,
-            "instruction": "",
+            "instruction": "Create your new project using the following command. This might take a minute. It will initialize an empty git repository. Commit the initial template code. There's no remote repo to push to.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "",
-                "CopyCode": ""
+                "FormatCode": "rails new canvas-example\ncd canvas-example\ngit add .\ngit commit -m \"Initial Commit\"",
+                "CopyCode": "rails new canvas-example\ncd canvas-example\ngit add .\ngit commit -m \"Initial Commit\""
             }
         },
         {
