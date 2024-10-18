@@ -1,23 +1,23 @@
 <template>
     <div class="container">
-        <h1 class="gh-header">{{ text[0].title }}</h1>
-        <p class="description">{{ text[0].desc }}</p>
+        <h1 class="gh-header">{{ text[0].title }}</h1> <!-- git-info -->
+        <p class="description">{{ text[0].desc }}</p> <!-- git-info -->
         <img src="../../assets/GitHub.png" alt="GitHub" class="github-pic"/>
         
-        <h2 class="gh-header-two">{{ text[1].title }}</h2>
-        <p class="description-two">{{ text[1].desc }}</p>
+        <h2 class="gh-header-two">{{ text[1].title }}</h2> <!-- what-is-git -->
+        <p class="description-two">{{ text[1].desc }}</p> <!-- what-is-git -->
         
 
-        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">{{ text[2].title }}</h2>
-        <p class="description-two">{{ text[2].desc }}</p>
+        <h2 class="gh-header-two" style="margin-top: -3px;" ref="scrollLinksRef">{{ text[2].title }}</h2> <!-- scroll-links -->
+        <p class="description-two">{{ text[2].desc }}</p> <!-- scroll-links -->
         <div v-for="link in scrollLinks" :key="link.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ link.id }}
                 </span><span v-html="createRefContent(link)"></span></p>
         </div>
 
         <!-- How to create a GitHub account Section -->
-        <h2 class="gh-header-two" ref="createGHAccount">{{ text[3].title }}</h2>
-        <p class="description-two">{{ text[3].desc }}</p>
+        <h2 class="gh-header-two" ref="createGHAccount">{{ text[3].title }}</h2> <!-- create-git-account -->
+        <p class="description-two">{{ text[3].desc }}</p> <!-- create-git-account -->
 
         <div v-for="point in setupGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -25,11 +25,11 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- How to create a GitHub Repository Section -->
-        <h2 class="gh-header-two" ref="createGHRepo">{{ text[4].title }}</h2>
-        <p class="description-two">{{ text[4].desc }}</p>
+        <h2 class="gh-header-two" ref="createGHRepo">{{ text[4].title }}</h2> <!-- create-git-repo -->
+        <p class="description-two">{{ text[4].desc }}</p> <!-- create-git-repo -->
 
         <div v-for="point in createGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -37,11 +37,11 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- How to create a Second GitHub account Section -->
-        <h2 class="gh-header-two" ref="multipleGHAccounts">{{ text[5].title }}</h2>
-        <p class="description-two">{{ text[5].desc }}</p>
+        <h2 class="gh-header-two" ref="multipleGHAccounts">{{ text[5].title }}</h2> <!-- create-another-git-account -->
+        <p class="description-two">{{ text[5].desc }}</p> <!-- create-another-git-account -->
 
         <div v-for="point in setupSecondGitHub" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -49,11 +49,11 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- How to create a Second GitHub Repository Section -->
-        <h2 class="gh-header-two" ref="multipleDifferentAccount">{{ text[6].title }}</h2>
-        <p class="description-two">{{ text[6].desc }}</p>
+        <h2 class="gh-header-two" ref="multipleDifferentAccount">{{ text[6].title }}</h2> <!-- create-repo-second-account -->
+        <p class="description-two">{{ text[6].desc }}</p> <!-- create-repo-second-account -->
 
         <div v-for="point in createSecondGitHubRepo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -61,61 +61,61 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Git Commands -->
-        <h2 class="gh-header-two" ref="GitCommands">{{ text[7].title }}</h2>
-        <p class="description-two">{{ text[7].desc }}</p>
+        <h2 class="gh-header-two" ref="GitCommands">{{ text[7].title }}</h2> <!-- git-commands -->
+        <p class="description-two">{{ text[7].desc }}</p> <!-- git-commands -->
 
         <CmdTable tableName="" :items="gitCommands" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- General Tips for Working with GitHub -->
-        <h2 class="gh-header-two" ref="GeneralTips">{{ text[8].title }}</h2>
-        <p class="description-two">{{ text[8].desc }}</p>
+        <h2 class="gh-header-two" ref="GeneralTips">{{ text[8].title }}</h2> <!-- general-tips -->
+        <p class="description-two">{{ text[8].desc }}</p> <!-- general-tips -->
 
         <div v-for="tip in generalTips" :key="tip.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ tip.id }}</span><span v-html="createHyperLink(tip.instruction)"></span></p>
             <span v-if="tip.Code"><CodeBlock :codeInfo="tip.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>  
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Three Main Commands -->
-        <h2 class="gh-header-two" ref="ThreeCommands">{{ text[9].title }}</h2>
-        <p class="description-two">{{ text[9].desc }}</p>
+        <h2 class="gh-header-two" ref="ThreeCommands">{{ text[9].title }}</h2> <!-- main-git-cmds -->
+        <p class="description-two">{{ text[9].desc }}</p> <!-- main-git-cmds -->
 
         <CmdTable tableName="" :items="threeCommands" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="ForkRepo">{{ text[10].title }}</h2>
-        <p class="description-two">{{ text[10].desc }}</p>
+        <h2 class="gh-header-two" ref="ForkRepo">{{ text[10].title }}</h2> <!-- fork-repo -->
+        <p class="description-two">{{ text[10].desc }}</p> <!-- fork-repo -->
 
         <div v-for="point in createFork" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
 
         <!-- Reset To Previous Branch -->
-        <h2 class="gh-header-two" ref="resetBranch">{{ text[11].title }}</h2>
-        <p class="description-two">{{ text[11].desc }}</p>
+        <h2 class="gh-header-two" ref="resetBranch">{{ text[11].title }}</h2> <!-- prev-commit -->
+        <p class="description-two">{{ text[11].desc }}</p> <!-- prev-commit -->
 
         <div v-for="point in resetBranchSteps" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Reset to Single File -->
-        <h2 class="gh-header-two" ref="ResetSingleFile">{{ text[12].title }}</h2>
-        <p class="description-two">{{ text[12].desc }}</p>
+        <h2 class="gh-header-two" ref="ResetSingleFile">{{ text[12].title }}</h2> <!-- revert-to-prev-commit -->
+        <p class="description-two">{{ text[12].desc }}</p> <!-- revert-to-prev-commit -->
 
         <div v-for="point in resetSingleFile" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -125,8 +125,8 @@
 
 
         <!-- Upload Existing Folder section -->
-        <h2 class="gh-header-two" ref="ExistingCmds">{{ text[13].title }}</h2>
-        <p class="description-two">{{ text[13].desc }}</p>
+        <h2 class="gh-header-two" ref="ExistingCmds">{{ text[13].title }}</h2> <!-- existing-folder -->
+        <p class="description-two">{{ text[13].desc }}</p> <!-- existing-folder -->
 
         <div v-for="point in existingFolderPts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
@@ -142,14 +142,14 @@
 
         <CmdTable tableName="" :items="existingFolderCmdsTwo" class="cmd-table"></CmdTable>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
         
 
 
 
         <!-- CSC 450 Workflow -->
-        <h2 class="gh-header-two" ref="CSC450Workflow">{{ text[14].title }}</h2>
-        <p class="description-two" v-html="createDownloadLink(text[14].desc)"></p>
+        <h2 class="gh-header-two" ref="CSC450Workflow">{{ text[14].title }}</h2> <!-- workflow -->
+        <p class="description-two" v-html="createDownloadLink(text[14].desc)"></p> <!-- workflow -->
 
         <div v-for="point in csc450WorkflowPtsOne" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
@@ -180,41 +180,41 @@
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
 
         <!-- Amotions Workflow -->
-        <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[15].title }}</h2>
-        <p class="description-two">{{ text[15].desc }}</p>
+        <h2 class="gh-header-two" ref="AmotionsWorkflow">{{ text[15].title }}</h2> <!-- amotions-workflow -->
+        <p class="description-two">{{ text[15].desc }}</p> <!-- amotions-workflow -->
 
 
         <CmdTable tableName="" :items="amotionsWorkflowOne" class="cmd-table"></CmdTable>
 
-        <p class="centered-txt">{{ text[16].amotions }}</p>
+        <p class="centered-txt">{{ text[16].amotions }}</p> <!-- amotions-1 -->
 
         <CmdTable tableName="" :items="amotionsWorkflowTwo" class="cmd-table"></CmdTable>
 
-        <p class="centered-txt">{{ text[17].amotions }}</p>
+        <p class="centered-txt">{{ text[17].amotions }}</p> <!-- amotions-2 -->
 
         <div v-for="point in amotionsPts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">{{ text[18].amotions }}</p>
+        <p class="centered-txt">{{ text[18].amotions }}</p> <!-- amotions-3 -->
 
         <div v-for="point in amotionsPtsTwo" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}</span><span v-html="createHyperLink(point.instruction)"></span></p>
         </div>
 
-        <p class="centered-txt">{{ text[19].amotions }}</p>
+        <p class="centered-txt">{{ text[19].amotions }}</p> <!-- amotions-4 -->
 
         <CmdTable tableName="" :items="amotionsWorkflowThree" class="cmd-table"></CmdTable>
         
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Pull Changes From Main  -->
-        <h2 class="gh-header-two" ref="MergeMain">{{ text[21].title }}</h2>
-        <p class="description-two">{{ text[21].desc }}</p>
+        <h2 class="gh-header-two" ref="MergeMain">{{ text[21].title }}</h2> <!-- merge-main -->
+        <p class="description-two">{{ text[21].desc }}</p> <!-- merge-main -->
 
 
         <div v-for="point in pullChangesFromMain" :key="point.id">
@@ -223,11 +223,12 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
+        
         <!-- Resolve Merge Conflicts  -->
-        <h2 class="gh-header-two" ref="MergeConflicts">{{ text[22].title }}</h2>
-        <p class="description-two">{{ text[22].desc }}</p>
+        <h2 class="gh-header-two" ref="MergeConflicts">{{ text[22].title }}</h2> <!-- resolve-merge-conflicts -->
+        <p class="description-two">{{ text[22].desc }}</p> <!-- resolve-merge-conflicts -->
 
         <div v-for="point in resolveMergeConflicts" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -235,11 +236,11 @@
             <span v-if="point.Code"><CodeBlock :codeInfo="point.Code" style="margin-bottom: 20px;"></CodeBlock></span>
         </div>
 
-        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span>
+        <span class="scroll-up-link" v-html="processedTipContent(text[20].scrollToLinks)"></span> <!-- scroll-to-top -->
 
         <!-- Your Section Name  -->
-        <h2 class="gh-header-two" ref="RemoveFile">{{ text[23].title }}</h2>
-        <p class="description-two">{{ text[23].desc }}</p>
+        <h2 class="gh-header-two" ref="RemoveFile">{{ text[23].title }}</h2> <!-- remove-git-file -->
+        <p class="description-two">{{ text[23].desc }}</p> <!-- remove-git-file -->
 
         <div v-for="point in removeFileFromGitHistory" :key="point.id">
             <p class="bullet-pt"><span class="bullet-pt-span">{{ point.id }}
@@ -249,7 +250,7 @@
 
         
         <!-- Scroll Up To Top Button -->
-        <p class="scroll-up-btn" @click="scrollToTop">{{ text[20].scrollToTop }}</p>
+        <p class="scroll-up-btn" @click="scrollToTop">{{ text[20].scrollToTop }}</p> <!-- scroll-to-top -->
     
     </div>
 </template>
