@@ -67,16 +67,21 @@
         },
         {
             "id": 14,
-            "name": "How to Merge Changes from Main into Your Branch",
+            "name": "How to Merge Changes from Main into a Different Branch",
             "ref": "MergeMain"
         },
         {
             "id": 15,
+            "name": "How to Merge Changes from a Different Branch into Main",
+            "ref": "MergeDiffBranch"
+        },
+        {
+            "id": 16,
             "name": "How to Resolve Merge Conflicts",
             "ref": "MergeConflicts"
         },
         {
-            "id": 16,
+            "id": 17,
             "name": "Remove a File from Git History",
             "ref": "RemoveFile"
         }
@@ -1308,6 +1313,144 @@
             }
         }
     ],
+    "PullChangesFromBranch": [
+        {
+            "id": 1,
+            "instruction": "Change into your branch. Replace \"your-branch-name\" with your actual branch name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout your-branch-name",
+                "CopyCode": "git checkout your-branch-name"
+            }
+        },
+        {
+            "id": 2,
+            "instruction": "Merge changes from main into current branch",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git merge main",
+                "CopyCode": "git merge main"
+            }
+        },
+        {
+            "id": 3,
+            "instruction": "You should now see all changes from main in your current branch. Review the files to determine what changes you want to keep."
+        },
+        {
+            "id": 4,
+            "instruction": "See the paths of all the files you changed in your current branch that varies from main.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git diff --name-only main",
+                "CopyCode": "git diff --name-only main"
+            }
+        },
+        {
+            "id": 5,
+            "instruction": "See the changes for a specific file. Change the path to your actual path",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git diff path/to/your/specific-file",
+                "CopyCode": "git diff path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 6,
+            "instruction": "Run this command to keep the current version of a file in the branch you're on. Replace the path with your actual path. For example, if you're on a branch called \"update-code\" and you run this command, all changes from your \"update-code\" branch will be kept NOT the changes from the main branch.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout --ours path/to/your/specific-file",
+                "CopyCode": "git checkout --ours path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 7,
+            "instruction": "Run this command to keep all incoming changes from main for a specific file. Replace the path with your actual path. For example if you're on a branch called update-code and you run this command all changes from main will be kept.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout --theirs path/to/your/specific-file",
+                "CopyCode": "git checkout --theirs path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "If you're trying to pull changes from a different branch into main use the following command. This command will override the contents of the file in main with the contents of the incoming file. Replace \"BRANCH-NAME\" with the actual name of your branch. This will stage the file.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout BRANCH-NAME -- path/to/your/specific-file",
+                "CopyCode": "git checkout BRANCH-NAME -- path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 9,
+            "instruction": "This does the exact same thing as the command in step 8 but it doesn't stage the file",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git show BRANCH-NAME:path/to/your/specific-file > path/to/your/specific-file",
+                "CopyCode": "git show BRANCH-NAME:path/to/your/specific-file > path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 10,
+            "instruction": "Once you've resolved conflicts in your file run the following command to stage your change. Note that if you kept the changes from your current branch there might be a red exclamation mark next to your file name in VSCode. If that's the case you only need to stage your file, but you don't need to commit or push it. Replace the path with your actual path.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git add path/to/your/specific-file",
+                "CopyCode": "git add path/to/your/specific-file"
+            }
+        },
+        {
+            "id": 11,
+            "instruction": "In VScode, once you no longer have any files under Merge Changes and that all of your files are under \"Staged Changes\", then commit and push your changes to your remote branch. Replace your-branch-name with your actual branch name.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name",
+                "CopyCode": "git commit -m \"Merged in changes from main\"\ngit push origin your-branch-name"
+            }
+        },
+        {
+            "id": 12,
+            "instruction": "If you don't have a remote branch and all your files are under \"staged changes\" just run the following command to pull them into your current branch.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git commit -m \"Pulled from main\"",
+                "CopyCode": "git commit -m \"Pulled from main\""
+            }
+        },
+        {
+            "id": 13,
+            "instruction": "To see what files in your branch differ from main run the following commands.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "git checkout your-branch-name\ngit diff --name-only main...HEAD",
+                "CopyCode": "git checkout your-branch-name\ngit diff --name-only main...HEAD"
+            }
+        }
+    ],
     "ResolveMergeConflicts": [
         {
             "id": 1,
@@ -1438,95 +1581,129 @@
     "Text": [
         {
             "title": "GitHub",
-            "desc": "This page contains information related to Git and GitHub."
+            "desc": "This page contains information related to Git and GitHub.",
+            "text-id": "git-info"
         },
         {
             "title": "What is GitHub and Git?",
-            "desc": "GitHub is a website that uses git to help with collaboration and version control of coding projects. In simple terms, it's a place to upload your code and modify it in a controlled way. Git is version control system that allows you to add, revert, commit, push, etc. code to your repository."
+            "desc": "GitHub is a website that uses git to help with collaboration and version control of coding projects. In simple terms, it's a place to upload your code and modify it in a controlled way. Git is version control system that allows you to add, revert, commit, push, etc. code to your repository.",
+            "text-id": "what-is-git"
         },
         {
             "title": "Scroll Links",
-            "desc": "Use these links to scroll to different parts of the page."
+            "desc": "Use these links to scroll to different parts of the page.",
+            "text-id": "scroll-links"
         },
         {
             "title": "How to Create a GitHub Account",
-            "desc": "These are instructions to setup Git and create a GitHub account."
+            "desc": "These are instructions to setup Git and create a GitHub account.",
+            "text-id": "create-git-account"
         },
         {
             "title": "How to Create a GitHub Repository",
-            "desc": "This is how you create a GitHub repo and set it up locally."
+            "desc": "This is how you create a GitHub repo and set it up locally.",
+            "text-id": "create-git-repo"
         },
         {
             "title": "How to Create Another GitHub Account",
-            "desc": "To add another GitHub account to your computer do the original 5-25 steps with these modified steps."
+            "desc": "To add another GitHub account to your computer do the original 5-25 steps with these modified steps.",
+            "text-id": "create-another-git-account"
         },
         {
             "title": "How to Create a GitHub Repository Using a Second Account",
-            "desc": "This is how you create a GitHub repository for an account other than your main one"
+            "desc": "This is how you create a GitHub repository for an account other than your main one",
+            "text-id": "create-repo-second-account"
         },
         {
             "title": "Git Commands",
-            "desc": "These are frequently used Git commands."
+            "desc": "These are frequently used Git commands.",
+            "text-id": "git-commands"
         },
         {
             "title": "General Tips",
-            "desc": "These are general tips for working with GitHub."
+            "desc": "These are general tips for working with GitHub.",
+            "text-id": "general-tips"
         },
         {
             "title": "Three Main Git Commands",
-            "desc": "These are the three main git commands to push changes to your repo."
+            "desc": "These are the three main git commands to push changes to your repo.",
+            "text-id": "main-git-cmds"
         },
         {
             "title": "How to Fork a Repository",
-            "desc": "How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs."
+            "desc": "How to create a fork of a repository on GitHub. A fork is copying another persons repository onto your account, so you can modify it without changing theirs.",
+            "text-id": "fork-repo"
         },
         {
             "title": "Reset To Previous Commit",
-            "desc": "Reset your current working directory to a previous commit."
+            "desc": "Reset your current working directory to a previous commit.",
+            "text-id": "prev-commit"
         },
         {
             "title": "Revert a Single File To Previous Commit",
-            "desc": "Explains how to reset a single file to a previous commit."
+            "desc": "Explains how to reset a single file to a previous commit.",
+            "text-id": "revert-to-prev-commit"
         },
         {
             "title": "Existing Folder Commands",
-            "desc": "How to get an existing folder onto GitHub."
+            "desc": "How to get an existing folder onto GitHub.",
+            "text-id": "existing-folder"
         },
         {
             "title": "CSC 450 Workflow",
-            "desc": "This was the standard git workflow when I was in CSC 450 with Dr. Layman. You can download the CSC 450 pdf this information comes from &here&(/download/git_workflow.pdf)."
+            "desc": "This was the standard git workflow when I was in CSC 450 with Dr. Layman. You can download the CSC 450 pdf this information comes from &here&(/download/git_workflow.pdf).",
+            "text-id": "workflow"
         },
         {
             "title": "Amotions Workflow",
-            "desc": "This was my git workflow at Amotions. It's a little more extensive than your average workflow since we pushed to production so fast."
+            "desc": "This was my git workflow at Amotions. It's a little more extensive than your average workflow since we pushed to production so fast.",
+            "text-id": "amotions-workflow"
         },
         {
-            "amotions": "* Make changes/additions to code. Close terminal *"
+            "amotions": "* Make changes/additions to code. Close terminal *",
+            "text-id": "amotions-1"
         },
         {
-            "amotions": "Make a pull request on github."
+            "amotions": "Make a pull request on github.",
+            "text-id": "amotions-2"
         },
         {
-            "amotions": "Once branch is merged into dev. Merge into Main."
+            "title": "unused",
+            "desc": "unused",
+            "text-id": "unused"
         },
         {
-            "amotions": "Git Deletion Commands"
+            "amotions": "Once branch is merged into dev. Merge into Main.",
+            "text-id": "amotions-3"
+        },
+        {
+            "amotions": "Git Deletion Commands",
+            "text-id": "amotions-4"
         },
         {
             "scrollToTop": "Scroll To Top",
-            "scrollToLinks": "Scroll back to links(scrollLinksRef)"
+            "scrollToLinks": "Scroll back to links(scrollLinksRef)",
+            "text-id": "scroll-to-top"
         },
         {
-            "title": "How to Merge Changes from Main into Your Branch",
-            "desc": "Explains how to merge changes from main into your current branch and handle merge conflicts."
+            "title": "How to Merge Changes from Main into a Different Branch",
+            "desc": "Explains how to merge changes from main into your current branch and handle merge conflicts.",
+            "text-id": "merge-main"
+        },
+        {
+            "title": "How to Merge Changes from a Different Branch into Main",
+            "desc": "Explains how to merge changes from a different branch into your main branch and handle merge conflicts.",
+            "text-id": "merge-diff-branch"
         },
         {
             "title": "How to Resolve Merge Conflicts",
-            "desc": "Useful commands for resolving merge conflicts and an explanation of how to handle them."
+            "desc": "Useful commands for resolving merge conflicts and an explanation of how to handle them.",
+            "text-id": "resolve-merge-conflicts"
         },
         {
             "title": "Remove a File from Git History",
-            "desc": "Explains how to completely remove a file from your git history."
+            "desc": "Explains how to completely remove a file from your git history.",
+            "text-id": "remove-git-file"
         }
     ]
 }
