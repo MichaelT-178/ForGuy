@@ -1,0 +1,48 @@
+{
+    "MultiSet": [
+        {
+            "Info": [
+                {
+                    "title": "Deploy the Angular, Django and PostgreSQL app to Amazon Web Services",
+                    "desc": "Explains how to deploy the Django app using various AWS services.",
+                    "ref": "deploy-Django"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Amplify, RDS, Zappa",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "",
+                        "CopyCode": ""
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "",
+                    "desc": ""
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": ""
+                },
+                {
+                    "id": 2,
+                    "instruction": ""
+                }
+            ]
+        }
+    ]
+}

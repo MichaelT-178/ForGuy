@@ -132,6 +132,18 @@
                     "name": "How to Make a Simple Ruby on Rails App",
                     "ref": "ruby-on-rails",
                     "ScrollTo": "RubyOnRailsLink"
+                },
+                {
+                    "id": 12,
+                    "name": "How to Make a Complex Rest API using Angular, Django and PostgreSQL",
+                    "ref": "django-PostgreSQL",
+                    "ScrollTo": "DjangoPostLink"
+                },
+                {
+                    "id": 13,
+                    "name": "Deploy the Angular, Django and PostgreSQL app to Amazon Web Services",
+                    "ref": "deploy-Django",
+                    "ScrollTo": "DeployDjangoLink"
                 }
             ]
         },

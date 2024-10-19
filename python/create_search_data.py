@@ -872,6 +872,60 @@ def get_ruby_on_rails():
 		Link = "/CompSci/SetupProjects/ruby-on-rails"
 		Results = info + instructions
 
+		ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
+
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
+def get_django_postgresql():
+	with open("../src/data/CompSci/Instructions/Django.json", "r") as file:
+		content = json.load(file)
+		
+		multi_set = content["MultiSet"]
+		
+		Results = []
+		
+		for obj in multi_set:
+			info = obj["Info"]
+			instructions = obj["Instructions"]
+			instructions = modify_list_with_code_separation(instructions, "Code")
+			
+			Results += info + instructions
+		
+		Title = "How to Make a Complex Rest API using Angular, Django and PostgreSQL 🤠"
+		Link = "/CompSci/SetupProjects/django-PostgreSQL"
+		
+		ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
+		
+		return { "Title": Title, "Link": Link, "Results": Results }
+
+
+def get_deploy_django():
+	with open("../src/data/CompSci/Instructions/DeployDjango.json", "r") as file:
+		content = json.load(file)
+		
+		multi_set = content["MultiSet"]
+		
+		Results = []
+		
+		for obj in multi_set:
+			info = obj["Info"]
+			instructions = obj["Instructions"]
+			instructions = modify_list_with_code_separation(instructions, "Code")
+			
+			Results += info + instructions
+		
+		Title = "Deploy the Angular, Django and PostgreSQL app to Amazon Web Services 🚀"
+		Link = "/CompSci/SetupProjects/deploy-Django"
+		
+		ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
+		
 		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_intellij():
@@ -1951,6 +2005,8 @@ deployspring = get_deploy_spring()
 complexmysql = get_complex_mysql()
 deploymysql = get_deploy_mysql()
 rubyonrails = get_ruby_on_rails()
+djangopostgresql = get_django_postgresql()
+deploydjango = get_deploy_django()
 
 intellij = get_intellij()
 eclipse = get_eclipse()
@@ -2065,6 +2121,8 @@ all_data = [
 	complexmysql,
 	deploymysql,
 	rubyonrails,
+	djangopostgresql,
+	deploydjango,
 
 	intellij,
 	eclipse,

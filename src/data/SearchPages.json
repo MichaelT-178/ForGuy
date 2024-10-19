@@ -302,279 +302,293 @@
     },
     {
         "id": 44,
+        "Emoji": "🤠",
+        "EmojiDescription": "python snake cowboy",
+        "MenuName": "How to Make a Complex Rest API using Angular, Django and PostgreSQL",
+        "Link": "/CompSci/SetupProjects/django-PostgreSQL"
+    },
+    {
+        "id": 45,
+        "Emoji": "🚀",
+        "EmojiDescription": "Rocket spaceship Amazon Web Services AWS",
+        "MenuName": "Deploy the Angular, Django and PostgreSQL app to Amazon Web Services",
+        "Link": "/CompSci/SetupProjects/deploy-Django"
+    },
+    {
+        "id": 46,
         "Emoji": "✈️",
         "EmojiDescription": "airplane fast CSC 331",
         "MenuName": "How to Setup a JavaFX Project (Intellij IDEA)",
         "Link": "/CompSci/SetupProjects/intellij"
     },
     {
-        "id": 45,
+        "id": 47,
         "Emoji": "🌑",
         "EmojiDescription": "Dark moon night CSC 331",
         "MenuName": "How to Setup a JavaFX Project (Eclipse)",
         "Link": "/CompSci/SetupProjects/eclipse"
     },
     {
-        "id": 46,
+        "id": 48,
         "Emoji": "🌎",
         "EmojiDescription": "earth global establish",
         "MenuName": "How to Setup Cisco Secure Client and a VPN",
         "Link": "/CompSci/SetupProjects/cisco"
     },
     {
-        "id": 47,
+        "id": 49,
         "Emoji": "🐘",
         "EmojiDescription": "elephant CSC 455 CSC 355",
         "MenuName": "How to Setup a PHP and MySQL Project for UNCW",
         "Link": "/CompSci/SetupProjects/php"
     },
     {
-        "id": 48,
+        "id": 50,
         "Emoji": "🎥",
         "EmojiDescription": "camera video film dance music",
         "MenuName": "How to Setup TikTok Downloader",
         "Link": "/CompSci/SetupProjects/tiktok"
     },
     {
-        "id": 49,
+        "id": 51,
         "Emoji": "📺",
         "EmojiDescription": "television video",
         "MenuName": "How to Setup YouTube Downloader",
         "Link": "/CompSci/SetupProjects/youtube"
     },
     {
-        "id": 50,
+        "id": 52,
         "Emoji": "🔍",
         "EmojiDescription": "detective search magnifying glass",
         "MenuName": "How to Setup a Google API Project",
         "Link": "/CompSci/SetupProjects/google-api"
     },
     {
-        "id": 51,
+        "id": 53,
         "Emoji": "📖",
         "EmojiDescription": "read book novel",
         "MenuName": "How to Setup a Reddit API Project",
         "Link": "/CompSci/SetupProjects/reddit-api"
     },
     {
-        "id": 52,
+        "id": 54,
         "Emoji": "🎧",
         "EmojiDescription": "headphones music",
         "MenuName": "How to Setup a Spotify API Project",
         "Link": "/CompSci/SetupProjects/spotify-api"
     },
     {
-        "id": 53,
+        "id": 55,
         "Emoji": "💬",
         "EmojiDescription": "Speech bubble talk speak",
         "MenuName": "How to Setup an OpenAI API Project",
         "Link": "/CompSci/SetupProjects/openai-api"
     },
     {
-        "id": 54,
+        "id": 56,
         "Emoji": "📊",
         "EmojiDescription": "chart graph column graph bar graph data",
         "MenuName": "How to Setup a LinkedIn API Project",
         "Link": "/CompSci/SetupProjects/linkedin-api"
     },
     {
-        "id": 55,
+        "id": 57,
         "Emoji": "🤖",
         "EmojiDescription": "robot",
         "MenuName": "How to Create a Reddit Bot",
         "Link": "/CompSci/SetupProjects/reddit-bot"
     },
     {
-        "id": 56,
+        "id": 58,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Amazon Web Services",
         "MenuName": "How to Deploy a Reddit Bot on AWS",
         "Link": "/CompSci/SetupProjects/reddit-bot-aws"
     },
     {
-        "id": 57,
+        "id": 59,
         "Emoji": "🐦",
         "EmojiDescription": "bird pigeon songbird sparrow",
         "MenuName": "How to Setup an iOS app with SwiftUI and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
     {
-        "id": 58,
+        "id": 60,
         "Emoji": "🏎️",
         "EmojiDescription": "Racecar Swift logo",
         "MenuName": "How to Setup SwiftData in a SwiftUI project",
         "Link": "/CompSci/SetupProjects/swift-data"
     },
     {
-        "id": 59,
+        "id": 61,
         "Emoji": "📱",
         "EmojiDescription": "phone",
         "MenuName": "How to Run an iOS app in Developer Mode",
         "Link": "/CompSci/SetupProjects/developer-mode"
     },
     {
-        "id": 60,
+        "id": 62,
         "Emoji": "🧑🏻‍🚀",
         "EmojiDescription": "astronaut space",
         "MenuName": "How to Setup and Use Postman",
         "Link": "/CompSci/SetupProjects/postman"
     },
     {
-        "id": 61,
+        "id": 63,
         "Emoji": "💾",
         "EmojiDescription": "Floppy disk hard disk",
         "MenuName": "Interact with a Flash Drive Using Python",
         "Link": "/CompSci/SetupProjects/flash-drive"
     },
     {
-        "id": 62,
+        "id": 64,
         "Emoji": "📡",
         "EmojiDescription": "satellite",
         "MenuName": "How to Setup a Python Server",
         "Link": "/CompSci/SetupProjects/python-server"
     },
     {
-        "id": 63,
+        "id": 65,
         "Emoji": "⚙️",
         "EmojiDescription": "gear",
         "MenuName": "How to Setup a Node Server",
         "Link": "/CompSci/SetupProjects/node-server"
     },
     {
-        "id": 64,
+        "id": 66,
         "Emoji": "📬",
         "EmojiDescription": "mailbox",
         "MenuName": "How to Setup Email.js in a Project",
         "Link": "/CompSci/SetupProjects/emailjs"
     },
     {
-        "id": 65,
+        "id": 67,
         "Emoji": "💰",
         "EmojiDescription": "money bag wealth",
         "MenuName": "Setup Payments in an App using Stripe",
         "Link": "/CompSci/SetupProjects/payments"
     },
     {
-        "id": 66,
+        "id": 68,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Amazon Web Services",
         "MenuName": "Deploy a Node Server on AWS",
         "Link": "/CompSci/SetupProjects/node-server-aws"
     },
     {
-        "id": 67,
+        "id": 69,
         "Emoji": "⏰",
         "EmojiDescription": "alarm clock",
         "MenuName": "How to Create a Cron Job on macOS",
         "Link": "/CompSci/SetupProjects/cronjob"
     },
     {
-        "id": 68,
+        "id": 70,
         "Emoji": "🍎",
         "EmojiDescription": "apple",
         "MenuName": "How to Interact with iCloud using Python",
         "Link": "/CompSci/SetupProjects/pyicloud"
     },
     {
-        "id": 69,
+        "id": 71,
         "Emoji": "🔐",
         "EmojiDescription": "Lock and key and lock",
         "MenuName": "How to Setup OAuth Authentication",
         "Link": "/CompSci/SetupProjects/oauth"
     },
     {
-        "id": 70,
+        "id": 72,
         "Emoji": "📊",
         "EmojiDescription": "chart graph column graph bar graph data",
         "MenuName": "How to Populate a SQLite3 Database",
         "Link": "/CompSci/SetupProjects/basic-sqlite"
     },
     {
-        "id": 71,
+        "id": 73,
         "Emoji": "📈",
         "EmojiDescription": "chart graph data statistics line graph trends",
         "MenuName": "How to Use Excel with Python",
         "Link": "/CompSci/SetupProjects/excel"
     },
     {
-        "id": 72,
+        "id": 74,
         "Emoji": "🌈",
         "EmojiDescription": "Rainbow",
         "MenuName": "How to Add a Language to the Prism Library",
         "Link": "/CompSci/SetupProjects/prism"
     },
     {
-        "id": 73,
+        "id": 75,
         "Emoji": "🐍",
         "EmojiDescription": "Snake",
         "MenuName": "How to Setup an Executable Python Script",
         "Link": "/CompSci/SetupProjects/executable-python"
     },
     {
-        "id": 74,
+        "id": 76,
         "Emoji": "🖥️",
         "EmojiDescription": "Computer desktop",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 75,
+        "id": 77,
         "Emoji": "🧘🏻",
         "EmojiDescription": "Meditate meditation zen calm",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 76,
+        "id": 78,
         "Emoji": "📲",
         "EmojiDescription": "phone arrow phone with arrow",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 77,
+        "id": 79,
         "Emoji": "❤️",
         "EmojiDescription": "Heart",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 78,
+        "id": 80,
         "Emoji": "⌨️",
         "EmojiDescription": "Keyboard",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 79,
+        "id": 81,
         "Emoji": "⚡️",
         "EmojiDescription": "lightning bolt fast",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 80,
+        "id": 82,
         "Emoji": "😂",
         "EmojiDescription": "Laughing face laughing emoji",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 81,
+        "id": 83,
         "Emoji": "📸",
         "EmojiDescription": "Camera",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"
     },
     {
-        "id": 82,
+        "id": 84,
         "Emoji": "✉️",
         "EmojiDescription": "Mail Email",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"
     },
     {
-        "id": 83,
+        "id": 85,
         "Emoji": "📜",
         "EmojiDescription": "Personal Use",
         "MenuName": "Format Code",

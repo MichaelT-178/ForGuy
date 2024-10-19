@@ -20,6 +20,8 @@ import DeploySpring from './DeploySpring.json';
 import ComplexMySQL from './ComplexMySQL.json';
 import DeployMySQL from './DeployMySQL.json';
 import RubyOnRails from './RubyOnRails.json';
+import DjangoPost from './Django.json';
+import DeployDjango from './DeployDjango.json';
 import TikTok from './TikTok.json';
 import YouTube from './Youtube.json';
 import PrismLang from './PrismLang.json';
@@ -72,6 +74,8 @@ export const AllSets = [
     ComplexMySQL,
     DeployMySQL,
     RubyOnRails,
+    DjangoPost,
+    DeployDjango,
     TikTok,
     YouTube,
     PrismLang,

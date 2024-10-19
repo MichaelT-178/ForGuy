@@ -60,6 +60,10 @@ def get_<REF_NAME>():
 		Link = "/CompSci/SetupProjects/<REF>"
 		Results = info + instructions
 
+        ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
+
 		return { "Title": Title, "Link": Link, "Results": Results }
 ```
 
@@ -82,7 +86,11 @@ def get_<REF_NAME>():
             Results += info + instructions
 
         Title = "<TITLE EMOJI>"
-        Link = "/CompSci/SetupProjects/<NAME_OF_FILE_NO_EXT>"
+        Link = "/CompSci/SetupProjects/<REF>"
+
+        ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
         
         return { "Title": Title, "Link": Link, "Results": Results }
 ```

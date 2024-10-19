@@ -3,19 +3,19 @@
         {
             "Info": [
                 {
-                    "title": "How to Make a Complex Rest API using Vue, Flask and PostgreSQL",
-                    "desc": "Explains the process of setting up a Vue frontend with a Flask Rest API backend.",
-                    "ref": "flask-PostgreSQL"
+                    "title": "How to Make a Complex Rest API using Angular, Django and PostgreSQL",
+                    "desc": "Explains the process of setting up an Angular frontend with a Django Rest API backend.",
+                    "ref": "django-PostgreSQL"
                 }
             ],
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "We'll build a full-stack web application step-by-step using Vue, Python, Flask, and Postgres."
+                    "instruction": "We'll build a full-stack web application step-by-step using Angular, Python, Django, and Postgres."
                 },
                 {
                     "id": 2,
-                    "instruction": "A full video demo of this app can be found on my YouTube channel [here](https://youtu.be/6Qz0yUrn_J0?si=fDoMIQJorSYHasS7)."
+                    "instruction": "A full video demo of this app can be found on my YouTube channel [here](FILL THIS IN)."
                 },
                 {
                     "id": 3,
@@ -33,7 +33,7 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "<u><b>Vue</u></b> - The JavaScript Framework we'll use to build our user interface."
+                    "instruction": "<u><b>Angular</u></b> - The JavaScript Framework we'll use to build our user interface."
                 },
                 {
                     "id": 2,
@@ -41,7 +41,7 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "<u><b>Flask</u></b> - The Python web framework we'll use to help build our Rest Api."
+                    "instruction": "<u><b>Django</u></b> - The Python web framework we'll use to help build our Rest Api."
                 },
                 {
                     "id": 4,
@@ -65,7 +65,7 @@
                 },
                 {
                     "id": 9,
-                    "instruction": "<u><b>Jest</u></b> - The JavaScript testing framework we'll use to test our Vue code."
+                    "instruction": "<u><b>Jasmine</u></b> - The built-in Angular testing framework we'll use to test our frontend code."
                 },
                 {
                     "id": 10,
@@ -170,8 +170,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install flask\npip3 install pytest\npip3 install pytest-html",
-                        "CopyCode": "pip3 install flask\npip3 install pytest\npip3 install pytest-html"
+                        "FormatCode": "pip3 install django\npip3 install pytest\npip3 install pytest-html",
+                        "CopyCode": "pip3 install django\npip3 install pytest\npip3 install pytest-html"
                     }
                 },
                 {
@@ -181,20 +181,16 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 show flask\npip3 show pytest",
-                        "CopyCode": "pip3 show flask\npip3 show pytest"
+                        "FormatCode": "pip3 show django\npip3 show pytest",
+                        "CopyCode": "pip3 show django\npip3 show pytest"
                     }
                 },
                 {
                     "id": 11,
-                    "instruction": "We'll setup the Jest testing framework later in our project. It's just installed using npm."
-                },
-                {
-                    "id": 12,
                     "instruction": "Go to [github.com](https://github.com/) to see if you have an account. If you don't press the \"Sign Up\" button in the top-right and follow the prompts."
                 },
                 {
-                    "id": 13,
+                    "id": 12,
                     "instruction": "Verify that git is installed by running the following command in a terminal. If it outputs a version you're good.",
                     "Code": {
                         "Name": "",
@@ -205,11 +201,11 @@
                     }
                 },
                 {
-                    "id": 14,
+                    "id": 13,
                     "instruction": "If you don't have git setup follow this instruction set (here)[/CompSci/GitHub#createGHAccount]."
                 },
                 {
-                    "id": 15,
+                    "id": 14,
                     "instruction": "Verify that you have PostgreSQL installed by running the following command.",
                     "Code": {
                         "Name": "",
@@ -220,7 +216,7 @@
                     }
                 },
                 {
-                    "id": 16,
+                    "id": 15,
                     "instruction": "If the command in step 17 didn't output the version, see the next steps titled \"How to Install PostgreSQL\". Follow the instruction set that corresponds to your operating system."
                 }
             ]
@@ -491,144 +487,6 @@
                 },
                 {
                     "id": 15,
-                    "instruction": "Sign back in using the \"postgres\" superuser. Press \"command + k\" to clear the terminal output from your previous session.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "psql -U postgres",
-                        "CopyCode": "psql -U postgres"
-                    }
-                },
-                {
-                    "id": 16,
-                    "instruction": "Connect to the \"notesapp_db\" database using your regular user.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "\\c notesapp_db notes_app_user",
-                        "CopyCode": "\\c notesapp_db notes_app_user"
-                    }
-                },
-                {
-                    "id": 17,
-                    "instruction": "Create the \"Users\" table in your database. If it outputs \"CREATE TABLE\" that means it was successful.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "CREATE TABLE Users (\n    user_id SERIAL PRIMARY KEY,\n    username VARCHAR(50) UNIQUE NOT NULL,\n    email VARCHAR(100) UNIQUE NOT NULL,\n    password_hash TEXT NOT NULL,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);",
-                        "CopyCode": "CREATE TABLE Users (\n    user_id SERIAL PRIMARY KEY,\n    username VARCHAR(50) UNIQUE NOT NULL,\n    email VARCHAR(100) UNIQUE NOT NULL,\n    password_hash TEXT NOT NULL,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);"
-                    }
-                },
-                {
-                    "id": 18,
-                    "instruction": "Create the \"Notes\" table in your database.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "CREATE TABLE Notes (\n    note_id SERIAL PRIMARY KEY,\n    title VARCHAR(200),\n    content TEXT,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    user_id INT REFERENCES Users(user_id) ON DELETE CASCADE\n);",
-                        "CopyCode": "CREATE TABLE Notes (\n    note_id SERIAL PRIMARY KEY,\n    title VARCHAR(200),\n    content TEXT,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    user_id INT REFERENCES Users(user_id) ON DELETE CASCADE\n);"
-                    }
-                },
-                {
-                    "id": 19,
-                    "instruction": "Create the \"Tags\" table in your database.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "CREATE TABLE Tags (\n    tag_id SERIAL PRIMARY KEY,\n    name VARCHAR(50) UNIQUE NOT NULL\n);",
-                        "CopyCode": "CREATE TABLE Tags (\n    tag_id SERIAL PRIMARY KEY,\n    name VARCHAR(50) UNIQUE NOT NULL\n);"
-                    }
-                },
-                {
-                    "id": 20,
-                    "instruction": "Create the \"Note_Tags\" table in your database.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "CREATE TABLE Note_Tags (\n    note_id INT REFERENCES Notes(note_id) ON DELETE CASCADE,\n    tag_id INT REFERENCES Tags(tag_id) ON DELETE CASCADE,\n    PRIMARY KEY (note_id, tag_id)\n);\n",
-                        "CopyCode": "CREATE TABLE Note_Tags (\n    note_id INT REFERENCES Notes(note_id) ON DELETE CASCADE,\n    tag_id INT REFERENCES Tags(tag_id) ON DELETE CASCADE,\n    PRIMARY KEY (note_id, tag_id)\n);\n"
-                    }
-                },
-                {
-                    "id": 21,
-                    "instruction": " Run the following. Make sure the 4 table names are displayed in the table.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "\\dt",
-                        "CopyCode": "\\dt"
-                    }
-                },
-                {
-                    "id": 22,
-                    "instruction": "Run the following command to connect to your test database as your test user.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "\\c notesapp_test_db notes_app_test_user",
-                        "CopyCode": "\\c notesapp_test_db notes_app_test_user"
-                    }
-                },
-                {
-                    "id": 23,
-                    "instruction": "Run the 4 \"create table\" SQL commands from steps 14-17 in your test database.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "CREATE TABLE Users (\n    user_id SERIAL PRIMARY KEY,\n    username VARCHAR(50) UNIQUE NOT NULL,\n    email VARCHAR(100) UNIQUE NOT NULL,\n    password_hash TEXT NOT NULL,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nCREATE TABLE Notes (\n    note_id SERIAL PRIMARY KEY,\n    title VARCHAR(200),\n    content TEXT,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    user_id INT REFERENCES Users(user_id) ON DELETE CASCADE\n);\n\nCREATE TABLE Tags (\n    tag_id SERIAL PRIMARY KEY,\n    name VARCHAR(50) UNIQUE NOT NULL\n);\n\nCREATE TABLE Note_Tags (\n    note_id INT REFERENCES Notes(note_id) ON DELETE CASCADE,\n    tag_id INT REFERENCES Tags(tag_id) ON DELETE CASCADE,\n    PRIMARY KEY (note_id, tag_id)\n);",
-                        "CopyCode": "CREATE TABLE Users (\n    user_id SERIAL PRIMARY KEY,\n    username VARCHAR(50) UNIQUE NOT NULL,\n    email VARCHAR(100) UNIQUE NOT NULL,\n    password_hash TEXT NOT NULL,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\nCREATE TABLE Notes (\n    note_id SERIAL PRIMARY KEY,\n    title VARCHAR(200),\n    content TEXT,\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n    user_id INT REFERENCES Users(user_id) ON DELETE CASCADE\n);\n\nCREATE TABLE Tags (\n    tag_id SERIAL PRIMARY KEY,\n    name VARCHAR(50) UNIQUE NOT NULL\n);\n\nCREATE TABLE Note_Tags (\n    note_id INT REFERENCES Notes(note_id) ON DELETE CASCADE,\n    tag_id INT REFERENCES Tags(tag_id) ON DELETE CASCADE,\n    PRIMARY KEY (note_id, tag_id)\n);"
-                    }
-                },
-                {
-                    "id": 24,
-                    "instruction": "Run the following. Ensure the 4 table names are displayed in the table.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "\\dt",
-                        "CopyCode": "\\dt"
-                    }
-                },
-                {
-                    "id": 25,
-                    "instruction": "Now just add a little bit of test data to your database.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "INSERT INTO Users (username, email, password_hash)\nVALUES ('john_doe', 'john.doe@example.com', 'hashed_password_1');",
-                        "CopyCode": "INSERT INTO Users (username, email, password_hash)\nVALUES ('john_doe', 'john.doe@example.com', 'hashed_password_1');"
-                    }
-                },
-                {
-                    "id": 26,
-                    "instruction": "Exit the psql shell entirely.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "\\q",
-                        "CopyCode": "\\q"
-                    }
-                },
-                {
-                    "id": 27,
                     "instruction": "Now test that your URI is working. This isn't a command but this is what it should look like.",
                     "Code": {
                         "Name": "",
@@ -640,7 +498,7 @@
                     }
                 },
                 {
-                    "id": 28,
+                    "id": 16,
                     "instruction": "Now run the following command in your terminal to test your endpoint.",
                     "Code": {
                         "Name": "",
@@ -651,7 +509,7 @@
                     }
                 },
                 {
-                    "id": 29,
+                    "id": 17,
                     "instruction": "Now ping your test database.",
                     "Code": {
                         "Name": "",
@@ -662,11 +520,11 @@
                     }
                 },
                 {
-                    "id": 30,
+                    "id": 18,
                     "instruction": "Again make sure every member of your group does this instruction set."
                 },
                 {
-                    "id": 31,
+                    "id": 19,
                     "instruction": "To recap, this is how you sign into your database",
                     "Code": {
                         "Name": "",
@@ -677,7 +535,7 @@
                     }
                 },
                 {
-                    "id": 32,
+                    "id": 20,
                     "instruction": "This is how you sign into your regular database",
                     "Code": {
                         "Name": "",
@@ -688,7 +546,7 @@
                     }
                 },
                 {
-                    "id": 33,
+                    "id": 21,
                     "instruction": "This is how you sign into your test database",
                     "Code": {
                         "Name": "",
@@ -699,7 +557,7 @@
                     }
                 },
                 {
-                    "id": 34,
+                    "id": 22,
                     "instruction": "See all values in a table. Remember the colon at the end.",
                     "Code": {
                         "Name": "",
@@ -711,7 +569,7 @@
                     }
                 },
                 {
-                    "id": 35,
+                    "id": 23,
                     "instruction": "These are commonly used PostgreSQL commands.",
                     "Table": [
                         {
@@ -862,7 +720,7 @@
         {
             "Info": [
                 {
-                    "title": "Flask Rest API Folder Setup Explanation",
+                    "title": "Django Rest API Folder Setup Explanation",
                     "desc": "Explains the purpose of the various folders and what code they should contain."
                 }
             ],
@@ -1357,465 +1215,18 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "The Github Repoistory for this code can be found [here](https://github.com/MichaelT-W23/Notes-Frontend).",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm install -g create-vite",
-                        "CopyCode": "npm install -g create-vite"
-                    }
-                },
-                {
-                    "id": 2,
-                    "instruction": "Go to your terminal and run the following commands. Press \"enter\" when prompted for Package name.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm install -g create-vite",
-                        "CopyCode": "npm install -g create-vite"
-                    }
-                },
-                {
-                    "id": 3,
-                    "instruction": "Now npm install and install vue-router. Answer 'y' to any prompts. Earlier you shouldve made a git repository called \"Notes-Frontend\".",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend\nnpm init vite@latest . -- --template vue\n\n* When prompted select \"Remove existing files and continue\" *\n* Press return when prompted for package name *",
-                        "CopyCode": "cd Notes-Frontend\nnpm init vite@latest . -- --template vue\n\n* When prompted select \"Remove existing files and continue\" *\n* Press return when prompted for package name *"
-                    }
-                },
-                {
-                    "id": 4,
-                    "instruction": "Now npm install and install vue-router.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm install\nnpm install vue-router@4",
-                        "CopyCode": "npm install\nnpm install vue-router@4"
-                    }
-                },
-                {
-                    "id": 5,
-                    "instruction": "Run the following command and open it in a broswer to ensure it's working. Press \"control + c\" to quit.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm run dev",
-                        "CopyCode": "npm run dev"
-                    }
-                },
-                {
-                    "id": 6,
-                    "instruction": "Delete unused files.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "rm src/components/HelloWorld.vue\nrm src/assets/vue.svg\nrm src/style.css",
-                        "CopyCode": "rm src/components/HelloWorld.vue\nrm src/assets/vue.svg\nrm src/style.css"
-                    }
-                },
-                {
-                    "id": 7,
-                    "instruction": "Now make the new folders and files using the following commands.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd src\nmkdir -p api lib router services stores utils views",
-                        "CopyCode": "cd src\nmkdir -p api lib router services stores utils views"
-                    }
-                },
-                {
-                    "id": 8,
-                    "instruction": "Create the following files in your project.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "touch api/notesAPI.js\ntouch api/userAPI.js\n\ntouch components/NotesCard.vue\n\ntouch lib/axios.js\n\ntouch router/index.js\n\ntouch services/notesService.js\ntouch services/userService.js\n\ntouch stores/starred.js\ntouch stores/auth.js\n\ntouch utils/dates.js\n\ntouch views/SignIn.vue \ntouch views/SignUp.vue \ntouch views/MainPage.vue \ntouch views/Starred.vue\nclear",
-                        "CopyCode": "touch api/notesAPI.js\ntouch api/userAPI.js\n\ntouch components/NotesCard.vue\n\ntouch lib/axios.js\n\ntouch router/index.js\n\ntouch services/notesService.js\ntouch services/userService.js\n\ntouch stores/starred.js\ntouch stores/auth.js\n\ntouch utils/dates.js\n\ntouch views/SignIn.vue \ntouch views/SignUp.vue \ntouch views/MainPage.vue \ntouch views/Starred.vue\nclear"
-                    }
-                },
-                {
-                    "id": 9,
-                    "instruction": "Download this &notes.jpg&(/download/notes.jpg) image and put it in your \"src/assets\" folder."
-                },
-                {
-                    "id": 10,
-                    "instruction": "Now install the npm libraries.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm install axios\nnpm install pinia",
-                        "CopyCode": "npm install axios\nnpm install pinia"
-                    }
-                },
-                {
-                    "id": 11,
-                    "instruction": "After you've done that push your folder structure to Github.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend\ngit add .\ngit commit -m \"Added folder structure\"\ngit push\n",
-                        "CopyCode": "cd Notes-Frontend\ngit add .\ngit commit -m \"Added folder structure\"\ngit push\n"
-                    }
-                },
-                {
-                    "id": 12,
-                    "instruction": "Now go back to your terminal. Copy and record the output http link of your Rest Api.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Rest-Api\nsource venv/bin/activate\nflask run\n\n* Press control + c * \n\ndeactivate\ncd ..\nclear",
-                        "CopyCode": "cd Notes-Rest-Api\nsource venv/bin/activate\nflask run\n\n* Press control + c * \n\ndeactivate\ncd ..\nclear"
-                    }
-                },
-                {
-                    "id": 13,
-                    "instruction": "Now open your \"Notes-Frontend\" folder in VSCode. In your \"src/lib\" folder paste the following code into your \"axios.js\" file. Replace the REST_API_URI with the http link you copied in step 11.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "import axios from 'axios';\n\nconst axiosInstance = axios.create({\n  baseURL: 'http://127.0.0.1:5000',\n  timeout: 10000,\n  headers: {\n    'Content-Type': 'application/json',\n  }\n});\n\nexport default axiosInstance;",
-                        "CopyCode": "import axios from 'axios';\n\nconst axiosInstance = axios.create({\n  baseURL: 'http://127.0.0.1:5000',\n  timeout: 10000,\n  headers: {\n    'Content-Type': 'application/json',\n  }\n});\n\nexport default axiosInstance;"
-                    }
-                },
-                {
-                    "id": 14,
-                    "instruction": "In \"src/router\" open the \"index.js\" file.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport SignIn from \"../views/SignIn.vue\";\nimport SignUp from \"../views/SignUp.vue\";\nimport MainPage from \"../views/MainPage.vue\";\nimport Starred from \"../views/Starred.vue\";\n\nconst routes = [\n    {\n        path: '/',\n        component: SignIn\n    },\n  {\n        path: '/Register',\n        component: SignUp\n    },\n  {\n        path: '/Dashboard',\n        component: MainPage\n    },\n    {\n        path: '/Starred',\n        component: Starred\n    }\n]\n\nconst router = createRouter({\n    history: createWebHistory('/'),\n    routes\n});\n\nexport default router;",
-                        "CopyCode": "import { createRouter, createWebHistory } from 'vue-router';\n\nimport SignIn from \"../views/SignIn.vue\";\nimport SignUp from \"../views/SignUp.vue\";\nimport MainPage from \"../views/MainPage.vue\";\nimport Starred from \"../views/Starred.vue\";\n\nconst routes = [\n\t{\n\t\tpath: '/',\n\t\tcomponent: SignIn\n\t},\n  {\n\t\tpath: '/Register',\n\t\tcomponent: SignUp\n\t},\n  {\n\t\tpath: '/Dashboard',\n\t\tcomponent: MainPage\n\t},\n\t{\n\t\tpath: '/Starred',\n\t\tcomponent: Starred\n\t}\n]\n\nconst router = createRouter({\n\thistory: createWebHistory('/'),\n\troutes\n});\n\nexport default router;"
-                    }
-                },
-                {
-                    "id": 15,
-                    "instruction": "In the \"src/api\" folder open the \"userAPI.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import axiosInstance from '../lib/axios.js'\n\n\nexport async function registerUser(userData) {\n  const response = await axiosInstance.post('/users', userData);\n  return response.data;\n}\n\n\nexport async function loginUser(userData) {\n  const response = await axiosInstance.post('/users/login', userData);\n  return response.data;\n}\n\n\nexport async function getUserByUsername(username) {\n  const response = await axiosInstance.get(`/users/${username}`);\n  return response.data;\n}\n\n",
-                        "CopyCode": "import axiosInstance from '../lib/axios.js'\n\n\nexport async function registerUser(userData) {\n  const response = await axiosInstance.post('/users', userData);\n  return response.data;\n}\n\n\nexport async function loginUser(userData) {\n  const response = await axiosInstance.post('/users/login', userData);\n  return response.data;\n}\n\n\nexport async function getUserByUsername(username) {\n  const response = await axiosInstance.get(`/users/${username}`);\n  return response.data;\n}\n\n"
-                    }
-                },
-                {
-                    "id": 16,
-                    "instruction": "In the \"src/api\" folder open the \"notesAPI.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import axiosInstance from '../lib/axios.js'\n\n\nexport async function getUserNotes(userId) {\n  const response = await axiosInstance.get(`/users/${userId}/notes`);\n  return response.data;\n}\n\n\nexport async function getNotesByTag(tagName) {\n  const response = await axiosInstance.get(`/notes/tag/${tagName}`);\n  return response.data;\n}\n\n\nexport async function getAllTags(userId) {\n  const response = await axiosInstance.get(`/users/${userId}/tags`);\n  return response.data;\n}\n\n    ",
-                        "CopyCode": "import axiosInstance from '../lib/axios.js'\n\n\nexport async function getUserNotes(userId) {\n  const response = await axiosInstance.get(`/users/${userId}/notes`);\n  return response.data;\n}\n\n\nexport async function getNotesByTag(tagName) {\n  const response = await axiosInstance.get(`/notes/tag/${tagName}`);\n  return response.data;\n}\n\n\nexport async function getAllTags(userId) {\n  const response = await axiosInstance.get(`/users/${userId}/tags`);\n  return response.data;\n}\n\n    "
-                    }
-                },
-                {
-                    "id": 17,
-                    "instruction": "In the \"src/services\" folder open the \"notesService.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import {\n  getUserNotes,\n  getNotesByTag,\n  getAllTags\n} from '../api/notesAPI.js'\n\nexport async function getAllUserNotes(userId) {\n  try {\n    const data = await getUserNotes(userId);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getNotesByTagName(tagName) {\n  try {\n    const data = await getNotesByTag(tagName);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getAllUserTags(userId) {\n  try {\n    const data = await getAllTags(userId);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}",
-                        "CopyCode": "import {\n  getUserNotes,\n  getNotesByTag,\n  getAllTags\n} from '../api/notesAPI.js'\n\nexport async function getAllUserNotes(userId) {\n  try {\n    const data = await getUserNotes(userId);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getNotesByTagName(tagName) {\n  try {\n    const data = await getNotesByTag(tagName);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getAllUserTags(userId) {\n  try {\n    const data = await getAllTags(userId);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}"
-                    }
-                },
-                {
-                    "id": 18,
-                    "instruction": "In the \"src/services\" folder open the \"userService.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import {\n  registerUser,\n  loginUser,\n  getUserByUsername\n} from '../api/userAPI.js';\n\nexport async function createNewUser(userData) {\n  try {\n    const data = await registerUser(userData);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function loginExistingUser(userData) {\n  try {\n    const data = await loginUser(userData);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getUser(username) {\n  try {\n    const data = await getUserByUsername(username);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}",
-                        "CopyCode": "import {\n  registerUser,\n  loginUser,\n  getUserByUsername\n} from '../api/userAPI.js';\n\nexport async function createNewUser(userData) {\n  try {\n    const data = await registerUser(userData);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function loginExistingUser(userData) {\n  try {\n    const data = await loginUser(userData);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}\n\nexport async function getUser(username) {\n  try {\n    const data = await getUserByUsername(username);\n    return data;\n  } catch (error) {\n    console.log(error);\n  }\n}"
-                    }
-                },
-                {
-                    "id": 19,
-                    "instruction": "In the \"src/stores\" folder open the \"auth.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import { defineStore } from 'pinia';\nimport { ref } from 'vue';\n\nexport const useAuthStore = defineStore('auth', () => {\n\n  const user = ref({\n    username: localStorage.getItem('username') || null,\n    email: null,\n  });\n\n  function login(userData) {\n    user.value = userData;\n    localStorage.setItem('username', userData.username);\n  }\n  \n  if (localStorage.getItem('username')) {\n    user.value.username = localStorage.getItem('username');\n  }\n\n  function logout() {\n    user.value = {\n      username: null,\n      email: null,\n      userId: null\n    };\n\n    localStorage.removeItem('username');\n    localStorage.removeItem('userId');\n    localStorage.removeItem('notes');\n    localStorage.removeItem('tags');\n  }\n\n  function getCurrentUser() {\n    return user.value;\n  }\n\n  function getUsername() {\n    return user.value.username || localStorage.getItem('username');\n  }\n\n  function getEmail() {\n    return user.value.email;\n  }\n\n  function setUserId(id) {\n    user.value.userId = id;\n    localStorage.setItem('userId', id);\n  }\n\n  function getUserId() {\n    return localStorage.getItem('userId');\n  }\n\n  function setNotes(notes) {\n    user.value.notes = notes;\n    localStorage.setItem('notes', JSON.stringify(notes));\n  }\n\n  function getNotes() {\n    return JSON.parse(localStorage.getItem('notes'));\n  }\n\n  function setTags(tags) {\n    user.value.tags = tags;\n    localStorage.setItem('tags', JSON.stringify(tags));\n  }\n\n  function getTags() {\n    return localStorage.getItem('tags').split(\",\");\n  }\n\n  return { user, login, logout, getCurrentUser, getUsername, getEmail, \n           setUserId, getUserId, setNotes, getNotes, setTags, getTags };\n});\n",
-                        "CopyCode": "import { defineStore } from 'pinia';\nimport { ref } from 'vue';\n\nexport const useAuthStore = defineStore('auth', () => {\n\n  const user = ref({\n    username: localStorage.getItem('username') || null,\n    email: null,\n  });\n\n  function login(userData) {\n    user.value = userData;\n    localStorage.setItem('username', userData.username);\n  }\n  \n  if (localStorage.getItem('username')) {\n    user.value.username = localStorage.getItem('username');\n  }\n\n  function logout() {\n    user.value = {\n      username: null,\n      email: null,\n      userId: null\n    };\n\n    localStorage.removeItem('username');\n    localStorage.removeItem('userId');\n    localStorage.removeItem('notes');\n    localStorage.removeItem('tags');\n  }\n\n  function getCurrentUser() {\n    return user.value;\n  }\n\n  function getUsername() {\n    return user.value.username || localStorage.getItem('username');\n  }\n\n  function getEmail() {\n    return user.value.email;\n  }\n\n  function setUserId(id) {\n    user.value.userId = id;\n    localStorage.setItem('userId', id);\n  }\n\n  function getUserId() {\n    return localStorage.getItem('userId');\n  }\n\n  function setNotes(notes) {\n    user.value.notes = notes;\n    localStorage.setItem('notes', JSON.stringify(notes));\n  }\n\n  function getNotes() {\n    return JSON.parse(localStorage.getItem('notes'));\n  }\n\n  function setTags(tags) {\n    user.value.tags = tags;\n    localStorage.setItem('tags', JSON.stringify(tags));\n  }\n\n  function getTags() {\n    return localStorage.getItem('tags').split(\",\");\n  }\n\n  return { user, login, logout, getCurrentUser, getUsername, getEmail, \n           setUserId, getUserId, setNotes, getNotes, setTags, getTags };\n});\n"
-                    }
-                },
-                {
-                    "id": 20,
-                    "instruction": "In the \"src/stores\" folder open the \"starred.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import { defineStore } from 'pinia';\nimport { ref, watch } from 'vue';\n\nexport const useNotesStore = defineStore('notes', () => {\n\n  const notes = ref(JSON.parse(localStorage.getItem('notes') || '[]'));\n\n  function addNote(note) {\n    notes.value.push({\n      ...note,\n      starred: true,\n    });\n    saveNotesToLocalStorage();\n  }\n\n  function removeNote(noteId) {\n    notes.value = notes.value.filter(note => note.note_id !== noteId);\n    saveNotesToLocalStorage();\n  }\n\n  function starNote(noteId) {\n    const note = notes.value.find(note => note.note_id === noteId);\n\n    if (note) {\n      note.starred = true;\n      console.log(`Note with ID ${noteId} starred.`);\n      saveNotesToLocalStorage();\n    }\n  }\n\n  function unstarNote(noteId) {\n    const note = notes.value.find(note => note.note_id === noteId);\n    if (note) {\n      note.starred = false;\n      console.log(`Note with ID ${noteId} unstarred.`);\n      saveNotesToLocalStorage();\n    }\n  }\n\n  function getStarredNotes() {\n    return notes.value.filter(note => note.starred);\n  }\n\n  function getNumberOfStoredNotes() {\n    return notes.value.length;\n  }\n\n  function isNoteStarred(note) {\n    const foundNote = notes.value.find(n => n.note_id === note.note_id);\n    return foundNote ? foundNote.starred : false;\n  }\n\n  function saveNotesToLocalStorage() {\n    localStorage.setItem('notes', JSON.stringify(notes.value));\n  }\n\n  watch(notes, (newNotes) => {\n    saveNotesToLocalStorage();\n  }, { deep: true });\n\n  return {\n    notes,\n    addNote,\n    removeNote,\n    starNote,\n    unstarNote,\n    getStarredNotes,\n    getNumberOfStoredNotes,\n    isNoteStarred\n  };\n});\n",
-                        "CopyCode": "import { defineStore } from 'pinia';\nimport { ref, watch } from 'vue';\n\nexport const useNotesStore = defineStore('notes', () => {\n\n  const notes = ref(JSON.parse(localStorage.getItem('notes') || '[]'));\n\n  function addNote(note) {\n    notes.value.push({\n      ...note,\n      starred: true,\n    });\n    saveNotesToLocalStorage();\n  }\n\n  function removeNote(noteId) {\n    notes.value = notes.value.filter(note => note.note_id !== noteId);\n    saveNotesToLocalStorage();\n  }\n\n  function starNote(noteId) {\n    const note = notes.value.find(note => note.note_id === noteId);\n\n    if (note) {\n      note.starred = true;\n      console.log(`Note with ID ${noteId} starred.`);\n      saveNotesToLocalStorage();\n    }\n  }\n\n  function unstarNote(noteId) {\n    const note = notes.value.find(note => note.note_id === noteId);\n    if (note) {\n      note.starred = false;\n      console.log(`Note with ID ${noteId} unstarred.`);\n      saveNotesToLocalStorage();\n    }\n  }\n\n  function getStarredNotes() {\n    return notes.value.filter(note => note.starred);\n  }\n\n  function getNumberOfStoredNotes() {\n    return notes.value.length;\n  }\n\n  function isNoteStarred(note) {\n    const foundNote = notes.value.find(n => n.note_id === note.note_id);\n    return foundNote ? foundNote.starred : false;\n  }\n\n  function saveNotesToLocalStorage() {\n    localStorage.setItem('notes', JSON.stringify(notes.value));\n  }\n\n  watch(notes, (newNotes) => {\n    saveNotesToLocalStorage();\n  }, { deep: true });\n\n  return {\n    notes,\n    addNote,\n    removeNote,\n    starNote,\n    unstarNote,\n    getStarredNotes,\n    getNumberOfStoredNotes,\n    isNoteStarred\n  };\n});\n"
-                    }
-                },
-                {
-                    "id": 21,
-                    "instruction": "In the \"src/utils\" folder open the \"dates.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "export const formatDate = (dateString) => {\n  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };\n  return new Date(dateString).toLocaleDateString(undefined, options);\n};",
-                        "CopyCode": "export const formatDate = (dateString) => {\n  const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };\n  return new Date(dateString).toLocaleDateString(undefined, options);\n};"
-                    }
-                },
-                {
-                    "id": 22,
-                    "instruction": "In the \"src/views\" folder open the \"MainPage.vue\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "<template>\n  <div class=\"container\">\n    <p class=\"title\">{{ authStore.getUsername() }} - {{ authStore.getUserId() }}</p>\n    <img :src=\"NotesPic\" alt=\"Notes Image\" />\n    <div class=\"links\">\n      <router-link to=\"/Starred\">Starred Notes</router-link>\n      <a href=\"#\" @click=\"handleLogout\">Logout</a>\n    </div>\n    <div v-for=\"note in notes\" :key=\"note.id\">\n      <NoteCard :note=\"note\" />\n    </div>\n    <h3>Tags</h3>\n    <ul>\n      <li v-for=\"(tag, index) in tags\" :key=\"index\">{{ tag }}</li>\n    </ul>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport { useAuthStore } from \"../stores/auth\";\nimport { getUser } from \"../services/userService\";\nimport { getAllUserNotes, getAllUserTags } from \"../services/notesService\";\nimport NoteCard from \"../components/NotesCard.vue\";\nimport NotesPic from \"../assets/notes.jpg\";\n\nconst authStore = useAuthStore();\nconst notes = ref([]);\nconst tags = ref([]);\n\n// Get all user notes and tags by user id\n// set both in the authStore\ngetUser(authStore.getUsername()) \n  .then((userData) => {\n    const userId = userData.user_id;\n    authStore.setUserId(userId);\n  \n    return Promise.all([getAllUserNotes(userId), getAllUserTags(userId)]);\n  })\n  .then(([fetchedNotes, fetchedTags]) => {\n    notes.value = fetchedNotes.map(note => ({ ...note }));\n    tags.value = fetchedTags;\n\n    console.log(notes.value);\n    console.log(tags.value);\n\n    authStore.setNotes(notes.value);\n    authStore.setTags(tags.value);\n  })\n  .catch((error) => {\n    console.error('Error:', error);\n  });\n\n\nconst handleLogout = () => {\n  authStore.logout();\n  window.location.href = \"/\";\n};\n\n</script>\n\n\n<style scoped>\n.container {\n  position: relative;\n  margin-left: auto;\n  width: 80%; \n  padding: 16px;\n  border-radius: 8px;\n}\n\n.title {\n  font-size: 30px;\n  text-decoration: underline;\n  margin-bottom: 10px;\n}\n\nimg {\n  width: 350px;\n  height: auto;\n  border: 1px solid black;\n  margin-bottom: 10px;\n}\n\n.links {\n  margin-bottom: 16px;\n}\n\n.links a {\n  margin-left: 20px;\n}\n\n</style>\n",
-                        "CopyCode": "<template>\n  <div class=\"container\">\n    <p class=\"title\">{{ authStore.getUsername() }} - {{ authStore.getUserId() }}</p>\n    <img :src=\"NotesPic\" alt=\"Notes Image\" />\n    <div class=\"links\">\n      <router-link to=\"/Starred\">Starred Notes</router-link>\n      <a href=\"#\" @click=\"handleLogout\">Logout</a>\n    </div>\n    <div v-for=\"note in notes\" :key=\"note.id\">\n      <NoteCard :note=\"note\" />\n    </div>\n    <h3>Tags</h3>\n    <ul>\n      <li v-for=\"(tag, index) in tags\" :key=\"index\">{{ tag }}</li>\n    </ul>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport { useAuthStore } from \"../stores/auth\";\nimport { getUser } from \"../services/userService\";\nimport { getAllUserNotes, getAllUserTags } from \"../services/notesService\";\nimport NoteCard from \"../components/NotesCard.vue\";\nimport NotesPic from \"../assets/notes.jpg\";\n\nconst authStore = useAuthStore();\nconst notes = ref([]);\nconst tags = ref([]);\n\n// Get all user notes and tags by user id\n// set both in the authStore\ngetUser(authStore.getUsername()) \n  .then((userData) => {\n    const userId = userData.user_id;\n    authStore.setUserId(userId);\n  \n    return Promise.all([getAllUserNotes(userId), getAllUserTags(userId)]);\n  })\n  .then(([fetchedNotes, fetchedTags]) => {\n    notes.value = fetchedNotes.map(note => ({ ...note }));\n    tags.value = fetchedTags;\n\n    console.log(notes.value);\n    console.log(tags.value);\n\n    authStore.setNotes(notes.value);\n    authStore.setTags(tags.value);\n  })\n  .catch((error) => {\n    console.error('Error:', error);\n  });\n\n\nconst handleLogout = () => {\n  authStore.logout();\n  window.location.href = \"/\";\n};\n\n</script>\n\n\n<style scoped>\n.container {\n  position: relative;\n  margin-left: auto;\n  width: 80%; \n  padding: 16px;\n  border-radius: 8px;\n}\n\n.title {\n  font-size: 30px;\n  text-decoration: underline;\n  margin-bottom: 10px;\n}\n\nimg {\n  width: 350px;\n  height: auto;\n  border: 1px solid black;\n  margin-bottom: 10px;\n}\n\n.links {\n  margin-bottom: 16px;\n}\n\n.links a {\n  margin-left: 20px;\n}\n\n</style>\n"
-                    }
-                },
-                {
-                    "id": 23,
-                    "instruction": "In the \"src/views\" folder open the \"SignIn.vue\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "<template>\n  <div class=\"sign-in-container\">\n    <h1>Sign In</h1>\n    <form @submit.prevent=\"handleSignIn\">\n      <div class=\"input-group\">\n        <label for=\"username\">Username:</label>\n        <input type=\"text\" v-model=\"username\" id=\"username\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"password\">Password:</label>\n        <input type=\"password\" v-model=\"password\" id=\"password\" required />\n      </div>\n      <button type=\"submit\">Sign In</button>\n    </form>\n    <router-link to=\"/Register\" class=\"register-link\">Don't Have an Account? Sign up</router-link>\n\n    <p v-if=\"errorMessage\">{{ errorMessage }}</p>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref, onMounted } from 'vue';\nimport { loginExistingUser } from \"../services/userService\";\nimport { useRouter } from 'vue-router';\nimport { useAuthStore } from \"../stores/auth\";\n\nconst router = useRouter();\nconst authStore = useAuthStore();\n\nconst username = ref('');\nconst password = ref('');\nconst errorMessage = ref('');\n\nconst handleSignIn = async () => {\n  try {\n    const userData = { username: username.value, password: password.value };\n    const response = await loginExistingUser(userData);\n    \n    if (response && response.user) {\n      authStore.logout();\n      authStore.login(response.user);\n      router.push('/Dashboard');\n    } else {\n      errorMessage.value = \"Invalid username or password\";\n    }\n  } catch (error) {\n    console.error(error);\n    errorMessage.value = \"An error occurred during sign-in\";\n  }\n};\n\nonMounted(() => {\n  authStore.logout();\n});\n\n</script>\n\n\n<style scoped>\n.sign-in-container {\n  max-width: 400px;\n  margin: auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  text-align: center;\n}\n\n.input-group {\n  margin-bottom: 15px;\n  text-align: left;\n}\n\nlabel {\n  display: block;\n  margin-bottom: 5px;\n}\n\ninput[type=\"text\"],\ninput[type=\"password\"] {\n  width: 100%;\n  padding: 8px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n}\n\nbutton {\n  width: 100%;\n  padding: 10px;\n  background-color: #007BFF;\n  color: white;\n  border: none;\n  border-radius: 3px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.register-link {\n  display: block;\n  margin-top: 20px;\n  color: #007BFF;\n  text-decoration: none;\n}\n\n.register-link:hover {\n  color: #0056b3;\n}\n\n</style>\n",
-                        "CopyCode": "<template>\n  <div class=\"sign-in-container\">\n    <h1>Sign In</h1>\n    <form @submit.prevent=\"handleSignIn\">\n      <div class=\"input-group\">\n        <label for=\"username\">Username:</label>\n        <input type=\"text\" v-model=\"username\" id=\"username\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"password\">Password:</label>\n        <input type=\"password\" v-model=\"password\" id=\"password\" required />\n      </div>\n      <button type=\"submit\">Sign In</button>\n    </form>\n    <router-link to=\"/Register\" class=\"register-link\">Don't Have an Account? Sign up</router-link>\n\n    <p v-if=\"errorMessage\">{{ errorMessage }}</p>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref, onMounted } from 'vue';\nimport { loginExistingUser } from \"../services/userService\";\nimport { useRouter } from 'vue-router';\nimport { useAuthStore } from \"../stores/auth\";\n\nconst router = useRouter();\nconst authStore = useAuthStore();\n\nconst username = ref('');\nconst password = ref('');\nconst errorMessage = ref('');\n\nconst handleSignIn = async () => {\n  try {\n    const userData = { username: username.value, password: password.value };\n    const response = await loginExistingUser(userData);\n    \n    if (response && response.user) {\n      authStore.logout();\n      authStore.login(response.user);\n      router.push('/Dashboard');\n    } else {\n      errorMessage.value = \"Invalid username or password\";\n    }\n  } catch (error) {\n    console.error(error);\n    errorMessage.value = \"An error occurred during sign-in\";\n  }\n};\n\nonMounted(() => {\n  authStore.logout();\n});\n\n</script>\n\n\n<style scoped>\n.sign-in-container {\n  max-width: 400px;\n  margin: auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  text-align: center;\n}\n\n.input-group {\n  margin-bottom: 15px;\n  text-align: left;\n}\n\nlabel {\n  display: block;\n  margin-bottom: 5px;\n}\n\ninput[type=\"text\"],\ninput[type=\"password\"] {\n  width: 100%;\n  padding: 8px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n}\n\nbutton {\n  width: 100%;\n  padding: 10px;\n  background-color: #007BFF;\n  color: white;\n  border: none;\n  border-radius: 3px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.register-link {\n  display: block;\n  margin-top: 20px;\n  color: #007BFF;\n  text-decoration: none;\n}\n\n.register-link:hover {\n  color: #0056b3;\n}\n\n</style>\n"
-                    }
-                },
-                {
-                    "id": 24,
-                    "instruction": "In the \"src/views\" folder open the \"SignUp.vue\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "<template>\n  <div class=\"register-container\">\n    <h1>Register</h1>\n    <form @submit.prevent=\"handleRegister\">\n      <div class=\"input-group\">\n        <label for=\"name\">Name:</label>\n        <input type=\"text\" v-model=\"name\" id=\"name\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" v-model=\"email\" id=\"email\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"password\">Password:</label>\n        <input type=\"password\" v-model=\"password\" id=\"password\" required />\n      </div>\n      <button type=\"submit\">Register</button>\n    </form>\n    <router-link to=\"/\" class=\"sign-in-link\">Already Have an Account? Sign In</router-link>\n\n    <p v-if=\"errorMessage\">{{ errorMessage }}</p>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport { createNewUser, loginExistingUser } from \"../services/userService\";\nimport { useRouter } from 'vue-router';\nimport { useAuthStore } from \"../stores/auth\";\n\nconst router = useRouter();\nconst authStore = useAuthStore();\n\nconst name = ref('');\nconst email = ref('');\nconst password = ref('');\nconst errorMessage = ref('');\n\nconst handleRegister = async () => {\n  try {\n    const userData = { username: name.value, email: email.value, password: password.value };\n    const response = await createNewUser(userData);\n\n    if (response && !response.error) {\n      const loginResponse = await loginExistingUser({ username: name.value, password: password.value });\n\n      if (loginResponse && loginResponse.user) {\n        authStore.logout();\n        authStore.login(loginResponse.user);\n        router.push('/Dashboard');\n      } else {\n        errorMessage.value = \"Failed to log in after registration\";\n      }\n    } else {\n      errorMessage.value = response.error || \"Registration failed\";\n    }\n  } catch (error) {\n    console.error(error);\n    errorMessage.value = \"An error occurred during registration\";\n  }\n};\n\n</script>\n\n\n<style scoped>\n.register-container {\n  max-width: 400px;\n  margin: auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  text-align: center;\n}\n\n.input-group {\n  margin-bottom: 15px;\n  text-align: left;\n}\n\nlabel {\n  display: block;\n  margin-bottom: 5px;\n}\n\ninput[type=\"text\"],\ninput[type=\"email\"],\ninput[type=\"password\"] {\n  width: 100%;\n  padding: 8px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n}\n\nbutton {\n  width: 100%;\n  padding: 10px;\n  background-color: #007BFF;\n  color: white;\n  border: none;\n  border-radius: 3px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.sign-in-link {\n  display: block;\n  margin-top: 20px;\n  color: #007BFF;\n  text-decoration: none;\n}\n\n.sign-in-link:hover {\n  color: #0056b3;\n}\n</style>\n",
-                        "CopyCode": "<template>\n  <div class=\"register-container\">\n    <h1>Register</h1>\n    <form @submit.prevent=\"handleRegister\">\n      <div class=\"input-group\">\n        <label for=\"name\">Name:</label>\n        <input type=\"text\" v-model=\"name\" id=\"name\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" v-model=\"email\" id=\"email\" required />\n      </div>\n      <div class=\"input-group\">\n        <label for=\"password\">Password:</label>\n        <input type=\"password\" v-model=\"password\" id=\"password\" required />\n      </div>\n      <button type=\"submit\">Register</button>\n    </form>\n    <router-link to=\"/\" class=\"sign-in-link\">Already Have an Account? Sign In</router-link>\n\n    <p v-if=\"errorMessage\">{{ errorMessage }}</p>\n  </div>\n</template>\n\n\n<script setup>\nimport { ref } from 'vue';\nimport { createNewUser, loginExistingUser } from \"../services/userService\";\nimport { useRouter } from 'vue-router';\nimport { useAuthStore } from \"../stores/auth\";\n\nconst router = useRouter();\nconst authStore = useAuthStore();\n\nconst name = ref('');\nconst email = ref('');\nconst password = ref('');\nconst errorMessage = ref('');\n\nconst handleRegister = async () => {\n  try {\n    const userData = { username: name.value, email: email.value, password: password.value };\n    const response = await createNewUser(userData);\n\n    if (response && !response.error) {\n      const loginResponse = await loginExistingUser({ username: name.value, password: password.value });\n\n      if (loginResponse && loginResponse.user) {\n        authStore.logout();\n        authStore.login(loginResponse.user);\n        router.push('/Dashboard');\n      } else {\n        errorMessage.value = \"Failed to log in after registration\";\n      }\n    } else {\n      errorMessage.value = response.error || \"Registration failed\";\n    }\n  } catch (error) {\n    console.error(error);\n    errorMessage.value = \"An error occurred during registration\";\n  }\n};\n\n</script>\n\n\n<style scoped>\n.register-container {\n  max-width: 400px;\n  margin: auto;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  text-align: center;\n}\n\n.input-group {\n  margin-bottom: 15px;\n  text-align: left;\n}\n\nlabel {\n  display: block;\n  margin-bottom: 5px;\n}\n\ninput[type=\"text\"],\ninput[type=\"email\"],\ninput[type=\"password\"] {\n  width: 100%;\n  padding: 8px;\n  border: 1px solid #ccc;\n  border-radius: 3px;\n}\n\nbutton {\n  width: 100%;\n  padding: 10px;\n  background-color: #007BFF;\n  color: white;\n  border: none;\n  border-radius: 3px;\n  cursor: pointer;\n}\n\nbutton:hover {\n  background-color: #0056b3;\n}\n\n.sign-in-link {\n  display: block;\n  margin-top: 20px;\n  color: #007BFF;\n  text-decoration: none;\n}\n\n.sign-in-link:hover {\n  color: #0056b3;\n}\n</style>\n"
-                    }
-                },
-                {
-                    "id": 25,
-                    "instruction": "In the \"src/views\" folder open the \"Starred.vue\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "<template>\n  <p>Starred Notes</p>\n  <div v-for=\"note in noteStore.getStarredNotes()\" :key=\"note.id\">\n    <NoteCard :note=\"note\" />\n  </div>\n</template>\n\n\n<script setup>\nimport { useNotesStore } from \"../stores/starred\";\nimport NoteCard from \"../components/NotesCard.vue\";\n\nconst noteStore = useNotesStore();\n\n</script>\n\n",
-                        "CopyCode": "<template>\n  <p>Starred Notes</p>\n  <div v-for=\"note in noteStore.getStarredNotes()\" :key=\"note.id\">\n    <NoteCard :note=\"note\" />\n  </div>\n</template>\n\n\n<script setup>\nimport { useNotesStore } from \"../stores/starred\";\nimport NoteCard from \"../components/NotesCard.vue\";\n\nconst noteStore = useNotesStore();\n\n</script>\n\n"
-                    }
-                },
-                {
-                    "id": 26,
-                    "instruction": "In the \"src\" folder open the \"App.vue\" file. Delete it's contents and paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "HTML",
-                        "DisplayLang": "Vue",
-                        "FormatCode": "<template>\n  <router-view />\n</template>\n\n\n<style>\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nhtml, body {\n    background-color: lightblue;\n}\n\n</style>",
-                        "CopyCode": "<template>\n  <router-view />\n</template>\n\n\n<style>\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nhtml, body {\n\tbackground-color: lightblue;\n}\n\n</style>"
-                    }
-                },
-                {
-                    "id": 27,
-                    "instruction": "In the \"src\" folder open the \"main.js\" file. Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport { createPinia } from 'pinia';\nimport router from './router'\n\nconst app = createApp(App)\n\napp.use(router)\napp.use(createPinia())\napp.mount('#app');",
-                        "CopyCode": "import { createApp } from 'vue'\nimport App from './App.vue'\nimport { createPinia } from 'pinia';\nimport router from './router'\n\nconst app = createApp(App)\n\napp.use(router)\napp.use(createPinia())\napp.mount('#app');"
-                    }
-                },
-                {
-                    "id": 28,
-                    "instruction": "Now before we run our app connect to the database and run the following commands.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "psql -U postgres\n\\c notesapp_db notes_app_user\nTRUNCATE TABLE Users, Tags, Notes CASCADE;\nALTER SEQUENCE users_user_id_seq RESTART WITH 1;\nALTER SEQUENCE tags_tag_id_seq RESTART WITH 1;\nALTER SEQUENCE notes_note_id_seq RESTART WITH 1;",
-                        "CopyCode": "psql -U postgres\n\\c notesapp_db notes_app_user\nTRUNCATE TABLE Users, Tags, Notes CASCADE;\nALTER SEQUENCE users_user_id_seq RESTART WITH 1;\nALTER SEQUENCE tags_tag_id_seq RESTART WITH 1;\nALTER SEQUENCE notes_note_id_seq RESTART WITH 1;"
-                    }
-                },
-                {
-                    "id": 29,
-                    "instruction": "Now populate your Users table using the SQL statements.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "INSERT INTO Users (username, email, password_hash) \nVALUES \n('john_doe', 'john.doe@example.com', 'scrypt:32768:8:1$zuQhyeNXzf7H365N$3bc7b087d3d68d33b8ac72823cbe5fbb19f046c405177fa036d8cf0e691fe400e37222e3a55474d4b3fbcd10c6b9f30dc441c2656f24034c44a3734544bae22a'),\n('jane_smith', 'jane.smith@example.com', 'scrypt:32768:8:1$5yu7lFgr2igBvpQu$2142e8af9464b0b84a66b056fe5e99096694857bdaccceb58b1a0e6dbfe18efc2aac2bdd2410d6af14992e279810e32cab32b2a560e3a6e42cee836081a42ce8'), \n('alice_jones', 'alice.jones@example.com', 'scrypt:32768:8:1$EmSwLgvWpdRTmb4A$6a5490351c01147afe2fd860557e954c8aefee97850044d1066e3b4b2da8f14ee47217bb3fbfca778e4633f287c2e2d7b4d4f6b83ec433fce3b450a6d924084b'),\n('michael_jordan', 'michael.jordan@example.com', 'scrypt:32768:8:1$WPQ2jPm3lqRktjL9$64d9153e8fe7d3d415a509fa0faf8c09a09ee1cfea81dc186d3cca9f6461e64d2718bfc0b6af863ebbee4d4edbfdab0d94cefd0760e86132d019816fcec40ff2'), \n('tony_stark', 'tony.stark@example.com', 'scrypt:32768:8:1$61OfDa7X1yqcVC37$c9da94064c61c46a71cea1d1ebd161cd63150f6668e26c54e6f3de02a197841501620419d97219cc2a6087279cf6ff17483ab5e9a62999901953d86ca4a40f0d'), \n('chris_evans', 'chris.evans@example.com', 'scrypt:32768:8:1$jJarcDRVZ9BB0drh$dce199c34ac2166e5ef61fcb94887d4550472f9925c3b2886cadfee6c866dd9b3b11780101c0e6d394f7ac665dab51df80fd97b317ced71494b01c03f5533eed'), \n('harry_potter', 'harry.potter@example.com', 'scrypt:32768:8:1$DJ6tmu41VcIdAjKW$e11bbdb13a51a1521eb0d5835d750f9d8feced451f7e32b717c772ae5d4e8723a2ab6a055a94251fd9e40f9ec961e8d9faecf148d964926ad431cbcb77352c6e'), \n('james_bond', 'james.bond@example.com', 'scrypt:32768:8:1$mqLUxyWbp87cchHA$6189059f6be8add9161250a758509f36064f91222b3a0f86d1a656cf9f8492ef4df4e582f480d7905e06bf8295c4c4a3ef08e5fb7587c79b3b3ff43bf91ac594');",
-                        "CopyCode": "INSERT INTO Users (username, email, password_hash) \nVALUES \n('john_doe', 'john.doe@example.com', 'scrypt:32768:8:1$zuQhyeNXzf7H365N$3bc7b087d3d68d33b8ac72823cbe5fbb19f046c405177fa036d8cf0e691fe400e37222e3a55474d4b3fbcd10c6b9f30dc441c2656f24034c44a3734544bae22a'),\n('jane_smith', 'jane.smith@example.com', 'scrypt:32768:8:1$5yu7lFgr2igBvpQu$2142e8af9464b0b84a66b056fe5e99096694857bdaccceb58b1a0e6dbfe18efc2aac2bdd2410d6af14992e279810e32cab32b2a560e3a6e42cee836081a42ce8'), \n('alice_jones', 'alice.jones@example.com', 'scrypt:32768:8:1$EmSwLgvWpdRTmb4A$6a5490351c01147afe2fd860557e954c8aefee97850044d1066e3b4b2da8f14ee47217bb3fbfca778e4633f287c2e2d7b4d4f6b83ec433fce3b450a6d924084b'),\n('michael_jordan', 'michael.jordan@example.com', 'scrypt:32768:8:1$WPQ2jPm3lqRktjL9$64d9153e8fe7d3d415a509fa0faf8c09a09ee1cfea81dc186d3cca9f6461e64d2718bfc0b6af863ebbee4d4edbfdab0d94cefd0760e86132d019816fcec40ff2'), \n('tony_stark', 'tony.stark@example.com', 'scrypt:32768:8:1$61OfDa7X1yqcVC37$c9da94064c61c46a71cea1d1ebd161cd63150f6668e26c54e6f3de02a197841501620419d97219cc2a6087279cf6ff17483ab5e9a62999901953d86ca4a40f0d'), \n('chris_evans', 'chris.evans@example.com', 'scrypt:32768:8:1$jJarcDRVZ9BB0drh$dce199c34ac2166e5ef61fcb94887d4550472f9925c3b2886cadfee6c866dd9b3b11780101c0e6d394f7ac665dab51df80fd97b317ced71494b01c03f5533eed'), \n('harry_potter', 'harry.potter@example.com', 'scrypt:32768:8:1$DJ6tmu41VcIdAjKW$e11bbdb13a51a1521eb0d5835d750f9d8feced451f7e32b717c772ae5d4e8723a2ab6a055a94251fd9e40f9ec961e8d9faecf148d964926ad431cbcb77352c6e'), \n('james_bond', 'james.bond@example.com', 'scrypt:32768:8:1$mqLUxyWbp87cchHA$6189059f6be8add9161250a758509f36064f91222b3a0f86d1a656cf9f8492ef4df4e582f480d7905e06bf8295c4c4a3ef08e5fb7587c79b3b3ff43bf91ac594');"
-                    }
-                },
-                {
-                    "id": 30,
-                    "instruction": "Now your Tags table.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "INSERT INTO Tags (name)\nVALUES \n('Work'),\n('Personal'),\n('Travel'),\n('Food'),\n('Books');",
-                        "CopyCode": "INSERT INTO Tags (name)\nVALUES \n('Work'),\n('Personal'),\n('Travel'),\n('Food'),\n('Books');"
-                    }
-                },
-                {
-                    "id": 31,
-                    "instruction": "Now your Notes table.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "INSERT INTO Notes (title, content, user_id)\nVALUES \n('Meeting Notes', 'Discussed project milestones and deadlines.', 1),\n('Shopping List', 'Eggs, Milk, Bread, Butter', 1),\n('Daily Journal', 'Today I worked on my project and had a great lunch.', 1),\n('Recipe Ideas', 'Spaghetti Carbonara, Grilled Chicken, Caesar Salad', 1),\n('Books to Read', 'The Great Gatsby, 1984, To Kill a Mockingbird', 1),\n('Travel Plans', 'Flight to NYC on Monday, Hotel reservation at Grand Hotel.', 2);",
-                        "CopyCode": "INSERT INTO Notes (title, content, user_id)\nVALUES \n('Meeting Notes', 'Discussed project milestones and deadlines.', 1),\n('Shopping List', 'Eggs, Milk, Bread, Butter', 1),\n('Daily Journal', 'Today I worked on my project and had a great lunch.', 1),\n('Recipe Ideas', 'Spaghetti Carbonara, Grilled Chicken, Caesar Salad', 1),\n('Books to Read', 'The Great Gatsby, 1984, To Kill a Mockingbird', 1),\n('Travel Plans', 'Flight to NYC on Monday, Hotel reservation at Grand Hotel.', 2);"
-                    }
-                },
-                {
-                    "id": 32,
-                    "instruction": "Now your Note_tags table.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "customsql",
-                        "DisplayLang": "SQL",
-                        "FormatCode": "INSERT INTO Note_Tags (note_id, tag_id)\nVALUES \n(1, 1),\n(2, 2),\n(3, 2),\n(4, 4),\n(5, 5),\n(6, 3);",
-                        "CopyCode": "INSERT INTO Note_Tags (note_id, tag_id)\nVALUES \n(1, 1),\n(2, 2),\n(3, 2),\n(4, 4),\n(5, 5),\n(6, 3);"
-                    }
-                },
-                {
-                    "id": 33,
-                    "instruction": "If you were to run your Rest Api and Frontend right now you would probably get the following CORS Error.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "DisplayLang": "CORS Error Message",
-                        "FormatCode": "Access to XMLHttpRequest at 'http://127.0.0.1:5000/users/login' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-                        "CopyCode": "Access to XMLHttpRequest at 'http://127.0.0.1:5000/users/login' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource."
-                    }
-                },
-                {
-                    "id": 34,
-                    "instruction": "To avoid this open your \"Notes-Rest-API\" and go to \"app.py\" in the top-most directory. We're going to replace the line below.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Python",
-                        "DisplayLang": "Line to Replace",
-                        "FormatCode": "CORS(app, resources={r'/*': {'origins': '*'}})",
-                        "CopyCode": "CORS(app, resources={r'/*': {'origins': '*'}})"
-                    }
-                },
-                {
-                    "id": 35,
-                    "instruction": "Now open your terminal and run the following commands. Copy and record the links that are output from them.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend\nnpm run dev\ncd ~\n\n\ncd Notes-Rest-Api\nsource venv/bin/activate\nflask run",
-                        "CopyCode": "cd Notes-Frontend\nnpm run dev\ncd ~\n\n\ncd Notes-Rest-Api\nsource venv/bin/activate\nflask run"
-                    }
-                },
-                {
-                    "id": 36,
-                    "instruction": "Close your terminal and go back to app.py. Replace the line from step 33 with the following line. The origin links should be your Frontend and Rest Api links.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Python",
-                        "FormatCode": "CORS(app, resources={r'/*': {'origins': [\n    'http://127.0.0.1:5000',\n    'http://localhost:5173',\n    'http://localhost:5174'\n]}})",
-                        "CopyCode": "CORS(app, resources={r'/*': {'origins': [\n    'http://127.0.0.1:5000',\n    'http://localhost:5173',\n    'http://localhost:5174'\n]}})"
-                    }
-                },
-                {
-                    "id": 37,
-                    "instruction": "Now close your broswer and open a new one. We're now going to run our Rest API. The CORS policy should now work."
-                },
-                {
-                    "id": 38,
-                    "instruction": "Open a terminal and run your Rest API.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Rest-Api\nsource venv/bin/activate\nflask run",
-                        "CopyCode": "cd Notes-Rest-Api\nsource venv/bin/activate\nflask run"
-                    }
-                },
-                {
-                    "id": 39,
-                    "instruction": "Leave the other terminal running, but open another one. Run your frontend and open the link in your broswer",
+                    "instruction": "",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "",
-                        "FormatCode": "cd Notes-Frontend\nnpm run dev",
-                        "CopyCode": "cd Notes-Frontend\nnpm run dev"
+                        "FormatCode": "",
+                        "CopyCode": ""
                     }
                 },
                 {
-                    "id": 40,
-                    "instruction": "Sign in with this test user.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "DisplayLang": "User Credentials",
-                        "FormatCode": "username: john_doe\npassword: password1",
-                        "CopyCode": "username: john_doe\npassword: password1"
-                    }
-                },
-                {
-                    "id": 41,
-                    "instruction": "You can See changes to your User table using the following commands",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "psql -U postgres\n\\c notesapp_db notes_app_user\nSELECT user_id, username, email, created_at FROM Users;",
-                        "CopyCode": "psql -U postgres\n\\c notesapp_db notes_app_user\nSELECT user_id, username, email, created_at FROM Users;"
-                    }
-                },
-                {
-                    "id": 42,
-                    "instruction": "You should now be done creating the frontend. Push your changes to Github. We'll implement testing in the next section.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend\ngit add .\ngit commit -m \"Implemented Frontend\"\ngit push",
-                        "CopyCode": "cd Notes-Frontend\ngit add .\ngit commit -m \"Implemented Frontend\"\ngit push"
-                    }
+                    "id": 2,
+                    "instruction": ""
                 }
             ]
         },
@@ -1829,128 +1240,11 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "Create a testing foler in your project and add the necessary files",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend \ntouch jest.config.cjs\ntouch babel.config.cjs\nmkdir src/testing\ntouch src/testing/sign-in.test.js",
-                        "CopyCode": "cd Notes-Frontend \ntouch jest.config.cjs\ntouch babel.config.cjs\nmkdir src/testing\ntouch src/testing/sign-in.test.js"
-                    }
+                    "instruction": ""
                 },
                 {
                     "id": 2,
-                    "instruction": "Install jest in your project",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom\nnpm install --save-dev jest-html-reporter",
-                        "CopyCode": "npm install --save-dev jest @vue/test-utils @vue/vue3-jest babel-jest @babel/core @babel/preset-env\nnpm install jest-environment-jsdom\nnpm install --save-dev jest-html-reporter"
-                    }
-                },
-                {
-                    "id": 3,
-                    "instruction": "Run the following commands so that you won't get an error about how Punycode is depricated.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "nvm install 20.5.1\nnvm use 20.5.1",
-                        "CopyCode": "nvm install 20.5.1\nnvm use 20.5.1"
-                    }
-                },
-                {
-                    "id": 4,
-                    "instruction": "Open the \"jest.config.cjs\" file and paste in the following code. ",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n reporters: [\n  \"default\", \n  [\"jest-html-reporter\", {\n    pageTitle: \"Test Report\",\n    outputPath: \"test-report.html\",\n    includeFailureMsg: true,\n    }]\n  ]\n};\n",
-                        "CopyCode": "module.exports = {\n  moduleFileExtensions: ['js', 'json', 'vue'],\n  transform: {\n    '^.+\\\\.vue$': '@vue/vue3-jest',\n    '^.+\\\\.js$': 'babel-jest',\n  },\n  testMatch: [\n    '**/tests/**/*.spec.(js|jsx|ts|tsx)',\n    '**/?(*.)+(spec|test).[jt]s?(x)',\n  ],\n  testEnvironment: 'jsdom',\n  transformIgnorePatterns: [\n    '/node_modules/',\n  ],\n  testEnvironmentOptions: {\n    customExportConditions: [\"node\", \"node-addons\"],\n },\n reporters: [\n  \"default\", \n  [\"jest-html-reporter\", {\n    pageTitle: \"Test Report\",\n    outputPath: \"test-report.html\",\n    includeFailureMsg: true,\n    }]\n  ]\n};\n"
-                    }
-                },
-                {
-                    "id": 5,
-                    "instruction": "Open the \"babel.config.js\" file and paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "module.exports = {\n  presets: [\n    ['@babel/preset-env', { targets: { node: 'current' } }],\n  ],\n};",
-                        "CopyCode": "module.exports = {\n  presets: [\n    ['@babel/preset-env', { targets: { node: 'current' } }],\n  ],\n};"
-                    }
-                },
-                {
-                    "id": 6,
-                    "instruction": "Open your \"Package.json\" file. Add the following \"test\" attribute in the \"scripts\" array.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "JSON",
-                        "FormatCode": "\"scripts\": {\n  \"test\": \"jest\"\n},",
-                        "CopyCode": "\"scripts\": {\n  \"test\": \"jest\"\n},"
-                    }
-                },
-                {
-                    "id": 7,
-                    "instruction": "Now go to \"src/testing\" and open \"sign-in.test.js\". Paste in the following code.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Javascript",
-                        "FormatCode": "import { shallowMount } from '@vue/test-utils';\nimport { createRouter, createWebHistory } from 'vue-router';\nimport { createPinia, setActivePinia } from 'pinia';\nimport SignInView from '../../src/views/SignIn.vue';\n\n\nconst router = createRouter({\n  history: createWebHistory(),\n  routes: [\n    { path: '/', component: SignInView },\n  ],\n});\n\ndescribe('SignIn Component', () => {\n  beforeEach(() => {\n    setActivePinia(createPinia());\n  });\n\n  it('should render correctly', async () => {\n    const wrapper = shallowMount(SignInView, {\n      global: {\n        plugins: [router, createPinia()],\n      },\n    });\n\n    await router.isReady();\n\n    expect(wrapper.exists()).toBe(true);\n  });\n});",
-                        "CopyCode": "import { shallowMount } from '@vue/test-utils';\nimport { createRouter, createWebHistory } from 'vue-router';\nimport { createPinia, setActivePinia } from 'pinia';\nimport SignInView from '../../src/views/SignIn.vue';\n\n\nconst router = createRouter({\n  history: createWebHistory(),\n  routes: [\n    { path: '/', component: SignInView },\n  ],\n});\n\ndescribe('SignIn Component', () => {\n  beforeEach(() => {\n    setActivePinia(createPinia());\n  });\n\n  it('should render correctly', async () => {\n    const wrapper = shallowMount(SignInView, {\n      global: {\n        plugins: [router, createPinia()],\n      },\n    });\n\n    await router.isReady();\n\n    expect(wrapper.exists()).toBe(true);\n  });\n});"
-                    }
-                },
-                {
-                    "id": 8,
-                    "instruction": "Go to your terminal and run your test",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "cd Notes-Frontend \nnpm test",
-                        "CopyCode": "cd Notes-Frontend \nnpm test"
-                    }
-                },
-                {
-                    "id": 9,
-                    "instruction": "Open your test-report.html file using the following command.",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "Command",
-                        "FormatCode": "open test-report.html",
-                        "CopyCode": "open test-report.html"
-                    }
-                },
-                {
-                    "id": 10,
-                    "instruction": "You now should be done setting up the project. We'll deploy it to Amazon Web Services in the &Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services&[DeployPostLink] instruction set."
-                }
-            ]
-        },
-        {
-            "Info": [
-                {
-                    "title": "CSC 450 Workflow",
-                    "desc": "Explanation of CSC 450 Workflow."
-                }
-            ],
-            "Instructions": [
-                {
-                    "id": 1,
-                    "instruction": "The Git workflow is a somewhat big part of the project."
-                },
-                {
-                    "id": 2,
-                    "instruction": "Go (here)[/CompSci/GitHub] to see a description and the commands for the CSC 450 workflow"
-                },
-                {
-                    "id": 3,
-                    "instruction": "Let me know if you have any questions."
+                    "instruction": ""
                 }
             ]
         }
