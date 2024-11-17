@@ -59,8 +59,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "cd my-angular-project/src/app\nmkdir -p views components utils assets models\nng generate component components/RouterBtn\nng generate component views/Home\nng generate component views/SecondPage",
-                "CopyCode": "cd my-angular-project/src/app\nmkdir -p views components utils assets models\nng generate component components/RouterBtn\nng generate component views/Home\nng generate component views/SecondPage"
+                "FormatCode": "cd my-angular-project/src/app\nmkdir -p views components utils assets\nng generate component components/RouterBtn\nng generate component views/Home\nng generate component views/SecondPage",
+                "CopyCode": "cd my-angular-project/src/app\nmkdir -p views components utils assets\nng generate component components/RouterBtn\nng generate component views/Home\nng generate component views/SecondPage"
             }
         },
         {
@@ -205,7 +205,7 @@
         },
         {
             "id": 18,
-            "instruction": "I'd recommend deleting the \".git\" folder. You can use the \"Add Existing Folder To GitHub\" instructiosn from the (\"GitHub\")[/CompSci/GitHub] page.",
+            "instruction": "I'd recommend deleting the \".git\" folder. You can use the \"Add Existing Folder To GitHub\" instructions from the (\"GitHub\")[/CompSci/GitHub] page.",
             "Code": {
                 "Name": "",
                 "Description": "",

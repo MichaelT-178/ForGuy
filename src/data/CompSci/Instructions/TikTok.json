@@ -90,7 +90,7 @@
         },
         {
             "id": 9,
-            "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" simply try rerunning the program.",
+            "instruction": "If you're getting an error that starts with \"Error: SyntaxError: Unexpected end of JSON input\" try rerunning the program.",
             "Code": {
                 "Name": "",
                 "Description": "",

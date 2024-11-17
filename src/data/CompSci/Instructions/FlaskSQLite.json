@@ -356,6 +356,90 @@
                 "FormatCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n    app = Flask(__name__)\n    app.config.from_object(Config)\n\n    CORS(app, resources={r'/*': {'origins': ['http://localhost:5173',\n\t\t\t\t\t     'http://127.0.0.1:5173']}})\n    init_db(app)\n\n    app.register_blueprint(routes_blueprint)\n    return app\n\nif __name__ == '__main__':\n    app = create_app()\n    app.run(debug=True)\n",
                 "CopyCode": "from flask import Flask\nfrom db import init_db\nfrom routes import routes_blueprint\nfrom flask_cors import CORS\nfrom config import Config\n\ndef create_app():\n\tapp = Flask(__name__)\n\tapp.config.from_object(Config)\n\n\tCORS(app, resources={r'/*': {'origins': '*'}})\n\tinit_db(app)\n\n\tapp.register_blueprint(routes_blueprint)\n\treturn app\n\nif __name__ == '__main__':\n\tapp = create_app()\n\tapp.run(debug=True)"
             }
+        },
+        {
+            "id": 33,
+            "instruction": "If your language percentages are wrong on Github you can fix them using steps 34-40."
+        },
+        {
+            "id": 34,
+            "instruction": "Add a .gitattributes to your project",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite\ntouch .gitattributes",
+                "CopyCode": "cd flask_and_sqlite\ntouch .gitattributes"
+            }
+        },
+        {
+            "id": 35,
+            "instruction": "Open your \"flask_and_sqlite\" folder go to the \".gitattributes\" file and add the following line.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": ".gitattribute",
+                "FormatCode": "*.html linguist-vendored",
+                "CopyCode": "*.html linguist-vendored"
+            }
+        },
+        {
+            "id": 36,
+            "instruction": "Push your changes to Github.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push",
+                "CopyCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push"
+            }
+        },
+        {
+            "id": 37,
+            "instruction": "Go back to the \".gitattributes\" file and add the following value.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": ".gitattribute",
+                "FormatCode": "*.css linguist-vendored",
+                "CopyCode": "*.css linguist-vendored"
+            }
+        },
+        {
+            "id": 38,
+            "instruction": "Push your changes to Github.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push",
+                "CopyCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push"
+            }
+        },
+        {
+            "id": 39,
+            "instruction": "Go back to the \".gitattributes\" file and add the following value.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": ".gitattribute",
+                "FormatCode": "*.js linguist-vendored",
+                "CopyCode": "*.js linguist-vendored"
+            }
+        },
+        {
+            "id": 40,
+            "instruction": "Push your changes to Github. Refresh the repository page to see your results. It should fix your Github language percentages.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push",
+                "CopyCode": "cd flask_and_sqlite\ngit add .\ngit commit -m \"Added gitattribute\"\ngit push"
+            }
         }
     ]
 }

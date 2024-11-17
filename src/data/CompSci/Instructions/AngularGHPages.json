@@ -1,0 +1,19 @@
+{
+    "Info": [
+        {
+            "title": "Deploy an Angular Project to GitHub Pages",
+            "desc": "Explains how to deploy an Angular project to Github Pages.",
+            "ref": "angular-gh-pages"
+        }
+    ],
+    "Instructions": [
+        {
+            "id": 1,
+            "instruction": "Before you start, complete the &How to Setup an Angular Project&[AngularGHPagesLink] instruction set."
+        },
+        {
+            "id": 2,
+            "instruction": "A lot of this information comes from [here](https://youtu.be/F3HbnbT1Maw?si=U5gVLscVwG8dqt-c)."
+        }
+    ]
+}

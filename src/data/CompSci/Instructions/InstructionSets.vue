@@ -6,6 +6,7 @@ import SetupAngular from './SetupAngular.json';
 import TemplatesFolder from './TemplatesFolder.json';
 import GithubPages from './GithubPages.json';
 import ViteGHPages from './ViteGHPages.json';
+import AngularGHPages from './AngularGHPages.json';
 import IntellijJavaFX from './IntellijJavaFX.json';
 import EclipseJavaFX from './EclipseJavaFX.json';
 import SQLite3 from './SQLite3.json';
@@ -59,6 +60,7 @@ export const AllSets = [
     TemplatesFolder,
     GithubPages,
     ViteGHPages,
+    AngularGHPages,
     IntellijJavaFX,
     EclipseJavaFX,
     SQLite3,

@@ -225,370 +225,377 @@
     },
     {
         "id": 33,
+        "Emoji": "📦",
+        "EmojiDescription": "package box",
+        "MenuName": "Deploy an Angular Project to GitHub Pages",
+        "Link": "/CompSci/SetupProjects/angular-gh-pages"
+    },
+    {
+        "id": 34,
         "Emoji": "☁️",
         "EmojiDescription": "Cloud computing AWS",
         "MenuName": "How to Setup an Amazon Web Services Account",
         "Link": "/CompSci/SetupProjects/aws"
     },
     {
-        "id": 34,
+        "id": 35,
         "Emoji": "🐳",
         "EmojiDescription": "Whale containers",
         "MenuName": "How to Install and Setup Docker",
         "Link": "/CompSci/SetupProjects/docker"
     },
     {
-        "id": 35,
+        "id": 36,
         "Emoji": "🧪",
         "EmojiDescription": "chemistry tube chemicals science UI Framework database full-stack full stack development app",
         "MenuName": "How to Make a Simple REST Api using Vue, Flask and SQLite3",
         "Link": "/CompSci/SetupProjects/flask-sqlite3"
     },
     {
-        "id": 36,
+        "id": 37,
         "Emoji": "🐍",
         "EmojiDescription": "Snake UI Framework Database full-stack full stack development app",
         "MenuName": "Deploy the Vue, Flask and SQLite3 app to PythonAnywhere",
         "Link": "/CompSci/SetupProjects/deploy-sqlite"
     },
     {
-        "id": 37,
+        "id": 38,
         "Emoji": "🧰",
         "EmojiDescription": "tool box Databases framework UI full stack full-stack development app",
         "MenuName": "How to Make a Complex Rest API using Vue, Flask and PostgreSQL",
         "Link": "/CompSci/SetupProjects/flask-PostgreSQL"
     },
     {
-        "id": 38,
+        "id": 39,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Databases framework UI full stack full-stack development app AWS",
         "MenuName": "Deploy the Vue, Flask and PostgreSQL app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-PostgreSQL"
     },
     {
-        "id": 39,
+        "id": 40,
         "Emoji": "🍃",
         "EmojiDescription": "Leaves falling Databases UI framework full-stack full stack development app",
         "MenuName": "How to Make a Simple REST Api using React, Spring Boot and H2",
         "Link": "/CompSci/SetupProjects/react-spring"
     },
     {
-        "id": 40,
+        "id": 41,
         "Emoji": "🦸🏻‍♂️",
         "EmojiDescription": "Superhero Databases UI framework full stack full-stack development app",
         "MenuName": "Deploy the React, Spring Boot and H2 app to Heroku",
         "Link": "/CompSci/SetupProjects/deploy-spring"
     },
     {
-        "id": 41,
+        "id": 42,
         "Emoji": "🗄️",
         "EmojiDescription": "storage file cabinet Databases UI framework full stack full-stack development app",
         "MenuName": "How to Make a Complex REST Api using React, Spring Boot and MySQL",
         "Link": "/CompSci/SetupProjects/complex-mysql"
     },
     {
-        "id": 42,
+        "id": 43,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Databases UI framework full stack full-stack development AWS",
         "MenuName": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-mysql"
     },
     {
-        "id": 43,
+        "id": 44,
         "Emoji": "💎",
         "EmojiDescription": "diamond train Databases UI framework full stack full-stack development",
         "MenuName": "How to Make a Simple Ruby on Rails App",
         "Link": "/CompSci/SetupProjects/ruby-on-rails"
     },
     {
-        "id": 44,
+        "id": 45,
         "Emoji": "🤠",
         "EmojiDescription": "python snake cowboy",
         "MenuName": "How to Make a Complex Rest API using Angular, Django and PostgreSQL",
         "Link": "/CompSci/SetupProjects/django-PostgreSQL"
     },
     {
-        "id": 45,
+        "id": 46,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Amazon Web Services AWS",
         "MenuName": "Deploy the Angular, Django and PostgreSQL app to Amazon Web Services",
         "Link": "/CompSci/SetupProjects/deploy-Django"
     },
     {
-        "id": 46,
+        "id": 47,
         "Emoji": "✈️",
         "EmojiDescription": "airplane fast CSC 331",
         "MenuName": "How to Setup a JavaFX Project (Intellij IDEA)",
         "Link": "/CompSci/SetupProjects/intellij"
     },
     {
-        "id": 47,
+        "id": 48,
         "Emoji": "🌑",
         "EmojiDescription": "Dark moon night CSC 331",
         "MenuName": "How to Setup a JavaFX Project (Eclipse)",
         "Link": "/CompSci/SetupProjects/eclipse"
     },
     {
-        "id": 48,
+        "id": 49,
         "Emoji": "🌎",
         "EmojiDescription": "earth global establish",
         "MenuName": "How to Setup Cisco Secure Client and a VPN",
         "Link": "/CompSci/SetupProjects/cisco"
     },
     {
-        "id": 49,
+        "id": 50,
         "Emoji": "🐘",
         "EmojiDescription": "elephant CSC 455 CSC 355",
         "MenuName": "How to Setup a PHP and MySQL Project for UNCW",
         "Link": "/CompSci/SetupProjects/php"
     },
     {
-        "id": 50,
+        "id": 51,
         "Emoji": "🎥",
         "EmojiDescription": "camera video film dance music",
         "MenuName": "How to Setup TikTok Downloader",
         "Link": "/CompSci/SetupProjects/tiktok"
     },
     {
-        "id": 51,
+        "id": 52,
         "Emoji": "📺",
         "EmojiDescription": "television video",
         "MenuName": "How to Setup YouTube Downloader",
         "Link": "/CompSci/SetupProjects/youtube"
     },
     {
-        "id": 52,
+        "id": 53,
         "Emoji": "🔍",
         "EmojiDescription": "detective search magnifying glass",
         "MenuName": "How to Setup a Google API Project",
         "Link": "/CompSci/SetupProjects/google-api"
     },
     {
-        "id": 53,
+        "id": 54,
         "Emoji": "📖",
         "EmojiDescription": "read book novel",
         "MenuName": "How to Setup a Reddit API Project",
         "Link": "/CompSci/SetupProjects/reddit-api"
     },
     {
-        "id": 54,
+        "id": 55,
         "Emoji": "🎧",
         "EmojiDescription": "headphones music",
         "MenuName": "How to Setup a Spotify API Project",
         "Link": "/CompSci/SetupProjects/spotify-api"
     },
     {
-        "id": 55,
+        "id": 56,
         "Emoji": "💬",
         "EmojiDescription": "Speech bubble talk speak",
         "MenuName": "How to Setup an OpenAI API Project",
         "Link": "/CompSci/SetupProjects/openai-api"
     },
     {
-        "id": 56,
+        "id": 57,
         "Emoji": "📊",
         "EmojiDescription": "chart graph column graph bar graph data",
         "MenuName": "How to Setup a LinkedIn API Project",
         "Link": "/CompSci/SetupProjects/linkedin-api"
     },
     {
-        "id": 57,
+        "id": 58,
         "Emoji": "🤖",
         "EmojiDescription": "robot",
         "MenuName": "How to Create a Reddit Bot",
         "Link": "/CompSci/SetupProjects/reddit-bot"
     },
     {
-        "id": 58,
+        "id": 59,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Amazon Web Services",
         "MenuName": "How to Deploy a Reddit Bot on AWS",
         "Link": "/CompSci/SetupProjects/reddit-bot-aws"
     },
     {
-        "id": 59,
+        "id": 60,
         "Emoji": "🐦",
         "EmojiDescription": "bird pigeon songbird sparrow",
         "MenuName": "How to Setup an iOS app with SwiftUI and Firebase",
         "Link": "/CompSci/SetupProjects/swift-firebase"
     },
     {
-        "id": 60,
+        "id": 61,
         "Emoji": "🏎️",
         "EmojiDescription": "Racecar Swift logo",
         "MenuName": "How to Setup SwiftData in a SwiftUI project",
         "Link": "/CompSci/SetupProjects/swift-data"
     },
     {
-        "id": 61,
+        "id": 62,
         "Emoji": "📱",
         "EmojiDescription": "phone",
         "MenuName": "How to Run an iOS app in Developer Mode",
         "Link": "/CompSci/SetupProjects/developer-mode"
     },
     {
-        "id": 62,
+        "id": 63,
         "Emoji": "🧑🏻‍🚀",
         "EmojiDescription": "astronaut space",
         "MenuName": "How to Setup and Use Postman",
         "Link": "/CompSci/SetupProjects/postman"
     },
     {
-        "id": 63,
+        "id": 64,
         "Emoji": "💾",
         "EmojiDescription": "Floppy disk hard disk",
         "MenuName": "Interact with a Flash Drive Using Python",
         "Link": "/CompSci/SetupProjects/flash-drive"
     },
     {
-        "id": 64,
+        "id": 65,
         "Emoji": "📡",
         "EmojiDescription": "satellite",
         "MenuName": "How to Setup a Python Server",
         "Link": "/CompSci/SetupProjects/python-server"
     },
     {
-        "id": 65,
+        "id": 66,
         "Emoji": "⚙️",
         "EmojiDescription": "gear",
         "MenuName": "How to Setup a Node Server",
         "Link": "/CompSci/SetupProjects/node-server"
     },
     {
-        "id": 66,
+        "id": 67,
         "Emoji": "📬",
         "EmojiDescription": "mailbox",
         "MenuName": "How to Setup Email.js in a Project",
         "Link": "/CompSci/SetupProjects/emailjs"
     },
     {
-        "id": 67,
+        "id": 68,
         "Emoji": "💰",
         "EmojiDescription": "money bag wealth",
         "MenuName": "Setup Payments in an App using Stripe",
         "Link": "/CompSci/SetupProjects/payments"
     },
     {
-        "id": 68,
+        "id": 69,
         "Emoji": "🚀",
         "EmojiDescription": "Rocket spaceship Amazon Web Services",
         "MenuName": "Deploy a Node Server on AWS",
         "Link": "/CompSci/SetupProjects/node-server-aws"
     },
     {
-        "id": 69,
+        "id": 70,
         "Emoji": "⏰",
         "EmojiDescription": "alarm clock",
         "MenuName": "How to Create a Cron Job on macOS",
         "Link": "/CompSci/SetupProjects/cronjob"
     },
     {
-        "id": 70,
+        "id": 71,
         "Emoji": "🍎",
         "EmojiDescription": "apple",
         "MenuName": "How to Interact with iCloud using Python",
         "Link": "/CompSci/SetupProjects/pyicloud"
     },
     {
-        "id": 71,
+        "id": 72,
         "Emoji": "🔐",
         "EmojiDescription": "Lock and key and lock",
         "MenuName": "How to Setup OAuth Authentication",
         "Link": "/CompSci/SetupProjects/oauth"
     },
     {
-        "id": 72,
+        "id": 73,
         "Emoji": "📊",
         "EmojiDescription": "chart graph column graph bar graph data",
         "MenuName": "How to Populate a SQLite3 Database",
         "Link": "/CompSci/SetupProjects/basic-sqlite"
     },
     {
-        "id": 73,
+        "id": 74,
         "Emoji": "📈",
         "EmojiDescription": "chart graph data statistics line graph trends",
         "MenuName": "How to Use Excel with Python",
         "Link": "/CompSci/SetupProjects/excel"
     },
     {
-        "id": 74,
+        "id": 75,
         "Emoji": "🌈",
         "EmojiDescription": "Rainbow",
         "MenuName": "How to Add a Language to the Prism Library",
         "Link": "/CompSci/SetupProjects/prism"
     },
     {
-        "id": 75,
+        "id": 76,
         "Emoji": "🐍",
         "EmojiDescription": "Snake",
         "MenuName": "How to Setup an Executable Python Script",
         "Link": "/CompSci/SetupProjects/executable-python"
     },
     {
-        "id": 76,
+        "id": 77,
         "Emoji": "🖥️",
         "EmojiDescription": "Computer desktop",
         "MenuName": "Comp Sci Tips",
         "Link": "/CompSci/CompSciTips"
     },
     {
-        "id": 77,
+        "id": 78,
         "Emoji": "🧘🏻",
         "EmojiDescription": "Meditate meditation zen calm",
         "MenuName": "General Tips",
         "Link": "/Other/GeneralTips"
     },
     {
-        "id": 78,
+        "id": 79,
         "Emoji": "📲",
         "EmojiDescription": "phone arrow phone with arrow",
         "MenuName": "Apps To Download",
         "Link": "/Other/AppsToDownload"
     },
     {
-        "id": 79,
+        "id": 80,
         "Emoji": "❤️",
         "EmojiDescription": "Heart",
         "MenuName": "CS Stuff I Like",
         "Link": "/Other/CompSciStuff"
     },
     {
-        "id": 80,
+        "id": 81,
         "Emoji": "⌨️",
         "EmojiDescription": "Keyboard",
         "MenuName": "Terminal Commands",
         "Link": "/Other/TerminalCommands"
     },
     {
-        "id": 81,
+        "id": 82,
         "Emoji": "⚡️",
         "EmojiDescription": "lightning bolt fast",
         "MenuName": "Keyboard Shortcuts",
         "Link": "/Other/KeyboardShortcuts"
     },
     {
-        "id": 82,
+        "id": 83,
         "Emoji": "😂",
         "EmojiDescription": "Laughing face laughing emoji",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 83,
+        "id": 84,
         "Emoji": "📸",
         "EmojiDescription": "Camera",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"
     },
     {
-        "id": 84,
+        "id": 85,
         "Emoji": "✉️",
         "EmojiDescription": "Mail Email",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"
     },
     {
-        "id": 85,
+        "id": 86,
         "Emoji": "📜",
         "EmojiDescription": "Personal Use",
         "MenuName": "Format Code",

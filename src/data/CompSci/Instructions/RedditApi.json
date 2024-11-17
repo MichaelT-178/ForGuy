@@ -21,7 +21,15 @@
         },
         {
             "id": 4,
-            "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. "
+            "instruction": "In the \"name\" field type \"GeneralScript\". Then select the \"script\" radio button. ",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "name",
+                "FormatCode": "GeneralScript\n\n*Then select the \"script\" radio button.*",
+                "CopyCode": "GeneralScript\n\n*Then select the \"script\" radio button.*"
+            }
         },
         {
             "id": 5,
@@ -37,7 +45,15 @@
         },
         {
             "id": 6,
-            "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\"."
+            "instruction": "You're app should now be created. Copy and record the name, client ID, secret, and redirect URL. Note the client ID is at the top under \"personal use script\".<br><br>NOTE: \"client id\" is the value under \"personal use script\" and \"GeneralScript\" at the top.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "DisplayLang": "Values",
+                "FormatCode": "* Copy and store these values somewhere *\n\nname: *Your app name*\nclient_id: *Your client id*\nsecret: *your secret*\nredirect_url: *redirect url*",
+                "CopyCode": "* Reddit App Values *\n\nname:\nclient_id:\nsecret:\nredirect_url:"
+            }
         },
         {
             "id": 7,
@@ -46,8 +62,8 @@
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "pip3 install praw",
-                "CopyCode": "pip3 install praw"
+                "FormatCode": "pip3 install praw\npip3 install termcolor",
+                "CopyCode": "pip3 install praw\npip3 install termcolor"
             }
         },
         {
@@ -63,18 +79,18 @@
         },
         {
             "id": 9,
-            "instruction": "Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials. Note that you don't have to include the \":{2FA-Code}\" part in your password if you don't use two-factor authentication. The 2FA-code should be the 6 digit code from your authenticator app. Go [here](https://www.reddit.com/prefs/apps) to find your credentials. Your \"CLIENT_ID\" is under \"personal use script\".",
+            "instruction": "Open your new \"reddit_api_script\" folder in VSCode.<br><br>Paste the following code in the \"script.py\" file. Replace the placeholders with your actual credentials.<br><br>NOTE: that you don't have to include the \":{2FA-Code}\" part in your password if you don't use two-factor authentication. The 2FA-code should be the 6 digit code from your authenticator app. Go [here](https://www.reddit.com/prefs/apps) to find your credentials. Your \"CLIENT_ID\" is under \"personal use script\". <br><br> I explain how to authenticate your 2FA-enabled app without having to change the code every time in the (How to Create a Reddit Bot)[/CompSci/SetupProjects/reddit-bot] instruction set.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Python",
-                "FormatCode": "import praw\n\nreddit = praw.Reddit(\n    client_id='YOUR_CLIENT_ID',\n    client_secret='YOUR_CLIENT_SECRET',\n    username='YOUR_REDDIT_USERNAME',\n    password=f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\n    user_agent='script by u/YOUR_REDDIT_USERNAME',\n)\n\nprint(f'Authenticated as: {reddit.user.me()}\\n')\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n    print(submission.title)",
-                "CopyCode": "import praw\n\nreddit = praw.Reddit(\n\tclient_id='YOUR_CLIENT_ID',\n\tclient_secret='YOUR_CLIENT_SECRET',\n\tusername='YOUR_REDDIT_USERNAME',\n\tpassword=f'YOUR_REDDIT_PASSWORD:{2FA-Code}',\n\tuser_agent='script by u/YOUR_REDDIT_USERNAME',\n)\n\nprint(f'Authenticated as: {reddit.user.me()}\\n')\n\nfor submission in reddit.subreddit('sports').hot(limit=10):\n\tprint(submission.title)"
+                "FormatCode": "import praw\nfrom prawcore.exceptions import ResponseException, OAuthException\nfrom termcolor import colored as c\n\n# Update this every time you run your script\nthe_2FA_code = \"2FA-CODE from Duo mobile\"\n\ntry:\n    reddit = praw.Reddit(\n        client_id='YOUR_CLIENT_ID',\n        client_secret='YOUR_CLIENT_SECRET',\n        username='YOUR_REDDIT_USERNAME',\n        password=f'YOUR_REDDIT_PASSWORD:{the_2FA_code}',\n        user_agent='script by u/YOUR_REDDIT_USERNAME',\n    )\n\n    print(c('\\nAuthenticated as: ', 'green'), end=\"\")\n\n    print(reddit.user.me())\n\n    print(c(\"\\nHere are the top 10 posts from /r/sports!\", 'blue'))\n\n    for submission in reddit.subreddit('sports').hot(limit=10):\n        print(submission.title)\n\nexcept OAuthException as e:\n    print(c('\\nUpdate your 2FA code!', 'red'))\nexcept ResponseException as e:\n    print(c('\\nUpdate your 2FA code!', 'red'))",
+                "CopyCode": "import praw\nfrom prawcore.exceptions import ResponseException, OAuthException\nfrom termcolor import colored as c\n\n# Update this every time you run your script\nthe_2FA_code = \"2FA-CODE from Duo mobile\"\n\ntry:\n    reddit = praw.Reddit(\n        client_id='YOUR_CLIENT_ID',\n        client_secret='YOUR_CLIENT_SECRET',\n        username='YOUR_REDDIT_USERNAME',\n        password=f'YOUR_REDDIT_PASSWORD:{the_2FA_code}',\n        user_agent='script by u/YOUR_REDDIT_USERNAME',\n    )\n\n    print(c('\\nAuthenticated as: ', 'green'), end=\"\")\n\n    print(reddit.user.me())\n\n    print(c(\"\\nHere are the top 10 posts from /r/sports!\", 'blue'))\n\n    for submission in reddit.subreddit('sports').hot(limit=10):\n        print(submission.title)\n\nexcept OAuthException as e:\n    print(c('\\nUpdate your 2FA code!', 'red'))\nexcept ResponseException as e:\n    print(c('\\nUpdate your 2FA code!', 'red'))"
             }
         },
         {
             "id": 10,
-            "instruction": "Run your script to test it out. Note every time you run your script you'll have to update the 2FA-code.",
+            "instruction": "Run your script to test it out. NOTE: every time you run your script you'll have to update the 2FA-code.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -82,6 +98,10 @@
                 "FormatCode": "python3 script.py",
                 "CopyCode": "python3 script.py"
             }
+        },
+        {
+            "id": 10,
+            "instruction": "If you came here from the \"How to Create a Reddit Bot\" instruction set you can use this (link)[/CompSci/SetupProjects/reddit-bot] to go back."
         }
     ]
 }

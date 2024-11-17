@@ -11,36 +11,1092 @@
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "Amplify, RDS, Zappa",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
-                    }
+                    "instruction": "Before doing any of this make sure you've completed the &How to Setup an Amazon Web Services Account&[AWSLink] instruction set."
                 },
                 {
                     "id": 2,
-                    "instruction": ""
+                    "instruction": "Before doing any of this make sure you've completed the &How to Make a Complex Rest API using Angular, Django and PostgreSQL&[DjangoPostLink] instruction set."
+                },
+                {
+                    "id": 3,
+                    "instruction": "You'll also need to complete the &How to Make a Complex Rest API using Angular, Django and PostgreSQL&[DjangoPostLink] instruction set."
+                },
+                {
+                    "id": 4,
+                    "instruction": "After you've completed those two instruction sets, you'll be ready to start this one."
+                },
+                {
+                    "id": 5,
+                    "instruction": "Let's get started!"
                 }
             ]
         },
         {
             "Info": [
                 {
-                    "title": "",
-                    "desc": ""
+                    "title": "Services We'll Use",
+                    "desc": "These are the AWS services and technologies we'll use to deploy our app."
                 }
             ],
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": ""
+                    "instruction": "<u><b>RDS</b></u> - How we'll deploy our Postgres database. Stands for Relational Database Service. The service can be used to set up, operate, and scale relational databases in the cloud."
                 },
                 {
                     "id": 2,
-                    "instruction": ""
+                    "instruction": "<u><b>Lambda</b></u> - How we'll deploy our Rest API. It allows you to execute your code in response to specific events or triggers."
+                },
+                {
+                    "id": 3,
+                    "instruction": "<u><b>API Gateway</b></u> - How we'll create a link that be can used in the frontend to communicate with our backend on Lambda."
+                },
+                {
+                    "id": 4,
+                    "instruction": "<u><b>S3</b></u> - Where we'll store our Django Rest Api code and frontend code. It will be used to create the http link for our application. S3 stands for simple storage service."
+                },
+                {
+                    "id": 5,
+                    "instruction": "<u><b>Amplify</b></u> - The service we'll use to deploy our frontend Angular code."
+                },
+                {
+                    "id": 6,
+                    "instruction": "<u><b>Zappa</b></u> - A python library we'll use to help deploy our Flask app to AWS lambda. It makes deploying the Flask code very simple, fast and easy."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "How to Deploy your PostgreSQL database",
+                    "desc": "Explains how to deploy the Postgres database to an RDS instance."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Most of this information comes from this [video](https://youtu.be/I_fTQTsz2nQ?si=kQkplyTGndT9_w8-) and this [video](https://youtu.be/0A-5ITILrMA?si=TfzDqNBls635t-ZT)."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Go to your [AWS Console](https://aws.amazon.com/console/). Press the \"Sign In to the Console\" button in the top-right."
+                },
+                {
+                    "id": 3,
+                    "instruction": "You'll be taken to a new screen. Press the \"Sign in using root user email\" button. Then log in using your credentials, then press \"Next\"."
+                },
+                {
+                    "id": 4,
+                    "instruction": "You should now be on the \"Console Home\" page. Go the search bar and type \"RDS\" and then click on the result that says \"RDS\"."
+                },
+                {
+                    "id": 5,
+                    "instruction": "Scroll down a little to the \"Create database\" section. Press the orange \"Create database\" button."
+                },
+                {
+                    "id": 6,
+                    "instruction": "On the \"Create database\" page select the following options.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Choose a database creation method \n - Standard create\n\n\nEngine Options \n - Engine type: PostgreSQL \n - Leave everything else default\n\n\nTemplates\n  - Free tier\n\nSettings \n  - DB instance identifier: notes-db-instance\n  - Master username: create a username (remember it)\n  - Credentials management: Self managed\n  - Master password: Create a password (remember it)\n  - Confirm master password: Same as master password\n\n\nInstance configuration\n  - Leave everything default\n  - DB instance class: Burstable classes (includes t classes)\n  - db.t4g.micro\n\n\nStorage \n   - Storage type: General Purpose SSD (gp3)\n   - Allocated storage: 20\n   - Open \"Storage autoscaling\" \n   - Uncheck \"Enable storage autoscaling\"\n\nConnectivity\n   - Leave everything default except \"Public access\"\n   - Compute resource: Don't connect to an EC2 compute resource \n   - Virtual private cloud (VPC): Default VPC (vpc-131498791374)\n   - DB subnet group: default \n   - Public access: Yes\n   - VPC security group (firewall): Choose existing\n   - Existing VPC security groups: default\n   - Availability Zone: No preference \n   - Additional configuration: 5432\n\n\nDatabase authentication\n   - Password authentication \n\nMonitoring\n   - Leave everything default\n   - Retention period for Performance Insights: 7 days (free tier)\n   - AWS KMS key: (default) aws/rds\n\n\nAdditional configuration\n   - Initial database name: initial_db\n   - DB parameter group: default.postgres16\n   - Uncheck \"Enable automated backups\"\n   - Keep \"Enable encryption\" checked.\n   - Keep \"Enable auto minor version upgrade\" checked\n   - Keep \"Maintenance window\" selected as \"No preference\"\n\n\nEstimated Monthly costs\n   - Look at the estimated monthly costs it should be around $15 dollars\n   - Note it should NOT cost you nearly that much. It will probably be basically free if you don't use it.\n\n\n*Do NOT Press the \"Create database\" button yet*\n\n",
+                        "CopyCode": "Choose a database creation method \n - Standard create\n\n\nEngine Options \n - Engine type: PostgreSQL \n - Leave everything else default\n\n\nTemplates\n  - Free tier\n\nSettings \n  - DB instance identifier: notes-db-instance\n  - Master username: create a username (remember it)\n  - Credentials management: Self managed\n  - Master password: Create a password (remember it)\n  - Confirm master password: Same as master password\n\n\nInstance configuration\n  - Leave everything default\n  - DB instance class: Burstable classes (includes t classes)\n  - db.t4g.micro\n\n\nStorage \n   - Storage type: General Purpose SSD (gp3)\n   - Allocated storage: 20\n   - Open \"Storage autoscaling\" \n   - Uncheck \"Enable storage autoscaling\"\n\nConnectivity\n   - Leave everything default except \"Public access\"\n   - Compute resource: Don't connect to an EC2 compute resource \n   - Virtual private cloud (VPC): Default VPC (vpc-131498791374)\n   - DB subnet group: default \n   - Public access: Yes\n   - VPC security group (firewall): Choose existing\n   - Existing VPC security groups: default\n   - Availability Zone: No preference \n   - Additional configuration: 5432\n\n\nDatabase authentication\n   - Password authentication \n\nMonitoring\n   - Leave everything default\n   - Retention period for Performance Insights: 7 days (free tier)\n   - AWS KMS key: (default) aws/rds\n\n\nAdditional configuration\n   - Initial database name: initial_db\n   - DB parameter group: default.postgres16\n   - Uncheck \"Enable automated backups\"\n   - Keep \"Enable encryption\" checked.\n   - Keep \"Enable auto minor version upgrade\" checked\n   - Keep \"Maintenance window\" selected as \"No preference\"\n\n\nEstimated Monthly costs\n   - Look at the estimated monthly costs it should be around $15 dollars\n   - Note it should NOT cost you nearly that much. It will probably be basically free if you don't use it.\n\n\n*Do NOT Press the \"Create database\" button yet*\n\n"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "Copy and record the values of \"Master username\" and \"Master password\" in settings. Also copy and record the value of \"Initial database name\" in the \"Additional configuration\" section. After you've copied the values press the \"Create database\" button."
+                },
+                {
+                    "id": 8,
+                    "instruction": "If you get a pop-up saying \"Suggested add-ons for notes-db-instance\" look at your options, then close it."
+                },
+                {
+                    "id": 9,
+                    "instruction": "It will take your database a few minutes to be created. You should see a blue section that says \"Creating database notes-db-instance\" at the top. When it's done it will become green and say \"Successfully created database notes-db-instance\"."
+                },
+                {
+                    "id": 10,
+                    "instruction": "Once your database has been successfully created. Click on the blue \"notes-db-instance\" link in the \"DB identifier\" column of the table. Note that the status should be \"Available\" when it's done."
+                },
+                {
+                    "id": 11,
+                    "instruction": "You should be taken to a page titled \"notes-db-instance\". Scroll down a little to the \"Connectivity & security\" section. In the section you should see the left column titled \"Endpoint & port\". Copy and record the value of \"Endpoint\". Also copy and record the value of \"Port\"."
+                },
+                {
+                    "id": 12,
+                    "instruction": "Now in the right column called \"Security\" in the same \"Connectivity & security\" section click on the blue link under \"VPC security groups\". You'll be taken to a new page."
+                },
+                {
+                    "id": 13,
+                    "instruction": "Select the check box for the one item in the table. It should be on the left."
+                },
+                {
+                    "id": 14,
+                    "instruction": "Underneath the table you should now see 4 tabs. Click the \"Inbound rules\" tab."
+                },
+                {
+                    "id": 15,
+                    "instruction": "Select the check box in the \"Inbound rules\" table. Then click \"Edit inbound rules\" on the right."
+                },
+                {
+                    "id": 16,
+                    "instruction": "If there are already any rules in the table, delete them (unless you need them in the future)."
+                },
+                {
+                    "id": 17,
+                    "instruction": "In the \"Edit inbound rules\" page, press the \"Add rule\" button. Below are the rules values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 10\nSource: Anywhere-IPv4. It will add 0.0.0.0/0 under the search.",
+                        "CopyCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 10\nSource: Anywhere-IPv4. It will add 0.0.0.0/0 under the search."
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "Press the \"Add rule\" button again. Below are the rules values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 10\nSource: Anywhere-IPv6. It will add ::/0 under the search.",
+                        "CopyCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 10\nSource: Anywhere-IPv6. It will add ::/0 under the search."
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "Scroll down and press \"Save rules\"."
+                },
+                {
+                    "id": 20,
+                    "instruction": "Now go back to the [RDS Dashboard](https://console.aws.amazon.com/rds/home) Console."
+                },
+                {
+                    "id": 21,
+                    "instruction": "On the left-hand side press \"Databases\". Click your DB identifier in the table. You should now be back on the right page."
+                },
+                {
+                    "id": 22,
+                    "instruction": "Now open your \"Django-Rest-Api\" folder in VSCode."
+                },
+                {
+                    "id": 23,
+                    "instruction": "Go to the \".gitignore\" file in the root directory of your project. Remove the \"django_rest_api/settings.py\" line. Keep everything else the way it is.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": ".gitignore",
+                        "FormatCode": "notes_app/management/commands/populate_data.py\n\n.env",
+                        "CopyCode": "notes_app/management/commands/populate_data.py\n\n.env"
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "Now go to the django_rest_api folder and open the settings.py file. Copy and record the value of SECRET_KEY. Then replace the SECRET_KEY line with the following code.<br><br>NOTE: Delete the key once you're done so that you don't accidentally push it to Github later.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "# REPLACE THIS LINE\nSECRET_KEY = 'django-insecure-wxs)9hgfsjgfs92yr7928jkafhFJKHAK'\n\n# REPLACE IT WITH THIS LINE\nSECRET_KEY = os.getenv('SECRET_KEY')",
+                        "CopyCode": "# REPLACE THIS LINE\nSECRET_KEY = 'django-insecure-wxs)9hgfsjgfs92yr7928jkafhFJKHAK'\n\n# REPLACE IT WITH THIS LINE\nSECRET_KEY = os.getenv('SECRET_KEY')"
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "Scroll down in the settings.py file. Replace the ALLOWED_HOSTS list with the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "# REPLACE THIS LINE\nALLOWED_HOSTS = []\n\n# REPLACE IT WITH THIS LINE\nALLOWED_HOSTS = [ os.getenv('ALLOWED_HOST') ]",
+                        "CopyCode": "# REPLACE THIS LINE\nALLOWED_HOSTS = []\n\n# REPLACE IT WITH THIS LINE\nALLOWED_HOSTS = [ os.getenv('ALLOWED_HOST') ]"
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "Scroll down in the settings.py file. Replace the CORS_ALLOWED_ORIGINS list with the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "# REPLACE THIS LIST \nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:4200\"\n]\n\n# REPLACE IT WITH THIS CODE \nfrontend_url = os.getenv('FRONTEND_URL')\n\nCORS_ALLOWED_ORIGINS = [\n    frontend_url\n]\n",
+                        "CopyCode": "# REPLACE THIS LIST \nCORS_ALLOWED_ORIGINS = [\n    \"http://localhost:4200\"\n]\n\n# REPLACE IT WITH THIS CODE \nfrontend_url = os.getenv('FRONTEND_URL')\n\nCORS_ALLOWED_ORIGINS = [\n    frontend_url\n]\n"
+                    }
+                },
+                {
+                    "id": 27,
+                    "instruction": "Now scroll down and replace the DATABASES dictionary with the following code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('DEFAULT_NAME'),\n        'USER': os.getenv('DEFAULT_USER'),\n        'PASSWORD': os.getenv('DEFAULT_PASSWORD'),\n        'HOST': os.getenv('DEFAULT_HOST'),\n        'PORT': os.getenv('PORT')\n    },\n    'test': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('TEST_NAME'),\n        'USER': os.getenv('TEST_USER'),\n        'PASSWORD': os.getenv('TEST_PASSWORD'),\n        'HOST': os.getenv('TEST_HOST'),  \n        'PORT': os.getenv('PORT')\n    },\n    'production': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('PROD_NAME'),\n        'USER': os.getenv('PROD_USER'),\n        'PASSWORD': os.getenv('PROD_PASSWORD'),\n        'HOST': os.getenv('PROD_HOST'),  \n        'PORT': os.getenv('PORT')\n    },\n}\n",
+                        "CopyCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('DEFAULT_NAME'),\n        'USER': os.getenv('DEFAULT_USER'),\n        'PASSWORD': os.getenv('DEFAULT_PASSWORD'),\n        'HOST': os.getenv('DEFAULT_HOST'),\n        'PORT': os.getenv('PORT')\n    },\n    'test': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('TEST_NAME'),\n        'USER': os.getenv('TEST_USER'),\n        'PASSWORD': os.getenv('TEST_PASSWORD'),\n        'HOST': os.getenv('TEST_HOST'),  \n        'PORT': os.getenv('PORT')\n    },\n    'production': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': os.getenv('PROD_NAME'),\n        'USER': os.getenv('PROD_USER'),\n        'PASSWORD': os.getenv('PROD_PASSWORD'),\n        'HOST': os.getenv('PROD_HOST'),  \n        'PORT': os.getenv('PORT')\n    },\n}\n"
+                    }
+                },
+                {
+                    "id": 28,
+                    "instruction": "Now go to your .env file in the root directory of your project. Delete the files contents and paste in the following code. Replace the SECRET_KEY and PROD values with your actual credentials.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "fxml",
+                        "DisplayLang": "Env",
+                        "FormatCode": "# DB_ENV can be default, test, or production\nDB_ENV=production\nFRONTEND_URL=http://localhost:4200\nSECRET_KEY=YOUR-SECRET-KEY\n\nDEFAULT_NAME=notesapp_db \nDEFAULT_USER=notes_app_user \nDEFAULT_PASSWORD=notes_team_user_123\nDEFAULT_HOST=localhost   \n\nTEST_NAME=notesapp_test_db\nTEST_USER=notes_app_test_user\nTEST_PASSWORD=notes_test_user1\nTEST_HOST=localhost\n\nPROD_NAME=YOUR-INITIAL-DB\nPROD_USER=YOUR-RDS-USERNAME\nPROD_PASSWORD=YOUR-RDS-PASSWORD\nPROD_HOST=YOUR-ENDPOINT-LINK\n\nPORT=5432\n\nALLOWED_HOST=127.0.0.1",
+                        "CopyCode": "# DB_ENV can be default, test, or production\nDB_ENV=production\nFRONTEND_URL=http://localhost:4200\nSECRET_KEY=YOUR-SECRET-KEY\n\nDEFAULT_NAME=notesapp_db \nDEFAULT_USER=notes_app_user \nDEFAULT_PASSWORD=notes_team_user_123\nDEFAULT_HOST=localhost   \n\nTEST_NAME=notesapp_test_db\nTEST_USER=notes_app_test_user\nTEST_PASSWORD=notes_test_user1\nTEST_HOST=localhost\n\nPROD_NAME=YOUR-INITIAL-DB\nPROD_USER=YOUR-RDS-USERNAME\nPROD_PASSWORD=YOUR-RDS-PASSWORD\nPROD_HOST=YOUR-ENDPOINT-LINK\n\nPORT=5432\n\nALLOWED_HOST=127.0.0.1"
+                    }
+                },
+                {
+                    "id": 29,
+                    "instruction": "Now open a new terminal and mitigate your database changes using the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\npython3 manage.py migrate\nclear",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\npython3 manage.py migrate\nclear"
+                    }
+                },
+                {
+                    "id": 30,
+                    "instruction": "Create the superuser of your production database.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "python3 manage.py createsuperuser\n\n* Enter/create your credentials when prompted *",
+                        "CopyCode": "python3 manage.py createsuperuser\n\n* Enter/create your credentials when prompted *"
+                    }
+                },
+                {
+                    "id": 31,
+                    "instruction": "Run your Rest Api using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "python3 manage.py runserver",
+                        "CopyCode": "python3 manage.py runserver"
+                    }
+                },
+                {
+                    "id": 32,
+                    "instruction": "Now open the link in your browser with the \"test_db_connection\" endpoint.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Link",
+                        "FormatCode": "http://127.0.0.1:8000/test_db_connection/",
+                        "CopyCode": "http://127.0.0.1:8000/test_db_connection/"
+                    }
+                },
+                {
+                    "id": 33,
+                    "instruction": "Now go back to your terminal and run the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\n\npython3 manage.py populate_data --database=production",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\n\npython3 manage.py populate_data --database=production"
+                    }
+                },
+                {
+                    "id": 34,
+                    "instruction": "Now commit your changes to Github.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "deactivate\n\ngit add .\ngit commit -m \"Settings.py prod db\"\ngit push",
+                        "CopyCode": "deactivate\n\ngit add .\ngit commit -m \"Settings.py prod db\"\ngit push"
+                    }
+                },
+                {
+                    "id": 35,
+                    "instruction": "Congratulations! The Django-Rest-Api folder should now be prepared to deploy on AWS."
+                },
+                {
+                    "id": 36,
+                    "instruction": "Now we'll connect to our database in VSCode. If you haven't done so already, download the following two extensions.<br><br>• [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)<br><br>• [SQLTools PostgreSQL/Cockroach Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg)<br><br>"
+                },
+                {
+                    "id": 37,
+                    "instruction": "Now go to VSCode. On the left-hand side your should see a cylinder icon. This is the symbol for SQLTools. Click on it."
+                },
+                {
+                    "id": 38,
+                    "instruction": "At the top hover over where it says \"Connections\". Press the cylinder icon with a + sign in it."
+                },
+                {
+                    "id": 39,
+                    "instruction": "In the \"Connection Assistant\" page, press the \"PostgreSQL\" option."
+                },
+                {
+                    "id": 40,
+                    "instruction": "In the \"Connection settings\" add the following values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Connection settings",
+                        "FormatCode": "Connection name: notes-test\n\nConnection group: *Leave blank*\n\nConnect using: Server and Port\n\nServer Address: The \"Endpoint\" address you copied in step 11\n\nPort: The \"Port\" address you copied in step 11\n\nDatabase*: initial_db (Or whatever you called your initial db)\n\nUsername*: Username from step 8\n\nPassword mode: Ask on connect\n\nSSL: Enabled\n\n* Uncheck rejectUnauthorized *\n\n* Scroll down *\n\nConnection Timeout: 10\n\nShow records default limit: 50\n\n* Press the \"Test Connection\" button on the right, and enter your database password in the field*\n\n* If it says \"Successfully connected!\" press the \"Save Connection\" button *\n",
+                        "CopyCode": "Connection name: notes-test\n\nConnection group: *Leave blank*\n\nConnect using: Server and Port\n\nServer Address: The \"Endpoint\" address you copied in step 11\n\nPort: The \"Port\" address you copied in step 11\n\nDatabase*: initial_db (Or whatever you called your initial db)\n\nUsername*: Username from step 8\n\nPassword mode: Ask on connect\n\nSSL: Enabled\n\n* Uncheck rejectUnauthorized *\n\n* Scroll down *\n\nConnection Timeout: 10\n\nShow records default limit: 50\n\n* Press the \"Test Connection\" button on the right, and enter your database password in the field*\n\n* If it says \"Successfully connected!\" press the \"Save Connection\" button *\n"
+                    }
+                },
+                {
+                    "id": 41,
+                    "instruction": "Just for future reference, this error is caused by SSL not being enabled.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Error",
+                        "FormatCode": "no pg_hba.conf entry for host \"71.143.122.48\", user \"postgres\", database \"initial_db\", no encryption",
+                        "CopyCode": "no pg_hba.conf entry for host \"71.143.122.48\", user \"postgres\", database \"initial_db\", no encryption"
+                    }
+                },
+                {
+                    "id": 42,
+                    "instruction": "Now press on the name of the database under \"Connections\". Enter your database password when prompted."
+                },
+                {
+                    "id": 43,
+                    "instruction": "You should now be in a \"notes-test.session.sql\" file. Make sure you see the \"Detach file from notes-test | Run on active connection | select block\" codelens in the file. If you don't, make sure you don't have \"editor.codeLens\" set to false in your VSCode settings.json file."
+                },
+                {
+                    "id": 44,
+                    "instruction": "If \"editor.codeLens\" is set to false and you want to keep it that way, you can run the file with the following steps. Press \"command + shift + p\" and type \"SQLTools Connection: Run this file\"."
+                },
+                {
+                    "id": 45,
+                    "instruction": "Now you can run the following sql queries to make sure the tables were populated. Press \"Run on active connection\" to execute your queries.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SELECT * FROM auth_user;\nSELECT * FROM notes_app_tag;\nSELECT * FROM notes_app_note;\nSELECT * FROM notes_app_notetag;",
+                        "CopyCode": "SELECT * FROM auth_user;\nSELECT * FROM notes_app_tag;\nSELECT * FROM notes_app_note;\nSELECT * FROM notes_app_notetag;"
+                    }
+                },
+                {
+                    "id": 46,
+                    "instruction": "Congratulations! If the SQL queries returned populated tables you should be complete with the RDS deployment!"
+                },
+                {
+                    "id": 47,
+                    "instruction": "For future reference, to drop all the tables in your production database you can use the following query.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "DO $$ \nDECLARE \n    r RECORD;\nBEGIN\n    FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = 'public') LOOP\n        EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(r.tablename) || ' CASCADE';\n    END LOOP;\nEND $$;",
+                        "CopyCode": "DO $$ \nDECLARE \n    r RECORD;\nBEGIN\n    FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = 'public') LOOP\n        EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(r.tablename) || ' CASCADE';\n    END LOOP;\nEND $$;"
+                    }
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Deploy your Django App to AWS Lambda",
+                    "desc": "Explains how to deploy your Django app to AWS Lambda and an API Gateway using Zappa."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Open your \"Django-Rest-Api\" folder in VSCode. Go to your .gitignore file. Add the following file path.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": ".gitignore value",
+                        "FormatCode": "zappa_settings.json",
+                        "CopyCode": "zappa_settings.json"
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": "Now activate the venv and install zappa. Zappa is the tool we'll use to deploy our rest api to AWS Lambda.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\npip3 install zappa\npip3 install setuptools",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\npip3 install zappa\npip3 install setuptools"
+                    }
+                },
+                {
+                    "id": 3,
+                    "instruction": "While your virtual environment is still activated, create a \"requirements.txt\" file that will contain all the projects dependencies.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "pip3 freeze > requirements.txt",
+                        "CopyCode": "pip3 freeze > requirements.txt"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "Run the following command to initialize zappa in your project. See the next step after you run it.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "zappa init",
+                        "CopyCode": "zappa init"
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "After you run the \"zappa init\" command you'll get prompted to answer questions. Just press the \"return\" key for all of them. When asked the question \"Does this look okay\", press the 'y' key. It will generate a \"zappa_settings.json\" file. Press \"command + k\" to clear your terminal."
+                },
+                {
+                    "id": 6,
+                    "instruction": "Go to your \"zappa_settings.json\" file and ensure everything was created correctly. Leave your terminal running and the virtual environment activated.<br><br>In the \"zappa_settings.json\" file, add the following data under the \"s3_bucket\" attribute within the \"dev\" attribute. Replace the placeholders with your actual credentials.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "\"environment_variables\": {\n    \"DB_ENV\": \"production\",\n    \"FRONTEND_URL\": \"http://localhost:4200\",\n    \"SECRET_KEY\": \"YOUR-SECRET-KEY\",\n    \"PORT\": \"5432\",\n    \"PROD_NAME\": \"initial_db\",\n    \"PROD_USER\": \"YOUR-USERNAME\",\n    \"PROD_PASSWORD\": \"YOUR-PASSWORD\",\n    \"PROD_HOST\": \"YOUR-ENDPOINT-URL\",\n    \"ALLOWED_HOST\": \"127.0.0.1\"\n}",
+                        "CopyCode": "        \"environment_variables\": {\n            \"DB_ENV\": \"production\",\n            \"FRONTEND_URL\": \"http://localhost:4200\",\n            \"SECRET_KEY\": \"YOUR-SECRET-KEY\",\n            \"PORT\": \"5432\",\n            \"PROD_NAME\": \"initial_db\",\n            \"PROD_USER\": \"YOUR-USERNAME\",\n            \"PROD_PASSWORD\": \"YOUR-PASSWORD\",\n            \"PROD_HOST\": \"YOUR-ENDPOINT-URL\",\n\t    \"ALLOWED_HOST\": \"127.0.0.1\"\n        }"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "In your \"zappa_settings.json\" file add \".env\" to the exclude list.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "\"exclude\": [\n    \".env\",\n    \"boto3\",\n    \"dateutil\",\n    \"botocore\",\n    \"s3transfer\",\n    \"concurrent\"\n],\n",
+                        "CopyCode": "        \"exclude\": [\n            \".env\",\n            \"boto3\",\n            \"dateutil\",\n            \"botocore\",\n            \"s3transfer\",\n            \"concurrent\"\n        ],"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "Go back to your terminal and run the following command to deploy your app as an AWS Lambda function. This make take a minute.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa deploy dev",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa deploy dev"
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "If you run into any errors you can use the following command to see your logs.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "zappa tail",
+                        "CopyCode": "zappa tail"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "If your API deploys successfully it should say \"Deployment complete\" and output an api gateway url link. NOTE: If you open the link in a browser you'll get an error saying the following.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Error Message",
+                        "FormatCode": "Invalid HTTP_HOST header: 'qtmaltaz3p.execute-api.us-east-1.amazonaws.com'. You may need to add 'qtmaltaz3p.execute-api.us-east-1.amazonaws.com' to ALLOWED_HOSTS.",
+                        "CopyCode": "Invalid HTTP_HOST header: 'qtmaltaz3p.execute-api.us-east-1.amazonaws.com'. You may need to add 'qtmaltaz3p.execute-api.us-east-1.amazonaws.com' to ALLOWED_HOSTS."
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "Go to the \"zappa_settings.json\" file. In the environemnt_variables attribute change the value of the endpoint from the error message in your browser. IT SHOULD NOT HAVE HTTPS:// at the beginning or /dev at the end. Make sure to use your actual endpoint link, not the one from this example.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "# Change this line \n\"ALLOWED_HOST\": \"127.0.0.1\"\n\n# To your endpoint link\n\"ALLOWED_HOST\": \"YOUR-ENDPOINT-LINK\"",
+                        "CopyCode": "# Change this line \n\"ALLOWED_HOST\": \"127.0.0.1\"\n\n# To your endpoint link\n\"ALLOWED_HOST\": \"YOUR-ENDPOINT-LINK\""
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "After you do that save the file, and then run the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "zappa update dev",
+                        "CopyCode": "zappa update dev"
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "If the command from the previous step is successful it should say \"Your updated Zappa deployment is live!\" and output the link. Open the new link in your browser. If it says \"Hello from your Django Rest Api\" it means your deployment was successful."
+                },
+                {
+                    "id": 14,
+                    "instruction": "Copy and record the https link that was output. Store it somewhere you'll remember. You can also see it by running the following commands in your terminal. It will be the value of the green \"API Gateway URL\" key.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa status",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa status"
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "Congratulations! You have successfully deployed your Rest Api url."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Deploy Your Angular Frontend",
+                    "desc": "Explains how to deploy your Angular frontend."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "First, setup the files in your \"Angular-Frontend\" folder using the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\nng generate environments",
+                        "CopyCode": "cd Angular-Frontend\nng generate environments"
+                    }
+                },
+                {
+                    "id": 2,
+                    "instruction": "The previous commnads will create a new \"environments\" folder in the src folder. There should be two files, an \"environment.development.ts\" file and an \"environment.ts\" file. You're \"angular.json\" file will also be modified."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Add the paths to your \".gitignore\" file using the following command line arguments.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\necho \"\\nsrc/environments/environment.development.ts\" >> .gitignore\necho \"src/environments/environment.ts\" >> .gitignore",
+                        "CopyCode": "cd Angular-Frontend\necho \"\\nsrc/environments/environment.development.ts\" >> .gitignore\necho \"src/environments/environment.ts\" >> .gitignore"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "Go to your src folder and open the \"environment.development.ts\" file. Delete it's contents and paste in the following code. We're not really going to use this file in our code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "DisplayLang": "TypeScript",
+                        "FormatCode": "export const environment = {\n    baseUrl: 'http://127.0.0.1:8000'\n};",
+                        "CopyCode": "export const environment = {\n    baseUrl: 'http://127.0.0.1:8000'\n};"
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "Go to your src folder and open the \"environment.ts\" file. Delete it's contents and paste in the following code. We'll use this file to deploy our Amplify deployment. Replace \"YOUR-ZAPPA-LINK\" with the rest api link from the previous instructions.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "DisplayLang": "TypeScript",
+                        "FormatCode": "export const environment = {\n    baseUrl: 'YOUR-ZAPPA-LINK'\n};",
+                        "CopyCode": "export const environment = {\n    baseUrl: 'YOUR-ZAPPA-LINK'\n};"
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "Now go to src -> app -> lib and open the \"axios.service.ts\" file."
+                },
+                {
+                    "id": 7,
+                    "instruction": "In the \"axios.service.ts\" file, replace the baseURL line with the new environment variable one.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "DisplayLang": "TypeScript",
+                        "FormatCode": "// Add this import statement at the top\nimport { environment } from '../../environments/environment';\n\n\n// Replace this line\nprivate baseURL = \"http://127.0.0.1:8000\";\n\n// With this line\nprivate baseURL = environment.baseUrl;",
+                        "CopyCode": "// Add this import statement at the top\nimport { environment } from '../../environments/environment';\n\n\n// Replace this line\nprivate baseURL = \"http://127.0.0.1:8000\";\n\n// With this line\nprivate baseURL = environment.baseUrl;"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "You can run your website in configuration mode using the following commands. In your \"Django-Rest-Api\" folder go to the \".env\" file. Set the \"DB_ENV\" variable to \"default\" to use your local database.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\npython3 manage.py runserver\n\n\ncd Angular-Frontend\nng serve --configuration=development",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\npython3 manage.py runserver\n\n\ncd Angular-Frontend\nng serve --configuration=development"
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "You can run it production mode using the following two commands. This configuration uses your deployed rest api url. If any warnings are output, you can ignore them.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\nng serve --configuration=production",
+                        "CopyCode": "cd Angular-Frontend\nng serve --configuration=production"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "Downgrade the Node.js version to one that's fully supported by Angular CLI 18. Then reinstall the angular CLI.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\nnvm install 18\nnvm use 18\nnpm install -g @angular/cli",
+                        "CopyCode": "cd Angular-Frontend\nnvm install 18\nnvm use 18\nnpm install -g @angular/cli"
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "Now change your package.json file to use \"build\": \"ng build --configuration production\". You can make the change using the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\nsed -i '' 's/\"build\": \"ng build\"/\"build\": \"ng build --configuration production\"/' package.json",
+                        "CopyCode": "cd Angular-Frontend\nsed -i '' 's/\"build\": \"ng build\"/\"build\": \"ng build --configuration production\"/' package.json"
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "After you've test it, you can push your changes to Github.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Angular-Frontend\ngit add .\ngit commit -m \"Added environments\"\ngit push",
+                        "CopyCode": "cd Angular-Frontend\ngit add .\ngit commit -m \"Added environments\"\ngit push"
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "Now we'll start deploying our application to AWS Amplify."
+                },
+                {
+                    "id": 14,
+                    "instruction": "A lot of the information comes from this [video](https://youtu.be/lHgxFfioaR4?si=7oJyZgo-xO-J_5uf&t=145)."
+                },
+                {
+                    "id": 15,
+                    "instruction": "Start by going to the [Amplify](https://console.aws.amazon.com/amplify/home) console dashboard."
+                },
+                {
+                    "id": 16,
+                    "instruction": "Press the purple \"Deploy an app\" button."
+                },
+                {
+                    "id": 17,
+                    "instruction": "You'll be taken to a page titled \"Start building with Amplify\". Just select \"Github\" as your git provider and then press the Next button in the bottom right.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Deploy your app\nGithub \n\n* Press Next *\n",
+                        "CopyCode": "Deploy your app\nGithub \n\n* Press Next *\n"
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "If you've already done steps 18-20 before you can just press the \"Update GitHub permissions\" button. Then choose your account. Then scroll to the \"Repository access\" section. Add your repository and then press the \"Save\" button. Then skip to step 22."
+                },
+                {
+                    "id": 19,
+                    "instruction": "A pop up screen will appear that says AWS Amplify wants certain permissions to your Github account. Verify that it says the right Github account and then press the \"Authorize AWS Amplify (us-east-1)\" button. If it's the wrong Github account press \"Cancel\" and go to [github.com](https://github.com/). Sign out of the account you don't want to use and then sign into the account you do want to use and try again."
+                },
+                {
+                    "id": 20,
+                    "instruction": "It will ask you where you want to Install AWS Amplify (us-east-1). Select your Github account."
+                },
+                {
+                    "id": 21,
+                    "instruction": "You'll then be taken to a screen titled \"Install & Authorize AWS Amplify (us-east-1)\". I'd recommend selecting \"Only select repositories\" and then select the repositories you want AWS Amplify to have access to. Only choose your frontend repository. Then press \"Install & Authorize\"."
+                },
+                {
+                    "id": 22,
+                    "instruction": "Ignore the purple banner that says \"If you don't see your repository in the dropdown above, ensure the Amplify GitHub App has permissions to the repository. If your repository still doesn't appear, push a commit and click the refresh button.\"."
+                },
+                {
+                    "id": 23,
+                    "instruction": "In the field hat says \"Select a repository\" search for your frontend repository, select it, and then press the \"Next\" button. Refresh the page if you don't see your repository."
+                },
+                {
+                    "id": 24,
+                    "instruction": "You'll be taken to the \"App settings\" page. You can press the \"Edit YML file\" button to see your configurations if you want. You should probably leave everything default and press the \"Next\" button at the bottom.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "App name: Angular-Frontend\n\nBuild settings\nnpm run build: dist/angular-frontend \n\n* Press the Next button *\n",
+                        "CopyCode": "App name: Angular-Frontend\n\nBuild settings\nnpm run build: dist/angular-frontend \n\n* Press the Next button *\n"
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "On the \"Review\" page, review your settings, then scroll down and press the \"Save and deploy\" button."
+                },
+                {
+                    "id": 26,
+                    "instruction": "Wait for your app to be deployed and created. Give it like 2-5 minutes."
+                },
+                {
+                    "id": 27,
+                    "instruction": "Your build will fail. Click on the text that says \"Build\" with the time next to it. Its a drop down that will show the errors that occurred."
+                },
+                {
+                    "id": 28,
+                    "instruction": "To resolve these errors click on the purple \"Angular-Frontend\" text that's next to \"All apps\" at the top."
+                },
+                {
+                    "id": 29,
+                    "instruction": "On the left-hand side click on \"Hosting\". In the drop-down press \"Environment variable\"."
+                },
+                {
+                    "id": 30,
+                    "instruction": "Press the \"Manage variables\" button. Then press \"Add new\". Add the following environment variable, then press the \"Save\" button.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "DisplayLang": "Environment Variable",
+                        "FormatCode": "API_BASE_URL: YOUR-ZAPPA-AWS-LINK",
+                        "CopyCode": "API_BASE_URL: YOUR-ZAPPA-AWS-LINK"
+                    }
+                },
+                {
+                    "id": 31,
+                    "instruction": "Press the \"Edit\" button. Then in the amplify.yml text area add the following data. Then scroll down and press the \"Save\" button. The baseDirectory was changed to find the index.html file.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Yaml",
+                        "FormatCode": "version: 1\nfrontend:\n    phases:\n        preBuild:\n            commands:\n                - echo \"Installing Node.js version 20.11.1...\"\n                - nvm install 20.11.1\n                - nvm use 20.11.1\n                - echo \"Installing dependencies...\"\n                - npm ci --cache .npm --prefer-offline\n        build:\n            commands:\n                - echo \"Creating environment.ts file...\"\n                - mkdir -p src/environments\n                - >\n                  echo \"export const environment = { baseUrl: '${API_BASE_URL}' };\" > src/environments/environment.ts\n                - echo \"Building the project...\"\n                - npm run build\n    artifacts:\n        baseDirectory: dist/angular-frontend/browser\n        files:\n            - '**/*'\n    cache:\n        paths:\n            - '.npm/**/*'",
+                        "CopyCode": "version: 1\nfrontend:\n    phases:\n        preBuild:\n            commands:\n                - echo \"Installing Node.js version 20.11.1...\"\n                - nvm install 20.11.1\n                - nvm use 20.11.1\n                - echo \"Installing dependencies...\"\n                - npm ci --cache .npm --prefer-offline\n        build:\n            commands:\n                - echo \"Creating environment.ts file...\"\n                - mkdir -p src/environments\n                - >\n                  echo \"export const environment = { baseUrl: '${API_BASE_URL}' };\" > src/environments/environment.ts\n                - echo \"Building the project...\"\n                - npm run build\n    artifacts:\n        baseDirectory: dist/angular-frontend/browser\n        files:\n            - '**/*'\n    cache:\n        paths:\n            - '.npm/**/*'"
+                    }
+                },
+                {
+                    "id": 32,
+                    "instruction": "Just for future reference, this error is caused by \"/browser\" not being at the end of the baseDirectory.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "DisplayLang": "Error Message",
+                        "FormatCode": "!! no index.html detected in deploy folder: /codebuild/output/src1515189242/src/angular-frontend/dist/angular-frontend",
+                        "CopyCode": "!! no index.html detected in deploy folder: /codebuild/output/src1515189242/src/angular-frontend/dist/angular-frontend"
+                    }
+                },
+                {
+                    "id": 33,
+                    "instruction": "Press \"Overview\" on the left-hand side."
+                },
+                {
+                    "id": 34,
+                    "instruction": "Press on the \"main\" card."
+                },
+                {
+                    "id": 35,
+                    "instruction": "Press the \"Redeploy this version\" button. Wait like 2 minutes for it to be deployed."
+                },
+                {
+                    "id": 36,
+                    "instruction": "Open the link under \"Domain\" in your browser. It should show your website, but the backend should NOT work yet."
+                },
+                {
+                    "id": 37,
+                    "instruction": "Copy and record the domain link somewhere. We're going to use it in the next steps."
+                },
+                {
+                    "id": 38,
+                    "instruction": "Open your \"Django-Rest-Api\" folder in VSCode. Open the \"zappa_settings.json\" file."
+                },
+                {
+                    "id": 39,
+                    "instruction": "In the \"zappa_settings.json\" file change the \"FRONTEND_URL\" attributes value to be the amplify-domain-link.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "Change this line\n\"FRONTEND_URL\": \"http://localhost:4200\",\n\nTo this line\n\"FRONTEND_URL\": \"YOUR-AMPLIFY-DOMAIN-LINK\",",
+                        "CopyCode": "Change this line\n\"FRONTEND_URL\": \"http://localhost:4200\",\n\nTo this line\n\"FRONTEND_URL\": \"YOUR-AMPLIFY-DOMAIN-LINK\","
+                    }
+                },
+                {
+                    "id": 40,
+                    "instruction": "Open a new terminal and run the following commands to update your zappa link.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa update dev",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa update dev"
+                    }
+                },
+                {
+                    "id": 41,
+                    "instruction": "Now open your Amplify domain link in your browser. It should be fully functional now."
+                },
+                {
+                    "id": 42,
+                    "instruction": "Congratulations! You have successfully deployed your Angular app to Amplify."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Delete Your AWS Services",
+                    "desc": "Explains how to undeploy your project once you're done."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "First we'll delete our Amplify instance containing the deployed angular-frontend."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Go to the AWS [Amplify](https://console.aws.amazon.com/amplify/home) console dashboard."
+                },
+                {
+                    "id": 3,
+                    "instruction": "In the All apps click on the \"Angular-Frontend\" App name."
+                },
+                {
+                    "id": 4,
+                    "instruction": "You should now be in the \"Overview\" section. On the left-hand side, press the \"App settings\" option."
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the drop down press the \"General settings\" option."
+                },
+                {
+                    "id": 6,
+                    "instruction": "Scroll down to the \"Delete app\" section. Press the \"Delete app\" button. Type \"delete\" then press the \"Delete app\" button."
+                },
+                {
+                    "id": 7,
+                    "instruction": "You see a green success message and your amplify instance should've been successfully deleted."
+                },
+                {
+                    "id": 8,
+                    "instruction": "Now we'll undeploy our Django Rest api. It's pretty simple when you're using zappa."
+                },
+                {
+                    "id": 9,
+                    "instruction": "Open a new terminal and run the following commands. This will undeploy your rest api. It might take like 2 minutes. When it says \"Done!\" it means it was successfully undeployed.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa undeploy dev\n\n* Type 'y' when prompted. *",
+                        "CopyCode": "cd Django-Rest-Api\nsource venv/bin/activate\nzappa undeploy dev\n\n* Type 'y' when prompted. *"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "Now go to the [S3 console](https://console.aws.amazon.com/s3) dashboard."
+                },
+                {
+                    "id": 11,
+                    "instruction": "In the \"General purpose buckets\" table delete all rows that contain \"zappa\" in their name. Select them, then press the \"Delete\" button. Then confirm the deletion by entering the name in the field."
+                },
+                {
+                    "id": 12,
+                    "instruction": "Congratulations! You should have successfully undeployed your rest api."
+                },
+                {
+                    "id": 13,
+                    "instruction": "Now we'll delete our database."
+                },
+                {
+                    "id": 14,
+                    "instruction": "Go to the [RDS](https://console.aws.amazon.com/rds) console dashboard."
+                },
+                {
+                    "id": 15,
+                    "instruction": "On the left-hand side press \"Databases\"."
+                },
+                {
+                    "id": 16,
+                    "instruction": "In the \"Databases\" table selected the \"notes-db-instance\" row. Then press \"Actions\" and in the drop down press \"Delete\"."
+                },
+                {
+                    "id": 17,
+                    "instruction": "In the \"Delete notes-db-instance instance\" pop-up, uncheck the \"Create final snapshot\" box. Then check the acknowledgement box. Then type \"delete me\" and press the \"Delete\" button."
+                },
+                {
+                    "id": 18,
+                    "instruction": "Give your database like 5 minutes to be deleted. Once it's deleted you should see a green banner message saying something like \"Successfully deleted DB instance\"."
+                },
+                {
+                    "id": 19,
+                    "instruction": "Now we'll delete your local postgres databases."
+                },
+                {
+                    "id": 20,
+                    "instruction": "Open a new terminal and run the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "DisplayLang": "SQL Queries and Commands",
+                        "FormatCode": "psql -U postgres\nDROP DATABASE notesapp_db;\nDROP DATABASE notesapp_test_db;\n\n\\l \n\n* Make sure neither of those databases appear in the table * \n\n\\! clear",
+                        "CopyCode": "psql -U postgres\nDROP DATABASE notesapp_db;\nDROP DATABASE notesapp_test_db;\n\n\\l \n\n* Make sure neither of those databases appear in the table * \n\n\\! clear"
+                    }
+                },
+                {
+                    "id": 21,
+                    "instruction": "Now run the following command to see all your users.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "\\du",
+                        "CopyCode": "\\du"
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "Now delete all your users for this project. Then confirm they were deleted.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "DisplayLang": "SQL Queries and Commands",
+                        "FormatCode": "DROP ROLE notes_app_user;\nDROP ROLE notes_app_test_user;\n\\du",
+                        "CopyCode": "DROP ROLE notes_app_user;\nDROP ROLE notes_app_test_user;\n\\du"
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "Now exit postgres using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Postgres Command",
+                        "FormatCode": "exit",
+                        "CopyCode": "exit"
+                    }
+                },
+                {
+                    "id": 24,
+                    "instruction": "Now stop running postgres using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew services stop postgresql@15",
+                        "CopyCode": "brew services stop postgresql@15"
+                    }
+                },
+                {
+                    "id": 25,
+                    "instruction": "Now run the following command to ensure it stopped correctly. The \"Status\" of \"postgresql@15\" should be \"none\".",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew services list",
+                        "CopyCode": "brew services list"
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "If you want to delete your folders from Github do the following."
+                },
+                {
+                    "id": 27,
+                    "instruction": "Go to [github.com](https://github.com/) and on the left-hand side click the name of your project."
+                },
+                {
+                    "id": 28,
+                    "instruction": "In your repository press the \"Settings\" tab on the right with the gear icon next to it."
+                },
+                {
+                    "id": 29,
+                    "instruction": "Then scroll all the way down to the bottom and press \"Delete this repository\". Then follow the prompts."
+                },
+                {
+                    "id": 30,
+                    "instruction": "You can do this for both your frontend and Rest Api repositories."
+                },
+                {
+                    "id": 31,
+                    "instruction": "I do <b>NOT</b> recommend doing steps 30 - 33. The steps explain how to completely remove all files."
+                },
+                {
+                    "id": 32,
+                    "instruction": "To delete postgres from homebrew run the following commands. When you uninstall it, it might tell you that you can manually remove certain files. I would NOT recommend doing this.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "brew services stop postgresql@15\nbrew uninstall postgresql@15",
+                        "CopyCode": "brew services stop postgresql@15\nbrew uninstall postgresql@15"
+                    }
+                },
+                {
+                    "id": 33,
+                    "instruction": "Now confirm postgres is no longer installed by listing your programs and making sure it's not in the list anymore.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew list",
+                        "CopyCode": "brew list"
+                    }
+                },
+                {
+                    "id": 34,
+                    "instruction": "Remove configuration and data files using the following command. Make sure you want to delete all postgres data before running this command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "rm -rf /usr/local/var/postgresql@15",
+                        "CopyCode": "rm -rf /usr/local/var/postgresql@15"
+                    }
+                },
+                {
+                    "id": 35,
+                    "instruction": "You should now have successfully uninstalled postgres!"
+                },
+                {
+                    "id": 36,
+                    "instruction": "If you want to delete your folders from your computer entirely, do the following. I <b>SERIOUSLY</b> do NOT recommend doing this.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "rm -rf Angular-Frontend\nrm -rf Django-Rest-Api",
+                        "CopyCode": "rm -rf Angular-Frontend\nrm -rf Django-Rest-Api"
+                    }
                 }
             ]
         }

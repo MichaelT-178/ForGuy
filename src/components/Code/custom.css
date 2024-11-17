@@ -76,7 +76,8 @@ span.token.selector {
 }
 
 .token.comment,
-.token.html-comment {
+.token.html-comment,
+.token.fxml-comment {
     color: #5C6370
 }
 

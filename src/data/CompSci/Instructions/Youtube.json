@@ -31,18 +31,7 @@
         },
         {
             "id": 3,
-            "instruction": "Upgrade Homebrew to make sure everything's up to date.",
-            "Code": {
-                "Name": "",
-                "Description": "",
-                "Language": "Command",
-                "FormatCode": "brew upgrade",
-                "CopyCode": "brew upgrade"
-            }
-        },
-        {
-            "id": 4,
-            "instruction": "Start installing yt-downloader by running the following command.",
+            "instruction": "Start installing yt-downloader by running the following command. Enter your computer password when prompted.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -52,8 +41,8 @@
             }
         },
         {
-            "id": 5,
-            "instruction": "Finish installing yt-downloader with the following command",
+            "id": 4,
+            "instruction": "Finish installing yt-downloader with the following command. Enter your password when prompted.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -63,7 +52,7 @@
             }
         },
         {
-            "id": 6,
+            "id": 5,
             "instruction": "Install the \"ffmpeg\" library via Homebrew.",
             "Code": {
                 "Name": "",
@@ -74,7 +63,7 @@
             }
         },
         {
-            "id": 7,
+            "id": 6,
             "instruction": "Install \"yt-dlp\" via homebrew.",
             "Code": {
                 "Name": "",
@@ -85,14 +74,25 @@
             }
         },
         {
-            "id": 8,
-            "instruction": "Ensure that \"yt-dlp\" installed correctly.",
+            "id": 7,
+            "instruction": "Ensure that \"yt-dlp\" installed correctly. If it outputs a version, it means it was installed correctly.",
             "Code": {
                 "Name": "",
                 "Description": "",
                 "Language": "Command",
-                "FormatCode": "which yt-dlp",
-                "CopyCode": "which yt-dlp"
+                "FormatCode": "yt-dlp --version",
+                "CopyCode": "yt-dlp --version"
+            }
+        },
+        {
+            "id": 8,
+            "instruction": "If the yt-dlp command from the previous step gave you an error like \"ModuleNotFoundError: No module named 'yt_dlp'\", try running the following commands to fix it.<br><br>You can skip this step if you didn't get an error.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "rm /usr/local/bin/yt-dlp\nbrew link --overwrite yt-dlp\n\n# Check the version with the command below\nyt-dlp --version",
+                "CopyCode": "rm /usr/local/bin/yt-dlp\nbrew link --overwrite yt-dlp\n\n# Check the version with the command below\nyt-dlp --version"
             }
         },
         {
@@ -123,7 +123,66 @@
         },
         {
             "id": 12,
-            "instruction": "Create the following directories.",
+            "instruction": "Install and upgrade the certifi library.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "pip3 install --upgrade certifi",
+                "CopyCode": "pip3 install --upgrade certifi"
+            }
+        },
+        {
+            "id": 13,
+            "instruction": "Run the following command. Replace 3.13 with the actual version of python you have installed.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "/Applications/Python\\ 3.13/Install\\ Certificates.command",
+                "CopyCode": "/Applications/Python\\ 3.13/Install\\ Certificates.command"
+            }
+        },
+        {
+            "id": 14,
+            "instruction": "We'll have to modify the pytube package a little to get this to work."
+        },
+        {
+            "id": 15,
+            "instruction": "Start a python session and run the following lines to get the path to your pytube source code in pip.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "python3\nimport pytube\npytube.__file__\n\n* Copy and record the path that was output, don't include the single\n quotes or __init__.py at the end. *\n\nPress 'control + d' to exit the python session",
+                "CopyCode": "python3\nimport pytube\npytube.__file__\n\n* Copy and record the path that was output, don't include the single\n quotes or __init__.py at the end. *\n\nPress 'control + d' to exit the python session"
+            }
+        },
+        {
+            "id": 16,
+            "instruction": "Open the pytube folder in a text editor by using the path from the previous step. If you have the \"code\" vscode command installed you can open it using the following command. Replace the path with your actual pytube path.<br><br>NOTE: The path does NOT say \"__init__.py\" at the end.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Command",
+                "FormatCode": "code /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pytube/",
+                "CopyCode": "code /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pytube/"
+            }
+        },
+        {
+            "id": 17,
+            "instruction": "In the pytube folder, open the \"__main__.py\" file. Go to line 244 and basically just add the \"client='WEB'\" attribute at the end of the line. This [link](https://github.com/pytube/pytube/issues/1589#issuecomment-1545248602) is kind of where the solution came from. It's not the exact same.<br><br>Make sure to save the file when you're done. Then close the folder.",
+            "Code": {
+                "Name": "",
+                "Description": "",
+                "Language": "Python",
+                "FormatCode": "# Replace this line (244)\ninnertube = InnerTube(use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache)\n\n# With this line\ninnertube = InnerTube(use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache, client='WEB')\n",
+                "CopyCode": "# Replace this line (244)\ninnertube = InnerTube(use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache)\n\n# With this line\ninnertube = InnerTube(use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache, client='WEB')\n"
+            }
+        },
+        {
+            "id": 18,
+            "instruction": "Open a completely new terminal and create the following directories.",
             "Code": {
                 "Name": "",
                 "Description": "",
@@ -133,7 +192,7 @@
             }
         },
         {
-            "id": 13,
+            "id": 19,
             "instruction": "Change into the directory and create new python file named \"yt_downloader.py\".",
             "Code": {
                 "Name": "",
@@ -144,7 +203,7 @@
             }
         },
         {
-            "id": 14,
+            "id": 20,
             "instruction": "Past the following code into the \"yt_downloader.py\" file.",
             "Code": {
                 "Name": "",
@@ -155,11 +214,11 @@
             }
         },
         {
-            "id": 15,
+            "id": 21,
             "instruction": "Now copy to [Youtube](https://www.youtube.com/) and copy the link of the video you want to download. Keep your terminal open."
         },
         {
-            "id": 16,
+            "id": 22,
             "instruction": "Now in your terminal use the following command to run the \"yt_downloader.py\" file.",
             "Code": {
                 "Name": "",
@@ -170,11 +229,11 @@
             }
         },
         {
-            "id": 17,
+            "id": 23,
             "instruction": "Follow the prompts in the python file to download the YouTube video."
         },
         {
-            "id": 18,
+            "id": 24,
             "instruction": "When you're done, use the following two commands to see your downloaded video.",
             "Code": {
                 "Name": "",

@@ -636,6 +636,24 @@ def get_vite_gh_pages():
 		ensure_list(Results, Title)
 
 		return { "Title": Title, "Link": Link, "Results": Results }
+	
+def get_angular_gh_pages():
+	with open("../src/data/CompSci/Instructions/AngularGHPages.json", "r") as file:
+		content = json.load(file)
+		
+		info = content["Info"]
+		instructions = content["Instructions"]
+		instructions = modify_list_with_code_separation(instructions, "Code")
+		
+		Title = "Deploy an Angular Project to GitHub Pages 📦"
+		Link = "/CompSci/SetupProjects/angular-gh-pages"
+		Results = info + instructions
+	
+		ensure_string(Title)
+		ensure_string(Link)
+		ensure_list(Results, Title)
+
+		return { "Title": Title, "Link": Link, "Results": Results }
 
 def get_aws():
 	with open("../src/data/CompSci/Instructions/SetupAWS.json", "r") as file:
@@ -1993,6 +2011,7 @@ angular = get_angular()
 templates = get_templates()
 ghpages = get_gh_pages()
 viteghpages = get_vite_gh_pages()
+angularghpages = get_angular_gh_pages()
 aws = get_aws()
 docker = get_docker()
 flasksqlite3 = get_flask_sqlite3()
@@ -2110,6 +2129,7 @@ all_data = [
 	templates,
 	ghpages,
 	viteghpages,
+	angularghpages,
 	aws,
 	docker,
 	flasksqlite3,

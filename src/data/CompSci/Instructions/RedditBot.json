@@ -15,7 +15,7 @@
                 },
                 {
                     "id": 2,
-                    "instruction": "Create a new folder and name it \"reddit_bot\" using the following command",
+                    "instruction": "Open a new terminal and run the following command to create a new folder called \"reddit_bot\".",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -31,8 +31,8 @@
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "pip3 install smtplib\npip3 install python-dotenv\npip3 install flask\npip3 install requests",
-                        "CopyCode": "pip3 install smtplib\npip3 install python-dotenv\npip3 install flask\npip3 install requests"
+                        "FormatCode": "pip3 install python-dotenv\npip3 install flask\npip3 install requests",
+                        "CopyCode": "pip3 install python-dotenv\npip3 install flask\npip3 install requests"
                     }
                 },
                 {
@@ -70,15 +70,15 @@
                 },
                 {
                     "id": 3,
-                    "instruction": "After enabling 2-Step Verification, go back to the \"Security\" section of your Google Account."
+                    "instruction": "After enabling 2-Step Verification, go back to the same \"Security\" tab on the left-hand side."
                 },
                 {
                     "id": 4,
-                    "instruction": "Under \"How you sign in to Google\" click on \"2-Step Verification\"."
+                    "instruction": "Scroll down to the \"How you sign in to Google\" section and click on \"2-Step Verification\"."
                 },
                 {
                     "id": 5,
-                    "instruction": "Scroll to the very bottom section titled \"App passwords\". Then click the arrow."
+                    "instruction": "Scroll to the very bottom section titled \"App passwords\". Then click the arrow. If you don't see an \"App Passwords\" section underneath \"Second steps\" you can open it using this [link](https://myaccount.google.com/apppasswords). You can also search \"App passwords\" in the search bar and click on the matching result."
                 },
                 {
                     "id": 5,
@@ -94,7 +94,7 @@
             "Info": [
                 {
                     "title": "Create and Locally Test the Reddit Bot",
-                    "desc": "How to create a Reddit bot that emails you every time someone posts in a subreddit."
+                    "desc": "How to create a Reddit bot that emails you everytime someone posts in a subreddit."
                 }
             ],
             "Instructions": [
@@ -104,19 +104,19 @@
                 },
                 {
                     "id": 2,
-                    "instruction": "Open your \".env\" file and paste in the following code. Change all the credential placeholders to your actual credentials. Note if your Google App password has yellow highlighted spaces just delete them and replace them with regular spaces. Go [here](https://www.reddit.com/prefs/apps) to find your credentials. The CLIENT_ID is under \"Personal Use Script\". Do not change the value of \"REFRESH_TOKEN\" yet. We'll get that value later.",
+                    "instruction": "Open your \".env\" file and paste in the following code. Change all the credential placeholders to your actual credentials. Note if your Google App password has yellow highlighted spaces just delete them and replace them with regular spaces. Go [here](https://www.reddit.com/prefs/apps) to find your credentials. The CLIENT_ID is under \"Personal Use Script\". Do NOT change the value of \"REFRESH_TOKEN\" yet. We'll get that value later.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "fxml",
                         "DisplayLang": "Env",
-                        "FormatCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token",
-                        "CopyCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token"
+                        "FormatCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token (It will be created later on)",
+                        "CopyCode": "CLIENT_ID=your_client_id\nCLIENT_SECRET=your_client_secret\nUSER_AGENT=script by u/your_reddit_username\nSENDER_EMAIL=your_gmail_address\nSENDER_PASSWORD=your_google_app_password\nEMAIL_RECIPIENT=your_gmail_address\nREFRESH_TOKEN=your_refresh_token (It will be created later on)"
                     }
                 },
                 {
                     "id": 3,
-                    "instruction": "Again, make sure to fill in all your credentials in the \".env\" file before moving forward. They'll be necessary in the following steps."
+                    "instruction": "Again, make sure to fill in all your credentials in the \".env\" file before moving forward (except REFRESH_TOKEN). They'll be necessary in the following steps."
                 },
                 {
                     "id": 4,
@@ -172,7 +172,7 @@
                 },
                 {
                     "id": 10,
-                    "instruction": "Close all your open terminals. Then, open your \".env\" file and replace \"your_refresh_token\" with the value you just copied. This will allow OAuth2 to work without having to use a new 2FA code every time your run your script.",
+                    "instruction": "Close all your open terminals. Then, open your \".env\" file and replace \"your_refresh_token\" with the value you just copied. This will allow OAuth2 to work without having to use a new 2FA code everytime your run your script.",
                     "Code": {
                         "Name": "",
                         "Description": "",
@@ -184,33 +184,37 @@
                 },
                 {
                     "id": 11,
-                    "instruction": "Paste the following code in the \"reddit_bot.py\" file. Make sure to change the value of the \"subreddit_name\" variable.",
+                    "instruction": "Paste the following code in the \"reddit_bot.py\" file. Make sure to change the value of the \"subreddit_name\" variable. The value 'AskReddit' might be good since it's so active and would give quick output.",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Python",
-                        "FormatCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# Your Reddit credentials\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREFRESH_TOKEN = os.getenv('REFRESH_TOKEN')\nUSER_AGENT = os.getenv('USER_AGENT')\n\n# Your Email Credentials\nsender_email = os.getenv('SENDER_EMAIL')\nsender_password = os.getenv('SENDER_PASSWORD')\nemail_recipient = os.getenv('EMAIL_RECIPIENT')\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n    client_id=CLIENT_ID,\n    client_secret=CLIENT_SECRET,\n    refresh_token=REFRESH_TOKEN,\n    user_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n    subject = f\"Someone posted in r/{subreddit_name}!\"\n\n    body = (\n\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\"This was sent from you're deployed reddit bot.\"\n    )\n\n    message = MIMEMultipart()\n    message[\"From\"] = sender_email\n    message[\"To\"] = email_recipient\n    message[\"Subject\"] = subject\n\n    message.attach(MIMEText(body, \"plain\"))\n\n    try:\n\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\tserver.starttls()\n\tserver.login(sender_email, sender_password)\n\ttext = message.as_string()\n\tserver.sendmail(sender_email, email_recipient, text)\n\tserver.quit()\n\tprint(\"Email sent successfully!\")\n    except Exception as e:\n\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n    print(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n    for submission in subreddit.stream.submissions(skip_existing=True):\n\tprint(\"\\nSomeone made a post titled: \", end=\"\")\n\tprint(f\"\\033[94m{submission.title}\\033[0m\")\n\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n    if subreddit_name == 'NAME_OF_SUBREDDIT':\n\tprint('\\033[91mChange value of subreddit_name variable\\033[0m')\n\texit(0)\n\n    main()",
-                        "CopyCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# Your Reddit credentials\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREFRESH_TOKEN = os.getenv('REFRESH_TOKEN')\nUSER_AGENT = os.getenv('USER_AGENT')\n\n# Your Email Credentials\nsender_email = os.getenv('SENDER_EMAIL')\nsender_password = os.getenv('SENDER_PASSWORD')\nemail_recipient = os.getenv('EMAIL_RECIPIENT')\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of subreddit_name variable\\033[0m')\n\t\texit(0)\n\n\tmain()"
+                        "FormatCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# Your Reddit credentials\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREFRESH_TOKEN = os.getenv('REFRESH_TOKEN')\nUSER_AGENT = os.getenv('USER_AGENT')\n\n# Your Email Credentials\nsender_email = os.getenv('SENDER_EMAIL')\nsender_password = os.getenv('SENDER_PASSWORD')\nemail_recipient = os.getenv('EMAIL_RECIPIENT')\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n    client_id=CLIENT_ID,\n    client_secret=CLIENT_SECRET,\n    refresh_token=REFRESH_TOKEN,\n    user_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n    subject = f\"Someone posted in r/{subreddit_name}!\"\n\n    body = (\n\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\"This was sent from you're deployed reddit bot.\"\n    )\n\n    message = MIMEMultipart()\n    message[\"From\"] = sender_email\n    message[\"To\"] = email_recipient\n    message[\"Subject\"] = subject\n\n    message.attach(MIMEText(body, \"plain\"))\n\n    try:\n\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\tserver.starttls()\n\tserver.login(sender_email, sender_password)\n\ttext = message.as_string()\n\tserver.sendmail(sender_email, email_recipient, text)\n\tserver.quit()\n\tprint(\"Email sent successfully!\")\n    except Exception as e:\n\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n    print(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n    for submission in subreddit.stream.submissions(skip_existing=True):\n\tprint(\"\\nSomeone made a post titled: \", end=\"\")\n\tprint(f\"\\033[94m{submission.title}\\033[0m\")\n\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n    # Do NOT change this line\n    if subreddit_name == 'NAME_OF_SUBREDDIT':\n\tprint('\\033[91mChange value of subreddit_name variable\\033[0m')\n\texit(0)\n\n    main()",
+                        "CopyCode": "import praw\nimport smtplib\nfrom email.mime.multipart import MIMEMultipart\nfrom email.mime.text import MIMEText\nimport os\nfrom dotenv import load_dotenv\n\nload_dotenv()\n\n# Your Reddit credentials\nCLIENT_ID = os.getenv('CLIENT_ID')\nCLIENT_SECRET = os.getenv('CLIENT_SECRET')\nREFRESH_TOKEN = os.getenv('REFRESH_TOKEN')\nUSER_AGENT = os.getenv('USER_AGENT')\n\n# Your Email Credentials\nsender_email = os.getenv('SENDER_EMAIL')\nsender_password = os.getenv('SENDER_PASSWORD')\nemail_recipient = os.getenv('EMAIL_RECIPIENT')\n\n# Name of Subreddit you're working with. No \"r/\" in name. AskReddit is good for testing\nsubreddit_name = 'NAME_OF_SUBREDDIT'\n\n\nreddit = praw.Reddit(\n\tclient_id=CLIENT_ID,\n\tclient_secret=CLIENT_SECRET,\n\trefresh_token=REFRESH_TOKEN,\n\tuser_agent=USER_AGENT\n)\n\n\nsubreddit = reddit.subreddit(subreddit_name)\n\ndef send_email(title):\n\n\tsubject = f\"Someone posted in r/{subreddit_name}!\"\n\n\tbody = (\n\t\tf'The title of the post is \"{title}\".\\n\\n\\n' + \n\t\t\"This was sent from you're deployed reddit bot.\"\n\t)\n\n\tmessage = MIMEMultipart()\n\tmessage[\"From\"] = sender_email\n\tmessage[\"To\"] = email_recipient\n\tmessage[\"Subject\"] = subject\n\n\tmessage.attach(MIMEText(body, \"plain\"))\n\n\ttry:\n\t\tserver = smtplib.SMTP(\"smtp.gmail.com\", 587)\n\t\tserver.starttls()\n\t\tserver.login(sender_email, sender_password)\n\t\ttext = message.as_string()\n\t\tserver.sendmail(sender_email, email_recipient, text)\n\t\tserver.quit()\n\t\tprint(\"Email sent successfully!\")\n\texcept Exception as e:\n\t\tprint(f\"Failed to send email. Error: {e}\")\n\ndef main():\n\tprint(f\"Monitoring new posts in r/{subreddit_name}...\")\n\n\tfor submission in subreddit.stream.submissions(skip_existing=True):\n\t\tprint(f\"\\nSomeone made a post titled: \\033[94m{submission.title}\\033[0m\")\n\t\tsend_email(submission.title)\n\n\nif __name__ == \"__main__\":\n\n\t# Do NOT change this line\n\tif subreddit_name == 'NAME_OF_SUBREDDIT':\n\t\tprint('\\033[91mChange value of subreddit_name variable\\033[0m')\n\t\texit(0)\n\n\tmain()"
                     }
                 },
                 {
                     "id": 12,
+                    "instruction": "This bot will send you an email everytime someones posts in specified subreddit."
+                },
+                {
+                    "id": 13,
                     "instruction": "Run the reddit bot using the following command. When someone posts on the subreddit it will be printed to the terminal. It might take a while until someone posts. Check your email to make the notification is being sent. Stop running the bot by pressing \"control + c\".",
                     "Code": {
                         "Name": "",
                         "Description": "",
                         "Language": "Command",
-                        "FormatCode": "python3 reddit_bot.py",
-                        "CopyCode": "python3 reddit_bot.py"
+                        "FormatCode": "cd reddit_bot\npython3 reddit_bot.py",
+                        "CopyCode": "cd reddit_bot\npython3 reddit_bot.py"
                     }
                 },
                 {
-                    "id": 13,
+                    "id": 14,
                     "instruction": "You've successfully created a Reddit Bot!"
                 },
                 {
-                    "id": 14,
-                    "instruction": "You can deploy it to AWS using the \"How to Deploy a Reddit Bot on AWS\" instruction set."
+                    "id": 15,
+                    "instruction": "You can deploy it to AWS using the (How to Deploy a Reddit Bot on AWS)[/CompSci/SetupProjects/reddit-bot-aws] instruction set."
                 }
             ]
         }

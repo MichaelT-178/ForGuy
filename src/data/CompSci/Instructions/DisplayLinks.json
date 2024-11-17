@@ -10,8 +10,8 @@
     ],
     "DisplayLinks": {
         "FrameworkProjects": {
-            "title": "Display Links",
-            "desc": "Use these links to display different instruction sets.",
+            "title": "Instructions",
+            "desc": "These are instruction sets explaining how to setup various projects.",
             "links": [
                 {
                     "id": 1,
@@ -60,6 +60,12 @@
                     "name": "Deploy a Vite Project to GitHub Pages",
                     "ref": "vite-gh-pages",
                     "ScrollTo": "ViteGHPagesLink"
+                },
+                {
+                    "id": 3,
+                    "name": "Deploy an Angular Project to GitHub Pages",
+                    "ref": "angular-gh-pages",
+                    "ScrollTo": "AngularGHPagesLink"
                 }
             ]
         },

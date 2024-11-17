@@ -10,9 +10,12 @@ from termcolor import colored as c
 # file_path = "../src/data/CompSci/Instructions/EmailJS.json"
 # file_path = "../src/data/CompSci/Instructions/PyiCloud.json"
 # file_path = "../src/data/CompSci/Instructions/FlaskSQLite.json"
-file_path = "../src/data/CompSci/Instructions/FlaskPost.json"
-file_path = "../src/data/CompSci/Instructions/Django.json"
+# file_path = "../src/data/CompSci/Instructions/FlaskPost.json"
+# file_path = "../src/data/CompSci/Instructions/Django.json"
+#file_path = "../src/data/CompSci/Instructions/Youtube.json"
 # file_path = "../src/data/CompSci/Instructions/DisplayLinks.json"
+file_path = "../src/data/CompSci/Instructions/DeployDjango.json"
+# file_path = "../src/data/CompSci/Instructions/DeployPost.json"
 
 
 with open(file_path, 'r') as file:
