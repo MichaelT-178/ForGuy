@@ -141,7 +141,7 @@ onUnmounted(() => {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 100;
   overflow: hidden;
-  background-color: #00C0C0;
+  background-color: #F2F2F2;
 }
 
 .emoji {

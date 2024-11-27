@@ -70,7 +70,7 @@ const closeSearchBar = () => {
   left: 0;
   width: 100vw;
   height: calc(100vh - 40px);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #F2F2F2;
   z-index: 10;
 }
 
