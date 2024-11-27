@@ -4,43 +4,1580 @@
             "Info": [
                 {
                     "title": "Deploy the React, Spring Boot and MySQL app to Amazon Web Services",
-                    "desc": "",
+                    "desc": "Explains how to deploy the Superhero app using various AWS services.",
                     "ref": "deploy-mysql"
                 }
             ],
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": "",
-                    "Code": {
-                        "Name": "",
-                        "Description": "",
-                        "Language": "",
-                        "FormatCode": "",
-                        "CopyCode": ""
-                    }
+                    "instruction": "Before doing any of this make sure you've completed the &How to Setup an Amazon Web Services Account&[AWSLink] instruction set."
                 },
                 {
                     "id": 2,
-                    "instruction": ""
+                    "instruction": "You'll also need to complete the &How to Make a Complex REST Api using React, Spring Boot and MySQL&[ComplexMySqlLink] instruction set."
+                },
+                {
+                    "id": 3,
+                    "instruction": "After you've completed those two instruction sets, you'll be ready to start this one."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Let's get started!"
                 }
             ]
         },
         {
             "Info": [
                 {
-                    "title": "",
-                    "desc": ""
+                    "title": "Services We'll Use",
+                    "desc": "These are the AWS services and technologies we'll use to deploy our app."
                 }
             ],
             "Instructions": [
                 {
                     "id": 1,
-                    "instruction": ""
+                    "instruction": "<u><b>RDS</b></u> - How we'll deploy our MySQL database. Stands for Relational Database Service. The service can be used to set up, operate, and scale relational databases in the cloud."
                 },
                 {
                     "id": 2,
-                    "instruction": ""
+                    "instruction": "<u><b>Elastic Beanstalk</b></u> - How we'll deploy our Rest Api. It's a cloud platform service that simplifies the process of deploying, managing, and scaling web applications and services."
+                },
+                {
+                    "id": 3,
+                    "instruction": "<u><b>IAM Roles</b></u> - An identity you can create that has specific permissions with credentials that are valid for short durations. Roles can be assumed by entities that you trust. We'll use it to help configure our Elastic Beanstalk app."
+                },
+                {
+                    "id": 4,
+                    "instruction": "<u><b>Amplify</b></u> - The service use to deploy our React Frontend. It's super nice and easy to use. "
+                },
+                {
+                    "id": 5,
+                    "instruction": "<u><b>Load Balancer</b></u> - An Elastic Beanstalk/EC2 feature we'll use to help add HTTPS to our Rest Api URL. Distribute incoming traffic across multiple instances."
+                },
+                {
+                    "id": 6,
+                    "instruction": "<u><b>CloudFront</b></u> - Add HTTPS to your Rest Api URL. It will route dynamic traffic through the load balancer to the Elastic Beanstalk application."
+                },
+                {
+                    "id": 7,
+                    "instruction": "<u><b>S3</b></u> - We'll store the superhero images for our app in an S3 bucket."
+                },
+                {
+                    "id": 8,
+                    "instruction": "<u><b>Certificate Manager (ACM)</b></u> - We're not going to this project. I'll super briefly explain how it can be used to secure an Elastic Beanstalk rest api URL with HTTPS."
+                },
+                {
+                    "id": 9,
+                    "instruction": "<u><b>Route53</b></u> - We're not going to use this project. This service can be used to buy custom domain names in AWS. I'll briefly explain use cases in regards to adding HTTPS and buying domain names."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Setup the RDS DB Instance",
+                    "desc": "Explains how to setup an RDS DB instance for MySQL."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Before you start, make sure you have the following VSCode Extensions installed.<br><br>• [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)<br><br>• [SQLTools MySQL/MariaDB/TiDB](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql)<br>"
+                },
+                {
+                    "id": 2,
+                    "instruction": "Most of this information comes from this [video](https://youtu.be/I_fTQTsz2nQ?si=kQkplyTGndT9_w8-) and this [video](https://youtu.be/0A-5ITILrMA?si=TfzDqNBls635t-ZT)."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Go to your [AWS Console](https://aws.amazon.com/console/). Press the \"Sign In to the Console\" button in the top-right."
+                },
+                {
+                    "id": 4,
+                    "instruction": "You'll be taken to a new screen. Press the \"Sign in using root user email\" button. Then log in using your credentials, then press \"Next\"."
+                },
+                {
+                    "id": 5,
+                    "instruction": "You should now be on the \"Console Home\" page. Go the search bar and type \"RDS\" click on the result that says \"RDS\"."
+                },
+                {
+                    "id": 6,
+                    "instruction": "Scroll down a little in the \"Dashboard\" tab to the \"Create database\" section. Press the orange \"Create database\" button."
+                },
+                {
+                    "id": 7,
+                    "instruction": "On the \"Create database\" page select the following options.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Choose a database creation method \n - Standard create\n\n\nEngine Options \n - Engine type: MySQL \n - Leave everything else default\n\n\nTemplates\n  - Free tier\n\nSettings \n  - DB instance identifier: superhero-db-instance\n  - Master username: create a username (remember it)\n  - Credentials management: Self managed\n  - Master password: Create a password (remember it)\n  - Confirm master password: Same as master password\n\n\nInstance configuration\n  - Leave everything default\n  - DB instance class: Burstable classes (includes t classes)\n  - db.t4g.micro\n\n\nStorage \n   - Storage type: General Purpose SSD (gp3)\n   - Allocated storage: 20\n   - Open \"Storage autoscaling\" \n   - Uncheck \"Enable storage autoscaling\"\n\nConnectivity\n   - Leave everything default except \"Public access\". Change to \"Yes\".\n   - Compute resource: Don't connect to an EC2 compute resource \n   - Virtual private cloud (VPC): Default VPC (vpc-SOME-NUMBER)\n   - DB subnet group: default \n   - Public access: Yes\n   - VPC security group (firewall): Choose existing\n   - Existing VPC security groups: default\n   - Availability Zone: No preference \n   - Additional configuration: 5432\n\n\nDatabase authentication\n   - Password authentication \n\nMonitoring\n   - Leave everything default\n\nAdditional configuration\n   - Initial database name: initial_db\n   - DB parameter group: default.mysql8.0\n   - Uncheck \"Enable automated backups\"\n   - Keep \"Enable encryption\" checked.\n   - Keep \"Enable auto minor version upgrade\" checked\n   - Keep \"Maintenance window\" selected as \"No preference\"\n\n\nEstimated Monthly costs\n   - Look at the estimated monthly costs it should be around $15 dollars\n   - Note it should NOT cost you anywhere near that much. It will probably be basically free if you don't use it.\n\n\n* Do NOT Press the \"Create database\" button yet *\n\n",
+                        "CopyCode": "Choose a database creation method \n - Standard create\n\n\nEngine Options \n - Engine type: MySQL \n - Leave everything else default\n\n\nTemplates\n  - Free tier\n\nSettings \n  - DB instance identifier: superhero-db-instance\n  - Master username: create a username (remember it)\n  - Credentials management: Self managed\n  - Master password: Create a password (remember it)\n  - Confirm master password: Same as master password\n\n\nInstance configuration\n  - Leave everything default\n  - DB instance class: Burstable classes (includes t classes)\n  - db.t4g.micro\n\n\nStorage \n   - Storage type: General Purpose SSD (gp3)\n   - Allocated storage: 20\n   - Open \"Storage autoscaling\" \n   - Uncheck \"Enable storage autoscaling\"\n\nConnectivity\n   - Leave everything default except \"Public access\". Change to \"Yes\".\n   - Compute resource: Don't connect to an EC2 compute resource \n   - Virtual private cloud (VPC): Default VPC (vpc-SOME-NUMBER)\n   - DB subnet group: default \n   - Public access: Yes\n   - VPC security group (firewall): Choose existing\n   - Existing VPC security groups: default\n   - Availability Zone: No preference \n   - Additional configuration: 5432\n\n\nDatabase authentication\n   - Password authentication \n\nMonitoring\n   - Leave everything default\n\nAdditional configuration\n   - Initial database name: initial_db\n   - DB parameter group: default.mysql8.0\n   - Uncheck \"Enable automated backups\"\n   - Keep \"Enable encryption\" checked.\n   - Keep \"Enable auto minor version upgrade\" checked\n   - Keep \"Maintenance window\" selected as \"No preference\"\n\n\nEstimated Monthly costs\n   - Look at the estimated monthly costs it should be around $15 dollars\n   - Note it should NOT cost you anywhere near that much. It will probably be basically free if you don't use it.\n\n\n* Do NOT Press the \"Create database\" button yet *\n\n"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "Then copy and record the values of \"Master username\" and \"Master password\" in settings. Also copy and record the value of \"Initial database name\" in the \"Additional configuration\" section. After you've copied the values press the \"Create database\" button."
+                },
+                {
+                    "id": 9,
+                    "instruction": "If you get a pop-up saying \"Suggested add-ons for superhero-db-instance\" look at your options, then close it."
+                },
+                {
+                    "id": 10,
+                    "instruction": "It will take your database a few minutes to be created. You should see a blue section that says \"Creating database notes-db-instance\" at the top. When it's done it will become green and say \"Successfully created database superhero-db-instance\"."
+                },
+                {
+                    "id": 11,
+                    "instruction": "Once your database has been successfully created. Click on the blue \"superhero-db-instance\" link in the \"DB identifier\" column of the table."
+                },
+                {
+                    "id": 12,
+                    "instruction": "You should be taken to a page titled \"superhero-db-instance\". Scroll down a little to the \"Connectivity & security\" section. In the section you should see the left column titled \"Endpoint & port\". Copy and record the value of the \"Endpoint\" variable. Also copy and record the value of \"Port\"."
+                },
+                {
+                    "id": 13,
+                    "instruction": "Now in the right column called \"Security\" in the same \"Connectivity & security\" section click on the blue link under \"VPC security groups\"."
+                },
+                {
+                    "id": 14,
+                    "instruction": "Select the check box for the one item in the table. It should be on the left."
+                },
+                {
+                    "id": 15,
+                    "instruction": "Underneath the table you should now see 4 tabs. Click the \"Inbound rules\" tab."
+                },
+                {
+                    "id": 16,
+                    "instruction": "Select the check box in the \"Inbound rules\" table. Then click \"Edit inbound rules\" on the right."
+                },
+                {
+                    "id": 17,
+                    "instruction": "If there are any rules in the table, delete them. In the \"Edit inbound rules\" page, press the \"Add rule\" button. Below are the rules values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 12 (probably 3306)\nSource: Anywhere-IPv4. Search and select 0.0.0.0/0",
+                        "CopyCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 12 (probably 3306)\nSource: Anywhere-IPv4. Search and select 0.0.0.0/0"
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "Press the \"Add rule\" button again. Below are the rules values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 12 (probably 3306)\nSource: Anywhere-IPv6. Search and select ::/0",
+                        "CopyCode": "Type: Custom TCP\nProtocol: TCP\nPort Range: Port value you copied in step 12 (probably 3306)\nSource: Anywhere-IPv6. Search and select ::/0"
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "Scroll down and press \"Save rules\"."
+                },
+                {
+                    "id": 20,
+                    "instruction": "Now go back to the [RDS](https://console.aws.amazon.com/rds) console dashboard."
+                },
+                {
+                    "id": 21,
+                    "instruction": "On the left-hand side press \"Databases\". Click your DB identifier in the table. You should now be back on the right page."
+                },
+                {
+                    "id": 22,
+                    "instruction": "Now open VSCode and press the Cylinder on the left-hand side to open \"SQLTools\"."
+                },
+                {
+                    "id": 23,
+                    "instruction": "This [video](https://youtu.be/wOZ1hYw5Arw?si=AT6oSWPJ57GUg6nF&t=419) and this [video](https://youtu.be/Cz3WcZLRaWc?si=zkrFbCnF-wk_O7-w) both do a good job demonstrating similar concepts to what we're about to do."
+                },
+                {
+                    "id": 24,
+                    "instruction": "Press the blue \"Add New Connection\" button. Then press \"MySQL\" icon."
+                },
+                {
+                    "id": 25,
+                    "instruction": "In the \"Connection Assistant\" enter the following values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "",
+                        "FormatCode": "Connection name* : superhero-test\n\nConnection group: *Leave blank*\n\nConnect using* : Server and Port\n\nServer Address* : The endpoint link you copied in step 12\n\nPort* : The port number you copied in step 12\n\nDatabase* : initial_db (Or whatever you called your initial db)\n\nUsername* : Username from step 8\n\nPassword mode: Ask on connect\n\nAuthentication Protocol: default\n\nSSL: Disabled\n\nConnection Timeout: 10\n\nShow records default limit: 50\n\n* Press the Test Connection button on the right, and enter your database password in the field*\n\n* If it says \\\"Successfully connected!\\\" press the \\\"Save Connection\\\" button *",
+                        "CopyCode": "Connection name* : superhero-test\n\nConnection group: *Leave blank*\n\nConnect using* : Server and Port\n\nServer Address* : The endpoint link you copied in step 12\n\nPort* : The port number you copied in step 12\n\nDatabase* : initial_db (Or whatever you called your initial db)\n\nUsername* : Username from step 8\n\nPassword mode: Ask on connect\n\nAuthentication Protocol: default\n\nSSL: Disabled\n\nConnection Timeout: 10\n\nShow records default limit: 50\n\n* Press the Test Connection button on the right, and enter your database password in the field*\n\n* If it says \\\"Successfully connected!\\\" press the \\\"Save Connection\\\" button *"
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "Press the white \"Connect Now\" button under the JSON. Then enter the password you made in step 8."
+                },
+                {
+                    "id": 27,
+                    "instruction": "You should now be in a \"superhero-test.session.sql\" file. Make sure you see the \"Detach file from superhero-test | Run on active connection | select block\" codelens in the file. If you don't, make sure you don't have \"editor.codeLens\" set to false in your VSCode settings.json file."
+                },
+                {
+                    "id": 28,
+                    "instruction": "If \"editor.codeLens\" is set to false and you want to keep it that way, you can run the file with the following steps. Press \"command + shift + p\" and type \"SQLTools Connection: Run this file\"."
+                },
+                {
+                    "id": 29,
+                    "instruction": "Now we'll start creating our database. Run the following command to create your tables. Press \"Run on active connection\" to run the query. ",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "CREATE TABLE users (\n    user_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    role VARCHAR(50) NOT NULL,\n    username VARCHAR(50) NOT NULL UNIQUE,\n    hashed_password VARCHAR(255) NOT NULL\n);\n\n\nCREATE TABLE superheroes (\n    super_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    real_name VARCHAR(100),\n    universe VARCHAR(100),\n    year_created INT,\n    can_delete BOOL\n);\n\n\n-- One-to-One relationship with superhero \nCREATE TABLE images (\n    image_id INT AUTO_INCREMENT PRIMARY KEY,\n    original_filename VARCHAR(255) NOT NULL,\n    stored_filename VARCHAR(255),\n    super_id INT UNIQUE,\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id) ON DELETE CASCADE\n);\n\n\nCREATE TABLE powers (\n    power_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL\n);\n\n-- Many-to-Many Relationship Between superhero and power\nCREATE TABLE superhero_powers (\n    super_id INT,\n    power_id INT,\n    PRIMARY KEY (super_id, power_id),\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id) ON DELETE CASCADE,\n    FOREIGN KEY (power_id) REFERENCES powers(power_id) ON DELETE CASCADE\n);\n\n-- Many-to-Many Relationship Between user and superhero\nCREATE TABLE user_superheroes (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    user_id INT,\n    super_id INT,\n    FOREIGN KEY (user_id) REFERENCES users(user_id),\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id)\n);",
+                        "CopyCode": "CREATE TABLE users (\n    user_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    role VARCHAR(50) NOT NULL,\n    username VARCHAR(50) NOT NULL UNIQUE,\n    hashed_password VARCHAR(255) NOT NULL\n);\n\n\nCREATE TABLE superheroes (\n    super_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    real_name VARCHAR(100),\n    universe VARCHAR(100),\n    year_created INT,\n    can_delete BOOL\n);\n\n\n-- One-to-One relationship with superhero \nCREATE TABLE images (\n    image_id INT AUTO_INCREMENT PRIMARY KEY,\n    original_filename VARCHAR(255) NOT NULL,\n    stored_filename VARCHAR(255),\n    super_id INT UNIQUE,\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id) ON DELETE CASCADE\n);\n\n\nCREATE TABLE powers (\n    power_id INT AUTO_INCREMENT PRIMARY KEY,\n    name VARCHAR(100) NOT NULL\n);\n\n-- Many-to-Many Relationship Between superhero and power\nCREATE TABLE superhero_powers (\n    super_id INT,\n    power_id INT,\n    PRIMARY KEY (super_id, power_id),\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id) ON DELETE CASCADE,\n    FOREIGN KEY (power_id) REFERENCES powers(power_id) ON DELETE CASCADE\n);\n\n-- Many-to-Many Relationship Between user and superhero\nCREATE TABLE user_superheroes (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    user_id INT,\n    super_id INT,\n    FOREIGN KEY (user_id) REFERENCES users(user_id),\n    FOREIGN KEY (super_id) REFERENCES superheroes(super_id)\n);\n"
+                    }
+                },
+                {
+                    "id": 30,
+                    "instruction": "Run the following query to check that the tables were created. You can also check in the left-hand side under the name of your database.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SHOW TABLES;",
+                        "CopyCode": "SHOW TABLES;"
+                    }
+                },
+                {
+                    "id": 31,
+                    "instruction": "Now populate the tables. First populate the users table using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "INSERT INTO users (name, username, role, hashed_password)\nVALUES\n('Admin Guy', 'admin_guy', 'Admin', '$2a$12$rxj5.cEScsyAeUUnU6upyeRcj1CwsSXP42l0gdb.h/v4/KXAnnz/m'),\n('John Doe', 'john_doe', 'User', '$2a$12$DWHkAo3ytuj8hlstojRXruYTA02KAAftr6xoqYH2pdwcF1eFmy2Mm'),\n('Jane Smith', 'jane_smith', 'User', '$2a$12$dL43L1RjnqbcneragmkUNuqIi6gC6fTzg5qYwDoRo8y6lqM3CKS1q'),\n('Michael Jones', 'michael_jones', 'User', '$2a$12$F0n6dy.3jy2sxfcLd5Yb/.loB84RV81nM4K0nI9i1H7cvjRBj31.i'),\n('Emily Clark', 'emily_clark', 'User', '$2a$12$1J7.OsYZumAy5mcQX4vicuEHlUhbVqX3gbkgdIrCWGq0oWwJvleWi'),\n('David Brown', 'david_brown', 'User', '$2a$12$1/EPkc9NBTWXgO4g5cxTOuKD//YC6Tt9BlWTBLODaTAkG4dYSE4Ha'),\n('Sarah Davis', 'sarah_davis', 'User', '$2a$12$AycUkVdwbf9YnGi3MwkDeu2ZLe4hK7LcgiV5u42JzcUr8l8e/gnOm'),\n('Chris Wilson', 'chris_wilson', 'User', '$2a$12$8n2964bU2TGWZMD3rf8N5eE9Tmzo8qTHt6hb2Sznq0IOZnPjgurv.'),\n('Lisa Martin', 'lisa_martin', 'User', '$2a$12$mJx0fLrjia1vTvJMIMc2me4/QPtUwIc4SlPg/irQeQlSQznC7Wqve'),\n('Daniel Moore', 'daniel_moore', 'User', '$2a$12$ltbfdxcPs49HHlb70.vcaOBwyxwT8w9JJSzJKG0JfnjQl8zpqr2BK'),\n('Laura Taylor', 'laura_taylor', 'User', '$2a$12$X5V.05dQN7ZNMhjK8/tHde5q3162IAGpqsrHe9WPbJmDqiejc/aDW');",
+                        "CopyCode": "INSERT INTO users (name, username, role, hashed_password)\nVALUES\n('Admin Guy', 'admin_guy', 'Admin', '$2a$12$rxj5.cEScsyAeUUnU6upyeRcj1CwsSXP42l0gdb.h/v4/KXAnnz/m'),\n('John Doe', 'john_doe', 'User', '$2a$12$DWHkAo3ytuj8hlstojRXruYTA02KAAftr6xoqYH2pdwcF1eFmy2Mm'),\n('Jane Smith', 'jane_smith', 'User', '$2a$12$dL43L1RjnqbcneragmkUNuqIi6gC6fTzg5qYwDoRo8y6lqM3CKS1q'),\n('Michael Jones', 'michael_jones', 'User', '$2a$12$F0n6dy.3jy2sxfcLd5Yb/.loB84RV81nM4K0nI9i1H7cvjRBj31.i'),\n('Emily Clark', 'emily_clark', 'User', '$2a$12$1J7.OsYZumAy5mcQX4vicuEHlUhbVqX3gbkgdIrCWGq0oWwJvleWi'),\n('David Brown', 'david_brown', 'User', '$2a$12$1/EPkc9NBTWXgO4g5cxTOuKD//YC6Tt9BlWTBLODaTAkG4dYSE4Ha'),\n('Sarah Davis', 'sarah_davis', 'User', '$2a$12$AycUkVdwbf9YnGi3MwkDeu2ZLe4hK7LcgiV5u42JzcUr8l8e/gnOm'),\n('Chris Wilson', 'chris_wilson', 'User', '$2a$12$8n2964bU2TGWZMD3rf8N5eE9Tmzo8qTHt6hb2Sznq0IOZnPjgurv.'),\n('Lisa Martin', 'lisa_martin', 'User', '$2a$12$mJx0fLrjia1vTvJMIMc2me4/QPtUwIc4SlPg/irQeQlSQznC7Wqve'),\n('Daniel Moore', 'daniel_moore', 'User', '$2a$12$ltbfdxcPs49HHlb70.vcaOBwyxwT8w9JJSzJKG0JfnjQl8zpqr2BK'),\n('Laura Taylor', 'laura_taylor', 'User', '$2a$12$X5V.05dQN7ZNMhjK8/tHde5q3162IAGpqsrHe9WPbJmDqiejc/aDW');\n"
+                    }
+                },
+                {
+                    "id": 32,
+                    "instruction": "Now the superheroes table.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "INSERT INTO superheroes (name, real_name, universe, year_created, can_delete)\nVALUES\n    ('Hulk', 'Bruce Banner', 'Marvel', 1962, false),\n    ('Iron Man', 'Tony Stark', 'Marvel', 1963, false),\n    ('Thor', 'Thor Odinson', 'Marvel', 1962, false),\n    ('Wolverine', 'Logan', 'Marvel', 1974, false),\n    ('Spider-Man', 'Peter Parker', 'Marvel', 1962, false),\n    ('Quicksilver', 'Pietro Maximoff', 'Marvel', 1964, false),\n    ('Batman', 'Bruce Wayne', 'DC', 1939, false),\n    ('Flash', 'Barry Allen', 'DC', 1956, false),\n    ('Green Lantern', 'Hal Jordan', 'DC', 1959, false),\n    ('Darkseid', 'Uxas', 'DC', 1970, false);",
+                        "CopyCode": "INSERT INTO superheroes (name, real_name, universe, year_created, can_delete)\nVALUES\n    ('Hulk', 'Bruce Banner', 'Marvel', 1962, false),\n    ('Iron Man', 'Tony Stark', 'Marvel', 1963, false),\n    ('Thor', 'Thor Odinson', 'Marvel', 1962, false),\n    ('Wolverine', 'Logan', 'Marvel', 1974, false),\n    ('Spider-Man', 'Peter Parker', 'Marvel', 1962, false),\n    ('Quicksilver', 'Pietro Maximoff', 'Marvel', 1964, false),\n    ('Batman', 'Bruce Wayne', 'DC', 1939, false),\n    ('Flash', 'Barry Allen', 'DC', 1956, false),\n    ('Green Lantern', 'Hal Jordan', 'DC', 1959, false),\n    ('Darkseid', 'Uxas', 'DC', 1970, false);\n"
+                    }
+                },
+                {
+                    "id": 33,
+                    "instruction": "Populate the images table. The stored filenames are currently null, but we'll upload them later and update the table.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "INSERT INTO images (original_filename, stored_filename, super_id)\nVALUES\n    ('Hulk.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Hulk')),\n    ('IronMan.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Iron Man')),\n    ('Thor.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Thor')),\n    ('Wolverine.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Wolverine')),\n    ('Spiderman.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Spider-Man')),\n    ('Quicksilver.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Quicksilver')),\n    ('Batman.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Batman')),\n    ('Flash.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Flash')),\n    ('GreenLantern.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Green Lantern')),\n    ('Darkseid.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Darkseid'));",
+                        "CopyCode": "INSERT INTO images (original_filename, stored_filename, super_id)\nVALUES\n    ('Hulk.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Hulk')),\n    ('IronMan.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Iron Man')),\n    ('Thor.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Thor')),\n    ('Wolverine.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Wolverine')),\n    ('Spiderman.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Spider-Man')),\n    ('Quicksilver.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Quicksilver')),\n    ('Batman.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Batman')),\n    ('Flash.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Flash')),\n    ('GreenLantern.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Green Lantern')),\n    ('Darkseid.jpg', NULL, (SELECT super_id FROM superheroes WHERE name = 'Darkseid'));\n"
+                    }
+                },
+                {
+                    "id": 34,
+                    "instruction": "Populate the powers table.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "INSERT INTO powers (name)\nVALUES\n('Fly'),\n('Speed'),\n('Healing'),\n('Strength'),\n('Human')\nON DUPLICATE KEY UPDATE name=name;",
+                        "CopyCode": "INSERT INTO powers (name)\nVALUES\n('Fly'),\n('Speed'),\n('Healing'),\n('Strength'),\n('Human')\nON DUPLICATE KEY UPDATE name=name;\n"
+                    }
+                },
+                {
+                    "id": 35,
+                    "instruction": "Populate the superhero_powers table.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "-- Hulk\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Hulk' AND p.name IN ('Healing', 'Speed', 'Strength');\n\n-- Iron Man\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Iron Man' AND p.name IN ('Fly', 'Human');\n\n-- Thor\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Thor' AND p.name IN ('Fly', 'Strength');\n\n-- Wolverine\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Wolverine' AND p.name IN ('Human', 'Healing');\n\n-- Spider-Man\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Spider-Man' AND p.name IN ('Fly', 'Human', 'Strength');\n\n-- Quicksilver\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Quicksilver' AND p.name = 'Speed';\n\n-- Batman\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Batman' AND p.name IN ('Strength', 'Human');\n\n-- Flash\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Flash' AND p.name IN ('Speed', 'Human');\n\n-- Green Lantern\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Green Lantern' AND p.name IN ('Fly', 'Human');\n\n-- Darkseid\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Darkseid' AND p.name IN ('Healing', 'Speed', 'Strength');",
+                        "CopyCode": "-- Hulk\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Hulk' AND p.name IN ('Healing', 'Speed', 'Strength');\n\n-- Iron Man\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Iron Man' AND p.name IN ('Fly', 'Human');\n\n-- Thor\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Thor' AND p.name IN ('Fly', 'Strength');\n\n-- Wolverine\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Wolverine' AND p.name IN ('Human', 'Healing');\n\n-- Spider-Man\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Spider-Man' AND p.name IN ('Fly', 'Human', 'Strength');\n\n-- Quicksilver\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Quicksilver' AND p.name = 'Speed';\n\n-- Batman\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Batman' AND p.name IN ('Strength', 'Human');\n\n-- Flash\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Flash' AND p.name IN ('Speed', 'Human');\n\n-- Green Lantern\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Green Lantern' AND p.name IN ('Fly', 'Human');\n\n-- Darkseid\nINSERT INTO superhero_powers (super_id, power_id)\nSELECT s.super_id, p.power_id FROM superheroes s, powers p\nWHERE s.name = 'Darkseid' AND p.name IN ('Healing', 'Speed', 'Strength');\n"
+                    }
+                },
+                {
+                    "id": 36,
+                    "instruction": "Populate the user_superheroes table.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "-- john_doe's superheroes (user_id 2)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'john_doe' AND s.name IN ('Hulk', 'Iron Man', 'Thor', 'Flash', 'Batman', 'Darkseid');\n\n-- jane_smith's superheroes (user_id 3)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'jane_smith' AND s.name IN ('Spider-Man', 'Quicksilver', 'Green Lantern');\n\n-- michael_jones's superheroes (user_id 4)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'michael_jones' AND s.name IN ('Wolverine', 'Quicksilver');\n\n-- emily_clark's superheroes (user_id 5)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'emily_clark' AND s.name IN ('Hulk', 'Green Lantern', 'Flash', 'Thor');\n\n-- david_brown's superheroes (user_id 6)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'david_brown' AND s.name IN ('Thor', 'Spider-Man', 'Darkseid');\n\n-- sarah_davis's superheroes (user_id 7)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'sarah_davis' AND s.name IN ('Iron Man', 'Flash', 'Wolverine', 'Thor');\n\n-- chris_wilson's superheroes (user_id 8)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'chris_wilson' AND s.name IN ('Batman', 'Hulk', 'Spider-Man');\n\n-- lisa_martin's superheroes (user_id 9)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'lisa_martin' AND s.name IN ('Thor', 'Iron Man', 'Batman');\n\n-- daniel_moore's superheroes (user_id 10)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'daniel_moore' AND s.name IN ('Green Lantern', 'Iron Man', 'Flash');\n\n-- laura_taylor's superheroes (user_id 11)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'laura_taylor' AND s.name IN ('Flash', 'Darkseid', 'Hulk');",
+                        "CopyCode": "-- john_doe's superheroes (user_id 2)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'john_doe' AND s.name IN ('Hulk', 'Iron Man', 'Thor', 'Flash', 'Batman', 'Darkseid');\n\n-- jane_smith's superheroes (user_id 3)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'jane_smith' AND s.name IN ('Spider-Man', 'Quicksilver', 'Green Lantern');\n\n-- michael_jones's superheroes (user_id 4)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'michael_jones' AND s.name IN ('Wolverine', 'Quicksilver');\n\n-- emily_clark's superheroes (user_id 5)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'emily_clark' AND s.name IN ('Hulk', 'Green Lantern', 'Flash', 'Thor');\n\n-- david_brown's superheroes (user_id 6)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'david_brown' AND s.name IN ('Thor', 'Spider-Man', 'Darkseid');\n\n-- sarah_davis's superheroes (user_id 7)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'sarah_davis' AND s.name IN ('Iron Man', 'Flash', 'Wolverine', 'Thor');\n\n-- chris_wilson's superheroes (user_id 8)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'chris_wilson' AND s.name IN ('Batman', 'Hulk', 'Spider-Man');\n\n-- lisa_martin's superheroes (user_id 9)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'lisa_martin' AND s.name IN ('Thor', 'Iron Man', 'Batman');\n\n-- daniel_moore's superheroes (user_id 10)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'daniel_moore' AND s.name IN ('Green Lantern', 'Iron Man', 'Flash');\n\n-- laura_taylor's superheroes (user_id 11)\nINSERT INTO user_superheroes (user_id, super_id)\nSELECT u.user_id, s.super_id FROM users u, superheroes s\nWHERE u.username = 'laura_taylor' AND s.name IN ('Flash', 'Darkseid', 'Hulk');\n"
+                    }
+                },
+                {
+                    "id": 37,
+                    "instruction": "Use the following SQL queries to see the values of the tables to ensure they've been populated correctly.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SELECT * FROM users;\nSELECT * FROM superheroes;\nSELECT * FROM powers;\nSELECT * FROM images;\nSELECT * FROM user_superheroes;\nSELECT * FROM superhero_powers;",
+                        "CopyCode": "SELECT * FROM users;\nSELECT * FROM superheroes;\nSELECT * FROM powers;\nSELECT * FROM images;\nSELECT * FROM user_superheroes;\nSELECT * FROM superhero_powers;\n"
+                    }
+                },
+                {
+                    "id": 38,
+                    "instruction": "If there was an issue creating the tables, you can use the following queries to delete them and start over.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "DROP TABLE superhero_powers;\nDROP TABLE images;\nDROP TABLE user_superheroes;\nDROP TABLE superheroes;\nDROP TABLE powers;\nDROP TABLE users;\n",
+                        "CopyCode": "DROP TABLE superhero_powers;\nDROP TABLE images;\nDROP TABLE user_superheroes;\nDROP TABLE superheroes;\nDROP TABLE powers;\nDROP TABLE users;\n"
+                    }
+                },
+                {
+                    "id": 39,
+                    "instruction": "Now create your production database URI.<br><br>• Replace \"YOUR-AWS-ENDPOINT-ADDRESS\" with the endpoint link you copied in step 12<br><br>• Replace \"HOST-PORT\" the port number you copied in step 12<br><br>• Replace \"YOUR-INITIAL-DATABASE-NAME\" with initial_db, or whatever you called your initial database<br><br>• Replace \"DB-USERNAME\" with your database username from step 8<br><br>• Replace \"DB-PASSWORD\" with your database password from step 8<br><br>• If your password has any % sign in it, replace them with %25 to escape them<br><br>COPY AND RECORD THIS LINK",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Prod Database URI",
+                        "FormatCode": "jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD",
+                        "CopyCode": "jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD"
+                    }
+                },
+                {
+                    "id": 40,
+                    "instruction": "Congratulations! You should now have created your database. We'll handle the images in the next section."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Create an S3 Bucket on AWS",
+                    "desc": "We're going to create an S3 Bucket on AWS to store our images for production."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Go to the S3 console dashboard using this [link](https://s3.console.aws.amazon.com/s3/home). Sign in using root user email."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Once you've signed and go to the S3 console, press the orange \"Create bucket\" button."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Note that I'm getting a lot of this information from this [video](https://youtu.be/tSfdQJvTKmk?si=SA13hqkvsrkTImr2)."
+                },
+                {
+                    "id": 4,
+                    "instruction": "In the \"Create bucket\" form, enter the following values. Leave everything that's not specified as default.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config",
+                        "FormatCode": "General purpose\nBucket name: prod-superhero-pics\n\n\n* Scroll down * \n\n\n\nBlock Public Access settings for this bucket\n\n* Uncheck the \\\"Block all public access box\\\" *\n\n* In the new yellow section check the \\\"I acknowledge that the current settings...\\\" box \n\n\n\n* Scroll Down *\n\n\nPress the \\\"Create bucket\\\" button.",
+                        "CopyCode": "General purpose\nBucket name: prod-superhero-pics\n\n\n* Scroll down * \n\n\n\nBlock Public Access settings for this bucket\n\n* Uncheck the \\\"Block all public access box\\\" *\n\n* In the new yellow section check the \\\"I acknowledge that the current settings...\\\" box \n\n\n\n* Scroll Down *\n\n\nPress the \\\"Create bucket\\\" button."
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "You'll be taken to new page. In the \"General purpose buckets\" section press on the \"prod-superhero-pics\" link in the Name column of the table."
+                },
+                {
+                    "id": 6,
+                    "instruction": "You'll be taken to new page and be on the \"Objects\" tab. Click on the \"Permissions\" tab to the right of it."
+                },
+                {
+                    "id": 7,
+                    "instruction": "Scroll down a little to the \"Bucket policy\" section. Press the \"Edit\" button on the top-right."
+                },
+                {
+                    "id": 8,
+                    "instruction": "Go to your terminal and run the following command. Copy and record the value of \"Account\" do NOT copy the value of \"UserId\". This is your AWS Account ID.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "aws sts get-caller-identity",
+                        "CopyCode": "aws sts get-caller-identity"
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "In the Policy text area paste the following data. Then scroll down and press the \"Save changes\" button.<br><br>• Replace \"YOUR-AWS-ACCOUNT-ID\" in the \"AWS\" attribute with the aws account id you copied in the previous step.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1657016724405\",\n    \"Statement\": [\n        {\n            \"Sid\": \"AllowS3PutObjectForElasticBeanstalk\",\n            \"Effect\": \"Allow\",\n            \"Principal\": {\n                \"AWS\": \"arn:aws:iam::YOUR-AWS-ACCOUNT-ID:role/aws-elasticbeanstalk-ec2-role\"\n            },\n            \"Action\": [\n                \"s3:PutObject\",\n                \"s3:GetObject\",\n                \"s3:DeleteObject\"\n            ],\n            \"Resource\": \"arn:aws:s3:::prod-superhero-pics/*\"\n        },\n        {\n            \"Sid\": \"AllowPublicReadAccess\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::prod-superhero-pics/*\"\n        }\n    ]\n}\n",
+                        "CopyCode": "{\n    \"Version\": \"2012-10-17\",\n    \"Id\": \"Policy1657016724405\",\n    \"Statement\": [\n        {\n            \"Sid\": \"AllowS3PutObjectForElasticBeanstalk\",\n            \"Effect\": \"Allow\",\n            \"Principal\": {\n                \"AWS\": \"arn:aws:iam::YOUR-AWS-ACCOUNT-ID:role/aws-elasticbeanstalk-ec2-role\"\n            },\n            \"Action\": [\n                \"s3:PutObject\",\n                \"s3:GetObject\",\n                \"s3:DeleteObject\"\n            ],\n            \"Resource\": \"arn:aws:s3:::prod-superhero-pics/*\"\n        },\n        {\n            \"Sid\": \"AllowPublicReadAccess\",\n            \"Effect\": \"Allow\",\n            \"Principal\": \"*\",\n            \"Action\": \"s3:GetObject\",\n            \"Resource\": \"arn:aws:s3:::prod-superhero-pics/*\"\n        }\n    ]\n}\n"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "Congratulations! Your S3 bucket should now be created."
+                },
+                {
+                    "id": 11,
+                    "instruction": "Now go to the \"superhero_aws_pics\" folder you previously created and create a new file called \"production_images.py\".",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd superhero_aws_pics\ntouch production_images.py",
+                        "CopyCode": "cd superhero_aws_pics\ntouch production_images.py"
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "Now open your \"superhero_aws_pics\" folder in VSCode. Open the \"production_images.py\" and paste in the following code. Replace the \"mysql_creds\" values at the bottom with your actual production database values. The \"YOUR-AWS-ENDPOINT-LINK\" is NOT the full \"Prod Database URI\".",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Python",
+                        "FormatCode": "import os\nfrom PIL import Image\nimport mysql.connector\nimport boto3\nimport uuid\n\ndef get_file_paths(folder_path) -> list[str]:\n    return [ os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path) ]\n\n\ndef shrink_images():\n    file_paths = get_file_paths('superhero_pics')\n\n    for file_path in file_paths:\n        img = Image.open(file_path)\n\n        base_width = 800\n        width_percent = (base_width / float(img.size[0]))\n        new_height = int((float(img.size[1]) * float(width_percent)))\n\n        resized_img = img.resize((base_width, new_height), Image.LANCZOS)\n\n        name = os.path.basename(file_path).strip()\n\n        resized_img.save(f'./resized_pics/{name}')\n\n\ndef upload_images_s3(creds) -> list[str]:\n\n    s3 = boto3.resource('s3')\n\n    shrink_images()\n\n    connection = mysql.connector.connect(\n            host=creds[\"service\"],\n            user=creds['username'],\n            password=creds['password'],\n            database=creds['database']\n        )\n\n    cursor = connection.cursor()\n\n    cursor.execute(\"SELECT original_filename FROM images;\")\n    results = cursor.fetchall()\n\n    file_paths = [f'resized_pics/{result[0]}' for result in results]\n\n    print(file_paths)\n\n    connection.commit()\n    \n    cursor.close()\n    connection.close()\n    \n\n    new_filenames = []\n\n    for file_path in file_paths:\n        file_name = file_path.replace(\"resized_pics/\", \"\")\n\n        new_filename = uuid.uuid4().hex + \".\" + file_name.rsplit(\".\", 1)[1].lower()\n\n        superhero_bucket = s3.Bucket(\"prod-superhero-pics\")\n\n        with open(file_path, 'rb') as file:\n            superhero_bucket.upload_fileobj(file, new_filename)\n\n        print(f\"Uploaded {file_name} as {new_filename}\")\n\n        new_filenames.append(new_filename)\n    \n    return new_filenames\n\n\ndef update_databases(creds: dict):\n    aws_file_names = upload_images_s3(mysql_creds)\n\n\n    print(f\"\\nUpdating MySQL Database - \\\"{creds['database']}\\\"\")\n\n    connection = mysql.connector.connect(\n        host=creds['service'],\n        user=creds['username'],\n        password=creds['password'],\n        database=creds['database']\n    )\n\n    cursor = connection.cursor()\n\n    cursor.execute(\"SELECT name FROM superheroes;\")\n    results = cursor.fetchall()\n\n    superhero_names = [row[0] for row in results]\n    superhero_dict = dict(zip(superhero_names, aws_file_names))\n    \n    \n    for superhero_name, stored_filename in superhero_dict.items():\n        update_query = \"\"\"\n            UPDATE images\n            SET stored_filename = %s\n            WHERE super_id = (SELECT super_id FROM superheroes WHERE name = %s);\n        \"\"\"\n\n        cursor.execute(update_query, (stored_filename, superhero_name))\n\n        print(\"MySQL database stored_filename updated successfully!\")\n\n\n    connection.commit()\n\n    cursor.close()\n    connection.close()\n\n\n\nmysql_creds = {\n    \"service\": \"YOUR-AWS-ENDPOINT-LINK\",\n    \"username\": \"DB-USERNAME\",\n    \"password\": \"DB-USERNAME\",\n    \"database\": \"YOUR-INITIAL-DATABASE-NAME\"\n}\n\nupdate_databases(mysql_creds)\n",
+                        "CopyCode": "import os\nfrom PIL import Image\nimport mysql.connector\nimport boto3\nimport uuid\n\ndef get_file_paths(folder_path) -> list[str]:\n    return [ os.path.join(folder_path, file_name) for file_name in os.listdir(folder_path) ]\n\n\ndef shrink_images():\n    file_paths = get_file_paths('superhero_pics')\n\n    for file_path in file_paths:\n        img = Image.open(file_path)\n\n        base_width = 800\n        width_percent = (base_width / float(img.size[0]))\n        new_height = int((float(img.size[1]) * float(width_percent)))\n\n        resized_img = img.resize((base_width, new_height), Image.LANCZOS)\n\n        name = os.path.basename(file_path).strip()\n\n        resized_img.save(f'./resized_pics/{name}')\n\n\ndef upload_images_s3(creds) -> list[str]:\n\n    s3 = boto3.resource('s3')\n\n    shrink_images()\n\n    connection = mysql.connector.connect(\n            host=creds[\"service\"],\n            user=creds['username'],\n            password=creds['password'],\n            database=creds['database']\n        )\n\n    cursor = connection.cursor()\n\n    cursor.execute(\"SELECT original_filename FROM images;\")\n    results = cursor.fetchall()\n\n    file_paths = [f'resized_pics/{result[0]}' for result in results]\n\n    print(file_paths)\n\n    connection.commit()\n    \n    cursor.close()\n    connection.close()\n    \n\n    new_filenames = []\n\n    for file_path in file_paths:\n        file_name = file_path.replace(\"resized_pics/\", \"\")\n\n        new_filename = uuid.uuid4().hex + \".\" + file_name.rsplit(\".\", 1)[1].lower()\n\n        superhero_bucket = s3.Bucket(\"prod-superhero-pics\")\n\n        with open(file_path, 'rb') as file:\n            superhero_bucket.upload_fileobj(file, new_filename)\n\n        print(f\"Uploaded {file_name} as {new_filename}\")\n\n        new_filenames.append(new_filename)\n    \n    return new_filenames\n\n\ndef update_databases(creds: dict):\n    aws_file_names = upload_images_s3(mysql_creds)\n\n\n    print(f\"\\nUpdating MySQL Database - \\\"{creds['database']}\\\"\")\n\n    connection = mysql.connector.connect(\n        host=creds['service'],\n        user=creds['username'],\n        password=creds['password'],\n        database=creds['database']\n    )\n\n    cursor = connection.cursor()\n\n    cursor.execute(\"SELECT name FROM superheroes;\")\n    results = cursor.fetchall()\n\n    superhero_names = [row[0] for row in results]\n    superhero_dict = dict(zip(superhero_names, aws_file_names))\n    \n    \n    for superhero_name, stored_filename in superhero_dict.items():\n        update_query = \"\"\"\n            UPDATE images\n            SET stored_filename = %s\n            WHERE super_id = (SELECT super_id FROM superheroes WHERE name = %s);\n        \"\"\"\n\n        cursor.execute(update_query, (stored_filename, superhero_name))\n\n        print(\"MySQL database stored_filename updated successfully!\")\n\n\n    connection.commit()\n\n    cursor.close()\n    connection.close()\n\n\n\nmysql_creds = {\n    \"service\": \"YOUR-AWS-ENDPOINT-LINK\",\n    \"username\": \"DB-USERNAME\",\n    \"password\": \"DB-USERNAME\",\n    \"database\": \"YOUR-INITIAL-DATABASE-NAME\"\n}\n\nupdate_databases(mysql_creds)\n"
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "Now run your files to upload images to your new bucket and update your prod database.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Commands",
+                        "FormatCode": "cd superhero_aws_pics\npython3 production_images.py",
+                        "CopyCode": "cd superhero_aws_pics\npython3 production_images.py"
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "Go back to your [S3 bucket](https://s3.console.aws.amazon.com/s3/home) in AWS and confirm the 10 images were uploaded in \"prod-superhero-pics\". Try refreshing the page if you don't see them at first."
+                },
+                {
+                    "id": 15,
+                    "instruction": "Go back to SQLTools in VSCode and run the following query to check that your Images table was updated with the correct names.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SELECT * FROM images;",
+                        "CopyCode": "SELECT * FROM images;"
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "Congratulations! You're images should now be uploaded to your S3 bucket and your database should've been uploaded."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Setup Your Rest Api for Deployment",
+                    "desc": "Explains how to setup your Rest Api for deployment and create the IAM permission roles."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "First, open the \"Superhero-Rest-Api\" folder in VSCode. We're going to make some minor changes before we deploy our app."
+                },
+                {
+                    "id": 2,
+                    "instruction": "A lot of this information comes from this [video](https://youtu.be/Kh8bdsi6m3o?si=Ex4d7zbdEZsZI71U)."
+                },
+                {
+                    "id": 3,
+                    "instruction": "First lets just try out our new database URI from step 38 of the \"Setup the RDS DB Instance\" steps.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Prod Database URI",
+                        "FormatCode": "jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD",
+                        "CopyCode": "jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "Open your \"Superhero-Rest-Api\" folder in VSCode and open the .env file. I'd strongly recommend you copy and record the current variables in their current state."
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the .env file change the values of the following variables to what's shown below. Make sure to escape any special chars in your password if necessary.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "fxml",
+                        "DisplayLang": "Env",
+                        "FormatCode": "SPRING_ENV=production\nPROD_DATABASE_URI=jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\nS3_BUCKET=prod-superhero-pics",
+                        "CopyCode": "SPRING_ENV=production\nPROD_DATABASE_URI=jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\nS3_BUCKET=prod-superhero-pics"
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "Now make sure your endpoint works by going to a terminal and running the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Superhero-Rest-Api\ngradle run",
+                        "CopyCode": "cd Superhero-Rest-Api\ngradle run"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "If your Rest Api runs successfully it means your new configuration settings worked. I would STRONGLY recommend saving your new variables and there values somewhere. We're going to delete our env file."
+                },
+                {
+                    "id": 8,
+                    "instruction": "Remove your .env file before you build your project.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Superhero-Rest-Api\nrm .env",
+                        "CopyCode": "cd Superhero-Rest-Api\nrm .env"
+                    }
+                },
+                {
+                    "id": 9,
+                    "instruction": "Now go to your terminal and run the following commands to export your environment variables. You need the env variables for the project to build. Change the values of PROD_DATABASE_URI and JWT_SECRET_KEY.<br><br>Make sure that special characters are escaped in PROD_DATABASE_URI.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Superhero-Rest-Api\n\nexport SPRING_ENV=production\nexport PROD_DATABASE_URI=\"jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\"\nexport JWT_SECRET_KEY=\"YOUR-JWT-SECRET-KEY\"\nexport FRONTEND_URL=http://localhost:5173\nexport S3_BUCKET=prod-superhero-pics",
+                        "CopyCode": "cd Superhero-Rest-Api\n\nexport SPRING_ENV=production\nexport PROD_DATABASE_URI=\"jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\"\nexport JWT_SECRET_KEY=\"YOUR-JWT-SECRET-KEY\"\nexport FRONTEND_URL=http://localhost:5173\nexport S3_BUCKET=prod-superhero-pics"
+                    }
+                },
+                {
+                    "id": 10,
+                    "instruction": "Make sure your environment variables are set properly using the following commands.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "echo $SPRING_ENV\necho $PROD_DATABASE_URI\necho $JWT_SECRET_KEY\necho $FRONTEND_URL\necho $S3_BUCKET",
+                        "CopyCode": "echo $SPRING_ENV\necho $PROD_DATABASE_URI\necho $JWT_SECRET_KEY\necho $FRONTEND_URL\necho $S3_BUCKET"
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "Now clean and build your project.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "./gradlew clean\n./gradlew build",
+                        "CopyCode": "./gradlew clean\n./gradlew build"
+                    }
+                },
+                {
+                    "id": 12,
+                    "instruction": "Now go to build -> libs folder in VSCode. You should now see two jar files. These are your built packaged project. Just confirm the files are there, you can't open them."
+                },
+                {
+                    "id": 13,
+                    "instruction": "Go to the IAM Roles console dashboard using this [link](https://console.aws.amazon.com/iam/home#/roles)."
+                },
+                {
+                    "id": 14,
+                    "instruction": "In the \"Roles\" table check <br><br>• Check if you have a role named \"aws-elasticbeanstalk-ec2-role\" using the search field. If you do, check its box, then press the \"Delete\" button.<br><br>• Check if you have a role named \"aws-elasticbeanstalk-service-role\". If you do, delete that as well.<br><br>Press the orange \"Create role\" button after you've done that.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Roles to Delete",
+                        "FormatCode": "aws-elasticbeanstalk-ec2-role\n\naws-elasticbeanstalk-service-role",
+                        "CopyCode": "aws-elasticbeanstalk-ec2-role\n\naws-elasticbeanstalk-service-role"
+                    }
+                },
+                {
+                    "id": 15,
+                    "instruction": "After you've pressed \"Create role\" you should be on the \"Select trusted entity\" page. Enter the following values in the form.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Trusted entity type\nAWS service \n\nUse case\nService or use case: EC2\nUse case: EC2 \n\n* Press the Next button at the bottom *",
+                        "CopyCode": "Trusted entity type\nAWS service \n\nUse case\nService or use case: EC2\nUse case: EC2 \n\n* Press the Next button at the bottom *"
+                    }
+                },
+                {
+                    "id": 16,
+                    "instruction": "In the \"Permissions policies\" table search for the following permission. Check the box of the result and then press the \"Next\" button.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Permission",
+                        "FormatCode": "AWSElasticBeanstalkCustomPlatformforEC2Role",
+                        "CopyCode": "AWSElasticBeanstalkCustomPlatformforEC2Role"
+                    }
+                },
+                {
+                    "id": 17,
+                    "instruction": "You should now be in the \"Name, review, and create\" page. Enter the following values in the form.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Role details\n- Role name: aws-elasticbeanstalk-ec2-role\n- Description: Allows EC2 instances to call AWS services on your behalf.\n\n* Leave everything else default *\n\n* Scroll down and press the \"Create Role\" button *",
+                        "CopyCode": "Role details\n- Role name: aws-elasticbeanstalk-ec2-role\n- Description: Allows EC2 instances to call AWS services on your behalf.\n\n* Leave everything else default *\n\n* Scroll down and press the \"Create Role\" button *"
+                    }
+                },
+                {
+                    "id": 18,
+                    "instruction": "If you see green banner that says \"Role aws-elasticbeanstalk-ec2-role created.\" it means you have successfully created the role. Congratulations!"
+                },
+                {
+                    "id": 19,
+                    "instruction": "Now click on the \"aws-elasticbeanstalk-ec2-role\" role name in the \"Roles\" table. It should be at the very top, use the search if you can't find it."
+                },
+                {
+                    "id": 20,
+                    "instruction": "You should now be on the \"aws-elasticbeanstalk-ec2-role\" page. Scroll down to \"Permissions policies\" and press the \"Add permissions\" drop down menu. In the menu press \"Create inline policy\"."
+                },
+                {
+                    "id": 21,
+                    "instruction": "In the \"Specify permissions\" click the \"JSON\" option next to the \"Visual\" option in the \"Policy Editor\". Delete the current data, then paste in the following JSON, then scroll down and press the Next button.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "{\n    \"Version\": \"2012-10-17\",\n    \"Statement\": [\n        {\n            \"Effect\": \"Allow\",\n            \"Action\": \"s3:PutObject\",\n            \"Resource\": [\n                \"arn:aws:s3:::superhero-pics/*\",\n                \"arn:aws:s3:::prod-superhero-pics/*\"\n            ]\n        }\n    ]\n}",
+                        "CopyCode": "{\n    \"Version\": \"2012-10-17\",\n    \"Statement\": [\n        {\n            \"Effect\": \"Allow\",\n            \"Action\": \"s3:PutObject\",\n            \"Resource\": [\n                \"arn:aws:s3:::superhero-pics/*\",\n                \"arn:aws:s3:::prod-superhero-pics/*\"\n            ]\n        }\n    ]\n}"
+                    }
+                },
+                {
+                    "id": 22,
+                    "instruction": "In the \"Review and create\" form, enter \"superhero-beanstalk-policy\" in the \"Policy name\" field. Then scroll down and press the \"Create policy\" button.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Policy name",
+                        "FormatCode": "superhero-beanstalk-policy",
+                        "CopyCode": "superhero-beanstalk-policy"
+                    }
+                },
+                {
+                    "id": 23,
+                    "instruction": "You should see a green Policy \"superhero-beanstalk-policy created\" success banner."
+                },
+                {
+                    "id": 24,
+                    "instruction": "Congratulations! You have successfully setup your IAM roles."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Deploy your Spring Boot app to Elastic Beanstalk",
+                    "desc": "Explains how to deploy your Spring Boot app to the AWS Elastic Beanstalk service."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Now go to the Elastic Beanstalk console dashboard using this [link](https://console.aws.amazon.com/elasticbeanstalk/home#/environments)."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Then press the orange \"Create environment\" button."
+                },
+                {
+                    "id": 3,
+                    "instruction": "You should now be in the \"Configure environment\" page. Enter the following values. I'd recommend keeping your application name short so that we can configure it to use https later. I'd recommend 15 chars max.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Environment tier \n- Web server environment\n\n\nApplication information\n- Application name: superhero-api\n\n\nEnvironment information\n- Environment name: Superhero-api-env\n- Domain: *Leave blank*\n- Environment description: *Leave blank*\n\n\nPlatform \n- Platform type: Managed platform\n- Platform: Java\n- Platform branch: Corretto 17 running on 64bit Amazon Linux 2023\n- Platform Version: 4.4.0 (Or just whatever says Recommended)\n\nApplication Code\n- Select \"Upload your code\"\n- Version label: version1\n\n* Choose \"Local File\" *\n\n* Press \"Choose file\" *\n\nGo to Superhero-Rest-Api -> build -> libs folder \n\nopen superhero-0.0.1-SNAPSHOT.jar. Do NOT upload the one that says \"-plain\" near the end\n\n\nPresets (THIS IS SUPER IMPORTANT)\n- Configuration presets: High availability\n\n* Press the \"Next\" button *\n",
+                        "CopyCode": "Environment tier \n- Web server environment\n\n\nApplication information\n- Application name: superhero-api\n\n\nEnvironment information\n- Environment name: Superhero-api-env\n- Domain: *Leave blank*\n- Environment description: *Leave blank*\n\n\nPlatform \n- Platform type: Managed platform\n- Platform: Java\n- Platform branch: Corretto 17 running on 64bit Amazon Linux 2023\n- Platform Version: 4.4.0 (Or just whatever says Recommended)\n\nApplication Code\n- Select \"Upload your code\"\n- Version label: version1\n\n* Choose \"Local File\" *\n\n* Press \"Choose file\" *\n\nGo to Superhero-Rest-Api -> build -> libs folder \n\nopen superhero-0.0.1-SNAPSHOT.jar. Do NOT upload the one that says \"-plain\" near the end\n\n\nPresets (THIS IS SUPER IMPORTANT)\n- Configuration presets: High availability\n\n* Press the \"Next\" button *\n"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "In the \"Configure service access\" fill the form in with the following values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Service access\n- Service role: Create and use new service role\n- Service role name: aws-elasticbeanstalk-service-role\n- EC2 key pair: *Leave blank*\n- EC2 instance profile: aws-elasticbeanstalk-ec2-role\n\n* Press the \"Next\" button *\n",
+                        "CopyCode": "Service access\n- Service role: Create and use new service role\n- Service role name: aws-elasticbeanstalk-service-role\n- EC2 key pair: *Leave blank*\n- EC2 instance profile: aws-elasticbeanstalk-ec2-role\n\n* Press the \"Next\" button *\n"
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the \"Set up networking, database, and tags\" page, just leave all settings default. Scroll to the bottom and press the \"Next\" button."
+                },
+                {
+                    "id": 6,
+                    "instruction": "In the \"Configure instance traffic and scaling\" page, just leave all settings default again. Scroll to the bottom and press the \"Next\" button."
+                },
+                {
+                    "id": 7,
+                    "instruction": "In the \"Configure updates, monitoring, and logging\" page fill the form in with the following values.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "* Leave everything else default *\n\n* Scroll to the very bottom \"Environment properties\" section* \n\n* In this section add the following properties with the following values *\n\nPORT: 8080\nSPRING_ENV: production\nPROD_DATABASE_URI: jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\nJWT_SECRET_KEY: YOUR-JWT-SECRET-KEY\nFRONTEND_URL: http://localhost:5173\nS3_BUCKET: prod-superhero-pics\n\n* Press the Next button *\n",
+                        "CopyCode": "* Leave everything else default *\n\n* Scroll to the very bottom \"Environment properties\" section* \n\n* In this section add the following properties with the following values *\n\nPORT: 8080\nSPRING_ENV: production\nPROD_DATABASE_URI: jdbc:mysql://YOUR-AWS-ENDPOINT-ADDRESS:HOST-PORT/YOUR-INITIAL-DATABASE-NAME?user=DB-USERNAME&password=DB-PASSWORD\nJWT_SECRET_KEY: YOUR-JWT-SECRET-KEY\nFRONTEND_URL: http://localhost:5173\nS3_BUCKET: prod-superhero-pics\n\n* Press the Next button *\n"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "In the \"Review\" page review all your configurations, then scroll down to the bottom and press the \"Submit\" button. "
+                },
+                {
+                    "id": 9,
+                    "instruction": "You should see a blue banner that says \"Elastic Beanstalk is launching your environment. This will take a few minutes.\". Wait like 5 minutes for it to launch. When it's done it should turn green and say \"Environment successfully launched.\" in the banner."
+                },
+                {
+                    "id": 10,
+                    "instruction": "In the \"Environment overview\" section press the Domain link. This will be your new Rest Api URL. If it then says \"Hello World from Api\" it means it's working. Give it a second to load.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Rest Api URL",
+                        "FormatCode": "YOUR-DOMAIN-LINK",
+                        "CopyCode": "YOUR-DOMAIN-LINK"
+                    }
+                },
+                {
+                    "id": 11,
+                    "instruction": "Copy and record the domain link, keep it somewhere you'll remember."
+                },
+                {
+                    "id": 12,
+                    "instruction": "Congratulations! You have successfully deployed your rest api to Elastic Beanstalk."
+                },
+                {
+                    "id": 13,
+                    "instruction": "You can test the link more in Thunder Client or Postman.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Example HTTP Request",
+                        "FormatCode": "GET YOUR-DOMAIN-LINK",
+                        "CopyCode": "GET YOUR-DOMAIN-LINK"
+                    }
+                },
+                {
+                    "id": 14,
+                    "instruction": "You can test your domain link in Thunder client with the following HTTP request.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Example HTTP Request",
+                        "FormatCode": "POST YOUR-DOMAIN-LINK/api/users/authenticate\n\n\nThis is the JSON Body\n\n{\n  \"username\": \"john_doe\",\n  \"password\": \"password1\"\n}",
+                        "CopyCode": "POST YOUR-DOMAIN-LINK/api/users/authenticate\n\n\nThis is the JSON Body\n\n{\n  \"username\": \"john_doe\",\n  \"password\": \"password1\"\n}"
+                    }
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Secure your Rest Api link",
+                    "desc": "Add an HTTPS to your Elastic Beanstalk URL using load balancer and CloudFront."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "You automatically created a load balancer when you set the Configuration presets to \"High availability\" when creating your Elastic Beanstalk application. You can (optionally) go to the [load balancer](https://console.aws.amazon.com/ec2/v2/home?#LoadBalancers) console dashboard to see the Elastic Beanstalk load balancer."
+                },
+                {
+                    "id": 2,
+                    "instruction": "We're going to configure our Elastic Beanstalk api URL to use HTTPS. This will help make it secure and compatible with Amplify, which doesn't allow non-HTTPS apis."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Most of this information comes from this [video](https://youtu.be/pIW1zMGBFg4?si=mxorcNWaiGurmZsv&t=691)."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Go to the [CloudFront](https://us-east-1.console.aws.amazon.com/cloudfront/) console dashboard."
+                },
+                {
+                    "id": 5,
+                    "instruction": "Press the orange \"Create a CloudFront distribution\" button."
+                },
+                {
+                    "id": 6,
+                    "instruction": "In the \"Create distribution\" form use the followig values. Leave everything unspecified as default.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Origin\nOrigin domain: * Select the value under Elastic Load Balancer *\n\nProtocol: HTTP Only\nHTTP port: 80\n\n\n* Scroll Down *\n\nDefault cache behavior\nViewer protocol policy: Redirect HTTP to HTTPS\nAllowed HTTP methods: GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE\n\n* Scroll down *\n\nCache key and origin requests\nCache policy and origin request policy (recommended)\nCache Policy: UseOriginCacheControlHeaders\nOrigin request policy - optional: AllViewer\nResponse headers policy - optional: SimpleCORS \n\n* Scroll down * \n\nWeb Application Firewall (WAF) \nDo not enable security protections\n\n\n\n* Scroll Down *\n\nStandard logging: Off\nIPv6: Off\n\n* Press the \"Create distribution\" button *\n\n",
+                        "CopyCode": "Origin\nOrigin domain: * Select the value under Elastic Load Balancer *\n\nProtocol: HTTP Only\nHTTP port: 80\n\n\n* Scroll Down *\n\nDefault cache behavior\nViewer protocol policy: Redirect HTTP to HTTPS\nAllowed HTTP methods: GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE\n\n* Scroll down *\n\nCache key and origin requests\nCache policy and origin request policy (recommended)\nCache Policy: UseOriginCacheControlHeaders\nOrigin request policy - optional: AllViewer\nResponse headers policy - optional: SimpleCORS \n\n* Scroll down * \n\nWeb Application Firewall (WAF) \nDo not enable security protections\n\n\n\n* Scroll Down *\n\nStandard logging: Off\nIPv6: Off\n\n* Press the \"Create distribution\" button *\n\n"
+                    }
+                },
+                {
+                    "id": 7,
+                    "instruction": "Just for personal future reference, setting \"Enable security protections\" in \"Web Application Firewall (WAF)\" caused the following error when trying to upload images.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "CORS Error",
+                        "FormatCode": "Access to XMLHttpRequest at 'https://d2m9n77ee1u2me.cloudfront.net/superheroes/users/2/superheroes/add' \nfrom origin 'http://localhost:5173' has been blocked by CORS policy: No \n'Access-Control-Allow-Origin' header is present on the requested resource.",
+                        "CopyCode": "Access to XMLHttpRequest at 'https://d2m9n77ee1u2me.cloudfront.net/superheroes/users/2/superheroes/add' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "You should see a green banner that says \"Successfully created new distribution.\" if the process was successful."
+                },
+                {
+                    "id": 9,
+                    "instruction": "In the Details section wait like 5-7 minutes until the value of \"Last modified\" changes from \"Deploying\" to the date and time (like October 14, 2024 at 12:31:35 AM UTC)."
+                },
+                {
+                    "id": 10,
+                    "instruction": "If you have issues check the logs of your Elastic Beanstalk instance."
+                },
+                {
+                    "id": 11,
+                    "instruction": "Open your Distribution domain name link in a browser. It should say \"Hello World from Api\" if it's working properly."
+                },
+                {
+                    "id": 12,
+                    "instruction": "Copy and record the CloudFront domain link somewhere. Make sure you have \"https://\" in front of the link. This is your new Rest API URL link. You'll use it to configure the frontend."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Deploy your React App",
+                    "desc": "Explains how to Deploy your React app on Amplify"
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "A lot of this information comes from this [video](https://youtu.be/lHgxFfioaR4?si=FAuzmE2szwWiSmtW&t=145)."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Before we start, open your \"Superhero-Frontend\" folder in VSCode. We're going to make some small changes before we deploy our app."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Go to src -> components -> SuperheroCard.jsx. Replace the following line with the line below it. Since we're using vite we'll use this [syntax](https://vite.dev/guide/env-and-mode.html) to create environment variables in our code.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "DisplayLang": "React",
+                        "FormatCode": "//This is the line we'll replace\nsrc={`https://superhero-pics.s3.amazonaws.com/${image.storedFilename}`}\n\n//Replace the line above with this line \nsrc={`${import.meta.env.VITE_S3_BUCKET}/${image.storedFilename}`}\n",
+                        "CopyCode": "//This is the line we'll replace\nsrc={`https://superhero-pics.s3.amazonaws.com/${image.storedFilename}`}\n\n//Replace the line above with this line \nsrc={`${import.meta.env.VITE_S3_BUCKET}/${image.storedFilename}`}\n"
+                    }
+                },
+                {
+                    "id": 4,
+                    "instruction": "Now go to src -> lib -> axios.js. Replace the following line with the line below it",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JavaScript",
+                        "FormatCode": "//This is the line we'll replace\nbaseURL: 'http://localhost:8080',\n\n//Replace the line above with this line \nbaseURL: import.meta.env.VITE_REST_API_URL,",
+                        "CopyCode": "//This is the line we'll replace\nbaseURL: 'http://localhost:8080',\n\n//Replace the line above with this line \nbaseURL: import.meta.env.VITE_REST_API_URL,"
+                    }
+                },
+                {
+                    "id": 5,
+                    "instruction": "Now open another new terminal and run your frontend. Export the necessary variables. Note that your environment variable names must start with the prefix \"VITE_\" when you're using vite in your project. Do NOT include the credentials in your Rest Api URL. If you don't know what the url is go to the [Elastic Beanstalk](https://console.aws.amazon.com/elasticbeanstalk/home) console, click on your spring app, then find the \"Domain\" in the main page of the app.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Commands and Env Variables",
+                        "FormatCode": "cd Superhero-Frontend\n\nexport VITE_S3_BUCKET=https://prod-superhero-pics.s3.amazonaws.com\nexport VITE_REST_API_URL=http://YOUR-CLOUDFRONT-DOMAIN-LINK\n\nnpm run dev\n\n* Make sure it's running on http://localhost:5173/ *",
+                        "CopyCode": "cd Superhero-Frontend\n\nexport VITE_S3_BUCKET=https://prod-superhero-pics.s3.amazonaws.com\nexport VITE_REST_API_URL=http://YOUR-CLOUDFRONT-DOMAIN-LINK\n\nnpm run dev\n\n* Make sure it's running on http://localhost:5173/ *"
+                    }
+                },
+                {
+                    "id": 6,
+                    "instruction": "Now just open the localhost link in your browser, sign in as a user. If you can login and the pictures are being shown, it means it worked."
+                },
+                {
+                    "id": 7,
+                    "instruction": "After you confirmed that it worked, push your changes to github.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "cd Superhero-Frontend\ngit add .\ngit commit -m \"Environment Variables\"\ngit push",
+                        "CopyCode": "cd Superhero-Frontend\ngit add .\ngit commit -m \"Environment Variables\"\ngit push"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "Now we'll start the deployment. Make sure all your most recent changes have been pushed to Github."
+                },
+                {
+                    "id": 9,
+                    "instruction": "A lot of the information comes from this [video](https://youtu.be/lHgxFfioaR4?si=7oJyZgo-xO-J_5uf&t=145)."
+                },
+                {
+                    "id": 10,
+                    "instruction": "Start by going to the [Amplify](https://console.aws.amazon.com/amplify/home) console dashboard."
+                },
+                {
+                    "id": 11,
+                    "instruction": "Press the purple \"Deploy an app\" button. "
+                },
+                {
+                    "id": 12,
+                    "instruction": "You'll be taken to a page titled \"Start building with Amplify\". Just select Github and preess the next button in the bottom right.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "Deploy your app\nGithub \n\n* Press Next *\n",
+                        "CopyCode": "Deploy your app\nGithub \n\n* Press Next *\n"
+                    }
+                },
+                {
+                    "id": 13,
+                    "instruction": "A pop up screen will appear that says AWS Amplify wants certain permissions to your Github account. Verify that it says the right Github account and then press the \"Authorize AWS Amplify (us-east-1)\" button. If it's the wrong Github account press \"Cancel\" and go to [github.com](https://github.com/). Sign out of the account you don't want to use and then sign into the account you do want to use and try again."
+                },
+                {
+                    "id": 14,
+                    "instruction": "It will ask you where you want to Install AWS Amplify (us-east-1). Select your Github account."
+                },
+                {
+                    "id": 15,
+                    "instruction": "You'll then be taken to a screen titled \"Install & Authorize AWS Amplify (us-east-1)\". I'd recommend selecting \"Only select repositories\" and then select the repositories you want AWS Amplify to have access to. Only choose your frontend repository. Then press \"Install & Authorize\"."
+                },
+                {
+                    "id": 16,
+                    "instruction": "Ignore the purple banner that says \"If you don't see your repository in the dropdown above, ensure the Amplify GitHub App has permissions to the repository. If your repository still doesn't appear, push a commit and click the refresh button.\"."
+                },
+                {
+                    "id": 17,
+                    "instruction": "In the field hat says \"Select a repository\" search for your frontend repository, select it, and then press the \"Next\" button."
+                },
+                {
+                    "id": 18,
+                    "instruction": "You'll be taken to the \"App settings\" page. You can press the \"Edit YML file\" button to see your configurations if you want. You should probably leave everything default and press the \"Next\" button at the bottom.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "App name: Superhero-Frontend\n\nBuild settings\nnpm run build: dist \n\n* Press the Next button *\n",
+                        "CopyCode": "App name: Superhero-Frontend\n\nBuild settings\nnpm run build: dist \n\n* Press the Next button *\n"
+                    }
+                },
+                {
+                    "id": 19,
+                    "instruction": "On the \"Review\" page, review your settings, then scroll down and press the \"Save and deploy\" button."
+                },
+                {
+                    "id": 20,
+                    "instruction": "Wait for your app to be deployed and created. Give it like 2-5 minutes."
+                },
+                {
+                    "id": 21,
+                    "instruction": "You'll see blue text under \"main\" that says \"Deploying\" and has a loading circle next to it. When it's done it will turn green and say \"Deployed\" with a circled checkmark next to it."
+                },
+                {
+                    "id": 22,
+                    "instruction": "After your app's been deployed you'll need to add your environment variables. This information comes from the [aws docs](https://docs.aws.amazon.com/amplify/latest/userguide/access-env-vars.html), which is a good reference."
+                },
+                {
+                    "id": 23,
+                    "instruction": "On the left hand side press \"Hosting\" and then press \"Environment variables\". "
+                },
+                {
+                    "id": 24,
+                    "instruction": "Press the \"Manage variables\" button in the top-right corner."
+                },
+                {
+                    "id": 25,
+                    "instruction": "Press the \"+ Add new\" button twice. Replace the values with your actual values. Press the \"Save\" button when you're done.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "AWS Config Values",
+                        "FormatCode": "# Should be something like -> https://prod-superhero-pics.s3.amazonaws.com\nVITE_S3_BUCKET: YOUR-PROD-S3-BUCKET-LINK\n\n# Should be something like -> https://dj8owk4cay5o7.cloudfront.net/\nVITE_REST_API_URL: YOUR-CLOUDFRONT-DOMAIN-URL\n\n* Press the \"Save\" button at the bottom *\n",
+                        "CopyCode": "# Should be something like -> https://prod-superhero-pics.s3.amazonaws.com\nVITE_S3_BUCKET: YOUR-PROD-S3-BUCKET-LINK\n\n# Should be something like -> https://dj8owk4cay5o7.cloudfront.net/\nVITE_REST_API_URL: YOUR-CLOUDFRONT-DOMAIN-URL\n\n* Press the \"Save\" button at the bottom *\n"
+                    }
+                },
+                {
+                    "id": 26,
+                    "instruction": "Now on the left hand side press \"Hosting\" and then press \"Build settings\"."
+                },
+                {
+                    "id": 27,
+                    "instruction": "On the new page, in the \"App build specification\" section, press the \"Edit\" button on the right. In the \"commands\" attribute in the \"preBuild\" section add the following environment variables. It should look like the following. <br><br>Note: The first single > character will override the .env file with the new variables for each build. The double >> characters will append the second variable to the existing file instead of overriding it again.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Yaml",
+                        "FormatCode": "* Keep everything else how it is, just change the preBuild section *\n\npreBuild:\n  commands:\n    - npm ci --cache .npm --prefer-offline\n    - echo \"VITE_S3_BUCKET=$VITE_S3_BUCKET\" > .env \n    - echo \"VITE_REST_API_URL=$VITE_REST_API_URL\" >> .env\n\n* Press the save button *\n",
+                        "CopyCode": "* Keep everything else how it is, just change the preBuild section *\n\npreBuild:\n  commands:\n    - npm ci --cache .npm --prefer-offline\n    - echo \"VITE_S3_BUCKET=$VITE_S3_BUCKET\" > .env \n    - echo \"VITE_REST_API_URL=$VITE_REST_API_URL\" >> .env\n\n* Press the save button *\n"
+                    }
+                },
+                {
+                    "id": 28,
+                    "instruction": "After you press save a small green pop-up banner should appear that says something like \"Updating app: Superhero-Frontend success\"."
+                },
+                {
+                    "id": 29,
+                    "instruction": "On the left-hand side press \"Overview\"."
+                },
+                {
+                    "id": 30,
+                    "instruction": "Now we'll have to redeploy our app since we added environment variables and changed the build."
+                },
+                {
+                    "id": 31,
+                    "instruction": "Press on the card that says \"main\" and has your deployment information."
+                },
+                {
+                    "id": 32,
+                    "instruction": "In the \"Deployments\" page press the \"Redeploy this version\" button on the right side of the card."
+                },
+                {
+                    "id": 33,
+                    "instruction": "You'll then see blue text saying \"Deploying\". Wait like 2 minutes until it turns green. "
+                },
+                {
+                    "id": 34,
+                    "instruction": "Press the link under \"Domain\" to see your deployed frontend. The website will NOT be functional yet since Elastic Beanstalk doesn't have our frontend link."
+                },
+                {
+                    "id": 35,
+                    "instruction": "Copy and record the domain link. We'll need it in the next section. Again, the backend functionality of the website won't work yet. The Amplify link should look like the following.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "DisplayLang": "Example Amplify Domain Link",
+                        "FormatCode": "https://main.d2fgqg8rpkwihu.amplifyapp.com/",
+                        "CopyCode": "https://main.d2fgqg8rpkwihu.amplifyapp.com/"
+                    }
+                },
+                {
+                    "id": 36,
+                    "instruction": "If you ever need to make updates just push them to your Github repository and wait for it redeploy in the Overview section of AWS amplify."
+                },
+                {
+                    "id": 37,
+                    "instruction": "Keep in mind if you change an environment variable, you'll need to redeploy the app."
+                },
+                {
+                    "id": 38,
+                    "instruction": "Congratulations! Your React app should be successfully deployed to Amplify now. Next we'll configure our Elastic Beanstalk application to work with our frontend website."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Configure Elastic Beanstalk to use your Amplify Link",
+                    "desc": "Explains how to configure your Elastic Beanstalk REST API to allow CORS requests from your Amplify frontend."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "Go to the [Elastic Beanstalk](https://console.aws.amazon.com/elasticbeanstalk/home) console dashboard."
+                },
+                {
+                    "id": 2,
+                    "instruction": "In the \"Environments\" table press the blue link of your Rest Api in the \"Environment name\" column."
+                },
+                {
+                    "id": 3,
+                    "instruction": "In the new page, on the left-hand side press \"Configuration\" in the \"Environment: Superhero-api-env\" section."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Wait for the \"Configuration\" page to load then scroll down to the very bottom of the page."
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the \"Updates, monitoring, and logging\" section press the \"Edit\" button."
+                },
+                {
+                    "id": 6,
+                    "instruction": "In \"Configure updates, monitoring, and logging\" scroll to the very bottom of the page."
+                },
+                {
+                    "id": 7,
+                    "instruction": "In \"Environment properties\" change the FRONTEND_URL to be your new Amplify domain link. Then scroll down and press the \"Apply\" button.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "fxml",
+                        "DisplayLang": "Env",
+                        "FormatCode": "FRONTEND_URL: YOUR-AMPLIFY-DOMAIN-LINK\n\n* Press Apply *\n",
+                        "CopyCode": "FRONTEND_URL: YOUR-AMPLIFY-DOMAIN-LINK\n\n* Press Apply *\n"
+                    }
+                },
+                {
+                    "id": 8,
+                    "instruction": "Give it like 30 seconds and eventually a blue banner will appear saying something like \"Elastic Beanstalk is updating your environment\". Wait like 1-2 minutes until you see a green banner that says \"Environment update successfully completed.\"."
+                },
+                {
+                    "id": 9,
+                    "instruction": "Congratulations! You have successfully deployed your full-stack application to AWS! You should be able to open your Amplify domain link in your browser and have the site be fully functional."
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Delete Your AWS Services",
+                    "desc": "Explains how to undeploy your project once you're done."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "First, we'll undeploy our Amplify app."
+                },
+                {
+                    "id": 2,
+                    "instruction": "Go to the [Amplify](https://console.aws.amazon.com/amplify/home) console dashboard."
+                },
+                {
+                    "id": 3,
+                    "instruction": "Click on the card in \"All apps\" that has the name of your app."
+                },
+                {
+                    "id": 4,
+                    "instruction": "In the left-side bar click on \"App settings\" then press the \"General settings\" option."
+                },
+                {
+                    "id": 5,
+                    "instruction": "In the \"Delete app\" section press the \"Delete app\" button."
+                },
+                {
+                    "id": 6,
+                    "instruction": "Type \"delete\" in the field and then press the \"Delete app\" button."
+                },
+                {
+                    "id": 7,
+                    "instruction": "You should see a green banner appear in the bottom right that says \"Successfully deleted Superhero-Frontend. Backend resources for all branches successfully queued for deletion.\"."
+                },
+                {
+                    "id": 8,
+                    "instruction": "Congratulations! You have successfully deleted your amplify app."
+                },
+                {
+                    "id": 9,
+                    "instruction": "Second, we'll undeploy our CloudFront app."
+                },
+                {
+                    "id": 10,
+                    "instruction": "Go to the [CloudFront](https://us-east-1.console.aws.amazon.com/cloudfront/) console dashboard."
+                },
+                {
+                    "id": 11,
+                    "instruction": "In the \"Distributions\" table, select your CloudFront distribution. Then press the \"Disable\" button."
+                },
+                {
+                    "id": 12,
+                    "instruction": "Wait 5 minutes for it to be disabled."
+                },
+                {
+                    "id": 13,
+                    "instruction": "After 5 minutes have passed, select your distribution again in the table. Press the \"Delete\" button which should now be working."
+                },
+                {
+                    "id": 14,
+                    "instruction": "You should then see a green banner that says something like \"Deleted distribution: E2HBJ3h8A14QX1.\"."
+                },
+                {
+                    "id": 15,
+                    "instruction": "Congratulations! You have successfully deleted your CloudFront distribution!"
+                },
+                {
+                    "id": 16,
+                    "instruction": "Third, we'll undeploy our Elastic Beanstalk app."
+                },
+                {
+                    "id": 17,
+                    "instruction": "Go to the [Elastic Beanstalk](https://console.aws.amazon.com/elasticbeanstalk/home#/applications) applications console dashboard."
+                },
+                {
+                    "id": 18,
+                    "instruction": "In the \"Applications\" section select your app in the table. Then press \"Delete application\" in the \"Actions\" drop-down."
+                },
+                {
+                    "id": 19,
+                    "instruction": "A pop-up will appear, type the name of your application and then press the \"Delete\" button."
+                },
+                {
+                    "id": 20,
+                    "instruction": "You should see a blue banner saying something like \"superhero-api application is being deleted\"."
+                },
+                {
+                    "id": 21,
+                    "instruction": "Wait like 2-5 minutes until you green banner with a success message. Refresh the page to see changes."
+                },
+                {
+                    "id": 22,
+                    "instruction": "You also terminated the applications environment when you deleted the application. It will probably take around an hour for your environment to be completely terminated."
+                },
+                {
+                    "id": 23,
+                    "instruction": "To see the status of your environment press \"Environments\" in the left-hand side. You can also click this [link](https://console.aws.amazon.com/elasticbeanstalk/home#/environments)."
+                },
+                {
+                    "id": 24,
+                    "instruction": "Deleting the Elastic Beanstalk app should also automatically delete it's associated EC2 Load balancer. You can go [here](https://console.aws.amazon.com/ec2/v2/home#LoadBalancers) to ensure there's nothing in the \"Load balancers\" table."
+                },
+                {
+                    "id": 25,
+                    "instruction": "Congratulations! You have successfully deleted your Elastic Beanstalk app."
+                },
+                {
+                    "id": 26,
+                    "instruction": "Fourth, we'll undeploy our RDS instance."
+                },
+                {
+                    "id": 27,
+                    "instruction": "Go to the [RDS](https://console.aws.amazon.com/rds/home#databases:) databases console dashboard."
+                },
+                {
+                    "id": 28,
+                    "instruction": "In the \"Databases\" section select your database in the table. Then press \"Actions\" and the press \"Delete\" in the drop-down menu."
+                },
+                {
+                    "id": 29,
+                    "instruction": "A pop-up should appear. Unselect \"Create final snapshot\" if you don't want to save a snapshot of your data. Then check the acknowledgement box."
+                },
+                {
+                    "id": 30,
+                    "instruction": "Type \"delete me\" into the field, then press the \"Delete\" button."
+                },
+                {
+                    "id": 31,
+                    "instruction": "You should see a blue banner that says something like \"Deleting DB instance superhero-db-instance\"."
+                },
+                {
+                    "id": 32,
+                    "instruction": "Give it like 5-7 minutes to be deleted. Once your see a green success banner you should be good."
+                },
+                {
+                    "id": 33,
+                    "instruction": "Fifth, we'll undeploy our S3 buckets."
+                },
+                {
+                    "id": 34,
+                    "instruction": "Go to the [S3](https://console.aws.amazon.com/s3) console dashboard."
+                },
+                {
+                    "id": 35,
+                    "instruction": "In the \"General purpose buckets\" section press the blue \"Name\" column link of the bucket you want to delete. I'd suggest deleting the \"prod-superhero-pics\" bucket first."
+                },
+                {
+                    "id": 36,
+                    "instruction": "In the \"Objects\" section, select the check box next to the \"Name\" column to select all your items."
+                },
+                {
+                    "id": 37,
+                    "instruction": "Press the \"Delete\" button."
+                },
+                {
+                    "id": 38,
+                    "instruction": "In the \"Delete objects\" page, scroll down, type \"permanently delete\" in the field, and then press the \"Delete objects\" button."
+                },
+                {
+                    "id": 39,
+                    "instruction": "You should see a green banner that says \"Successfully deleted objects\"."
+                },
+                {
+                    "id": 40,
+                    "instruction": "Now go back to [S3](https://console.aws.amazon.com/s3) console dashboard."
+                },
+                {
+                    "id": 41,
+                    "instruction": "In the table select the circle of the S3 bucket that's content was just deleted. Then press \"Delete\"."
+                },
+                {
+                    "id": 42,
+                    "instruction": "In the \"Delete bucket\" page, type the name of the bucket into the field and then press the \"Delete bucket\" button."
+                },
+                {
+                    "id": 43,
+                    "instruction": "You should see a green message saying something like \"Successfully deleted bucket \"prod-superhero-pics\"\"."
+                },
+                {
+                    "id": 44,
+                    "instruction": "Do steps 34-44 for each bucket you want to delete EXCEPT the elastic beanstalk one. For the Elastic beanstalk bucket do steps 45-56 Below."
+                },
+                {
+                    "id": 45,
+                    "instruction": "Click the link in the \"Name\" column of the elastic beanstalk S3 bucket."
+                },
+                {
+                    "id": 46,
+                    "instruction": "In the \"Objects\" section, select the check box next to the \"Name\" column to select all your items."
+                },
+                {
+                    "id": 47,
+                    "instruction": "Press the \"Delete\" button."
+                },
+                {
+                    "id": 48,
+                    "instruction": "In the \"Delete objects\" page, scroll down, type \"permanently delete\" in the field, and then press the \"Delete objects\" button."
+                },
+                {
+                    "id": 49,
+                    "instruction": "You should see a green banner that says \"Successfully deleted objects\"."
+                },
+                {
+                    "id": 50,
+                    "instruction": "Now go to the \"Permissions\" tab. Then scroll down to the \"Bucket policy\" section."
+                },
+                {
+                    "id": 51,
+                    "instruction": "Press the \"Edit\" button and delete the following permission at the end (and the comma above it). This will allow us to delete our bucket. After you've delete the JSON object scroll down and press \"Save changes\". Note the resource name will a slightly different \"Resource\" for you.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "JSON",
+                        "FormatCode": "{\n    \"Sid\": \"eb-58950a8c-feb6-11e2-89e0-0800277d041b\",\n    \"Effect\": \"Deny\",\n    \"Principal\": {\n      \"AWS\": \"*\"\n    },\n    \"Action\": \"s3:DeleteBucket\",\n    \"Resource\": \"arn:aws:s3:::elasticbeanstalk-us-east-1-8974289981\"\n}",
+                        "CopyCode": "{\n    \"Sid\": \"eb-58950a8c-feb6-11e2-89e0-0800277d041b\",\n    \"Effect\": \"Deny\",\n    \"Principal\": {\n      \"AWS\": \"*\"\n    },\n    \"Action\": \"s3:DeleteBucket\",\n    \"Resource\": \"arn:aws:s3:::elasticbeanstalk-us-east-1-8974289981\"\n}"
+                    }
+                },
+                {
+                    "id": 52,
+                    "instruction": "You should see a green banner that says \"Successfully edited bucket policy.\"."
+                },
+                {
+                    "id": 53,
+                    "instruction": "Go back to the [S3](https://console.aws.amazon.com/s3) console dashboard."
+                },
+                {
+                    "id": 54,
+                    "instruction": "In the \"General purpose buckets\" table select your bucket, then press the \"Delete\" button."
+                },
+                {
+                    "id": 55,
+                    "instruction": "In the \"Delete bucket\" page enter the name of your bucket into the field, then press the orange \"Delete bucket\" button."
+                },
+                {
+                    "id": 56,
+                    "instruction": "You should see a green banner that says something like \"Successfully deleted bucket \"elasticbeanstalk-us-east-1-561982494892\"\". That mean's you've successfully deleted the bucket."
+                },
+                {
+                    "id": 57,
+                    "instruction": "Sixth, we'll delete our local MySQL databases."
+                },
+                {
+                    "id": 58,
+                    "instruction": "Open a new terminal and run the following command to sign in as a root user. Enter your password when prompted.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "mysql -u root -p",
+                        "CopyCode": "mysql -u root -p"
+                    }
+                },
+                {
+                    "id": 59,
+                    "instruction": "Run the following commands to show your users.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "SELECT User, Host FROM mysql.user;",
+                        "CopyCode": "SELECT User, Host FROM mysql.user;"
+                    }
+                },
+                {
+                    "id": 60,
+                    "instruction": "Use the following query to delete your databases, make sure they're gone, then clear your terminal.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "DROP DATABASE superhero_db;\nDROP DATABASE superhero_test_db;\n\nSHOW Databases;\n\nsystem clear;\n",
+                        "CopyCode": "DROP DATABASE superhero_db;\nDROP DATABASE superhero_test_db;\n\nSHOW Databases;\n\nsystem clear;\n"
+                    }
+                },
+                {
+                    "id": 61,
+                    "instruction": "Use the following query to delete your users and check that they're gone.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "customsql",
+                        "DisplayLang": "SQL",
+                        "FormatCode": "DROP USER 'superhero_user'@'%';\nDROP USER 'superhero_test_user'@'%';\n\nSELECT User, Host FROM mysql.user;\n\n* Exit MySQL using the following command. *\n\nexit",
+                        "CopyCode": "DROP USER 'superhero_user'@'%';\nDROP USER 'superhero_test_user'@'%';\n\nSELECT User, Host FROM mysql.user;\n\n* Exit MySQL using the following command. *\n\nexit"
+                    }
+                },
+                {
+                    "id": 62,
+                    "instruction": "Now stop running MySQL using the following command.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew services stop mysql",
+                        "CopyCode": "brew services stop mysql"
+                    }
+                },
+                {
+                    "id": 63,
+                    "instruction": "Now run the following command to ensure it stopped correctly. It's \"Status\" should be \"none\".",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew services list",
+                        "CopyCode": "brew services list"
+                    }
+                },
+                {
+                    "id": 64,
+                    "instruction": "If you want to delete your folders from Github do the following."
+                },
+                {
+                    "id": 65,
+                    "instruction": "Go to [github.com](https://github.com/) and on the left-hand side click the name of your project."
+                },
+                {
+                    "id": 66,
+                    "instruction": "In your repository press the \"Settings\" tab on the right with the gear icon next to it."
+                },
+                {
+                    "id": 67,
+                    "instruction": "Then scroll all the way down to the bottom and press \"Delete this repository\". Then follow the prompts."
+                },
+                {
+                    "id": 68,
+                    "instruction": "You can do this for both your frontend and Rest Api repositories."
+                },
+                {
+                    "id": 69,
+                    "instruction": "I do <b>NOT</b> recommend doing steps 70-74. The steps explain how to completely remove MySQL from your computer."
+                },
+                {
+                    "id": 70,
+                    "instruction": "To delete MySQL from homebrew, run the following commands. When you uninstall it, it might tell you that you can manually remove certain files. I would NOT recommend doing this.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew services stop mysql\nbrew uninstall mysql",
+                        "CopyCode": "brew services stop mysql\nbrew uninstall mysql"
+                    }
+                },
+                {
+                    "id": 71,
+                    "instruction": "Now confirm MySQL is no longer installed by listing your programs and making sure it's not in the list anymore.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "brew list",
+                        "CopyCode": "brew list"
+                    }
+                },
+                {
+                    "id": 72,
+                    "instruction": "You should now have successfully uninstalled MySQL!"
+                },
+                {
+                    "id": 73,
+                    "instruction": "If you want to delete your folders from your computer entirely, do the following. I <b>SERIOUSLY<b> do <u>NOT<u> recommend doing this.",
+                    "Code": {
+                        "Name": "",
+                        "Description": "",
+                        "Language": "Command",
+                        "FormatCode": "sudo rm -rf /usr/local/var/mysql",
+                        "CopyCode": "sudo rm -rf /usr/local/var/mysql"
+                    }
+                },
+                {
+                    "id": 74,
+                    "instruction": "After that you should have removed all files! Congratulations!"
+                },
+                {
+                    "id": 75,
+                    "instruction": "Congratulations! You should have successfully undeployed all your AWS services!"
+                }
+            ]
+        },
+        {
+            "Info": [
+                {
+                    "title": "Secure your Rest Api link (old)",
+                    "desc": "Add an HTTPS certificate to your Elastic Beanstalk URL to secure it using Route 53 and Certificate Manager."
+                }
+            ],
+            "Instructions": [
+                {
+                    "id": 1,
+                    "instruction": "We're NOT actually going be implementing this in our project, it's just a brief outline for future reference. This section is optional and you can skip it."
+                },
+                {
+                    "id": 2,
+                    "instruction": "These three videos contain great information regarding this. This is [video #1](https://youtu.be/8j9Q5iDN1Hk?si=E-wKyt0KmKDYClHs). This is [video #2](https://youtu.be/BeOKTpFsuvk?si=ucZrVevciHrqxDT8). This is [video #3](https://youtu.be/LXFQLAcjlQg?si=lD3ijbrpjV1fNkEl)."
+                },
+                {
+                    "id": 3,
+                    "instruction": "First you would go to the [Route 53](https://console.aws.amazon.com/route53/home) console dashboard and buy a new domain link. It will probably cost you ~$14 a year. You can't use your Elastic Beanstalk domain url because the aws SSL certificate issuance process requires proof that you control the domain. When you request a certificate for an Elastic Beanstalk URL, AWS may need to verify that you're authorized to issue an SSL certificate for that domain URL. Elastic Beanstalk subdomains (those ending in .elasticbeanstalk.com) are managed by AWS, and they generally don't support public SSL certificate requests directly from ACM for subdomains. This is because you don't directly control the root domain (elasticbeanstalk.com)."
+                },
+                {
+                    "id": 4,
+                    "instruction": "Then you'd get an SSL certificate for the domain you created in the [Certificate Manager (ACM)](https://console.aws.amazon.com/acm/home) console dashboard. This [video](https://youtu.be/LXFQLAcjlQg?si=lD3ijbrpjV1fNkEl) is a good reference on how you would do that."
+                },
+                {
+                    "id": 5,
+                    "instruction": "Then you'd go to your [Elastic Beanstalk](https://console.aws.amazon.com/elasticbeanstalk/home) console dashboard. You'd click on your environment name, then go to configuration, go to load balancer, add a listener for your SSL certificate. This part of this [video](https://youtu.be/8j9Q5iDN1Hk?si=weGj_p0HqrSiFEp1&t=308) explains how to do that"
+                },
+                {
+                    "id": 6,
+                    "instruction": "Again, this is a just a brief description of how you would secure your Rest Api URL with HTTPS. We're not going to implement it in this project."
                 }
             ]
         }
