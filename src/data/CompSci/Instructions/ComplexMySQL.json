@@ -2880,8 +2880,8 @@
                         "Description": "",
                         "Language": "Javascript",
                         "DisplayLang": "CSS",
-                        "FormatCode": "body {\n  background-color: lavenderblush;\n}\n\n.container {\n  margin: 20px;\n  padding-bottom: 70px;\n}\n\n.title {\n  text-align: left;\n  padding-left: 40px;\n  margin-bottom: 20px;\n}",
-                        "CopyCode": "body {\n  background-color: lavenderblush;\n}\n\n.container {\n  margin: 20px;\n  padding-bottom: 70px;\n}\n\n.title {\n  text-align: left;\n  padding-left: 40px;\n  margin-bottom: 20px;\n}"
+                        "FormatCode": ".container {\n  margin: 20px;\n  padding-bottom: 70px;\n}\n\n.title {\n  text-align: left;\n  padding-left: 40px;\n  margin-bottom: 20px;\n}",
+                        "CopyCode": ".container {\n  margin: 20px;\n  padding-bottom: 70px;\n}\n\n.title {\n  text-align: left;\n  padding-left: 40px;\n  margin-bottom: 20px;\n}"
                     }
                 },
                 {
@@ -2904,8 +2904,8 @@
                         "Description": "",
                         "Language": "Javascript",
                         "DisplayLang": "CSS",
-                        "FormatCode": ".red-line {\n  width: 100%;\n  height: 4px;\n  background-color: red;\n  margin: 20px 0;\n}\n\n.superheroes-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 20px;\n  padding: 20px;\n}",
-                        "CopyCode": ".red-line {\n  width: 100%;\n  height: 4px;\n  background-color: red;\n  margin: 20px 0;\n}\n\n.superheroes-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 20px;\n  padding: 20px;\n}"
+                        "FormatCode": "body {\n  background-color: lavenderblush;\n}\n\n.red-line {\n  width: 100%;\n  height: 4px;\n  background-color: red;\n  margin: 20px 0;\n}\n\n.superheroes-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 20px;\n  padding: 20px;\n}",
+                        "CopyCode": "body {\n  background-color: lavenderblush;\n}\n\n.red-line {\n  width: 100%;\n  height: 4px;\n  background-color: red;\n  margin: 20px 0;\n}\n\n.superheroes-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 20px;\n  padding: 20px;\n}"
                     }
                 },
                 {
