@@ -69,7 +69,7 @@
                 },
                 {
                     "id": 4,
-                    "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"Router\" change it to include a \"basename\" prop and set its value to be the name of your GitHub repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.",
+                    "instruction": "Step 4 if you're using React router. Go to your index.js file in the src/router directory. Where it says \"Router\" change it to include a \"basename\" prop and set its value to be the name of your GitHub repository. It should start with a slash. You only need to change that one line. If you're not using React router you can skip this step.<br><br>NOTE: Add \"/name-of-github-repo\" to the front of any paths to the public folder. For example, instead of the path \"/resource.jpg\" you would change the path to \"/name-of-github-repo/resource.jpg\".",
                     "Code": {
                         "Name": "",
                         "Description": "",
