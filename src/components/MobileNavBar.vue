@@ -8,7 +8,9 @@
       menu
     </span>
 
-    <SideBar v-if="isMenuOpen" @close-menu="isMenuOpen = false"/>
+    <transition name="slide">
+      <SideBar v-if="isMenuOpen" @close-menu="isMenuOpen = false"/>
+    </transition>
 
     <SearchBar v-if="isSearchBarOpen" @close-search="closeSearchBar"></SearchBar>
 
@@ -106,6 +108,27 @@ const closeSearchBar = () => {
   margin-right: 3px;
   margin-top: -9px;
   padding-right: 20px;
+}
+
+/* Slide Transition */
+.slide-enter-active, .slide-leave-active {
+  transition: transform 0.3s ease-out;
+}
+
+.slide-enter-from {
+  transform: translateX(-100%);
+}
+
+.slide-enter-to {
+  transform: translateX(0);
+}
+
+.slide-leave-from {
+  transform: translateX(0);
+}
+
+.slide-leave-to {
+  transform: translateX(-100%);
 }
 
 </style>
