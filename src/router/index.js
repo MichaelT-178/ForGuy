@@ -40,6 +40,7 @@ import CompSciTips from '../Views/compsci/CompSciTips.vue';
 import GeneralTips from '../Views/other/GeneralTips.vue';
 import AppsToDownload from '../Views/other/AppsToDownload.vue';
 import CsStuffILike from '../Views/other/CsStuffILike.vue';
+import CssCheatSheet from '../Views/other/CssCheatSheet.vue';
 import TerminalCommands from '../Views/other/TerminalCommands.vue';
 import KeyboardShortcuts from '../Views/other/KeyboardShortcuts.vue';
 import Memes from '../Views/other/memes.vue';
@@ -190,6 +191,10 @@ const routes = [
     {
         path: '/Other/KeyboardShortcuts',
         component: KeyboardShortcuts
+    },
+    {
+        path: '/Other/CssCheatSheet',
+        component: CssCheatSheet
     },
     {
         path: '/Other/Memes',

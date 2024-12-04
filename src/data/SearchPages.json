@@ -575,27 +575,34 @@
     },
     {
         "id": 83,
+        "Emoji": "🖌️",
+        "EmojiDescription": "Brush pencil",
+        "MenuName": "CSS Cheat Sheet",
+        "Link": "/Other/CssCheatSheet"
+    },
+    {
+        "id": 84,
         "Emoji": "😂",
         "EmojiDescription": "Laughing face laughing emoji",
         "MenuName": "Memes",
         "Link": "/Other/Memes"
     },
     {
-        "id": 84,
+        "id": 85,
         "Emoji": "📸",
         "EmojiDescription": "Camera",
         "MenuName": "UNCW Pictures",
         "Link": "/Other/UncwPics"
     },
     {
-        "id": 85,
+        "id": 86,
         "Emoji": "✉️",
         "EmojiDescription": "Mail Email",
         "MenuName": "Contact Me",
         "Link": "/ContactMe"
     },
     {
-        "id": 86,
+        "id": 87,
         "Emoji": "📜",
         "EmojiDescription": "Personal Use",
         "MenuName": "Format Code",

@@ -1,16 +1,17 @@
 <template>
     <div class="content-container">
         <h1 class="title">{{ text.page }}</h1>
-        <p class="description">This is the Terminal Commands page. There's a <span @click="scrollToPracticeTable" class="scroll-txt">practice sequence</span> table at the bottom.</p>
-        <CmdTable tableName="Create" :items="createCommands" class="cmd-table"></CmdTable>
-        <CmdTable tableName="Navigation" :items="navigationCommands" class="cmd-table"></CmdTable>
-        <CmdTable tableName="Display" :items="displayCommands" class="cmd-table"></CmdTable>
-        <CmdTable tableName="Delete" :items="deleteCommands" class="cmd-table"></CmdTable>
-        <CmdTable tableName="Programming" :items="programmingCommands" class="cmd-table"></CmdTable>
-        <CmdTable tableName="Practice" :items="practiceCommands" class="cmd-table" ref="practiceTable"></CmdTable>
+        <p class="description">{{ text.desc }} <span @click="scrollToPracticeTable" class="scroll-txt">{{ text.desc2 }}</span> {{ text.desc3 }}</p>
+        <CmdTable :tableName="createName"      :items="createCommands"      class="cmd-table"></CmdTable>
+        <CmdTable :tableName="navigationName"  :items="navigationCommands"  class="cmd-table"></CmdTable>
+        <CmdTable :tableName="displayName"     :items="displayCommands"     class="cmd-table"></CmdTable>
+        <CmdTable :tableName="deleteName"      :items="deleteCommands"      class="cmd-table"></CmdTable>
+        <CmdTable :tableName="programmingName" :items="programmingCommands" class="cmd-table"></CmdTable>
+        <CmdTable :tableName="practiceName"    :items="practiceCommands"    class="cmd-table" ref="practiceTable"></CmdTable>
     </div>
     <p style="margin-bottom: 50px;"></p>
 </template>
+
 
 <script setup>
 import { ref, nextTick } from 'vue';
@@ -19,12 +20,24 @@ import AllData from "../../data/Other/TerminalCommands.json";
 
 const jsonData = ref(AllData);
 const text = jsonData.value["Text"][0];
+
 const createCommands = jsonData.value["Creation"];
+const createName = createCommands[0].tableName;
+
 const navigationCommands = jsonData.value["Navigation"];
+const navigationName = navigationCommands[0].tableName;
+
 const displayCommands = jsonData.value["Display"];
+const displayName = displayCommands[0].tableName;
+
 const deleteCommands = jsonData.value["Delete"];
+const deleteName = deleteCommands[0].tableName;
+
 const programmingCommands = jsonData.value["Programming"];
+const programmingName = programmingCommands[0].tableName;
+
 const practiceCommands = jsonData.value["Practice"];
+const practiceName = practiceCommands[0].tableName;
 
 const practiceTable = ref(null);
 

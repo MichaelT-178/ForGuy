@@ -64,6 +64,7 @@ export const menuItems = [
             { text: "CS Stuff I Like",     icon: "favorite",          link: "/Other/CompSciStuff" },
             { text: "Terminal Commands",   icon: "terminal",          link: "/Other/TerminalCommands" },
             { text: "Keyboard Shortcuts",  icon: "bolt",              link: "/Other/KeyboardShortcuts" },
+            { text: "CSS Cheat Sheet",     icon: "brush",             link: "/Other/CssCheatSheet" },
             { text: "Memes",               icon: "comedy_mask",       link: "/Other/Memes" },
             { text: "UNCW Pictures",       icon: "photo_camera",      link: "/Other/UncwPics" }
         ]

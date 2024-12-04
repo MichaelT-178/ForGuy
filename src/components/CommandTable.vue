@@ -4,15 +4,17 @@
     <table>
       <thead>
         <tr>
-          <th>Command</th>
+          <th v-if="hasCommandProperty">Command</th>
+          <th v-if="hasPropertyProperty">Property</th>
           <th>Description</th>
           <th>Example</th>
           <th>Copy</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) in items" :key="index">
-          <td>{{ item.Command }}</td>
+        <tr v-for="(item, index) in filteredItems" :key="index">
+          <td v-if="hasCommandProperty">{{ item.Command }}</td>
+          <td v-if="hasPropertyProperty">{{ item.Property}}</td>
           <td id="description-column">{{ item.Description }}</td>
           <td>{{ item.Example }}</td>
           <td>
@@ -30,6 +32,8 @@
 
 
 <script setup>
+import { computed } from 'vue';
+
 const props = defineProps({
   tableName: String,
   items: Array
@@ -38,6 +42,19 @@ const props = defineProps({
 props.items.forEach(item => {
   item.copied = false;
 });
+
+// If the object contains the table name do
+// NOT include it in the table
+const filteredItems = computed(() => {
+  if (props.items[0]?.tableName) {
+    return props.items.slice(1);
+  }
+  
+  return props.items;
+});
+
+const hasCommandProperty = computed(() => filteredItems.value.some(item => 'Command' in item));
+const hasPropertyProperty = computed(() => filteredItems.value.some(item => 'Property' in item));
 
 const copyToClipboard = (item, index) => {
   navigator.clipboard.writeText(item.Example)
