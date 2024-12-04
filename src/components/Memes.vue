@@ -12,71 +12,77 @@ import Meme10 from "../assets/memes/PerfectDate.jpg";
 import Meme11 from "../assets/memes/PercentToPass.jpg";
 import Meme12 from "../assets/memes/BackendersDoingFrontEnd.jpg";
 import Video1 from '/SchoolCanceled.mp4';
-import Meme13 from "../assets/memes/CloudyFriday.jpg";
-import Meme14 from "../assets/memes/CompSciMuscles.jpg";
-import Meme15 from "../assets/memes/InfiniteWhileLoop.jpg";
-import Meme16 from "../assets/memes/Database.jpg";
-import Meme17 from "../assets/memes/CommentOutCode.jpg";
+import Meme13 from "../assets/memes/ChatgptMeme.jpg";
+import Meme14 from "../assets/memes/CloudyFriday.jpg";
+import Meme15 from "../assets/memes/CompSciMuscles.jpg";
+import Meme16 from "../assets/memes/InfiniteWhileLoop.jpg";
+import Meme17 from "../assets/memes/Database.jpg";
+import Meme18 from "../assets/memes/CommentOutCode.jpg";
 import Video2 from '/Npesta.mp4';
-import Meme18 from "../assets/memes/BruteForceAttack.jpg";
-import Meme19 from "../assets/memes/PullStackDeveloper.jpg";
-import Meme20 from "../assets/memes/HelloWorld.jpg";
-import Meme21 from "../assets/memes/StatusCodes.jpg";
-import Meme22 from "../assets/memes/PythonSpeed.jpg";
+import Meme19 from "../assets/memes/BruteForceAttack.jpg";
+import Meme20 from "../assets/memes/PullStackDeveloper.jpg";
+import Meme21 from "../assets/memes/HelloWorld.jpg";
+import Meme22 from "../assets/memes/StatusCodes.jpg";
+import Meme23 from "../assets/memes/PythonSpeed.jpg";
 import Video3 from "/Sonic.mp4";
-import Meme23 from "../assets/memes/RTPEmployers.jpg";
-import Meme24 from "../assets/memes/ArtOfWar.jpg";
-import Meme25 from "../assets/memes/GravityFallsSpMarine.jpg";
-import Meme26 from "../assets/memes/ComfortLevels.jpg";
-import Meme27 from "../assets/memes/SomeFamousServers.jpg";
-import Meme28 from "../assets/memes/RonaldoMeme.jpg";
+import Meme24 from "../assets/memes/RTPEmployers.jpg";
+import Meme25 from "../assets/memes/ArtOfWar.jpg";
+import Meme26 from "../assets/memes/GravityFallsSpMarine.jpg";
+import Meme27 from "../assets/memes/ComfortLevels.jpg";
+import Meme28 from "../assets/memes/SomeFamousServers.jpg";
+import Meme29 from "../assets/memes/RonaldoMeme.jpg";
 import Video4 from "/Programmer.mp4";
-import Meme29 from "../assets/memes/CrowdedShore.jpg";
-import Meme30 from "../assets/memes/React.jpg";
-import Meme31 from "../assets/memes/TransparentRight.jpg";
-import Meme32 from "../assets/memes/BitEightTimes.jpg";
-import Meme33 from "../assets/memes/AndroidStudioMeme.jpg";
-import Meme34 from "../assets/memes/SignIn.jpg";
-import Meme35 from "../assets/memes/GenZcode.jpg";
+import Meme30 from "../assets/memes/CrowdedShore.jpg";
+import Meme31 from "../assets/memes/React.jpg";
+import Meme32 from "../assets/memes/TransparentRight.jpg";
+import Meme33 from "../assets/memes/BitEightTimes.jpg";
+import Meme34 from "../assets/memes/AndroidStudioMeme.jpg";
+import Meme35 from "../assets/memes/VariableMeme.jpg";
+import Meme36 from "../assets/memes/SignIn.jpg";
+import Meme37 from "../assets/memes/GenZcode.jpg";
 import Video5 from "/EnglishTeachers.mp4";
-import Meme36 from "../assets/memes/PageTwoGoogle.jpg";
-import Meme37 from "../assets/memes/DataStructureTeachers.jpg";
-import Meme38 from "../assets/memes/CrushKnowsBinary.jpg";
-import Meme39 from "../assets/memes/VerboseJava.jpg";
-import Meme40 from "../assets/memes/WhenYouVacation.jpg";
-import Meme41 from "../assets/memes/BobbyDropTables.jpg";
-import Meme42 from "../assets/memes/SendaCV.jpg";
+import Meme38 from "../assets/memes/PageTwoGoogle.jpg";
+import Meme39 from "../assets/memes/DataStructureTeachers.jpg";
+import Meme40 from "../assets/memes/CrushKnowsBinary.jpg";
+import Meme41 from "../assets/memes/VerboseJava.jpg";
+import Meme42 from "../assets/memes/WhenYouVacation.jpg";
+import Meme43 from "../assets/memes/BobbyDropTables.jpg";
+import Meme44 from "../assets/memes/SendaCV.jpg";
 import Video6 from "/SQLMeme.mp4";
-import Meme43 from "../assets/memes/Dev9am.jpg";
-import Meme44 from "../assets/memes/ApplicantAndEmployer.jpg";
-import Meme45 from "../assets/memes/TooManyApplicants.jpg";
-import Meme46 from "../assets/memes/SpringBootError.jpg";
-import Meme47 from "../assets/memes/Hammurabi.jpg";
-import Meme48 from "../assets/memes/lamp.jpg";
-import Meme49 from "../assets/memes/lightmode.jpg";
-import Meme50 from "../assets/memes/recommendation.jpg";
-import Meme51 from "../assets/memes/Testing.jpg";
-import Meme52 from "../assets/memes/WhenYouHearBack.jpg";
-import Meme53 from "../assets/memes/Extensions.jpg";
-import Meme54 from "../assets/memes/null.jpg";
-import Meme55 from "../assets/memes/ProgrammerTester.jpg";
-import Meme56 from "../assets/memes/TerminalMeme.jpg";
-import Meme57 from "../assets/memes/Googling.jpg";
-import Meme58 from "../assets/memes/Covid.jpg";
-import Meme59 from "../assets/memes/ChangeUI.jpg";
-import Meme60 from "../assets/pom.jpg";
-import Meme61 from "../assets/memes/JoinMeme.jpg";
-import Meme62 from "../assets/memes/Gates.jpg";
-import Meme63 from "../assets/memes/TheRona.jpg";
-import Meme64 from "../assets/memes/FindInternship.jpg";
-import Meme65 from "../assets/memes/ChatGpt.jpg";
-import Meme66 from "../assets/memes/Documentation.jpg";
-import Meme67 from "../assets/memes/BoyfriendJokes.jpg";
-import Meme68 from "../assets/memes/MichaelJordan.jpg";
-import Meme69 from "../assets/memes/JackieChan.jpg";
-import Meme70 from "../assets/memes/DonaldDuck.jpg";
-import Meme71 from "../assets/memes/Sweating.jpg";
-import Meme72 from "../assets/memes/CoolSuitGuy.jpg";
+import Meme45 from "../assets/memes/Dev9am.jpg";
+import Meme46 from "../assets/memes/ApplicantAndEmployer.jpg";
+import Meme47 from "../assets/memes/TooManyApplicants.jpg";
+import Meme48 from "../assets/memes/SpringBootError.jpg";
+import Meme49 from "../assets/memes/Hammurabi.jpg";
+import Meme50 from "../assets/memes/lamp.jpg";
+import Meme51 from "../assets/memes/lightmode.jpg";
+import Meme52 from "../assets/memes/recommendation.jpg";
+import Meme53 from "../assets/memes/Testing.jpg";
+import Meme54 from "../assets/memes/WhenYouHearBack.jpg";
+import Meme55 from "../assets/memes/Extensions.jpg";
+import Meme56 from "../assets/memes/null.jpg";
+import Meme57 from "../assets/memes/ProgrammerTester.jpg";
+import Meme58 from "../assets/memes/TerminalMeme.jpg";
+import Meme59 from "../assets/memes/Googling.jpg";
+import Meme60 from "../assets/memes/Covid.jpg";
+import Meme61 from "../assets/memes/ChangeUI.jpg";
+import Meme62 from "../assets/pom.jpg";
+import Meme63 from "../assets/memes/JoinMeme.jpg";
+import Meme64 from "../assets/memes/Gates.jpg";
+import Meme65 from "../assets/memes/TheRona.jpg";
+import Meme66 from "../assets/memes/FindInternship.jpg";
+import Meme67 from "../assets/memes/ChatGpt.jpg";
+import Meme68 from "../assets/memes/Documentation.jpg";
+import Meme69 from "../assets/memes/BoyfriendJokes.jpg";
+import Meme70 from "../assets/memes/CountNameMeme.jpg";
+import Meme71 from "../assets/memes/LinuxMeme.jpg";
+import Meme72 from "../assets/memes/AssemblyMeme.jpg";
+import Meme73 from "../assets/memes/JobSearching.jpg";
+import Meme74 from "../assets/memes/IronManCode.jpg";
+import Meme101 from "../assets/memes/JackieChan.jpg";
+import Meme102 from "../assets/memes/DonaldDuck.jpg";
+import Meme103 from "../assets/memes/Sweating.jpg";
+import Meme104 from "../assets/memes/CoolSuitGuy.jpg";
 
 export const memeObjects = [
     { 
@@ -145,29 +151,34 @@ export const memeObjects = [
         video: Video1
     }, //SchoolCanceled.mp4
     { 
+        text: "Same",
+        transcription: "Days before OpenAI Developer Coding - 2 hours Developer debugging - 6 hours Days after OpenAI ChatGPT generates Codes - 5 min Developer debugging - 24 hours",
+        image: Meme13
+    }, //ChatgptMeme.jpg
+    { 
         text: "Goated feeling",
         transcription: "How it feels to exit you final period on a cloudy Friday before winter break",
-        image: Meme13 
+        image: Meme14 
     }, //CloudyFriday.jpg
     { 
         text: "They're definitely talking about me.",
         transcription: "What's with all these muscled up guys in CS classes I am an accounting major where all the guys are weak with tiny noodles arms and girls have staches. Last week I was walking outside a compsci classroom I saw the class was full of incredibly muscled guys. They were so ripped that even the dumbbells seemed to blush in their presence. These guys had biceps that could make Hercules jealous and abs that looked like they were chiseled by Michelangelo himself. What gives? r/csMajors u/Boring_Inspector9857 • 7h 440 59 share Join",
-        image: Meme14 
+        image: Meme15 
     }, //CompSciMuscles.jpg
     { 
         text: "High CPU usage 😍",
         transcription: "I wrote a while(true) loop With break statements right?",
-        image: Meme15 
+        image: Meme16 
     }, //InfiniteWhileLoop.jpg
     { 
         text: "Lowkey everything's basically a txt file in programming.",
         transcription: "database.sql database.xlsx database.txt",
-        image: Meme16 
+        image: Meme17 
     }, //Database.jpg
     { 
         text: "Highlight + command + / goes so hard",
         transcription: "comments to describe the program comments to temporarily remove part of code",
-        image: Meme17 
+        image: Meme18 
     }, //CommentOutCode.jpg
     { 
         text: "\"UNCWAlert: Campus Operations Affected by Expected Tropical Weather Conditions.\"",
@@ -177,27 +188,27 @@ export const memeObjects = [
     { 
         text: "I feel like some companies actually do this.",
         transcription: "Hey! what's going on? Sick bastard! // brute-force attack protection if isPasswordCorrect && isFirstLoginAttempt { Error(\"Wrong login or password\") } ",
-        image: Meme18 
+        image: Meme19 
     }, //BruteForceAttack.jpg
     { 
         text: "Anything to make it work.",
         transcription: "I'm a Pull Stack Developer. I just pull things off the internet and put it into my code. 5:13 AM 19 Dec 20 Twitter for Android 647 Retweets 122 Quote Tweets 5,154 Likes",
-        image: Meme19 
+        image: Meme20 
     }, //PullStackDeveloper.jpg
     { 
         text: "The sheer...verbosity of it all 😳🤯",
         transcription: "Python Hello World Java Public Static void Hello World",
-        image: Meme20 
+        image: Meme21 
     }, //HelloWorld.jpg
     { 
         text: "CSC 351 gang",
         transcription: "HTTP status ranges in a nutshell 1xx: hold on 2xx: here you go 3xx: go away 4xx: you fucked up 5xx: I fucked up",
-        image: Meme21 
+        image: Meme22 
     }, //StatusCodes.jpg
     { 
         text: "*0.00004 seconds faster",
         transcription: "C++ devs when their thousand line code is .4 seconds faster than a 10 line python code I am speed",
-        image: Meme22 
+        image: Meme23 
     }, //PythonSpeed.jpg
     { 
         text: "Literally my reaction when I got a response from IBM",
@@ -207,32 +218,32 @@ export const memeObjects = [
     { 
         text: "Fidelity Investments be like",
         transcription: "Unc, Duke, and Ncsu students RTP employers Uncw RTP employers",
-        image: Meme23 
+        image: Meme24 
     }, //RTPEmployers.jpg
     { 
         text: "Michael: the USAA ping pong TYRANT. (All credit goes to Obed for creating this masterpiece)",
         transcription: "Team Art of War Hudson Nam-rata yoga mat Sadia yum! Michael Vaish I hate men!",
-        image: Meme24 
+        image: Meme25 
     }, //ArtOfWar.jpg
     { 
         text: "At least it works",
         transcription: "An ios app shaky pale marine woah. This is useless",
-        image: Meme25 
+        image: Meme26 
     }, //GravityFallsSpMarine.jpg
     { 
         text: "Why can't it feel like that at night 😫",
         transcription: "My bed when I have to wake up for class We're hitting comfort levels that shouldn't even be possible",
-        image: Meme26 
+        image: Meme27 
     }, //ComfortLevels.jpg
     { 
         text: "Cisco Webex ftw",
         transcription: "Some Famous Severs Amazon Google Microsoft Zoom app",
-        image: Meme27 
+        image: Meme28 
     }, //SomeFamousServers.jpg
     { 
         text: "Average computer science graduate reaction",
         transcription: "Watching the homeless man pull of a knife Watching the homeless man pull out your same degree Ronaldo",
-        image: Meme28 
+        image: Meme29 
     }, //RonaldoMeme.jpg
     { 
         text: "When your \"Hello World\" program runs.",
@@ -242,37 +253,42 @@ export const memeObjects = [
     { 
         text: "*Dies of suffocation*",
         transcription: "When I'm in a being crowded competition and my opponent is Shore on Saturday Morning",
-        image: Meme29 
+        image: Meme30 
     }, //CrowdedShore.jpg
     { 
         text: "The hardest part about React",
         transcription: "That's right, I use React R I can't E Setup A Node Environment C Help T",
-        image: Meme30 
+        image: Meme31 
     }, //React.jpg
     { 
         text: "This happens at least once whenever I try to create a slideshow.",
         transcription: "I'm a PNG. You can download me. And you're transparent, right? e transparent, right?",
-        image: Meme31 
+        image: Meme32 
     }, //TransparentRight.jpg
     { 
         text: "CSC 342 gang",
         transcription: "She bit me 8 times Liar! It's just 1 byte",
-        image: Meme32 
+        image: Meme33 
     }, //BitEightTimes.jpg
     { 
         text: "Computer fan noise goes hard.",
         transcription: "We are going to freeze to death if we don't do something We only have on option left Run Android Studio",
-        image: Meme33 
+        image: Meme34 
     }, //AndroidStudioMeme.jpg
+    { 
+        text: "index vs jindex",
+        transcription: "i,j in english i,j in programming i j in english i j in programming",
+        image: Meme35
+    }, //VariableMeme.jpg
     { 
         text: "Applying to jobs be like",
         transcription: "Noooooooooooo I don't wanna sign up with facebook sign up with google Name First Name Last Name Pick a username create a password Confirm password Data of birth select month Gender select gender zip code Sign In with Google Sign in with Facebook Sign in with Twitter Sign in with email Sign in with phone Please login to continue Password access create your account Sign up with Email Confirm your email address please click on the link below to confirm your email address Confirm your email Please note: the link will expire in 15 minutes.",
-        image: Meme34
+        image: Meme36
     }, //SignIn.jpg
     { 
         text: "This needs to be a real language",
         transcription: "As a way to encourage the younger generation to try out programming most of the key words in C# have been permanently renamed. This should increase the amount of younger game developers coming the next few years. default public float rizz; private bool IsSus() try if(rizz > vibe) return true; else return false; catch(Exception e) Debug.LogError(e.Message); throw; gen z highkey period rizz; lowkey fax IsSus() fuck_around vibe_check(rizz ratios vibe) its_giving no_cap; big_yikes its_giving cap; find_out(Tea t) Shoutout.SpillTea(t.Yap); yeet; Fear the phantom (horror game) @Phantom_TheGame",
-        image: Meme35 
+        image: Meme37 
     }, //GenZcode.jpg
     { 
         text: "Mr Calandro Type shi",
@@ -282,37 +298,37 @@ export const memeObjects = [
     { 
         text: "3 spooky 5 me",
         transcription: "surface web deep web dark web page two of google",
-        image: Meme36 
+        image: Meme38 
     }, //PageTwoGoogle.jpg
     { 
         text: "This is literally CSC 231",
         transcription: "algorithms and data structures professors watching someone loop through a list instead of creating a custom recursive binary heap object to store 7 integers.",
-        image: Meme37 
+        image: Meme39 
     }, //DataStructureTeachers.jpg
     { 
         text: "Your crush thinks you're a 2 (r.i.p).",
         transcription: "Your crush knows binary. She thinks you're a 10. She thinks you're a 10.",
-        image: Meme38 
+        image: Meme40 
     }, //CrushKnowsBinary.jpg
     { 
         text: "Java is too damn VERBOSE",
         transcription: "When I'm in a Being verbose competition and my opponent is the Java programming language",
-        image: Meme39 
+        image: Meme41 
     }, //VerboseJava.jpg
     { 
         text: "So Real",
         transcription: "When you come back from a vacation HelloWorld(\"print\")",
-        image: Meme40 
+        image: Meme42 
     }, //WhenYouVacation.jpg
     { 
         text: "CSC 351 Gang",
         transcription: "Hi, this is your son's school. We're having some computer trouble. Oh, dear - did he break something? In a way - Did you really name your son Robert'); DROP TABLE Students;--? Oh, yes. Little Bobby Tables, we call him. Well, we've lost this year's student records. I hope you're happy. And I hope you've learned to sanitize your database inputs.",
-        image: Meme41 
+        image: Meme43 
     }, //BobbyDropTables.jpg
     { 
         text: "Lenovo's Interview Process ",
         transcription: "Send a cv get rejected send a cv interview with Hr interview with developers technical interview get rejected",
-        image: Meme42 
+        image: Meme44 
     }, //SendaCV.jpg
     { 
         text: "Bro does NOT have constraints of his database 💀",
@@ -322,128 +338,153 @@ export const memeObjects = [
     { 
         text: "Literally me except for Zoom and Coffee (WebEx gang)",
         transcription: "The 9 am dev standup starter pack audio video \"us02web.zoom.us\" wants to open \"zoom.us\". Always open \"zoom.us\" Can this just be an email? Alarms Sleep wake up 8:55 a.m. change tomorrow morning other 8:58 a.m. Alarm",
-        image: Meme43
+        image: Meme45
     }, //Dev9am.jpg
     { 
         text: "They're even now. (This isn't about me. I don't lie on my resume, I just thought it was funny)",
         transcription: "Me who lied on my resume my new employer who lied on the job description",
-        image: Meme44 
+        image: Meme46 
     }, //ApplicantAndEmployer.jpg
     { 
         text: "Computer science student vs Earth",
         transcription: "Javascript developer position open Nice! Not the best salary but...think I will apply See how you compare to the other 1,146 applicants.",
-        image: Meme45 
+        image: Meme47 
     }, //TooManyApplicants.jpg
     { 
         text: "It prints like 5 pages of text for a syntax error",
         transcription: "When I'm in a being long af competition and my opponent is Spring Boot Error Messages",
-        image: Meme46 
+        image: Meme48 
     }, //SpringBootError.jpg
     { 
         text: "CSC 302 Flashbacks (Tower of Hanoi)",
         transcription: "Everyone: it's a game for kids. Programmers: ",
-        image: Meme47
+        image: Meme49
     }, //Hammurabi.jpg
     { 
         text: "Light mode users be like",
         transcription: "Blind Myself With a Lamp For No Reason!!",
-        image: Meme48
+        image: Meme50
     }, //lamp.jpg
     {
         text: "I fear no man, but that THING...it scares me.",
         transcription: "Programmers who use light themed IDE Satan",
-        image: Meme49
+        image: Meme51
     }, //lightmode.jpg
     {
         text: "\"Freethinkers\" when Youtube Algorithm",
         transcription: "Dudes be like \"I don't watch TV, I'm not gonna let the mainstream media tell me how to think\". My brother in christ you let recommendation_watchnext.serve() determine your whole personality.",
-        image: Meme50
+        image: Meme52
     }, //recommendation.jpg
     {
         text: "print(\"yeet\")",
         transcription: "powerful and advanced debugging tools print(\"test\")",
-        image: Meme51
+        image: Meme53
     }, //Testing.jpg
     {
         text: "The NSA application process be like",
         transcription: "When you applied for the job. When you hear back from the recruiter.",
-        image: Meme52
+        image: Meme54
     }, //WhenYouHearBack.jpg
     {
         text: "It's like VSCode on Steroids",
         transcription: "Plain VSCode. VSCode with extensions.",
-        image: Meme53
+        image: Meme55
     }, //Extensions.jpg
     {
         text: "He kinda gave us NullPointerException's tho 😍",
         transcription: "To the programmer who invented null: Thanks for nothing.",
-        image: Meme54
+        image: Meme56
     }, //null.jpg
     {
         text: "Friendliest Programmer/Tester Interaction",
         transcription: "Doctor and nurse Programmer and Tester",
-        image: Meme55
+        image: Meme57
     }, //ProgrammerTester.jpg
     {
         text: "\"Can you fix my printer?\" energy",
         transcription: "Money Status Using The Terminal In Front Of Non-Programmers",
-        image: Meme56
+        image: Meme58
     }, //TerminalMeme.jpg
     {
         text: "I am a Good Programming 😎",
         transcription: "Not Sure If I Am a Good Programming Or Good at Googling",
-        image: Meme57
+        image: Meme59
     }, //Googling.jpg
     {
         text: "I was praying for this like everyday back in 2021",
         transcription: "When someone mentions the possibility of college being canceled due to coronavirus. Don't do that, don't give me hope.",
-        image: Meme58
+        image: Meme60
     }, //Covid.jpg
     {
         text: "Alarmy be like",
         transcription: "Companies when their UI is perfect. Change it for no reason",
-        image: Meme59
+        image: Meme61
     }, //ChangeUI.jpg
     {
         text: "Do you have any idea how lit this would be",
         transcription: "The world if you could use the command line to update pom.xml dependencies",
-        image: Meme60
+        image: Meme62
     }, //pom.jpg
     {
         text: "This is actually pretty helpful",
         transcription: "LEFT JOIN RIGHT JOIN INNER JOIN FULL OUTER JOIN",
-        image: Meme61
+        image: Meme63
     }, //JoinMeme.jpg
     {
         text: "CSC 133 Gang",
         transcription: "Fun with flags norway xorway xnorway andway nandway notway",
-        image: Meme62
+        image: Meme64
     }, //Gates.jpg
     {
         text: "Random 2020 throwback meme for good measure",
         transcription: "I'm pretty sure i pretty sure I had coronavirus in December 2019 cause like i had a real bad cold but they said wasn't the flu so idk",
-        image: Meme63
+        image: Meme65
     }, //TheRona.jpg
     {
         text: "Job Searching in 2024 be like",
         transcription: "I want to do an internship do you have experience? I want to gain experience in the internship anyway here's your rejection",
-        image: Meme64
+        image: Meme66
     }, //TheRona.jpg
     {
         text: "Relatable",
         transcription: "Fourth graders using CHAT-GPT to do their \"List 5 uses of water\" homework",
-        image: Meme65
+        image: Meme67
     }, //ChatGpt.jpg
     {
         text: "Code repositories at work be like",
         transcription: "In terms of documentation we have no documentation",
-        image: Meme66
+        image: Meme68
     }, //Documentation.jpg
     {
         text: "My sisters boyfriend be like",
         transcription: "Wheeze \"Programmers r smelly 🤭\" - Ethan",
-        image: Meme67
+        image: Meme69
     }, //BoyfriendJokes.jpg
+    {
+        text: "Mandatory Spiderman meme ftw",
+        transcription: "count() size count length size() sizeof() len()",
+        image: Meme70
+    }, //CountNameMeme.jpg
+    {
+        text: "Gorgeous gorgeous girls use zsh",
+        transcription: "my folder : Downloads me : cd downloads Linux : I've never met this man before in my life.",
+        image: Meme71
+    }, //LinuxMeme.jpg
+    {
+        text: "CSC 242 got me flubbed up man 😭",
+        transcription: "You and your dudes trying to multiply two numbers in assembly.",
+        image: Meme72
+    }, //AssemblyMeme.jpg
+    {
+        text: "Relatable",
+        transcription: "When I'm struggling with my job search in a new city... and my mom finally cracks the code by asking if I google searched \"entry level jobs in Chicago...\"",
+        image: Meme73
+    }, //JobSearching.jpg
+    {
+        text: "They couldn't make the button because of a 500 error.",
+        transcription: "Front end making 1 button Backend after 12 hours of continuous labour",
+        image: Meme74
+    } //IronManCode.jpg
 ]
 
 </script>

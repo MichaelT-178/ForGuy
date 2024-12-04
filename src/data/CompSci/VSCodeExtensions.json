@@ -40,6 +40,18 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools"
         },
         {
+            "Name": "SQLTools PostgreSQL/Cockroach Driver",
+            "Author": "Matheus Teixeira",
+            "Description": "This extension allows you to work with PostgreSQL and Cockroach Driver using SQLTools",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg"
+        },
+        {
+            "Name": "SQLTools MySQL/MariaDB/TiDB",
+            "Author": "Matheus Teixeira",
+            "Description": "This extension allows you to work with MySQL, MariaDB, and TiDB using SQLTools",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql"
+        },
+        {
             "Name": "SQLite Viewer",
             "Author": "Florian Klampfer",
             "Description": "Allows you to view SQLite databases as a table.",
@@ -52,10 +64,22 @@
             "Link": "https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite"
         },
         {
+            "Name": "Postman",
+            "Author": "Postman",
+            "Description": "This allows you to work with Postman in VSCode without having to install the app. It's very very cool.",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode"
+        },
+        {
             "Name": "Thunder Client",
             "Author": "Thunder Client (Ranga Vadhineni)",
             "Description": "Basically Postman as a VSCode extension. It's a lightweight Rest API Client Extension you can use to ping endpoints. Download it, then press the lightning bolt symbol on the left-hand side of VSCode. Press the hamburger menu next to the \"filter activity\" input field. Press \"import cURL\". Type \"cURL\" in the input field and then you should be ready to go.",
             "Link": "https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client"
+        },
+        {
+            "Name": "npm Intellisense",
+            "Author": "Christian Kohler",
+            "Description": "Autocompletes npm modules in import statements",
+            "Link": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense"
         },
         {
             "Name": "JSON Crack",

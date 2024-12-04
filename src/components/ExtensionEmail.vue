@@ -17,14 +17,26 @@ export const bodyContent = `Hello ,%0A%0A` +
 `SQLTools%0A` +
 `https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools%0A%0A` +
 
+`SQLTools PostgreSQL/Cockroach Driver%0A` +
+`https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg%0A%0A` +
+
+`SQLTools MySQL/MariaDB/TiDB%0A` +
+`https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql%0A%0A` +
+
 `SQLite Viewer%0A` +
 `https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer%0A%0A` +
 
 `SQLite%0A` +
 `https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite%0A%0A` +
 
+`Postman%0A` +
+`https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode%0A%0A` +
+
 `Thunder Client%0A` +
 `https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client%0A%0A` +
+
+`npm Intellisense%0A` +
+`https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense%0A%0A` +
 
 `JSON Crack%0A` +
 `https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode%0A%0A` +
